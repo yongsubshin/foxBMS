@@ -1,0 +1,167 @@
+{
+  "extraction_campaign": {
+    "date": "2025-12-16T00:16:30Z",
+    "total_modules": 12,
+    "quality_standard": "70% high-confidence threshold",
+    "extraction_tool": "PARVIS Extraction Engine v1.0"
+  },
+  "overall_statistics": {
+    "total_requirements": 395,
+    "high_confidence": 277,
+    "medium_confidence": 118,
+    "low_confidence": 0,
+    "high_confidence_percentage": 70.1,
+    "quality_gate_pass_rate": 41.7
+  },
+  "extraction_types": {
+    "doxygen": {
+      "count": 155,
+      "percentage": 39.2
+    },
+    "assertion": {
+      "count": 161,
+      "percentage": 40.8
+    },
+    "state_machine": {
+      "count": 19,
+      "percentage": 4.8
+    },
+    "config": {
+      "count": 60,
+      "percentage": 15.2
+    }
+  },
+  "layers": {
+    "application": {
+      "total_requirements": 104,
+      "high_confidence": 70,
+      "percentage": 67.3,
+      "modules": [
+        "SOA",
+        "BAL",
+        "ALGO",
+        "PLAUS",
+        "REDUND"
+      ]
+    },
+    "engine": {
+      "total_requirements": 162,
+      "high_confidence": 118,
+      "percentage": 72.8,
+      "modules": [
+        "DB",
+        "DIAG",
+        "SYS",
+        "SYSMON"
+      ]
+    },
+    "driver": {
+      "total_requirements": 129,
+      "high_confidence": 89,
+      "percentage": 69.0,
+      "modules": [
+        "CONT",
+        "CAN",
+        "IMD"
+      ]
+    }
+  },
+  "modules": [
+    {
+      "code": "SOA",
+      "name": "Safe Operating Area",
+      "total": 10,
+      "high": 10,
+      "confidence": 100.0,
+      "pass": true
+    },
+    {
+      "code": "BAL",
+      "name": "Balancing",
+      "total": 24,
+      "high": 20,
+      "confidence": 83.3,
+      "pass": true
+    },
+    {
+      "code": "ALGO",
+      "name": "Algorithm Manager",
+      "total": 8,
+      "high": 3,
+      "confidence": 37.5,
+      "pass": false
+    },
+    {
+      "code": "PLAUS",
+      "name": "Plausibility Checks",
+      "total": 13,
+      "high": 8,
+      "confidence": 61.5,
+      "pass": false
+    },
+    {
+      "code": "REDUND",
+      "name": "Redundancy",
+      "total": 49,
+      "high": 29,
+      "confidence": 59.2,
+      "pass": false
+    },
+    {
+      "code": "DB",
+      "name": "Database",
+      "total": 77,
+      "high": 62,
+      "confidence": 80.5,
+      "pass": true
+    },
+    {
+      "code": "DIAG",
+      "name": "Diagnostics",
+      "total": 23,
+      "high": 15,
+      "confidence": 65.2,
+      "pass": false
+    },
+    {
+      "code": "SYS",
+      "name": "System",
+      "total": 43,
+      "high": 26,
+      "confidence": 60.5,
+      "pass": false
+    },
+    {
+      "code": "SYSMON",
+      "name": "System Monitor",
+      "total": 19,
+      "high": 15,
+      "confidence": 78.9,
+      "pass": true
+    },
+    {
+      "code": "CONT",
+      "name": "Contactor",
+      "total": 23,
+      "high": 14,
+      "confidence": 60.9,
+      "pass": false
+    },
+    {
+      "code": "CAN",
+      "name": "CAN Driver",
+      "total": 66,
+      "high": 46,
+      "confidence": 69.7,
+      "pass": false
+    },
+    {
+      "code": "IMD",
+      "name": "Insulation Monitoring",
+      "total": 40,
+      "high": 29,
+      "confidence": 72.5,
+      "pass": true
+    }
+  ]
+}

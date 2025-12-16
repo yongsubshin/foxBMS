@@ -1,0 +1,5 @@
+<map id="FS8x_CheckCRC" name="FS8x_CheckCRC">
+<area shape="rect" id="Node000001" title="Performs CRC check of the data array." alt="" coords="5,5,132,31"/>
+<area shape="rect" id="Node000002" href="$sbc__fs8x__communication_8c.html#a87db6e52e5d345e7ae7be0606196c27d" title="This function calculates CRC value of passed data array. Takes bytes in inverted order due to frame f..." alt="" coords="180,5,295,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,15,166,15,166,21,132,21"/>
+</map>

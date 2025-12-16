@@ -1,0 +1,11 @@
+<map id="N77x_ResetMuxIndex" name="N77x_ResetMuxIndex">
+<area shape="rect" id="Node000001" title="resets index in mux sequence." alt="" coords="656,5,820,31"/>
+<area shape="rect" id="Node000002" href="$nxp__mc3377x_8c.html#a9c267502ad4d574290f4331bb57748f6" title="initializes the N77X driver." alt="" coords="489,5,608,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="642,21,608,21,608,15,642,15"/>
+<area shape="rect" id="Node000003" href="$nxp__mc3377x_8c.html#a8e909d543eb29b0c8e65e9b56ef4700c" title="trigger function for the N77X driver state machine." alt="" coords="323,5,441,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="475,21,441,21,441,15,475,15"/>
+<area shape="rect" id="Node000004" href="$nxp__mc33775a__afe_8c.html#ae6df9bbde43f01a4a74a0e34d48cd844" title=" " alt="" coords="163,5,275,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="309,21,275,21,275,15,309,15"/>
+<area shape="rect" id="Node000005" href="$nxp__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,5,115,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="149,21,115,21,115,15,149,15"/>
+</map>

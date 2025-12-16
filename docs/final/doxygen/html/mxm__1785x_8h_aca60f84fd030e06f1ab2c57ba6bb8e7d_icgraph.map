@@ -1,0 +1,7 @@
+<map id="MXM_StateMachine" name="MXM_StateMachine">
+<area shape="rect" id="Node000001" title="Main state&#45;machine implementation." alt="" coords="300,5,451,31"/>
+<area shape="rect" id="Node000002" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="163,5,252,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,21,252,21,252,15,286,15"/>
+<area shape="rect" id="Node000003" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,5,115,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="149,21,115,21,115,15,149,15"/>
+</map>

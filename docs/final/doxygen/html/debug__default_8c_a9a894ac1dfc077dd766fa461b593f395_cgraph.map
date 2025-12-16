@@ -1,0 +1,5 @@
+<map id="FAKE_SetState" name="FAKE_SetState">
+<area shape="rect" id="Node000001" title="Sets the next state, the next substate and the timer value of the state variable." alt="" coords="5,5,121,31"/>
+<area shape="rect" id="Node000002" href="$debug__default_8c.html#aed7fa787a0f37e83b1664a3f2f3030bc" title="Sets the next substate and the timer value of the state variable." alt="" coords="169,5,308,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,15,156,15,156,21,122,21"/>
+</map>

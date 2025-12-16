@@ -1,0 +1,28 @@
+<map id="I2C_WaitReceive" name="I2C_WaitReceive">
+<area shape="rect" id="Node000001" title="Waits for the I2C Rx buffer to be full." alt="" coords="1732,55,1863,80"/>
+<area shape="rect" id="Node000002" href="$dma_8c.html#a27a1d2fda92f10191a0c54ed6227c22e" title=" " alt="" coords="1509,5,1684,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1731,54,1649,33,1650,28,1732,49"/>
+<area shape="rect" id="Node000003" href="$i2c_8c.html#a9546fb9b900efe2915ccd3b2b2232883" title="reads from an I2C slave, no register address written first, blocking." alt="" coords="1555,55,1638,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1718,70,1638,70,1638,65,1718,65"/>
+<area shape="rect" id="Node000013" href="$i2c_8c.html#a2ea96fba31aa7d20b39409c7b09dfce1" title="reads from an I2C slave, blocking." alt="" coords="1537,104,1656,129"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="1732,86,1650,107,1649,101,1731,81"/>
+<area shape="rect" id="Node000004" href="$rtc_8c.html#a7e211808028bab21e95dc95b67c842f6" title="Read bit for battery voltage low flag." alt="" coords="1245,18,1461,58"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1541,63,1461,54,1462,48,1542,58"/>
+<area shape="rect" id="Node000012" href="$rtc_8c.html#a7957c8a7a71846f263c61db1540932ad" title="initialization of the RTC IC." alt="" coords="1299,83,1408,108"/>
+<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="1542,76,1408,92,1408,86,1541,71"/>
+<area shape="rect" id="Node000005" href="$rtc_8c.html#a29ea3083fe4a8b3e1dc2e4262ae22863" title="trigger function for the RTC driver." alt="" coords="1100,55,1197,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1232,58,1198,63,1197,58,1231,53"/>
+<area shape="rect" id="Node000006" href="$ftask__cfg_8c.html#a6be3660b7f0fd3125febd329f698fdd0" title="Continuously running task for I2C." alt="" coords="884,55,1052,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1086,70,1052,70,1052,65,1086,65"/>
+<area shape="rect" id="Node000007" href="$ftask_8c.html#afb6bf58f9deabd4c07bf1d23fb68bb23" title="Creation of continuously running task for I2c." alt="" coords="684,55,836,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="870,70,837,70,837,65,870,65"/>
+<area shape="rect" id="Node000008" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,55,636,80"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="670,70,637,70,637,65,670,65"/>
+<area shape="rect" id="Node000009" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,55,448,80"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="482,70,448,70,448,65,482,65"/>
+<area shape="rect" id="Node000010" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,55,184,80"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="218,70,184,70,184,65,218,65"/>
+<area shape="rect" id="Node000011" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,55,81,80"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="116,70,82,70,82,65,116,65"/>
+<area shape="poly" id="edge12_Node000012_Node000005" title=" " alt="" coords="1285,89,1197,77,1198,71,1286,83"/>
+</map>

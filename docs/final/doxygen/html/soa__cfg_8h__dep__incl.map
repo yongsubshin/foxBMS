@@ -1,0 +1,11 @@
+<map id="foxbms&#45;2/src/app/application/config/soa_cfg.h" name="foxbms&#45;2/src/app/application/config/soa_cfg.h">
+<area shape="rect" id="Node000001" title="Configuration header for SOA." alt="" coords="123,5,333,45"/>
+<area shape="rect" id="Node000002" href="$soa__cfg_8c.html" title="Configuration for safe&#45;operating area check." alt="" coords="5,93,216,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,56,138,95,135,91,189,52"/>
+<area shape="rect" id="Node000003" href="$soa_8h.html" title="Header for SOA module, responsible for checking battery parameters against safety limits." alt="" coords="240,93,451,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,52,321,91,318,95,264,56"/>
+<area shape="rect" id="Node000004" href="$bms_8c.html" title="Bms driver implementation." alt="" coords="123,181,333,221"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="310,144,256,183,252,179,307,140"/>
+<area shape="rect" id="Node000005" href="$soa_8c.html" title="SOA module responsible for checking battery parameters against safety limits." alt="" coords="357,181,568,221"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="384,140,438,179,435,183,381,144"/>
+</map>

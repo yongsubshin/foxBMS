@@ -1,0 +1,5 @@
+<map id="CANRX_HandleSystemError" name="CANRX_HandleSystemError">
+<area shape="rect" id="Node000001" title="Sets all error states in the CAN data shim to invalid." alt="" coords="220,5,421,31"/>
+<area shape="rect" id="Node000002" href="$can__cbs__rx__current-sensor_8c.html#a8eaf16ec181e2a6aca61b37e7c531484" title="CAN Rx callback function for current sensor measurements." alt="" coords="5,5,172,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,21,172,21,172,15,206,15"/>
+</map>

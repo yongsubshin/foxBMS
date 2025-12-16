@@ -1,0 +1,47 @@
+<map id="foxbms&#45;2/src/app/engine/diag/cbs/diag_cbs.h" name="foxbms&#45;2/src/app/engine/diag/cbs/diag_cbs.h">
+<area shape="rect" id="Node000001" title="Diagnosis driver header." alt="" coords="2325,5,2508,45"/>
+<area shape="rect" id="Node000002" href="$diag__cfg_8c.html" title="Diagnostic module configuration." alt="" coords="5,101,188,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2311,29,1878,32,1268,41,949,50,651,61,394,76,200,96,162,103,161,98,199,91,393,71,651,56,949,44,1267,36,1878,27,2311,24"/>
+<area shape="rect" id="Node000003" href="$diag__cbs__aerosol-sensor_8c.html" title="Diagnosis driver implementation." alt="" coords="212,93,408,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="2311,30,1917,35,1371,45,821,65,593,79,420,96,409,98,408,92,419,91,592,74,821,60,1371,40,1917,29,2311,25"/>
+<area shape="rect" id="Node000004" href="$diag__cbs__afe_8c.html" title="Diagnosis driver implementation." alt="" coords="432,101,615,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="2312,30,1955,36,1468,47,983,67,781,80,628,96,590,103,589,98,627,91,780,75,982,61,1468,42,1955,30,2312,25"/>
+<area shape="rect" id="Node000005" href="$diag__cbs__bms_8c.html" title="Diagnosis driver implementation." alt="" coords="639,101,826,141"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="2311,31,1993,38,1567,50,1146,69,971,82,838,96,800,103,799,98,838,91,971,76,1146,64,1567,45,1992,32,2311,26"/>
+<area shape="rect" id="Node000006" href="$diag__cbs__can_8c.html" title="Diagnosis driver implementation." alt="" coords="851,101,1033,141"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="2312,32,1666,53,1307,72,1158,83,1045,96,1008,103,1007,98,1044,91,1158,78,1306,66,1666,47,2311,26"/>
+<area shape="rect" id="Node000007" href="$diag__cbs__clamp30c_8c.html" title="Diagnosis driver implementation." alt="" coords="1057,101,1280,141"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="2312,30,2121,35,1867,46,1581,65,1293,96,1250,103,1249,98,1292,91,1581,60,1867,40,2121,30,2312,25"/>
+<area shape="rect" id="Node000008" href="$diag__cbs__contactor_8c.html" title="Diagnosis driver implementation." alt="" coords="1305,101,1523,141"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="2311,33,1966,52,1751,70,1536,96,1494,103,1494,98,1535,91,1750,65,1965,46,2311,27"/>
+<area shape="rect" id="Node000009" href="$diag__cbs__current-sensor_8c.html" title="Diagnosis driver implementation." alt="" coords="1547,93,1742,148"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="2312,36,2057,57,1905,74,1754,96,1743,98,1742,93,1754,91,1905,69,2057,51,2311,30"/>
+<area shape="rect" id="Node000010" href="$diag__cbs__current_8c.html" title="Diagnosis driver implementation." alt="" coords="1766,101,1971,141"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="2312,43,2157,66,1984,96,1949,103,1948,98,1983,91,2156,61,2311,38"/>
+<area shape="rect" id="Node000011" href="$diag__cbs__deep-discharge_8c.html" title="Diagnosis driver implementation." alt="" coords="1996,93,2179,148"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="2338,52,2180,96,2178,91,2336,47"/>
+<area shape="rect" id="Node000012" href="$diag__cbs__dummy_8c.html" title="Diagnosis driver implementation." alt="" coords="2203,101,2409,141"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="2385,56,2330,103,2327,99,2382,52"/>
+<area shape="rect" id="Node000013" href="$diag__cbs__fram_8c.html" title="Diagnosis callbacks for FRAM errors." alt="" coords="2433,101,2624,141"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="2452,52,2508,99,2504,103,2448,56"/>
+<area shape="rect" id="Node000014" href="$diag__cbs__i2c_8c.html" title="Diagnosis callbacks for I2C errors." alt="" coords="2648,101,2831,141"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="2496,47,2675,98,2673,103,2494,52"/>
+<area shape="rect" id="Node000015" href="$diag__cbs__insulation_8c.html" title="Diagnosis driver implementation." alt="" coords="2855,101,3077,141"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="2522,39,2844,91,2881,98,2880,103,2843,96,2521,44"/>
+<area shape="rect" id="Node000016" href="$diag__cbs__interlock_8c.html" title="Diagnosis driver implementation." alt="" coords="3102,101,3318,141"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="2522,31,2781,52,2936,69,3090,91,3130,98,3129,103,3090,96,2935,75,2780,58,2521,36"/>
+<area shape="rect" id="Node000017" href="$diag__cbs__plausibility_8c.html" title="Diagnosis driver implementation." alt="" coords="3342,101,3571,141"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="2522,27,2881,46,3105,65,3330,91,3374,98,3373,103,3330,96,3105,70,2881,52,2522,33"/>
+<area shape="rect" id="Node000018" href="$diag__cbs__power-measurement_8c.html" title="Diagnosis driver implementation." alt="" coords="3596,93,3784,148"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="2522,24,2720,26,2984,36,3283,56,3435,71,3584,91,3596,93,3596,98,3583,96,3434,76,3282,61,2984,41,2720,32,2522,29"/>
+<area shape="rect" id="Node000019" href="$diag__cbs__rtc_8c.html" title="Diagnosis callbacks for RTC errors." alt="" coords="3808,101,3991,141"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="2522,26,3172,47,3533,66,3683,78,3797,91,3834,98,3833,103,3796,96,3683,83,3533,71,3172,53,2522,32"/>
+<area shape="rect" id="Node000020" href="$diag__cbs__sbc_8c.html" title="Diagnosis driver implementation." alt="" coords="4015,101,4197,141"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="2522,26,2842,32,3270,44,3694,64,3870,76,4004,91,4041,98,4040,103,4003,96,3870,81,3694,69,3270,50,2842,37,2522,31"/>
+<area shape="rect" id="Node000021" href="$diag__cbs__sys-mon_8c.html" title="Diagnosis driver implementation." alt="" coords="4221,101,4436,141"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="2522,25,2879,32,3367,44,3854,63,4057,76,4210,91,4253,98,4253,103,4210,96,4056,81,3854,69,3367,50,2879,37,2522,31"/>
+<area shape="rect" id="Node000022" href="$diag__cbs__temperature_8c.html" title="Diagnosis driver implementation." alt="" coords="4461,101,4701,141"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="2522,25,2922,31,3479,43,4039,63,4272,76,4449,91,4497,98,4496,103,4448,96,4272,81,4038,68,3478,49,2922,37,2522,31"/>
+<area shape="rect" id="Node000023" href="$diag__cbs__voltage_8c.html" title="Diagnosis driver implementation." alt="" coords="4725,101,4933,141"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="2522,24,2968,28,3602,38,4243,58,4511,72,4713,91,4755,98,4754,103,4712,96,4510,78,4243,63,3602,43,2968,33,2522,30"/>
+</map>

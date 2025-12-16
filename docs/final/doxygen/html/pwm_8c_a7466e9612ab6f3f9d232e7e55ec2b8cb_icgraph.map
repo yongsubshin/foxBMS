@@ -1,0 +1,5 @@
+<map id="PWM_ComputeCounterValueFromDutyCycle" name="PWM_ComputeCounterValueFromDutyCycle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="204,5,445,45"/>
+<area shape="rect" id="Node000002" href="$pwm_8c.html#a29f1602d48c01d80097ae92ce87ffe94" title="Set the duty cycle of the PWM (currently only channel 1A)" alt="" coords="5,13,156,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,28,156,28,156,23,190,23"/>
+</map>

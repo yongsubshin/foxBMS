@@ -1,0 +1,13 @@
+<map id="CANRX_HandleModeRequest" name="CANRX_HandleModeRequest">
+<area shape="rect" id="Node000001" title="handles the mode request" alt="" coords="5,39,216,64"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="264,9,555,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,38,266,33,267,39,217,44"/>
+<area shape="rect" id="Node000004" href="$os_8c.html#a53166653cb8fe3f7c0bfb86af6217fe5" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="314,63,505,88"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="217,57,301,64,300,69,216,62"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="603,5,825,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="555,17,589,17,589,22,555,23"/>
+<area shape="rect" id="Node000005" href="$os_8c.html#a834064ee9e9a90768918c776f5cb1bb7" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="604,55,824,95"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="505,73,590,73,590,78,505,78"/>
+<area shape="rect" id="Node000006" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="647,120,781,145"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="478,85,634,115,633,120,477,91"/>
+</map>

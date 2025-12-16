@@ -1,0 +1,15 @@
+<map id="MXM_5XSignalError" name="MXM_5XSignalError">
+<area shape="rect" id="Node000001" title="Signal that an error has occurred in a chain of substates." alt="" coords="791,70,941,95"/>
+<area shape="rect" id="Node000002" href="$mxm__battery__management_8c.html#a0702ba6d1b8e19c6a003232838a0d159" title="Handle the state MXM_STATEMACH_5X_41B_FMEA_CHECK." alt="" coords="516,5,743,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="799,69,712,48,713,43,800,64"/>
+<area shape="rect" id="Node000003" href="$mxm__battery__management_8c.html#a325538715bf432ee4826598277aa29e3" title="Execute state&#45;machine for Battery Management Protocol." alt="" coords="300,70,468,95"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="777,85,468,85,468,80,777,80"/>
+<area shape="rect" id="Node000006" href="$mxm__battery__management_8c.html#a1df234e14c5b40e2798364aebc9e19f9" title="Handle the state MXM_STATEMACH_5X_READALL." alt="" coords="522,121,737,146"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="793,101,690,123,689,118,792,96"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="531,51,440,73,438,67,529,46"/>
+<area shape="rect" id="Node000004" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="163,70,252,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="286,85,252,85,252,80,286,80"/>
+<area shape="rect" id="Node000005" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,70,115,95"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="149,85,115,85,115,80,149,80"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="553,120,446,98,447,93,554,115"/>
+</map>

@@ -1,0 +1,35 @@
+<map id="CANTX_BuildBmsStateMessage" name="CANTX_BuildBmsStateMessage">
+<area shape="rect" id="Node000001" title="Set the message data with the signal data." alt="" coords="5,234,233,259"/>
+<area shape="rect" id="Node000002" href="$bms_8c.html#a95febd341b208a988bb0462e81febca8" title="Returns number of connected strings." alt="" coords="287,5,505,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,232,147,197,182,149,227,99,280,55,290,49,293,54,283,60,230,102,186,152,152,200,130,235"/>
+<area shape="rect" id="Node000003" href="$bms_8c.html#afcd6e979c7502594e6807d322df11555" title="Returns the current state." alt="" coords="339,70,453,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,232,189,170,232,134,280,104,325,89,326,94,282,109,235,139,192,174,133,236"/>
+<area shape="rect" id="Node000004" href="$bms_8c.html#a114e81c537501faf43fc5c93f7f712de" title="Returns the current substate." alt="" coords="327,119,465,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="138,231,200,194,280,155,313,145,314,150,282,160,202,198,141,236"/>
+<area shape="rect" id="Node000005" href="$bms_8c.html#a38f183c232165fccfd2989f208e4fd0b" title="Check if transition in to error state is active." alt="" coords="291,169,501,209"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="181,231,285,210,286,215,182,237"/>
+<area shape="rect" id="Node000006" href="$can__helper_8c.html#a8cecd87914decc2e130d2a117ea6c92a" title="Transform a bool to a bit (set if true)" alt="" coords="285,234,507,259"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="234,244,271,244,271,249,234,249"/>
+<area shape="rect" id="Node000007" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="299,283,493,309"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="192,257,311,278,310,283,191,262"/>
+<area shape="rect" id="Node000008" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="289,333,503,373"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="147,257,208,286,282,318,309,327,307,332,280,322,206,291,145,262"/>
+<area shape="rect" id="Node000010" href="$can__cbs__tx__bms-state_8c.html#a9dee773ff189b670e5172f14ef3d38b7" title="get a boolean for if any timing error (current or recorded) occurred" alt="" coords="281,397,511,437"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="134,258,193,318,236,353,283,383,297,390,295,395,280,388,233,357,190,322,130,261"/>
+<area shape="rect" id="Node000016" href="$diag_8c.html#a7320b7cba18f40437e0d23d587843f89" title="Check if any fatal error is set." alt="" coords="305,462,487,487"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="129,258,150,296,183,348,228,402,254,426,283,447,297,455,294,459,280,452,251,430,224,406,179,351,145,299,125,261"/>
+<area shape="rect" id="Node000009" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="577,341,799,366"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="503,351,563,351,563,356,503,356"/>
+<area shape="rect" id="Node000011" href="$sys__mon_8c.html#a1c52e495d92c986107170f9c45aed75a" title="Returns the timing violation flags determined from fram state." alt="" coords="559,405,817,430"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="511,415,545,415,545,420,511,420"/>
+<area shape="rect" id="Node000012" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="902,326,1058,351"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="729,402,865,360,900,352,901,357,866,365,731,407"/>
+<area shape="rect" id="Node000013" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="907,375,1053,401"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="814,402,893,394,893,399,815,407"/>
+<area shape="rect" id="Node000014" href="$sys__mon_8c.html#a9fdade3ae378b8e46fcc77bd0cc61596" title="Convert recorded timings into a decision (bool) whether the timing has been violated or not." alt="" coords="865,425,1095,465"/>
+<area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="818,427,852,430,852,436,817,432"/>
+<area shape="rect" id="Node000015" href="$sys__mon_8c.html#acc9a5d05dfff9a46afd4f0a665cba32c" title="Copy from the from entry to the to entry." alt="" coords="895,490,1065,515"/>
+<area shape="poly" id="edge14_Node000011_Node000015" title=" " alt="" coords="756,428,818,447,843,461,866,475,894,484,892,489,864,480,840,466,816,452,755,433"/>
+<area shape="rect" id="Node000017" href="$diag_8c.html#a65aa765236a760639d5401524b876378" title="Checks if passed diagnosis entry has been triggered or not." alt="" coords="579,462,797,487"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="487,472,566,472,566,477,487,477"/>
+</map>

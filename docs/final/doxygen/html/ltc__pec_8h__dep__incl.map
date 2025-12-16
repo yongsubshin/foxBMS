@@ -1,0 +1,9 @@
+<map id="foxbms&#45;2/src/app/driver/afe/ltc/common/ltc_pec.h" name="foxbms&#45;2/src/app/driver/afe/ltc/common/ltc_pec.h">
+<area shape="rect" id="Node000001" title="Headers for the PEC computation." alt="" coords="211,5,401,45"/>
+<area shape="rect" id="Node000002" href="$ltc__6806_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="5,93,183,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,53,141,96,139,91,246,48"/>
+<area shape="rect" id="Node000003" href="$ltc__6813-1_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="207,93,405,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="309,59,309,93,303,93,303,59"/>
+<area shape="rect" id="Node000004" href="$ltc__pec_8c.html" title="Implements the CRC for the LTC LTC68xx&#45;x family of ICs." alt="" coords="430,93,619,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="368,48,478,91,476,96,366,53"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="OS_NotifyFromIsr" name="OS_NotifyFromIsr">
+<area shape="rect" id="Node000001" title="Notify a task." alt="" coords="417,5,552,31"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x__afe__dma_8c.html#abab0f99ff091dd67a1034449f57e66a6" title="Function called by DMA block transfer callback." alt="" coords="228,5,369,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="404,21,370,21,370,15,404,15"/>
+<area shape="rect" id="Node000003" href="$dma_8c.html#a27a1d2fda92f10191a0c54ed6227c22e" title=" " alt="" coords="5,5,180,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="214,21,180,21,180,15,214,15"/>
+</map>

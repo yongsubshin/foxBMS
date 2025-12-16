@@ -1,0 +1,65 @@
+<map id="foxbms&#45;2/src/app/engine/diag/diag.h" name="foxbms&#45;2/src/app/engine/diag/diag.h">
+<area shape="rect" id="Node000001" title="Diagnosis driver header." alt="" coords="3289,5,3471,45"/>
+<area shape="rect" id="Node000002" href="$bms_8c.html" title="Bms driver implementation." alt="" coords="5,101,216,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="3275,30,1675,51,762,71,426,83,228,96,185,103,184,98,228,91,426,77,762,66,1675,46,3275,25"/>
+<area shape="rect" id="Node000003" href="$plausibility_8c.html" title="Plausibility checks for cell voltage and cell temperatures." alt="" coords="240,101,451,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="3275,29,2723,29,1909,37,1479,45,1075,57,726,74,463,96,420,103,419,98,462,91,726,68,1075,51,1479,39,1909,31,2723,24,3275,24"/>
+<area shape="rect" id="Node000004" href="$redundancy_8c.html" title="Source file for handling redundancy between redundant cell voltage and cell temperature measurements." alt="" coords="475,101,685,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="3275,29,2763,31,2017,39,1625,47,1256,59,938,75,698,96,655,103,654,98,697,91,937,70,1256,54,1624,42,2017,34,2763,26,3275,24"/>
+<area shape="rect" id="Node000005" href="$soa_8c.html" title="SOA module responsible for checking battery parameters against safety limits." alt="" coords="709,101,920,141"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="3275,30,2802,32,2124,42,1770,50,1436,62,1149,77,932,96,890,103,889,98,932,91,1149,71,1436,56,1769,45,2124,36,2802,27,3275,24"/>
+<area shape="rect" id="Node000006" href="$adi__ades183x__diagnostic__w_8c.html" title="Dummy diagnostics driver for the ADI analog front end." alt="" coords="944,93,1163,148"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="3274,30,2844,34,2237,45,1624,65,1368,79,1175,96,1163,98,1163,92,1174,91,1368,74,1624,60,2237,40,2844,29,3274,25"/>
+<area shape="rect" id="Node000007" href="$debug__default_8c.html" title="Driver implementation for the fake AFE." alt="" coords="1187,93,1373,148"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="3275,30,2881,34,2335,44,1786,64,1557,78,1384,96,1373,98,1372,92,1384,91,1557,73,1785,59,2334,39,2881,29,3275,25"/>
+<area shape="rect" id="Node000008" href="$ltc__6806_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="1397,101,1574,141"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="3275,30,2917,35,2429,46,1942,66,1739,79,1586,96,1549,103,1548,98,1585,91,1739,74,1941,60,2429,41,2917,30,3275,25"/>
+<area shape="rect" id="Node000009" href="$ltc__6813-1_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="1598,101,1797,141"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="3275,31,2957,38,2534,51,2115,70,1940,82,1808,96,1769,103,1768,98,1808,91,1940,77,2114,65,2534,46,2957,33,3275,26"/>
+<area shape="rect" id="Node000010" href="$mxm__cfg_8c.html" title="Configuration for the MAX analog front&#45;end." alt="" coords="1821,93,2022,148"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="3275,28,3050,29,2741,38,2389,58,2209,75,2034,96,2023,98,2022,92,2033,91,2209,69,2389,53,2741,32,3049,24,3275,23"/>
+<area shape="rect" id="Node000011" href="$mxm__1785x_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="2046,93,2242,148"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="3275,29,3084,33,2829,43,2543,63,2396,77,2254,96,2243,98,2242,92,2253,91,2396,72,2542,57,2829,37,3084,27,3275,24"/>
+<area shape="rect" id="Node000012" href="$mxm__battery__management_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="2266,93,2462,148"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="3275,32,3118,37,2918,49,2696,68,2474,96,2463,98,2462,93,2473,91,2696,63,2918,44,3118,32,3275,26"/>
+<area shape="rect" id="Node000013" href="$can_8c.html" title="Driver for the CAN module." alt="" coords="2486,101,2663,141"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="3275,34,3003,54,2839,72,2675,96,2641,103,2640,98,2674,91,2838,66,3002,48,3275,29"/>
+<area shape="rect" id="Node000014" href="$can__cbs__rx__aerosol-sensor_8c.html" title="CAN driver Rx callback implementation." alt="" coords="2687,93,2865,148"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="3275,39,3089,62,2876,96,2865,98,2864,93,2876,91,3088,56,3275,34"/>
+<area shape="rect" id="Node000015" href="$can__cbs__rx__bms-state-request_8c.html" title="CAN driver Rx callback implementation." alt="" coords="2889,93,3066,148"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="3279,51,3078,96,3067,99,3066,93,3077,91,3277,46"/>
+<area shape="rect" id="Node000016" href="$can__cbs__rx__cell-temperatures_8c.html" title="CAN driver Rx callback implementation." alt="" coords="3090,93,3267,148"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="3328,54,3236,96,3234,91,3326,49"/>
+<area shape="rect" id="Node000017" href="$can__cbs__rx__cell-voltages_8c.html" title="CAN driver Rx callback implementation." alt="" coords="3291,93,3469,148"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="3383,59,3383,93,3377,93,3377,59"/>
+<area shape="rect" id="Node000018" href="$can__cbs__tx__bms-state_8c.html" title="CAN driver Tx callback implementation." alt="" coords="3493,93,3670,148"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="3434,49,3526,91,3524,96,3432,54"/>
+<area shape="rect" id="Node000019" href="$contactor_8c.html" title="Driver for the contactors." alt="" coords="3694,101,3871,141"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="3483,46,3683,91,3712,98,3711,103,3682,96,3481,51"/>
+<area shape="rect" id="Node000020" href="$fram_8c.html" title="Driver for the FRAM module." alt="" coords="3895,101,4073,141"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="3485,34,3672,56,3885,91,3917,98,3916,103,3883,96,3671,62,3485,39"/>
+<area shape="rect" id="Node000021" href="$i2c_8c.html" title="Driver for the I2C module." alt="" coords="4097,101,4274,141"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="3485,29,3758,48,3922,66,4086,91,4120,98,4119,103,4085,96,3921,72,3757,54,3485,34"/>
+<area shape="rect" id="Node000022" href="$imd_8c.html" title="Main driver state machine for insulation monitoring driver." alt="" coords="4298,101,4475,141"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="3485,26,3641,31,3842,42,4064,61,4287,91,4322,98,4321,103,4286,96,4064,66,3841,47,3641,36,3485,31"/>
+<area shape="rect" id="Node000023" href="$interlock_8c.html" title="Driver for the interlock." alt="" coords="4499,101,4677,141"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="3485,24,3674,26,3924,36,4205,56,4349,71,4488,91,4524,98,4523,103,4488,96,4348,77,4205,61,3924,41,3674,32,3485,29"/>
+<area shape="rect" id="Node000024" href="$pex_8c.html" title="Driver for the NXP PCA9539 port expander module." alt="" coords="4701,101,4878,141"/>
+<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="3485,27,4101,48,4441,67,4582,78,4690,91,4726,98,4725,103,4689,96,4582,83,4441,72,4101,53,3485,32"/>
+<area shape="rect" id="Node000025" href="$rtc_8c.html" title="Implementation of the RTC driver." alt="" coords="4902,101,5079,141"/>
+<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="3485,26,3792,32,4197,45,4598,64,4765,76,4891,91,4928,98,4927,103,4890,96,4764,82,4598,69,4197,50,3792,38,3485,31"/>
+<area shape="rect" id="Node000026" href="$nxpfs85xx_8c.html" title="Driver for the FS85xx module." alt="" coords="5103,101,5281,141"/>
+<area shape="poly" id="edge25_Node000001_Node000026" title=" " alt="" coords="3485,25,3828,31,4292,42,4755,62,4947,75,5092,91,5129,98,5128,103,5092,96,4946,80,4754,67,4292,47,3828,36,3485,30"/>
+<area shape="rect" id="Node000027" href="$diag_8c.html" title="Diagnosis driver implementation." alt="" coords="5305,101,5487,141"/>
+<area shape="poly" id="edge26_Node000001_Node000027" title=" " alt="" coords="3485,25,3864,29,4387,40,4911,60,5129,74,5294,91,5331,98,5330,103,5293,96,5128,79,4910,65,4387,45,3864,34,3485,30"/>
+<area shape="rect" id="Node000028" href="$master__info_8c.html" title="General foxBMS&#45;master system information." alt="" coords="5511,101,5694,141"/>
+<area shape="poly" id="edge27_Node000001_Node000028" title=" " alt="" coords="3485,24,3900,27,4483,37,4786,46,5070,57,5315,72,5500,91,5538,98,5537,103,5500,96,5315,77,5070,62,4786,51,4483,43,3900,33,3485,30"/>
+<area shape="rect" id="Node000029" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="5718,101,5901,141"/>
+<area shape="poly" id="edge28_Node000001_Node000029" title=" " alt="" coords="3485,24,3937,26,4580,35,4916,43,5231,55,5502,70,5707,91,5745,98,5744,103,5706,96,5501,76,5230,60,4915,48,4580,40,3937,31,3485,29"/>
+<area shape="rect" id="Node000030" href="$sys__mon_8c.html" title="System monitoring module." alt="" coords="5925,101,6107,141"/>
+<area shape="poly" id="edge29_Node000001_Node000030" title=" " alt="" coords="3485,24,3973,24,4675,32,5044,40,5390,52,5688,69,5914,91,5952,98,5951,103,5913,96,5688,74,5390,57,5044,45,4675,37,3973,30,3485,29"/>
+<area shape="rect" id="Node000031" href="$main_8c.html" title="Main function." alt="" coords="6131,101,6303,141"/>
+<area shape="poly" id="edge30_Node000001_Node000031" title=" " alt="" coords="3485,25,4058,32,4880,46,5663,65,5950,77,6120,91,6157,98,6155,103,6120,96,5950,83,5663,70,4880,51,4058,37,3485,30"/>
+<area shape="rect" id="Node000032" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="6327,101,6494,141"/>
+<area shape="poly" id="edge31_Node000001_Node000032" title=" " alt="" coords="3485,25,4094,31,4978,44,5823,63,6133,76,6316,91,6352,98,6351,103,6316,96,6133,81,5823,69,4978,49,4094,36,3485,30"/>
+</map>

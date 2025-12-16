@@ -1,0 +1,5 @@
+<map id="SYS_SetState" name="SYS_SetState">
+<area shape="rect" id="Node000001" title="Sets the next state, the next substate and the timer value of the state variable." alt="" coords="5,5,113,31"/>
+<area shape="rect" id="Node000002" href="$sys_8c.html#afcb496e43f0eea565e8fbdf44167ae6b" title="Sets the next substate and the timer value of the state variable." alt="" coords="161,5,292,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,15,148,15,148,21,114,21"/>
+</map>

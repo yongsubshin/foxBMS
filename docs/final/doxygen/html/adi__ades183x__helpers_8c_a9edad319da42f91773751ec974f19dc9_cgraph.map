@@ -1,0 +1,37 @@
+<map id="ADI_SpiTransmitReceiveData" name="ADI_SpiTransmitReceiveData">
+<area shape="rect" id="Node000001" title="Transmits and receives data on SPI." alt="" coords="5,155,216,180"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#a08e213470ff10fc5e7050bd78162a10b" title="Wait for a notification." alt="" coords="272,79,443,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,152,301,106,303,111,154,157"/>
+<area shape="rect" id="Node000003" href="$spi_8c.html#abdf760fa10bbc7f0f6b93ef0ddda41de" title="Transmits data on SPI without DMA." alt="" coords="540,129,676,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,159,526,143,526,149,216,165"/>
+<area shape="rect" id="Node000011" href="$spi_8c.html#a7257a51d6c1ff52a408850115e9a5ae8" title="Sends a dummy byte to wake up the SPI interface." alt="" coords="264,180,451,205"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="216,175,250,179,250,184,216,181"/>
+<area shape="rect" id="Node000013" href="$spi_8c.html#a2a0f36d8cb7e54304284f758cc108c36" title="Transmits and receives data on SPI with DMA." alt="" coords="499,292,717,317"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="149,178,265,215,411,255,538,286,537,291,409,260,263,221,147,183"/>
+<area shape="rect" id="Node000004" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="807,5,907,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="624,127,684,84,723,60,764,40,792,29,794,34,766,44,726,65,687,89,627,131"/>
+<area shape="rect" id="Node000005" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="815,55,899,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="646,127,765,89,801,79,802,84,766,94,648,132"/>
+<area shape="rect" id="Node000006" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="793,203,921,228"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="674,152,718,165,766,188,792,196,791,201,764,192,716,170,673,157"/>
+<area shape="rect" id="Node000007" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="817,104,896,129"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="676,132,804,119,804,125,677,138"/>
+<area shape="rect" id="Node000010" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="809,153,904,179"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="677,146,796,158,795,163,676,151"/>
+<area shape="rect" id="Node000008" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="996,129,1152,155"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="897,119,983,129,982,134,896,124"/>
+<area shape="rect" id="Node000009" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1001,179,1147,204"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="897,122,949,138,973,151,997,164,1018,172,1016,177,995,168,971,155,947,143,895,127"/>
+<area shape="poly" id="edge10_Node000010_Node000008" title=" " alt="" coords="904,158,982,149,983,155,904,164"/>
+<area shape="poly" id="edge11_Node000010_Node000009" title=" " alt="" coords="904,169,988,179,987,184,904,174"/>
+<area shape="poly" id="edge14_Node000011_Node000003" title=" " alt="" coords="421,177,531,155,532,160,422,182"/>
+<area shape="rect" id="Node000012" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="548,180,668,205"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="451,190,534,190,534,195,451,195"/>
+<area shape="poly" id="edge20_Node000013_Node000006" title=" " alt="" coords="643,289,764,245,806,230,807,235,766,250,645,294"/>
+<area shape="poly" id="edge18_Node000013_Node000008" title=" " alt="" coords="695,289,849,264,912,250,947,238,963,222,970,203,978,183,994,164,1002,159,1005,163,998,168,982,186,975,205,967,225,949,243,914,255,850,269,696,295"/>
+<area shape="poly" id="edge19_Node000013_Node000009" title=" " alt="" coords="717,311,772,311,830,308,890,298,947,282,977,268,1005,250,1050,212,1053,216,1008,254,980,273,949,287,891,304,831,313,772,317,717,317"/>
+<area shape="rect" id="Node000014" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="780,355,933,380"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="660,315,793,349,792,354,658,320"/>
+<area shape="rect" id="Node000015" href="$fsystem_8h.html#af23205627be1616c6b1dcdb684060322" title="Switch back to user mode." alt="" coords="765,404,948,429"/>
+<area shape="poly" id="edge17_Node000013_Node000015" title=" " alt="" coords="630,315,689,352,766,390,787,398,785,403,764,395,687,356,627,320"/>
+</map>

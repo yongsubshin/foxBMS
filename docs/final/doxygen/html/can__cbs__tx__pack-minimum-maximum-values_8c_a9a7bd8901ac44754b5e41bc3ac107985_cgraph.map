@@ -1,0 +1,7 @@
+<map id="CANTX_GetPackMaximumVoltage" name="CANTX_GetPackMaximumVoltage">
+<area shape="rect" id="Node000001" title="Gets the value of the maximum pack voltage." alt="" coords="5,42,248,67"/>
+<area shape="rect" id="Node000002" href="$bms_8c.html#a95febd341b208a988bb0462e81febca8" title="Returns number of connected strings." alt="" coords="296,5,513,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,39,282,36,282,41,247,45"/>
+<area shape="rect" id="Node000003" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="329,70,480,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="249,64,316,71,315,76,248,70"/>
+</map>

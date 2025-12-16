@@ -1,0 +1,247 @@
+<map id="IO_PinSet" name="IO_PinSet">
+<area shape="rect" id="Node000001" title="Set pin by writing in pin output register." alt="" coords="2433,973,2517,999"/>
+<area shape="rect" id="Node000002" href="$can_8c.html#a5c1c7ee71937637e326117ba125d72f8" title=" " alt="" coords="2199,292,2385,317"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2469,960,2459,846,2440,686,2415,526,2399,460,2383,412,2367,384,2346,358,2307,320,2311,316,2350,355,2371,381,2388,410,2405,459,2420,525,2445,685,2464,846,2475,959"/>
+<area shape="rect" id="Node000013" href="$fram_8c.html#ac33e9fde66e31d43c22bfc9a2f8aebf7" title="Reads a variable from the FRAM." alt="" coords="2227,179,2357,204"/>
+<area shape="poly" id="edge9_Node000001_Node000013" title=" " alt="" coords="2470,960,2463,823,2448,623,2436,519,2422,422,2404,340,2383,281,2368,258,2349,237,2312,206,2315,202,2353,233,2372,254,2388,278,2409,339,2427,421,2442,518,2453,623,2469,823,2476,959"/>
+<area shape="rect" id="Node000017" href="$nxpfs85xx_8c.html#a5128886f0bc8f14507994ee54d052eec" title="Perform RSTB safety path check." alt="" coords="1941,304,2151,329"/>
+<area shape="poly" id="edge59_Node000001_Node000017" title=" " alt="" coords="2469,960,2460,861,2443,725,2417,592,2401,539,2383,501,2355,466,2322,436,2286,410,2247,387,2169,353,2102,332,2103,327,2171,348,2249,383,2289,405,2326,432,2359,463,2388,498,2406,537,2422,591,2448,724,2465,860,2475,959"/>
+<area shape="rect" id="Node000033" href="$fram_8c.html#ad5c5ec1fd0a6c3667185d3b75064e359" title="Writes a variable to the FRAM." alt="" coords="2225,713,2359,739"/>
+<area shape="poly" id="edge36_Node000001_Node000033" title=" " alt="" coords="2455,964,2300,740,2305,737,2460,960"/>
+<area shape="rect" id="Node000048" href="$bender__ir155_8c.html#a6c70e060ca9e626f09d2518a1fa296c0" title="Processes the IMD enable state." alt="" coords="2201,609,2383,635"/>
+<area shape="poly" id="edge60_Node000001_Node000048" title=" " alt="" coords="2468,960,2460,909,2444,843,2419,770,2383,702,2349,664,2313,637,2316,633,2352,660,2388,699,2424,768,2449,841,2465,908,2473,959"/>
+<area shape="rect" id="Node000049" href="$led_8c.html#a5274cff3273cccf8ed3ee1fabd78c57d" title="Turn debug LED on." alt="" coords="2222,973,2362,999"/>
+<area shape="poly" id="edge62_Node000001_Node000049" title=" " alt="" coords="2419,989,2362,989,2362,983,2419,983"/>
+<area shape="rect" id="Node000050" href="$led_8c.html#adde1377ea9af24ebc95c60a0bcc59bca" title="Trigger function to periodically toggle debug LED. Frequency can be set via function LED_SetToggleTim..." alt="" coords="815,580,913,605"/>
+<area shape="poly" id="edge65_Node000001_Node000050" title=" " alt="" coords="2423,1005,2386,1013,2217,1035,1997,1055,1885,1059,1781,1054,1692,1040,1656,1028,1625,1012,1612,1001,1604,987,1599,960,1594,932,1588,919,1577,907,1549,890,1522,883,1495,882,1467,884,1440,887,1413,885,1386,875,1359,854,1339,825,1331,794,1332,763,1337,732,1342,702,1342,674,1333,646,1312,620,1283,604,1240,593,1188,587,1130,584,1011,585,914,591,913,586,1011,580,1130,578,1188,582,1241,588,1285,599,1315,616,1338,644,1347,673,1347,703,1342,733,1338,763,1337,793,1344,822,1363,851,1389,870,1414,879,1440,881,1467,879,1494,877,1522,877,1551,885,1580,903,1593,916,1599,930,1604,959,1609,985,1616,997,1628,1008,1658,1023,1694,1035,1782,1049,1885,1053,1996,1050,2216,1030,2385,1007,2422,1000"/>
+<area shape="rect" id="Node000051" href="$mxm__cfg_8c.html#ae15c13f7eb4e91ae8876eb7d9562357f" title="Pulls the shutdown of the bridge IC high." alt="" coords="2213,1341,2371,1367"/>
+<area shape="poly" id="edge67_Node000001_Node000051" title=" " alt="" coords="2471,1013,2441,1116,2417,1180,2388,1242,2347,1300,2308,1343,2304,1339,2343,1297,2383,1239,2413,1178,2436,1114,2466,1012"/>
+<area shape="rect" id="Node000056" href="$dp83869_8c.html#abcac8728de46769ab60a13b93a1d16c3" title="Perform a hardware reset of the PHY." alt="" coords="2215,1552,2369,1577"/>
+<area shape="poly" id="edge71_Node000001_Node000056" title=" " alt="" coords="2473,1013,2445,1170,2420,1275,2388,1380,2367,1432,2343,1481,2303,1553,2299,1550,2338,1479,2362,1430,2383,1378,2415,1274,2440,1169,2468,1012"/>
+<area shape="rect" id="Node000060" href="$spi_8c.html#abdf760fa10bbc7f0f6b93ef0ddda41de" title="Transmits data on SPI without DMA." alt="" coords="2224,1119,2360,1144"/>
+<area shape="poly" id="edge76_Node000001_Node000060" title=" " alt="" coords="2449,1010,2311,1120,2308,1116,2446,1005"/>
+<area shape="rect" id="Node000103" href="$spi_8c.html#ac84bc8424de860e2cd89fea2e89dd89a" title="Transmits and receives data on SPI without DMA." alt="" coords="1952,1643,2140,1668"/>
+<area shape="poly" id="edge124_Node000001_Node000103" title=" " alt="" coords="2466,1013,2435,1081,2413,1120,2387,1158,2362,1188,2336,1210,2288,1242,2243,1276,2221,1299,2201,1331,2185,1371,2179,1407,2180,1441,2184,1474,2187,1507,2185,1540,2175,1575,2153,1612,2130,1632,2103,1645,2101,1640,2127,1627,2149,1608,2170,1573,2180,1539,2182,1507,2179,1475,2175,1441,2174,1406,2180,1369,2196,1329,2217,1296,2239,1272,2285,1238,2333,1206,2358,1184,2383,1155,2408,1118,2430,1078,2462,1010"/>
+<area shape="rect" id="Node000135" href="$sps_8c.html#a4d6b349b73c22a06820874713c1cfa1f" title="Control function for the CONT driver state machine." alt="" coords="1432,505,1508,531"/>
+<area shape="poly" id="edge142_Node000001_Node000135" title=" " alt="" coords="2469,960,2460,877,2444,767,2418,664,2402,624,2383,599,2354,578,2315,561,2268,547,2214,535,2091,519,1956,511,1819,509,1692,510,1509,518,1508,513,1692,505,1819,503,1956,506,2091,514,2215,530,2270,542,2317,556,2357,574,2387,595,2407,622,2423,662,2449,766,2466,876,2475,959"/>
+<area shape="rect" id="Node000136" href="$sps_8c.html#a1d5464ca2118b329b74b051e73400a9e" title=" " alt="" coords="2231,1924,2353,1949"/>
+<area shape="poly" id="edge143_Node000001_Node000136" title=" " alt="" coords="2474,1013,2445,1250,2419,1419,2388,1591,2339,1790,2300,1924,2295,1923,2334,1788,2383,1589,2414,1418,2439,1250,2469,1012"/>
+<area shape="rect" id="Node000003" href="$can_8c.html#ad81d1fcadc20d4553accae9b7a7e5e3a" title="Enables the CAN transceiver.. This function sets th pins to enable the CAN transceiver...." alt="" coords="1989,255,2103,280"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2194,293,2103,279,2103,273,2195,287"/>
+<area shape="rect" id="Node000004" href="$sys_8c.html#ab9119b0dc92080bccc993dd04668d7a1" title="Processes the initialization state." alt="" coords="1668,207,1852,247"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1975,260,1852,243,1853,238,1976,255"/>
+<area shape="rect" id="Node000005" href="$sys_8c.html#a90dceb9878e7eb209511a7a9c0251ec4" title="Defines the state transitions." alt="" coords="1093,215,1259,240"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1654,230,1260,230,1260,225,1654,225"/>
+<area shape="rect" id="Node000006" href="$sys_8c.html#ade51c1203163eee5a4781db384725c95" title="tick function, call this to advance the state machine" alt="" coords="815,219,913,244"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1079,231,913,233,913,228,1079,226"/>
+<area shape="rect" id="Node000007" href="$ftask__cfg_8c.html#a7f3620825ec0f5072516255d6febebdb" title="Cyclic 10 ms task." alt="" coords="461,327,685,352"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="803,247,738,266,661,298,600,329,597,324,659,293,736,261,801,242"/>
+<area shape="rect" id="Node000008" href="$ftask_8c.html#a2a1d135e2e4e6fef538294d8c43d0328" title="Creation of cyclic 10 ms task." alt="" coords="197,353,405,379"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="448,354,406,358,405,353,448,349"/>
+<area shape="rect" id="Node000009" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="5,455,145,480"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="260,387,106,457,104,452,258,382"/>
+<area shape="poly" id="edge33_Node000013_Node000004" title=" " alt="" coords="2213,199,1852,224,1852,218,2212,194"/>
+<area shape="rect" id="Node000014" href="$fram_8c.html#a0236db97eeaadf90877aba70585b4d76" title="Initializes the addresses to be written in the FRAM." alt="" coords="1985,5,2107,31"/>
+<area shape="poly" id="edge10_Node000013_Node000014" title=" " alt="" coords="2273,169,2223,106,2188,72,2149,44,2107,28,2108,23,2152,40,2192,68,2227,102,2277,165"/>
+<area shape="poly" id="edge14_Node000013_Node000017" title=" " alt="" coords="2268,215,2217,255,2152,294,2116,306,2114,301,2150,289,2214,251,2265,211"/>
+<area shape="rect" id="Node000020" href="$bender__ir155__helper_8c.html#a7a058a6e4cadc732c1271c235c35894d" title="Software initialization of Timer&#45;module." alt="" coords="1985,455,2107,480"/>
+<area shape="poly" id="edge18_Node000013_Node000020" title=" " alt="" coords="2264,214,2231,244,2201,281,2190,304,2185,325,2183,366,2178,404,2169,424,2152,444,2132,458,2109,466,2107,461,2130,453,2149,440,2165,421,2173,403,2178,365,2180,324,2185,302,2196,278,2227,240,2260,210"/>
+<area shape="rect" id="Node000027" href="$group__state-estimation-api.html#ga4b10d18860f3dccdd177da5c7152a955" title="initializes startup SOC&#45;related values like lookup from nonvolatile ram at startup" alt="" coords="1948,153,2144,179"/>
+<area shape="poly" id="edge26_Node000013_Node000027" title=" " alt="" coords="2213,186,2144,179,2145,173,2213,181"/>
+<area shape="rect" id="Node000030" href="$group__state-estimation-api.html#gad6decb41b05619007d24857507205175" title="initializes startup state&#45;of&#45;energy (SOE) related values" alt="" coords="1949,104,2143,129"/>
+<area shape="poly" id="edge30_Node000013_Node000030" title=" " alt="" coords="2245,176,2150,143,2107,132,2108,127,2151,138,2247,171"/>
+<area shape="rect" id="Node000032" href="$sys__mon_8c.html#a7d5397f1f9625e8a4f454a429d3b6ee1" title="initialization function for system monitoring" alt="" coords="1985,55,2107,80"/>
+<area shape="poly" id="edge34_Node000013_Node000032" title=" " alt="" coords="2265,172,2214,132,2150,94,2106,80,2108,75,2152,89,2217,127,2268,167"/>
+<area shape="rect" id="Node000015" href="$ftask__cfg_8c.html#a1e587bbc77563e5b36509f0d19dd9393" title="Initializes the database." alt="" coords="1648,55,1872,80"/>
+<area shape="poly" id="edge11_Node000014_Node000015" title=" " alt="" coords="1972,33,1835,57,1834,52,1971,28"/>
+<area shape="rect" id="Node000016" href="$ftask_8c.html#a02c68a8157fb710452c3b33ff1b198fc" title="Database&#45;Task." alt="" coords="213,179,390,204"/>
+<area shape="poly" id="edge12_Node000015_Node000016" title=" " alt="" coords="1635,78,1421,89,1177,94,863,94,788,97,712,104,565,127,438,156,345,181,344,176,436,151,564,122,712,99,788,91,863,89,1177,89,1421,83,1634,73"/>
+<area shape="poly" id="edge13_Node000016_Node000009" title=" " alt="" coords="283,217,89,456,85,452,279,213"/>
+<area shape="rect" id="Node000018" href="$nxpfs85xx_8c.html#adbcda981b42a9a928aca6e027ec1dd50" title="Performs SBC safety path checks." alt="" coords="1671,276,1849,301"/>
+<area shape="poly" id="edge15_Node000017_Node000018" title=" " alt="" coords="1928,308,1848,300,1849,295,1928,302"/>
+<area shape="rect" id="Node000019" href="$sbc_8c.html#a3e0fcadd5fce6da908a572116eea2b4c" title="trigger function for the SYS driver state machine." alt="" coords="815,276,913,301"/>
+<area shape="poly" id="edge16_Node000018_Node000019" title=" " alt="" coords="1658,291,914,291,914,286,1658,286"/>
+<area shape="poly" id="edge17_Node000019_Node000007" title=" " alt="" coords="801,302,647,329,646,324,801,297"/>
+<area shape="rect" id="Node000021" href="$bender__ir155_8c.html#a3f8e4988b7809af6fc00a09941413094" title=" " alt="" coords="1675,452,1845,477"/>
+<area shape="poly" id="edge19_Node000020_Node000021" title=" " alt="" coords="1971,469,1845,468,1846,463,1971,464"/>
+<area shape="rect" id="Node000022" href="$bender__ir155_8c.html#a2d36547c63557e7044ef109ab775abd5" title="Processes the initialization state." alt="" coords="1377,441,1563,481"/>
+<area shape="poly" id="edge20_Node000021_Node000022" title=" " alt="" coords="1661,466,1564,465,1564,459,1661,461"/>
+<area shape="rect" id="Node000023" href="$imd_8c.html#a87872f9a830641539529f337d7ef7977" title="Defines the state transitions." alt="" coords="1091,479,1261,504"/>
+<area shape="poly" id="edge21_Node000022_Node000023" title=" " alt="" coords="1363,474,1261,485,1261,480,1363,469"/>
+<area shape="rect" id="Node000024" href="$imd_8c.html#a4e330aef339648367c39b94f5d2698f1" title="trigger function for the IMD driver state machine." alt="" coords="815,479,913,504"/>
+<area shape="poly" id="edge22_Node000023_Node000024" title=" " alt="" coords="1077,494,913,494,913,489,1077,489"/>
+<area shape="rect" id="Node000025" href="$ftask__cfg_8c.html#a5d63574dd6ec0e14d26d10acf949913b" title="Cyclic 100 ms task." alt="" coords="457,504,689,529"/>
+<area shape="poly" id="edge23_Node000024_Node000025" title=" " alt="" coords="801,499,690,509,689,504,801,494"/>
+<area shape="rect" id="Node000026" href="$ftask_8c.html#a17cb1d3d5baac3aae72d9ecf340557f5" title="Creation of cyclic 100 ms task." alt="" coords="193,479,409,504"/>
+<area shape="poly" id="edge24_Node000025_Node000026" title=" " alt="" coords="443,507,409,504,410,499,444,502"/>
+<area shape="poly" id="edge25_Node000026_Node000009" title=" " alt="" coords="179,481,145,477,146,472,180,476"/>
+<area shape="rect" id="Node000028" href="$state__estimation_8c.html#a59c32016e46a10cb749e59ac5bb9fc33" title="Wrapper for algorithm specific SOC initialization." alt="" coords="1698,153,1822,179"/>
+<area shape="poly" id="edge27_Node000027_Node000028" title=" " alt="" coords="1935,169,1822,169,1822,163,1935,163"/>
+<area shape="rect" id="Node000029" href="$sys_8c.html#a6bd4af68fc419de0a0e5c8f10af30f2b" title="Processes the pre running state." alt="" coords="1365,153,1575,179"/>
+<area shape="poly" id="edge28_Node000028_Node000029" title=" " alt="" coords="1684,169,1576,169,1576,163,1684,163"/>
+<area shape="poly" id="edge29_Node000029_Node000005" title=" " alt="" coords="1396,184,1238,217,1237,212,1394,179"/>
+<area shape="rect" id="Node000031" href="$state__estimation_8c.html#a1d66dc54b5a98192d7a7fcbe9182492b" title="Wrapper for algorithm specific SOE initialization." alt="" coords="1697,104,1823,129"/>
+<area shape="poly" id="edge31_Node000030_Node000031" title=" " alt="" coords="1935,119,1823,119,1823,114,1935,114"/>
+<area shape="poly" id="edge32_Node000031_Node000029" title=" " alt="" coords="1684,132,1546,156,1545,151,1683,127"/>
+<area shape="poly" id="edge35_Node000032_Node000015" title=" " alt="" coords="1972,70,1872,70,1872,65,1972,65"/>
+<area shape="poly" id="edge41_Node000033_Node000017" title=" " alt="" coords="2255,708,2224,682,2196,647,2179,604,2173,565,2175,527,2181,491,2185,456,2183,422,2173,387,2149,351,2122,332,2125,327,2153,347,2178,385,2189,421,2190,456,2186,492,2181,527,2179,564,2184,603,2201,645,2227,678,2259,704"/>
+<area shape="poly" id="edge42_Node000033_Node000018" title=" " alt="" coords="2256,708,2224,682,2196,647,2181,611,2176,576,2180,513,2183,483,2181,454,2171,425,2149,394,2125,374,2102,362,2079,356,2055,354,2003,354,1973,351,1940,343,1892,323,1822,304,1823,299,1894,318,1942,338,1974,346,2003,349,2056,349,2080,351,2104,357,2128,369,2153,391,2175,422,2186,453,2188,483,2185,514,2181,576,2186,609,2201,645,2228,678,2259,703"/>
+<area shape="rect" id="Node000034" href="$diag__cbs__deep-discharge_8c.html#a73c51ebd39abd4ba0c0e60648142bfaf" title="diagnosis callback function for deep discharge events" alt="" coords="1950,656,2142,681"/>
+<area shape="poly" id="edge37_Node000033_Node000034" title=" " alt="" coords="2223,713,2101,684,2102,679,2224,708"/>
+<area shape="rect" id="Node000035" href="$fram_8c.html#a6d7c5fe74d5d10147e4fd38864a474c8" title="Reinitialize all entries in the FRAM." alt="" coords="1945,607,2147,632"/>
+<area shape="poly" id="edge38_Node000033_Node000035" title=" " alt="" coords="2261,708,2210,676,2150,646,2115,635,2116,630,2152,641,2213,671,2263,703"/>
+<area shape="rect" id="Node000038" href="$group__state-estimation-api.html#ga23fd935c8f32702285c6d97a688bd6d8" title="periodically called algorithm to calculate state&#45;of&#45;charge (SOC)" alt="" coords="1369,816,1571,841"/>
+<area shape="poly" id="edge43_Node000033_Node000038" title=" " alt="" coords="2280,752,2260,785,2232,824,2195,860,2152,888,2111,896,2044,898,1872,888,1626,863,1524,844,1525,839,1627,858,1873,883,2045,892,2110,891,2150,884,2192,856,2228,820,2256,782,2276,749"/>
+<area shape="rect" id="Node000040" href="$group__state-estimation-api.html#gaeb9b1d83b826af8dfdd7f89abd44b4c3" title="periodically called algorithm to calculate state&#45;of&#45;energy (SOE)" alt="" coords="1660,713,1860,739"/>
+<area shape="poly" id="edge46_Node000033_Node000040" title=" " alt="" coords="2234,745,2151,761,2046,768,1941,761,1877,752,1818,741,1819,736,1878,747,1942,755,2046,762,2150,755,2233,740"/>
+<area shape="rect" id="Node000041" href="$soc__counting_8c.html#a7abd073295c29aaeb17a03fccdc4fd33" title="initializes database and FRAM SOC values via lookup table (average, minimum and maximum)." alt="" coords="1661,809,1859,849"/>
+<area shape="poly" id="edge48_Node000033_Node000041" title=" " alt="" coords="2276,752,2255,779,2226,810,2191,839,2152,860,2109,874,2064,881,2018,883,1973,881,1889,869,1820,851,1821,846,1890,863,1974,876,2018,878,2063,876,2107,869,2150,856,2188,834,2223,806,2251,775,2272,748"/>
+<area shape="rect" id="Node000042" href="$soc__counting_8c.html#a169cb66540755e39d4f97c9c139fcd70" title="sets SOC value with a parameter between 0.0 and 100.0." alt="" coords="1989,821,2103,847"/>
+<area shape="poly" id="edge50_Node000033_Node000042" title=" " alt="" coords="2260,748,2210,777,2152,804,2096,824,2094,819,2150,800,2207,772,2257,744"/>
+<area shape="rect" id="Node000043" href="$soe__counting_8c.html#ad914661b01e25279b36ebd802252005b" title="initializes database and FRAM SOE values via lookup table (average, min and max)." alt="" coords="1948,706,2144,746"/>
+<area shape="poly" id="edge52_Node000033_Node000043" title=" " alt="" coords="2211,729,2144,729,2144,723,2211,723"/>
+<area shape="rect" id="Node000044" href="$sys__mon_8c.html#a5cf21eb467cbbed65c86a612dc5bdcd0" title="Commits the stored changes to FRAM if necessary." alt="" coords="1958,405,2134,431"/>
+<area shape="poly" id="edge54_Node000033_Node000044" title=" " alt="" coords="2256,708,2225,681,2196,647,2183,618,2177,590,2179,539,2179,515,2177,491,2167,468,2149,444,2133,432,2136,428,2153,440,2172,465,2182,490,2185,514,2184,539,2183,590,2188,616,2201,645,2228,678,2260,703"/>
+<area shape="rect" id="Node000036" href="$can__cbs__rx__debug_8c.html#a6a53561b1ce0fe23c5e9de1b171d143b" title="Parses CAN message related to FRAM initialization." alt="" coords="1627,607,1893,632"/>
+<area shape="poly" id="edge39_Node000035_Node000036" title=" " alt="" coords="1931,622,1894,622,1894,617,1931,617"/>
+<area shape="rect" id="Node000037" href="$can__cbs__rx__debug_8c.html#a84497271094adbc56d3660ee37d154a8" title="CAN Rx callback function for debug messages." alt="" coords="1411,607,1529,632"/>
+<area shape="poly" id="edge40_Node000036_Node000037" title=" " alt="" coords="1613,622,1529,622,1529,617,1613,617"/>
+<area shape="rect" id="Node000039" href="$state__estimation_8c.html#afa7538094da4b3fce0b58b02b340f419" title="Main function to perform state estimations." alt="" coords="1085,529,1267,555"/>
+<area shape="poly" id="edge44_Node000038_Node000039" title=" " alt="" coords="1440,809,1399,769,1359,718,1349,697,1344,677,1340,641,1334,608,1326,592,1312,576,1290,562,1266,552,1268,547,1293,557,1315,572,1330,589,1339,606,1346,640,1349,676,1354,695,1364,715,1403,766,1444,805"/>
+<area shape="poly" id="edge45_Node000039_Node000025" title=" " alt="" coords="1071,540,690,524,690,519,1071,535"/>
+<area shape="poly" id="edge47_Node000040_Node000039" title=" " alt="" coords="1646,727,1578,720,1503,705,1429,681,1393,665,1360,645,1343,628,1335,610,1327,592,1312,576,1290,564,1266,556,1268,551,1292,559,1315,572,1332,589,1340,608,1347,625,1363,641,1396,660,1431,676,1505,700,1579,715,1647,722"/>
+<area shape="poly" id="edge49_Node000041_Node000038" title=" " alt="" coords="1648,831,1571,831,1571,826,1648,826"/>
+<area shape="poly" id="edge51_Node000042_Node000041" title=" " alt="" coords="1975,835,1859,833,1859,828,1976,830"/>
+<area shape="poly" id="edge53_Node000043_Node000040" title=" " alt="" coords="1934,729,1860,729,1860,723,1934,723"/>
+<area shape="poly" id="edge55_Node000044_Node000007" title=" " alt="" coords="1957,405,1941,401,1917,391,1893,383,1776,359,1684,347,1591,343,1471,342,1175,342,686,342,686,337,1175,337,1471,337,1591,337,1684,342,1777,354,1894,378,1918,386,1942,395,1959,400"/>
+<area shape="rect" id="Node000045" href="$sys__mon_8c.html#a3393e89170cf26792cb00bfa8f7943f2" title="Clears all timing violations (both current and recorded)" alt="" coords="1647,393,1873,419"/>
+<area shape="poly" id="edge56_Node000044_Node000045" title=" " alt="" coords="1944,416,1874,413,1874,408,1944,411"/>
+<area shape="rect" id="Node000046" href="$can__cbs__rx__bms-state-request_8c.html#a41d6ab776c1727d39cad2e37355c390f" title="clears the persistent flags" alt="" coords="1375,377,1565,417"/>
+<area shape="poly" id="edge57_Node000045_Node000046" title=" " alt="" coords="1632,405,1565,402,1566,397,1633,399"/>
+<area shape="rect" id="Node000047" href="$can__cbs__rx__bms-state-request_8c.html#ace804ae0e73ea0d6ef08cdc38e09ca35" title="CAN Rx callback function for state requests." alt="" coords="1081,377,1271,403"/>
+<area shape="poly" id="edge58_Node000046_Node000047" title=" " alt="" coords="1361,397,1272,395,1272,389,1361,392"/>
+<area shape="poly" id="edge61_Node000048_Node000023" title=" " alt="" coords="2222,609,2150,597,2030,585,1928,583,1752,589,1668,591,1578,587,1478,572,1360,545,1336,532,1312,519,1260,505,1261,500,1314,514,1338,527,1362,539,1479,567,1579,581,1668,586,1752,584,1928,577,2031,580,2151,591,2223,604"/>
+<area shape="rect" id="Node000011" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="2019,973,2073,999"/>
+<area shape="poly" id="edge63_Node000049_Node000011" title=" " alt="" coords="2208,989,2074,989,2074,983,2208,983"/>
+<area shape="rect" id="Node000012" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="1722,924,1798,949"/>
+<area shape="poly" id="edge64_Node000011_Node000012" title=" " alt="" coords="2005,982,1798,946,1798,940,2006,977"/>
+<area shape="poly" id="edge66_Node000050_Node000025" title=" " alt="" coords="801,580,737,563,620,532,622,527,738,558,802,575"/>
+<area shape="rect" id="Node000052" href="$group__mxm-41b-state-handlers.html#gafed0c8a844b5fa7197d9257b159eca61" title="init state handler" alt="" coords="1079,1821,1273,1847"/>
+<area shape="poly" id="edge68_Node000051_Node000052" title=" " alt="" coords="2280,1380,2243,1452,2201,1542,2190,1582,2186,1617,2178,1650,2168,1666,2152,1683,2123,1704,2086,1722,1991,1754,1875,1780,1746,1799,1614,1814,1485,1824,1273,1834,1273,1829,1484,1819,1613,1809,1746,1794,1874,1775,1990,1749,2084,1717,2121,1699,2149,1679,2164,1663,2173,1648,2181,1616,2185,1581,2196,1540,2238,1449,2275,1378"/>
+<area shape="rect" id="Node000053" href="$mxm__17841b_8c.html#a0ea1ec4dd5b5f45e291edd394772ea46" title="Execute state&#45;machine for the MAX17841B." alt="" coords="776,1821,952,1847"/>
+<area shape="poly" id="edge69_Node000052_Node000053" title=" " alt="" coords="1066,1837,952,1837,952,1831,1066,1831"/>
+<area shape="rect" id="Node000054" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="529,1821,618,1847"/>
+<area shape="poly" id="edge70_Node000053_Node000054" title=" " alt="" coords="762,1837,618,1837,618,1831,762,1831"/>
+<area shape="rect" id="Node000057" href="$dp83869_8c.html#ab475f73c5ea6ddc0430e035de3936a98" title=" " alt="" coords="1991,1875,2101,1900"/>
+<area shape="poly" id="edge72_Node000056_Node000057" title=" " alt="" coords="2288,1592,2273,1647,2247,1718,2207,1792,2182,1826,2152,1856,2129,1871,2102,1881,2101,1876,2126,1867,2149,1852,2178,1822,2203,1789,2242,1715,2268,1645,2283,1590"/>
+<area shape="rect" id="Node000058" href="$ftask__cfg_8c.html#a7b63e9ba46a78a3e6b3bd8feb7c8a7a8" title="Initialization function before all tasks started." alt="" coords="1659,1923,1861,1963"/>
+<area shape="poly" id="edge73_Node000057_Node000058" title=" " alt="" coords="1978,1903,1861,1926,1860,1921,1976,1898"/>
+<area shape="rect" id="Node000059" href="$ftask_8c.html#a4fdc9f7eff77294f53e37225751fe564" title="Creation of cyclic 1 ms task." alt="" coords="473,1953,673,1979"/>
+<area shape="poly" id="edge74_Node000058_Node000059" title=" " alt="" coords="1660,1969,1498,2001,1406,2015,1314,2026,1219,2031,1122,2032,933,2021,766,2001,642,1981,642,1976,767,1996,934,2015,1122,2026,1219,2026,1313,2021,1405,2010,1497,1996,1659,1964"/>
+<area shape="poly" id="edge75_Node000059_Node000009" title=" " alt="" coords="540,1947,496,1910,474,1887,455,1861,400,1762,350,1659,306,1553,267,1445,232,1336,201,1228,152,1020,117,830,94,670,75,480,80,480,99,669,122,829,157,1019,206,1227,237,1335,272,1443,311,1551,355,1657,405,1760,460,1858,478,1883,500,1906,543,1943"/>
+<area shape="rect" id="Node000061" href="$adi__ades183x__helpers_8c.html#a9edad319da42f91773751ec974f19dc9" title="Transmits and receives data on SPI." alt="" coords="1655,1149,1865,1175"/>
+<area shape="poly" id="edge77_Node000060_Node000061" title=" " alt="" coords="2211,1141,2151,1146,1866,1161,1865,1155,2150,1141,2210,1136"/>
+<area shape="rect" id="Node000094" href="$mxm__cfg_8c.html#ae7cec69276fadde6665026fadc7eb390" title="Transmit data over SPI." alt="" coords="1983,1572,2109,1597"/>
+<area shape="poly" id="edge110_Node000060_Node000094" title=" " alt="" coords="2258,1154,2228,1176,2201,1205,2168,1255,2140,1308,2095,1417,2067,1511,2052,1573,2047,1571,2062,1510,2090,1415,2135,1306,2163,1252,2197,1202,2225,1172,2255,1149"/>
+<area shape="rect" id="Node000102" href="$spi_8c.html#a7257a51d6c1ff52a408850115e9a5ae8" title="Sends a dummy byte to wake up the SPI interface." alt="" coords="1953,1105,2139,1131"/>
+<area shape="poly" id="edge122_Node000060_Node000102" title=" " alt="" coords="2210,1130,2140,1126,2140,1120,2210,1124"/>
+<area shape="rect" id="Node000062" href="$adi__ades183x__helpers_8c.html#a1d3a54a6f57885e412672c1b8a8ef511" title="send command to the ades183x daisy&#45;chain to read a register." alt="" coords="1401,1264,1539,1289"/>
+<area shape="poly" id="edge78_Node000061_Node000062" title=" " alt="" coords="1715,1182,1504,1266,1502,1261,1713,1177"/>
+<area shape="rect" id="Node000084" href="$adi__ades183x__helpers_8c.html#ad55d14108eb488d5eb623b7fe324d090" title="send command to the ades183x daisy&#45;chain (e.g., start voltage measurement)." alt="" coords="1383,917,1557,943"/>
+<area shape="poly" id="edge90_Node000061_Node000084" title=" " alt="" coords="1731,1143,1485,945,1489,941,1734,1139"/>
+<area shape="rect" id="Node000089" href="$adi__ades183x__initialization_8c.html#a5b280ca73e87678d6477e786fc260bda" title="Wake up the AFE." alt="" coords="1381,1129,1559,1155"/>
+<area shape="poly" id="edge105_Node000061_Node000089" title=" " alt="" coords="1641,1156,1559,1151,1560,1145,1641,1151"/>
+<area shape="rect" id="Node000090" href="$adi__ades183x__helpers_8c.html#a5f08addb54c17a918cf0e4fd90114bda" title="sends command to the ades183x daisy&#45;chain to write data." alt="" coords="1399,1444,1541,1469"/>
+<area shape="poly" id="edge107_Node000061_Node000090" title=" " alt="" coords="1738,1187,1486,1446,1482,1442,1734,1183"/>
+<area shape="rect" id="Node000063" href="$adi__ades1830__gpio__voltages_8c.html#a8e0311e2d7bf6fc23de2d88347fa3a08" title="Stores GPIO voltages." alt="" coords="1095,1177,1257,1203"/>
+<area shape="poly" id="edge79_Node000062_Node000063" title=" " alt="" coords="1428,1261,1374,1239,1313,1218,1256,1205,1257,1200,1314,1213,1375,1234,1430,1256"/>
+<area shape="rect" id="Node000071" href="$adi__ades183x__initialization_8c.html#a6ae7b20c52ba97b81202504b97682da4" title="TODO." alt="" coords="1079,1227,1273,1267"/>
+<area shape="poly" id="edge81_Node000062_Node000071" title=" " alt="" coords="1387,1271,1273,1260,1273,1254,1387,1266"/>
+<area shape="rect" id="Node000072" href="$adi__ades183x__initialization_8c.html#aa516aa9e66d4dd66a4c24655849c0707" title="Implements the initialization for the ades183x driver." alt="" coords="765,1127,963,1152"/>
+<area shape="poly" id="edge87_Node000062_Node000072" title=" " alt="" coords="1396,1294,1320,1305,1229,1310,1132,1304,1084,1295,1038,1282,984,1255,937,1219,899,1183,874,1154,878,1151,903,1179,941,1215,987,1250,1040,1277,1085,1290,1133,1299,1229,1304,1320,1299,1395,1289"/>
+<area shape="rect" id="Node000074" href="$adi__ades183x__initialization_8c.html#ae9f779f108dd80511d0b6ace3f3f0cb5" title="TODO." alt="" coords="1085,1342,1267,1382"/>
+<area shape="poly" id="edge83_Node000062_Node000074" title=" " alt="" coords="1414,1296,1314,1326,1249,1344,1248,1339,1313,1321,1413,1291"/>
+<area shape="rect" id="Node000075" href="$adi__ades183x__voltages_8c.html#aaeef9f18e7911c4df1ff770108860a92" title="Reads and stores string and module voltages." alt="" coords="1059,975,1293,1000"/>
+<area shape="poly" id="edge85_Node000062_Node000075" title=" " alt="" coords="1441,1257,1400,1218,1359,1169,1344,1140,1337,1114,1329,1091,1311,1065,1289,1045,1263,1027,1212,1002,1214,998,1265,1023,1292,1040,1315,1062,1334,1088,1342,1113,1349,1138,1364,1166,1404,1214,1444,1253"/>
+<area shape="rect" id="Node000076" href="$adi__ades183x__voltages_8c.html#a352abba3ac5b56d8b91627b61035191a" title="Copies the related command bytes to read the average voltage registers." alt="" coords="1076,1407,1276,1432"/>
+<area shape="poly" id="edge88_Node000062_Node000076" title=" " alt="" coords="1448,1301,1391,1350,1354,1375,1314,1396,1277,1409,1275,1404,1312,1392,1351,1371,1387,1346,1444,1297"/>
+<area shape="rect" id="Node000078" href="$adi__ades183x__helpers_8c.html#aaf96dd588e15d5ca35b1aa627fee3520" title="Sends data in the configuration stored in driver to all AFEs in the daisy chain, for a specific confi..." alt="" coords="1068,1457,1284,1497"/>
+<area shape="poly" id="edge89_Node000062_Node000078" title=" " alt="" coords="1456,1302,1400,1375,1360,1414,1315,1447,1285,1461,1283,1456,1312,1442,1357,1410,1396,1371,1451,1299"/>
+<area shape="rect" id="Node000064" href="$adi__ades183x_8c.html#abbd2cae828e06fecab18f603efe803d0" title=" " alt="" coords="737,771,991,796"/>
+<area shape="poly" id="edge80_Node000063_Node000064" title=" " alt="" coords="1126,1174,1080,1150,1037,1116,1002,1075,970,1030,920,936,885,853,867,797,872,795,890,851,925,934,975,1027,1006,1072,1041,1112,1083,1145,1129,1169"/>
+<area shape="poly" id="edge82_Node000071_Node000072" title=" " alt="" coords="1066,1226,1038,1218,956,1186,889,1155,892,1150,958,1181,1040,1213,1067,1221"/>
+<area shape="poly" id="edge84_Node000074_Node000072" title=" " alt="" coords="1071,1342,1037,1326,982,1284,934,1235,896,1188,872,1154,876,1151,900,1185,938,1231,985,1280,1040,1321,1073,1337"/>
+<area shape="poly" id="edge86_Node000075_Node000064" title=" " alt="" coords="1056,973,1037,964,981,925,933,878,896,832,871,798,876,795,900,829,937,874,985,921,1040,960,1058,968"/>
+<area shape="poly" id="edge100_Node000084_Node000064" title=" " alt="" coords="1377,913,1359,900,1343,877,1336,853,1338,805,1339,782,1338,761,1330,740,1312,721,1286,705,1259,693,1230,685,1200,681,1138,683,1077,694,1018,712,965,734,888,773,886,768,963,729,1016,707,1076,689,1138,677,1200,676,1231,680,1260,688,1289,700,1315,717,1334,738,1343,759,1345,782,1343,805,1341,852,1348,874,1363,896,1380,909"/>
+<area shape="poly" id="edge97_Node000084_Node000072" title=" " alt="" coords="1439,952,1382,984,1314,1014,1238,1034,1177,1042,1116,1048,1039,1066,957,1097,891,1129,889,1124,955,1092,1038,1061,1115,1043,1176,1036,1237,1029,1312,1009,1380,979,1436,948"/>
+<area shape="poly" id="edge96_Node000084_Node000075" title=" " alt="" coords="1396,948,1314,965,1247,977,1246,972,1313,959,1395,943"/>
+<area shape="rect" id="Node000083" href="$adi__ades183x_8c.html#a030ee5d9aeb5ff5ec2283e630c9d224f" title="Sets the balancing according to the control values read in the database." alt="" coords="1101,631,1251,656"/>
+<area shape="poly" id="edge91_Node000084_Node000083" title=" " alt="" coords="1376,913,1359,900,1340,871,1332,842,1332,814,1335,786,1339,758,1338,731,1331,704,1311,677,1284,658,1251,648,1252,643,1286,654,1315,673,1335,701,1344,730,1344,758,1341,786,1337,814,1337,842,1345,869,1363,896,1379,909"/>
+<area shape="rect" id="Node000085" href="$adi__ades183x__helpers_8c.html#a4936e0089a71c132bbb577336e531635" title="Send RSTCC to AFEs in daisy&#45;chain and clear command counter of AFE driver." alt="" coords="1074,1076,1278,1101"/>
+<area shape="poly" id="edge93_Node000084_Node000085" title=" " alt="" coords="1449,955,1392,1008,1355,1035,1314,1059,1259,1078,1257,1073,1312,1054,1352,1031,1388,1004,1445,951"/>
+<area shape="rect" id="Node000081" href="$adi__ades1830__balancing_8c.html#a159252cb5bb314c615da5f613831aa32" title="Disable balancing." alt="" coords="1083,860,1269,885"/>
+<area shape="poly" id="edge95_Node000084_Node000081" title=" " alt="" coords="1395,917,1313,901,1246,888,1247,883,1314,895,1396,912"/>
+<area shape="rect" id="Node000086" href="$adi__ades183x__voltages_8c.html#a9b52b886ed0afba9c8ebcc16b22710ce" title="Restart cell voltage measurement." alt="" coords="1077,731,1275,771"/>
+<area shape="poly" id="edge98_Node000084_Node000086" title=" " alt="" coords="1380,914,1360,900,1347,885,1340,870,1335,841,1330,812,1324,799,1312,785,1294,773,1274,765,1276,760,1296,769,1315,781,1328,795,1335,810,1340,840,1345,869,1351,882,1363,896,1383,909"/>
+<area shape="rect" id="Node000087" href="$adi__ades183x__initialization_8c.html#a81f034003e88e25a36509825ceeb81a6" title="Start cell voltage measurement." alt="" coords="1061,910,1291,950"/>
+<area shape="poly" id="edge101_Node000084_Node000087" title=" " alt="" coords="1369,933,1291,933,1291,927,1369,927"/>
+<area shape="rect" id="Node000088" href="$adi__ades183x__voltages_8c.html#a04eb427c69716b48ddbb8e3a02d24ce4" title="Stop cell voltage measurement." alt="" coords="1062,795,1290,835"/>
+<area shape="poly" id="edge103_Node000084_Node000088" title=" " alt="" coords="1392,915,1360,900,1344,887,1335,874,1327,861,1312,850,1287,838,1289,833,1315,845,1330,858,1340,871,1348,884,1363,896,1394,911"/>
+<area shape="poly" id="edge92_Node000083_Node000064" title=" " alt="" coords="1089,662,1040,678,993,700,949,727,883,773,880,768,946,722,991,696,1038,673,1087,657"/>
+<area shape="poly" id="edge94_Node000085_Node000072" title=" " alt="" coords="1084,1106,943,1129,943,1124,1083,1101"/>
+<area shape="poly" id="edge99_Node000086_Node000064" title=" " alt="" coords="1064,765,988,773,988,768,1063,760"/>
+<area shape="poly" id="edge102_Node000087_Node000072" title=" " alt="" coords="1053,958,1040,964,985,1003,938,1050,901,1094,876,1128,872,1125,897,1091,934,1046,982,999,1037,960,1051,953"/>
+<area shape="poly" id="edge104_Node000088_Node000064" title=" " alt="" coords="1048,805,988,799,988,793,1048,800"/>
+<area shape="poly" id="edge106_Node000089_Node000072" title=" " alt="" coords="1367,1144,963,1142,963,1137,1367,1139"/>
+<area shape="poly" id="edge108_Node000090_Node000078" title=" " alt="" coords="1386,1465,1285,1472,1284,1467,1385,1460"/>
+<area shape="rect" id="Node000091" href="$adi__ades183x__helpers_8c.html#aa1da17b6dd65b118d4b3df07365dd576" title="Write the same 6 bytes to all devices in the daisy&#45;chain." alt="" coords="1085,1521,1267,1547"/>
+<area shape="poly" id="edge109_Node000090_Node000091" title=" " alt="" coords="1389,1476,1362,1484,1339,1498,1314,1511,1268,1524,1267,1519,1312,1506,1336,1493,1360,1480,1388,1470"/>
+<area shape="rect" id="Node000095" href="$mxm__17841b_8c.html#acf55cee5ae15654177643f937054c952" title="Write a buffer transaction to MAX17841B." alt="" coords="1389,1673,1551,1699"/>
+<area shape="poly" id="edge111_Node000094_Node000095" title=" " alt="" coords="1970,1600,1544,1676,1543,1671,1969,1595"/>
+<area shape="rect" id="Node000097" href="$mxm__17841b_8c.html#a1e6810277173e48449155251562be540" title="Write one or multiple registers of MAX17841B." alt="" coords="1672,1572,1848,1597"/>
+<area shape="poly" id="edge114_Node000094_Node000097" title=" " alt="" coords="1970,1587,1848,1587,1848,1582,1970,1582"/>
+<area shape="rect" id="Node000096" href="$group__mxm-41b-state-handlers.html#gab36b0cda14a8403e19a2efcda97ebe8c" title="state handler for &quot;uart transaction&quot;" alt="" coords="1039,1673,1313,1699"/>
+<area shape="poly" id="edge112_Node000095_Node000096" title=" " alt="" coords="1376,1689,1313,1689,1313,1683,1376,1683"/>
+<area shape="poly" id="edge113_Node000096_Node000053" title=" " alt="" coords="1065,1705,1040,1714,991,1739,946,1769,881,1823,877,1819,943,1765,988,1734,1038,1709,1064,1700"/>
+<area shape="poly" id="edge121_Node000097_Node000096" title=" " alt="" coords="1673,1602,1251,1676,1250,1671,1672,1597"/>
+<area shape="rect" id="Node000098" href="$mxm__17841b_8c.html#a23f72a19d061e3fd2d4095f4e6b10d8c" title="Write the config register of MAX17841B." alt="" coords="1361,1772,1579,1797"/>
+<area shape="poly" id="edge115_Node000097_Node000098" title=" " alt="" coords="1727,1607,1678,1642,1629,1686,1615,1707,1607,1726,1598,1745,1580,1763,1559,1774,1556,1770,1577,1759,1594,1742,1602,1724,1610,1704,1625,1683,1675,1637,1724,1603"/>
+<area shape="rect" id="Node000100" href="$group__mxm-41b-state-handlers.html#ga660930e423c39dfb48ce3304564b894f" title="state handler for &quot;clear receive buffer&quot;" alt="" coords="1367,1494,1573,1534"/>
+<area shape="poly" id="edge117_Node000097_Node000100" title=" " alt="" coords="1693,1571,1552,1537,1553,1531,1694,1566"/>
+<area shape="rect" id="Node000101" href="$group__mxm-41b-state-handlers.html#ga1367e1670ab7be0ea72a917396e6c813" title="state handler for &quot;clear transmit buffer&quot;" alt="" coords="1367,1558,1573,1598"/>
+<area shape="poly" id="edge119_Node000097_Node000101" title=" " alt="" coords="1658,1585,1574,1583,1574,1578,1658,1580"/>
+<area shape="poly" id="edge116_Node000098_Node000052" title=" " alt="" coords="1381,1802,1253,1824,1252,1819,1380,1797"/>
+<area shape="poly" id="edge118_Node000100_Node000053" title=" " alt="" coords="1389,1540,1314,1562,1272,1570,1235,1574,1171,1576,1141,1579,1110,1585,1077,1597,1040,1616,1009,1639,980,1665,931,1725,895,1781,874,1822,869,1820,891,1779,927,1722,976,1662,1005,1635,1037,1612,1075,1592,1109,1580,1140,1573,1170,1571,1234,1569,1271,1565,1313,1557,1387,1535"/>
+<area shape="poly" id="edge120_Node000101_Node000053" title=" " alt="" coords="1354,1600,1163,1634,1084,1651,1040,1664,985,1702,938,1746,901,1790,876,1823,872,1819,897,1787,934,1743,982,1697,1038,1660,1082,1646,1162,1629,1353,1594"/>
+<area shape="poly" id="edge123_Node000102_Node000061" title=" " alt="" coords="1950,1135,1844,1152,1843,1147,1949,1130"/>
+<area shape="rect" id="Node000104" href="$group__Extern.html#ga1b7c11ee24b9fe8c8e104ae40a350e26" title="This function transfers single frame through blocking SPI communication in both directions...." alt="" coords="1675,1696,1845,1721"/>
+<area shape="poly" id="edge125_Node000103_Node000104" title=" " alt="" coords="1964,1673,1829,1699,1828,1693,1963,1668"/>
+<area shape="rect" id="Node000129" href="$mxm__cfg_8c.html#a116a8b81cf7c1912c50c1212aa0ff9a8" title="Send and Receive data over SPI." alt="" coords="1687,1873,1833,1899"/>
+<area shape="poly" id="edge129_Node000103_Node000129" title=" " alt="" coords="2020,1679,1779,1875,1775,1871,2017,1675"/>
+<area shape="rect" id="Node000134" href="$sps_8c.html#a3b0b5c63417cabc94688fd3cf78cd94c" title="Transmit all assembled messages for one timeframe." alt="" coords="1705,973,1815,999"/>
+<area shape="poly" id="edge139_Node000103_Node000134" title=" " alt="" coords="1974,1639,1955,1628,1939,1612,1929,1593,1921,1570,1911,1514,1907,1449,1907,1378,1907,1241,1902,1183,1891,1139,1866,1095,1835,1056,1776,1001,1780,997,1839,1053,1870,1092,1896,1137,1907,1182,1912,1240,1912,1378,1913,1449,1916,1514,1926,1569,1933,1591,1943,1608,1958,1624,1977,1635"/>
+<area shape="rect" id="Node000105" href="$sbc__fs8x__communication_8c.html#adab1bd280fc620a6cd8c881dbc3773ff" title="Performs SPI transfer of the txData. Received frame is saved into rxData structure." alt="" coords="1385,1723,1555,1748"/>
+<area shape="poly" id="edge126_Node000104_Node000105" title=" " alt="" coords="1661,1720,1556,1730,1555,1725,1661,1715"/>
+<area shape="rect" id="Node000106" href="$group__API.html#gab8787e2ae04f3f2810ca95df41b69190" title="Performs a read from a single FS8x register." alt="" coords="1103,1723,1249,1748"/>
+<area shape="poly" id="edge127_Node000105_Node000106" title=" " alt="" coords="1371,1738,1250,1738,1250,1733,1371,1733"/>
+<area shape="rect" id="Node000122" href="$group__API.html#ga45774357f5c85905d3b03812c03a0eb4" title="Sends write command to the FS8x." alt="" coords="1101,1772,1251,1797"/>
+<area shape="poly" id="edge128_Node000105_Node000122" title=" " alt="" coords="1380,1753,1252,1775,1251,1770,1380,1748"/>
+<area shape="rect" id="Node000130" href="$mxm__17841b_8c.html#a70233222d0d1b152129a1b518ceb8937" title="Read one or multiple registers of MAX17841B." alt="" coords="1383,1873,1557,1899"/>
+<area shape="poly" id="edge130_Node000129_Node000130" title=" " alt="" coords="1674,1889,1558,1889,1558,1883,1674,1883"/>
+<area shape="poly" id="edge135_Node000130_Node000052" title=" " alt="" coords="1383,1873,1248,1849,1249,1844,1384,1868"/>
+<area shape="poly" id="edge138_Node000130_Node000096" title=" " alt="" coords="1430,1869,1394,1844,1359,1812,1343,1784,1337,1759,1330,1735,1312,1713,1290,1701,1293,1696,1315,1709,1335,1733,1343,1757,1348,1782,1363,1808,1397,1840,1433,1864"/>
+<area shape="rect" id="Node000131" href="$group__mxm-41b-state-handlers.html#gafd5389790a0314574db4f6927aef0ddc" title="state handler for &quot;check fmea&quot;" alt="" coords="1051,1985,1301,2011"/>
+<area shape="poly" id="edge131_Node000130_Node000131" title=" " alt="" coords="1440,1909,1384,1943,1314,1975,1269,1988,1268,1983,1312,1970,1381,1938,1438,1904"/>
+<area shape="rect" id="Node000132" href="$group__mxm-41b-state-handlers.html#gaf38f0269d733292924c94ca632bbbb60" title="state handler for &quot;get version&quot;" alt="" coords="1055,1871,1297,1896"/>
+<area shape="poly" id="edge133_Node000130_Node000132" title=" " alt="" coords="1369,1888,1297,1887,1297,1882,1369,1882"/>
+<area shape="rect" id="Node000133" href="$group__mxm-41b-state-handlers.html#gad0516f91d78f46e8d6beaac3ec78b2af" title="state handler for &quot;read status register&quot;" alt="" coords="1053,1921,1299,1961"/>
+<area shape="poly" id="edge136_Node000130_Node000133" title=" " alt="" coords="1388,1904,1285,1923,1284,1918,1387,1899"/>
+<area shape="poly" id="edge132_Node000131_Node000053" title=" " alt="" coords="1061,1984,1038,1975,986,1946,940,1910,875,1849,879,1845,943,1906,989,1941,1040,1970,1062,1979"/>
+<area shape="poly" id="edge134_Node000132_Node000053" title=" " alt="" coords="1081,1871,945,1849,946,1844,1082,1866"/>
+<area shape="poly" id="edge137_Node000133_Node000053" title=" " alt="" coords="1066,1920,1038,1911,956,1880,890,1849,892,1844,958,1875,1040,1906,1067,1915"/>
+<area shape="poly" id="edge140_Node000134_Node000135" title=" " alt="" coords="1690,991,1655,983,1639,974,1625,963,1606,940,1593,917,1585,895,1581,873,1582,829,1590,785,1599,740,1603,694,1598,646,1589,621,1576,595,1561,575,1541,558,1500,533,1503,528,1544,554,1564,571,1581,593,1594,619,1603,645,1609,694,1604,741,1595,786,1587,829,1586,872,1590,894,1598,915,1611,937,1629,959,1642,970,1657,978,1692,986"/>
+<area shape="poly" id="edge141_Node000135_Node000007" title=" " alt="" coords="1417,512,1360,495,1336,481,1312,469,1040,419,652,355,653,349,1041,413,1314,463,1339,477,1362,490,1419,507"/>
+<area shape="rect" id="Node000137" href="$sps_8c.html#a128f703730c477c2c83c2aaaad02f233" title="Initialize IOs for the SPS driver." alt="" coords="1991,1928,2101,1953"/>
+<area shape="poly" id="edge144_Node000136_Node000137" title=" " alt="" coords="2218,1941,2101,1942,2101,1937,2218,1935"/>
+<area shape="poly" id="edge145_Node000137_Node000058" title=" " alt="" coords="1978,1944,1861,1945,1861,1940,1978,1939"/>
+</map>

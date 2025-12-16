@@ -1,0 +1,25 @@
+<map id="foxbms&#45;2/src/app/application/config/bal_cfg.h" name="foxbms&#45;2/src/app/application/config/bal_cfg.h">
+<area shape="rect" id="Node000001" title="Header for the configuration for the driver for balancing." alt="" coords="952,5,1163,45"/>
+<area shape="rect" id="Node000002" href="$bal_8h.html" title="Header for the driver for balancing." alt="" coords="835,93,1045,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1022,56,968,95,964,91,1019,52"/>
+<area shape="rect" id="Node000012" href="$bal__cfg_8c.html" title="Implementation for the configuration for the driver for balancing." alt="" coords="1069,93,1280,133"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1096,52,1150,91,1147,95,1093,56"/>
+<area shape="rect" id="Node000003" href="$bal_8c.html" title="Driver for the Balancing module." alt="" coords="5,189,216,229"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="821,124,549,145,389,162,228,184,189,191,188,186,228,179,388,157,549,140,821,119"/>
+<area shape="rect" id="Node000004" href="$bal__strategy__history_8c.html" title="Driver for the Balancing module." alt="" coords="240,181,451,236"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="821,131,652,154,464,184,451,186,450,181,464,179,651,149,821,126"/>
+<area shape="rect" id="Node000005" href="$bal__strategy__none_8c.html" title="WEAK Driver for the Balancing module for ICs that to not support balancing." alt="" coords="475,189,693,229"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="856,139,657,191,655,186,854,134"/>
+<area shape="rect" id="Node000006" href="$bal__strategy__voltage_8h.html" title="Header for the voltage&#45;based balancing strategy module." alt="" coords="717,181,928,236"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="907,144,857,183,854,179,904,140"/>
+<area shape="rect" id="Node000008" href="$bms_8c.html" title="Bms driver implementation." alt="" coords="952,189,1163,229"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="976,140,1035,187,1032,191,973,144"/>
+<area shape="rect" id="Node000009" href="$can__cbs__rx__bms-state-request_8c.html" title="CAN driver Rx callback implementation." alt="" coords="1187,181,1365,236"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="1022,134,1188,180,1186,185,1020,140"/>
+<area shape="rect" id="Node000010" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="1389,189,1571,229"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="1059,131,1221,153,1378,179,1411,186,1409,191,1377,184,1220,158,1058,136"/>
+<area shape="rect" id="Node000011" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="1595,189,1762,229"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="1059,131,1208,144,1324,150,1439,158,1584,179,1617,186,1616,191,1584,184,1439,163,1324,155,1208,150,1059,136"/>
+<area shape="rect" id="Node000007" href="$bal__strategy__voltage_8c.html" title="Driver for the Balancing module." alt="" coords="717,284,928,339"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="825,250,825,284,820,284,820,250"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="CANTX_SetPlausibilityFlags" name="CANTX_SetPlausibilityFlags">
+<area shape="rect" id="Node000001" title="Reads violated plausibility flags and sets the corresponding bits for the can message." alt="" coords="485,5,688,31"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__string-state_8c.html#a7b4f88dc07237cb5a9ad8e91b9c3bc88" title="Calls the other helper functions to write the message data." alt="" coords="200,5,437,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="471,21,437,21,437,15,471,15"/>
+<area shape="rect" id="Node000003" href="$can__cbs__tx__string-state_8c.html#aedba864154a0fbf0036c525f7a57556c" title="CAN Tx callback function for string state values." alt="" coords="5,5,152,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="186,21,153,21,153,15,186,15"/>
+</map>

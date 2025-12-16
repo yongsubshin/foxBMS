@@ -1,0 +1,10 @@
+<map id="DATA_GetStringNumberFromVoltageIndex" name="DATA_GetStringNumberFromVoltageIndex">
+<area shape="rect" id="Node000001" title="Returns string number of passed cell index." alt="" coords="697,5,907,45"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__cell-voltages_8c.html#ab66f2e3fd0aee48c50ff23df9fe7117b" title="Helper function for CANTX_CellVoltages()" alt="" coords="208,13,383,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="684,25,649,24,431,24,383,25,383,20,431,19,649,19,684,19"/>
+<area shape="rect" id="Node000004" href="$database__helper_8c.html#a60712605bf03a4d9878eda0c02fca7be" title="Returns module number of passed cell index." alt="" coords="431,33,649,73"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="684,41,650,44,649,39,683,35"/>
+<area shape="rect" id="Node000003" href="$can__cbs__tx__cell-voltages_8c.html#a2b521df0225246e64ce10dff8e30cb4a" title="CAN Tx callback function for cell voltages." alt="" coords="5,13,160,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,28,160,28,160,23,194,23"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="417,42,382,38,383,33,417,37"/>
+</map>

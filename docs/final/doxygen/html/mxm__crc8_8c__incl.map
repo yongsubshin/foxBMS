@@ -1,0 +1,23 @@
+<map id="foxbms&#45;2/src/app/driver/afe/maxim/common/mxm_crc8.c" name="foxbms&#45;2/src/app/driver/afe/maxim/common/mxm_crc8.c">
+<area shape="rect" id="Node000001" title="CRC8 calculation for Maxim Integrated Monitoring devices." alt="" coords="119,5,315,60"/>
+<area shape="rect" id="Node000002" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="103,181,186,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,61,158,170,153,168,202,59"/>
+<area shape="rect" id="Node000003" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="5,255,84,280"/>
+<area shape="poly" id="edge12_Node000001_Node000003" title=" " alt="" coords="193,62,145,116,94,183,58,244,54,241,89,180,141,113,189,59"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="163,328,233,353"/>
+<area shape="poly" id="edge14_Node000001_Node000005" title=" " alt="" coords="218,60,202,314,197,314,212,60"/>
+<area shape="rect" id="Node000006" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="312,255,415,280"/>
+<area shape="poly" id="edge13_Node000001_Node000006" title=" " alt="" coords="313,58,346,78,372,107,385,141,387,178,383,213,375,242,370,241,377,212,382,178,380,142,368,109,343,82,310,62"/>
+<area shape="rect" id="Node000007" href="$mxm__crc8_8h.html" title="Headers for the CRC8 calculation for Maxim Integrated Monitoring devices." alt="" coords="255,108,357,133"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="246,58,286,96,282,100,242,62"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="130,209,74,249,71,244,127,205"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="42,328,125,353"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="142,208,96,316,91,314,137,206"/>
+<area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="152,206,192,314,187,316,147,208"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="181,204,316,248,314,253,179,209"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="53,279,73,315,68,317,49,282"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="70,278,162,320,160,325,68,282"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="281,136,185,178,182,173,279,131"/>
+<area shape="poly" id="edge11_Node000007_Node000005" title=" " alt="" coords="305,134,282,198,244,281,219,319,214,316,240,279,277,196,300,133"/>
+<area shape="poly" id="edge10_Node000007_Node000006" title=" " alt="" coords="313,133,356,241,351,243,308,135"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="LTC_SendEepromWriteCommand" name="LTC_SendEepromWriteCommand">
+<area shape="rect" id="Node000001" title="sends data to the LTC daisy&#45;chain to write EEPROM on slaves." alt="" coords="148,5,383,31"/>
+<area shape="rect" id="Node000002" href="$ltc__6813-1_8c.html#acf30d82064c640d2c4f36cd270c0647b" title="trigger function for the LTC driver state machine." alt="" coords="5,5,100,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,21,100,21,100,15,135,15"/>
+</map>

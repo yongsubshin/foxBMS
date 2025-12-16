@@ -1,0 +1,11 @@
+<map id="foxbms&#45;2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_voltages.h" name="foxbms&#45;2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_voltages.h">
+<area shape="rect" id="Node000001" title="Header file of some software." alt="" coords="320,5,519,60"/>
+<area shape="rect" id="Node000002" href="$adi__ades1830__balancing_8c.html" title="Implementation of helpers for the balancing functionality." alt="" coords="5,108,183,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="322,67,180,110,178,105,321,62"/>
+<area shape="rect" id="Node000003" href="$adi__ades1830__gpio__voltages_8c.html" title="Reading and the GPIO voltage registers of the ADI ADES1830." alt="" coords="207,108,408,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="382,71,338,110,335,106,378,67"/>
+<area shape="rect" id="Node000004" href="$adi__ades183x_8c.html" title="Driver for the ADI analog front&#45;end." alt="" coords="432,108,631,163"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="461,67,504,106,500,110,457,71"/>
+<area shape="rect" id="Node000005" href="$adi__ades183x__voltages_8c.html" title="Implementation of some software." alt="" coords="655,108,853,163"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="520,61,668,105,666,110,519,66"/>
+</map>

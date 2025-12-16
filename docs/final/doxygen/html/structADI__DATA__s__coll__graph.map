@@ -1,0 +1,21 @@
+<map id="ADI_DATA_s" name="ADI_DATA_s">
+<area shape="rect" id="Node000001" title=" " alt="" coords="803,262,903,287"/>
+<area shape="rect" id="Node000002" href="$structDATA__BLOCK__CELL__VOLTAGE__s.html" title=" " alt="" coords="304,121,529,146"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="543,119,601,120,662,127,723,143,780,168,805,189,825,214,849,261,844,263,820,217,801,193,777,173,722,148,661,133,601,125,543,124"/>
+<area shape="rect" id="Node000003" href="$structDATA__BLOCK__HEADER__s.html" title=" " alt="" coords="5,227,188,253"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="133,219,202,186,285,155,330,143,331,149,286,160,204,191,135,223"/>
+<area shape="rect" id="Node000004" href="$structDATA__BLOCK__CELL__TEMPERATURE__s.html" title=" " alt="" coords="285,170,548,195"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="181,222,345,193,346,198,182,227"/>
+<area shape="rect" id="Node000005" href="$structDATA__BLOCK__BALANCING__CONTROL__s.html" title=" " alt="" coords="321,220,513,260"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="201,237,321,237,321,243,201,243"/>
+<area shape="rect" id="Node000006" href="$structDATA__BLOCK__ALL__GPIO__VOLTAGES__s.html" title=" " alt="" coords="329,284,505,324"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="175,253,329,284,328,289,174,258"/>
+<area shape="rect" id="Node000007" href="$structDATA__BLOCK__OPEN__WIRE__s.html" title=" " alt="" coords="314,349,519,374"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="132,258,201,296,286,333,332,346,331,351,284,339,199,301,129,262"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="562,186,670,200,726,212,780,228,810,243,836,259,833,264,808,247,778,233,724,217,669,205,561,191"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="527,244,779,264,803,266,802,272,778,269,526,250"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="518,316,578,321,643,323,712,319,778,308,806,298,831,285,833,290,808,303,779,313,712,324,644,328,578,326,518,322"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="511,373,573,377,641,375,711,365,778,344,798,332,815,317,841,286,845,289,819,321,801,337,780,349,712,370,641,380,573,382,511,378"/>
+<area shape="rect" id="Node000008" href="$structADI__ERROR__TABLE__s.html" title=" " alt="" coords="337,398,496,423"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="482,423,548,433,625,436,664,432,704,425,742,414,777,396,804,373,824,342,838,311,846,287,851,288,843,313,829,345,808,376,780,401,744,419,705,431,665,438,625,441,548,438,482,429"/>
+</map>

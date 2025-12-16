@@ -1,0 +1,9 @@
+<map id="CANRX_GetVifcStatus" name="CANRX_GetVifcStatus">
+<area shape="rect" id="Node000001" title="Reads vifc status from imd info and sets flags of the data table." alt="" coords="672,13,836,38"/>
+<area shape="rect" id="Node000002" href="$can__cbs__rx__imd-info_8c.html#a7352af08328c79326981bb7538a492d6" title="Gets data from IMD Info message and stores it in data table." alt="" coords="412,5,624,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="658,28,624,28,624,23,658,23"/>
+<area shape="rect" id="Node000003" href="$bender__iso165c_8c.html#a771d75322b83bd5940ccd1dd285f96cf" title="trigger function for the i165c driver state machine." alt="" coords="245,13,364,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="399,28,365,28,365,23,399,23"/>
+<area shape="rect" id="Node000004" href="$bender__iso165c_8c.html#af128f9aa7b3fcd2f6765ce5122bb6e27" title="Processes the running state." alt="" coords="5,13,197,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="232,28,198,28,198,23,232,23"/>
+</map>

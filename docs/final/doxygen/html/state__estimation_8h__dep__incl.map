@@ -1,0 +1,27 @@
+<map id="foxbms&#45;2/src/app/application/algorithm/state_estimation/state_estimation.h" name="foxbms&#45;2/src/app/application/algorithm/state_estimation/state_estimation.h">
+<area shape="rect" id="Node000001" title="Header for state&#45;estimation module responsible for the estimation of state&#45;of&#45;charge (SOC),..." alt="" coords="1300,5,1511,60"/>
+<area shape="rect" id="Node000002" href="$soc__counting_8c.html" title="SOC module responsible for calculation of SOC." alt="" coords="5,108,216,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1286,38,1085,43,821,55,526,77,375,92,228,111,216,112,216,107,228,105,375,87,525,72,821,50,1085,38,1286,33"/>
+<area shape="rect" id="Node000003" href="$soc__none_8c.html" title="SOC module responsible for calculation of state&#45;of&#45;charge (SOC)" alt="" coords="240,108,451,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1286,41,918,62,690,82,463,111,451,113,450,107,462,105,690,77,917,57,1286,35"/>
+<area shape="rect" id="Node000004" href="$soe__counting_8c.html" title="SOE module responsible for calculation of SOE." alt="" coords="475,108,685,163"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1287,45,1017,69,857,88,698,111,686,113,685,107,697,105,856,82,1016,64,1286,40"/>
+<area shape="rect" id="Node000005" href="$soe__debug_8c.html" title="SOE module responsible for calculation of state&#45;of&#45;energy (SOE)" alt="" coords="709,108,920,163"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1287,53,1119,79,932,111,921,113,920,108,932,105,1118,73,1286,48"/>
+<area shape="rect" id="Node000006" href="$soe__none_8c.html" title="SOE module responsible for calculation of state&#45;of&#45;energy (SOE)" alt="" coords="944,108,1155,163"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1300,66,1143,111,1141,105,1299,61"/>
+<area shape="rect" id="Node000007" href="$sof__trapezoid_8c.html" title="SOF modules responsible for current derating calculation." alt="" coords="1179,108,1394,163"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1366,71,1319,110,1316,106,1362,67"/>
+<area shape="rect" id="Node000008" href="$soh__debug_8c.html" title="SOH module responsible for calculation of state&#45;of&#45;health (SOH)" alt="" coords="1419,108,1629,163"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1448,67,1495,106,1491,110,1445,71"/>
+<area shape="rect" id="Node000009" href="$soh__none_8c.html" title="SOH module responsible for calculation of state&#45;of&#45;health (SOH)" alt="" coords="1653,108,1864,163"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1511,61,1667,105,1666,111,1510,66"/>
+<area shape="rect" id="Node000010" href="$state__estimation_8c.html" title="State&#45;estimation module responsible for the estimation of state&#45;of&#45; charge (SOC), state&#45;of&#45;energy (SO..." alt="" coords="1888,108,2099,163"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1525,48,1692,73,1876,105,1888,108,1887,113,1876,111,1691,79,1524,53"/>
+<area shape="rect" id="Node000011" href="$bal__strategy__history_8c.html" title="Driver for the Balancing module." alt="" coords="2123,108,2333,163"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1525,40,1794,64,1953,83,2111,105,2123,107,2122,113,2110,111,1952,88,1793,69,1524,45"/>
+<area shape="rect" id="Node000012" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="2358,115,2541,155"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1524,34,1687,41,1892,54,2119,75,2346,105,2382,113,2381,118,2345,111,2118,80,1892,60,1687,47,1524,40"/>
+<area shape="rect" id="Node000013" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="2565,115,2731,155"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="1525,31,1721,34,1978,45,2265,68,2411,84,2554,105,2587,113,2586,118,2553,111,2411,90,2265,73,1978,51,1721,40,1524,36"/>
+</map>

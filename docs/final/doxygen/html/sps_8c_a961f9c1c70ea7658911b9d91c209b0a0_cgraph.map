@@ -1,0 +1,5 @@
+<map id="SPS_SetContactorsTxBuffer" name="SPS_SetContactorsTxBuffer">
+<area shape="rect" id="Node000001" title="Assemble an update to the channel state of the SPS ICs." alt="" coords="5,13,204,38"/>
+<area shape="rect" id="Node000002" href="$sps_8c.html#a5aa51bd041468fa63d6992cbcb57ad3a" title="Sets the SPI Tx buffer for a register write access for a specific single SPS ICs in the daisy&#45;chain." alt="" coords="252,5,444,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,23,238,23,238,28,204,28"/>
+</map>

@@ -1,0 +1,77 @@
+<map id="CANRX_TriggerBmsSoftwareVersionMessage" name="CANRX_TriggerBmsSoftwareVersionMessage">
+<area shape="rect" id="Node000001" title="Triggers sending of the BMS software version information message." alt="" coords="5,386,211,426"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__debug-response_8c.html#a1e3f862c33124f37766fa4f3a7ba39fc" title="Handles Debug response message." alt="" coords="259,393,437,419"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,403,245,403,245,409,211,409"/>
+<area shape="rect" id="Node000003" href="$can__cbs__tx__debug-response_8c.html#aeba3c4cd3fc9971152bf177c8e2611b3" title="Sets the can data and sends the message." alt="" coords="804,44,1073,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="348,392,359,340,382,264,400,223,422,183,450,146,484,116,522,92,562,74,605,60,649,50,736,41,816,41,816,46,736,46,650,56,606,65,564,79,524,97,487,120,454,150,427,186,405,225,387,266,364,341,354,393"/>
+<area shape="rect" id="Node000006" href="$can__cbs__tx__debug-response_8c.html#a18200b080052853aa945f7b58bd2104c" title="Transmit the embedded software version information." alt="" coords="505,243,737,268"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="357,391,407,336,443,304,484,278,505,270,507,275,487,283,446,309,411,340,361,395"/>
+<area shape="rect" id="Node000010" href="$can__cbs__tx__debug-response_8c.html#a443b5ba979e8fd94765a028829cabc0e" title="Transmit the boot message and its magic end data." alt="" coords="509,293,732,319"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="366,391,418,359,484,328,511,319,513,324,486,332,420,363,369,395"/>
+<area shape="rect" id="Node000012" href="$can__cbs__tx__debug-response_8c.html#ad57ad8265c45e928b7fef933d699d4a3" title="Transmit the boot message and its magic start data." alt="" coords="505,343,736,368"/>
+<area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="417,391,538,368,539,373,418,396"/>
+<area shape="rect" id="Node000013" href="$can__cbs__tx__debug-response_8c.html#a5d29b7013965d9170d1e82eb055be389" title="Transmit the boot timestamp message." alt="" coords="503,393,738,419"/>
+<area shape="poly" id="edge14_Node000002_Node000013" title=" " alt="" coords="437,403,489,403,489,409,437,409"/>
+<area shape="rect" id="Node000015" href="$can__cbs__tx__debug-response_8c.html#acc77f33b399fdb73971012599cb31159" title="Transmit the complete short commit hash in two messages." alt="" coords="513,131,728,156"/>
+<area shape="poly" id="edge17_Node000002_Node000015" title=" " alt="" coords="355,392,404,318,442,272,484,228,533,190,581,160,584,165,536,194,487,232,446,275,409,322,359,395"/>
+<area shape="rect" id="Node000019" href="$can__cbs__tx__debug-response_8c.html#a8e1dd3ddaf53672d48894d85e93a3412" title="Transmit the MCU&#39;s lot number ID information." alt="" coords="506,544,735,569"/>
+<area shape="poly" id="edge25_Node000002_Node000019" title=" " alt="" coords="374,417,586,535,583,540,371,421"/>
+<area shape="rect" id="Node000021" href="$can__cbs__tx__debug-response_8c.html#afb1859101ece3c63030c5a1628bc20ac" title="Transmit the MCU&#39;s unique id." alt="" coords="502,444,739,469"/>
+<area shape="poly" id="edge28_Node000002_Node000021" title=" " alt="" coords="418,416,539,439,538,444,417,421"/>
+<area shape="rect" id="Node000023" href="$can__cbs__tx__debug-response_8c.html#a6db3830b518411a3bfbfcd6679efa62a" title="Transmit the MCU&#39;s wafer information." alt="" coords="485,645,756,671"/>
+<area shape="poly" id="edge31_Node000002_Node000023" title=" " alt="" coords="359,417,408,490,445,536,487,579,533,612,579,637,577,642,530,616,484,583,441,540,404,494,355,420"/>
+<area shape="rect" id="Node000025" href="$can__cbs__tx__debug-response_8c.html#a243e9a3f1d41f6d53a1143febd488e92" title="Transmit the RTC time message." alt="" coords="529,847,713,872"/>
+<area shape="poly" id="edge34_Node000002_Node000025" title=" " alt="" coords="353,419,363,481,386,576,403,629,426,683,454,735,487,782,506,800,527,815,571,839,568,844,524,820,502,804,483,785,449,738,421,685,398,631,381,577,358,482,348,419"/>
+<area shape="rect" id="Node000031" href="$can__cbs__tx__debug-response_8c.html#ab5704dce8b4d5dec1f442a176fc34f7a" title="Transmit the uptime message." alt="" coords="531,745,710,771"/>
+<area shape="poly" id="edge41_Node000002_Node000031" title=" " alt="" coords="355,418,370,466,396,534,435,611,460,647,487,680,529,713,574,737,571,742,526,718,483,684,455,650,431,613,392,536,365,467,350,420"/>
+<area shape="rect" id="Node000004" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="1196,5,1316,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1043,41,1182,24,1183,30,1044,47"/>
+<area shape="rect" id="Node000005" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="1121,55,1391,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="1074,59,1108,60,1108,65,1073,64"/>
+<area shape="rect" id="Node000007" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="1149,411,1363,451"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="733,240,811,237,898,240,988,253,1032,264,1074,278,1122,303,1165,335,1202,368,1231,399,1227,402,1199,372,1162,339,1119,307,1072,283,1030,269,987,258,897,246,811,242,733,245"/>
+<area shape="rect" id="Node000009" href="$foxmath_8c.html#a574d9c3f4c86d7d21643ffe90230404d" title="Returns the minimum of the passed uint16_t values." alt="" coords="827,192,1051,217"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="701,240,844,217,845,222,702,245"/>
+<area shape="rect" id="Node000008" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="1439,419,1661,444"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1363,429,1425,429,1425,434,1363,434"/>
+<area shape="rect" id="Node000011" href="$can__cbs__tx__debug-response_8c.html#aaf184f11fa4648ddc159ac41bd8c46c8" title="Transmit a boot message." alt="" coords="839,293,1038,319"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="732,303,825,303,825,309,732,309"/>
+<area shape="poly" id="edge11_Node000011_Node000007" title=" " alt="" coords="1034,316,1074,327,1151,363,1216,402,1213,406,1149,368,1072,333,1032,321"/>
+<area shape="poly" id="edge13_Node000012_Node000011" title=" " alt="" coords="703,340,842,318,843,323,704,345"/>
+<area shape="poly" id="edge15_Node000013_Node000007" title=" " alt="" coords="738,408,1135,424,1135,429,738,413"/>
+<area shape="rect" id="Node000014" href="$rtc_8c.html#a8a5771eaf9be40fd6be604ddeb42e52b" title="returns the initialization time stamp" alt="" coords="835,343,1042,368"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="701,391,844,368,845,373,702,396"/>
+<area shape="poly" id="edge18_Node000015_Node000003" title=" " alt="" coords="654,128,722,103,803,78,842,69,843,75,805,83,724,108,655,133"/>
+<area shape="rect" id="Node000016" href="$can__cbs__tx__debug-response_8c.html#a1b3ffb28ae5e216145fbfd5e0ddfc1fe" title="Transmit the first seven characters of the short commit hash." alt="" coords="816,143,1061,168"/>
+<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="728,145,802,148,802,153,728,150"/>
+<area shape="rect" id="Node000018" href="$can__cbs__tx__debug-response_8c.html#a18f930003e0aec186b3f6294bbaebc15" title="Transmit the last character of the short commit hash." alt="" coords="818,93,1059,119"/>
+<area shape="poly" id="edge22_Node000015_Node000018" title=" " alt="" coords="728,128,816,118,817,123,729,133"/>
+<area shape="poly" id="edge20_Node000016_Node000007" title=" " alt="" coords="1051,166,1075,177,1106,200,1134,227,1182,287,1219,348,1244,398,1239,400,1214,350,1178,290,1130,231,1102,204,1072,182,1049,170"/>
+<area shape="rect" id="Node000017" href="$utils_8c.html#a0135305537c3ae3b3e3898e891e0a7f5" title="Extract characters from a string." alt="" coords="1153,125,1359,165"/>
+<area shape="poly" id="edge21_Node000016_Node000017" title=" " alt="" coords="1062,149,1139,146,1139,151,1062,154"/>
+<area shape="poly" id="edge23_Node000018_Node000007" title=" " alt="" coords="1054,117,1075,128,1095,147,1118,175,1165,249,1242,397,1237,400,1160,252,1113,178,1091,150,1072,132,1051,121"/>
+<area shape="poly" id="edge24_Node000018_Node000017" title=" " alt="" coords="1044,116,1139,128,1139,133,1043,121"/>
+<area shape="poly" id="edge26_Node000019_Node000007" title=" " alt="" coords="665,567,743,585,846,600,903,603,960,601,1018,593,1072,578,1119,555,1162,524,1199,491,1227,461,1231,464,1203,495,1166,528,1122,560,1074,583,1019,598,961,606,903,608,845,605,742,591,663,572"/>
+<area shape="rect" id="Node000020" href="$mcu_8c.html#a864446720e791346ea15d4f4f5250e31" title="Read out device register with die ID high." alt="" coords="865,544,1012,569"/>
+<area shape="poly" id="edge27_Node000019_Node000020" title=" " alt="" coords="735,554,852,554,852,559,735,559"/>
+<area shape="poly" id="edge29_Node000021_Node000007" title=" " alt="" coords="739,449,1135,433,1135,439,740,455"/>
+<area shape="rect" id="Node000022" href="$mcu_8c.html#a638c33d0ede7e0c2b845525f2929d459" title="Read out device register with unique Device ID." alt="" coords="847,495,1030,520"/>
+<area shape="poly" id="edge30_Node000021_Node000022" title=" " alt="" coords="702,467,845,490,844,495,701,472"/>
+<area shape="poly" id="edge32_Node000023_Node000007" title=" " alt="" coords="756,664,831,663,912,655,994,637,1072,609,1123,578,1167,538,1204,497,1232,461,1236,464,1208,500,1171,542,1126,582,1075,614,996,643,913,660,831,668,756,670"/>
+<area shape="rect" id="Node000024" href="$mcu_8c.html#a969249ea4d57714941adddd11bc3e02c" title="Read out device register with die ID low." alt="" coords="867,696,1010,721"/>
+<area shape="poly" id="edge33_Node000023_Node000024" title=" " alt="" coords="702,668,854,693,853,698,701,673"/>
+<area shape="poly" id="edge35_Node000025_Node000007" title=" " alt="" coords="713,861,810,863,915,860,1009,849,1045,839,1072,826,1115,789,1151,745,1180,695,1203,643,1220,591,1233,542,1248,464,1253,465,1239,543,1226,592,1208,645,1184,697,1155,748,1119,793,1075,831,1047,844,1010,854,915,865,810,868,713,867"/>
+<area shape="rect" id="Node000026" href="$rtc_8c.html#ae09c97b84e318d32d7c08ee56fe699b7" title="get the RTC system timer." alt="" coords="826,897,1051,923"/>
+<area shape="poly" id="edge36_Node000025_Node000026" title=" " alt="" coords="702,869,845,893,844,898,701,875"/>
+<area shape="rect" id="Node000027" href="$rtc_8c.html#ade1f047b937483cffdc3d556e3973c74" title="Get the RTC system timer value." alt="" coords="1135,872,1377,897"/>
+<area shape="poly" id="edge37_Node000026_Node000027" title=" " alt="" coords="1051,898,1121,893,1121,898,1052,904"/>
+<area shape="rect" id="Node000030" href="$rtc_8c.html#a51125f9e9e11ba4d06f263043bba6988" title="Convert time from struct tm to RTC_TIME_DATA_s format." alt="" coords="1157,921,1355,947"/>
+<area shape="poly" id="edge40_Node000026_Node000030" title=" " alt="" coords="1052,916,1143,923,1143,928,1051,921"/>
+<area shape="rect" id="Node000028" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1472,896,1628,921"/>
+<area shape="poly" id="edge38_Node000027_Node000028" title=" " alt="" coords="1378,892,1458,899,1458,904,1377,897"/>
+<area shape="rect" id="Node000029" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1477,847,1623,872"/>
+<area shape="poly" id="edge39_Node000027_Node000029" title=" " alt="" coords="1377,872,1462,864,1463,869,1378,877"/>
+<area shape="poly" id="edge42_Node000031_Node000007" title=" " alt="" coords="654,768,733,795,784,807,841,817,900,821,960,818,1018,805,1072,781,1112,750,1146,712,1174,669,1198,624,1230,534,1247,464,1252,465,1235,536,1202,626,1179,672,1150,715,1116,754,1075,786,1020,811,961,823,900,827,840,822,783,813,731,800,652,773"/>
+<area shape="rect" id="Node000032" href="$os_8c.html#a3b5e85003989e4e8420563bfb71cd715" title="Function to get the current OS Time." alt="" coords="876,745,1001,771"/>
+<area shape="poly" id="edge43_Node000031_Node000032" title=" " alt="" coords="710,755,862,755,862,761,710,761"/>
+</map>

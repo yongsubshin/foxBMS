@@ -1,0 +1,5 @@
+<map id="CANTX_GetMinimumStringSoc" name="CANTX_GetMinimumStringSoc">
+<area shape="rect" id="Node000001" title="Gets the lowest string SOC percentage from all connected Strings." alt="" coords="5,5,225,31"/>
+<area shape="rect" id="Node000002" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="273,5,424,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,15,260,15,260,21,226,21"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="AFE_TriggerIc" name="AFE_TriggerIc">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,115,129"/>
+<area shape="rect" id="Node000002" href="$debug__can_8c.html#a75b2a17a9cdcd7d057fc07c8a4c1dba8" title="afe trigger function" alt="" coords="163,104,304,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,114,149,114,149,119,115,119"/>
+<area shape="rect" id="Node000003" href="$debug__can_8c.html#a376493ba02a58bc7c9138109db7601b8" title="Receive can temperature data from queue and write into database." alt="" coords="352,29,619,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="259,101,301,82,351,63,384,55,386,60,353,69,303,87,261,106"/>
+<area shape="rect" id="Node000007" href="$debug__can_8c.html#af2243f9569087f7f7cc931bf36378dd0" title="Receive can voltage data from queue and write into database." alt="" coords="369,79,602,104"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="304,107,355,102,355,107,304,112"/>
+<area shape="rect" id="Node000009" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="413,128,558,153"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="304,121,399,130,399,135,304,126"/>
+<area shape="rect" id="Node000010" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="418,177,553,203"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="263,127,305,145,353,162,405,175,404,180,351,167,303,150,261,132"/>
+<area shape="rect" id="Node000004" href="$debug__can_8c.html#a0333e61ae892db63c9a3750a2e5718ad" title="Convert the one number index of the cell temperature into the indexes of cellTemperature_ddegC." alt="" coords="667,5,931,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="619,29,652,27,653,32,619,34"/>
+<area shape="rect" id="Node000006" href="$os__freertos_8c.html#a285b22d2ef1448cae22a8965b5fec186" title="Receive an item from a queue." alt="" coords="711,55,886,80"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="619,50,698,57,698,62,619,55"/>
+<area shape="rect" id="Node000005" href="$debug__can_8c.html#a6e167e0bbe9304a6a000768491bba57c" title="A modified modulo operation: the input a can not be 0; if the result of a modulo operation is zero,..." alt="" coords="979,55,1213,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="876,28,1005,50,1004,55,875,33"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="602,80,697,72,698,78,603,85"/>
+<area shape="rect" id="Node000008" href="$debug__can_8c.html#a9193b7d369ae82a88ec8dcaf922d60d7" title="Convert the one number index of the cell voltage into the indexes of cellVoltage_mV." alt="" coords="683,104,914,129"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="603,98,670,104,669,109,602,103"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="875,101,1004,80,1005,85,876,107"/>
+</map>

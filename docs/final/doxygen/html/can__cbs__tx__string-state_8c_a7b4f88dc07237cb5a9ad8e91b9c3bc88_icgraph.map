@@ -1,0 +1,5 @@
+<map id="CANTX_BuildStringStateMessage" name="CANTX_BuildStringStateMessage">
+<area shape="rect" id="Node000001" title="Calls the other helper functions to write the message data." alt="" coords="200,5,437,31"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__string-state_8c.html#aedba864154a0fbf0036c525f7a57556c" title="CAN Tx callback function for string state values." alt="" coords="5,5,152,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,21,153,21,153,15,186,15"/>
+</map>

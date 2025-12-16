@@ -1,0 +1,5 @@
+<map id="MXM_CRC8" name="MXM_CRC8">
+<area shape="rect" id="Node000001" title="Compute CRC8 with initial value set to 0x00." alt="" coords="5,5,103,31"/>
+<area shape="rect" id="Node000002" href="$mxm__crc8_8c.html#aff7b770d0d6a3773b0fe425eb9bb9d8d" title="Compute CRC8 (0xA6) with initial value." alt="" coords="151,5,335,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,15,137,15,137,21,103,21"/>
+</map>

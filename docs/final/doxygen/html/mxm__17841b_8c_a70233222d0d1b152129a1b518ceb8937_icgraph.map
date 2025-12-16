@@ -1,0 +1,23 @@
+<map id="MXM_41BRegisterRead" name="MXM_41BRegisterRead">
+<area shape="rect" id="Node000001" title="Read one or multiple registers of MAX17841B." alt="" coords="847,104,1021,129"/>
+<area shape="rect" id="Node000002" href="$group__mxm-41b-state-handlers.html#gafd5389790a0314574db4f6927aef0ddc" title="state handler for &quot;check fmea&quot;" alt="" coords="537,5,786,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="902,99,854,70,798,45,758,33,759,28,800,39,857,66,905,94"/>
+<area shape="rect" id="Node000006" href="$group__mxm-41b-state-handlers.html#gaf38f0269d733292924c94ca632bbbb60" title="state handler for &quot;get version&quot;" alt="" coords="540,55,783,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="852,104,798,94,735,83,736,77,799,89,853,99"/>
+<area shape="rect" id="Node000007" href="$group__mxm-41b-state-handlers.html#gafed0c8a844b5fa7197d9257b159eca61" title="init state handler" alt="" coords="565,104,758,129"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="833,119,758,119,758,114,833,114"/>
+<area shape="rect" id="Node000008" href="$group__mxm-41b-state-handlers.html#gad0516f91d78f46e8d6beaac3ec78b2af" title="state handler for &quot;read status register&quot;" alt="" coords="538,154,785,194"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="860,135,757,157,756,151,859,130"/>
+<area shape="rect" id="Node000009" href="$group__mxm-41b-state-handlers.html#gab36b0cda14a8403e19a2efcda97ebe8c" title="state handler for &quot;uart transaction&quot;" alt="" coords="524,219,799,244"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="909,140,860,176,800,208,759,221,757,216,798,204,857,171,906,136"/>
+<area shape="rect" id="Node000003" href="$mxm__17841b_8c.html#a0ea1ec4dd5b5f45e291edd394772ea46" title="Execute state&#45;machine for the MAX17841B." alt="" coords="300,104,476,129"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="552,36,525,44,460,75,409,106,406,102,457,70,523,40,550,31"/>
+<area shape="rect" id="Node000004" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="163,104,252,129"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="286,119,252,119,252,114,286,114"/>
+<area shape="rect" id="Node000005" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,104,115,129"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="149,119,115,119,115,114,149,114"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="575,85,524,94,457,107,456,101,524,89,574,80"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="551,119,476,119,476,114,551,114"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="552,154,449,132,450,127,553,149"/>
+<area shape="poly" id="edge12_Node000009_Node000003" title=" " alt="" coords="551,218,523,208,487,191,454,170,403,132,406,127,457,166,490,186,525,204,552,213"/>
+</map>

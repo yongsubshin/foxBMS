@@ -1,0 +1,5 @@
+<map id="TS_Mur00GetTemperatureFromPolynomial" name="TS_Mur00GetTemperatureFromPolynomial">
+<area shape="rect" id="Node000001" title="returns temperature based on measured ADC voltage" alt="" coords="208,5,432,45"/>
+<area shape="rect" id="Node000002" href="$murata__ncxxxxh103__polynomial_8c.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="5,13,160,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,28,160,28,160,23,194,23"/>
+</map>

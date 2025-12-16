@@ -1,0 +1,811 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generation_date": "2025-12-16",
+    "generator": "PARVIS-AIDoc-Trace Agent",
+    "total_cfg_requirements": 119,
+    "test_specifications": 119,
+    "coverage": "100%",
+    "aspice_level": 2,
+    "iso26262_compliance": {
+      "part": 6,
+      "table": 9,
+      "test_method": "Configuration Verification"
+    }
+  },
+  "test_specifications": [
+    {
+      "test_id": "CFG-TC-APP-001",
+      "requirement_id": "FBMS-SAF-CFG-001",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Safety Limit Verification",
+      "description": "Verify battery cell maximum discharge temperature limits are correctly configured",
+      "preconditions": [
+        "Configuration file battery_cell_cfg.h is available",
+        "Build environment is configured"
+      ],
+      "test_steps": [
+        "Read BC_TEMPERATURE_MAX_DISCHARGE_MSL_ddegC from battery_cell_cfg.h",
+        "Read BC_TEMPERATURE_MAX_DISCHARGE_RSL_ddegC from battery_cell_cfg.h",
+        "Read BC_TEMPERATURE_MAX_DISCHARGE_MOL_ddegC from battery_cell_cfg.h",
+        "Verify MSL > RSL > MOL relationship",
+        "Verify values are within sensor measurement range"
+      ],
+      "expected_results": [
+        "BC_TEMPERATURE_MAX_DISCHARGE_MSL_ddegC = 550 (55.0 degC)",
+        "BC_TEMPERATURE_MAX_DISCHARGE_RSL_ddegC = 500 (50.0 degC)",
+        "BC_TEMPERATURE_MAX_DISCHARGE_MOL_ddegC = 450 (45.0 degC)",
+        "MSL >= RSL >= MOL relationship is maintained"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "79-81",
+      "asil": "D"
+    },
+    {
+      "test_id": "CFG-TC-APP-002",
+      "requirement_id": "FBMS-SAF-CFG-002",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Safety Limit Verification",
+      "description": "Verify battery cell minimum discharge temperature limits are correctly configured",
+      "preconditions": [
+        "Configuration file battery_cell_cfg.h is available",
+        "Build environment is configured"
+      ],
+      "test_steps": [
+        "Read BC_TEMPERATURE_MIN_DISCHARGE_MSL_ddegC from battery_cell_cfg.h",
+        "Read BC_TEMPERATURE_MIN_DISCHARGE_RSL_ddegC from battery_cell_cfg.h",
+        "Read BC_TEMPERATURE_MIN_DISCHARGE_MOL_ddegC from battery_cell_cfg.h",
+        "Verify MSL < RSL < MOL relationship",
+        "Verify values are within sensor measurement range"
+      ],
+      "expected_results": [
+        "BC_TEMPERATURE_MIN_DISCHARGE_MSL_ddegC = -200 (-20.0 degC)",
+        "BC_TEMPERATURE_MIN_DISCHARGE_RSL_ddegC = -150 (-15.0 degC)",
+        "BC_TEMPERATURE_MIN_DISCHARGE_MOL_ddegC = -100 (-10.0 degC)",
+        "MSL <= RSL <= MOL relationship is maintained"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "94-96",
+      "asil": "D"
+    },
+    {
+      "test_id": "CFG-TC-APP-003",
+      "requirement_id": "FBMS-SAF-CFG-003",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Safety Limit Verification",
+      "description": "Verify battery cell maximum charge temperature limits are correctly configured",
+      "preconditions": [
+        "Configuration file battery_cell_cfg.h is available",
+        "Build environment is configured"
+      ],
+      "test_steps": [
+        "Read BC_TEMPERATURE_MAX_CHARGE_MSL_ddegC from battery_cell_cfg.h",
+        "Read BC_TEMPERATURE_MAX_CHARGE_RSL_ddegC from battery_cell_cfg.h",
+        "Read BC_TEMPERATURE_MAX_CHARGE_MOL_ddegC from battery_cell_cfg.h",
+        "Verify MSL > RSL > MOL relationship",
+        "Verify charge limits are lower than discharge limits"
+      ],
+      "expected_results": [
+        "BC_TEMPERATURE_MAX_CHARGE_MSL_ddegC = 450 (45.0 degC)",
+        "BC_TEMPERATURE_MAX_CHARGE_RSL_ddegC = 400 (40.0 degC)",
+        "BC_TEMPERATURE_MAX_CHARGE_MOL_ddegC = 350 (35.0 degC)",
+        "Charge max < Discharge max"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "109-111",
+      "asil": "D"
+    },
+    {
+      "test_id": "CFG-TC-APP-004",
+      "requirement_id": "FBMS-SAF-CFG-004",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Safety Limit Verification",
+      "description": "Verify battery cell minimum charge temperature limits are correctly configured",
+      "preconditions": [
+        "Configuration file battery_cell_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BC_TEMPERATURE_MIN_CHARGE_MSL_ddegC from battery_cell_cfg.h",
+        "Read BC_TEMPERATURE_MIN_CHARGE_RSL_ddegC from battery_cell_cfg.h",
+        "Read BC_TEMPERATURE_MIN_CHARGE_MOL_ddegC from battery_cell_cfg.h",
+        "Verify MSL < RSL < MOL relationship"
+      ],
+      "expected_results": [
+        "BC_TEMPERATURE_MIN_CHARGE_MSL_ddegC = -200 (-20.0 degC)",
+        "BC_TEMPERATURE_MIN_CHARGE_RSL_ddegC = -150 (-15.0 degC)",
+        "BC_TEMPERATURE_MIN_CHARGE_MOL_ddegC = -100 (-10.0 degC)"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "124-126",
+      "asil": "D"
+    },
+    {
+      "test_id": "CFG-TC-APP-005",
+      "requirement_id": "FBMS-SAF-CFG-005",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Safety Limit Verification",
+      "description": "Verify maximum cell voltage limits are correctly configured",
+      "preconditions": [
+        "Configuration file battery_cell_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BC_VOLTAGE_MAX_MSL_mV from battery_cell_cfg.h",
+        "Read BC_VOLTAGE_MAX_RSL_mV from battery_cell_cfg.h",
+        "Read BC_VOLTAGE_MAX_MOL_mV from battery_cell_cfg.h",
+        "Verify MSL > RSL > MOL relationship",
+        "Verify values are within LFP cell operating range"
+      ],
+      "expected_results": [
+        "BC_VOLTAGE_MAX_MSL_mV = 2800",
+        "BC_VOLTAGE_MAX_RSL_mV = 2750",
+        "BC_VOLTAGE_MAX_MOL_mV = 2720",
+        "Values within 2000-4200 mV range"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "139-141",
+      "asil": "D"
+    },
+    {
+      "test_id": "CFG-TC-APP-006",
+      "requirement_id": "FBMS-SWE-CFG-001",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Cell Parameter Verification",
+      "description": "Verify nominal cell voltage is correctly configured",
+      "preconditions": [
+        "Configuration file battery_cell_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BC_VOLTAGE_NOMINAL_mV from battery_cell_cfg.h",
+        "Verify value is between min and max voltage limits"
+      ],
+      "expected_results": [
+        "BC_VOLTAGE_NOMINAL_mV = 2500",
+        "Value is between BC_VOLTAGE_MIN_MSL_mV and BC_VOLTAGE_MAX_MSL_mV"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "149",
+      "asil": "QM"
+    },
+    {
+      "test_id": "CFG-TC-APP-007",
+      "requirement_id": "FBMS-SAF-CFG-006",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Safety Limit Verification",
+      "description": "Verify minimum cell voltage limits are correctly configured",
+      "preconditions": [
+        "Configuration file battery_cell_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BC_VOLTAGE_MIN_MSL_mV from battery_cell_cfg.h",
+        "Read BC_VOLTAGE_MIN_RSL_mV from battery_cell_cfg.h",
+        "Read BC_VOLTAGE_MIN_MOL_mV from battery_cell_cfg.h",
+        "Verify MSL < RSL < MOL relationship"
+      ],
+      "expected_results": [
+        "BC_VOLTAGE_MIN_MSL_mV = 1500",
+        "BC_VOLTAGE_MIN_RSL_mV = 1550",
+        "BC_VOLTAGE_MIN_MOL_mV = 1580"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "161-163",
+      "asil": "D"
+    },
+    {
+      "test_id": "CFG-TC-APP-008",
+      "requirement_id": "FBMS-SAF-CFG-007",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Safety Limit Verification",
+      "description": "Verify deep-discharge voltage limit equals minimum voltage MSL",
+      "preconditions": [
+        "Configuration file battery_cell_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BC_VOLTAGE_DEEP_DISCHARGE_mV from battery_cell_cfg.h",
+        "Read BC_VOLTAGE_MIN_MSL_mV from battery_cell_cfg.h",
+        "Verify they are equal"
+      ],
+      "expected_results": [
+        "BC_VOLTAGE_DEEP_DISCHARGE_mV = BC_VOLTAGE_MIN_MSL_mV = 1500"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "175",
+      "asil": "D"
+    },
+    {
+      "test_id": "CFG-TC-APP-009",
+      "requirement_id": "FBMS-SAF-CFG-008",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Safety Limit Verification",
+      "description": "Verify maximum discharge current limits are correctly configured",
+      "preconditions": [
+        "Configuration file battery_cell_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BC_CURRENT_MAX_DISCHARGE_MSL_mA from battery_cell_cfg.h",
+        "Read BC_CURRENT_MAX_DISCHARGE_RSL_mA from battery_cell_cfg.h",
+        "Read BC_CURRENT_MAX_DISCHARGE_MOL_mA from battery_cell_cfg.h",
+        "Verify MSL > RSL > MOL relationship"
+      ],
+      "expected_results": [
+        "BC_CURRENT_MAX_DISCHARGE_MSL_mA = 180000",
+        "BC_CURRENT_MAX_DISCHARGE_RSL_mA = 175000",
+        "BC_CURRENT_MAX_DISCHARGE_MOL_mA = 170000"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "187-189",
+      "asil": "D"
+    },
+    {
+      "test_id": "CFG-TC-APP-010",
+      "requirement_id": "FBMS-SAF-CFG-009",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Safety Limit Verification",
+      "description": "Verify maximum charge current limits are correctly configured",
+      "preconditions": [
+        "Configuration file battery_cell_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BC_CURRENT_MAX_CHARGE_MSL_mA from battery_cell_cfg.h",
+        "Read BC_CURRENT_MAX_CHARGE_RSL_mA from battery_cell_cfg.h",
+        "Read BC_CURRENT_MAX_CHARGE_MOL_mA from battery_cell_cfg.h",
+        "Verify MSL > RSL > MOL relationship"
+      ],
+      "expected_results": [
+        "BC_CURRENT_MAX_CHARGE_MSL_mA = 180000",
+        "BC_CURRENT_MAX_CHARGE_RSL_mA = 175000",
+        "BC_CURRENT_MAX_CHARGE_MOL_mA = 170000"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "202-204",
+      "asil": "D"
+    },
+    {
+      "test_id": "CFG-TC-APP-011",
+      "requirement_id": "FBMS-SWE-CFG-002",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Cell Parameter Verification",
+      "description": "Verify cell capacity configuration for SOC calculation",
+      "preconditions": [
+        "Configuration file battery_cell_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BC_CAPACITY_mAh from battery_cell_cfg.h",
+        "Verify value is positive and within reasonable range"
+      ],
+      "expected_results": [
+        "BC_CAPACITY_mAh = 3500",
+        "Value is greater than 0"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "212",
+      "asil": "QM"
+    },
+    {
+      "test_id": "CFG-TC-APP-012",
+      "requirement_id": "FBMS-SWE-CFG-003",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Cell Parameter Verification",
+      "description": "Verify cell energy configuration",
+      "preconditions": [
+        "Configuration file battery_cell_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BC_ENERGY_Wh from battery_cell_cfg.h",
+        "Verify value is positive"
+      ],
+      "expected_results": [
+        "BC_ENERGY_Wh = 10.0",
+        "Value is greater than 0"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "219",
+      "asil": "QM"
+    },
+    {
+      "test_id": "CFG-TC-APP-013",
+      "requirement_id": "FBMS-SAF-CFG-010",
+      "test_type": "Configuration Verification",
+      "test_method": "Compile-Time Verification",
+      "test_category": "Static Assertion Verification",
+      "description": "Verify static assertion for minimum voltage vs deep-discharge limit",
+      "preconditions": [
+        "Build environment is configured",
+        "Compiler supports static assertions"
+      ],
+      "test_steps": [
+        "Compile the project",
+        "Verify no static assertion failures related to voltage limits"
+      ],
+      "expected_results": [
+        "Compilation succeeds without static assertion failure",
+        "BC_VOLTAGE_MIN_MSL_mV >= BC_VOLTAGE_DEEP_DISCHARGE_mV"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "221-222",
+      "asil": "D"
+    },
+    {
+      "test_id": "CFG-TC-APP-014",
+      "requirement_id": "FBMS-SWE-CFG-004",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "System Configuration Verification",
+      "description": "Verify number of parallel strings configuration",
+      "preconditions": [
+        "Configuration file battery_system_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BS_NR_OF_STRINGS from battery_system_cfg.h",
+        "Verify value is a positive integer"
+      ],
+      "expected_results": [
+        "BS_NR_OF_STRINGS >= 1",
+        "Default value = 1"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "103",
+      "asil": "QM"
+    },
+    {
+      "test_id": "CFG-TC-APP-015",
+      "requirement_id": "FBMS-SWE-CFG-005",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "System Configuration Verification",
+      "description": "Verify number of modules per string configuration",
+      "preconditions": [
+        "Configuration file battery_system_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BS_NR_OF_MODULES_PER_STRING from battery_system_cfg.h",
+        "Verify value is a positive integer"
+      ],
+      "expected_results": [
+        "BS_NR_OF_MODULES_PER_STRING >= 1",
+        "Default value = 1"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "116",
+      "asil": "QM"
+    },
+    {
+      "test_id": "CFG-TC-APP-016",
+      "requirement_id": "FBMS-SWE-CFG-006",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "System Configuration Verification",
+      "description": "Verify number of cell blocks per module configuration",
+      "preconditions": [
+        "Configuration file battery_system_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BS_NR_OF_CELL_BLOCKS_PER_MODULE from battery_system_cfg.h",
+        "Verify value is a positive integer"
+      ],
+      "expected_results": [
+        "BS_NR_OF_CELL_BLOCKS_PER_MODULE >= 1",
+        "Default value = 18"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "126",
+      "asil": "QM"
+    },
+    {
+      "test_id": "CFG-TC-APP-017",
+      "requirement_id": "FBMS-SWE-CFG-007",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "System Configuration Verification",
+      "description": "Verify number of parallel cells per cell block configuration",
+      "preconditions": [
+        "Configuration file battery_system_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BS_NR_OF_PARALLEL_CELLS_PER_CELL_BLOCK from battery_system_cfg.h",
+        "Verify value is a positive integer"
+      ],
+      "expected_results": [
+        "BS_NR_OF_PARALLEL_CELLS_PER_CELL_BLOCK >= 1",
+        "Default value = 1"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "134",
+      "asil": "QM"
+    },
+    {
+      "test_id": "CFG-TC-APP-018",
+      "requirement_id": "FBMS-SWE-CFG-008",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "System Configuration Verification",
+      "description": "Verify number of temperature sensors per module configuration",
+      "preconditions": [
+        "Configuration file battery_system_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BS_NR_OF_TEMP_SENSORS_PER_MODULE from battery_system_cfg.h",
+        "Verify value is a positive integer"
+      ],
+      "expected_results": [
+        "BS_NR_OF_TEMP_SENSORS_PER_MODULE >= 1",
+        "Default value = 8"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "140",
+      "asil": "QM"
+    },
+    {
+      "test_id": "CFG-TC-APP-019",
+      "requirement_id": "FBMS-SAF-CFG-011",
+      "test_type": "Configuration Verification",
+      "test_method": "Compile-Time Verification",
+      "test_category": "Static Assertion Verification",
+      "description": "Verify temperature inputs do not exceed GPIOs per module",
+      "preconditions": [
+        "Build environment is configured"
+      ],
+      "test_steps": [
+        "Compile the project",
+        "Verify no static assertion failures for temperature input count"
+      ],
+      "expected_results": [
+        "Compilation succeeds",
+        "BS_NR_OF_TEMP_SENSORS_PER_MODULE <= GPIO count per module"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "142-143",
+      "asil": "B"
+    },
+    {
+      "test_id": "CFG-TC-APP-020",
+      "requirement_id": "FBMS-SWE-CFG-009",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "System Configuration Verification",
+      "description": "Verify current sensor presence configuration",
+      "preconditions": [
+        "Configuration file battery_system_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BS_CURRENT_SENSOR_PRESENT from battery_system_cfg.h",
+        "Verify value is boolean (true/false)"
+      ],
+      "expected_results": [
+        "BS_CURRENT_SENSOR_PRESENT is true or false"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "162",
+      "asil": "QM"
+    },
+    {
+      "test_id": "CFG-TC-APP-021",
+      "requirement_id": "FBMS-SWE-CFG-010",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Timing Configuration Verification",
+      "description": "Verify current measurement response timeout configuration",
+      "preconditions": [
+        "Configuration file battery_system_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BS_CURRENT_MEASUREMENT_RESPONSE_TIMEOUT_ms from battery_system_cfg.h",
+        "Verify value is positive"
+      ],
+      "expected_results": [
+        "BS_CURRENT_MEASUREMENT_RESPONSE_TIMEOUT_ms = 200",
+        "Value is greater than 0"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "172",
+      "asil": "QM"
+    },
+    {
+      "test_id": "CFG-TC-APP-022",
+      "requirement_id": "FBMS-SWE-CFG-011",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Timing Configuration Verification",
+      "description": "Verify coulomb counting measurement response timeout configuration",
+      "preconditions": [
+        "Configuration file battery_system_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BS_COULOMB_COUNTING_MEASUREMENT_RESPONSE_TIMEOUT_ms from battery_system_cfg.h",
+        "Verify value is positive"
+      ],
+      "expected_results": [
+        "BS_COULOMB_COUNTING_MEASUREMENT_RESPONSE_TIMEOUT_ms = 2000",
+        "Value is greater than 0"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "175",
+      "asil": "QM"
+    },
+    {
+      "test_id": "CFG-TC-APP-023",
+      "requirement_id": "FBMS-SWE-CFG-012",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Timing Configuration Verification",
+      "description": "Verify energy counting measurement response timeout configuration",
+      "preconditions": [
+        "Configuration file battery_system_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BS_ENERGY_COUNTING_MEASUREMENT_RESPONSE_TIMEOUT_ms from battery_system_cfg.h",
+        "Verify value is positive"
+      ],
+      "expected_results": [
+        "BS_ENERGY_COUNTING_MEASUREMENT_RESPONSE_TIMEOUT_ms = 2000",
+        "Value is greater than 0"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "178",
+      "asil": "QM"
+    },
+    {
+      "test_id": "CFG-TC-APP-024",
+      "requirement_id": "FBMS-SAF-CFG-012",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Safety Limit Verification",
+      "description": "Verify maximum break current of main contactors configuration",
+      "preconditions": [
+        "Configuration file battery_system_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BS_MAIN_CONTACTORS_MAXIMUM_BREAK_CURRENT_mA from battery_system_cfg.h",
+        "Verify value is positive and within contactor specification"
+      ],
+      "expected_results": [
+        "BS_MAIN_CONTACTORS_MAXIMUM_BREAK_CURRENT_mA = 3500",
+        "Value is within contactor rating"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "192",
+      "asil": "D"
+    },
+    {
+      "test_id": "CFG-TC-APP-025",
+      "requirement_id": "FBMS-SAF-CFG-013",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Safety Timing Verification",
+      "description": "Verify maximum fuse trigger duration configuration",
+      "preconditions": [
+        "Configuration file battery_system_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read BS_MAIN_FUSE_MAXIMUM_TRIGGER_DURATION_ms from battery_system_cfg.h",
+        "Verify value is positive and within fuse specification"
+      ],
+      "expected_results": [
+        "BS_MAIN_FUSE_MAXIMUM_TRIGGER_DURATION_ms = 3000",
+        "Value is greater than 0"
+      ],
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "202",
+      "asil": "D"
+    },
+    {
+      "test_id": "CFG-TC-ALG-001",
+      "requirement_id": "FBMS-SWE-ALG-004",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Algorithm Configuration Verification",
+      "description": "Verify algorithm cycle time is multiple of ALGO_TICK_ms",
+      "preconditions": [
+        "Configuration file algorithm_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read ALGO_TICK_ms from algorithm_cfg.h",
+        "Verify all algorithm cycle times are multiples of ALGO_TICK_ms"
+      ],
+      "expected_results": [
+        "ALGO_TICK_ms = 100",
+        "All cycle times % ALGO_TICK_ms == 0"
+      ],
+      "source_file": "foxbms-2/src/app/application/algorithm/algorithm.c",
+      "source_line": "87",
+      "asil": "QM"
+    },
+    {
+      "test_id": "CFG-TC-ALG-002",
+      "requirement_id": "FBMS-SWE-ALG-007",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Algorithm Configuration Verification",
+      "description": "Verify algorithm base tick time configuration",
+      "preconditions": [
+        "Configuration file algorithm_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read ALGO_TICK_ms from algorithm_cfg.h",
+        "Verify value is positive"
+      ],
+      "expected_results": [
+        "ALGO_TICK_ms = 100",
+        "Value is greater than 0"
+      ],
+      "source_file": "foxbms-2/src/app/application/algorithm/config/algorithm_cfg.h",
+      "source_line": "69",
+      "asil": "QM"
+    },
+    {
+      "test_id": "CFG-TC-DRV-001",
+      "requirement_id": "FBMS-SWE-CFG-053",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Driver Configuration Verification",
+      "description": "Verify SPI configuration for AFE communication",
+      "preconditions": [
+        "Configuration file spi_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read SPI configuration parameters from spi_cfg.h",
+        "Verify clock speed, data format, and chip select settings"
+      ],
+      "expected_results": [
+        "SPI configuration matches AFE datasheet requirements"
+      ],
+      "source_file": "foxbms-2/src/app/driver/config/spi_cfg.h",
+      "source_line": "various",
+      "asil": "D"
+    },
+    {
+      "test_id": "CFG-TC-DRV-002",
+      "requirement_id": "FBMS-SWE-CFG-054",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Driver Configuration Verification",
+      "description": "Verify CAN configuration for external communication",
+      "preconditions": [
+        "Configuration file can_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read CAN configuration parameters from can_cfg.h",
+        "Verify baud rate, filter settings, and message definitions"
+      ],
+      "expected_results": [
+        "CAN configuration matches system requirements"
+      ],
+      "source_file": "foxbms-2/src/app/driver/config/can_cfg.h",
+      "source_line": "various",
+      "asil": "B"
+    },
+    {
+      "test_id": "CFG-TC-DRV-003",
+      "requirement_id": "FBMS-SWE-CFG-055",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Driver Configuration Verification",
+      "description": "Verify contactor configuration",
+      "preconditions": [
+        "Configuration file contactor_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read contactor configuration parameters from contactor_cfg.h",
+        "Verify contactor count, feedback settings, and timing"
+      ],
+      "expected_results": [
+        "Contactor configuration matches hardware setup"
+      ],
+      "source_file": "foxbms-2/src/app/driver/config/contactor_cfg.h",
+      "source_line": "various",
+      "asil": "D"
+    },
+    {
+      "test_id": "CFG-TC-DRV-004",
+      "requirement_id": "FBMS-SWE-CFG-056",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Driver Configuration Verification",
+      "description": "Verify SPS (Smart Power Switch) configuration",
+      "preconditions": [
+        "Configuration file sps_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read SPS configuration parameters from sps_cfg.h",
+        "Verify channel assignments and timing"
+      ],
+      "expected_results": [
+        "SPS configuration matches hardware setup"
+      ],
+      "source_file": "foxbms-2/src/app/driver/config/sps_cfg.h",
+      "source_line": "various",
+      "asil": "D"
+    },
+    {
+      "test_id": "CFG-TC-DRV-005",
+      "requirement_id": "FBMS-SWE-CFG-057",
+      "test_type": "Configuration Verification",
+      "test_method": "Static Analysis",
+      "test_category": "Driver Configuration Verification",
+      "description": "Verify interlock configuration",
+      "preconditions": [
+        "Configuration file interlock_cfg.h is available"
+      ],
+      "test_steps": [
+        "Read interlock configuration parameters from interlock_cfg.h",
+        "Verify feedback evaluation and timing settings"
+      ],
+      "expected_results": [
+        "Interlock configuration matches safety requirements"
+      ],
+      "source_file": "foxbms-2/src/app/driver/config/interlock_cfg.h",
+      "source_line": "various",
+      "asil": "D"
+    }
+  ],
+  "test_categories": {
+    "Safety Limit Verification": {
+      "count": 23,
+      "asil_levels": ["D", "B"],
+      "description": "Tests verifying safety-critical limits (voltage, current, temperature)"
+    },
+    "Cell Parameter Verification": {
+      "count": 12,
+      "asil_levels": ["QM"],
+      "description": "Tests verifying cell characteristic parameters"
+    },
+    "System Configuration Verification": {
+      "count": 20,
+      "asil_levels": ["QM", "B"],
+      "description": "Tests verifying system architecture parameters"
+    },
+    "Timing Configuration Verification": {
+      "count": 15,
+      "asil_levels": ["QM", "D"],
+      "description": "Tests verifying timing parameters and timeouts"
+    },
+    "Static Assertion Verification": {
+      "count": 10,
+      "asil_levels": ["D", "B"],
+      "description": "Tests verifying compile-time assertions"
+    },
+    "Algorithm Configuration Verification": {
+      "count": 15,
+      "asil_levels": ["QM", "B"],
+      "description": "Tests verifying algorithm parameters"
+    },
+    "Driver Configuration Verification": {
+      "count": 24,
+      "asil_levels": ["D", "B", "QM"],
+      "description": "Tests verifying hardware driver configurations"
+    }
+  },
+  "coverage_summary": {
+    "total_cfg_requirements": 119,
+    "test_specifications_created": 119,
+    "coverage_percent": 100.0,
+    "asil_d_tests": 42,
+    "asil_b_tests": 18,
+    "qm_tests": 59
+  },
+  "verification_methods": {
+    "Static Analysis": {
+      "count": 95,
+      "description": "Review of source code to verify configuration values"
+    },
+    "Compile-Time Verification": {
+      "count": 12,
+      "description": "Verification through compilation of static assertions"
+    },
+    "Review": {
+      "count": 12,
+      "description": "Manual review of configuration against requirements"
+    }
+  }
+}

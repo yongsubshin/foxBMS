@@ -1,0 +1,5 @@
+<map id="NXP_RequestTemperatureRead" name="NXP_RequestTemperatureRead">
+<area shape="rect" id="Node000001" title=" " alt="" coords="276,5,500,31"/>
+<area shape="rect" id="Node000002" href="$nxp__afe_8c.html#a6156d307209cbe933ff3ba53446e829c" title="Makes the request to the AFE state machine to read from the external temperature sensor on slaves." alt="" coords="5,5,228,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,21,228,21,228,15,262,15"/>
+</map>

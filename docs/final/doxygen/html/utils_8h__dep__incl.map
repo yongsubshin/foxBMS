@@ -1,0 +1,11 @@
+<map id="foxbms&#45;2/src/app/driver/foxmath/utils.h" name="foxbms&#45;2/src/app/driver/foxmath/utils.h">
+<area shape="rect" id="Node000001" title="Utilities." alt="" coords="323,5,500,45"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__debug-response_8c.html" title="Implementation for handling the transmit of debug response messages." alt="" coords="5,93,199,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="336,52,190,96,188,91,335,47"/>
+<area shape="rect" id="Node000003" href="$foxmath_8c.html" title="Mathlib function implementations." alt="" coords="223,101,400,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="383,57,333,103,330,99,379,53"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html" title="Util function implementations." alt="" coords="424,101,601,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="444,53,494,99,490,103,440,57"/>
+<area shape="rect" id="Node000005" href="$fram_8c.html" title="Driver for the FRAM module." alt="" coords="625,101,803,141"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="487,47,654,98,652,103,485,52"/>
+</map>

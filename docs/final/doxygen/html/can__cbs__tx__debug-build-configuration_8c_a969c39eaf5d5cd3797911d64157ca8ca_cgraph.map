@@ -1,0 +1,14 @@
+<map id="CANTX_SetBatterySystemMuxOpenWireCheckMessageData" name="CANTX_SetBatterySystemMuxOpenWireCheckMessageData">
+<area shape="rect" id="Node000001" title="Adds the data to the message." alt="" coords="5,73,225,113"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a8cecd87914decc2e130d2a117ea6c92a" title="Transform a bool to a bit (set if true)" alt="" coords="305,5,527,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,70,273,39,314,31,315,36,274,45,173,75"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="319,55,513,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,81,305,74,305,79,226,86"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="607,123,820,163"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="226,99,593,131,593,136,225,105"/>
+<area shape="rect" id="Node000006" href="$can__cbs__tx__debug-build-configuration_8c.html#ab200ee49334c2e08a5f244255203c3bf" title="Sends the application configuration message." alt="" coords="273,156,559,181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="186,110,274,134,343,150,341,156,273,139,184,115"/>
+<area shape="rect" id="Node000005" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="868,131,1091,156"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="820,141,854,141,854,146,820,146"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="559,154,593,151,593,156,559,159"/>
+</map>

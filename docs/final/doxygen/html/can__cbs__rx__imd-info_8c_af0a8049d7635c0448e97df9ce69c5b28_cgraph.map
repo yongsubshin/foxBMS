@@ -1,0 +1,7 @@
+<map id="CANRX_SelfTestRunning" name="CANRX_SelfTestRunning">
+<area shape="rect" id="Node000001" title="Checks if self test is running." alt="" coords="5,5,184,31"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="232,5,523,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,15,218,15,218,21,184,21"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="571,5,793,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="523,15,557,15,557,21,523,21"/>
+</map>

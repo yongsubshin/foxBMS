@@ -1,0 +1,5 @@
+<map id="CANTX_CalculateStringPower" name="CANTX_CalculateStringPower">
+<area shape="rect" id="Node000001" title="calculates the return value of the power" alt="" coords="5,5,219,31"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="267,5,461,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,15,253,15,253,21,219,21"/>
+</map>

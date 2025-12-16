@@ -1,0 +1,5 @@
+<map id="AFE_IsFirstMeasurementCycleFinished" name="AFE_IsFirstMeasurementCycleFinished">
+<area shape="rect" id="Node000001" title="Checks if the first AFE measurement cycle was made." alt="" coords="5,5,224,45"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x_8c.html#aafda6fb54db21a7bb3c96e072e70f400" title="Gets the measurement initialization status." alt="" coords="272,5,489,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,23,259,23,259,28,224,28"/>
+</map>

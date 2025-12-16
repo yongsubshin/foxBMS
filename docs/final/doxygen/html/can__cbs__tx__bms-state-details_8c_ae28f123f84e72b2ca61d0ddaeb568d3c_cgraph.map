@@ -1,0 +1,59 @@
+<map id="CANTX_BmsStateDetails" name="CANTX_BmsStateDetails">
+<area shape="rect" id="Node000001" title="CAN Tx callback function for detail state." alt="" coords="5,337,188,363"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="236,5,505,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,336,107,281,130,201,148,157,171,114,200,75,234,41,243,35,246,39,238,45,204,78,176,117,153,159,135,203,112,283,102,337"/>
+<area shape="rect" id="Node000003" href="$can__cbs__tx__bms-state-details_8c.html#a451214897f430b80d382d01cc07e68bd" title="sets the message data for current violation 100ms" alt="" coords="250,184,491,209"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="106,335,156,279,193,246,235,220,255,211,257,216,237,224,196,251,160,282,110,339"/>
+<area shape="rect" id="Node000007" href="$can__cbs__tx__bms-state-details_8c.html#a0fad46467309f904bfa6c3511e8fd939" title="sets the message data for current violation 100ms algorithm" alt="" coords="259,234,482,274"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="121,335,172,309,235,283,261,275,263,280,237,289,175,314,123,340"/>
+<area shape="rect" id="Node000008" href="$can__cbs__tx__bms-state-details_8c.html#ad4d4188f8a10c560f907217cb38cb077" title="sets the message data for recorded violation 100ms algorithm" alt="" coords="259,298,482,338"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="188,337,245,330,246,335,189,342"/>
+<area shape="rect" id="Node000009" href="$can__cbs__tx__bms-state-details_8c.html#a11af6f08c7835292d1b849d6640e861f" title="sets the message data for recorded violation 100ms" alt="" coords="259,362,482,402"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="189,358,246,365,245,370,188,363"/>
+<area shape="rect" id="Node000010" href="$can__cbs__tx__bms-state-details_8c.html#a3bd83010f468e5045d8c7972bde15f79" title="sets the message data for current violation 10ms" alt="" coords="254,427,487,452"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="122,360,174,386,237,411,273,421,271,426,235,417,171,391,120,365"/>
+<area shape="rect" id="Node000011" href="$can__cbs__tx__bms-state-details_8c.html#aacfbec8237743091c727184cf10c595a" title="sets the message data for recorded violation 10ms" alt="" coords="263,477,478,517"/>
+<area shape="poly" id="edge18_Node000001_Node000011" title=" " alt="" coords="111,361,163,411,198,439,237,462,254,470,251,474,235,467,195,443,159,415,108,365"/>
+<area shape="rect" id="Node000012" href="$can__cbs__tx__bms-state-details_8c.html#a2fb3934da87d925512e1344ebe383371" title="sets the message data for current violation 1ms" alt="" coords="257,541,484,567"/>
+<area shape="poly" id="edge21_Node000001_Node000012" title=" " alt="" coords="106,362,124,396,152,441,191,488,213,509,237,526,252,534,249,539,235,531,210,513,187,491,148,444,119,398,101,364"/>
+<area shape="rect" id="Node000013" href="$can__cbs__tx__bms-state-details_8c.html#a937324dd9caec6641722eb65d2ad0fc5" title="sets the message data for recorded violation 1ms" alt="" coords="267,591,474,631"/>
+<area shape="poly" id="edge24_Node000001_Node000013" title=" " alt="" coords="104,362,119,404,146,463,185,525,210,553,238,577,256,588,254,593,234,581,206,557,181,528,141,465,114,406,99,364"/>
+<area shape="rect" id="Node000014" href="$can__cbs__tx__bms-state-details_8c.html#aa26bdb72e38dd809dbe14375a5180ed4" title="sets the message data for current violation engine" alt="" coords="271,55,470,95"/>
+<area shape="poly" id="edge27_Node000001_Node000014" title=" " alt="" coords="99,336,113,292,140,229,180,162,205,131,234,105,257,92,260,96,238,109,209,135,184,165,144,231,118,294,104,338"/>
+<area shape="rect" id="Node000015" href="$can__cbs__tx__bms-state-details_8c.html#aa7c174a5e704b06a2868d9f3c201a1a3" title="sets the message data for recorded violation engine" alt="" coords="271,119,470,159"/>
+<area shape="poly" id="edge30_Node000001_Node000015" title=" " alt="" coords="102,336,120,302,148,257,187,209,235,169,257,157,260,162,237,174,191,213,153,260,124,305,106,338"/>
+<area shape="rect" id="Node000016" href="$sys__mon_8c.html#a1c52e495d92c986107170f9c45aed75a" title="Returns the timing violation flags determined from fram state." alt="" coords="241,656,500,681"/>
+<area shape="poly" id="edge33_Node000001_Node000016" title=" " alt="" coords="103,363,113,415,137,492,155,533,177,573,205,610,238,641,246,647,243,652,234,645,201,613,173,576,150,535,132,494,108,417,97,364"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html#a8cecd87914decc2e130d2a117ea6c92a" title="Transform a bool to a bit (set if true)" alt="" coords="557,308,779,333"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="464,207,506,220,545,237,581,258,641,298,638,302,579,262,542,242,504,224,462,212"/>
+<area shape="rect" id="Node000005" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="561,361,775,401"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="487,207,507,220,521,235,528,251,533,282,537,313,543,328,555,343,566,352,563,356,551,347,539,331,532,315,528,283,523,252,516,238,504,224,484,212"/>
+<area shape="rect" id="Node000006" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="831,368,1053,393"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="775,378,817,378,817,383,775,383"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="461,271,598,302,596,307,460,277"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="483,272,507,284,523,298,532,314,540,328,555,343,573,353,570,357,552,347,536,332,527,316,519,302,504,288,481,276"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="482,316,543,317,543,322,482,322"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="467,335,560,355,559,360,465,341"/>
+<area shape="poly" id="edge13_Node000009_Node000004" title=" " alt="" coords="468,359,592,334,593,339,469,365"/>
+<area shape="poly" id="edge14_Node000009_Node000005" title=" " alt="" coords="482,379,548,379,548,384,482,384"/>
+<area shape="poly" id="edge16_Node000010_Node000004" title=" " alt="" coords="478,424,504,412,519,397,527,381,535,363,552,347,571,336,574,341,555,351,540,366,532,383,524,400,507,416,480,429"/>
+<area shape="poly" id="edge17_Node000010_Node000005" title=" " alt="" coords="439,424,505,411,557,401,558,406,506,417,440,429"/>
+<area shape="poly" id="edge19_Node000011_Node000004" title=" " alt="" coords="477,479,504,463,516,449,522,436,527,406,531,376,539,361,552,347,565,337,568,342,555,351,543,364,537,378,532,407,527,437,520,452,507,467,480,483"/>
+<area shape="poly" id="edge20_Node000011_Node000005" title=" " alt="" coords="467,474,504,462,566,435,621,405,623,410,568,440,506,467,469,479"/>
+<area shape="poly" id="edge22_Node000012_Node000004" title=" " alt="" coords="483,541,504,527,520,506,527,484,529,462,527,439,526,416,527,393,534,370,551,347,562,338,566,342,555,351,539,372,532,394,531,416,533,439,534,462,533,485,525,508,507,531,486,545"/>
+<area shape="poly" id="edge23_Node000012_Node000005" title=" " alt="" coords="471,539,504,526,545,501,583,470,641,409,645,413,586,474,548,505,507,531,473,544"/>
+<area shape="poly" id="edge25_Node000013_Node000004" title=" " alt="" coords="473,597,503,577,523,550,531,522,531,493,527,464,523,435,523,406,531,376,551,347,561,339,564,343,555,350,536,378,528,406,528,435,532,464,536,493,536,523,528,552,507,581,476,602"/>
+<area shape="poly" id="edge26_Node000013_Node000005" title=" " alt="" coords="473,592,504,577,551,540,591,496,623,451,647,412,652,415,628,454,595,499,554,544,507,582,475,597"/>
+<area shape="poly" id="edge28_Node000014_Node000004" title=" " alt="" coords="471,88,507,105,534,125,559,149,602,201,635,252,657,294,653,297,630,255,597,204,555,153,530,129,504,110,469,93"/>
+<area shape="poly" id="edge29_Node000014_Node000005" title=" " alt="" coords="471,83,490,92,507,106,528,135,537,165,537,196,533,225,529,255,529,284,536,314,555,343,564,351,560,355,551,346,531,316,523,285,524,255,528,225,532,195,532,166,523,138,503,109,488,97,469,87"/>
+<area shape="poly" id="edge31_Node000015_Node000004" title=" " alt="" coords="471,154,507,169,551,198,591,232,650,296,646,299,587,236,548,202,504,174,469,159"/>
+<area shape="poly" id="edge32_Node000015_Node000005" title=" " alt="" coords="471,148,490,157,507,169,524,191,532,213,533,257,533,301,540,322,555,343,565,351,562,355,551,346,535,324,528,302,527,257,527,214,519,194,503,173,487,161,469,152"/>
+<area shape="rect" id="Node000017" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="590,680,746,705"/>
+<area shape="poly" id="edge34_Node000016_Node000017" title=" " alt="" coords="501,676,577,683,576,688,500,682"/>
+<area shape="rect" id="Node000018" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="595,729,741,755"/>
+<area shape="poly" id="edge35_Node000016_Node000018" title=" " alt="" coords="417,679,554,715,591,724,590,729,553,721,415,684"/>
+<area shape="rect" id="Node000019" href="$sys__mon_8c.html#a9fdade3ae378b8e46fcc77bd0cc61596" title="Convert recorded timings into a decision (bool) whether the timing has been violated or not." alt="" coords="553,566,783,606"/>
+<area shape="poly" id="edge36_Node000016_Node000019" title=" " alt="" coords="457,653,504,641,528,629,552,617,578,608,580,613,554,622,531,634,506,646,459,659"/>
+<area shape="rect" id="Node000020" href="$sys__mon_8c.html#acc9a5d05dfff9a46afd4f0a665cba32c" title="Copy from the from entry to the to entry." alt="" coords="583,631,753,656"/>
+<area shape="poly" id="edge37_Node000016_Node000020" title=" " alt="" coords="500,655,569,649,570,654,501,660"/>
+</map>

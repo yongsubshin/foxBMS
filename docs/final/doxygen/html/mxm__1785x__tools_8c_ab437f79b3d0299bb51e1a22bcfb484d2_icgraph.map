@@ -1,0 +1,28 @@
+<map id="MXM_Convert" name="MXM_Convert">
+<area shape="rect" id="Node000001" title="Convert a measurement value to a voltage value." alt="" coords="1568,31,1681,56"/>
+<area shape="rect" id="Node000002" href="$mxm__1785x__tools_8c.html#a302164db64e1cd2f77a03bfc022d0509" title="Test the MXM_Convert()&#45;function." alt="" coords="1082,5,1221,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1554,42,1221,24,1221,19,1554,37"/>
+<area shape="rect" id="Node000008" href="$mxm__1785x_8c.html#ac8a15260cff9ed6eb1682999e13bb9d3" title="Parse voltage values from a READALL receive buffer into an array." alt="" coords="1297,56,1520,81"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="1555,54,1517,59,1517,53,1554,49"/>
+<area shape="rect" id="Node000003" href="$mxm__1785x_8c.html#a22499bf1d575d8d09dc565b966339349" title="Execute all pre&#45;init self&#45;checks." alt="" coords="543,56,712,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1069,25,934,33,783,47,703,59,702,53,782,42,934,28,1068,19"/>
+<area shape="rect" id="Node000004" href="$mxm__afe_8c.html#ab03833bf09e30722e8ef6b9e90cc353d" title=" " alt="" coords="163,56,273,81"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="529,71,274,71,274,66,529,66"/>
+<area shape="rect" id="Node000006" href="$mxm__1785x_8c.html#aca60f84fd030e06f1ab2c57ba6bb8e7d" title="Main state&#45;machine implementation." alt="" coords="321,105,472,131"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="555,87,457,108,456,103,554,82"/>
+<area shape="rect" id="Node000005" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,81,115,107"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="150,82,115,88,114,83,149,77"/>
+<area shape="rect" id="Node000007" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="173,105,263,131"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="308,121,263,121,263,115,308,115"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="159,112,115,105,116,100,160,107"/>
+<area shape="rect" id="Node000009" href="$mxm__1785x_8c.html#a6f4a82fd15f903cbfd9672feba6051ed" title="Parse a RX buffer containing voltage values." alt="" coords="1053,56,1249,81"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="1284,71,1249,71,1249,66,1284,66"/>
+<area shape="rect" id="Node000010" href="$mxm__1785x_8c.html#ae17987a0e72b943e2cac791ee60841c8" title="Encapsulation for reading voltages from a register." alt="" coords="809,105,979,131"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1072,87,962,108,961,103,1071,81"/>
+<area shape="rect" id="Node000012" href="$mxm__1785x_8c.html#aafb9e7eb6f697518ffd1aa8928e9bbca" title="Test the MXM_ParseVoltageReadAll()&#45;function." alt="" coords="783,56,1005,81"/>
+<area shape="poly" id="edge13_Node000009_Node000012" title=" " alt="" coords="1039,71,1006,71,1006,66,1039,66"/>
+<area shape="rect" id="Node000011" href="$mxm__17852_8c.html#a688e7e359e03e17fc0559720f0b8d586" title="State&#45;Machine implementation for operation state." alt="" coords="520,105,735,131"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="796,121,735,121,735,115,796,115"/>
+<area shape="poly" id="edge12_Node000011_Node000006" title=" " alt="" coords="506,121,472,121,472,115,506,115"/>
+<area shape="poly" id="edge14_Node000012_Node000003" title=" " alt="" coords="769,71,712,71,712,66,769,66"/>
+</map>

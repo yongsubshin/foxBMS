@@ -1,0 +1,17 @@
+<map id="BAL_ProcessStateCheckBalancing" name="BAL_ProcessStateCheckBalancing">
+<area shape="rect" id="Node000001" title="State machine subfunction to check if balancing is allowed." alt="" coords="5,80,248,105"/>
+<area shape="rect" id="Node000002" href="$bal__strategy__history_8c.html#a9f236a369bc16aa1bb4428e5ef0b0417" title=" " alt="" coords="317,5,487,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,77,295,39,328,31,329,36,297,45,168,82"/>
+<area shape="rect" id="Node000003" href="$bal__strategy__history_8c.html#acf508466d14bd8560c1f5b538e86fd94" title=" " alt="" coords="308,55,496,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="248,79,294,75,295,80,249,84"/>
+<area shape="rect" id="Node000007" href="$bal__strategy__history_8c.html#ab608144bd63e5fa96224e95cec7a3fb3" title="Deactivates history based balancing." alt="" coords="339,104,465,129"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="249,101,326,107,326,113,248,106"/>
+<area shape="rect" id="Node000008" href="$bms_8c.html#ab900910af6e3c584a5e3650018fe4ed7" title="Returns current battery system state (charging/discharging, resting or in relaxation phase)" alt="" coords="296,153,508,179"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="171,103,297,138,334,147,332,153,295,143,170,108"/>
+<area shape="rect" id="Node000004" href="$bal__cfg_8c.html#ae6943eea06cdd64870ce62e3ce1b60c2" title="get balancing threshold" alt="" coords="561,31,796,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="496,57,547,52,547,57,496,62"/>
+<area shape="rect" id="Node000005" href="$group__state-estimation-api.html#ga74af4e2bdb5a3caa9696292fb9217311" title="look&#45;up table for SOC initialization" alt="" coords="556,80,801,105"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="496,73,542,77,542,83,496,79"/>
+<area shape="rect" id="Node000006" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="849,80,1040,105"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="802,90,836,90,836,95,802,95"/>
+</map>

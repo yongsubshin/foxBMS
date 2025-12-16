@@ -1,0 +1,5 @@
+<map id="CAN_RxInterrupt" name="CAN_RxInterrupt">
+<area shape="rect" id="Node000001" title="Called in case of CAN RX interrupt." alt="" coords="232,5,363,31"/>
+<area shape="rect" id="Node000002" href="$can_8c.html#acac999ab73fd61efe4dfc10883ea287c" title=" " alt="" coords="5,5,184,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,21,184,21,184,15,218,15"/>
+</map>

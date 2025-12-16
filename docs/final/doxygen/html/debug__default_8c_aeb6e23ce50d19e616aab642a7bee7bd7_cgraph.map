@@ -1,0 +1,29 @@
+<map id="FAKE_RunStateMachine" name="FAKE_RunStateMachine">
+<area shape="rect" id="Node000001" title="Defines the state transitions." alt="" coords="5,191,180,217"/>
+<area shape="rect" id="Node000002" href="$debug__default_8c.html#a10a87d31f072da72d5f1d47a8baa4413" title="Processes the initialization state." alt="" coords="231,127,423,167"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,189,231,167,233,172,146,194"/>
+<area shape="rect" id="Node000010" href="$debug__default_8c.html#a57644736c49d43c02a23f57a5813d6ec" title="Processes the running state." alt="" coords="228,191,427,217"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="180,201,214,201,214,207,180,207"/>
+<area shape="rect" id="Node000011" href="$debug__default_8c.html#a9a894ac1dfc077dd766fa461b593f395" title="Sets the next state, the next substate and the timer value of the state variable." alt="" coords="269,245,385,270"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="150,214,258,239,257,244,149,219"/>
+<area shape="rect" id="Node000003" href="$debug__default_8c.html#aab8534c5be8d61cb3f1f9f335d15e652" title="return whether the first measurement cycle is finished" alt="" coords="507,5,734,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="354,124,407,89,474,55,496,47,498,52,476,60,410,93,357,129"/>
+<area shape="rect" id="Node000006" href="$debug__default_8c.html#a16164818c401d35ed3e28bfa13b282db" title="Write temperature measurement data." alt="" coords="519,184,723,224"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="424,163,506,179,505,184,423,168"/>
+<area shape="rect" id="Node000007" href="$debug__default_8c.html#a136ef9e582647d6e404737c350daec02" title="Write voltage measurement data." alt="" coords="475,134,767,159"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="423,144,461,144,461,149,423,149"/>
+<area shape="rect" id="Node000008" href="$debug__default_8c.html#a1a89964c5c8faba29fe50b76e53271f1" title="Sets the indicator that one full measurement cycles was successful." alt="" coords="521,69,721,109"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="423,125,506,109,507,114,424,131"/>
+<area shape="rect" id="Node000009" href="$debug__default_8c.html#aed7fa787a0f37e83b1664a3f2f3030bc" title="Sets the next substate and the timer value of the state variable." alt="" coords="551,249,690,274"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="406,165,428,177,444,192,453,207,461,221,476,234,506,247,539,255,537,260,504,252,473,238,457,224,448,209,440,195,425,181,404,169"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="815,17,971,42"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="734,24,801,25,801,31,734,30"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="819,70,966,95"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="717,43,819,65,818,70,716,48"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="712,67,766,55,821,42,822,48,767,60,713,72"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="721,84,806,82,806,87,721,90"/>
+<area shape="poly" id="edge12_Node000010_Node000006" title=" " alt="" coords="427,201,505,201,505,207,427,207"/>
+<area shape="poly" id="edge13_Node000010_Node000007" title=" " alt="" coords="383,189,474,169,530,159,531,164,475,175,385,194"/>
+<area shape="poly" id="edge14_Node000010_Node000009" title=" " alt="" coords="385,214,475,233,538,245,537,250,474,239,383,219"/>
+<area shape="poly" id="edge16_Node000011_Node000009" title=" " alt="" coords="385,255,538,258,538,263,385,261"/>
+</map>

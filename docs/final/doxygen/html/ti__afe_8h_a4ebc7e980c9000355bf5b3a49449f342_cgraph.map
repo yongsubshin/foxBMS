@@ -1,0 +1,5 @@
+<map id="TI_IsFirstMeasurementCycleFinished" name="TI_IsFirstMeasurementCycleFinished">
+<area shape="rect" id="Node000001" title="This function is used to wrap the TI AFE measurement API to the generic AFE measurement API." alt="" coords="5,5,212,45"/>
+<area shape="rect" id="Node000002" href="$ti__dummy_8c.html#a6ad05411d72fb364aadd8245bce7d5ee" title=" " alt="" coords="260,5,463,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,23,246,23,246,28,212,28"/>
+</map>

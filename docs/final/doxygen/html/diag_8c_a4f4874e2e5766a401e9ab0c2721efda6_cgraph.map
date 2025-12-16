@@ -1,0 +1,17 @@
+<map id="DIAG_SetFatalErrorById" name="DIAG_SetFatalErrorById">
+<area shape="rect" id="Node000001" title="DIAG_SetFatalErrorById checks whether the error has been send before and if not send it per CAN...." alt="" coords="5,67,180,93"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__fatal-error_8c.html#af9d19804d03a440d5eb12e574a76bf30" title="Sends the Error ID per CAN." alt="" coords="228,42,408,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,68,214,64,215,69,180,73"/>
+<area shape="rect" id="Node000008" href="$timer_8c.html#a961668103b79a6b04dfd66e507bd2d7f" title="TIMER_start starts a given virtual timer." alt="" coords="267,91,369,117"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="180,87,253,95,253,100,180,92"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="479,5,692,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,42,464,36,465,41,408,47"/>
+<area shape="rect" id="Node000005" href="$can__cbs__tx__fatal-error_8c.html#a417ea445e91fa2826a6cbefbe8335661" title="Helper function to send the actual error Code." alt="" coords="456,70,715,95"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="408,61,450,66,450,71,408,67"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="786,13,1009,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="692,23,772,23,772,28,692,28"/>
+<area shape="rect" id="Node000006" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="837,66,957,91"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="715,78,824,77,824,82,715,84"/>
+<area shape="rect" id="Node000007" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="763,115,1032,141"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="674,93,797,111,796,116,673,98"/>
+</map>

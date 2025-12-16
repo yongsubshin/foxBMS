@@ -1,0 +1,7 @@
+<map id="SPS_GetChannelCurrentFeedback" name="SPS_GetChannelCurrentFeedback">
+<area shape="rect" id="Node000001" title="Get feedback value." alt="" coords="5,31,244,56"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="292,5,448,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,28,278,25,279,30,244,34"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="297,55,443,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,52,283,56,283,62,244,58"/>
+</map>

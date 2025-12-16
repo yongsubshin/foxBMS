@@ -1,0 +1,7 @@
+<map id="FAKE_CheckMultipleCalls" name="FAKE_CheckMultipleCalls">
+<area shape="rect" id="Node000001" title="check for multiple calls of state machine trigger function" alt="" coords="337,5,524,31"/>
+<area shape="rect" id="Node000002" href="$debug__default_8c.html#a3ff9b601ec0d377a3a78d8ce735c7971" title="Trigger function for the driver, called to advance the state machine." alt="" coords="163,5,289,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="324,21,290,21,290,15,324,15"/>
+<area shape="rect" id="Node000003" href="$debug__default__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,5,115,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="149,21,115,21,115,15,149,15"/>
+</map>

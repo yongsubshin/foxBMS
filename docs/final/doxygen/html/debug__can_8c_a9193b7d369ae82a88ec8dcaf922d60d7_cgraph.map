@@ -1,0 +1,5 @@
+<map id="DECAN_ConvertIndexForVoltage" name="DECAN_ConvertIndexForVoltage">
+<area shape="rect" id="Node000001" title="Convert the one number index of the cell voltage into the indexes of cellVoltage_mV." alt="" coords="5,5,236,31"/>
+<area shape="rect" id="Node000002" href="$debug__can_8c.html#a6e167e0bbe9304a6a000768491bba57c" title="A modified modulo operation: the input a can not be 0; if the result of a modulo operation is zero,..." alt="" coords="284,5,519,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,15,271,15,271,21,236,21"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="MXM_HandleStateReadall" name="MXM_HandleStateReadall">
+<area shape="rect" id="Node000001" title="Handle the state machine&#45;transactions for a READALL." alt="" coords="5,55,196,80"/>
+<area shape="rect" id="Node000002" href="$mxm__battery__management_8c.html#a9d5b57e8d6ecb30ba6426272f472e630" title="Set state request for the Battery Management State machine." alt="" coords="278,5,465,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,52,287,31,288,36,171,57"/>
+<area shape="rect" id="Node000003" href="$mxm__1785x_8c.html#a2cfdc33409d373e8721922acc6a9a3a9" title="This error handler is used as a last resort and tries a reset of the complete driver." alt="" coords="281,55,462,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,65,267,65,267,70,196,70"/>
+<area shape="rect" id="Node000005" href="$mxm__1785x_8c.html#ab0d9976f05eb48b050415afd432f9415" title="Retrieves data from lower state machine and writes it to the rx buffer." alt="" coords="244,104,499,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="171,77,288,99,287,104,171,83"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="569,55,703,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="462,65,555,65,555,70,462,70"/>
+<area shape="rect" id="Node000006" href="$mxm__battery__management_8c.html#ad89fd67b1337293d24504cdb05c19a59" title="Returns the last received DC byte." alt="" coords="547,104,725,129"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="499,114,533,114,533,119,499,119"/>
+<area shape="rect" id="Node000007" href="$mxm__battery__management_8c.html#a88722a84590c432f0bbfcdd77536c8db" title="Copy RX buffer into variable." alt="" coords="557,153,715,179"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="441,127,554,148,553,153,440,132"/>
+</map>

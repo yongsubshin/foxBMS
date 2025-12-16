@@ -1,0 +1,55 @@
+<map id="foxbms&#45;2/src/app/driver/can/cbs/can_helper.h" name="foxbms&#45;2/src/app/driver/can/cbs/can_helper.h">
+<area shape="rect" id="Node000001" title="Headers for the helper functions for the CAN module." alt="" coords="453,5,631,45"/>
+<area shape="rect" id="Node000002" href="$can__cfg_8h.html" title="Headers for the configuration for the CAN module." alt="" coords="53,93,137,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="454,44,157,96,151,97,150,92,156,91,453,39"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="839,680,922,705"/>
+<area shape="poly" id="edge36_Node000001_Node000009" title=" " alt="" coords="631,30,769,45,846,57,921,72,989,91,1045,115,1066,128,1083,143,1093,160,1097,178,1097,548,1092,575,1080,599,1062,620,1040,638,988,665,936,682,934,677,986,660,1037,634,1059,616,1076,596,1087,573,1091,547,1091,178,1088,162,1078,147,1063,133,1042,119,988,96,920,77,845,62,769,50,630,35"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="317,680,388,705"/>
+<area shape="poly" id="edge37_Node000001_Node000010" title=" " alt="" coords="454,29,364,38,318,48,275,62,236,81,205,106,185,138,180,157,178,178,178,327,184,419,192,455,203,488,238,553,291,630,308,651,328,669,324,673,305,655,287,634,234,556,199,490,187,457,179,420,173,327,173,178,175,156,180,136,201,103,233,76,273,57,317,42,364,33,453,24"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="988,387,1056,412"/>
+<area shape="poly" id="edge35_Node000001_Node000014" title=" " alt="" coords="631,24,720,33,767,42,811,57,851,76,883,103,904,136,909,156,911,178,911,254,914,273,920,292,940,326,967,355,994,377,991,381,964,359,936,329,915,294,908,275,906,254,906,178,904,157,899,138,879,106,848,81,809,62,766,48,720,38,630,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,167,87,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,121,64,157,60,154,85,117"/>
+<area shape="rect" id="Node000004" href="$database_8h.html" title="Database module header." alt="" coords="283,167,377,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="134,116,280,160,278,165,132,121"/>
+<area shape="poly" id="edge34_Node000002_Node000010" title=" " alt="" coords="102,118,118,175,124,212,127,251,127,547,132,576,145,600,165,621,190,639,249,665,305,680,303,686,247,670,188,644,162,625,141,604,127,578,122,548,122,251,119,213,112,176,97,119"/>
+<area shape="rect" id="Node000005" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="644,313,765,339"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="369,190,512,238,670,305,667,310,510,242,368,195"/>
+<area shape="poly" id="edge33_Node000004_Node000010" title=" " alt="" coords="323,194,273,264,241,317,212,377,190,441,179,507,179,540,184,571,194,602,209,630,228,651,252,666,278,676,304,683,303,688,277,681,250,670,225,655,205,634,189,604,179,572,174,540,173,507,184,440,207,375,237,314,268,261,318,191"/>
+<area shape="rect" id="Node000011" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="517,607,620,632"/>
+<area shape="poly" id="edge28_Node000004_Node000011" title=" " alt="" coords="324,193,307,226,302,245,305,265,327,319,355,371,388,420,423,466,492,543,547,595,543,599,488,547,419,469,384,423,351,374,322,321,299,266,297,245,302,224,319,191"/>
+<area shape="rect" id="Node000015" href="$database__helper_8h.html" title="Database module header." alt="" coords="314,240,455,265"/>
+<area shape="poly" id="edge25_Node000004_Node000015" title=" " alt="" coords="341,191,370,228,365,231,337,194"/>
+<area shape="rect" id="Node000016" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="416,533,465,559"/>
+<area shape="poly" id="edge29_Node000004_Node000016" title=" " alt="" coords="378,185,428,203,451,218,470,239,487,274,496,313,497,353,493,393,475,467,455,521,450,520,470,465,488,393,492,353,490,314,482,276,465,241,448,222,425,208,377,190"/>
+<area shape="rect" id="Node000006" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="674,387,837,412"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="715,337,741,374,737,377,711,341"/>
+<area shape="poly" id="edge23_Node000005_Node000009" title=" " alt="" coords="766,333,824,351,852,365,877,385,929,442,947,470,959,499,966,529,966,561,959,596,946,633,931,656,912,674,908,670,927,652,941,631,954,594,960,561,960,530,954,501,942,473,924,445,874,389,849,370,822,356,765,338"/>
+<area shape="poly" id="edge24_Node000005_Node000010" title=" " alt="" coords="644,340,550,360,446,389,400,407,363,427,339,449,332,460,330,472,330,547,336,612,348,666,343,668,331,613,325,547,325,471,327,458,334,446,360,423,398,402,445,384,549,355,643,335"/>
+<area shape="rect" id="Node000012" href="$bms-slave__cfg_8h.html" title="Configuration of the foxBMS BMS&#45;Slave (e.g., value of balancing resistor, input capacitance...." alt="" coords="580,460,709,485"/>
+<area shape="poly" id="edge18_Node000005_Node000012" title=" " alt="" coords="696,340,680,362,664,388,655,418,650,447,644,446,650,417,660,386,675,359,692,337"/>
+<area shape="rect" id="Node000013" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="849,607,912,632"/>
+<area shape="poly" id="edge19_Node000005_Node000013" title=" " alt="" coords="766,335,812,353,833,367,851,385,866,410,878,438,889,495,891,550,887,593,882,593,886,550,884,496,873,439,862,412,847,388,830,371,809,358,765,340"/>
+<area shape="poly" id="edge22_Node000005_Node000014" title=" " alt="" coords="756,336,975,385,974,390,755,341"/>
+<area shape="rect" id="Node000007" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="642,533,725,559"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="754,413,723,487,701,523,697,520,718,484,749,411"/>
+<area shape="rect" id="Node000008" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="747,607,825,632"/>
+<area shape="poly" id="edge15_Node000006_Node000008" title=" " alt="" coords="760,412,785,593,780,593,754,413"/>
+<area shape="poly" id="edge16_Node000006_Node000009" title=" " alt="" coords="772,410,806,440,850,485,893,542,912,573,926,606,928,624,924,641,905,671,900,668,919,639,923,623,921,607,907,575,889,545,846,489,802,444,768,414"/>
+<area shape="poly" id="edge17_Node000006_Node000010" title=" " alt="" coords="674,412,608,426,536,450,465,485,433,508,405,535,384,567,370,602,357,667,352,666,365,601,380,564,401,532,430,504,462,481,534,445,607,421,673,407"/>
+<area shape="poly" id="edge13_Node000006_Node000012" title=" " alt="" coords="739,414,676,455,673,450,736,410"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="701,556,759,596,756,601,698,561"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="690,558,707,593,720,613,736,630,780,658,827,676,825,681,777,663,732,634,716,616,702,596,685,560"/>
+<area shape="poly" id="edge12_Node000007_Node000010" title=" " alt="" coords="682,560,665,597,651,617,633,634,605,651,576,664,514,682,453,692,402,695,402,690,453,686,512,677,574,659,603,646,630,630,647,614,661,594,677,558"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="666,561,600,602,598,597,664,556"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="803,630,856,669,853,674,800,634"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="747,630,402,686,402,681,746,624"/>
+<area shape="poly" id="edge14_Node000012_Node000007" title=" " alt="" coords="653,484,673,520,668,523,649,487"/>
+<area shape="poly" id="edge20_Node000013_Node000009" title=" " alt="" coords="883,632,883,666,878,666,878,632"/>
+<area shape="poly" id="edge21_Node000013_Node000010" title=" " alt="" coords="850,632,837,635,715,655,593,671,402,690,402,685,593,665,714,650,836,629,848,627"/>
+<area shape="poly" id="edge26_Node000015_Node000005" title=" " alt="" coords="437,263,640,308,639,313,436,268"/>
+<area shape="poly" id="edge27_Node000015_Node000010" title=" " alt="" coords="369,268,342,289,313,319,289,356,282,377,279,398,279,547,285,582,299,615,317,645,335,668,330,671,312,648,294,618,280,584,274,548,274,398,277,375,284,354,308,316,338,285,366,264"/>
+<area shape="poly" id="edge31_Node000016_Node000009" title=" " alt="" coords="448,558,470,594,486,614,506,630,531,641,565,651,651,667,826,685,825,690,651,672,564,656,529,646,503,634,482,618,465,597,444,560"/>
+<area shape="poly" id="edge32_Node000016_Node000010" title=" " alt="" coords="438,560,399,633,373,671,368,668,394,631,433,558"/>
+<area shape="poly" id="edge30_Node000016_Node000011" title=" " alt="" coords="463,556,537,597,534,602,460,561"/>
+</map>

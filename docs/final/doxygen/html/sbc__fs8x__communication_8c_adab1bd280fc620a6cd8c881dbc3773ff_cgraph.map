@@ -1,0 +1,30 @@
+<map id="FS8x_SPI_TransferData" name="FS8x_SPI_TransferData">
+<area shape="rect" id="Node000001" title="Performs SPI transfer of the txData. Received frame is saved into rxData structure." alt="" coords="5,55,176,80"/>
+<area shape="rect" id="Node000002" href="$sbc__fs8x__communication_8c.html#a80544b95c576332d48a6f882957018d8" title="Performs CRC check of the data array." alt="" coords="262,55,389,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,65,248,65,248,70,176,70"/>
+<area shape="rect" id="Node000004" href="$sbc__fs8x__communication_8c.html#ae5b596457c82d4c45e811ad4c404b312" title="Creates a raw frame for SPI transfer." alt="" coords="224,5,427,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="151,52,250,31,251,36,152,57"/>
+<area shape="rect" id="Node000005" href="$group__Extern.html#ga1b7c11ee24b9fe8c8e104ae40a350e26" title="This function transfers single frame through blocking SPI communication in both directions...." alt="" coords="240,104,411,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="152,77,251,98,250,104,151,83"/>
+<area shape="rect" id="Node000003" href="$sbc__fs8x__communication_8c.html#a87db6e52e5d345e7ae7be0606196c27d" title="This function calculates CRC value of passed data array. Takes bytes in inverted order due to frame f..." alt="" coords="511,31,626,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="389,58,497,48,498,53,390,64"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="427,26,498,33,498,39,427,31"/>
+<area shape="rect" id="Node000006" href="$spi_8c.html#ac84bc8424de860e2cd89fea2e89dd89a" title="Transmits and receives data on SPI without DMA." alt="" coords="475,104,663,129"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="411,114,461,114,461,119,411,119"/>
+<area shape="rect" id="Node000007" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="725,5,825,31"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="593,102,710,40,724,33,727,38,712,44,595,106"/>
+<area shape="rect" id="Node000008" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="733,55,817,80"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="622,101,718,78,719,83,623,107"/>
+<area shape="rect" id="Node000009" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="711,104,839,129"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="663,114,697,114,697,119,663,119"/>
+<area shape="rect" id="Node000010" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="735,203,814,228"/>
+<area shape="poly" id="edge10_Node000006_Node000010" title=" " alt="" coords="594,127,712,188,729,195,726,200,710,192,592,132"/>
+<area shape="rect" id="Node000013" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="727,153,822,179"/>
+<area shape="poly" id="edge13_Node000006_Node000013" title=" " alt="" coords="623,127,714,149,713,154,622,132"/>
+<area shape="rect" id="Node000011" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="887,153,1043,179"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="814,203,901,180,903,185,815,208"/>
+<area shape="rect" id="Node000012" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="891,203,1038,228"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="814,213,878,213,878,218,814,218"/>
+<area shape="poly" id="edge14_Node000013_Node000011" title=" " alt="" coords="822,163,873,163,873,169,822,169"/>
+<area shape="poly" id="edge15_Node000013_Node000012" title=" " alt="" coords="823,176,902,197,901,202,822,181"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="MXM_41BInitializeStateStruct" name="MXM_41BInitializeStateStruct">
+<area shape="rect" id="Node000001" title="Initializes the state struct with default values." alt="" coords="5,13,220,38"/>
+<area shape="rect" id="Node000002" href="$mxm__17841b_8c.html#a578f763e28fa1230a131616778099702" title="Reset register copies to default." alt="" coords="268,5,465,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,23,254,23,254,28,220,28"/>
+</map>

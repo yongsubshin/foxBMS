@@ -1,0 +1,28 @@
+<map id="LTC_WriteRegister" name="LTC_WriteRegister">
+<area shape="rect" id="Node000001" title="sends command and data to the LTC daisy&#45;chain." alt="" coords="431,179,571,204"/>
+<area shape="rect" id="Node000002" href="$ltc__6813-1_8c.html#a786975d6eab756509f5545e1593e76d0" title="sends data to the LTC daisy&#45;chain to control the user port expander from TI" alt="" coords="162,5,369,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="485,168,445,105,416,72,381,44,358,33,360,28,384,40,419,68,449,102,489,165"/>
+<area shape="rect" id="Node000004" href="$ltc__6813-1_8c.html#aab5393dbbf131697c9f2a99caa455bc2" title="sends data to the LTC daisy&#45;chain to read EEPROM on slaves." alt="" coords="149,55,382,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="477,170,436,130,410,110,382,94,352,83,354,78,384,89,413,106,439,126,481,166"/>
+<area shape="rect" id="Node000005" href="$ltc__6813-1_8c.html#a144326ee126c8959c8cfe4066532359a" title="sends data to the LTC daisy&#45;chain to write EEPROM on slaves." alt="" coords="148,104,383,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="461,175,382,143,339,132,340,127,384,138,463,170"/>
+<area shape="rect" id="Node000006" href="$ltc__6813-1_8c.html#ab6618edb82b72f99d9a6f68fc29bec40" title="sends data to the LTC daisy&#45;chain to communicate via I2C" alt="" coords="181,153,350,179"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="416,185,350,178,351,172,417,180"/>
+<area shape="rect" id="Node000007" href="$ltc__6813-1_8c.html#a31ff8a37e41588d5c4da46b46b060d50" title="sends data to the LTC daisy&#45;chain to configure multiplexer channels." alt="" coords="189,203,342,228"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="417,202,342,210,342,205,417,197"/>
+<area shape="rect" id="Node000008" href="$ltc__6813-1_8c.html#a9b561e1638689ec912cdfa268fde1e49" title="sends data to the LTC daisy&#45;chain to control the user port expander" alt="" coords="186,252,345,277"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="461,212,383,242,335,254,334,249,382,237,459,207"/>
+<area shape="rect" id="Node000009" href="$ltc__6813-1_8c.html#a75d9e2c2e420fd17b5d22abab8773b8a" title="sends data to the LTC daisy&#45;chain to control the user port expander from TI" alt="" coords="150,301,381,327"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="481,216,439,255,412,275,384,291,350,304,348,299,382,286,409,270,435,251,477,212"/>
+<area shape="rect" id="Node000010" href="$ltc__6813-1_8c.html#aa9f0ab2d87d3c99ece0b4813cb043120" title="sends data to the LTC daisy&#45;chain to control the user port expander from TI" alt="" coords="158,351,373,376"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="489,218,448,280,419,313,384,340,357,353,355,348,381,336,415,309,444,277,484,215"/>
+<area shape="rect" id="Node000003" href="$ltc__6813-1_8c.html#acf30d82064c640d2c4f36cd270c0647b" title="trigger function for the LTC driver state machine." alt="" coords="5,179,100,204"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="158,39,150,44,116,76,90,114,72,151,61,179,56,178,67,149,86,111,112,72,146,40,155,34"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="163,87,149,94,122,113,98,137,64,180,60,177,94,133,118,109,147,89,160,82"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="174,135,149,143,109,161,75,181,72,176,106,157,147,138,172,130"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="167,180,101,188,100,183,167,175"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="175,208,100,199,101,194,175,203"/>
+<area shape="poly" id="edge12_Node000008_Node000003" title=" " alt="" coords="178,251,147,242,107,225,74,206,76,202,110,220,149,237,180,246"/>
+<area shape="poly" id="edge14_Node000009_Node000003" title=" " alt="" coords="164,299,147,291,119,271,94,248,60,206,65,202,98,244,122,267,149,286,167,294"/>
+<area shape="poly" id="edge16_Node000010_Node000003" title=" " alt="" coords="159,348,146,340,113,308,86,270,67,234,56,205,61,203,72,232,91,268,117,305,150,336,162,343"/>
+</map>

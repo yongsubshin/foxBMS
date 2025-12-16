@@ -1,0 +1,5 @@
+<map id="BMS_GetStringVoltageDifference" name="BMS_GetStringVoltageDifference">
+<area shape="rect" id="Node000001" title="Returns voltage difference between first closed string and string ID." alt="" coords="5,5,240,31"/>
+<area shape="rect" id="Node000002" href="$foxmath_8c.html#a04e47df99d56d9aad4287672285f4a1c" title="Returns the absolute value of passed int32_t value." alt="" coords="288,5,424,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,15,274,15,274,21,240,21"/>
+</map>

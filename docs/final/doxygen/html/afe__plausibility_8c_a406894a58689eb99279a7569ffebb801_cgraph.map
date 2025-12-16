@@ -1,0 +1,7 @@
+<map id="AFE_PlausibilityCheckTempMinMax" name="AFE_PlausibilityCheckTempMinMax">
+<area shape="rect" id="Node000001" title="Cell temperature plausibility check." alt="" coords="5,23,207,63"/>
+<area shape="rect" id="Node000002" href="$tsi__limits_8c.html#a161bdb7af8c149fe72731f43f0619dd9" title="Return the maximum plausible temperature." alt="" coords="255,5,533,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,32,241,29,241,34,207,37"/>
+<area shape="rect" id="Node000003" href="$tsi__limits_8c.html#a9bf06d1c58f3a5ee9c9c8b1d611d1323" title="Return the minimum plausible temperature." alt="" coords="257,55,531,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,49,243,52,243,57,207,54"/>
+</map>

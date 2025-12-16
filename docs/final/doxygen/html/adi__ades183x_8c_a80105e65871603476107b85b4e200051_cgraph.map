@@ -1,0 +1,9 @@
+<map id="ADI_AccessToDatabase" name="ADI_AccessToDatabase">
+<area shape="rect" id="Node000001" title="Read local variables from database and write local variables to database." alt="" coords="5,31,179,56"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x__helpers_8c.html#ad8d247850c188e7686a40fb987757554" title="wait for a certain number of milliseconds" alt="" coords="227,31,308,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,41,213,41,213,46,179,46"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="356,5,501,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="308,34,342,29,343,34,309,40"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="361,55,496,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="309,47,348,53,347,58,308,52"/>
+</map>

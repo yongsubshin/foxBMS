@@ -1,0 +1,9 @@
+<map id="CANTX_SetTimingViolation100MsAlgo" name="CANTX_SetTimingViolation100MsAlgo">
+<area shape="rect" id="Node000001" title="sets the message data for current violation 100ms algorithm" alt="" coords="5,27,228,67"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a8cecd87914decc2e130d2a117ea6c92a" title="Transform a bool to a bit (set if true)" alt="" coords="276,5,497,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,33,262,29,263,34,229,38"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="280,55,493,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="229,56,266,60,266,65,228,62"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="545,63,768,88"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="494,73,532,73,532,78,494,78"/>
+</map>

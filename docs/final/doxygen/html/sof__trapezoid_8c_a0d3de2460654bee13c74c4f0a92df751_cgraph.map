@@ -1,0 +1,16 @@
+<map id="SOF_Calculation" name="SOF_Calculation">
+<area shape="rect" id="Node000001" title="triggers SOF calculation" alt="" coords="5,127,133,152"/>
+<area shape="rect" id="Node000002" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="217,5,367,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,125,121,83,149,60,180,41,203,32,205,37,183,46,152,65,124,87,83,128"/>
+<area shape="rect" id="Node000003" href="$bms_8c.html#a38f183c232165fccfd2989f208e4fd0b" title="Check if transition in to error state is active." alt="" coords="187,55,397,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,124,208,97,209,102,115,129"/>
+<area shape="rect" id="Node000004" href="$sof__trapezoid_8c.html#a09f81cc818c5389fd0244448fb90511f" title="calculates the SoF from temperature data (i.e., minimum and maximum temperature of cells)" alt="" coords="193,119,391,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,137,179,137,179,142,134,142"/>
+<area shape="rect" id="Node000006" href="$sof__trapezoid_8c.html#ace0659b0de9303cd1f927adcbe13141f" title="calculates the SoF from voltage data (i.e., minimum and maximum voltage)" alt="" coords="189,183,395,223"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="115,150,209,177,208,182,114,155"/>
+<area shape="rect" id="Node000007" href="$sof__trapezoid_8c.html#af2e4f8f15001952a5c495410b178f308" title="get the minimum current values of all variants of SoF calculation" alt="" coords="181,248,403,273"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="83,150,124,191,152,214,183,233,202,241,200,246,180,238,149,218,121,195,80,154"/>
+<area shape="rect" id="Node000005" href="$foxmath_8c.html#a2db263df23dd46c7d63c6b0f2bc0f00d" title="Returns the minimum of the passed float values." alt="" coords="451,188,660,213"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="379,157,487,182,486,187,378,162"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="348,245,485,214,486,219,349,251"/>
+</map>

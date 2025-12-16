@@ -1,0 +1,7 @@
+<map id="LTC_SetPortExpanderDirectionTi" name="LTC_SetPortExpanderDirectionTi">
+<area shape="rect" id="Node000001" title="sends data to the LTC daisy&#45;chain to control the user port expander from TI" alt="" coords="5,5,236,31"/>
+<area shape="rect" id="Node000002" href="$ltc__6813-1_8c.html#a8cc4616cd88973c4eff35c1a5490bee0" title="sends command and data to the LTC daisy&#45;chain." alt="" coords="284,5,424,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,15,270,15,270,21,236,21"/>
+<area shape="rect" id="Node000003" href="$ltc__pec_8c.html#afb47d1f12f35878bf9100c024fb821cc" title="calculates the PEC15" alt="" coords="472,5,623,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="424,15,458,15,458,21,424,21"/>
+</map>

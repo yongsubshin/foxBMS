@@ -1,0 +1,9 @@
+<map id="foxbms&#45;2/src/app/application/config/plausibility_cfg.h" name="foxbms&#45;2/src/app/application/config/plausibility_cfg.h">
+<area shape="rect" id="Node000001" title="Plausibility checks for cell voltage and cell temperatures." alt="" coords="123,5,333,45"/>
+<area shape="rect" id="Node000002" href="$plausibility_8h.html" title="Plausibility checks for cell voltage and cell temperatures." alt="" coords="123,93,333,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,59,231,93,225,93,225,59"/>
+<area shape="rect" id="Node000003" href="$plausibility_8c.html" title="Plausibility checks for cell voltage and cell temperatures." alt="" coords="5,181,216,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="192,144,138,183,135,179,189,140"/>
+<area shape="rect" id="Node000004" href="$redundancy_8c.html" title="Source file for handling redundancy between redundant cell voltage and cell temperature measurements." alt="" coords="240,181,451,221"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="267,140,321,179,318,183,264,144"/>
+</map>

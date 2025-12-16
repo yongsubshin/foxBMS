@@ -1,0 +1,7 @@
+<map id="SPI_Unlock" name="SPI_Unlock">
+<area shape="rect" id="Node000001" title="Unlocks SPI interfaces." alt="" coords="5,31,100,56"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="148,5,304,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,34,134,29,135,34,101,39"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="153,55,299,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,47,139,53,138,58,100,52"/>
+</map>

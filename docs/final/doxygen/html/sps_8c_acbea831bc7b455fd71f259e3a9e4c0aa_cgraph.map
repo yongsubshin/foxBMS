@@ -1,0 +1,7 @@
+<map id="SPS_RequestChannelState" name="SPS_RequestChannelState">
+<area shape="rect" id="Node000001" title="Request the functional state of a channel." alt="" coords="5,31,199,56"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="247,5,403,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,30,233,26,233,31,199,35"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="251,55,398,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,51,238,55,237,61,199,56"/>
+</map>

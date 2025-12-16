@@ -1,0 +1,62 @@
+<map id="foxbms&#45;2/src/app/driver/config/contactor_cfg.h" name="foxbms&#45;2/src/app/driver/config/contactor_cfg.h">
+<area shape="rect" id="Node000001" title="Header for the configuration for the driver for the contactors." alt="" coords="3371,5,3548,45"/>
+<area shape="rect" id="Node000002" href="$contactor__cfg_8c.html" title="Configuration for the driver for the contactors." alt="" coords="3169,93,3347,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="3403,53,3303,96,3301,91,3401,48"/>
+<area shape="rect" id="Node000003" href="$contactor_8h.html" title="Headers for the driver for the contactors." alt="" coords="3371,93,3548,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="3462,59,3462,93,3457,93,3457,59"/>
+<area shape="rect" id="Node000026" href="$sps_8h.html" title="Headers for the driver for the smart power switches." alt="" coords="3624,93,3801,133"/>
+<area shape="poly" id="edge29_Node000001_Node000026" title=" " alt="" coords="3529,47,3658,91,3656,96,3527,52"/>
+<area shape="rect" id="Node000004" href="$bms_8h.html" title="BMS driver header." alt="" coords="2079,181,2290,221"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="3357,136,3050,166,2750,185,2487,196,2290,201,2290,196,2487,191,2750,180,3050,161,3357,131"/>
+<area shape="rect" id="Node000023" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="5,284,188,324"/>
+<area shape="poly" id="edge27_Node000003_Node000023" title=" " alt="" coords="3357,136,3161,155,2995,167,2848,173,2712,175,2429,175,2067,184,1782,192,1541,192,1129,186,932,189,721,201,482,227,201,272,147,286,146,281,200,267,481,222,720,196,932,183,1129,180,1541,186,1782,186,2067,179,2429,170,2712,169,2848,167,2995,161,3161,150,3357,131"/>
+<area shape="rect" id="Node000024" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="3595,284,3761,324"/>
+<area shape="poly" id="edge28_Node000003_Node000024" title=" " alt="" coords="3463,147,3470,185,3477,203,3488,220,3509,235,3542,252,3619,281,3618,286,3539,257,3506,240,3484,223,3472,206,3465,186,3457,148"/>
+<area shape="rect" id="Node000025" href="$contactor_8c.html" title="Driver for the contactors." alt="" coords="3497,181,3675,221"/>
+<area shape="poly" id="edge26_Node000003_Node000025" title=" " alt="" coords="3500,139,3559,179,3556,183,3497,144"/>
+<area shape="rect" id="Node000005" href="$soc__counting_8c.html" title="SOC module responsible for calculation of SOC." alt="" coords="2079,277,2290,331"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="2187,235,2187,276,2182,276,2182,235"/>
+<area shape="rect" id="Node000006" href="$soe__counting_8c.html" title="SOE module responsible for calculation of SOE." alt="" coords="2314,277,2525,331"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="2242,224,2359,274,2357,279,2240,229"/>
+<area shape="rect" id="Node000007" href="$sof__trapezoid_8c.html" title="SOF modules responsible for current derating calculation." alt="" coords="2600,277,2815,331"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="2304,217,2438,239,2581,267,2613,274,2612,279,2580,272,2437,244,2303,222"/>
+<area shape="rect" id="Node000008" href="$bal__strategy__history_8c.html" title="Driver for the Balancing module." alt="" coords="2839,277,3050,331"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="2304,206,2547,226,2688,244,2828,267,2860,274,2859,279,2827,272,2687,249,2546,232,2303,211"/>
+<area shape="rect" id="Node000009" href="$bal__strategy__voltage_8c.html" title="Driver for the Balancing module." alt="" coords="3309,277,3519,331"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="2304,199,2495,201,2743,210,3020,230,3160,246,3297,267,3331,274,3330,279,3296,272,3159,252,3019,236,2743,215,2495,206,2304,204"/>
+<area shape="rect" id="Node000010" href="$bms_8c.html" title="Bms driver implementation." alt="" coords="3451,475,3662,515"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="2304,202,2625,208,3021,221,3366,240,3479,252,3515,259,3533,267,3552,290,3564,317,3571,346,3574,376,3572,432,3564,475,3559,474,3567,431,3569,376,3566,347,3559,319,3547,293,3530,271,3513,264,3479,257,3366,245,3021,226,2625,214,2304,207"/>
+<area shape="rect" id="Node000011" href="$soa__cfg_8h.html" title="Configuration header for SOA." alt="" coords="3074,284,3285,324"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="2304,201,2456,207,2646,218,2854,237,3063,267,3123,281,3121,286,3061,272,2854,242,2646,223,2456,212,2304,207"/>
+<area shape="rect" id="Node000014" href="$soa_8c.html" title="SOA module responsible for checking battery parameters against safety limits." alt="" coords="2649,475,2859,515"/>
+<area shape="poly" id="edge16_Node000004_Node000014" title=" " alt="" coords="2304,213,2439,235,2497,250,2538,267,2557,283,2568,300,2577,317,2591,337,2667,414,2733,472,2730,476,2664,418,2587,340,2572,320,2563,302,2553,286,2535,272,2495,255,2438,241,2303,219"/>
+<area shape="rect" id="Node000015" href="$redundancy_8c.html" title="Source file for handling redundancy between redundant cell voltage and cell temperature measurements." alt="" coords="213,284,423,324"/>
+<area shape="poly" id="edge15_Node000004_Node000015" title=" " alt="" coords="2065,206,1711,211,1241,222,776,241,583,255,437,272,375,287,374,281,436,267,583,250,776,236,1241,216,1711,206,2065,201"/>
+<area shape="rect" id="Node000016" href="$can__cbs__tx__bms-state-details_8c.html" title="CAN driver Tx callback implementation." alt="" coords="448,277,652,331"/>
+<area shape="poly" id="edge17_Node000004_Node000016" title=" " alt="" coords="2066,207,1754,213,1350,225,954,244,790,257,665,272,631,279,630,274,664,267,789,251,953,238,1350,219,1754,207,2065,202"/>
+<area shape="rect" id="Node000017" href="$can__cbs__tx__bms-state_8c.html" title="CAN driver Tx callback implementation." alt="" coords="676,277,853,331"/>
+<area shape="poly" id="edge18_Node000004_Node000017" title=" " alt="" coords="2066,207,1792,214,1447,226,1111,245,972,257,866,272,837,279,835,274,866,267,971,252,1110,239,1446,220,1792,208,2066,202"/>
+<area shape="rect" id="Node000018" href="$can__cbs__tx__pack-minimum-maximum-values_8c.html" title="CAN driver Tx callback implementation." alt="" coords="877,269,1127,339"/>
+<area shape="poly" id="edge19_Node000004_Node000018" title=" " alt="" coords="2065,206,1885,211,1654,221,1397,241,1140,272,1127,274,1126,269,1139,267,1397,235,1654,216,1885,205,2065,201"/>
+<area shape="rect" id="Node000019" href="$can__cbs__tx__pack-state-estimation_8c.html" title="CAN driver Tx callback implementation." alt="" coords="1151,277,1384,331"/>
+<area shape="poly" id="edge20_Node000004_Node000019" title=" " alt="" coords="2065,209,1761,228,1579,246,1397,272,1361,279,1360,274,1396,267,1578,241,1761,223,2065,204"/>
+<area shape="rect" id="Node000020" href="$can__cbs__tx__string-minimum-maximum-values_8c.html" title="CAN driver Tx callback implementation." alt="" coords="1408,269,1591,339"/>
+<area shape="poly" id="edge21_Node000004_Node000020" title=" " alt="" coords="2066,212,1850,232,1726,249,1604,272,1592,275,1590,270,1603,267,1725,244,1849,227,2066,207"/>
+<area shape="rect" id="Node000021" href="$can__cbs__tx__string-state-estimation_8c.html" title="CAN driver Tx callback implementation." alt="" coords="1615,277,1853,331"/>
+<area shape="poly" id="edge22_Node000004_Node000021" title=" " alt="" coords="2078,227,1867,272,1836,279,1835,274,1865,267,2076,221"/>
+<area shape="rect" id="Node000022" href="$can__cbs__tx__string-state_8c.html" title="CAN driver Tx callback implementation." alt="" coords="1877,277,2055,331"/>
+<area shape="poly" id="edge23_Node000004_Node000022" title=" " alt="" coords="2132,230,2024,279,2022,274,2130,225"/>
+<area shape="poly" id="edge24_Node000004_Node000023" title=" " alt="" coords="2065,207,1051,231,513,250,317,260,201,272,146,286,145,281,200,267,317,255,513,244,1051,225,2065,202"/>
+<area shape="poly" id="edge25_Node000004_Node000024" title=" " alt="" coords="2304,202,2591,208,2958,219,3315,238,3463,251,3576,267,3630,281,3628,286,3575,272,3463,257,3315,244,2958,225,2591,213,2304,207"/>
+<area shape="rect" id="Node000012" href="$soa__cfg_8c.html" title="Configuration for safe&#45;operating area check." alt="" coords="3191,387,3402,427"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="3214,331,3276,385,3273,389,3210,335"/>
+<area shape="rect" id="Node000013" href="$soa_8h.html" title="Header for SOA module, responsible for checking battery parameters against safety limits." alt="" coords="2957,387,3167,427"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="3148,335,3086,389,3082,385,3145,331"/>
+<area shape="poly" id="edge13_Node000013_Node000010" title=" " alt="" coords="3181,426,3452,473,3451,478,3181,431"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="2982,433,2822,477,2821,472,2981,428"/>
+<area shape="poly" id="edge30_Node000026_Node000010" title=" " alt="" coords="3737,144,3760,184,3780,234,3786,260,3789,287,3786,314,3776,340,3761,365,3742,387,3698,426,3651,455,3607,477,3605,472,3648,451,3695,421,3738,384,3757,362,3772,338,3780,313,3783,287,3781,261,3775,235,3755,186,3732,146"/>
+<area shape="poly" id="edge33_Node000026_Node000024" title=" " alt="" coords="3709,147,3684,284,3679,283,3704,146"/>
+<area shape="poly" id="edge31_Node000026_Node000025" title=" " alt="" coords="3675,144,3616,183,3613,179,3672,139"/>
+<area shape="rect" id="Node000027" href="$sps_8c.html" title="Driver for the smart power switches." alt="" coords="3837,181,4015,221"/>
+<area shape="poly" id="edge32_Node000026_Node000027" title=" " alt="" coords="3773,136,3880,179,3878,184,3771,141"/>
+</map>

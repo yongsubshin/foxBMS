@@ -1,0 +1,179 @@
+<map id="SBC_Trigger" name="SBC_Trigger">
+<area shape="rect" id="Node000001" title="trigger function for the SYS driver state machine." alt="" coords="5,508,104,533"/>
+<area shape="rect" id="Node000002" href="$nxpfs85xx_8c.html#afeb30dc4ad44b34d9ed3ddea5e8759d9" title="Checks if fault error counter is zero." alt="" coords="161,17,374,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,508,61,448,76,356,105,249,125,195,150,145,169,116,191,90,236,49,240,53,195,94,173,120,154,147,130,197,110,250,81,357,66,449,60,508"/>
+<area shape="rect" id="Node000018" href="$nxpfs85xx_8c.html#a58c801b43b87be739255fb72e8f5667f" title="Configures SBC during INIT_FS phase." alt="" coords="182,364,353,389"/>
+<area shape="poly" id="edge20_Node000001_Node000018" title=" " alt="" coords="70,506,150,442,229,394,232,398,154,447,73,510"/>
+<area shape="rect" id="Node000034" href="$nxpfs85xx_8c.html#a4520b2d3d8b6ab9449d30f65b58ce0b1" title="Calculates the number of required watchdog refresh to reset fault error counter." alt="" coords="433,25,675,65"/>
+<area shape="poly" id="edge48_Node000001_Node000034" title=" " alt="" coords="59,506,94,437,120,393,150,350,217,261,272,193,302,163,337,134,429,74,442,68,445,72,432,79,340,139,306,167,276,196,221,264,154,353,125,396,99,440,64,509"/>
+<area shape="rect" id="Node000035" href="$nxpfs85xx_8c.html#adbcda981b42a9a928aca6e027ec1dd50" title="Performs SBC safety path checks." alt="" coords="179,596,356,621"/>
+<area shape="poly" id="edge51_Node000001_Node000035" title=" " alt="" coords="88,531,224,588,222,593,86,536"/>
+<area shape="rect" id="Node000058" href="$sbc_8c.html#a88062740b8cfab496300ef7a1cc1665d" title="Re&#45;entrance check of SBC state machine trigger function." alt="" coords="2201,1009,2370,1035"/>
+<area shape="poly" id="edge100_Node000001_Node000058" title=" " alt="" coords="62,533,95,637,125,716,166,805,216,899,277,992,349,1077,389,1115,432,1149,462,1166,488,1173,553,1174,1791,1174,1851,1170,1902,1161,1945,1146,1984,1128,2066,1086,2115,1064,2174,1045,2210,1035,2212,1040,2175,1050,2117,1069,2068,1091,1986,1133,1947,1151,1903,1166,1852,1176,1791,1179,553,1179,487,1179,460,1171,429,1154,386,1119,345,1081,273,995,212,902,161,808,121,718,90,638,57,534"/>
+<area shape="rect" id="Node000059" href="$sbc_8c.html#affebfb1d4e68f4dfc6ebbe2d7ab9a2eb" title="Handle ignition/clamp 15 signal." alt="" coords="160,457,375,483"/>
+<area shape="poly" id="edge103_Node000001_Node000059" title=" " alt="" coords="102,505,151,493,193,483,194,488,153,498,103,510"/>
+<area shape="rect" id="Node000062" href="$sbc_8c.html#a6dd0ad565e97764a4d0237ac803324f8" title="Saves the last state and last substate." alt="" coords="190,645,345,671"/>
+<area shape="poly" id="edge108_Node000001_Node000062" title=" " alt="" coords="65,532,99,581,124,608,153,630,178,642,176,647,151,635,120,612,95,584,61,535"/>
+<area shape="rect" id="Node000063" href="$sbc_8c.html#aba7832fabe75c9108b1aa460ddf93905" title="Transfers the current state request to the state machine." alt="" coords="2188,1059,2383,1084"/>
+<area shape="poly" id="edge109_Node000001_Node000063" title=" " alt="" coords="59,534,64,643,78,815,90,906,107,989,128,1058,140,1084,154,1104,199,1149,242,1182,285,1203,329,1217,377,1223,429,1225,553,1225,1791,1225,1887,1221,1962,1208,2034,1186,2126,1153,2194,1122,2251,1089,2254,1094,2197,1127,2128,1158,2036,1191,1963,1214,1888,1226,1791,1230,553,1230,429,1231,376,1228,328,1222,283,1208,239,1186,195,1153,150,1108,136,1087,123,1060,102,990,85,907,73,816,59,644,54,534"/>
+<area shape="rect" id="Node000064" href="$sbc_8c.html#a3b3ecf9852040dc365167e54c08de6b3" title="Triggers the watchdog if the timing requires it." alt="" coords="152,508,383,533"/>
+<area shape="poly" id="edge112_Node000001_Node000064" title=" " alt="" coords="104,518,138,518,138,523,104,523"/>
+<area shape="rect" id="Node000003" href="$group__API.html#ga13e5ab89af0a74158bdff99b29eb76ec" title="Reads actual Fault Error Counter value." alt="" coords="736,33,932,73"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,15,510,4,594,4,678,10,757,26,756,32,677,15,594,9,510,9,361,20"/>
+<area shape="rect" id="Node000004" href="$group__API.html#gab8787e2ae04f3f2810ca95df41b69190" title="Performs a read from a single FS8x register." alt="" coords="1003,155,1149,180"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="905,70,944,90,959,103,969,116,978,128,992,140,1007,147,1005,152,989,144,974,132,964,119,955,107,941,95,902,75"/>
+<area shape="rect" id="Node000005" href="$sbc__fs8x__communication_8c.html#adab1bd280fc620a6cd8c881dbc3773ff" title="Performs SPI transfer of the txData. Received frame is saved into rxData structure." alt="" coords="1469,305,1640,331"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1118,177,1501,299,1499,304,1117,183"/>
+<area shape="rect" id="Node000006" href="$sbc__fs8x__communication_8c.html#a80544b95c576332d48a6f882957018d8" title="Performs CRC check of the data array." alt="" coords="1726,281,1853,307"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1640,307,1712,299,1712,305,1641,312"/>
+<area shape="rect" id="Node000008" href="$sbc__fs8x__communication_8c.html#ae5b596457c82d4c45e811ad4c404b312" title="Creates a raw frame for SPI transfer." alt="" coords="1688,331,1891,356"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="1641,325,1675,328,1674,334,1640,330"/>
+<area shape="rect" id="Node000009" href="$group__Extern.html#ga1b7c11ee24b9fe8c8e104ae40a350e26" title="This function transfers single frame through blocking SPI communication in both directions...." alt="" coords="1704,711,1875,736"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="1566,330,1776,698,1772,700,1561,332"/>
+<area shape="rect" id="Node000007" href="$sbc__fs8x__communication_8c.html#a87db6e52e5d345e7ae7be0606196c27d" title="This function calculates CRC value of passed data array. Takes bytes in inverted order due to frame f..." alt="" coords="1975,307,2090,332"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1854,298,1962,309,1962,315,1853,303"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="1891,331,1962,324,1962,329,1891,336"/>
+<area shape="rect" id="Node000010" href="$spi_8c.html#ac84bc8424de860e2cd89fea2e89dd89a" title="Transmits and receives data on SPI without DMA." alt="" coords="1939,712,2127,737"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1875,721,1925,721,1925,727,1875,726"/>
+<area shape="rect" id="Node000011" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="2235,615,2335,640"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="2053,710,2106,679,2174,649,2221,635,2223,641,2176,654,2109,684,2056,714"/>
+<area shape="rect" id="Node000012" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="2243,664,2327,689"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="2100,709,2229,684,2230,690,2101,715"/>
+<area shape="rect" id="Node000013" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="2221,812,2349,837"/>
+<area shape="poly" id="edge13_Node000010_Node000013" title=" " alt="" coords="2100,735,2128,748,2144,761,2153,774,2161,787,2176,798,2209,812,2207,817,2173,803,2158,790,2148,777,2140,764,2125,752,2098,740"/>
+<area shape="rect" id="Node000014" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="2246,713,2325,739"/>
+<area shape="poly" id="edge14_Node000010_Node000014" title=" " alt="" coords="2127,722,2232,723,2232,728,2127,728"/>
+<area shape="rect" id="Node000017" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="2238,763,2333,788"/>
+<area shape="poly" id="edge17_Node000010_Node000017" title=" " alt="" coords="2098,735,2225,761,2224,766,2097,740"/>
+<area shape="rect" id="Node000015" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="2459,960,2615,985"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="2325,723,2363,730,2381,738,2398,749,2413,767,2422,785,2427,821,2430,858,2435,878,2446,898,2473,927,2503,950,2500,955,2469,931,2442,901,2430,880,2424,859,2422,822,2417,787,2409,770,2394,753,2379,743,2361,735,2324,728"/>
+<area shape="rect" id="Node000016" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="2464,861,2611,887"/>
+<area shape="poly" id="edge16_Node000014_Node000016" title=" " alt="" coords="2325,728,2361,735,2397,749,2434,771,2467,798,2518,849,2515,853,2464,802,2431,776,2395,754,2359,740,2324,733"/>
+<area shape="poly" id="edge18_Node000017_Node000015" title=" " alt="" coords="2334,775,2367,782,2398,799,2418,822,2425,846,2431,871,2446,898,2475,927,2505,950,2502,955,2471,931,2442,901,2427,873,2420,848,2413,825,2394,803,2365,787,2333,780"/>
+<area shape="poly" id="edge19_Node000017_Node000016" title=" " alt="" coords="2334,781,2397,798,2455,824,2505,852,2502,856,2453,829,2395,803,2332,786"/>
+<area shape="rect" id="Node000019" href="$nxpfs85xx_8c.html#a92d5d900c1ddcd3bc574a484284f9b37" title="Checks register value against expected value." alt="" coords="735,508,933,533"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="302,387,344,410,385,443,395,457,401,471,406,498,413,522,420,532,432,542,456,552,489,557,574,557,669,547,755,533,756,538,669,552,575,562,489,562,455,557,429,547,416,536,408,524,401,499,396,473,390,460,381,446,341,414,299,392"/>
+<area shape="rect" id="Node000020" href="$nxpfs85xx_8c.html#aad6a7a72e95c4c30a4d3742689b67217" title="Clears flags in register." alt="" coords="743,155,925,180"/>
+<area shape="poly" id="edge22_Node000018_Node000020" title=" " alt="" coords="292,361,354,332,430,301,500,283,556,276,611,266,641,256,676,240,690,230,700,220,709,209,724,198,762,182,764,187,727,203,713,213,703,223,694,234,679,244,643,260,612,271,557,281,501,288,432,306,356,337,295,366"/>
+<area shape="rect" id="Node000025" href="$nxpfs85xx_8c.html#aa9b6addcca90d2ae7699299895b115da" title="Clears flags in register." alt="" coords="453,89,655,115"/>
+<area shape="poly" id="edge29_Node000018_Node000025" title=" " alt="" coords="273,362,343,242,389,175,410,149,429,132,456,117,459,122,432,136,414,153,393,179,348,245,278,365"/>
+<area shape="rect" id="Node000026" href="$nxpfs85xx_8c.html#a2e9c7ed6e0f03d019199378ce730722f" title="Reads SBC register value." alt="" coords="745,105,923,131"/>
+<area shape="poly" id="edge33_Node000018_Node000026" title=" " alt="" coords="273,362,293,324,327,273,373,219,400,196,429,176,484,156,561,141,731,122,731,127,562,147,485,161,432,180,403,200,377,223,331,276,298,327,277,365"/>
+<area shape="rect" id="Node000027" href="$nxpfs85xx_8c.html#a0ee0ea27da5c2b26ae74e53e24acd4fb" title="Trigger watchdog." alt="" coords="470,508,638,533"/>
+<area shape="poly" id="edge34_Node000018_Node000027" title=" " alt="" coords="295,387,517,499,514,504,293,392"/>
+<area shape="rect" id="Node000029" href="$nxpfs85xx_8c.html#afe693dfebb20904d8f82223bfa3b9f57" title="Write to fail&#45;safe register." alt="" coords="725,256,943,281"/>
+<area shape="poly" id="edge39_Node000018_Node000029" title=" " alt="" coords="328,361,430,341,749,281,749,286,431,346,330,367"/>
+<area shape="rect" id="Node000031" href="$nxpfs85xx_8c.html#aacbe0d79d6fcbbe08b44858c66b3ce32" title="Write to fail&#45;safe register." alt="" coords="741,407,927,432"/>
+<area shape="poly" id="edge44_Node000018_Node000031" title=" " alt="" coords="353,383,431,390,728,411,727,416,430,395,352,388"/>
+<area shape="rect" id="Node000032" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="2225,960,2345,985"/>
+<area shape="poly" id="edge46_Node000018_Node000032" title=" " alt="" coords="307,387,348,409,368,424,385,443,402,474,411,502,415,529,414,555,415,609,420,638,433,670,508,815,545,875,585,926,631,967,686,997,752,1016,833,1022,1077,1022,1410,1017,1736,1004,2211,975,2212,981,1736,1009,1410,1022,1077,1027,833,1027,751,1021,684,1002,628,971,581,929,540,878,503,817,428,672,415,639,409,609,409,555,409,529,406,503,398,476,381,446,364,428,345,413,304,392"/>
+<area shape="rect" id="Node000033" href="$master__info_8c.html#a69cf51e5d1dbaf26b92cb9a9ac5cd870" title="Check if debug probe is connected." alt="" coords="431,190,677,230"/>
+<area shape="poly" id="edge47_Node000018_Node000033" title=" " alt="" coords="280,362,341,307,383,275,429,246,461,232,463,237,432,251,386,279,344,311,283,366"/>
+<area shape="poly" id="edge26_Node000020_Node000004" title=" " alt="" coords="925,165,989,165,989,170,925,170"/>
+<area shape="rect" id="Node000021" href="$nxpfs85xx_8c.html#a75349ceb416c52af358f0a9bd8e8d937" title="Updates register values." alt="" coords="995,105,1157,131"/>
+<area shape="poly" id="edge23_Node000020_Node000021" title=" " alt="" coords="896,152,999,131,1000,136,898,157"/>
+<area shape="rect" id="Node000024" href="$group__API.html#ga45774357f5c85905d3b03812c03a0eb4" title="Sends write command to the FS8x." alt="" coords="1241,305,1390,331"/>
+<area shape="poly" id="edge27_Node000020_Node000024" title=" " alt="" coords="905,177,1047,207,1115,224,1163,241,1187,259,1211,277,1259,298,1257,303,1208,282,1184,263,1160,246,1113,229,1046,212,904,183"/>
+<area shape="rect" id="Node000022" href="$nxpfs85xx_8c.html#a8759d334b18e7749c530cb4d232eb96f" title="Updates fail safe register values." alt="" coords="1209,131,1421,156"/>
+<area shape="poly" id="edge24_Node000021_Node000022" title=" " alt="" coords="1157,124,1196,128,1195,133,1157,129"/>
+<area shape="rect" id="Node000023" href="$nxpfs85xx_8c.html#aa27fc31f497232269b3c8c585732c0ec" title="Updates main register values." alt="" coords="1219,81,1412,107"/>
+<area shape="poly" id="edge25_Node000021_Node000023" title=" " alt="" coords="1157,107,1205,102,1205,108,1157,113"/>
+<area shape="poly" id="edge28_Node000024_Node000005" title=" " alt="" coords="1390,315,1456,315,1456,321,1390,321"/>
+<area shape="poly" id="edge30_Node000025_Node000026" title=" " alt="" coords="656,105,731,109,731,115,655,110"/>
+<area shape="poly" id="edge32_Node000026_Node000004" title=" " alt="" coords="898,128,1000,149,999,154,896,133"/>
+<area shape="poly" id="edge31_Node000026_Node000021" title=" " alt="" coords="923,115,981,115,981,121,923,121"/>
+<area shape="poly" id="edge35_Node000027_Node000019" title=" " alt="" coords="638,518,722,518,722,523,638,523"/>
+<area shape="poly" id="edge36_Node000027_Node000026" title=" " alt="" coords="571,506,624,459,652,427,675,391,688,356,693,322,689,260,686,230,689,201,700,171,723,140,731,134,734,138,727,144,705,173,694,202,692,231,694,260,698,322,694,357,680,394,656,431,627,463,574,510"/>
+<area shape="rect" id="Node000028" href="$group__API.html#ga1dd3f56371ebf39dcf3cfe323dfba556" title="Performs the watchdog refresh." alt="" coords="1006,432,1146,457"/>
+<area shape="poly" id="edge37_Node000027_Node000028" title=" " alt="" coords="638,506,725,493,992,454,993,459,726,498,639,511"/>
+<area shape="poly" id="edge38_Node000028_Node000024" title=" " alt="" coords="1100,429,1277,335,1279,340,1103,434"/>
+<area shape="poly" id="edge41_Node000029_Node000004" title=" " alt="" coords="884,253,942,234,994,210,1040,185,1043,189,997,215,944,239,886,258"/>
+<area shape="poly" id="edge40_Node000029_Node000021" title=" " alt="" coords="854,254,895,225,941,189,963,163,974,152,989,140,1001,133,1004,138,992,144,977,155,968,167,945,193,898,230,857,258"/>
+<area shape="rect" id="Node000030" href="$group__API.html#ga3f8c3c75fa13275a5ce5876d37d5d2a2" title="Performs a write to a single FS8x FS init register (during the INIT_FS phase only)." alt="" coords="991,256,1161,281"/>
+<area shape="poly" id="edge42_Node000029_Node000030" title=" " alt="" coords="943,266,977,266,977,271,943,271"/>
+<area shape="poly" id="edge43_Node000030_Node000024" title=" " alt="" coords="1139,279,1240,300,1239,305,1138,284"/>
+<area shape="poly" id="edge45_Node000031_Node000030" title=" " alt="" coords="854,404,895,376,941,340,963,314,974,302,989,290,1001,284,1004,289,992,295,977,306,968,317,945,344,898,380,857,409"/>
+<area shape="poly" id="edge50_Node000034_Node000003" title=" " alt="" coords="675,45,722,47,722,52,675,51"/>
+<area shape="poly" id="edge49_Node000034_Node000026" title=" " alt="" coords="633,62,678,74,773,99,771,104,677,79,631,67"/>
+<area shape="rect" id="Node000036" href="$fram_8c.html#ad5c5ec1fd0a6c3667185d3b75064e359" title="Writes a variable to the FRAM." alt="" coords="1966,812,2099,837"/>
+<area shape="poly" id="edge52_Node000035_Node000036" title=" " alt="" coords="358,613,384,631,404,657,417,683,424,710,426,736,420,789,406,842,393,894,387,944,390,969,398,994,412,1018,432,1041,464,1060,509,1072,563,1078,622,1080,741,1076,833,1073,1077,1073,1216,1065,1356,1045,1493,1014,1623,978,1741,939,1845,901,1991,840,1993,845,1847,906,1743,944,1624,983,1494,1020,1357,1050,1217,1070,1077,1078,833,1078,741,1082,622,1085,562,1083,508,1077,462,1065,429,1045,408,1021,393,996,385,970,382,944,387,893,401,840,415,788,421,736,419,710,412,685,400,660,381,635,355,617"/>
+<area shape="rect" id="Node000039" href="$nxpfs85xx_8c.html#a65ff9083236a69964a00633d8d92f4a2" title="Perform FS0B safety path check." alt="" coords="449,1113,659,1139"/>
+<area shape="poly" id="edge61_Node000035_Node000039" title=" " alt="" coords="358,613,384,631,407,660,421,689,429,718,432,747,426,805,411,863,396,920,389,977,391,1006,398,1035,412,1063,433,1092,446,1104,443,1108,429,1096,407,1066,393,1036,386,1007,383,977,390,919,406,861,420,804,427,747,424,719,416,691,402,663,381,635,355,617"/>
+<area shape="rect" id="Node000040" href="$nxpfs85xx_8c.html#a5128886f0bc8f14507994ee54d052eec" title="Perform RSTB safety path check." alt="" coords="449,635,659,660"/>
+<area shape="poly" id="edge62_Node000035_Node000040" title=" " alt="" coords="357,618,446,630,446,635,356,623"/>
+<area shape="rect" id="Node000057" href="$group__API.html#ga796a8b7f238630b1e0051572add102d4" title="FS0B release routine." alt="" coords="479,356,629,381"/>
+<area shape="poly" id="edge96_Node000035_Node000057" title=" " alt="" coords="295,594,337,572,381,543,529,390,533,393,384,547,340,576,298,598"/>
+<area shape="poly" id="edge54_Node000036_Node000011" title=" " alt="" coords="2098,813,2125,797,2139,780,2145,762,2148,725,2150,687,2158,668,2173,649,2195,635,2221,627,2222,632,2198,640,2176,653,2162,670,2155,688,2153,725,2151,763,2143,782,2128,801,2101,818"/>
+<area shape="poly" id="edge55_Node000036_Node000012" title=" " alt="" coords="2098,812,2125,797,2136,786,2142,774,2148,749,2154,723,2161,711,2173,699,2200,684,2229,676,2230,682,2202,689,2176,703,2165,714,2159,725,2153,750,2147,776,2140,789,2128,801,2101,817"/>
+<area shape="poly" id="edge58_Node000036_Node000013" title=" " alt="" coords="2100,822,2208,822,2208,827,2100,827"/>
+<area shape="poly" id="edge59_Node000036_Node000014" title=" " alt="" coords="2097,809,2125,797,2140,786,2148,774,2158,761,2173,749,2202,737,2232,729,2233,734,2204,742,2176,754,2162,765,2153,777,2143,789,2128,802,2099,814"/>
+<area shape="poly" id="edge60_Node000036_Node000017" title=" " alt="" coords="2098,809,2224,784,2225,790,2099,815"/>
+<area shape="poly" id="edge56_Node000036_Node000032" title=" " alt="" coords="2046,836,2098,890,2135,921,2176,946,2213,960,2211,965,2173,951,2132,925,2095,894,2043,839"/>
+<area shape="rect" id="Node000037" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="2216,911,2355,936"/>
+<area shape="poly" id="edge53_Node000036_Node000037" title=" " alt="" coords="2055,835,2108,866,2176,897,2203,905,2202,911,2174,902,2106,871,2052,840"/>
+<area shape="rect" id="Node000038" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="2175,861,2396,887"/>
+<area shape="poly" id="edge57_Node000036_Node000038" title=" " alt="" coords="2099,835,2206,856,2205,861,2098,840"/>
+<area shape="poly" id="edge92_Node000040_Node000011" title=" " alt="" coords="659,637,852,625,1075,619,1791,619,2221,624,2221,629,1791,625,1075,625,852,631,659,642"/>
+<area shape="poly" id="edge93_Node000040_Node000012" title=" " alt="" coords="659,653,852,664,1075,670,1791,670,2229,673,2229,679,1791,675,1075,675,852,669,659,658"/>
+<area shape="poly" id="edge86_Node000040_Node000019" title=" " alt="" coords="586,632,630,613,676,588,699,569,724,550,761,535,763,540,727,555,703,573,679,592,632,617,589,637"/>
+<area shape="poly" id="edge87_Node000040_Node000026" title=" " alt="" coords="578,632,629,597,655,572,675,543,688,515,696,487,701,434,696,383,686,334,677,287,676,239,681,215,690,190,704,165,723,140,731,133,735,137,727,144,708,168,695,192,686,216,682,239,682,286,691,333,701,382,707,434,702,488,693,516,680,546,659,576,633,601,581,637"/>
+<area shape="poly" id="edge88_Node000040_Node000029" title=" " alt="" coords="577,632,628,596,654,572,675,543,690,508,695,475,691,413,688,382,690,352,701,322,723,291,727,288,730,291,727,294,705,324,695,353,693,382,696,412,701,475,695,510,680,546,658,575,631,601,580,637"/>
+<area shape="poly" id="edge89_Node000040_Node000031" title=" " alt="" coords="570,632,675,543,699,518,724,493,800,437,803,442,727,497,703,521,679,547,573,637"/>
+<area shape="poly" id="edge94_Node000040_Node000032" title=" " alt="" coords="561,660,576,715,607,796,629,838,656,879,689,916,727,946,773,971,814,985,853,991,891,990,973,979,1020,974,1075,971,1791,971,2212,970,2212,976,1791,977,1075,977,1021,979,973,984,891,995,852,996,813,990,771,976,724,951,685,920,652,883,624,841,602,798,571,717,556,661"/>
+<area shape="poly" id="edge85_Node000040_Node000036" title=" " alt="" coords="578,658,643,691,684,708,726,722,900,761,1079,789,1258,808,1431,821,1593,827,1737,829,1952,826,1952,831,1737,834,1593,832,1431,826,1258,814,1079,794,899,766,725,727,682,713,641,696,576,662"/>
+<area shape="rect" id="Node000041" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="2229,563,2342,588"/>
+<area shape="poly" id="edge63_Node000040_Node000041" title=" " alt="" coords="607,632,695,613,811,592,942,576,1075,569,1791,569,2215,572,2215,577,1791,574,1075,574,942,581,812,597,696,618,608,637"/>
+<area shape="rect" id="Node000053" href="$fram_8c.html#ac33e9fde66e31d43c22bfc9a2f8aebf7" title="Reads a variable from the FRAM." alt="" coords="1967,761,2098,787"/>
+<area shape="poly" id="edge76_Node000040_Node000053" title=" " alt="" coords="596,657,657,674,726,689,903,713,1084,733,1437,758,1741,769,1954,772,1954,777,1741,774,1437,763,1083,738,902,719,725,694,656,679,595,663"/>
+<area shape="rect" id="Node000054" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="757,812,911,837"/>
+<area shape="poly" id="edge90_Node000040_Node000054" title=" " alt="" coords="569,658,632,721,677,758,727,790,762,805,760,810,724,795,674,762,628,725,565,662"/>
+<area shape="rect" id="Node000055" href="$fsystem_8h.html#af23205627be1616c6b1dcdb684060322" title="Switch back to user mode." alt="" coords="743,861,925,887"/>
+<area shape="poly" id="edge91_Node000040_Node000055" title=" " alt="" coords="564,659,587,697,622,748,670,803,697,827,727,848,738,854,736,859,724,852,694,831,666,806,618,752,582,700,560,662"/>
+<area shape="rect" id="Node000056" href="$master__info_8c.html#a44f17d790f25a7839f8cf4d929057b64" title="Get reason for last reset." alt="" coords="745,911,923,936"/>
+<area shape="poly" id="edge95_Node000040_Node000056" title=" " alt="" coords="562,659,582,705,616,770,664,839,694,871,727,897,736,903,733,907,724,902,690,874,660,843,611,773,577,708,558,661"/>
+<area shape="rect" id="Node000042" href="$diag_8c.html#a59191bef7fcae145e2d834eb8f447025" title="DIAG_ClearFatalErrorById checks whether the error has been cleared before and if not sends a clear me..." alt="" coords="2444,612,2631,637"/>
+<area shape="poly" id="edge64_Node000041_Node000042" title=" " alt="" coords="2343,584,2459,607,2458,612,2341,589"/>
+<area shape="rect" id="Node000050" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="2472,513,2603,539"/>
+<area shape="poly" id="edge72_Node000041_Node000050" title=" " alt="" coords="2341,562,2458,539,2459,544,2343,567"/>
+<area shape="rect" id="Node000051" href="$diag_8c.html#a4f4874e2e5766a401e9ab0c2721efda6" title="DIAG_SetFatalErrorById checks whether the error has been send before and if not send it per CAN...." alt="" coords="2450,563,2625,588"/>
+<area shape="poly" id="edge73_Node000041_Node000051" title=" " alt="" coords="2342,573,2436,573,2436,578,2342,578"/>
+<area shape="rect" id="Node000043" href="$can__cbs__tx__fatal-error_8c.html#af9d19804d03a440d5eb12e574a76bf30" title="Sends the Error ID per CAN." alt="" coords="2679,588,2859,613"/>
+<area shape="poly" id="edge65_Node000042_Node000043" title=" " alt="" coords="2631,612,2664,609,2665,614,2631,618"/>
+<area shape="rect" id="Node000049" href="$timer_8c.html#a8a878f1764cb181893c79d55b1c41a65" title="TIMER_stops stops a given virtual timer." alt="" coords="2719,637,2818,663"/>
+<area shape="poly" id="edge71_Node000042_Node000049" title=" " alt="" coords="2631,632,2706,640,2705,646,2631,638"/>
+<area shape="rect" id="Node000044" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="2929,553,3143,593"/>
+<area shape="poly" id="edge66_Node000043_Node000044" title=" " alt="" coords="2859,589,2915,583,2916,588,2859,594"/>
+<area shape="rect" id="Node000046" href="$can__cbs__tx__fatal-error_8c.html#a417ea445e91fa2826a6cbefbe8335661" title="Helper function to send the actual error Code." alt="" coords="2907,617,3165,643"/>
+<area shape="poly" id="edge68_Node000043_Node000046" title=" " alt="" coords="2859,608,2907,613,2906,618,2859,613"/>
+<area shape="rect" id="Node000045" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="3237,560,3459,585"/>
+<area shape="poly" id="edge67_Node000044_Node000045" title=" " alt="" coords="3143,570,3223,570,3223,575,3143,575"/>
+<area shape="rect" id="Node000047" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="3288,663,3408,688"/>
+<area shape="poly" id="edge69_Node000046_Node000047" title=" " alt="" coords="3124,640,3274,662,3274,667,3124,645"/>
+<area shape="rect" id="Node000048" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="3213,613,3483,639"/>
+<area shape="poly" id="edge70_Node000046_Node000048" title=" " alt="" coords="3165,626,3200,625,3200,631,3165,631"/>
+<area shape="poly" id="edge74_Node000051_Node000043" title=" " alt="" coords="2625,582,2665,587,2665,592,2625,588"/>
+<area shape="rect" id="Node000052" href="$timer_8c.html#a961668103b79a6b04dfd66e507bd2d7f" title="TIMER_start starts a given virtual timer." alt="" coords="2718,539,2819,564"/>
+<area shape="poly" id="edge75_Node000051_Node000052" title=" " alt="" coords="2625,564,2704,555,2705,561,2625,569"/>
+<area shape="poly" id="edge79_Node000053_Node000011" title=" " alt="" coords="2097,763,2125,748,2136,737,2142,725,2148,700,2154,674,2161,661,2173,649,2196,636,2221,629,2222,634,2198,641,2176,653,2165,665,2159,676,2153,701,2147,727,2140,740,2128,752,2100,767"/>
+<area shape="poly" id="edge80_Node000053_Node000012" title=" " alt="" coords="2097,760,2125,748,2140,736,2148,724,2158,711,2173,698,2201,687,2229,680,2230,685,2202,692,2176,703,2162,714,2153,727,2144,740,2128,752,2099,765"/>
+<area shape="poly" id="edge82_Node000053_Node000013" title=" " alt="" coords="2098,784,2209,807,2208,812,2097,789"/>
+<area shape="poly" id="edge83_Node000053_Node000014" title=" " alt="" coords="2098,759,2232,733,2233,739,2099,764"/>
+<area shape="poly" id="edge84_Node000053_Node000017" title=" " alt="" coords="2098,772,2225,772,2225,778,2098,777"/>
+<area shape="poly" id="edge77_Node000053_Node000037" title=" " alt="" coords="2100,783,2128,799,2140,811,2147,824,2153,850,2159,875,2165,886,2176,897,2204,912,2201,917,2173,901,2161,889,2154,877,2148,851,2142,826,2136,814,2125,803,2097,787"/>
+<area shape="poly" id="edge81_Node000053_Node000038" title=" " alt="" coords="2096,784,2128,798,2143,811,2153,824,2161,836,2176,848,2189,854,2187,859,2173,852,2158,840,2148,827,2140,815,2125,803,2094,789"/>
+<area shape="poly" id="edge78_Node000053_Node000041" title=" " alt="" coords="2097,764,2125,748,2139,731,2146,713,2148,676,2150,638,2158,619,2173,600,2192,587,2214,579,2216,584,2195,591,2176,604,2162,621,2155,639,2153,676,2151,714,2143,733,2128,752,2099,769"/>
+<area shape="poly" id="edge97_Node000057_Node000003" title=" " alt="" coords="570,354,622,307,650,275,675,241,685,220,691,200,694,163,700,128,709,110,723,91,740,77,743,82,727,95,713,112,705,130,699,164,696,201,690,221,680,243,654,279,626,311,574,358"/>
+<area shape="poly" id="edge98_Node000057_Node000004" title=" " alt="" coords="574,354,676,284,698,261,709,251,724,241,763,229,832,213,994,180,995,185,834,218,765,234,726,246,712,255,702,265,679,288,577,358"/>
+<area shape="poly" id="edge99_Node000057_Node000024" title=" " alt="" coords="630,365,867,359,1014,351,1161,339,1230,330,1231,336,1162,345,1014,357,867,364,630,371"/>
+<area shape="poly" id="edge101_Node000058_Node000015" title=" " alt="" coords="2350,1007,2458,985,2459,991,2351,1012"/>
+<area shape="poly" id="edge102_Node000058_Node000016" title=" " alt="" coords="2369,1007,2395,996,2410,985,2420,974,2442,947,2506,893,2510,897,2446,951,2424,977,2413,989,2397,1000,2371,1012"/>
+<area shape="rect" id="Node000060" href="$nxpfs85xx_8c.html#a8ce3bf47ddacf58d3bec278a41db0c9d" title="Check WAKE1 Signal at SBC." alt="" coords="739,305,929,331"/>
+<area shape="poly" id="edge104_Node000059_Node000060" title=" " alt="" coords="374,455,519,431,599,412,676,390,742,364,798,335,800,340,744,368,678,395,600,418,520,436,375,460"/>
+<area shape="poly" id="edge107_Node000060_Node000004" title=" " alt="" coords="912,303,941,290,957,280,966,269,989,241,1048,187,1051,191,993,245,970,272,960,284,944,295,914,308"/>
+<area shape="rect" id="Node000061" href="$nxpfs85xx_8c.html#a817290b6fed0cbcc676e51c90a0ea9da" title="Sends SBC to Standby Mode." alt="" coords="1003,305,1149,331"/>
+<area shape="poly" id="edge105_Node000060_Node000061" title=" " alt="" coords="929,315,990,315,990,321,929,321"/>
+<area shape="poly" id="edge106_Node000061_Node000024" title=" " alt="" coords="1149,315,1227,315,1227,321,1149,321"/>
+<area shape="poly" id="edge110_Node000063_Node000015" title=" " alt="" coords="2357,1056,2395,1045,2454,1018,2503,990,2506,995,2456,1023,2397,1050,2359,1061"/>
+<area shape="poly" id="edge111_Node000063_Node000016" title=" " alt="" coords="2376,1056,2394,1045,2413,1023,2420,1000,2427,975,2442,947,2471,917,2503,892,2506,897,2475,921,2446,950,2432,977,2426,1002,2418,1026,2398,1049,2379,1061"/>
+<area shape="poly" id="edge113_Node000064_Node000027" title=" " alt="" coords="383,518,456,518,456,523,383,523"/>
+</map>

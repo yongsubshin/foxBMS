@@ -1,0 +1,8 @@
+<map id="LTC_StateTransition" name="LTC_StateTransition">
+<area shape="rect" id="Node000001" title="function for setting LTC_Trigger state transitions" alt="" coords="417,31,565,56"/>
+<area shape="rect" id="Node000002" href="$ltc__6813-1_8c.html#ae81b8aa0def104fff84ac45b1832c209" title="condition&#45;based state transition depending on retVal" alt="" coords="148,5,369,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="404,36,369,33,370,27,404,31"/>
+<area shape="rect" id="Node000003" href="$ltc__6813-1_8c.html#acf30d82064c640d2c4f36cd270c0647b" title="trigger function for the LTC driver state machine." alt="" coords="5,31,100,56"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="403,46,100,46,100,41,403,41"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="142,35,101,40,100,35,141,30"/>
+</map>

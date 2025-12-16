@@ -1,0 +1,905 @@
+{
+  "metadata": {
+    "version": "2.0.0",
+    "generation_date": "2025-12-16",
+    "generator": "PARVIS-AIDoc-Trace Agent",
+    "total_requirements": 648,
+    "traced_requirements": 648,
+    "coverage": "100%",
+    "aspice_level": 2,
+    "path_format": "foxbms-2/src/...",
+    "iso26262_compliance": {
+      "part": 8,
+      "clause": "6.4.2",
+      "requirement": "Bidirectional traceability"
+    },
+    "statistics": {
+      "by_requirement_type": {
+        "SWE": 422,
+        "CFG": 119,
+        "FSR": 99,
+        "HSI": 8
+      },
+      "by_module_category": {
+        "algorithm": 79,
+        "afe": 78,
+        "ts": 82,
+        "config": 100,
+        "sbc": 52,
+        "driver": 146,
+        "application_bms": 111
+      }
+    }
+  },
+  "traceability_records": [
+    {
+      "req_id": "FBMS-SWE-ALG-001",
+      "original_id": "ALGO-MGR-001",
+      "req_type": "SWE",
+      "module": "algorithm/manager",
+      "content": "The algorithm module shall provide a main execution handler (ALGO_MainFunction) that manages the cyclic execution of registered algorithms based on their configured cycle times",
+      "design_element": "COMP-ALG-MGR",
+      "source_file": "foxbms-2/src/app/application/algorithm/algorithm.c",
+      "source_line": "115-152",
+      "unit_test_id": "UT-ALG-001",
+      "integration_test_id": "IT-ALG-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM"
+    },
+    {
+      "req_id": "FBMS-SWE-ALG-002",
+      "original_id": "ALGO-MGR-002",
+      "req_type": "SWE",
+      "module": "algorithm/manager",
+      "content": "The algorithm module shall provide an initialization unlock mechanism (ALGO_UnlockInitialization) that signals the system to run algorithm initialization routines",
+      "design_element": "COMP-ALG-MGR",
+      "source_file": "foxbms-2/src/app/application/algorithm/algorithm.h",
+      "source_line": "66-70",
+      "unit_test_id": "UT-ALG-002",
+      "integration_test_id": "IT-ALG-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM"
+    },
+    {
+      "req_id": "FBMS-SWE-ALG-003",
+      "original_id": "ALGO-MGR-003",
+      "req_type": "SWE",
+      "module": "algorithm/manager",
+      "content": "The algorithm module shall monitor calculation execution time of different algorithms to detect runtime violations",
+      "design_element": "COMP-ALG-MGR",
+      "source_file": "foxbms-2/src/app/application/algorithm/algorithm.h",
+      "source_line": "78-81",
+      "unit_test_id": "UT-ALG-003",
+      "integration_test_id": "IT-ALG-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM"
+    },
+    {
+      "req_id": "FBMS-SWE-ALG-004",
+      "original_id": "ALGO-MGR-004",
+      "req_type": "CFG",
+      "module": "algorithm/manager",
+      "content": "The algorithm cycle time configuration shall be a multiple of the ALGO_TICK_ms (100ms) base tick time",
+      "design_element": "COMP-ALG-CFG",
+      "source_file": "foxbms-2/src/app/application/algorithm/algorithm.c",
+      "source_line": "87",
+      "unit_test_id": "CFG-TC-ALG-001",
+      "integration_test_id": "IT-ALG-CFG-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM"
+    },
+    {
+      "req_id": "FBMS-SWE-ALG-005",
+      "original_id": "ALGO-MGR-005",
+      "req_type": "SWE",
+      "module": "algorithm/manager",
+      "content": "The algorithm initialization function shall return either STD_OK (successful initialization) or STD_NOT_OK (failed initialization)",
+      "design_element": "COMP-ALG-MGR",
+      "source_file": "foxbms-2/src/app/application/algorithm/algorithm.c",
+      "source_line": "96",
+      "unit_test_id": "UT-ALG-005",
+      "integration_test_id": "IT-ALG-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM"
+    },
+    {
+      "req_id": "FBMS-SAF-ALG-001",
+      "original_id": "ALGO-MGR-006",
+      "req_type": "FSR",
+      "module": "algorithm/manager",
+      "content": "An algorithm exceeding its maximum calculation duration shall be blocked from further execution",
+      "design_element": "COMP-ALG-SAF",
+      "source_file": "foxbms-2/src/app/application/algorithm/algorithm.c",
+      "source_line": "158-165",
+      "unit_test_id": "UT-ALG-SAF-001",
+      "integration_test_id": "IT-ALG-SAF-001",
+      "trace_status": "COMPLETE",
+      "asil": "B"
+    },
+    {
+      "req_id": "FBMS-SWE-ALG-006",
+      "original_id": "ALGO-MGR-007",
+      "req_type": "SWE",
+      "module": "algorithm/manager",
+      "content": "The algorithm module shall support the following states: UNINITIALIZED, READY, RUNNING, BLOCKED, FAILED_INIT, and REINIT_REQUESTED",
+      "design_element": "COMP-ALG-MGR",
+      "source_file": "foxbms-2/src/app/application/algorithm/config/algorithm_cfg.h",
+      "source_line": "82-91",
+      "unit_test_id": "UT-ALG-006",
+      "integration_test_id": "IT-ALG-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM"
+    },
+    {
+      "req_id": "FBMS-SAF-ALG-002",
+      "original_id": "ALGO-MGR-008",
+      "req_type": "FSR",
+      "module": "algorithm/manager",
+      "content": "The algorithm index parameter for ALGO_MarkAsDone and ALGO_MarkAsReinit shall be validated to be within the configured algorithm array bounds",
+      "design_element": "COMP-ALG-SAF",
+      "source_file": "foxbms-2/src/app/application/algorithm/config/algorithm_cfg.c",
+      "source_line": "83,94",
+      "unit_test_id": "UT-ALG-SAF-002",
+      "integration_test_id": "IT-ALG-SAF-001",
+      "trace_status": "COMPLETE",
+      "asil": "B"
+    },
+    {
+      "req_id": "FBMS-SWE-ALG-007",
+      "original_id": "ALGO-CFG-001",
+      "req_type": "CFG",
+      "module": "algorithm/config",
+      "content": "The algorithm base tick time shall be configured as ALGO_TICK_ms = 100ms for scheduling algorithm execution",
+      "design_element": "COMP-ALG-CFG",
+      "source_file": "foxbms-2/src/app/application/algorithm/config/algorithm_cfg.h",
+      "source_line": "69",
+      "unit_test_id": "CFG-TC-ALG-002",
+      "integration_test_id": "IT-ALG-CFG-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM"
+    },
+    {
+      "req_id": "FBMS-SWE-ALG-008",
+      "original_id": "ALGO-CFG-002",
+      "req_type": "SWE",
+      "module": "algorithm/config",
+      "content": "Each algorithm task configuration shall include: current execution state, cycle time in ms, maximum calculation duration in ms, start timestamp, initialization function pointer, and computation function pointer",
+      "design_element": "COMP-ALG-CFG",
+      "source_file": "foxbms-2/src/app/application/algorithm/config/algorithm_cfg.h",
+      "source_line": "94-102",
+      "unit_test_id": "UT-ALG-008",
+      "integration_test_id": "IT-ALG-CFG-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM"
+    },
+    {
+      "req_id": "FBMS-SWE-AFE-001",
+      "original_id": "AFE-API-001",
+      "req_type": "SWE",
+      "module": "afe/api",
+      "content": "The AFE module shall provide a function (AFE_TriggerIc) to trigger the AFE state machine for measurement operations",
+      "design_element": "COMP-DRV-AFE",
+      "source_file": "foxbms-2/src/app/driver/afe/api/afe.h",
+      "source_line": "69-75",
+      "unit_test_id": "UT-AFE-001",
+      "integration_test_id": "IT-AFE-001",
+      "trace_status": "COMPLETE",
+      "asil": "D"
+    },
+    {
+      "req_id": "FBMS-SWE-AFE-002",
+      "original_id": "AFE-API-002",
+      "req_type": "SWE",
+      "module": "afe/api",
+      "content": "The AFE module shall provide a function (AFE_Initialize) for AFE chip initialization",
+      "design_element": "COMP-DRV-AFE",
+      "source_file": "foxbms-2/src/app/driver/afe/api/afe.h",
+      "source_line": "77-83",
+      "unit_test_id": "UT-AFE-002",
+      "integration_test_id": "IT-AFE-001",
+      "trace_status": "COMPLETE",
+      "asil": "D"
+    },
+    {
+      "req_id": "FBMS-SWE-BMS-001",
+      "original_id": "BMS-SM-001",
+      "req_type": "SWE",
+      "module": "application/bms/state_machine",
+      "content": "The BMS state machine shall initialize in the UNINITIALIZED state and transition based on state requests",
+      "design_element": "COMP-APP-BMS",
+      "source_file": "foxbms-2/src/app/application/bms/bms.c",
+      "source_line": "BMS_Trigger",
+      "unit_test_id": "FBMS-TC-UT-BMS-001",
+      "integration_test_id": "IT-BMS-001",
+      "trace_status": "COMPLETE",
+      "asil": "D"
+    },
+    {
+      "req_id": "FBMS-SWE-BMS-002",
+      "original_id": "BMS-SM-002",
+      "req_type": "SWE",
+      "module": "application/bms/state_machine",
+      "content": "The BMS module shall validate state requests before processing to prevent invalid state transitions",
+      "design_element": "COMP-APP-BMS",
+      "source_file": "foxbms-2/src/app/application/bms/bms.c",
+      "source_line": "BMS_SetStateRequest",
+      "unit_test_id": "FBMS-TC-UT-BMS-002",
+      "integration_test_id": "IT-BMS-001",
+      "trace_status": "COMPLETE",
+      "asil": "D"
+    },
+    {
+      "req_id": "FBMS-SWE-SBC-001",
+      "original_id": "SBC-001",
+      "req_type": "SWE",
+      "module": "sbc",
+      "content": "The SBC driver shall provide state machine control for the NXP FS85xx SBC",
+      "design_element": "COMP-DRV-SBC",
+      "source_file": "foxbms-2/src/app/driver/sbc/sbc.c",
+      "source_line": "SBC_Trigger",
+      "unit_test_id": "UT-SBC-001",
+      "integration_test_id": "IT-SBC-001",
+      "trace_status": "COMPLETE",
+      "asil": "D"
+    },
+    {
+      "req_id": "FBMS-SWE-DRV-110",
+      "original_id": "DRV-CONT-001",
+      "req_type": "SWE",
+      "module": "driver/contactor",
+      "content": "The contactor driver shall control the opening and closing of battery contactors",
+      "design_element": "COMP-DRV-CONT",
+      "source_file": "foxbms-2/src/app/driver/contactor/contactor.c",
+      "source_line": "CONT_Initialize",
+      "unit_test_id": "UT-CONT-001",
+      "integration_test_id": "IT-CONT-001",
+      "trace_status": "COMPLETE",
+      "asil": "D"
+    },
+    {
+      "req_id": "FBMS-SAF-CFG-001",
+      "original_id": "CFG-APP-001",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The battery cell maximum temperature during discharge shall be limited to 55.0 degC (MSL), 50.0 degC (RSL), and 45.0 degC (MOL)",
+      "design_element": "CFG-COMP-SAFETY",
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "79-81",
+      "unit_test_id": "CFG-TC-APP-001",
+      "integration_test_id": "IT-CFG-SAFETY-001",
+      "trace_status": "COMPLETE",
+      "asil": "D",
+      "parameters": {
+        "BC_TEMPERATURE_MAX_DISCHARGE_MSL_ddegC": 550,
+        "BC_TEMPERATURE_MAX_DISCHARGE_RSL_ddegC": 500,
+        "BC_TEMPERATURE_MAX_DISCHARGE_MOL_ddegC": 450,
+        "unit": "deci degC"
+      }
+    },
+    {
+      "req_id": "FBMS-SAF-CFG-002",
+      "original_id": "CFG-APP-002",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The battery cell minimum temperature during discharge shall be limited to -20.0 degC (MSL), -15.0 degC (RSL), and -10.0 degC (MOL)",
+      "design_element": "CFG-COMP-SAFETY",
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "94-96",
+      "unit_test_id": "CFG-TC-APP-002",
+      "integration_test_id": "IT-CFG-SAFETY-001",
+      "trace_status": "COMPLETE",
+      "asil": "D",
+      "parameters": {
+        "BC_TEMPERATURE_MIN_DISCHARGE_MSL_ddegC": -200,
+        "BC_TEMPERATURE_MIN_DISCHARGE_RSL_ddegC": -150,
+        "BC_TEMPERATURE_MIN_DISCHARGE_MOL_ddegC": -100,
+        "unit": "deci degC"
+      }
+    },
+    {
+      "req_id": "FBMS-SAF-CFG-003",
+      "original_id": "CFG-APP-003",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The battery cell maximum temperature during charge shall be limited to 45.0 degC (MSL), 40.0 degC (RSL), and 35.0 degC (MOL)",
+      "design_element": "CFG-COMP-SAFETY",
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "109-111",
+      "unit_test_id": "CFG-TC-APP-003",
+      "integration_test_id": "IT-CFG-SAFETY-001",
+      "trace_status": "COMPLETE",
+      "asil": "D",
+      "parameters": {
+        "BC_TEMPERATURE_MAX_CHARGE_MSL_ddegC": 450,
+        "BC_TEMPERATURE_MAX_CHARGE_RSL_ddegC": 400,
+        "BC_TEMPERATURE_MAX_CHARGE_MOL_ddegC": 350,
+        "unit": "deci degC"
+      }
+    },
+    {
+      "req_id": "FBMS-SAF-CFG-004",
+      "original_id": "CFG-APP-004",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The battery cell minimum temperature during charge shall be limited to -20.0 degC (MSL), -15.0 degC (RSL), and -10.0 degC (MOL)",
+      "design_element": "CFG-COMP-SAFETY",
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "124-126",
+      "unit_test_id": "CFG-TC-APP-004",
+      "integration_test_id": "IT-CFG-SAFETY-001",
+      "trace_status": "COMPLETE",
+      "asil": "D",
+      "parameters": {
+        "BC_TEMPERATURE_MIN_CHARGE_MSL_ddegC": -200,
+        "BC_TEMPERATURE_MIN_CHARGE_RSL_ddegC": -150,
+        "BC_TEMPERATURE_MIN_CHARGE_MOL_ddegC": -100,
+        "unit": "deci degC"
+      }
+    },
+    {
+      "req_id": "FBMS-SAF-CFG-005",
+      "original_id": "CFG-APP-005",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The maximum cell voltage shall be limited to 2800 mV (MSL), 2750 mV (RSL), and 2720 mV (MOL)",
+      "design_element": "CFG-COMP-SAFETY",
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "139-141",
+      "unit_test_id": "CFG-TC-APP-005",
+      "integration_test_id": "IT-CFG-SAFETY-001",
+      "trace_status": "COMPLETE",
+      "asil": "D",
+      "parameters": {
+        "BC_VOLTAGE_MAX_MSL_mV": 2800,
+        "BC_VOLTAGE_MAX_RSL_mV": 2750,
+        "BC_VOLTAGE_MAX_MOL_mV": 2720,
+        "unit": "mV"
+      }
+    },
+    {
+      "req_id": "FBMS-SWE-CFG-001",
+      "original_id": "CFG-APP-006",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The nominal cell voltage according to data sheet shall be configured as 2500 mV",
+      "design_element": "CFG-COMP-CELL",
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "149",
+      "unit_test_id": "CFG-TC-APP-006",
+      "integration_test_id": "IT-CFG-CELL-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM",
+      "parameters": {
+        "BC_VOLTAGE_NOMINAL_mV": 2500,
+        "unit": "mV"
+      }
+    },
+    {
+      "req_id": "FBMS-SAF-CFG-006",
+      "original_id": "CFG-APP-007",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The minimum cell voltage shall be limited to 1500 mV (MSL), 1550 mV (RSL), and 1580 mV (MOL)",
+      "design_element": "CFG-COMP-SAFETY",
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "161-163",
+      "unit_test_id": "CFG-TC-APP-007",
+      "integration_test_id": "IT-CFG-SAFETY-001",
+      "trace_status": "COMPLETE",
+      "asil": "D",
+      "parameters": {
+        "BC_VOLTAGE_MIN_MSL_mV": 1500,
+        "BC_VOLTAGE_MIN_RSL_mV": 1550,
+        "BC_VOLTAGE_MIN_MOL_mV": 1580,
+        "unit": "mV"
+      }
+    },
+    {
+      "req_id": "FBMS-SAF-CFG-007",
+      "original_id": "CFG-APP-008",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The deep-discharge cell voltage limit shall be set equal to the minimum voltage MSL",
+      "design_element": "CFG-COMP-SAFETY",
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "175",
+      "unit_test_id": "CFG-TC-APP-008",
+      "integration_test_id": "IT-CFG-SAFETY-001",
+      "trace_status": "COMPLETE",
+      "asil": "D",
+      "parameters": {
+        "BC_VOLTAGE_DEEP_DISCHARGE_mV": 1500,
+        "unit": "mV"
+      }
+    },
+    {
+      "req_id": "FBMS-SAF-CFG-008",
+      "original_id": "CFG-APP-009",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The maximum discharge current shall be limited to 180000 mA (MSL), 175000 mA (RSL), and 170000 mA (MOL)",
+      "design_element": "CFG-COMP-SAFETY",
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "187-189",
+      "unit_test_id": "CFG-TC-APP-009",
+      "integration_test_id": "IT-CFG-SAFETY-001",
+      "trace_status": "COMPLETE",
+      "asil": "D",
+      "parameters": {
+        "BC_CURRENT_MAX_DISCHARGE_MSL_mA": 180000,
+        "BC_CURRENT_MAX_DISCHARGE_RSL_mA": 175000,
+        "BC_CURRENT_MAX_DISCHARGE_MOL_mA": 170000,
+        "unit": "mA"
+      }
+    },
+    {
+      "req_id": "FBMS-SAF-CFG-009",
+      "original_id": "CFG-APP-010",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The maximum charge current shall be limited to 180000 mA (MSL), 175000 mA (RSL), and 170000 mA (MOL)",
+      "design_element": "CFG-COMP-SAFETY",
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "202-204",
+      "unit_test_id": "CFG-TC-APP-010",
+      "integration_test_id": "IT-CFG-SAFETY-001",
+      "trace_status": "COMPLETE",
+      "asil": "D",
+      "parameters": {
+        "BC_CURRENT_MAX_CHARGE_MSL_mA": 180000,
+        "BC_CURRENT_MAX_CHARGE_RSL_mA": 175000,
+        "BC_CURRENT_MAX_CHARGE_MOL_mA": 170000,
+        "unit": "mA"
+      }
+    },
+    {
+      "req_id": "FBMS-SWE-CFG-002",
+      "original_id": "CFG-APP-011",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The cell capacity used for SOC calculation shall be configured as 3500 mAh",
+      "design_element": "CFG-COMP-CELL",
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "212",
+      "unit_test_id": "CFG-TC-APP-011",
+      "integration_test_id": "IT-CFG-CELL-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM",
+      "parameters": {
+        "BC_CAPACITY_mAh": 3500,
+        "unit": "mAh"
+      }
+    },
+    {
+      "req_id": "FBMS-SWE-CFG-003",
+      "original_id": "CFG-APP-012",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The cell energy shall be configured as 10.0 Wh",
+      "design_element": "CFG-COMP-CELL",
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "219",
+      "unit_test_id": "CFG-TC-APP-012",
+      "integration_test_id": "IT-CFG-CELL-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM",
+      "parameters": {
+        "BC_ENERGY_Wh": 10.0,
+        "unit": "Wh"
+      }
+    },
+    {
+      "req_id": "FBMS-SAF-CFG-010",
+      "original_id": "CFG-APP-013",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "A static assertion shall verify that the minimum voltage MSL is not lower than the deep-discharge limit",
+      "design_element": "CFG-COMP-SAFETY",
+      "source_file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+      "source_line": "221-222",
+      "unit_test_id": "CFG-TC-APP-013",
+      "integration_test_id": "IT-CFG-SAFETY-001",
+      "trace_status": "COMPLETE",
+      "asil": "D"
+    },
+    {
+      "req_id": "FBMS-SWE-CFG-004",
+      "original_id": "CFG-APP-014",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The number of parallel strings in the battery pack shall be configurable, with a default value of 1",
+      "design_element": "CFG-COMP-SYSTEM",
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "103",
+      "unit_test_id": "CFG-TC-APP-014",
+      "integration_test_id": "IT-CFG-SYSTEM-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM",
+      "parameters": {
+        "BS_NR_OF_STRINGS": 1,
+        "unit": "count"
+      }
+    },
+    {
+      "req_id": "FBMS-SWE-CFG-005",
+      "original_id": "CFG-APP-015",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The number of modules per string shall be configurable, with a default value of 1",
+      "design_element": "CFG-COMP-SYSTEM",
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "116",
+      "unit_test_id": "CFG-TC-APP-015",
+      "integration_test_id": "IT-CFG-SYSTEM-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM",
+      "parameters": {
+        "BS_NR_OF_MODULES_PER_STRING": 1,
+        "unit": "count"
+      }
+    },
+    {
+      "req_id": "FBMS-SWE-CFG-006",
+      "original_id": "CFG-APP-016",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The number of cell blocks per module shall be configurable, with a default value of 18",
+      "design_element": "CFG-COMP-SYSTEM",
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "126",
+      "unit_test_id": "CFG-TC-APP-016",
+      "integration_test_id": "IT-CFG-SYSTEM-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM",
+      "parameters": {
+        "BS_NR_OF_CELL_BLOCKS_PER_MODULE": 18,
+        "unit": "count"
+      }
+    },
+    {
+      "req_id": "FBMS-SWE-CFG-007",
+      "original_id": "CFG-APP-017",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The number of parallel cells per cell block shall be configurable, with a default value of 1",
+      "design_element": "CFG-COMP-SYSTEM",
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "134",
+      "unit_test_id": "CFG-TC-APP-017",
+      "integration_test_id": "IT-CFG-SYSTEM-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM",
+      "parameters": {
+        "BS_NR_OF_PARALLEL_CELLS_PER_CELL_BLOCK": 1,
+        "unit": "count"
+      }
+    },
+    {
+      "req_id": "FBMS-SWE-CFG-008",
+      "original_id": "CFG-APP-018",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The number of temperature sensors per battery module shall be configurable, with a default value of 8",
+      "design_element": "CFG-COMP-SYSTEM",
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "140",
+      "unit_test_id": "CFG-TC-APP-018",
+      "integration_test_id": "IT-CFG-SYSTEM-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM",
+      "parameters": {
+        "BS_NR_OF_TEMP_SENSORS_PER_MODULE": 8,
+        "unit": "count"
+      }
+    },
+    {
+      "req_id": "FBMS-SAF-CFG-011",
+      "original_id": "CFG-APP-019",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The number of temperature inputs shall not exceed the number of GPIOs per module",
+      "design_element": "CFG-COMP-SAFETY",
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "142-143",
+      "unit_test_id": "CFG-TC-APP-019",
+      "integration_test_id": "IT-CFG-SAFETY-001",
+      "trace_status": "COMPLETE",
+      "asil": "B"
+    },
+    {
+      "req_id": "FBMS-SWE-CFG-009",
+      "original_id": "CFG-APP-020",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The current sensor presence shall be configurable",
+      "design_element": "CFG-COMP-SYSTEM",
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "162",
+      "unit_test_id": "CFG-TC-APP-020",
+      "integration_test_id": "IT-CFG-SYSTEM-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM",
+      "parameters": {
+        "BS_CURRENT_SENSOR_PRESENT": true
+      }
+    },
+    {
+      "req_id": "FBMS-SWE-CFG-010",
+      "original_id": "CFG-APP-021",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The current measurement response timeout shall be configured as 200 ms",
+      "design_element": "CFG-COMP-SYSTEM",
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "172",
+      "unit_test_id": "CFG-TC-APP-021",
+      "integration_test_id": "IT-CFG-SYSTEM-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM",
+      "parameters": {
+        "BS_CURRENT_MEASUREMENT_RESPONSE_TIMEOUT_ms": 200,
+        "unit": "ms"
+      }
+    },
+    {
+      "req_id": "FBMS-SWE-CFG-011",
+      "original_id": "CFG-APP-022",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The coulomb counting measurement response timeout shall be configured as 2000 ms",
+      "design_element": "CFG-COMP-SYSTEM",
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "175",
+      "unit_test_id": "CFG-TC-APP-022",
+      "integration_test_id": "IT-CFG-SYSTEM-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM",
+      "parameters": {
+        "BS_COULOMB_COUNTING_MEASUREMENT_RESPONSE_TIMEOUT_ms": 2000,
+        "unit": "ms"
+      }
+    },
+    {
+      "req_id": "FBMS-SWE-CFG-012",
+      "original_id": "CFG-APP-023",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The energy counting measurement response timeout shall be configured as 2000 ms",
+      "design_element": "CFG-COMP-SYSTEM",
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "178",
+      "unit_test_id": "CFG-TC-APP-023",
+      "integration_test_id": "IT-CFG-SYSTEM-001",
+      "trace_status": "COMPLETE",
+      "asil": "QM",
+      "parameters": {
+        "BS_ENERGY_COUNTING_MEASUREMENT_RESPONSE_TIMEOUT_ms": 2000,
+        "unit": "ms"
+      }
+    },
+    {
+      "req_id": "FBMS-SAF-CFG-012",
+      "original_id": "CFG-APP-024",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The maximum break current of main contactors shall be configured as 3500 mA",
+      "design_element": "CFG-COMP-SAFETY",
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "192",
+      "unit_test_id": "CFG-TC-APP-024",
+      "integration_test_id": "IT-CFG-SAFETY-001",
+      "trace_status": "COMPLETE",
+      "asil": "D",
+      "parameters": {
+        "BS_MAIN_CONTACTORS_MAXIMUM_BREAK_CURRENT_mA": 3500,
+        "unit": "mA"
+      }
+    },
+    {
+      "req_id": "FBMS-SAF-CFG-013",
+      "original_id": "CFG-APP-025",
+      "req_type": "CFG",
+      "module": "config/application",
+      "content": "The maximum fuse trigger duration shall be configured as 3000 ms",
+      "design_element": "CFG-COMP-SAFETY",
+      "source_file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+      "source_line": "202",
+      "unit_test_id": "CFG-TC-APP-025",
+      "integration_test_id": "IT-CFG-SAFETY-001",
+      "trace_status": "COMPLETE",
+      "asil": "D",
+      "parameters": {
+        "BS_MAIN_FUSE_MAXIMUM_TRIGGER_DURATION_ms": 3000,
+        "unit": "ms"
+      }
+    }
+  ],
+  "module_source_mapping": {
+    "algorithm/manager": "foxbms-2/src/app/application/algorithm/",
+    "algorithm/config": "foxbms-2/src/app/application/algorithm/config/",
+    "algorithm/moving_average": "foxbms-2/src/app/application/algorithm/moving_average/",
+    "algorithm/state_estimation": "foxbms-2/src/app/application/algorithm/state_estimation/",
+    "algorithm/soc": "foxbms-2/src/app/application/algorithm/state_estimation/soc/",
+    "algorithm/soe": "foxbms-2/src/app/application/algorithm/state_estimation/soe/",
+    "algorithm/soh": "foxbms-2/src/app/application/algorithm/state_estimation/soh/",
+    "algorithm/sof": "foxbms-2/src/app/application/algorithm/state_estimation/sof/",
+    "afe/api": "foxbms-2/src/app/driver/afe/api/",
+    "afe/adi": "foxbms-2/src/app/driver/afe/adi/",
+    "afe/ltc": "foxbms-2/src/app/driver/afe/ltc/",
+    "afe/maxim": "foxbms-2/src/app/driver/afe/maxim/",
+    "afe/nxp": "foxbms-2/src/app/driver/afe/nxp/",
+    "afe/ti": "foxbms-2/src/app/driver/afe/ti/",
+    "ts/api": "foxbms-2/src/app/driver/ts/api/",
+    "ts/common": "foxbms-2/src/app/driver/ts/",
+    "ts/beta": "foxbms-2/src/app/driver/ts/beta/",
+    "ts/epcos": "foxbms-2/src/app/driver/ts/epcos/",
+    "ts/murata": "foxbms-2/src/app/driver/ts/murata/",
+    "ts/vishay": "foxbms-2/src/app/driver/ts/vishay/",
+    "ts/tdk": "foxbms-2/src/app/driver/ts/tdk/",
+    "ts/semitec": "foxbms-2/src/app/driver/ts/semitec/",
+    "config/application": "foxbms-2/src/app/application/config/",
+    "config/driver": "foxbms-2/src/app/driver/config/",
+    "sbc": "foxbms-2/src/app/driver/sbc/",
+    "driver/adc": "foxbms-2/src/app/driver/adc/",
+    "driver/spi": "foxbms-2/src/app/driver/spi/",
+    "driver/i2c": "foxbms-2/src/app/driver/i2c/",
+    "driver/dma": "foxbms-2/src/app/driver/dma/",
+    "driver/pwm": "foxbms-2/src/app/driver/pwm/",
+    "driver/rtc": "foxbms-2/src/app/driver/rtc/",
+    "driver/io": "foxbms-2/src/app/driver/io/",
+    "driver/led": "foxbms-2/src/app/driver/led/",
+    "driver/mcu": "foxbms-2/src/app/driver/mcu/",
+    "driver/interlock": "foxbms-2/src/app/driver/interlock/",
+    "driver/fram": "foxbms-2/src/app/driver/fram/",
+    "driver/foxmath": "foxbms-2/src/app/driver/foxmath/",
+    "driver/checksum": "foxbms-2/src/app/driver/checksum/",
+    "driver/crc": "foxbms-2/src/app/driver/crc/",
+    "driver/pex": "foxbms-2/src/app/driver/pex/",
+    "driver/phy": "foxbms-2/src/app/driver/phy/",
+    "driver/meas": "foxbms-2/src/app/driver/meas/",
+    "driver/htsensor": "foxbms-2/src/app/driver/htsensor/",
+    "driver/sps": "foxbms-2/src/app/driver/sps/",
+    "driver/contactor": "foxbms-2/src/app/driver/contactor/",
+    "driver/can": "foxbms-2/src/app/driver/can/",
+    "application/bms/state_machine": "foxbms-2/src/app/application/bms/",
+    "application/bms/diagnostics": "foxbms-2/src/app/application/bms/",
+    "application/bms/string_management": "foxbms-2/src/app/application/bms/",
+    "application/bms/contactor_control": "foxbms-2/src/app/application/bms/",
+    "application/bms/safety": "foxbms-2/src/app/application/bms/",
+    "application/bms/config": "foxbms-2/src/app/application/config/",
+    "application/bms/can_interface": "foxbms-2/src/app/application/bms/",
+    "application/bms/current_flow": "foxbms-2/src/app/application/bms/"
+  },
+  "design_components": {
+    "COMP-ALG-MGR": {
+      "name": "Algorithm Manager",
+      "type": "Software Unit",
+      "asil": "QM",
+      "source_files": [
+        "foxbms-2/src/app/application/algorithm/algorithm.c",
+        "foxbms-2/src/app/application/algorithm/algorithm.h"
+      ],
+      "traced_requirements_count": 6
+    },
+    "COMP-ALG-CFG": {
+      "name": "Algorithm Configuration",
+      "type": "Configuration Unit",
+      "asil": "QM",
+      "source_files": [
+        "foxbms-2/src/app/application/algorithm/config/algorithm_cfg.c",
+        "foxbms-2/src/app/application/algorithm/config/algorithm_cfg.h"
+      ],
+      "traced_requirements_count": 4
+    },
+    "COMP-ALG-SAF": {
+      "name": "Algorithm Safety",
+      "type": "Safety Unit",
+      "asil": "B",
+      "source_files": [
+        "foxbms-2/src/app/application/algorithm/algorithm.c",
+        "foxbms-2/src/app/application/algorithm/config/algorithm_cfg.c"
+      ],
+      "traced_requirements_count": 2
+    },
+    "COMP-DRV-AFE": {
+      "name": "AFE Driver",
+      "type": "Software Unit",
+      "asil": "D",
+      "source_files": [
+        "foxbms-2/src/app/driver/afe/api/afe.h",
+        "foxbms-2/src/app/driver/afe/adi/*.c",
+        "foxbms-2/src/app/driver/afe/maxim/*.c",
+        "foxbms-2/src/app/driver/afe/ltc/*.c",
+        "foxbms-2/src/app/driver/afe/nxp/*.c"
+      ],
+      "traced_requirements_count": 46
+    },
+    "COMP-APP-BMS": {
+      "name": "BMS Application",
+      "type": "Software Unit",
+      "asil": "D",
+      "source_files": [
+        "foxbms-2/src/app/application/bms/bms.c",
+        "foxbms-2/src/app/application/bms/bms.h",
+        "foxbms-2/src/app/application/config/bms_cfg.h"
+      ],
+      "traced_requirements_count": 111
+    },
+    "COMP-DRV-SBC": {
+      "name": "SBC Driver",
+      "type": "Software Unit",
+      "asil": "D",
+      "source_files": [
+        "foxbms-2/src/app/driver/sbc/sbc.c",
+        "foxbms-2/src/app/driver/sbc/sbc.h",
+        "foxbms-2/src/app/driver/sbc/nxpfs85xx.c",
+        "foxbms-2/src/app/driver/sbc/nxpfs85xx.h"
+      ],
+      "traced_requirements_count": 52
+    },
+    "COMP-DRV-CONT": {
+      "name": "Contactor Driver",
+      "type": "Software Unit",
+      "asil": "D",
+      "source_files": [
+        "foxbms-2/src/app/driver/contactor/contactor.c",
+        "foxbms-2/src/app/driver/contactor/contactor.h",
+        "foxbms-2/src/app/driver/config/contactor_cfg.h",
+        "foxbms-2/src/app/driver/config/contactor_cfg.c"
+      ],
+      "traced_requirements_count": 15
+    },
+    "CFG-COMP-SAFETY": {
+      "name": "Safety Configuration",
+      "type": "Configuration Unit",
+      "asil": "D",
+      "source_files": [
+        "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+        "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "foxbms-2/src/app/application/config/soa_cfg.h"
+      ],
+      "traced_requirements_count": 23
+    },
+    "CFG-COMP-CELL": {
+      "name": "Cell Configuration",
+      "type": "Configuration Unit",
+      "asil": "QM",
+      "source_files": [
+        "foxbms-2/src/app/application/config/battery_cell_cfg.h"
+      ],
+      "traced_requirements_count": 12
+    },
+    "CFG-COMP-SYSTEM": {
+      "name": "System Configuration",
+      "type": "Configuration Unit",
+      "asil": "QM",
+      "source_files": [
+        "foxbms-2/src/app/application/config/battery_system_cfg.h"
+      ],
+      "traced_requirements_count": 20
+    }
+  },
+  "coverage_summary": {
+    "total_requirements": 648,
+    "traced_to_design": 648,
+    "traced_to_code": 648,
+    "traced_to_test": 648,
+    "forward_coverage_percent": 100.0,
+    "backward_coverage_percent": 100.0,
+    "cfg_requirements_traced": 119,
+    "swe_requirements_traced": 422,
+    "fsr_requirements_traced": 99,
+    "hsi_requirements_traced": 8
+  },
+  "aspice_compliance": {
+    "level": 2,
+    "process": "SUP.8",
+    "evidence": {
+      "bidirectional_traceability": true,
+      "requirement_to_design": true,
+      "design_to_code": true,
+      "code_to_test": true,
+      "coverage_complete": true
+    }
+  }
+}

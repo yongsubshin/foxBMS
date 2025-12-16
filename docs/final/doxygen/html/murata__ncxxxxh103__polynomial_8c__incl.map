@@ -1,0 +1,11 @@
+<map id="foxbms&#45;2/src/app/driver/ts/murata/ncxxxxh103/polynomial/murata_ncxxxxh103_polynomial.c" name="foxbms&#45;2/src/app/driver/ts/murata/ncxxxxh103/polynomial/murata_ncxxxxh103_polynomial.c">
+<area shape="rect" id="Node000001" title="Resistive divider used for measuring temperature." alt="" coords="92,5,328,75"/>
+<area shape="rect" id="Node000002" href="$murata__ncxxxxh103_8h.html" title="Resistive divider used for measuring temperature." alt="" coords="5,123,172,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,77,117,116,113,112,165,73"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="175,196,245,221"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="213,75,213,182,207,182,207,75"/>
+<area shape="rect" id="Node000004" href="$tsi_8h.html" title="Temperature Sensor Interface on Slave Unit driver header." alt="" coords="247,123,298,148"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="235,73,259,110,255,113,230,76"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,146,180,187,177,191,107,150"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="264,150,231,187,227,184,260,147"/>
+</map>

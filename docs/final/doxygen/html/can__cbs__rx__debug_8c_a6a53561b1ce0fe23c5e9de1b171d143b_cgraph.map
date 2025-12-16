@@ -1,0 +1,35 @@
+<map id="CANRX_ProcessFramInitializationMux" name="CANRX_ProcessFramInitializationMux">
+<area shape="rect" id="Node000001" title="Parses CAN message related to FRAM initialization." alt="" coords="5,105,272,131"/>
+<area shape="rect" id="Node000002" href="$can__cbs__rx__debug_8c.html#a339d6504c498c23c72f4298c212cfdcf" title="Check if a FRAM initialization is requested." alt="" coords="320,34,559,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,103,331,74,332,80,200,108"/>
+<area shape="rect" id="Node000005" href="$fram_8c.html#a6d7c5fe74d5d10147e4fd38864a474c8" title="Reinitialize all entries in the FRAM." alt="" coords="338,133,541,159"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="272,128,325,133,324,138,272,133"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="607,24,897,49"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="559,45,593,43,593,48,559,50"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="945,5,1168,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="898,25,931,23,932,28,898,30"/>
+<area shape="rect" id="Node000006" href="$fram_8c.html#ad5c5ec1fd0a6c3667185d3b75064e359" title="Writes a variable to the FRAM." alt="" coords="685,203,819,228"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="498,156,681,197,680,202,497,161"/>
+<area shape="rect" id="Node000007" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="987,203,1126,228"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="819,213,974,213,974,218,819,218"/>
+<area shape="rect" id="Node000008" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="1007,252,1107,277"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="819,223,993,252,992,257,818,229"/>
+<area shape="rect" id="Node000009" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="1015,301,1099,327"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="783,226,856,256,946,287,1002,301,1000,306,945,293,854,261,781,231"/>
+<area shape="rect" id="Node000010" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="997,351,1117,376"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="770,226,843,280,893,311,946,337,984,349,982,354,944,342,891,315,840,284,767,230"/>
+<area shape="rect" id="Node000011" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="946,400,1167,425"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="765,226,793,259,835,303,888,348,947,386,962,393,960,398,944,391,884,353,832,307,789,263,761,230"/>
+<area shape="rect" id="Node000012" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="993,55,1121,80"/>
+<area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="767,200,840,146,891,115,944,89,979,78,980,83,946,94,893,120,843,151,770,205"/>
+<area shape="rect" id="Node000013" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="1017,153,1096,179"/>
+<area shape="poly" id="edge12_Node000006_Node000013" title=" " alt="" coords="818,202,1003,172,1004,177,819,207"/>
+<area shape="rect" id="Node000016" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="1009,104,1104,129"/>
+<area shape="poly" id="edge15_Node000006_Node000016" title=" " alt="" coords="782,200,855,171,945,139,995,126,996,131,946,145,857,176,784,205"/>
+<area shape="rect" id="Node000014" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1216,104,1372,129"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="1096,155,1218,130,1219,135,1097,161"/>
+<area shape="rect" id="Node000015" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1221,153,1367,179"/>
+<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="1096,163,1207,163,1207,169,1096,169"/>
+<area shape="poly" id="edge16_Node000016_Node000014" title=" " alt="" coords="1104,114,1202,114,1202,119,1104,119"/>
+<area shape="poly" id="edge17_Node000016_Node000015" title=" " alt="" coords="1105,124,1219,148,1218,153,1104,129"/>
+</map>

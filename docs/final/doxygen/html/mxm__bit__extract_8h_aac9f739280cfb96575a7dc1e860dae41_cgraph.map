@@ -1,0 +1,5 @@
+<map id="mxm_41bReadValue" name="mxm_41bReadValue">
+<area shape="rect" id="Node000001" title="read a value from a register supplied as variable" alt="" coords="5,5,161,31"/>
+<area shape="rect" id="Node000002" href="$mxm__bit__extract_8c.html#a99ab333298a01410347cff8b97125e12" title="Extract a bit value function." alt="" coords="209,5,284,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,15,196,15,196,21,162,21"/>
+</map>

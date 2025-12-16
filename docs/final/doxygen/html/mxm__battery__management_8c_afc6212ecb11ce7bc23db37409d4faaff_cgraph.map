@@ -1,0 +1,5 @@
+<map id="MXM_5XSignalError" name="MXM_5XSignalError">
+<area shape="rect" id="Node000001" title="Signal that an error has occurred in a chain of substates." alt="" coords="5,5,156,31"/>
+<area shape="rect" id="Node000002" href="$mxm__battery__management_8c.html#a08d5ab7b4b3254f41e6661ee677f854e" title="sets all internal state variables so that upon next execution the next substate is entered" alt="" coords="204,5,417,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,15,190,15,190,21,156,21"/>
+</map>

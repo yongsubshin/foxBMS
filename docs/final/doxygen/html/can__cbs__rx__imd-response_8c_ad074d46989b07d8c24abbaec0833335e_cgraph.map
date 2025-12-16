@@ -1,0 +1,5 @@
+<map id="CANRX_TransferImdResponseMessageToCanBuffer" name="CANRX_TransferImdResponseMessageToCanBuffer">
+<area shape="rect" id="Node000001" title="Reads the information from the can data and transfers it to a can buffer element." alt="" coords="5,5,220,45"/>
+<area shape="rect" id="Node000002" href="$foxmath_8c.html#aacaf0845143922c6a31912af37fd9741" title="Returns the minimum of the passed uint8_t values." alt="" coords="268,13,484,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,23,254,23,254,28,220,28"/>
+</map>

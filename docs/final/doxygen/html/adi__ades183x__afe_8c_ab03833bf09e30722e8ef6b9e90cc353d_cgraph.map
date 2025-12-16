@@ -1,0 +1,15 @@
+<map id="AFE_Initialize" name="AFE_Initialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,116,56"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x_8c.html#add671ef4964affd5974d1fcd92236b65" title="Sets the pins to activate the interface board." alt="" coords="164,31,367,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,41,150,41,150,46,116,46"/>
+<area shape="rect" id="Node000003" href="$pex_8c.html#a8d40659d3d10755949d65e36f483c504" title="sets pin to high." alt="" coords="467,5,561,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="366,30,453,21,453,27,367,36"/>
+<area shape="rect" id="Node000006" href="$pex_8c.html#aa2309e9dbd95438d52d80cad62ce5a45" title="sets pin to input." alt="" coords="415,55,613,80"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="367,50,401,54,401,59,366,56"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="661,5,817,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="561,15,648,15,648,21,561,21"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="666,55,813,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="562,26,668,49,666,54,561,31"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="572,52,667,31,668,36,573,57"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="614,65,652,65,652,70,614,70"/>
+</map>

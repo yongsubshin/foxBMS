@@ -1,0 +1,25 @@
+var nxp__mc3377x_ll_8c =
+[
+    [ "N77X_MAX_ANSWER_FRAMES", "nxp__mc3377x-ll_8c.html#a74c0e5cddae9aabdf84d6d49aac2598c", null ],
+    [ "N77X_READ_HEADER_SPI_BUFFER_SIZE", "nxp__mc3377x-ll_8c.html#abc7cd75b25766e5752c30469b92c7f33", null ],
+    [ "N77X_READ_PAYLOAD_SPI_BUFFER_SIZE", "nxp__mc3377x-ll_8c.html#a02bd08d0ddff54eb8e5d1415a337d418", null ],
+    [ "N77X_SPI_READ_TIMEOUT_US", "nxp__mc3377x-ll_8c.html#a1e2798d50d9bcfb0c57feb9660d578b3", null ],
+    [ "N77X_SPI_WRITE_TIMEOUT_US", "nxp__mc3377x-ll_8c.html#af64db2c6f4573bfa469327d22fbd37c5", null ],
+    [ "N77X_WAIT_TIME_AFTER_READ_US", "nxp__mc3377x-ll_8c.html#acf4e2a2ae331a5afa21f7110a8cb17da", null ],
+    [ "N77X_WAIT_TIME_AFTER_WRITE_US", "nxp__mc3377x-ll_8c.html#aa6358496159682406ecb10d9e74a514b", null ],
+    [ "N77X_WRITE_SPI_BUFFER_SIZE", "nxp__mc3377x-ll_8c.html#a1012066b45b3fd2f0d91bcd1617973f1", null ],
+    [ "N77x_CommunicationComposeMessage", "nxp__mc3377x-ll_8c.html#a04878a02f18cdac47a678471869aea9e", null ],
+    [ "N77x_CommunicationDecomposeMessage", "nxp__mc3377x-ll_8c.html#a436bee438a053a6bd1d0fe47e36d2458", null ],
+    [ "N77x_CommunicationRead", "nxp__mc3377x-ll_8c.html#a1d0e4d1c54be187abfe24be1f40bb9c3", null ],
+    [ "N77x_CommunicationReadMultiple", "nxp__mc3377x-ll_8c.html#ac4d588b6872ff449b99b626282ce048f", null ],
+    [ "N77x_CommunicationWrite", "nxp__mc3377x-ll_8c.html#ac3c25850e67f6c74de3a9b01deeb9e7d", null ],
+    [ "N77x_ConvertMessageToBuffer", "nxp__mc3377x-ll_8c.html#ac6ffb0eb25c83ca332cef65122e24a61", null ],
+    [ "N77x_ResetMessageCounter", "nxp__mc3377x-ll_8c.html#aa1ab6743fde6bff2f3d8cf52b89a3189", null ],
+    [ "N77x_WaitForRxCompletedNotification", "nxp__mc3377x-ll_8c.html#af5b6bb587d4ffec57eb184e0cd3a2e22", null ],
+    [ "N77x_WaitForTxCompletedNotification", "nxp__mc3377x-ll_8c.html#a976c1225c4b0298961bc662d4b103401", null ],
+    [ "N77xFromTplRxBuffer", "nxp__mc3377x-ll_8c.html#a759df24e271ec24175049a1ca093968a", null ],
+    [ "N77xFromTplTxBuffer", "nxp__mc3377x-ll_8c.html#a85ff0d8457a815ac56e0a491e9e1f257", null ],
+    [ "N77xToTplRxBuffer", "nxp__mc3377x-ll_8c.html#a3d43b732f403e70d2a48850e2c831c55", null ],
+    [ "N77xToTplTxBuffer", "nxp__mc3377x-ll_8c.html#ad77b3eb45647fe06db9147b2cce90832", null ],
+    [ "referenceMessageCounter", "nxp__mc3377x-ll_8c.html#a475c31486706db075260bfc0b075b5a2", null ]
+];

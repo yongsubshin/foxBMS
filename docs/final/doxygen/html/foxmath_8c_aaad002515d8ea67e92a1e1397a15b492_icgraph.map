@@ -1,0 +1,124 @@
+<map id="MATH_LinearInterpolation" name="MATH_LinearInterpolation">
+<area shape="rect" id="Node000001" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="3305,324,3496,349"/>
+<area shape="rect" id="Node000002" href="$group__state-estimation-api.html#ga74af4e2bdb5a3caa9696292fb9217311" title="look&#45;up table for SOC initialization" alt="" coords="3011,63,3256,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="3388,312,3369,270,3341,217,3303,163,3280,138,3256,116,3231,101,3203,91,3205,86,3233,96,3259,112,3284,134,3307,159,3345,214,3374,267,3392,310"/>
+<area shape="rect" id="Node000015" href="$soe__counting_8c.html#a7461d3a1c3bf7a1a79c841b92c21ca59" title="look&#45;up table for SOE initialization" alt="" coords="3053,127,3213,152"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="3384,313,3364,279,3335,238,3299,198,3256,166,3213,149,3215,144,3259,161,3302,195,3339,235,3368,276,3389,310"/>
+<area shape="rect" id="Node000018" href="$epcos__b57251v5103j060_8c.html#a60e7e40bc4662b44093a0a2b464bd395" title="returns temperature based on measured ADC voltage" alt="" coords="3012,176,3255,201"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="3378,315,3326,264,3293,237,3256,215,3227,204,3228,199,3258,210,3296,233,3330,260,3382,312"/>
+<area shape="rect" id="Node000045" href="$epcos__b57861s0103f045_8c.html#a8bb26a9001e051fc2fee6ba77027b1b6" title="returns temperature based on measured ADC voltage" alt="" coords="3012,275,3255,300"/>
+<area shape="poly" id="edge48_Node000001_Node000045" title=" " alt="" coords="3317,324,3203,303,3204,297,3318,319"/>
+<area shape="rect" id="Node000047" href="$murata__ncxxxxh103_8c.html#a0e6cfeee0f7fdf5504234ed54ddfc9b7" title="returns temperature based on measured ADC voltage." alt="" coords="3011,324,3255,349"/>
+<area shape="poly" id="edge50_Node000001_Node000047" title=" " alt="" coords="3292,339,3256,339,3256,334,3292,334"/>
+<area shape="rect" id="Node000049" href="$semitec__103jt_8c.html#a26f93447be1d7882e16a9624be22ab0f" title="returns temperature based on measured ADC voltage" alt="" coords="3009,373,3257,399"/>
+<area shape="poly" id="edge52_Node000001_Node000049" title=" " alt="" coords="3318,354,3204,376,3203,371,3317,349"/>
+<area shape="rect" id="Node000051" href="$tdk__ntcgs103jf103ft8_8c.html#aa87a3225637583d135a53de72818b094" title="returns temperature based on measured ADC voltage" alt="" coords="3012,423,3255,448"/>
+<area shape="poly" id="edge54_Node000001_Node000051" title=" " alt="" coords="3369,359,3318,386,3258,413,3213,425,3212,420,3256,407,3316,382,3366,354"/>
+<area shape="rect" id="Node000053" href="$tdk__ntcg163jx103dt1s_8c.html#a8f3cc23e54dd363ac0b643c4dfefef0e" title="returns temperature based on measured ADC voltage" alt="" coords="3012,472,3255,497"/>
+<area shape="poly" id="edge56_Node000001_Node000053" title=" " alt="" coords="3382,361,3330,413,3296,439,3258,462,3225,474,3223,469,3256,457,3293,435,3326,409,3378,358"/>
+<area shape="rect" id="Node000055" href="$vishay__ntcalug01a103g_8c.html#a865b7c323eb0bdbd7420518e6b56cede" title="returns temperature based on measured ADC voltage." alt="" coords="3014,521,3253,547"/>
+<area shape="poly" id="edge58_Node000001_Node000055" title=" " alt="" coords="3388,363,3368,397,3339,437,3302,478,3259,511,3231,524,3228,519,3256,506,3298,474,3334,434,3363,394,3384,360"/>
+<area shape="rect" id="Node000057" href="$vishay__ntcle317e4103sba_8c.html#ae917bb4796f0f8fa36201dbd92aae38c" title="returns temperature based on measured ADC voltage." alt="" coords="3014,571,3253,596"/>
+<area shape="poly" id="edge60_Node000001_Node000057" title=" " alt="" coords="3393,364,3375,408,3347,462,3308,516,3285,541,3259,562,3237,573,3235,568,3256,557,3281,537,3304,513,3342,459,3370,405,3388,362"/>
+<area shape="rect" id="Node000059" href="$vishay__ntcle413e2103f102l_8c.html#aaad7430280f6c4d6add34f90b3ef8159" title="returns temperature based on measured ADC voltage." alt="" coords="3014,225,3253,251"/>
+<area shape="poly" id="edge62_Node000001_Node000059" title=" " alt="" coords="3367,319,3316,291,3256,265,3217,253,3218,248,3258,259,3318,286,3369,314"/>
+<area shape="rect" id="Node000003" href="$bal__strategy__history_8c.html#acf508466d14bd8560c1f5b538e86fd94" title=" " alt="" coords="2769,5,2957,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="3059,62,2923,33,2924,28,3060,57"/>
+<area shape="rect" id="Node000012" href="$soc__counting_8c.html#a7abd073295c29aaeb17a03fccdc4fd33" title="initializes database and FRAM SOC values via lookup table (average, minimum and maximum)." alt="" coords="2764,55,2961,95"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="2997,78,2961,78,2961,73,2997,73"/>
+<area shape="rect" id="Node000004" href="$bal__strategy__history_8c.html#af32dfaa4971ec041d8ceb9d9cef69970" title="State machine subfunction to check if balancing is allowed." alt="" coords="2458,5,2701,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="2755,21,2701,21,2701,15,2755,15"/>
+<area shape="rect" id="Node000005" href="$bal__strategy__voltage_8c.html#ac47a87986efae1622a9faa1e1f3c5e4b" title="trigger function for the BAL driver state machine." alt="" coords="2238,7,2337,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="2444,21,2337,22,2337,16,2444,16"/>
+<area shape="rect" id="Node000006" href="$ftask__cfg_8c.html#a5d63574dd6ec0e14d26d10acf949913b" title="Cyclic 100 ms task." alt="" coords="1889,57,2121,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="2225,33,2077,60,2076,55,2224,28"/>
+<area shape="rect" id="Node000007" href="$ftask_8c.html#a17cb1d3d5baac3aae72d9ecf340557f5" title="Creation of cyclic 100 ms task." alt="" coords="1196,59,1412,84"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1876,73,1412,74,1412,68,1876,68"/>
+<area shape="rect" id="Node000008" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,109,636,135"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1182,73,951,78,817,86,684,99,617,112,616,107,684,94,817,81,951,73,1182,67"/>
+<area shape="rect" id="Node000009" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,109,448,135"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="482,125,448,125,448,119,482,119"/>
+<area shape="rect" id="Node000010" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,109,184,135"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="218,125,184,125,184,119,218,119"/>
+<area shape="rect" id="Node000011" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,109,81,135"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="116,125,82,125,82,119,116,119"/>
+<area shape="rect" id="Node000013" href="$group__state-estimation-api.html#ga23fd935c8f32702285c6d97a688bd6d8" title="periodically called algorithm to calculate state&#45;of&#45;charge (SOC)" alt="" coords="2479,55,2680,80"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="2750,75,2680,73,2680,68,2751,70"/>
+<area shape="rect" id="Node000014" href="$state__estimation_8c.html#afa7538094da4b3fce0b58b02b340f419" title="Main function to perform state estimations." alt="" coords="2197,57,2378,83"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="2465,71,2378,72,2378,67,2465,66"/>
+<area shape="poly" id="edge14_Node000014_Node000006" title=" " alt="" coords="2183,73,2122,73,2122,67,2183,67"/>
+<area shape="rect" id="Node000016" href="$soe__counting_8c.html#ad914661b01e25279b36ebd802252005b" title="initializes database and FRAM SOE values via lookup table (average, min and max)." alt="" coords="2765,119,2961,159"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="3040,142,2961,142,2961,137,3040,137"/>
+<area shape="rect" id="Node000017" href="$group__state-estimation-api.html#gaeb9b1d83b826af8dfdd7f89abd44b4c3" title="periodically called algorithm to calculate state&#45;of&#45;energy (SOE)" alt="" coords="2479,104,2679,129"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="2750,133,2679,127,2680,122,2751,128"/>
+<area shape="poly" id="edge18_Node000017_Node000014" title=" " alt="" coords="2486,104,2367,85,2368,80,2486,99"/>
+<area shape="rect" id="Node000019" href="$vishay__ntcle413e2103f102l__lookup-table_8c.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="2785,225,2940,251"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="3050,206,2934,228,2933,223,3049,201"/>
+<area shape="rect" id="Node000020" href="$adi__ades183x__cfg_8c.html#a77cbdf2cde0215b6e3f1841b8a76ad89" title="converts a raw GPIO voltage to a temperature value in deciCelsius." alt="" coords="2481,154,2677,194"/>
+<area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="2792,225,2668,197,2669,191,2793,220"/>
+<area shape="rect" id="Node000030" href="$ltc__6813-1__cfg_8c.html#ac5835e0f4df145a23f5189ee0dc7056f" title="converts a raw voltage from multiplexer to a temperature value in deci °C." alt="" coords="2479,218,2679,258"/>
+<area shape="poly" id="edge33_Node000019_Node000030" title=" " alt="" coords="2771,241,2680,241,2680,235,2771,235"/>
+<area shape="rect" id="Node000033" href="$mxm__1785x_8c.html#a920e0ec9a500bdd62f13a6c2f57a9163" title="Copies measured voltage data into the database." alt="" coords="2481,283,2678,308"/>
+<area shape="poly" id="edge36_Node000019_Node000033" title=" " alt="" coords="2793,256,2717,273,2651,285,2650,280,2715,267,2792,251"/>
+<area shape="rect" id="Node000038" href="$nxp__mc3377x__helpers_8c.html#a4648035bdea53687e7637fb265c98900" title="converts a raw voltage from multiplexer to a temperature value in deci °C." alt="" coords="2443,332,2716,357"/>
+<area shape="poly" id="edge41_Node000019_Node000038" title=" " alt="" coords="2776,258,2766,264,2751,278,2742,292,2734,307,2717,322,2689,334,2687,329,2715,317,2730,304,2738,290,2747,274,2762,260,2774,254"/>
+<area shape="rect" id="Node000021" href="$adi__ades183x__temperatures_8c.html#a93b71a6ca561a4c2283d448723d80a0c" title="Store temperatures converted from GPIO voltages." alt="" coords="2205,161,2369,187"/>
+<area shape="poly" id="edge22_Node000020_Node000021" title=" " alt="" coords="2468,177,2369,177,2369,171,2468,171"/>
+<area shape="rect" id="Node000022" href="$adi__ades183x_8c.html#abbd2cae828e06fecab18f603efe803d0" title=" " alt="" coords="1879,159,2132,184"/>
+<area shape="poly" id="edge23_Node000021_Node000022" title=" " alt="" coords="2192,176,2132,175,2132,170,2192,170"/>
+<area shape="rect" id="Node000023" href="$adi__ades183x_8c.html#ad91881ebcf4cc246ad2248e96b568245" title="Implements the actual measurement sequence for the ADI driver." alt="" coords="1639,159,1818,184"/>
+<area shape="poly" id="edge24_Node000022_Node000023" title=" " alt="" coords="1865,174,1818,174,1818,169,1865,169"/>
+<area shape="rect" id="Node000024" href="$adi__ades183x__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="1465,159,1574,184"/>
+<area shape="poly" id="edge25_Node000023_Node000024" title=" " alt="" coords="1626,174,1575,174,1575,169,1626,169"/>
+<area shape="rect" id="Node000025" href="$meas_8c.html#a52f94c4bf46281650a38306fad8effc7" title="Control function that is called from the task every 1ms." alt="" coords="1247,159,1361,184"/>
+<area shape="poly" id="edge26_Node000024_Node000025" title=" " alt="" coords="1451,174,1361,174,1361,169,1451,169"/>
+<area shape="rect" id="Node000026" href="$ftask__cfg_8c.html#a1891c5a0ae2acb42fdf6f55363c61f8f" title="Continuously running task for AFEs." alt="" coords="955,109,1125,135"/>
+<area shape="poly" id="edge27_Node000025_Node000026" title=" " alt="" coords="1233,161,1108,137,1109,132,1234,156"/>
+<area shape="rect" id="Node000028" href="$ftask__cfg_8c.html#ae58bcb17fd6f8030313c90d4f02f9f96" title="Cyclic 1 ms task." alt="" coords="932,159,1148,184"/>
+<area shape="poly" id="edge30_Node000025_Node000028" title=" " alt="" coords="1234,174,1148,174,1148,169,1234,169"/>
+<area shape="rect" id="Node000027" href="$ftask_8c.html#a4a202519a56cddc3958c1bebf22c5d66" title="Creation of continuously running task for AFEs." alt="" coords="707,109,861,135"/>
+<area shape="poly" id="edge28_Node000026_Node000027" title=" " alt="" coords="941,125,861,125,861,119,941,119"/>
+<area shape="poly" id="edge29_Node000027_Node000008" title=" " alt="" coords="693,125,636,125,636,119,693,119"/>
+<area shape="rect" id="Node000029" href="$ftask_8c.html#a4fdc9f7eff77294f53e37225751fe564" title="Creation of cyclic 1 ms task." alt="" coords="684,159,884,184"/>
+<area shape="poly" id="edge31_Node000028_Node000029" title=" " alt="" coords="919,174,884,174,884,169,919,169"/>
+<area shape="poly" id="edge32_Node000029_Node000008" title=" " alt="" coords="713,158,622,137,624,132,715,153"/>
+<area shape="rect" id="Node000031" href="$ltc__6813-1_8c.html#aeb2cd59e60f41953a1ede6c45b86b197" title="saves the multiplexer values read from the LTC daisy&#45;chain." alt="" coords="2187,225,2388,251"/>
+<area shape="poly" id="edge34_Node000030_Node000031" title=" " alt="" coords="2466,241,2388,241,2388,235,2466,235"/>
+<area shape="rect" id="Node000032" href="$ltc__6813-1_8c.html#acf30d82064c640d2c4f36cd270c0647b" title="trigger function for the LTC driver state machine." alt="" coords="1958,225,2053,251"/>
+<area shape="poly" id="edge35_Node000031_Node000032" title=" " alt="" coords="2173,241,2053,241,2053,235,2173,235"/>
+<area shape="rect" id="Node000034" href="$mxm__17852_8c.html#a688e7e359e03e17fc0559720f0b8d586" title="State&#45;Machine implementation for operation state." alt="" coords="2180,283,2395,308"/>
+<area shape="poly" id="edge37_Node000033_Node000034" title=" " alt="" coords="2467,298,2395,298,2395,293,2467,293"/>
+<area shape="rect" id="Node000035" href="$mxm__1785x_8c.html#aca60f84fd030e06f1ab2c57ba6bb8e7d" title="Main state&#45;machine implementation." alt="" coords="1930,283,2081,308"/>
+<area shape="poly" id="edge38_Node000034_Node000035" title=" " alt="" coords="2166,298,2081,298,2081,293,2166,293"/>
+<area shape="rect" id="Node000036" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="1684,283,1773,308"/>
+<area shape="poly" id="edge39_Node000035_Node000036" title=" " alt="" coords="1916,298,1773,298,1773,293,1916,293"/>
+<area shape="rect" id="Node000037" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="1465,283,1574,308"/>
+<area shape="poly" id="edge40_Node000036_Node000037" title=" " alt="" coords="1670,298,1574,298,1574,293,1670,293"/>
+<area shape="rect" id="Node000039" href="$nxp__mc33775a__measurement_8c.html#a1263656225eea7bb7244cb8d6ee7c241" title="retrieves the results of temperature measurements." alt="" coords="2184,332,2391,357"/>
+<area shape="poly" id="edge42_Node000038_Node000039" title=" " alt="" coords="2429,347,2391,347,2391,342,2429,342"/>
+<area shape="rect" id="Node000040" href="$nxp__mc33775a__measurement_8c.html#a3de395d79b55ad1c2425e351ae1a3078" title="retrieves the measurement results." alt="" coords="1901,332,2109,357"/>
+<area shape="poly" id="edge43_Node000039_Node000040" title=" " alt="" coords="2170,347,2109,347,2109,342,2170,342"/>
+<area shape="rect" id="Node000041" href="$nxp__mc33775a__measurement_8c.html#aaf06f93b9f83bb3cb81761c0a0a4c872" title="captures the measurement." alt="" coords="1627,332,1831,357"/>
+<area shape="poly" id="edge44_Node000040_Node000041" title=" " alt="" coords="1888,347,1831,347,1831,342,1888,342"/>
+<area shape="rect" id="Node000042" href="$nxp__mc3377x_8c.html#a8e909d543eb29b0c8e65e9b56ef4700c" title="trigger function for the N77X driver state machine." alt="" coords="1460,332,1579,357"/>
+<area shape="poly" id="edge45_Node000041_Node000042" title=" " alt="" coords="1613,347,1579,347,1579,342,1613,342"/>
+<area shape="rect" id="Node000043" href="$nxp__mc33775a__afe_8c.html#ae6df9bbde43f01a4a74a0e34d48cd844" title=" " alt="" coords="1248,332,1360,357"/>
+<area shape="poly" id="edge46_Node000042_Node000043" title=" " alt="" coords="1446,347,1360,347,1360,342,1446,342"/>
+<area shape="rect" id="Node000044" href="$nxp__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="985,332,1095,357"/>
+<area shape="poly" id="edge47_Node000043_Node000044" title=" " alt="" coords="1234,347,1095,347,1095,342,1234,342"/>
+<area shape="rect" id="Node000046" href="$epcos__b57861s0103f045__lookup-table_8c.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="2785,275,2940,300"/>
+<area shape="poly" id="edge49_Node000045_Node000046" title=" " alt="" coords="2998,290,2940,290,2940,285,2998,285"/>
+<area shape="rect" id="Node000048" href="$murata__ncxxxxh103__lookup-table_8c.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="2785,324,2940,349"/>
+<area shape="poly" id="edge51_Node000047_Node000048" title=" " alt="" coords="2998,339,2940,339,2940,334,2998,334"/>
+<area shape="rect" id="Node000050" href="$semitec__103jt__lookup-table_8c.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="2785,373,2940,399"/>
+<area shape="poly" id="edge53_Node000049_Node000050" title=" " alt="" coords="2995,389,2940,389,2940,383,2995,383"/>
+<area shape="rect" id="Node000052" href="$tdk__ntcgs103jf103ft8__lookup-table_8c.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="2785,423,2940,448"/>
+<area shape="poly" id="edge55_Node000051_Node000052" title=" " alt="" coords="2998,438,2940,438,2940,433,2998,433"/>
+<area shape="rect" id="Node000054" href="$tdk__ntcg163jx103dt1s__lookup-table_8c.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="2785,472,2940,497"/>
+<area shape="poly" id="edge57_Node000053_Node000054" title=" " alt="" coords="2998,487,2940,487,2940,482,2998,482"/>
+<area shape="rect" id="Node000056" href="$vishay__ntcalug01a103g__lookup-table_8c.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="2785,521,2940,547"/>
+<area shape="poly" id="edge59_Node000055_Node000056" title=" " alt="" coords="3000,537,2940,537,2940,531,3000,531"/>
+<area shape="rect" id="Node000058" href="$vishay__ntcle317e4103sba__lookup-table_8c.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="2785,571,2940,596"/>
+<area shape="poly" id="edge61_Node000057_Node000058" title=" " alt="" coords="3000,586,2940,586,2940,581,3000,581"/>
+<area shape="poly" id="edge63_Node000059_Node000019" title=" " alt="" coords="3000,241,2940,241,2940,235,3000,235"/>
+</map>

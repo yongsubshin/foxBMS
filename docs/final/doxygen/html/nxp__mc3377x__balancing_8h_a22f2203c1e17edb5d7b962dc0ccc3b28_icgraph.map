@@ -1,0 +1,14 @@
+<map id="N77x_BalanceSetup" name="N77x_BalanceSetup">
+<area shape="rect" id="Node000001" title="setups balancing." alt="" coords="700,31,852,56"/>
+<area shape="rect" id="Node000002" href="$nxp__mc33775a__balancing_8c.html#a7c0fe4b31305c6fa9d831818a1904299" title="manages balancing." alt="" coords="489,5,652,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="686,35,652,31,652,25,687,30"/>
+<area shape="rect" id="Node000006" href="$nxp__mc3377x_8c.html#a9c267502ad4d574290f4331bb57748f6" title="initializes the N77X driver." alt="" coords="511,55,630,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="686,56,630,63,630,58,686,51"/>
+<area shape="rect" id="Node000003" href="$nxp__mc3377x_8c.html#a8e909d543eb29b0c8e65e9b56ef4700c" title="trigger function for the N77X driver state machine." alt="" coords="323,31,441,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="476,33,442,38,441,33,475,28"/>
+<area shape="rect" id="Node000004" href="$nxp__mc33775a__afe_8c.html#ae6df9bbde43f01a4a74a0e34d48cd844" title=" " alt="" coords="163,31,275,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="309,46,275,46,275,41,309,41"/>
+<area shape="rect" id="Node000005" href="$nxp__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,31,115,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="149,46,115,46,115,41,149,41"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="497,61,441,53,442,48,498,55"/>
+</map>

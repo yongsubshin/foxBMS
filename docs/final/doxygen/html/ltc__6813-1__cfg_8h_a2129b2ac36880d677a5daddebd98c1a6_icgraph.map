@@ -1,0 +1,7 @@
+<map id="LTC_GetVoltageInputIndexFromCellBlockIndex" name="LTC_GetVoltageInputIndexFromCellBlockIndex">
+<area shape="rect" id="Node000001" title="Get connected cell voltage input from an cell block index." alt="" coords="347,5,539,45"/>
+<area shape="rect" id="Node000002" href="$ltc__6813-1_8c.html#aa5c44fb985b3dd89bdf73ad534f4f1ce" title="sets the balancing according to the control values read in the database." alt="" coords="148,13,299,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="333,28,299,28,299,23,333,23"/>
+<area shape="rect" id="Node000003" href="$ltc__6813-1_8c.html#acf30d82064c640d2c4f36cd270c0647b" title="trigger function for the LTC driver state machine." alt="" coords="5,13,100,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,28,100,28,100,23,134,23"/>
+</map>

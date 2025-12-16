@@ -1,0 +1,11 @@
+<map id="foxbms&#45;2/src/app/engine/hw_info/master_info.h" name="foxbms&#45;2/src/app/engine/hw_info/master_info.h">
+<area shape="rect" id="Node000001" title="General foxBMS&#45;master system information." alt="" coords="307,5,489,45"/>
+<area shape="rect" id="Node000002" href="$nxpfs85xx_8c.html" title="Driver for the FS85xx module." alt="" coords="5,93,183,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="319,52,161,96,160,91,317,47"/>
+<area shape="rect" id="Node000003" href="$master__info_8c.html" title="General foxBMS&#45;master system information." alt="" coords="207,93,389,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="367,56,322,95,318,91,364,52"/>
+<area shape="rect" id="Node000004" href="$main_8c.html" title="Main function." alt="" coords="413,93,585,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="433,52,479,91,475,95,429,56"/>
+<area shape="rect" id="Node000005" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="609,93,776,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="476,47,629,91,627,96,475,52"/>
+</map>

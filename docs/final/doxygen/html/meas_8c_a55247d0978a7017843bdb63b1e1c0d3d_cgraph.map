@@ -1,0 +1,9 @@
+<map id="MEAS_StartMeasurement" name="MEAS_StartMeasurement">
+<area shape="rect" id="Node000001" title="Makes the initialization request to the AFE state machine." alt="" coords="5,5,192,31"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x__afe_8c.html#ab3b5eae4af8524afe67f0dd7a7d54829" title="Makes the initialization request to the AFE state machine." alt="" coords="240,5,415,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,15,226,15,226,21,193,21"/>
+<area shape="rect" id="Node000003" href="$adi__ades183x_8c.html#a1c1ff182f2494eaee4800e7d91a5fdcb" title="Makes a request to the ADI driver." alt="" coords="463,5,603,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="415,15,449,15,449,21,415,21"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#abfcdf77954b6a87dca01c31efaf4d0b3" title="Post an item to the back the provided queue." alt="" coords="651,5,833,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="603,15,637,15,637,21,603,21"/>
+</map>

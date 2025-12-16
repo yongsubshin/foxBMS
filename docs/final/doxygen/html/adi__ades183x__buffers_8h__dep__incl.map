@@ -1,0 +1,17 @@
+<map id="foxbms&#45;2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_buffers.h" name="foxbms&#45;2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_buffers.h">
+<area shape="rect" id="Node000001" title="Header for the buffers used by the driver for the ADI analog front&#45;end." alt="" coords="655,5,853,60"/>
+<area shape="rect" id="Node000002" href="$adi__ades1830__balancing_8c.html" title="Implementation of helpers for the balancing functionality." alt="" coords="5,108,183,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="641,47,433,72,194,111,183,113,182,108,194,105,432,67,640,42"/>
+<area shape="rect" id="Node000003" href="$adi__ades1830__gpio__voltages_8c.html" title="Reading and the GPIO voltage registers of the ADI ADES1830." alt="" coords="207,108,408,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="642,61,420,111,409,113,407,108,419,105,641,56"/>
+<area shape="rect" id="Node000004" href="$adi__ades183x_8c.html" title="Driver for the ADI analog front&#45;end." alt="" coords="432,108,631,163"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="685,68,590,110,588,106,683,63"/>
+<area shape="rect" id="Node000005" href="$adi__ades183x__buffers_8c.html" title="Buffers used by the driver for the ADI analog front&#45;end." alt="" coords="655,108,853,163"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="757,74,757,108,751,108,751,74"/>
+<area shape="rect" id="Node000006" href="$adi__ades183x__helpers_8c.html" title="Helper functionalities specific to the driver for the ADI ades183x." alt="" coords="877,108,1076,163"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="825,63,920,106,918,110,823,68"/>
+<area shape="rect" id="Node000007" href="$adi__ades183x__initialization_8c.html" title="Implementation of some software." alt="" coords="1100,108,1315,163"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="867,56,1100,108,1099,113,866,61"/>
+<area shape="rect" id="Node000008" href="$adi__ades183x__voltages_8c.html" title="Implementation of some software." alt="" coords="1339,108,1537,163"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="867,42,1081,68,1328,105,1339,108,1338,113,1327,111,1081,73,867,48"/>
+</map>

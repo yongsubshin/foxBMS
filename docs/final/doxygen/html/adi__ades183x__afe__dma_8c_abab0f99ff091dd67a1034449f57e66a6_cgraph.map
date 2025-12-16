@@ -1,0 +1,5 @@
+<map id="AFE_DmaCallback" name="AFE_DmaCallback">
+<area shape="rect" id="Node000001" title="Function called by DMA block transfer callback." alt="" coords="5,5,147,31"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#a03f6af8313f5c2e802c214a3c77da768" title="Notify a task." alt="" coords="195,5,329,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,15,181,15,181,21,147,21"/>
+</map>

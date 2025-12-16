@@ -1,0 +1,5 @@
+<map id="LTC_CheckPec" name="LTC_CheckPec">
+<area shape="rect" id="Node000001" title="checks if the data received from the daisy&#45;chain is not corrupt." alt="" coords="148,5,263,31"/>
+<area shape="rect" id="Node000002" href="$ltc__6813-1_8c.html#acf30d82064c640d2c4f36cd270c0647b" title="trigger function for the LTC driver state machine." alt="" coords="5,5,100,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,21,100,21,100,15,134,15"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="FS85_UpdateRegister" name="FS85_UpdateRegister">
+<area shape="rect" id="Node000001" title="Updates register values." alt="" coords="5,31,167,56"/>
+<area shape="rect" id="Node000002" href="$nxpfs85xx_8c.html#a8759d334b18e7749c530cb4d232eb96f" title="Updates fail safe register values." alt="" coords="215,5,427,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,32,201,28,201,34,167,37"/>
+<area shape="rect" id="Node000003" href="$nxpfs85xx_8c.html#aa27fc31f497232269b3c8c585732c0ec" title="Updates main register values." alt="" coords="224,55,417,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,49,211,53,210,59,167,54"/>
+</map>

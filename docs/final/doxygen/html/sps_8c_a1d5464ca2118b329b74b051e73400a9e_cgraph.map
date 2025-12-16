@@ -1,0 +1,5 @@
+<map id="SPS_InitializeIo" name="SPS_InitializeIo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,127,31"/>
+<area shape="rect" id="Node000002" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="175,5,259,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,15,161,15,161,21,127,21"/>
+</map>

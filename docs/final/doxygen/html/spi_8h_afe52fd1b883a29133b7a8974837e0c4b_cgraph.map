@@ -1,0 +1,11 @@
+<map id="SPI_Initialize" name="SPI_Initialize">
+<area shape="rect" id="Node000001" title="Initializes the SPI module." alt="" coords="5,31,111,56"/>
+<area shape="rect" id="Node000002" href="$spi_8c.html#a105eb9d03cf284ed32710fcd8fc42e8a" title="Initializes all chip selects of the SPI module." alt="" coords="159,31,340,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,41,145,41,145,46,111,46"/>
+<area shape="rect" id="Node000003" href="$spi_8c.html#a2b0cbe930797b45f2b6e6d2defc09b10" title="Gets the chip select pin (independently whether it is a hard&#45; or software chip selected one)" alt="" coords="409,5,570,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="340,31,395,25,395,31,340,36"/>
+<area shape="rect" id="Node000005" href="$spi_8c.html#a11144386b9692500eb4b410d1d3623de" title="Initializes the chip selects of the SPI module that are specific for an AFE interface board." alt="" coords="388,55,591,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="340,50,375,53,374,59,340,55"/>
+<area shape="rect" id="Node000004" href="$spi_8c.html#ac0ea5cdabc29425ca4b346ff204460ef" title="Gets the hardware chip select pin." alt="" coords="639,5,863,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="570,15,625,15,625,21,570,21"/>
+</map>

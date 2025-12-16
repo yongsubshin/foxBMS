@@ -1,0 +1,9 @@
+<map id="MXM_CheckIfErrorCounterCanBeReset" name="MXM_CheckIfErrorCounterCanBeReset">
+<area shape="rect" id="Node000001" title="Function that checks if the error counter can be reset." alt="" coords="5,35,224,75"/>
+<area shape="rect" id="Node000002" href="$os_8c.html#a53166653cb8fe3f7c0bfb86af6217fe5" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="272,42,463,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,52,258,52,258,57,224,57"/>
+<area shape="rect" id="Node000003" href="$os_8c.html#a834064ee9e9a90768918c776f5cb1bb7" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="511,5,731,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="462,41,497,37,497,42,463,46"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="553,70,688,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="463,63,540,71,540,76,462,68"/>
+</map>

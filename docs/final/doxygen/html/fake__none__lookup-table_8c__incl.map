@@ -1,0 +1,11 @@
+<map id="foxbms&#45;2/src/app/driver/ts/fake/none/lookup&#45;table/fake_none_lookup&#45;table.c" name="foxbms&#45;2/src/app/driver/ts/fake/none/lookup&#45;table/fake_none_lookup&#45;table.c">
+<area shape="rect" id="Node000001" title="Resistive divider used for measuring temperature." alt="" coords="48,5,240,60"/>
+<area shape="rect" id="Node000002" href="$fake__none_8h.html" title="Fake temperature sensor header." alt="" coords="5,108,107,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,62,79,100,76,96,115,58"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="109,181,179,207"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="147,60,147,168,141,168,141,60"/>
+<area shape="rect" id="Node000004" href="$tsi_8h.html" title="Temperature Sensor Interface on Slave Unit driver header." alt="" coords="181,108,232,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="165,58,192,95,188,98,161,62"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="72,131,121,170,117,175,68,135"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="198,135,165,173,161,169,194,132"/>
+</map>

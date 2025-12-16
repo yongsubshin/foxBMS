@@ -1,0 +1,27 @@
+<map id="foxbms&#45;2/src/app/task/os/freertos/os_freertos_config&#45;validation.h" name="foxbms&#45;2/src/app/task/os/freertos/os_freertos_config&#45;validation.h">
+<area shape="rect" id="Node000001" title="Declaration of the OS wrapper interface." alt="" coords="301,5,474,60"/>
+<area shape="rect" id="Node000002" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="150,108,233,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="329,63,231,105,229,100,326,58"/>
+<area shape="rect" id="Node000003" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="271,181,349,207"/>
+<area shape="poly" id="edge15_Node000001_Node000003" title=" " alt="" coords="387,61,379,97,364,135,335,173,331,170,360,132,374,95,381,60"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="275,255,345,280"/>
+<area shape="poly" id="edge16_Node000001_Node000005" title=" " alt="" coords="395,60,399,91,400,129,396,169,383,208,366,231,345,249,341,245,362,227,378,205,391,168,395,129,394,92,390,61"/>
+<area shape="rect" id="Node000007" href="$ftask__cfg_8h.html" title="Task configuration header." alt="" coords="257,108,350,133"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="364,62,326,100,322,96,360,58"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="476,108,613,133"/>
+<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="437,58,513,99,510,104,434,62"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="212,131,280,172,277,176,209,136"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="133,255,215,280"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="176,135,154,156,136,182,134,198,137,213,155,242,150,245,132,215,129,198,132,180,150,152,173,131"/>
+<area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="203,132,261,205,293,242,289,246,257,208,198,135"/>
+<area shape="rect" id="Node000006" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="5,255,108,280"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="179,136,127,183,75,245,71,242,123,179,175,132"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="289,209,209,251,207,246,287,204"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="313,207,313,241,307,241,307,207"/>
+<area shape="poly" id="edge13_Node000007_Node000005" title=" " alt="" coords="322,131,345,152,364,180,367,199,361,217,338,247,334,244,357,215,362,199,360,182,341,155,319,135"/>
+<area shape="rect" id="Node000008" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="145,181,195,207"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="283,136,205,177,203,172,281,131"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="173,207,175,241,170,241,168,207"/>
+<area shape="poly" id="edge12_Node000008_Node000005" title=" " alt="" coords="194,204,276,246,274,251,191,209"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="153,209,88,250,85,245,150,204"/>
+</map>

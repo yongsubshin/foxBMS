@@ -1,0 +1,26 @@
+var uc__msg__t_8c =
+[
+    [ "calc_crc", "uc__msg__t_8c.html#abcbeff3377331a049c97b7403ed941e5", null ],
+    [ "check_crc", "uc__msg__t_8c.html#aeb79d8bcb313f3d5201f9b92f7e68d80", null ],
+    [ "crc_add_item", "uc__msg__t_8c.html#af2050c4f2b02419ffb51c48ade032c02", null ],
+    [ "get_cadd", "uc__msg__t_8c.html#a79930a7d6bdf4b46c131c561f8bf4345", null ],
+    [ "get_cmd", "uc__msg__t_8c.html#aebd355929ddcb12add77ea470da270d8", null ],
+    [ "get_crc", "uc__msg__t_8c.html#a5c3b93080f2cea2e1d431bc8e301fe57", null ],
+    [ "get_data", "uc__msg__t_8c.html#a42a0157d7fd0af5f2783bbd4fc0b5a86", null ],
+    [ "get_datalen", "uc__msg__t_8c.html#a30882817a21bb758c6405a075cf69bc4", null ],
+    [ "get_devadd", "uc__msg__t_8c.html#a9e8f6504496b80a1e4461e1ccb6f3c72", null ],
+    [ "get_madd", "uc__msg__t_8c.html#a024f025b6a2fc3b2894663a5e3ef4f08", null ],
+    [ "get_message_length", "uc__msg__t_8c.html#a5a66e019970aeacf3c8c5dfeae1a6a2c", null ],
+    [ "get_msgcnt", "uc__msg__t_8c.html#a712138a25ed5fafc1c9222ade44b89df", null ],
+    [ "get_regadd", "uc__msg__t_8c.html#a4f2b131cf2324463939987f712e96945", null ],
+    [ "set_cadd", "uc__msg__t_8c.html#a7f8e9597edfa81d78028f7ea457d5fbf", null ],
+    [ "set_cmd", "uc__msg__t_8c.html#a3820d743d94cf73ac58e9a16645b44a9", null ],
+    [ "set_crc", "uc__msg__t_8c.html#a61a0e8dba459317314fb3117ddc9c491", null ],
+    [ "set_data", "uc__msg__t_8c.html#a4ba0a5872ab51ba0269dc13de937d03c", null ],
+    [ "set_datalen", "uc__msg__t_8c.html#a3c48e6a9f285dd481d3347e1091c0052", null ],
+    [ "set_devadd", "uc__msg__t_8c.html#a70ab4fcb1b866d409b03e776f3152c40", null ],
+    [ "set_madd", "uc__msg__t_8c.html#a4b90b11dd448f470f3ea67a562fa6600", null ],
+    [ "set_message_length", "uc__msg__t_8c.html#a566e95d2a575519950669a0d60c79b04", null ],
+    [ "set_msgcnt", "uc__msg__t_8c.html#ac345657be7107582ca2c5a216a06d22d", null ],
+    [ "set_regadd", "uc__msg__t_8c.html#a66bb13bf2b9da86b53e0eeaa7fd8c854", null ]
+];

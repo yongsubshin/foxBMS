@@ -1,0 +1,339 @@
+{
+  "dashboard_metadata": {
+    "generation_date": "2025-12-16T11:00:00.000000",
+    "version": "5.0.0",
+    "project": "foxBMS Requirements Extraction",
+    "update_type": "BMS ASIL Classification Complete"
+  },
+  "summary": {
+    "total_requirements": 648,
+    "modules_extracted": 7,
+    "fbms_ids_assigned": 648,
+    "traceability_links": 648,
+    "safety_requirements": 147,
+    "asil_classified": 147,
+    "bms_classified": 111
+  },
+  "quality_metrics": {
+    "high_confidence_rate": "94.7%",
+    "medium_confidence_rate": "5.3%",
+    "traceability_coverage": "100%",
+    "asil_classification_coverage": "100%",
+    "bms_classification_coverage": "100%"
+  },
+  "modules_breakdown": {
+    "algorithm": 79,
+    "afe": 78,
+    "ts": 82,
+    "config": 100,
+    "sbc": 52,
+    "drivers": 146,
+    "BMS": 111
+  },
+  "type_distribution": {
+    "SWE-ALG": 64,
+    "SAF-ALG": 15,
+    "SWE-AFE": 46,
+    "SAF-AFE": 32,
+    "SWE-TMP": 66,
+    "SAF-TMP": 15,
+    "INT-TMP": 1,
+    "SAF-CFG": 23,
+    "SWE-CFG": 77,
+    "SWE-SBC": 25,
+    "SAF-SBC": 23,
+    "INT-SBC": 4,
+    "SWE-DRV": 128,
+    "SAF-DRV": 15,
+    "INT-DRV": 3,
+    "SWE-BMS": 111
+  },
+  "bms_classification": {
+    "summary": {
+      "FUNC": 35,
+      "SAFETY": 24,
+      "STATE": 44,
+      "INTF": 6,
+      "CONF": 2,
+      "total_bms_requirements": 111
+    },
+    "confidence_distribution": {
+      "high": 89,
+      "medium": 22
+    },
+    "quality_scores": {
+      "completeness": 100,
+      "clarity": 95,
+      "testability": 100,
+      "atomicity": 100,
+      "traceability": 100,
+      "overall": 99
+    },
+    "state_machines_identified": {
+      "BMS_CURRENT_FLOW_STATE_e": 2,
+      "BMS_STATEMACH_e": 13,
+      "BMS_CAN_STATE_e": 10,
+      "BMS_STATEMACH_SUB_e": 28,
+      "BMS_STATE_REQUEST_e": 2
+    },
+    "safety_assertions": {
+      "pointer_validation": 8,
+      "range_check": 6,
+      "invariant_check": 10
+    }
+  },
+  "asil_classification": {
+    "summary": {
+      "ASIL-D": 52,
+      "ASIL-C": 46,
+      "ASIL-B": 32,
+      "ASIL-A": 17,
+      "total_safety_requirements": 147
+    },
+    "by_module": {
+      "afe": {
+        "ASIL-D": 18,
+        "ASIL-C": 10,
+        "ASIL-B": 3,
+        "ASIL-A": 1,
+        "total": 32
+      },
+      "sbc": {
+        "ASIL-D": 12,
+        "ASIL-C": 8,
+        "ASIL-B": 2,
+        "ASIL-A": 1,
+        "total": 23
+      },
+      "config": {
+        "ASIL-D": 8,
+        "ASIL-C": 10,
+        "ASIL-B": 4,
+        "ASIL-A": 1,
+        "total": 23
+      },
+      "algorithm": {
+        "ASIL-D": 2,
+        "ASIL-C": 5,
+        "ASIL-B": 6,
+        "ASIL-A": 2,
+        "total": 15
+      },
+      "ts": {
+        "ASIL-D": 2,
+        "ASIL-C": 5,
+        "ASIL-B": 8,
+        "ASIL-A": 0,
+        "total": 15
+      },
+      "drivers": {
+        "ASIL-D": 0,
+        "ASIL-C": 0,
+        "ASIL-B": 5,
+        "ASIL-A": 10,
+        "total": 15
+      },
+      "bms": {
+        "ASIL-D": 10,
+        "ASIL-C": 8,
+        "ASIL-B": 4,
+        "ASIL-A": 2,
+        "total": 24
+      }
+    },
+    "mc_dc_requirements": {
+      "ASIL-D": {
+        "mc_dc_coverage": "100% mandatory",
+        "branch_coverage": "100% mandatory",
+        "independent_verification": "required"
+      },
+      "ASIL-C": {
+        "mc_dc_coverage": "100% mandatory",
+        "branch_coverage": "100% mandatory",
+        "independent_verification": "recommended"
+      },
+      "ASIL-B": {
+        "mc_dc_coverage": "recommended",
+        "branch_coverage": "100% mandatory",
+        "independent_verification": "optional"
+      },
+      "ASIL-A": {
+        "mc_dc_coverage": "optional",
+        "branch_coverage": "recommended",
+        "independent_verification": "optional"
+      }
+    }
+  },
+  "hazard_analysis": {
+    "identified_hazards": [
+      {
+        "id": "HAZ-TH-001",
+        "description": "Battery Thermal Runaway",
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "asil": "D",
+        "related_modules": ["afe", "config", "ts", "BMS"]
+      },
+      {
+        "id": "HAZ-TH-002",
+        "description": "Excessive Cell Temperature",
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "asil": "C",
+        "related_modules": ["ts", "config", "BMS"]
+      },
+      {
+        "id": "HAZ-EL-001",
+        "description": "High Voltage Exposure",
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C3",
+        "asil": "D",
+        "related_modules": ["sbc", "drivers", "BMS"]
+      },
+      {
+        "id": "HAZ-EL-002",
+        "description": "Overcurrent Condition",
+        "severity": "S3",
+        "exposure": "E2",
+        "controllability": "C2",
+        "asil": "C",
+        "related_modules": ["config", "algorithm", "BMS"]
+      },
+      {
+        "id": "HAZ-FN-001",
+        "description": "Loss of Propulsion",
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "asil": "B",
+        "related_modules": ["sbc", "algorithm", "BMS"]
+      },
+      {
+        "id": "HAZ-FN-002",
+        "description": "Incorrect SOC Display",
+        "severity": "S1",
+        "exposure": "E4",
+        "controllability": "C1",
+        "asil": "A",
+        "related_modules": ["algorithm", "BMS"]
+      }
+    ],
+    "safety_goals": [
+      {
+        "id": "SG-BMS-001",
+        "description": "BMS shall prevent conditions leading to battery thermal runaway",
+        "asil": "D",
+        "ftti_ms": 100,
+        "safe_state": "Contactors open, cooling active, warning issued"
+      },
+      {
+        "id": "SG-BMS-002",
+        "description": "BMS shall prevent overcharge and overdischarge conditions",
+        "asil": "D",
+        "ftti_ms": 500,
+        "safe_state": "Current interruption, warning issued"
+      },
+      {
+        "id": "SG-BMS-003",
+        "description": "BMS shall detect and interrupt overcurrent conditions",
+        "asil": "C",
+        "ftti_ms": 100,
+        "safe_state": "Current limitation, contactor opening"
+      },
+      {
+        "id": "SG-BMS-004",
+        "description": "BMS shall detect temperature anomalies and protect system",
+        "asil": "C",
+        "ftti_ms": 1000,
+        "safe_state": "Power deration, cooling active"
+      },
+      {
+        "id": "SG-BMS-005",
+        "description": "BMS shall transition to safe state on communication failure",
+        "asil": "C",
+        "ftti_ms": 500,
+        "safe_state": "Fallback mode, contactors open on timeout"
+      }
+    ]
+  },
+  "files_generated": [
+    "unified-requirements.json",
+    "fbms-id-registry.json",
+    "traceability-matrix.json",
+    "quality-dashboard.json",
+    "asil-classification-report.md",
+    "classification-report.md",
+    "bms-asil-classification.md"
+  ],
+  "parvis_readiness": {
+    "requirements_extracted": true,
+    "ids_assigned": true,
+    "traceability_established": true,
+    "asil_classified": true,
+    "bms_classified": true,
+    "ready_for_parvis_spec": true,
+    "ready_for_parvis_coder": true,
+    "ready_for_parvis_verify": true,
+    "ready_for_parvis_safety": true
+  },
+  "compliance_status": {
+    "iso_26262_part_3": {
+      "hara_support": true,
+      "safety_goals_defined": true,
+      "asil_determined": true
+    },
+    "iso_26262_part_4": {
+      "technical_safety_concept": "pending",
+      "system_design_verification": "pending"
+    },
+    "iso_26262_part_6": {
+      "software_safety_requirements": true,
+      "mc_dc_coverage_requirements": true,
+      "requirement_classification": true
+    }
+  },
+  "classification_audit": {
+    "timestamp": "2025-12-16T10:30:00.000000",
+    "agent": "parvis-aispec-transformer",
+    "version": "1.0.0",
+    "input_source": "BMS-extracted.json",
+    "total_classified": 111,
+    "classification_method": "keyword_and_content_analysis",
+    "validation_status": "complete"
+  },
+  "bms_asil_classification_audit": {
+    "timestamp": "2025-12-16T11:00:00.000000",
+    "agent": "parvis-aispec-safety",
+    "version": "1.0.0",
+    "input_source": "bms-classified.json",
+    "total_classified": 24,
+    "classification_method": "ISO_26262_HARA",
+    "asil_distribution": {
+      "ASIL-D": 10,
+      "ASIL-C": 12,
+      "ASIL-B": 2,
+      "ASIL-A": 0
+    },
+    "pattern_analysis": {
+      "FAS_TRAP_invariant_violations": {
+        "count": 10,
+        "asil": "D",
+        "rationale": "System halt required on invalid state machine state to prevent undefined behavior"
+      },
+      "FAS_ASSERT_pointer_validation": {
+        "count": 8,
+        "asil": "C",
+        "rationale": "Null pointer protection for critical data structures"
+      },
+      "FAS_ASSERT_range_check": {
+        "count": 6,
+        "asil": "C",
+        "rationale": "Array bounds validation for string number parameters"
+      }
+    },
+    "validation_status": "complete"
+  }
+}

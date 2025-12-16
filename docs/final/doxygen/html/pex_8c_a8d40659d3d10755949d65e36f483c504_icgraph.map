@@ -1,0 +1,45 @@
+<map id="PEX_SetPin" name="PEX_SetPin">
+<area shape="rect" id="Node000001" title="sets pin to high." alt="" coords="2251,107,2345,132"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x_8c.html#add671ef4964affd5974d1fcd92236b65" title="Sets the pins to activate the interface board." alt="" coords="2000,5,2203,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2271,100,2239,75,2201,52,2152,33,2154,28,2204,48,2242,71,2274,96"/>
+<area shape="rect" id="Node000005" href="$ftask__cfg_8c.html#a7b63e9ba46a78a3e6b3bd8feb7c8a7a8" title="Initialization function before all tasks started." alt="" coords="1357,49,1559,89"/>
+<area shape="poly" id="edge18_Node000001_Node000005" title=" " alt="" coords="2244,106,2202,97,2026,77,1849,68,1688,66,1559,68,1559,62,1688,60,1849,63,2026,72,2203,91,2245,100"/>
+<area shape="rect" id="Node000011" href="$can_8c.html#a5c1c7ee71937637e326117ba125d72f8" title=" " alt="" coords="2008,107,2195,132"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="2237,122,2195,122,2195,117,2237,117"/>
+<area shape="rect" id="Node000018" href="$ltc__6806_8c.html#a7cd8b1e13abf2fb07eadc0fd3bb4fd6f" title="Sets the transceiver pins to enable LTC6820 IC." alt="" coords="2003,156,2200,181"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="2238,137,2203,146,2154,159,2152,153,2202,141,2236,132"/>
+<area shape="rect" id="Node000020" href="$nxp__mc33775a__afe_8c.html#a7bd1bfeeaf45758a46b525e5ca37112c" title=" " alt="" coords="2045,205,2157,231"/>
+<area shape="poly" id="edge21_Node000001_Node000020" title=" " alt="" coords="2276,144,2243,172,2204,196,2158,212,2157,207,2202,192,2240,167,2272,140"/>
+<area shape="rect" id="Node000003" href="$adi__ades183x__afe_8c.html#ab03833bf09e30722e8ef6b9e90cc353d" title=" " alt="" coords="1840,5,1951,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1986,21,1951,21,1951,15,1986,15"/>
+<area shape="rect" id="Node000004" href="$meas_8c.html#a60325b3e810ff8464ce26d93840165aa" title=" " alt="" coords="1637,5,1760,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1826,21,1760,21,1760,15,1826,15"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1624,36,1554,51,1553,46,1623,31"/>
+<area shape="rect" id="Node000006" href="$ftask_8c.html#a4fdc9f7eff77294f53e37225751fe564" title="Creation of cyclic 1 ms task." alt="" coords="952,57,1152,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1344,72,1152,72,1152,67,1344,66"/>
+<area shape="rect" id="Node000007" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,83,636,108"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="938,79,636,94,636,89,938,73"/>
+<area shape="rect" id="Node000008" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,83,448,108"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="482,98,448,98,448,93,482,93"/>
+<area shape="rect" id="Node000009" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,83,184,108"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="218,98,184,98,184,93,218,93"/>
+<area shape="rect" id="Node000010" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,83,81,108"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="116,98,82,98,82,93,116,93"/>
+<area shape="rect" id="Node000012" href="$can_8c.html#ad81d1fcadc20d4553accae9b7a7e5e3a" title="Enables the CAN transceiver.. This function sets th pins to enable the CAN transceiver...." alt="" coords="1839,107,1952,132"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1995,122,1952,122,1952,117,1995,117"/>
+<area shape="rect" id="Node000013" href="$sys_8c.html#ab9119b0dc92080bccc993dd04668d7a1" title="Processes the initialization state." alt="" coords="1607,106,1791,146"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1825,124,1791,126,1791,120,1825,119"/>
+<area shape="rect" id="Node000014" href="$sys_8c.html#a90dceb9878e7eb209511a7a9c0251ec4" title="Defines the state transitions." alt="" coords="1375,113,1541,139"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="1593,129,1542,129,1542,123,1593,123"/>
+<area shape="rect" id="Node000015" href="$sys_8c.html#ade51c1203163eee5a4781db384725c95" title="tick function, call this to advance the state machine" alt="" coords="1212,111,1309,136"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="1361,127,1310,127,1310,121,1361,122"/>
+<area shape="rect" id="Node000016" href="$ftask__cfg_8c.html#a7f3620825ec0f5072516255d6febebdb" title="Cyclic 10 ms task." alt="" coords="940,109,1164,135"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="1198,126,1164,125,1164,120,1198,120"/>
+<area shape="rect" id="Node000017" href="$ftask_8c.html#a2a1d135e2e4e6fef538294d8c43d0328" title="Creation of cyclic 10 ms task." alt="" coords="684,108,892,133"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="926,124,892,124,892,119,926,119"/>
+<area shape="poly" id="edge17_Node000017_Node000007" title=" " alt="" coords="670,110,636,106,637,101,670,105"/>
+<area shape="rect" id="Node000019" href="$ltc__afe_8c.html#ab03833bf09e30722e8ef6b9e90cc353d" title=" " alt="" coords="1840,156,1951,181"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="1989,171,1951,171,1951,166,1989,166"/>
+<area shape="rect" id="Node000021" href="$nxp__afe_8c.html#ab03833bf09e30722e8ef6b9e90cc353d" title=" " alt="" coords="1840,205,1951,231"/>
+<area shape="poly" id="edge22_Node000020_Node000021" title=" " alt="" coords="2032,221,1951,221,1951,215,2032,215"/>
+</map>

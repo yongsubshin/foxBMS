@@ -1,0 +1,5 @@
+<map id="MXM_5X_INSTANCE_s" name="MXM_5X_INSTANCE_s">
+<area shape="rect" id="Node000001" title="5x state machine structure" alt="" coords="42,93,207,119"/>
+<area shape="rect" id="Node000002" href="$structMXM__5X__COMMAND__PAYLOAD__s.html" title="Payload command." alt="" coords="5,5,244,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,45,127,93,122,93,122,45"/>
+</map>

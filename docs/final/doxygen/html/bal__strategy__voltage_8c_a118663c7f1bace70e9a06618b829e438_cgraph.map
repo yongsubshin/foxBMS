@@ -1,0 +1,7 @@
+<map id="BAL_ProcessStateCheckBalancing" name="BAL_ProcessStateCheckBalancing">
+<area shape="rect" id="Node000001" title="State machine subfunction to check if balancing is allowed." alt="" coords="5,31,248,56"/>
+<area shape="rect" id="Node000002" href="$bal__strategy__voltage_8c.html#ab608144bd63e5fa96224e95cec7a3fb3" title="Deactivates voltage based balancing." alt="" coords="339,5,465,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,29,326,22,326,28,249,35"/>
+<area shape="rect" id="Node000003" href="$bms_8c.html#ab900910af6e3c584a5e3650018fe4ed7" title="Returns current battery system state (charging/discharging, resting or in relaxation phase)" alt="" coords="296,55,508,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="249,51,283,54,282,60,248,57"/>
+</map>

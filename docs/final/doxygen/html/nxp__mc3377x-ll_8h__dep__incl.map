@@ -1,0 +1,37 @@
+<map id="foxbms&#45;2/src/app/driver/afe/nxp/common/mc3377x/nxp_mc3377x&#45;ll.h" name="foxbms&#45;2/src/app/driver/afe/nxp/common/mc3377x/nxp_mc3377x&#45;ll.h">
+<area shape="rect" id="Node000001" title="Header for the low level driver for the MC3377X." alt="" coords="858,5,1058,60"/>
+<area shape="rect" id="Node000002" href="$nxp__mc3377x-ll_8c.html" title="Low level driver for the NXP MC3377xA." alt="" coords="309,108,509,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="845,55,528,111,509,114,508,109,527,105,844,50"/>
+<area shape="rect" id="Node000003" href="$nxp__mc3377x_8c.html" title="Driver for the MC3377X analog front&#45;end." alt="" coords="1082,211,1282,265"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1017,65,1072,106,1114,151,1162,208,1158,212,1110,155,1068,110,1014,70"/>
+<area shape="rect" id="Node000004" href="$nxp__mc3377x_8h.html" title="Headers for the driver for the MC3377X analog front&#45;end." alt="" coords="583,108,783,163"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="875,67,756,110,754,105,873,62"/>
+<area shape="rect" id="Node000006" href="$nxp__mc3377x__mux_8c.html" title="Multiplexer functions of the MC3377X analog front&#45;end driver." alt="" coords="207,211,407,265"/>
+<area shape="poly" id="edge19_Node000001_Node000006" title=" " alt="" coords="844,40,780,47,710,60,639,81,573,110,557,123,548,136,538,150,522,165,466,194,408,215,407,210,464,189,519,160,534,147,543,133,553,119,570,106,637,76,708,55,779,42,844,35"/>
+<area shape="rect" id="Node000008" href="$nxp__mc33775a__i2c_8c.html" title="I2C functions of the MC33775A analog front&#45;end driver." alt="" coords="656,211,833,265"/>
+<area shape="poly" id="edge21_Node000001_Node000008" title=" " alt="" coords="901,70,848,110,800,162,764,212,759,209,796,159,844,106,898,65"/>
+<area shape="rect" id="Node000009" href="$nxp__mc33775a__measurement_8c.html" title="Measurement functions of the MC33775A analog front&#45;end driver." alt="" coords="1307,211,1513,265"/>
+<area shape="poly" id="edge22_Node000001_Node000009" title=" " alt="" coords="1072,38,1158,47,1246,61,1322,80,1352,92,1373,106,1392,129,1403,157,1412,210,1407,211,1398,159,1387,132,1370,110,1349,97,1320,85,1245,66,1157,53,1071,44"/>
+<area shape="rect" id="Node000010" href="$nxp__mc3377x__helpers_8h.html" title="Header file of nxp_mc3377x_helpers.c." alt="" coords="858,108,1058,163"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="961,74,961,108,955,108,955,74"/>
+<area shape="rect" id="Node000012" href="$nxp__mc3377x__measurement_8h.html" title="Header file of nxp_mc3377x_measurement.c." alt="" coords="1133,108,1359,163"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="1047,62,1172,105,1170,110,1045,67"/>
+<area shape="rect" id="Node000013" href="$nxp__mc33775a__balancing_8c.html" title="Balancing functions of the MC33775A analog front&#45;end driver." alt="" coords="1434,108,1613,163"/>
+<area shape="poly" id="edge20_Node000001_Node000013" title=" " alt="" coords="1072,47,1235,73,1416,105,1434,109,1433,115,1415,111,1234,78,1071,53"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="797,155,1071,208,1082,211,1081,216,1069,213,796,160"/>
+<area shape="rect" id="Node000005" href="$nxp__mc3377x__afe__dma_8c.html" title="Driver for the DMA module for the MC3377X analog front&#45;end driver." alt="" coords="431,211,631,265"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="634,172,573,213,570,208,631,168"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="573,169,406,213,405,208,572,164"/>
+<area shape="rect" id="Node000007" href="$nxp__mc33775a__afe_8c.html" title="API for MC33775A Analog Frontend." alt="" coords="5,211,183,265"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="570,158,521,165,358,187,287,197,196,213,183,216,182,211,195,208,286,191,357,182,520,160,570,152"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="709,173,731,209,726,212,704,176"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="797,153,846,160,972,174,1071,182,1169,190,1294,208,1307,210,1306,215,1294,213,1168,196,1070,187,972,179,846,165,796,158"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="1030,166,1125,208,1123,213,1028,171"/>
+<area shape="poly" id="edge13_Node000010_Node000006" title=" " alt="" coords="845,158,796,165,607,187,525,197,420,213,408,216,407,210,419,208,524,191,607,182,795,160,844,153"/>
+<area shape="poly" id="edge14_Node000010_Node000008" title=" " alt="" coords="891,171,801,213,799,208,889,166"/>
+<area shape="poly" id="edge15_Node000010_Node000009" title=" " alt="" coords="1072,159,1295,208,1307,211,1306,216,1293,213,1071,164"/>
+<area shape="rect" id="Node000011" href="$nxp__mc3377x__helpers_8c.html" title="Helper functions of the MC3377X analog front&#45;end driver." alt="" coords="858,211,1058,265"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="961,176,961,211,955,211,955,176"/>
+<area shape="poly" id="edge17_Node000012_Node000003" title=" " alt="" coords="1224,176,1201,212,1196,209,1220,173"/>
+<area shape="poly" id="edge18_Node000012_Node000009" title=" " alt="" coords="1302,168,1368,208,1366,213,1299,172"/>
+</map>

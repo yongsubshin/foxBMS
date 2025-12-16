@@ -1,0 +1,111 @@
+<map id="MXM_5XStateMachine" name="MXM_5XStateMachine">
+<area shape="rect" id="Node000001" title="Execute state&#45;machine for Battery Management Protocol." alt="" coords="5,259,173,284"/>
+<area shape="rect" id="Node000002" href="$mxm__battery__management_8c.html#afc6212ecb11ce7bc23db37409d4faaff" title="Signal that an error has occurred in a chain of substates." alt="" coords="544,5,695,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,256,156,220,220,180,295,141,355,114,495,60,566,33,568,38,497,64,357,119,297,145,223,184,159,224,109,261"/>
+<area shape="rect" id="Node000004" href="$mxm__battery__management_8c.html#a0702ba6d1b8e19c6a003232838a0d159" title="Handle the state MXM_STATEMACH_5X_41B_FMEA_CHECK." alt="" coords="221,194,448,234"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="144,256,235,235,236,240,145,261"/>
+<area shape="rect" id="Node000007" href="$mxm__battery__management_8c.html#ade338957069ff6f62cdfbfcebffc270a" title="Handle the state MXM_STATEMACH_5X_INIT." alt="" coords="242,711,427,736"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="100,283,322,697,317,699,95,286"/>
+<area shape="rect" id="Node000020" href="$mxm__battery__management_8c.html#a1df234e14c5b40e2798364aebc9e19f9" title="Handle the state MXM_STATEMACH_5X_READALL." alt="" coords="227,259,442,284"/>
+<area shape="poly" id="edge27_Node000001_Node000020" title=" " alt="" coords="174,269,214,269,214,274,174,274"/>
+<area shape="rect" id="Node000040" href="$mxm__battery__management_8c.html#a8338520796dd87a45d39dd40a035e3bd" title="Handle the states MXM_STATEMACH_5X_WRITEALL and MXM_STATEMACH_5X_WRITE_DEVICE." alt="" coords="235,360,434,385"/>
+<area shape="poly" id="edge55_Node000001_Node000040" title=" " alt="" coords="122,282,291,352,289,357,120,287"/>
+<area shape="rect" id="Node000003" href="$mxm__battery__management_8c.html#a08d5ab7b4b3254f41e6661ee677f854e" title="sets all internal state variables so that upon next execution the next substate is entered" alt="" coords="805,183,1019,208"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="696,25,721,34,744,48,763,71,770,95,776,118,793,141,820,161,850,175,848,180,817,166,789,145,771,121,765,96,758,74,741,52,719,39,694,30"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="356,192,446,104,468,74,478,61,495,48,529,32,531,36,497,52,482,65,472,77,450,108,360,196"/>
+<area shape="poly" id="edge8_Node000004_Node000003" title=" " alt="" coords="352,192,412,138,451,112,495,92,564,71,620,62,677,69,744,92,760,102,770,115,779,128,792,141,825,160,859,175,857,180,823,165,789,145,774,132,766,118,757,106,741,96,676,74,621,68,565,76,497,96,454,116,415,143,356,196"/>
+<area shape="rect" id="Node000005" href="$mxm__17841b_8c.html#a09d0707cc15516727d085687d87bba85" title="Set state transition for MAX17841B&#45;state&#45;machine." alt="" coords="522,309,717,335"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="413,232,449,243,520,272,582,301,579,306,518,277,447,249,411,237"/>
+<area shape="rect" id="Node000006" href="$mxm__battery__management_8c.html#a118ff0964a961d44cf9c4cac85d0f222" title="Signal that a chain of substates has been successfully handled." alt="" coords="534,208,705,233"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="448,214,521,216,520,221,448,219"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="705,211,791,203,792,208,705,216"/>
+<area shape="poly" id="edge22_Node000007_Node000003" title=" " alt="" coords="337,710,353,660,384,588,405,549,431,512,460,476,494,447,528,427,559,417,588,414,617,415,676,414,707,407,741,390,792,351,836,304,870,257,895,219,899,222,875,260,840,308,796,355,744,395,709,412,677,419,617,420,589,420,560,423,530,432,498,451,464,480,435,515,410,552,389,591,358,662,342,711"/>
+<area shape="poly" id="edge13_Node000007_Node000005" title=" " alt="" coords="337,710,355,657,388,577,434,487,462,443,494,403,535,366,578,339,581,344,538,371,498,406,467,446,439,490,392,579,360,658,342,711"/>
+<area shape="poly" id="edge21_Node000007_Node000006" title=" " alt="" coords="338,710,413,490,460,366,480,321,494,295,531,261,572,237,575,242,535,266,498,298,484,323,465,368,418,492,343,711"/>
+<area shape="rect" id="Node000008" href="$mxm__17841b_8c.html#abe201e911023d8c53709b38f447aa3ca" title="Read the value of a register function." alt="" coords="505,817,734,843"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="358,734,419,768,497,802,529,812,527,817,495,807,417,773,356,739"/>
+<area shape="rect" id="Node000011" href="$mxm__17841b_8c.html#a1ec8677952d5efa533f6dc3286d1d4fd" title="Write a register function." alt="" coords="504,867,735,892"/>
+<area shape="poly" id="edge14_Node000007_Node000011" title=" " alt="" coords="349,734,409,792,451,824,497,852,519,860,517,865,495,856,448,829,405,796,346,738"/>
+<area shape="rect" id="Node000013" href="$mxm__battery__management_8c.html#a926546d8531e4e20be9ef1209155cdbe" title="clears the command buffer and writes HELLO ALL into the buffer" alt="" coords="496,703,743,743"/>
+<area shape="poly" id="edge17_Node000007_Node000013" title=" " alt="" coords="428,721,482,721,482,726,428,726"/>
+<area shape="rect" id="Node000015" href="$mxm__battery__management_8c.html#a897cfb71c20c5967d5b552ccf1155763" title="handles the error of the underlying state&#45;machine (by resetting it and counting the error)" alt="" coords="512,589,727,615"/>
+<area shape="poly" id="edge19_Node000007_Node000015" title=" " alt="" coords="351,708,412,667,453,644,495,625,523,616,525,621,497,630,455,649,415,672,354,713"/>
+<area shape="rect" id="Node000016" href="$mxm__battery__management_8c.html#ae9b6bf4e5053d27542645a88c68503b9" title="repeat the current substate (by resetting to the entry state)" alt="" coords="504,768,735,793"/>
+<area shape="poly" id="edge20_Node000007_Node000016" title=" " alt="" coords="399,733,543,763,542,768,398,739"/>
+<area shape="rect" id="Node000017" href="$os_8c.html#a53166653cb8fe3f7c0bfb86af6217fe5" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="524,920,715,945"/>
+<area shape="poly" id="edge23_Node000007_Node000017" title=" " alt="" coords="346,735,368,769,402,814,446,861,497,901,523,913,520,918,495,906,442,865,398,817,363,772,341,738"/>
+<area shape="rect" id="Node000019" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="845,977,979,1003"/>
+<area shape="poly" id="edge26_Node000007_Node000019" title=" " alt="" coords="343,736,360,780,392,842,413,874,437,905,466,933,497,956,537,975,580,989,625,999,669,1004,756,1006,831,1001,831,1006,756,1012,669,1010,624,1004,579,994,535,980,495,960,462,937,433,909,408,877,387,844,356,782,338,737"/>
+<area shape="rect" id="Node000009" href="$mxm__bit__extract_8c.html#aac9f739280cfb96575a7dc1e860dae41" title="read a value from a register supplied as variable" alt="" coords="834,813,990,839"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="734,826,820,825,820,830,734,831"/>
+<area shape="rect" id="Node000010" href="$mxm__bit__extract_8c.html#a99ab333298a01410347cff8b97125e12" title="Extract a bit value function." alt="" coords="1165,837,1240,863"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="990,830,1152,843,1151,848,990,835"/>
+<area shape="rect" id="Node000012" href="$mxm__bit__extract_8c.html#a935209b68c7ac65dd559d91d93a8a7e0" title="write a value to a register supplied as variable" alt="" coords="833,863,991,888"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="735,875,819,874,819,879,735,880"/>
+<area shape="poly" id="edge16_Node000012_Node000010" title=" " alt="" coords="991,866,1151,852,1152,857,992,871"/>
+<area shape="rect" id="Node000014" href="$mxm__battery__management_8c.html#a50b3a6cf0784bcc3ec9ed55af937447b" title="Clear the command&#45;buffer." alt="" coords="803,613,1021,639"/>
+<area shape="poly" id="edge18_Node000013_Node000014" title=" " alt="" coords="702,701,742,689,867,642,869,647,744,694,703,706"/>
+<area shape="rect" id="Node000018" href="$os_8c.html#a834064ee9e9a90768918c776f5cb1bb7" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="802,913,1022,953"/>
+<area shape="poly" id="edge24_Node000017_Node000018" title=" " alt="" coords="715,930,788,930,788,935,715,935"/>
+<area shape="poly" id="edge25_Node000017_Node000019" title=" " alt="" coords="686,943,834,972,833,977,685,948"/>
+<area shape="poly" id="edge51_Node000020_Node000002" title=" " alt="" coords="428,256,446,244,461,227,469,209,473,173,475,134,481,114,494,92,531,58,571,34,574,39,534,63,498,96,486,116,480,135,478,173,474,211,466,229,450,248,431,261"/>
+<area shape="poly" id="edge53_Node000020_Node000003" title=" " alt="" coords="418,256,447,244,461,232,469,218,478,204,495,193,540,177,587,167,634,162,682,160,771,166,845,177,844,183,770,171,682,166,635,167,587,172,541,182,497,198,482,208,474,221,465,235,449,248,420,261"/>
+<area shape="poly" id="edge42_Node000020_Node000005" title=" " alt="" coords="407,281,534,304,533,309,406,287"/>
+<area shape="poly" id="edge52_Node000020_Node000006" title=" " alt="" coords="406,256,533,233,534,238,407,261"/>
+<area shape="poly" id="edge50_Node000020_Node000015" title=" " alt="" coords="368,282,411,307,432,325,450,346,466,378,472,409,469,467,466,495,468,521,478,548,498,575,503,580,500,584,494,578,473,551,463,522,461,495,463,467,467,409,461,380,446,349,429,329,408,311,365,286"/>
+<area shape="rect" id="Node000021" href="$diag_8c.html#a3e60a00edfbecf928fd6db140626647a" title="DIAG_CheckEvent provides a simple interface to check an event for STD_OK." alt="" coords="550,107,689,132"/>
+<area shape="poly" id="edge28_Node000020_Node000021" title=" " alt="" coords="425,256,446,244,457,233,464,222,470,198,476,174,483,161,494,149,514,137,536,128,538,133,517,141,498,153,487,164,481,176,475,200,469,224,461,236,450,248,427,261"/>
+<area shape="rect" id="Node000034" href="$mxm__battery__management_8c.html#a3104abb7090df5484e17abc4a226cbbb" title="clears the command buffer and writes READALL into the buffer" alt="" coords="496,461,743,501"/>
+<area shape="poly" id="edge43_Node000020_Node000034" title=" " alt="" coords="357,282,450,345,584,449,581,454,446,349,354,286"/>
+<area shape="rect" id="Node000038" href="$mxm__crc8_8c.html#a9371d7335e3bcd1601e34612ea47dbf4" title="Compute CRC8 with initial value set to 0x00." alt="" coords="863,472,961,497"/>
+<area shape="poly" id="edge54_Node000020_Node000038" title=" " alt="" coords="420,256,492,251,575,253,662,266,704,278,744,294,771,310,796,329,841,374,875,420,900,458,895,461,871,423,837,378,793,333,768,315,741,299,702,283,661,271,575,258,492,257,420,261"/>
+<area shape="rect" id="Node000022" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="855,107,969,132"/>
+<area shape="poly" id="edge29_Node000021_Node000022" title=" " alt="" coords="689,117,841,117,841,122,689,122"/>
+<area shape="rect" id="Node000023" href="$diag_8c.html#a59191bef7fcae145e2d834eb8f447025" title="DIAG_ClearFatalErrorById checks whether the error has been cleared before and if not sends a clear me..." alt="" coords="1109,57,1296,83"/>
+<area shape="poly" id="edge30_Node000022_Node000023" title=" " alt="" coords="968,107,1113,82,1114,88,969,112"/>
+<area shape="rect" id="Node000031" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="1137,107,1268,132"/>
+<area shape="poly" id="edge38_Node000022_Node000031" title=" " alt="" coords="969,117,1124,117,1124,122,969,122"/>
+<area shape="rect" id="Node000032" href="$diag_8c.html#a4f4874e2e5766a401e9ab0c2721efda6" title="DIAG_SetFatalErrorById checks whether the error has been send before and if not send it per CAN...." alt="" coords="1115,156,1290,181"/>
+<area shape="poly" id="edge39_Node000022_Node000032" title=" " alt="" coords="969,126,1114,151,1113,156,968,131"/>
+<area shape="rect" id="Node000024" href="$can__cbs__tx__fatal-error_8c.html#af9d19804d03a440d5eb12e574a76bf30" title="Sends the Error ID per CAN." alt="" coords="1372,107,1552,132"/>
+<area shape="poly" id="edge31_Node000023_Node000024" title=" " alt="" coords="1271,80,1382,101,1381,107,1270,85"/>
+<area shape="rect" id="Node000030" href="$timer_8c.html#a8a878f1764cb181893c79d55b1c41a65" title="TIMER_stops stops a given virtual timer." alt="" coords="1413,57,1511,83"/>
+<area shape="poly" id="edge37_Node000023_Node000030" title=" " alt="" coords="1296,67,1399,67,1399,73,1296,73"/>
+<area shape="rect" id="Node000025" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="1623,71,1836,111"/>
+<area shape="poly" id="edge32_Node000024_Node000025" title=" " alt="" coords="1552,107,1608,101,1609,107,1552,113"/>
+<area shape="rect" id="Node000027" href="$can__cbs__tx__fatal-error_8c.html#a417ea445e91fa2826a6cbefbe8335661" title="Helper function to send the actual error Code." alt="" coords="1600,136,1859,161"/>
+<area shape="poly" id="edge34_Node000024_Node000027" title=" " alt="" coords="1552,127,1600,132,1600,137,1552,132"/>
+<area shape="rect" id="Node000026" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="1930,79,2153,104"/>
+<area shape="poly" id="edge33_Node000025_Node000026" title=" " alt="" coords="1836,89,1916,89,1916,94,1836,94"/>
+<area shape="rect" id="Node000028" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="1981,132,2101,157"/>
+<area shape="poly" id="edge35_Node000027_Node000028" title=" " alt="" coords="1859,144,1968,143,1968,148,1859,150"/>
+<area shape="rect" id="Node000029" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="1907,181,2176,207"/>
+<area shape="poly" id="edge36_Node000027_Node000029" title=" " alt="" coords="1818,159,1941,177,1940,182,1817,164"/>
+<area shape="poly" id="edge40_Node000032_Node000024" title=" " alt="" coords="1270,153,1381,132,1382,137,1271,159"/>
+<area shape="rect" id="Node000033" href="$timer_8c.html#a961668103b79a6b04dfd66e507bd2d7f" title="TIMER_start starts a given virtual timer." alt="" coords="1411,156,1513,181"/>
+<area shape="poly" id="edge41_Node000032_Node000033" title=" " alt="" coords="1290,166,1398,166,1398,171,1290,171"/>
+<area shape="poly" id="edge44_Node000034_Node000014" title=" " alt="" coords="721,499,744,510,760,524,770,538,778,552,792,567,827,588,863,606,860,610,824,593,789,571,774,556,765,541,756,528,741,515,718,503"/>
+<area shape="rect" id="Node000035" href="$mxm__battery__management_8c.html#adcda2712e58935f41533d2b54c90aee5" title="Check if a register address is user accessible." alt="" coords="791,532,1033,557"/>
+<area shape="poly" id="edge45_Node000034_Node000035" title=" " alt="" coords="712,498,840,526,839,532,711,503"/>
+<area shape="poly" id="edge48_Node000034_Node000038" title=" " alt="" coords="743,480,849,481,849,486,743,485"/>
+<area shape="rect" id="Node000036" href="$mxm__battery__management_8c.html#a9e3c85d541ed2c4301747d8633ba03bc" title="Check if a register address is user accessible in MAX17852." alt="" coords="1081,528,1324,553"/>
+<area shape="poly" id="edge46_Node000035_Node000036" title=" " alt="" coords="1033,540,1068,540,1068,545,1033,546"/>
+<area shape="rect" id="Node000037" href="$mxm__battery__management_8c.html#aacd19e9ba1a28a8d4ac5fde5677c93e2" title="Check if a register address is user accessible in MAX17853." alt="" coords="1081,577,1324,603"/>
+<area shape="poly" id="edge47_Node000035_Node000037" title=" " alt="" coords="994,555,1108,573,1107,578,994,560"/>
+<area shape="rect" id="Node000039" href="$mxm__crc8_8c.html#aff7b770d0d6a3773b0fe425eb9bb9d8d" title="Compute CRC8 (0xA6) with initial value." alt="" coords="1111,472,1295,497"/>
+<area shape="poly" id="edge49_Node000038_Node000039" title=" " alt="" coords="961,482,1097,482,1097,487,961,487"/>
+<area shape="poly" id="edge67_Node000040_Node000003" title=" " alt="" coords="434,381,504,383,583,380,664,368,742,344,789,317,831,283,865,248,891,217,895,220,869,251,834,287,792,322,744,348,665,373,583,385,504,389,434,386"/>
+<area shape="poly" id="edge56_Node000040_Node000005" title=" " alt="" coords="406,357,533,335,534,340,407,363"/>
+<area shape="poly" id="edge66_Node000040_Node000006" title=" " alt="" coords="358,358,581,238,584,242,361,362"/>
+<area shape="poly" id="edge65_Node000040_Node000015" title=" " alt="" coords="344,385,365,423,398,475,443,529,469,554,497,574,511,582,509,587,495,579,465,558,439,533,394,478,360,425,340,387"/>
+<area shape="rect" id="Node000041" href="$mxm__battery__management_8c.html#a37cd677bbc5d05d70dfb76a0a5eb4624" title="clears the command buffer and writes WRITEALL into the buffer" alt="" coords="496,639,743,679"/>
+<area shape="poly" id="edge57_Node000040_Node000041" title=" " alt="" coords="343,385,361,430,392,495,438,565,466,596,498,624,508,631,505,635,494,628,462,600,434,568,388,498,356,432,338,387"/>
+<area shape="rect" id="Node000042" href="$mxm__battery__management_8c.html#ae0d3c986bdb0719700b05d295c0cbae3" title="clears the command buffer and writes a WRITEDEVICE message" alt="" coords="496,525,743,565"/>
+<area shape="poly" id="edge61_Node000040_Node000042" title=" " alt="" coords="349,384,408,445,450,480,497,510,512,517,509,522,495,515,447,484,404,449,345,388"/>
+<area shape="poly" id="edge58_Node000041_Node000014" title=" " alt="" coords="743,643,789,637,789,643,743,648"/>
+<area shape="poly" id="edge59_Node000041_Node000035" title=" " alt="" coords="703,637,742,624,789,598,869,561,871,565,792,603,744,628,705,642"/>
+<area shape="poly" id="edge60_Node000041_Node000038" title=" " alt="" coords="721,637,741,624,752,612,759,599,764,572,770,545,777,531,789,517,817,500,849,489,850,494,820,504,792,521,781,534,775,546,769,573,764,601,757,615,744,628,724,641"/>
+<area shape="poly" id="edge62_Node000042_Node000014" title=" " alt="" coords="700,562,743,574,856,607,855,612,742,579,698,567"/>
+<area shape="poly" id="edge63_Node000042_Node000035" title=" " alt="" coords="743,542,777,542,777,547,743,547"/>
+<area shape="poly" id="edge64_Node000042_Node000038" title=" " alt="" coords="717,522,849,495,850,500,718,527"/>
+</map>

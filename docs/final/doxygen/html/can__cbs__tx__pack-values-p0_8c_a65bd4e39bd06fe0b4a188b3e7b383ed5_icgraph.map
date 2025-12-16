@@ -1,0 +1,5 @@
+<map id="CANTX_BuildP0Message" name="CANTX_BuildP0Message">
+<area shape="rect" id="Node000001" title="builds the PackP0 message" alt="" coords="216,5,397,31"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__pack-values-p0_8c.html#ae7540c759d63ef8c61639fd9ad7b4d0a" title="CAN Tx callback function for pack values values." alt="" coords="5,5,168,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,21,168,21,168,15,202,15"/>
+</map>

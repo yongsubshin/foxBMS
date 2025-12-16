@@ -1,0 +1,27 @@
+<map id="AFE_IsFirstMeasurementCycleFinished" name="AFE_IsFirstMeasurementCycleFinished">
+<area shape="rect" id="Node000001" title="Checks if the first AFE measurement cycle was made." alt="" coords="5,184,224,224"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x_8c.html#aafda6fb54db21a7bb3c96e072e70f400" title="Gets the measurement initialization status." alt="" coords="274,5,491,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,182,190,123,229,91,271,62,297,48,300,53,273,66,232,95,194,127,136,186"/>
+<area shape="rect" id="Node000003" href="$debug__default_8c.html#aab8534c5be8d61cb3f1f9f335d15e652" title="return whether the first measurement cycle is finished" alt="" coords="542,120,769,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,188,272,183,528,152,528,158,272,188,225,194"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="817,163,973,189"/>
+<area shape="poly" id="edge12_Node000001_Node000004" title=" " alt="" coords="164,181,273,144,345,124,424,106,509,93,597,87,684,91,770,105,823,126,867,153,864,157,821,131,769,111,684,96,597,93,510,99,425,111,346,129,275,149,165,186"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="822,219,969,245"/>
+<area shape="poly" id="edge13_Node000001_Node000005" title=" " alt="" coords="142,222,200,261,235,279,273,293,410,327,467,335,520,338,574,336,631,328,769,297,821,277,864,251,867,255,823,282,770,303,632,333,574,341,520,344,466,341,409,332,271,299,233,284,197,265,139,226"/>
+<area shape="rect" id="Node000006" href="$ltc__6806_8c.html#a31a0f262a3434597949aa3251b633a79" title="gets the measurement initialization status." alt="" coords="547,184,763,224"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="224,201,534,201,534,207,224,207"/>
+<area shape="rect" id="Node000007" href="$nxp__mc33775a__afe_8c.html#a1eac03700935cf8116e9971005f126b8" title=" " alt="" coords="272,244,493,284"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="205,221,280,238,279,244,204,227"/>
+<area shape="rect" id="Node000009" href="$ti__dummy__afe_8c.html#a4ebc7e980c9000355bf5b3a49449f342" title="This function is used to wrap the TI AFE measurement API to the generic AFE measurement API." alt="" coords="279,363,486,403"/>
+<area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="136,222,194,281,232,313,273,342,300,355,297,360,271,346,229,317,190,285,132,226"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="769,154,804,160,804,165,768,160"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="738,158,770,170,795,183,819,198,849,212,847,216,816,202,792,188,768,174,736,163"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="763,189,803,184,804,189,764,194"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="764,214,808,219,808,225,763,219"/>
+<area shape="rect" id="Node000008" href="$nxp__mc3377x_8c.html#a8b2476cb0a0d83db8b78b11446cad3e8" title="gets the measurement initialization status." alt="" coords="541,248,769,288"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="493,263,528,263,528,269,493,268"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="737,245,768,234,792,219,816,204,845,191,847,196,819,209,795,224,770,238,739,250"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="769,248,808,242,809,248,770,254"/>
+<area shape="rect" id="Node000010" href="$ti__dummy_8c.html#a6ad05411d72fb364aadd8245bce7d5ee" title=" " alt="" coords="554,363,757,403"/>
+<area shape="poly" id="edge15_Node000009_Node000010" title=" " alt="" coords="486,380,540,380,540,385,486,385"/>
+</map>

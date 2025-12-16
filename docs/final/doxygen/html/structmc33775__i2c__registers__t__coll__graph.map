@@ -1,0 +1,23 @@
+<map id="mc33775_i2c_registers_t" name="mc33775_i2c_registers_t">
+<area shape="rect" id="Node000001" title=" " alt="" coords="300,301,484,326"/>
+<area shape="rect" id="Node000002" href="$unionmc33775__i2c__registers__i2c__cfg__t.html" title=" " alt="" coords="5,5,177,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,48,228,74,254,91,278,111,318,161,351,215,389,299,384,302,346,217,314,164,274,115,251,96,226,79,172,53"/>
+<area shape="rect" id="Node000003" href="$unionmc33775__i2c__registers__i2c__ctrl__t.html" title=" " alt="" coords="5,69,177,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,112,178,119,231,143,278,175,312,207,342,242,384,299,380,302,338,245,308,211,274,179,228,148,176,124,161,117"/>
+<area shape="rect" id="Node000004" href="$unionmc33775__i2c__registers__i2c__stat__t.html" title=" " alt="" coords="5,133,177,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,176,178,183,229,205,277,231,332,267,376,298,373,303,329,271,275,236,227,210,176,188,160,181"/>
+<area shape="rect" id="Node000005" href="$unionmc33775__i2c__registers__i2c__data0__t.html" title=" " alt="" coords="5,197,177,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="172,239,277,272,354,298,353,303,275,277,170,244"/>
+<area shape="rect" id="Node000006" href="$unionmc33775__i2c__registers__i2c__data1__t.html" title=" " alt="" coords="5,261,177,301"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="192,289,300,301,300,306,191,295"/>
+<area shape="rect" id="Node000007" href="$unionmc33775__i2c__registers__i2c__data2__t.html" title=" " alt="" coords="5,325,177,365"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="191,332,300,320,300,326,192,337"/>
+<area shape="rect" id="Node000008" href="$unionmc33775__i2c__registers__i2c__data3__t.html" title=" " alt="" coords="5,389,177,429"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="173,383,275,351,354,324,356,329,277,356,174,388"/>
+<area shape="rect" id="Node000009" href="$unionmc33775__i2c__registers__i2c__data4__t.html" title=" " alt="" coords="5,453,177,493"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="159,446,176,439,227,418,275,394,330,357,373,324,377,328,333,362,277,398,229,423,178,444,161,451"/>
+<area shape="rect" id="Node000010" href="$unionmc33775__i2c__registers__i2c__data5__t.html" title=" " alt="" coords="5,517,177,557"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="161,510,176,503,228,480,274,450,308,418,338,383,380,325,385,328,343,386,312,421,278,454,230,485,178,508,163,515"/>
+<area shape="rect" id="Node000011" href="$unionmc33775__i2c__registers__i2c__data6__t.html" title=" " alt="" coords="5,581,177,621"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="173,574,226,549,251,532,274,513,314,464,346,410,370,361,384,325,389,327,374,363,351,413,319,467,278,517,255,536,229,553,175,579"/>
+</map>

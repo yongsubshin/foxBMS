@@ -1,0 +1,27 @@
+<map id="foxbms&#45;2/src/app/driver/sbc/fs8x_driver/sbc_fs8x_common.h" name="foxbms&#45;2/src/app/driver/sbc/fs8x_driver/sbc_fs8x_common.h">
+<area shape="rect" id="Node000001" title="Driver common structures, enums, macros and configuration values." alt="" coords="487,5,674,60"/>
+<area shape="rect" id="Node000002" href="$sbc__fs8x_8c.html" title="Driver functions for the FS8x SBC." alt="" coords="411,218,609,258"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="560,73,543,109,526,168,516,218,510,217,520,167,538,107,555,71"/>
+<area shape="rect" id="Node000003" href="$sbc__fs8x_8h.html" title="FS8x driver interface." alt="" coords="280,115,479,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="517,68,419,117,416,113,515,64"/>
+<area shape="rect" id="Node000010" href="$sbc__fs8x__communication_8c.html" title="Implementation of communication logic for NXP SBC FS8x." alt="" coords="683,211,870,265"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="688,59,723,79,753,106,768,131,776,159,781,210,776,211,771,160,763,133,749,110,720,83,685,64"/>
+<area shape="rect" id="Node000011" href="$sbc__fs8x__communication_8h.html" title="This file contains functions for SPI/I2C communication." alt="" coords="553,108,739,163"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="607,70,631,106,627,109,603,73"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="417,162,487,216,484,220,413,166"/>
+<area shape="rect" id="Node000004" href="$nxpfs85xx_8h.html" title="Header for the driver for the FRAM module." alt="" coords="209,218,387,258"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="358,168,315,220,311,216,354,164"/>
+<area shape="rect" id="Node000005" href="$nxpfs85xx_8c.html" title="Driver for the FS85xx module." alt="" coords="484,313,661,353"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="367,260,518,311,516,316,365,265"/>
+<area shape="rect" id="Node000006" href="$sbc_8h.html" title="Header for the driver for the SBC module." alt="" coords="209,313,387,353"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="301,272,301,313,295,313,295,272"/>
+<area shape="rect" id="Node000007" href="$sbc_8c.html" title="Driver for the SBC module." alt="" coords="5,401,183,441"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="242,361,140,404,138,399,240,356"/>
+<area shape="rect" id="Node000008" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="207,401,389,441"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="301,367,301,401,295,401,295,367"/>
+<area shape="rect" id="Node000009" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="413,401,580,441"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="355,356,454,399,452,404,353,361"/>
+<area shape="poly" id="edge12_Node000011_Node000002" title=" " alt="" coords="601,173,537,220,534,216,598,169"/>
+<area shape="poly" id="edge14_Node000011_Node000005" title=" " alt="" coords="645,177,638,221,623,266,609,292,592,315,588,311,604,290,618,264,632,219,640,176"/>
+<area shape="poly" id="edge13_Node000011_Node000010" title=" " alt="" coords="692,169,744,208,741,213,689,173"/>
+</map>

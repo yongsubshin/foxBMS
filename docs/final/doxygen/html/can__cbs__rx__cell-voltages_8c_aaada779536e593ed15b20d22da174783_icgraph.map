@@ -1,0 +1,5 @@
+<map id="CANRX_GetCanAfeCellVoltagesFromMessage" name="CANRX_GetCanAfeCellVoltagesFromMessage">
+<area shape="rect" id="Node000001" title="get the cell voltage signal from can message data" alt="" coords="209,5,436,45"/>
+<area shape="rect" id="Node000002" href="$can__cbs__rx__cell-voltages_8c.html#acc01cd124262964bbe5ae56110c1d8da" title="CAN Rx callback function to handle cell&#45;voltages message." alt="" coords="5,13,161,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,28,162,28,162,23,196,23"/>
+</map>

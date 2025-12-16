@@ -1,0 +1,11 @@
+<map id="IMD_RequestInitialization" name="IMD_RequestInitialization">
+<area shape="rect" id="Node000001" title="Request initialization of IMD state machine." alt="" coords="5,55,195,80"/>
+<area shape="rect" id="Node000002" href="$imd_8c.html#af71dbb70f367737ded7c75030b93d2f5" title="sets the current state request of the state variable imd_state." alt="" coords="243,55,405,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,65,229,65,229,70,195,70"/>
+<area shape="rect" id="Node000003" href="$imd_8c.html#a5af47fbf7aebd66487c00967df0c9368" title="checks the state requests that are made." alt="" coords="453,5,636,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="381,52,473,31,474,36,382,57"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="467,55,623,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="406,65,453,65,453,70,406,70"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="471,104,618,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="382,77,474,98,473,104,381,83"/>
+</map>

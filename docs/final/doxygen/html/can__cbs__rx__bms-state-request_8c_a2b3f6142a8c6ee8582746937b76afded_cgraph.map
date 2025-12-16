@@ -1,0 +1,17 @@
+<map id="CANRX_HandleBalancingRequest" name="CANRX_HandleBalancingRequest">
+<area shape="rect" id="Node000001" title="handles the balancing request" alt="" coords="5,68,244,93"/>
+<area shape="rect" id="Node000002" href="$bal__strategy__voltage_8c.html#a32d6c4872b4b5d616cac7aad172a3427" title="gets the initialization state." alt="" coords="341,19,533,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,65,342,44,343,49,206,71"/>
+<area shape="rect" id="Node000003" href="$bal__strategy__voltage_8c.html#a98f48172bc8beacf09e7a4829be29fb8" title="sets the current state request of the state variable bal_state." alt="" coords="356,68,519,93"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,78,342,78,342,83,244,83"/>
+<area shape="rect" id="Node000007" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="292,129,583,155"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="191,91,359,124,358,129,190,96"/>
+<area shape="rect" id="Node000004" href="$bal_8c.html#ace76b9a00c0a0ec922e15d0d677b9315" title="checks the state requests that are made." alt="" coords="651,5,833,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="518,65,582,53,630,39,666,31,667,36,631,45,583,58,519,71"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="664,55,820,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="519,74,650,69,650,74,519,80"/>
+<area shape="rect" id="Node000006" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="669,104,815,129"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="519,88,655,104,655,109,518,93"/>
+<area shape="rect" id="Node000008" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="631,153,853,179"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="583,151,617,154,617,159,583,156"/>
+</map>

@@ -1,0 +1,111 @@
+<map id="OS_ReceiveFromQueue" name="OS_ReceiveFromQueue">
+<area shape="rect" id="Node000001" title="Receive an item from a queue." alt="" coords="2553,338,2728,364"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x_8c.html#a89e6457fe74bd990d0a264877168b6b3" title="Checks the requests made to the ades183x driver." alt="" coords="2308,33,2436,58"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2631,326,2617,275,2592,210,2554,144,2531,113,2504,87,2471,67,2435,56,2437,51,2473,62,2507,82,2535,110,2559,141,2596,208,2622,273,2636,324"/>
+<area shape="rect" id="Node000015" href="$can_8c.html#a8902ad156147a56d9ccc3028b17d54c2" title="Checks the data received per CAN. A receive buffer is used because CAN frames are received in an inte..." alt="" coords="1227,90,1373,116"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="2630,326,2614,281,2589,227,2552,173,2530,150,2504,131,2446,101,2395,85,2346,79,2299,81,2198,96,2139,103,2072,106,1812,106,1374,106,1374,100,1812,100,2072,100,2139,97,2198,90,2299,76,2347,74,2396,80,2448,96,2507,126,2533,146,2556,170,2594,224,2619,279,2635,324"/>
+<area shape="rect" id="Node000016" href="$can_8c.html#a74014489033fb7ffc48e59fbcc1d0a61" title="Reads messages from TX Queue and sends them via CAN." alt="" coords="2257,141,2487,166"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="2625,327,2606,293,2579,253,2545,213,2504,180,2480,169,2482,164,2507,176,2549,209,2584,249,2611,290,2630,325"/>
+<area shape="rect" id="Node000021" href="$database_8c.html#a1585d5c7665504898be0371c5c6295b9" title="trigger of database manager" alt="" coords="2326,190,2418,216"/>
+<area shape="poly" id="edge24_Node000001_Node000021" title=" " alt="" coords="2619,330,2571,278,2539,251,2504,230,2461,215,2418,208,2419,202,2462,209,2506,225,2542,247,2575,274,2623,326"/>
+<area shape="rect" id="Node000024" href="$debug__can_8c.html#a376493ba02a58bc7c9138109db7601b8" title="Receive can temperature data from queue and write into database." alt="" coords="2239,338,2505,364"/>
+<area shape="poly" id="edge28_Node000001_Node000024" title=" " alt="" coords="2540,354,2506,354,2506,348,2540,348"/>
+<area shape="rect" id="Node000027" href="$debug__can_8c.html#af2243f9569087f7f7cc931bf36378dd0" title="Receive can voltage data from queue and write into database." alt="" coords="2255,289,2489,314"/>
+<area shape="poly" id="edge31_Node000001_Node000027" title=" " alt="" coords="2559,339,2505,328,2443,317,2444,312,2506,323,2560,333"/>
+<area shape="rect" id="Node000028" href="$bender__iso165c_8c.html#a38be4a23083d534e5481eca35e9eb8d2" title="Check if iso165c acknowledged reception of sent message and get corresponding data." alt="" coords="2287,388,2457,413"/>
+<area shape="poly" id="edge33_Node000001_Node000028" title=" " alt="" coords="2558,369,2443,390,2442,385,2557,364"/>
+<area shape="rect" id="Node000038" href="$bender__iso165c_8c.html#ad8ff3235e275ab45117ab68ba30d1087" title="Get IMD Info from iso165c." alt="" coords="2001,542,2140,568"/>
+<area shape="poly" id="edge46_Node000001_Node000038" title=" " alt="" coords="2610,374,2562,401,2506,427,2466,439,2431,445,2370,448,2310,453,2277,463,2240,479,2226,489,2217,500,2207,512,2192,524,2140,545,2138,540,2189,520,2203,509,2212,497,2222,485,2237,474,2275,458,2309,448,2369,443,2431,440,2465,434,2504,422,2560,397,2607,369"/>
+<area shape="rect" id="Node000039" href="$nxp__mc33775a__i2c_8c.html#ae008be3e6e19dfc6da9e7706b9ca9f41" title="trigger a read on the I2C bus of the slave." alt="" coords="2315,489,2429,514"/>
+<area shape="poly" id="edge49_Node000001_Node000039" title=" " alt="" coords="2622,376,2573,425,2541,451,2507,472,2469,487,2430,497,2429,492,2467,482,2504,467,2538,446,2569,421,2618,372"/>
+<area shape="rect" id="Node000040" href="$nxp__mc33775a__i2c_8c.html#a7a2906f96565c4d495a40f618b5b0a4e" title="trigger a write on the I2C bus of the slave." alt="" coords="2313,538,2431,564"/>
+<area shape="poly" id="edge50_Node000001_Node000040" title=" " alt="" coords="2630,378,2611,412,2584,454,2549,494,2507,528,2470,544,2432,552,2431,546,2468,539,2504,524,2545,491,2579,450,2606,410,2625,375"/>
+<area shape="rect" id="Node000041" href="$nxp__mc33775a__i2c_8c.html#a011313da17c93c5d7a3cbfc2a711f877" title="trigger a read on the I2C bus of the slave, first write address of register to read." alt="" coords="2297,588,2447,613"/>
+<area shape="poly" id="edge51_Node000001_Node000041" title=" " alt="" coords="2634,378,2618,422,2592,476,2555,531,2532,556,2507,577,2479,592,2448,600,2447,595,2477,587,2504,573,2529,552,2551,528,2587,474,2613,420,2629,376"/>
+<area shape="rect" id="Node000042" href="$nxp__mc33775a__i2c_8c.html#a2efbc1d9973c7c1a19164c6a87192594" title="transmit over I2C on NXP slave." alt="" coords="2303,637,2441,662"/>
+<area shape="poly" id="edge52_Node000001_Node000042" title=" " alt="" coords="2637,378,2624,432,2600,500,2582,535,2561,570,2536,601,2507,628,2476,644,2442,652,2441,647,2474,639,2504,624,2533,597,2557,567,2578,533,2595,498,2619,430,2632,377"/>
+<area shape="rect" id="Node000046" href="$rtc_8c.html#a2433a4b1a5c12e221ee7936c394a902c" title="Check if a CAN message was received to set the RTC time." alt="" coords="2278,240,2466,265"/>
+<area shape="poly" id="edge56_Node000001_Node000046" title=" " alt="" coords="2608,333,2561,305,2504,279,2465,268,2466,263,2506,274,2563,300,2611,329"/>
+<area shape="rect" id="Node000003" href="$adi__ades183x_8c.html#ad91881ebcf4cc246ad2248e96b568245" title="Implements the actual measurement sequence for the ADI driver." alt="" coords="1724,33,1903,58"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2300,33,2190,16,2071,8,1951,16,1903,25,1858,36,1857,30,1902,19,1950,11,2071,3,2191,11,2301,28"/>
+<area shape="rect" id="Node000014" href="$adi__ades183x_8c.html#af426a7527df2f35e0118b6d4c2878ca9" title="Runs the initialization sequence of the driver." alt="" coords="1963,26,2178,66"/>
+<area shape="poly" id="edge14_Node000002_Node000014" title=" " alt="" coords="2294,48,2178,48,2178,43,2294,43"/>
+<area shape="rect" id="Node000004" href="$adi__ades183x__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="1509,37,1619,62"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1711,50,1619,52,1619,46,1711,45"/>
+<area shape="rect" id="Node000005" href="$meas_8c.html#a52f94c4bf46281650a38306fad8effc7" title="Control function that is called from the task every 1ms." alt="" coords="1243,41,1357,66"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1496,54,1357,56,1357,50,1496,48"/>
+<area shape="rect" id="Node000006" href="$ftask__cfg_8c.html#a1891c5a0ae2acb42fdf6f55363c61f8f" title="Continuously running task for AFEs." alt="" coords="955,41,1125,66"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1229,56,1125,56,1125,51,1229,51"/>
+<area shape="rect" id="Node000012" href="$ftask__cfg_8c.html#ae58bcb17fd6f8030313c90d4f02f9f96" title="Cyclic 1 ms task." alt="" coords="932,90,1148,116"/>
+<area shape="poly" id="edge11_Node000005_Node000012" title=" " alt="" coords="1230,70,1108,93,1107,88,1229,65"/>
+<area shape="rect" id="Node000007" href="$ftask_8c.html#a4a202519a56cddc3958c1bebf22c5d66" title="Creation of continuously running task for AFEs." alt="" coords="707,41,861,66"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="941,56,861,56,861,51,941,51"/>
+<area shape="rect" id="Node000008" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,141,636,166"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="705,73,685,80,628,112,585,143,581,139,625,107,683,75,703,68"/>
+<area shape="rect" id="Node000009" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,141,448,166"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="482,156,448,156,448,151,482,151"/>
+<area shape="rect" id="Node000010" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,141,184,166"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="218,156,184,156,184,151,218,151"/>
+<area shape="rect" id="Node000011" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,141,81,166"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="116,156,82,156,82,151,116,151"/>
+<area shape="rect" id="Node000013" href="$ftask_8c.html#a4fdc9f7eff77294f53e37225751fe564" title="Creation of cyclic 1 ms task." alt="" coords="684,90,884,116"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="919,106,884,106,884,100,919,100"/>
+<area shape="poly" id="edge13_Node000013_Node000008" title=" " alt="" coords="716,122,622,144,621,139,715,116"/>
+<area shape="poly" id="edge15_Node000014_Node000003" title=" " alt="" coords="1949,48,1903,48,1903,43,1949,43"/>
+<area shape="poly" id="edge17_Node000015_Node000012" title=" " alt="" coords="1213,106,1148,106,1148,100,1213,100"/>
+<area shape="rect" id="Node000017" href="$can_8c.html#a20938e5f84711f226ac95482c64ac286" title="Handles the processing of messages that are meant to be transmitted." alt="" coords="1988,141,2153,166"/>
+<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="2244,156,2154,156,2154,151,2244,151"/>
+<area shape="rect" id="Node000018" href="$can_8c.html#a18598f23edcb4ba38ed4741c0efb912f" title="Calls the functions to drive the CAN interface. Makes the CAN timing checks and sends the periodic me..." alt="" coords="1741,141,1885,166"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="1974,156,1886,156,1886,151,1974,151"/>
+<area shape="rect" id="Node000019" href="$ftask__cfg_8c.html#a7f3620825ec0f5072516255d6febebdb" title="Cyclic 10 ms task." alt="" coords="1452,141,1676,166"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="1728,156,1676,156,1676,151,1728,151"/>
+<area shape="rect" id="Node000020" href="$ftask_8c.html#a2a1d135e2e4e6fef538294d8c43d0328" title="Creation of cyclic 10 ms task." alt="" coords="1196,141,1404,166"/>
+<area shape="poly" id="edge22_Node000019_Node000020" title=" " alt="" coords="1438,156,1404,156,1404,151,1438,151"/>
+<area shape="poly" id="edge23_Node000020_Node000008" title=" " alt="" coords="1182,156,636,156,636,151,1182,151"/>
+<area shape="rect" id="Node000022" href="$ftask__cfg_8c.html#a2bc283fc8beb546d8dd8de36e6217a04" title="Engine task for the database and the system monitoring module." alt="" coords="1974,190,2167,216"/>
+<area shape="poly" id="edge25_Node000021_Node000022" title=" " alt="" coords="2313,206,2168,206,2168,200,2313,200"/>
+<area shape="rect" id="Node000023" href="$ftask_8c.html#a02c68a8157fb710452c3b33ff1b198fc" title="Database&#45;Task." alt="" coords="951,192,1129,217"/>
+<area shape="poly" id="edge26_Node000022_Node000023" title=" " alt="" coords="1960,206,1129,207,1129,202,1960,201"/>
+<area shape="poly" id="edge27_Node000023_Node000008" title=" " alt="" coords="937,200,684,175,636,168,637,163,684,170,938,195"/>
+<area shape="rect" id="Node000025" href="$debug__can_8c.html#a75b2a17a9cdcd7d057fc07c8a4c1dba8" title="afe trigger function" alt="" coords="2000,289,2141,314"/>
+<area shape="poly" id="edge29_Node000024_Node000025" title=" " alt="" coords="2280,339,2141,316,2142,311,2281,334"/>
+<area shape="rect" id="Node000026" href="$debug__can__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="1759,292,1868,317"/>
+<area shape="poly" id="edge30_Node000025_Node000026" title=" " alt="" coords="1986,305,1868,307,1868,301,1986,300"/>
+<area shape="poly" id="edge32_Node000027_Node000025" title=" " alt="" coords="2242,304,2141,304,2141,299,2242,299"/>
+<area shape="rect" id="Node000029" href="$bender__iso165c_8c.html#a2dccd08b41115dc9b20a7c2a29d89350" title="Check if iso165c acknowledged reception of command." alt="" coords="1951,441,2191,466"/>
+<area shape="poly" id="edge34_Node000028_Node000029" title=" " alt="" coords="2286,418,2144,444,2143,438,2285,413"/>
+<area shape="rect" id="Node000030" href="$bender__iso165c_8c.html#a3be2224018613c4c2cba1b74f23fd25a" title=" " alt="" coords="1756,362,1871,388"/>
+<area shape="poly" id="edge43_Node000028_Node000030" title=" " alt="" coords="2273,393,2191,387,2016,380,1871,378,1871,373,2016,375,2191,382,2274,388"/>
+<area shape="rect" id="Node000032" href="$bender__iso165c_8c.html#ac380b93438c83dd22a7c59ce5021eed8" title=" " alt="" coords="1758,420,1869,445"/>
+<area shape="poly" id="edge44_Node000028_Node000032" title=" " alt="" coords="2273,409,1869,432,1869,427,2273,403"/>
+<area shape="rect" id="Node000034" href="$bender__iso165c_8c.html#a0cc25171afc27704312f2cbbb566007a" title=" " alt="" coords="1752,489,1875,514"/>
+<area shape="poly" id="edge45_Node000028_Node000034" title=" " alt="" coords="2277,419,2240,435,2226,446,2217,458,2208,470,2192,480,2151,495,2109,506,2023,517,1942,517,1875,513,1875,507,1942,512,2022,511,2108,500,2150,490,2189,475,2204,466,2213,454,2222,442,2237,430,2275,415"/>
+<area shape="poly" id="edge35_Node000029_Node000030" title=" " alt="" coords="2014,440,1855,390,1856,385,2016,434"/>
+<area shape="poly" id="edge37_Node000029_Node000032" title=" " alt="" coords="1937,445,1869,440,1869,434,1937,440"/>
+<area shape="poly" id="edge39_Node000029_Node000034" title=" " alt="" coords="1989,472,1875,493,1874,488,1988,466"/>
+<area shape="rect" id="Node000036" href="$bender__iso165c_8c.html#a771d75322b83bd5940ccd1dd285f96cf" title="trigger function for the i165c driver state machine." alt="" coords="1754,542,1873,568"/>
+<area shape="poly" id="edge41_Node000029_Node000036" title=" " alt="" coords="2030,475,1904,528,1856,545,1854,540,1902,523,2028,470"/>
+<area shape="rect" id="Node000031" href="$bender__iso165c_8c.html#a5df85237bac743e7e844ca3d7fa2950f" title="Processes the shutdown state." alt="" coords="1463,362,1665,388"/>
+<area shape="poly" id="edge36_Node000030_Node000031" title=" " alt="" coords="1742,378,1666,378,1666,372,1742,372"/>
+<area shape="rect" id="Node000033" href="$bender__iso165c_8c.html#a6c70e060ca9e626f09d2518a1fa296c0" title="Processes the IMD enable state." alt="" coords="1473,420,1655,445"/>
+<area shape="poly" id="edge38_Node000032_Node000033" title=" " alt="" coords="1744,435,1656,435,1656,430,1744,430"/>
+<area shape="rect" id="Node000035" href="$bender__iso165c_8c.html#a2d36547c63557e7044ef109ab775abd5" title="Processes the initialization state." alt="" coords="1471,480,1657,520"/>
+<area shape="poly" id="edge40_Node000034_Node000035" title=" " alt="" coords="1738,504,1658,504,1658,498,1738,499"/>
+<area shape="rect" id="Node000037" href="$bender__iso165c_8c.html#af128f9aa7b3fcd2f6765ce5122bb6e27" title="Processes the running state." alt="" coords="1468,545,1660,570"/>
+<area shape="poly" id="edge42_Node000036_Node000037" title=" " alt="" coords="1740,559,1660,559,1660,554,1740,553"/>
+<area shape="poly" id="edge47_Node000038_Node000034" title=" " alt="" coords="1995,542,1874,517,1875,512,1996,537"/>
+<area shape="poly" id="edge48_Node000038_Node000036" title=" " alt="" coords="1988,558,1873,558,1873,552,1988,552"/>
+<area shape="rect" id="Node000043" href="$nxp__mc3377x_8c.html#a8e909d543eb29b0c8e65e9b56ef4700c" title="trigger function for the N77X driver state machine." alt="" coords="2011,637,2130,662"/>
+<area shape="poly" id="edge53_Node000042_Node000043" title=" " alt="" coords="2289,652,2130,652,2130,647,2289,647"/>
+<area shape="rect" id="Node000044" href="$nxp__mc33775a__afe_8c.html#ae6df9bbde43f01a4a74a0e34d48cd844" title=" " alt="" coords="1757,637,1869,662"/>
+<area shape="poly" id="edge54_Node000043_Node000044" title=" " alt="" coords="1998,652,1869,652,1869,647,1998,647"/>
+<area shape="rect" id="Node000045" href="$nxp__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="1509,637,1619,662"/>
+<area shape="poly" id="edge55_Node000044_Node000045" title=" " alt="" coords="1744,652,1619,652,1619,647,1744,647"/>
+<area shape="rect" id="Node000047" href="$rtc_8c.html#a29ea3083fe4a8b3e1dc2e4262ae22863" title="trigger function for the RTC driver." alt="" coords="2022,240,2119,265"/>
+<area shape="poly" id="edge57_Node000046_Node000047" title=" " alt="" coords="2264,255,2120,255,2120,250,2264,250"/>
+<area shape="rect" id="Node000048" href="$ftask__cfg_8c.html#a6be3660b7f0fd3125febd329f698fdd0" title="Continuously running task for I2C." alt="" coords="1729,242,1897,268"/>
+<area shape="poly" id="edge58_Node000047_Node000048" title=" " alt="" coords="2008,256,1897,257,1897,252,2008,250"/>
+<area shape="rect" id="Node000049" href="$ftask_8c.html#afb6bf58f9deabd4c07bf1d23fb68bb23" title="Creation of continuously running task for I2c." alt="" coords="708,242,860,268"/>
+<area shape="poly" id="edge59_Node000048_Node000049" title=" " alt="" coords="1716,258,860,258,860,252,1716,252"/>
+<area shape="poly" id="edge60_Node000049_Node000008" title=" " alt="" coords="722,241,683,226,628,197,585,169,587,164,631,192,685,221,724,236"/>
+</map>

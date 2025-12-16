@@ -1,0 +1,28 @@
+<map id="CANTX_BuildStringStateMessage" name="CANTX_BuildStringStateMessage">
+<area shape="rect" id="Node000001" title="Calls the other helper functions to write the message data." alt="" coords="5,129,243,155"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__string-state_8c.html#aa89a836c600f0cc3dd7b25addf57150f" title="Reads violated current sensor flags and sets the corresponding bits for the can message." alt="" coords="291,5,513,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,127,204,84,246,60,290,40,312,32,314,37,292,44,248,65,207,89,144,131"/>
+<area shape="rect" id="Node000006" href="$can__cbs__tx__string-state_8c.html#a1d1740fba571ce78756057248277ef6f" title="Reads violated mol flags and sets the corresponding bits for the can message." alt="" coords="325,153,479,179"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="243,150,311,156,311,161,243,155"/>
+<area shape="rect" id="Node000007" href="$can__cbs__tx__string-state_8c.html#aa9d1d1b843a2b2f9200f2bbfba7536e9" title="Reads violated msl flags and sets the corresponding bits for the can message." alt="" coords="325,203,479,228"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="167,152,291,187,330,197,329,202,290,193,166,157"/>
+<area shape="rect" id="Node000008" href="$can__cbs__tx__string-state_8c.html#ae790987b2ca12d2ab67eee0a62d6be75" title="Reads error flags and sets the corresponding bits for the can message." alt="" coords="303,55,501,80"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="163,127,290,89,324,80,325,86,291,94,165,132"/>
+<area shape="rect" id="Node000009" href="$can__cbs__tx__string-state_8c.html#a59818890ef7a9426c1288d074f45d44c" title="Reads violated plausibility flags and sets the corresponding bits for the can message." alt="" coords="301,104,503,129"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="243,129,287,124,287,130,243,134"/>
+<area shape="rect" id="Node000010" href="$can__cbs__tx__string-state_8c.html#ad99dc1ca594d344aa724b5ec70d8fa45" title="Reads violated rsl flags and sets the corresponding bits for the can message." alt="" coords="327,252,477,277"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="144,153,207,195,248,218,292,238,314,246,312,251,290,243,246,223,205,199,141,157"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a8cecd87914decc2e130d2a117ea6c92a" title="Transform a bool to a bit (set if true)" alt="" coords="561,55,783,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="473,28,589,49,588,55,472,33"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="565,125,779,165"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="488,28,515,40,530,52,540,64,549,76,563,89,609,116,606,121,560,93,545,80,536,67,527,55,512,44,486,33"/>
+<area shape="rect" id="Node000005" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="831,132,1053,157"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="779,142,817,142,817,147,779,147"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="479,157,551,152,552,157,480,163"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="461,200,513,187,590,166,592,171,514,193,462,205"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="501,65,547,65,547,70,501,70"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="468,78,514,89,605,118,603,123,513,94,467,83"/>
+<area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="472,101,588,80,589,85,473,107"/>
+<area shape="poly" id="edge14_Node000009_Node000004" title=" " alt="" coords="504,125,552,130,552,135,503,130"/>
+<area shape="poly" id="edge16_Node000010_Node000004" title=" " alt="" coords="477,249,512,238,576,206,631,171,634,175,579,211,514,243,479,255"/>
+</map>

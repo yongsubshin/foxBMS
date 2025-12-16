@@ -1,0 +1,7 @@
+<map id="MXM_5XIsUserAccessibleRegister" name="MXM_5XIsUserAccessibleRegister">
+<area shape="rect" id="Node000001" title="Check if a register address is user accessible." alt="" coords="5,31,248,56"/>
+<area shape="rect" id="Node000002" href="$mxm__battery__management_8c.html#a9e3c85d541ed2c4301747d8633ba03bc" title="Check if a register address is user accessible in MAX17852." alt="" coords="296,5,539,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,30,282,27,283,32,248,35"/>
+<area shape="rect" id="Node000003" href="$mxm__battery__management_8c.html#aacd19e9ba1a28a8d4ac5fde5677c93e2" title="Check if a register address is user accessible in MAX17853." alt="" coords="296,55,539,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="248,51,283,54,282,59,248,56"/>
+</map>

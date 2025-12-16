@@ -1,0 +1,5 @@
+<map id="NXP_RequestOpenWireCheck" name="NXP_RequestOpenWireCheck">
+<area shape="rect" id="Node000001" title=" " alt="" coords="264,5,477,31"/>
+<area shape="rect" id="Node000002" href="$nxp__afe_8c.html#a39dbbdfedd5cba3c54606ab2201b3575" title="Makes the request to the AFE state machine to perform open&#45;wire check." alt="" coords="5,5,216,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,21,216,21,216,15,250,15"/>
+</map>

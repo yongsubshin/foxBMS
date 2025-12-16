@@ -1,0 +1,9 @@
+<map id="IMD_STATE_s" name="IMD_STATE_s">
+<area shape="rect" id="Node000001" title=" " alt="" coords="111,196,219,221"/>
+<area shape="rect" id="Node000002" href="$structIMD__INFORMATION__s.html" title=" " alt="" coords="5,101,168,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,135,135,170,156,194,153,197,131,174,102,139"/>
+<area shape="rect" id="Node000003" href="$structDATA__BLOCK__INSULATION__MONITORING__s.html" title=" " alt="" coords="192,93,387,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="256,144,216,174,183,198,180,194,213,170,253,140"/>
+<area shape="rect" id="Node000004" href="$structDATA__BLOCK__HEADER__s.html" title=" " alt="" coords="198,5,381,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="292,44,292,93,287,93,287,44"/>
+</map>

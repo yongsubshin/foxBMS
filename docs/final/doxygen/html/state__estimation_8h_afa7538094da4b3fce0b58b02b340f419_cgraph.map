@@ -1,0 +1,74 @@
+<map id="SE_RunStateEstimations" name="SE_RunStateEstimations">
+<area shape="rect" id="Node000001" title="Main function to perform state estimations." alt="" coords="5,379,187,405"/>
+<area shape="rect" id="Node000002" href="$group__state-estimation-api.html#ga23fd935c8f32702285c6d97a688bd6d8" title="periodically called algorithm to calculate state&#45;of&#45;charge (SOC)" alt="" coords="235,193,436,218"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,377,305,225,308,229,115,381"/>
+<area shape="rect" id="Node000023" href="$group__state-estimation-api.html#gaeb9b1d83b826af8dfdd7f89abd44b4c3" title="periodically called algorithm to calculate state&#45;of&#45;energy (SOE)" alt="" coords="235,379,435,405"/>
+<area shape="poly" id="edge28_Node000001_Node000023" title=" " alt="" coords="187,389,222,389,222,395,187,395"/>
+<area shape="rect" id="Node000030" href="$group__state-estimation-api.html#ga6faa8728c9e08ec3ceed191e2d9d8661" title="calculates state&#45;of&#45;health (SOH)" alt="" coords="236,429,435,454"/>
+<area shape="poly" id="edge42_Node000001_Node000030" title=" " alt="" coords="159,402,260,423,259,428,158,407"/>
+<area shape="rect" id="Node000003" href="$bms_8c.html#ab900910af6e3c584a5e3650018fe4ed7" title="Returns current battery system state (charging/discharging, resting or in relaxation phase)" alt="" coords="505,250,717,275"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="395,215,485,235,533,245,532,250,483,240,393,221"/>
+<area shape="rect" id="Node000004" href="$bms_8c.html#aa8629fa034f46282328df180f5190e2e" title="Get current flow direction, current value as function parameter." alt="" coords="502,299,721,325"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="356,216,412,251,485,286,511,294,509,299,483,290,410,255,353,220"/>
+<area shape="rect" id="Node000005" href="$fram_8c.html#ad5c5ec1fd0a6c3667185d3b75064e359" title="Writes a variable to the FRAM." alt="" coords="1141,215,1274,241"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="383,190,431,179,484,171,638,159,758,162,879,175,1032,196,1128,211,1127,216,1032,201,878,181,758,167,638,165,484,176,432,184,384,195"/>
+<area shape="rect" id="Node000016" href="$soc__counting_8c.html#ad3fee991910803b071b90e995a462087" title="Check if all database SOC percentage values are within [0.0, 100.0] Limits SOC values to limit values..." alt="" coords="1080,5,1335,45"/>
+<area shape="poly" id="edge17_Node000002_Node000016" title=" " alt="" coords="349,190,405,147,443,124,483,106,558,81,635,62,791,36,940,23,1066,19,1066,25,940,29,792,42,636,67,559,87,485,110,445,129,408,152,353,195"/>
+<area shape="rect" id="Node000017" href="$soc__counting_8c.html#a7abd073295c29aaeb17a03fccdc4fd33" title="initializes database and FRAM SOC values via lookup table (average, minimum and maximum)." alt="" coords="513,185,710,225"/>
+<area shape="poly" id="edge18_Node000002_Node000017" title=" " alt="" coords="436,203,499,203,499,208,436,208"/>
+<area shape="rect" id="Node000022" href="$soc__counting_8c.html#aa0c221f0dab22f52c7352dda1b5c3dcd" title="Set SOC&#45;related values in non&#45;volatile memory." alt="" coords="1119,70,1296,95"/>
+<area shape="poly" id="edge27_Node000002_Node000022" title=" " alt="" coords="364,190,419,168,483,147,566,127,652,112,822,91,978,82,1104,79,1105,84,978,87,822,97,652,117,567,133,485,152,420,173,366,195"/>
+<area shape="rect" id="Node000006" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="1424,42,1563,67"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1256,213,1296,196,1333,170,1349,147,1355,123,1362,99,1381,77,1410,62,1412,66,1384,81,1367,102,1360,125,1354,149,1337,174,1298,200,1258,218"/>
+<area shape="rect" id="Node000007" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="1443,91,1543,117"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1245,213,1288,194,1333,170,1347,158,1356,147,1366,136,1381,126,1429,109,1431,114,1384,130,1369,140,1360,151,1351,162,1336,174,1291,199,1247,218"/>
+<area shape="rect" id="Node000008" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="1451,141,1535,166"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="1249,213,1382,175,1437,162,1438,167,1383,180,1250,218"/>
+<area shape="rect" id="Node000009" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="1433,190,1553,215"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="1274,220,1419,206,1420,212,1274,225"/>
+<area shape="rect" id="Node000010" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="1383,239,1604,265"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="1274,231,1369,239,1369,244,1274,236"/>
+<area shape="rect" id="Node000011" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="1429,289,1557,314"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="1254,238,1383,273,1422,283,1421,288,1382,279,1252,243"/>
+<area shape="rect" id="Node000012" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="1454,338,1533,363"/>
+<area shape="poly" id="edge11_Node000005_Node000012" title=" " alt="" coords="1228,239,1295,281,1338,304,1384,324,1441,340,1439,345,1382,329,1336,309,1292,285,1226,243"/>
+<area shape="rect" id="Node000015" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="1446,387,1541,413"/>
+<area shape="poly" id="edge14_Node000005_Node000015" title=" " alt="" coords="1222,239,1286,304,1332,342,1384,374,1433,390,1432,395,1382,378,1329,346,1282,308,1218,243"/>
+<area shape="rect" id="Node000013" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1652,338,1808,363"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1533,348,1638,348,1638,353,1533,353"/>
+<area shape="rect" id="Node000014" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1657,387,1803,413"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="1533,356,1655,382,1654,387,1532,361"/>
+<area shape="poly" id="edge15_Node000015_Node000013" title=" " alt="" coords="1540,388,1654,364,1655,369,1541,393"/>
+<area shape="poly" id="edge16_Node000015_Node000014" title=" " alt="" coords="1541,397,1643,397,1643,403,1541,403"/>
+<area shape="poly" id="edge19_Node000017_Node000005" title=" " alt="" coords="711,206,1127,222,1126,228,711,212"/>
+<area shape="rect" id="Node000018" href="$group__state-estimation-api.html#ga74af4e2bdb5a3caa9696292fb9217311" title="look&#45;up table for SOC initialization" alt="" coords="787,429,1032,454"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="711,221,740,235,792,277,837,326,872,375,897,415,892,418,868,378,833,330,789,281,737,240,709,226"/>
+<area shape="rect" id="Node000020" href="$soc__counting_8c.html#a169cb66540755e39d4f97c9c139fcd70" title="sets SOC value with a parameter between 0.0 and 100.0." alt="" coords="853,114,966,139"/>
+<area shape="poly" id="edge22_Node000017_Node000020" title=" " alt="" coords="687,183,846,140,848,145,689,188"/>
+<area shape="rect" id="Node000019" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="1112,471,1303,497"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="999,451,1105,467,1104,472,998,457"/>
+<area shape="poly" id="edge23_Node000020_Node000005" title=" " alt="" coords="966,137,1033,156,1165,207,1163,212,1031,161,964,142"/>
+<area shape="poly" id="edge24_Node000020_Node000016" title=" " alt="" coords="937,111,1002,84,1079,55,1106,47,1108,52,1081,60,1004,89,939,116"/>
+<area shape="rect" id="Node000021" href="$soc__counting_8c.html#a01db1621391900ad0b8833bf5f8173e3" title="calculates string SOC in percentage from passed string charge in As" alt="" coords="1101,120,1314,160"/>
+<area shape="poly" id="edge25_Node000020_Node000021" title=" " alt="" coords="966,127,1087,132,1087,137,966,132"/>
+<area shape="poly" id="edge26_Node000020_Node000022" title=" " alt="" coords="966,116,1106,95,1107,100,967,121"/>
+<area shape="poly" id="edge29_Node000023_Node000003" title=" " alt="" coords="349,377,405,332,442,307,483,286,509,276,510,281,485,290,445,311,408,336,352,381"/>
+<area shape="poly" id="edge30_Node000023_Node000004" title=" " alt="" coords="373,377,483,341,543,325,544,331,485,347,374,382"/>
+<area shape="poly" id="edge31_Node000023_Node000005" title=" " alt="" coords="435,379,579,360,738,335,963,287,1145,241,1146,247,965,292,739,340,579,365,436,384"/>
+<area shape="rect" id="Node000024" href="$soe__counting_8c.html#afc0923f9b1f75b95b90672319f5f692b" title="Check if all database SOE percentage values are within [0.0, 100.0] Limits SOE values to limit values..." alt="" coords="484,400,739,440"/>
+<area shape="poly" id="edge32_Node000023_Node000024" title=" " alt="" coords="436,399,471,403,470,408,435,405"/>
+<area shape="rect" id="Node000025" href="$soe__counting_8c.html#ad6713da865936c6858b60e20afe15543" title="calculates string energy in Wh from passed SOE in percentage" alt="" coords="1098,608,1317,648"/>
+<area shape="poly" id="edge33_Node000023_Node000025" title=" " alt="" coords="419,403,438,415,453,434,460,454,462,493,464,531,471,549,486,566,520,592,557,615,596,633,637,648,722,667,810,676,896,677,977,670,1051,660,1114,648,1115,654,1052,666,978,676,896,682,809,682,721,673,636,653,594,638,555,619,517,597,482,570,466,552,459,532,457,494,455,455,448,437,434,419,416,407"/>
+<area shape="rect" id="Node000026" href="$soe__counting_8c.html#a91d803600db5f528584b902a06996f99" title="calculates string SOE in percentage from passed string energy in Wh" alt="" coords="1101,529,1314,569"/>
+<area shape="poly" id="edge34_Node000023_Node000026" title=" " alt="" coords="416,402,438,415,449,428,456,441,462,468,467,493,474,504,485,514,531,534,594,548,670,557,754,562,930,562,1087,555,1087,561,931,568,754,567,669,563,593,553,529,539,483,518,470,507,462,495,456,469,451,443,445,431,434,419,413,407"/>
+<area shape="rect" id="Node000027" href="$soe__counting_8c.html#ad914661b01e25279b36ebd802252005b" title="initializes database and FRAM SOE values via lookup table (average, min and max)." alt="" coords="513,464,709,504"/>
+<area shape="poly" id="edge35_Node000023_Node000027" title=" " alt="" coords="402,402,437,415,462,433,485,450,503,457,501,462,483,454,458,437,435,420,401,407"/>
+<area shape="poly" id="edge36_Node000027_Node000005" title=" " alt="" coords="707,461,737,450,761,432,785,415,821,401,853,393,909,386,965,379,996,370,1031,356,1075,332,1116,303,1181,248,1185,252,1120,307,1078,336,1033,361,997,375,966,384,910,391,854,398,823,406,788,420,764,437,740,454,709,466"/>
+<area shape="rect" id="Node000028" href="$soe__counting_8c.html#a7461d3a1c3bf7a1a79c841b92c21ca59" title="look&#45;up table for SOE initialization" alt="" coords="829,478,989,503"/>
+<area shape="poly" id="edge37_Node000027_Node000028" title=" " alt="" coords="709,484,816,486,816,491,709,489"/>
+<area shape="rect" id="Node000029" href="$soe__counting_8c.html#ad417822c20e20b05ebe992a8577143c3" title="sets SOE value with a parameter between 0.0 and 100.0." alt="" coords="853,579,965,605"/>
+<area shape="poly" id="edge39_Node000027_Node000029" title=" " alt="" coords="668,502,862,572,860,577,667,507"/>
+<area shape="poly" id="edge38_Node000028_Node000019" title=" " alt="" coords="989,486,1098,484,1098,489,989,492"/>
+<area shape="poly" id="edge40_Node000029_Node000025" title=" " alt="" coords="966,596,1085,611,1084,616,965,601"/>
+<area shape="poly" id="edge41_Node000029_Node000026" title=" " alt="" coords="965,581,1087,564,1087,569,966,587"/>
+</map>

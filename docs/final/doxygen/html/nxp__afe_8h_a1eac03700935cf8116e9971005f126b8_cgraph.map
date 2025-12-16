@@ -1,0 +1,9 @@
+<map id="NXP_IsFirstMeasurementCycleFinished" name="NXP_IsFirstMeasurementCycleFinished">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,227,63"/>
+<area shape="rect" id="Node000002" href="$nxp__mc3377x_8c.html#a8b2476cb0a0d83db8b78b11446cad3e8" title="gets the measurement initialization status." alt="" coords="275,23,503,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,41,261,41,261,46,227,46"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="551,5,707,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="502,29,537,25,537,30,503,34"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="555,55,702,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="503,52,542,56,541,61,502,57"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="MEAS_Initialize" name="MEAS_Initialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,128,56"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x__afe_8c.html#ab03833bf09e30722e8ef6b9e90cc353d" title=" " alt="" coords="176,31,287,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,41,162,41,162,46,128,46"/>
+<area shape="rect" id="Node000003" href="$adi__ades183x_8c.html#add671ef4964affd5974d1fcd92236b65" title="Sets the pins to activate the interface board." alt="" coords="335,31,537,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="287,41,321,41,321,46,287,46"/>
+<area shape="rect" id="Node000004" href="$pex_8c.html#a8d40659d3d10755949d65e36f483c504" title="sets pin to high." alt="" coords="637,5,732,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="537,30,623,21,624,27,538,36"/>
+<area shape="rect" id="Node000007" href="$pex_8c.html#aa2309e9dbd95438d52d80cad62ce5a45" title="sets pin to input." alt="" coords="585,55,784,80"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="538,50,572,54,571,59,537,56"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="832,5,988,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="732,15,818,15,818,21,732,21"/>
+<area shape="rect" id="Node000006" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="837,55,983,80"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="733,26,838,49,837,54,732,31"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="743,52,837,31,839,36,744,57"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="784,65,823,65,823,70,784,70"/>
+</map>

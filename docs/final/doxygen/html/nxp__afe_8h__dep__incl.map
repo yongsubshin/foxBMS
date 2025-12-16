@@ -1,0 +1,7 @@
+<map id="foxbms&#45;2/src/app/driver/afe/nxp/api/nxp_afe.h" name="foxbms&#45;2/src/app/driver/afe/nxp/api/nxp_afe.h">
+<area shape="rect" id="Node000001" title="AFE driver wrapper layer for NXP ICs." alt="" coords="105,5,283,45"/>
+<area shape="rect" id="Node000002" href="$nxp__afe_8c.html" title="AFE driver wrapper layer for NXP ICs." alt="" coords="5,101,183,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,57,116,103,112,99,162,53"/>
+<area shape="rect" id="Node000003" href="$nxp__mc33775a__afe_8c.html" title="API for MC33775A Analog Frontend." alt="" coords="207,93,384,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="226,53,269,91,265,95,223,57"/>
+</map>

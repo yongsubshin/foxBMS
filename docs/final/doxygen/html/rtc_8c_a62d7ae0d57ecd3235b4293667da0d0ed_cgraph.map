@@ -1,0 +1,13 @@
+<map id="RTC_SetSystemTimeRtcFormat" name="RTC_SetSystemTimeRtcFormat">
+<area shape="rect" id="Node000001" title="set the RTC system timer." alt="" coords="5,55,228,80"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#aebef46df841323a07f9bf21b390810c9" title="Convert time from RTC_TIME_DATA_s to struct tm format." alt="" coords="298,5,495,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,52,310,31,311,36,190,57"/>
+<area shape="rect" id="Node000003" href="$rtc_8c.html#a38419831efb8e12b2275b3f5c16c7b04" title="Set the RTC system timer value." alt="" coords="276,55,517,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="228,65,262,65,262,70,228,70"/>
+<area shape="rect" id="Node000006" href="$rtc_8c.html#a51125f9e9e11ba4d06f263043bba6988" title="Convert time from struct tm to RTC_TIME_DATA_s format." alt="" coords="297,104,496,129"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="190,77,311,99,310,104,189,83"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="565,31,721,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="517,53,551,50,552,55,518,58"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="570,80,717,105"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="518,77,557,81,556,86,517,82"/>
+</map>

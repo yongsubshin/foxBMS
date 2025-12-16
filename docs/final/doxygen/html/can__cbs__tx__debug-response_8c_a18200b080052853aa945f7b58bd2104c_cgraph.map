@@ -1,0 +1,9 @@
+<map id="CANTX_TransmitBmsVersionInfo" name="CANTX_TransmitBmsVersionInfo">
+<area shape="rect" id="Node000001" title="Transmit the embedded software version information." alt="" coords="5,42,237,67"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="291,5,504,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,40,276,35,277,41,238,45"/>
+<area shape="rect" id="Node000004" href="$foxmath_8c.html#a574d9c3f4c86d7d21643ffe90230404d" title="Returns the minimum of the passed uint16_t values." alt="" coords="285,70,509,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="238,64,272,67,271,73,237,69"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="557,13,780,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="504,23,543,23,543,28,504,28"/>
+</map>

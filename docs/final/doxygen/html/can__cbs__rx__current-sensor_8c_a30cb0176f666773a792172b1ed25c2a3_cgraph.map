@@ -1,0 +1,5 @@
+<map id="CANRX_SetVoltageU3" name="CANRX_SetVoltageU3">
+<area shape="rect" id="Node000001" title="Sets V3 voltage measurement value in the CAN data shim." alt="" coords="5,5,168,31"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="216,5,351,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,15,202,15,202,21,168,21"/>
+</map>

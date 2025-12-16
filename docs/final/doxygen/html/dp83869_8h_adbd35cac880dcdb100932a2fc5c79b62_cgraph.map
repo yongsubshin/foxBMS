@@ -1,0 +1,7 @@
+<map id="PHY_EnableLoopback" name="PHY_EnableLoopback">
+<area shape="rect" id="Node000001" title="Enables PHY Loopback." alt="" coords="5,35,167,60"/>
+<area shape="rect" id="Node000002" href="$dp83869_8c.html#ad377da9c32e644071e86d0ebe9a2155e" title="Select the data transmission rate." alt="" coords="249,5,383,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,34,235,26,235,31,167,40"/>
+<area shape="rect" id="Node000003" href="$dp83869_8c.html#a950f62587760921c8ed36949b3f89cd3" title="Writes register from the Extended Address Space." alt="" coords="215,55,417,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,54,201,59,201,64,167,60"/>
+</map>

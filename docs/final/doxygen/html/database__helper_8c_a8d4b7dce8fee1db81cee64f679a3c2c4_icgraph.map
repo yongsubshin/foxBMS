@@ -1,0 +1,28 @@
+<map id="DATA_DatabaseEntryUpdatedAtLeastOnce" name="DATA_DatabaseEntryUpdatedAtLeastOnce">
+<area shape="rect" id="Node000001" title="Checks if passed database entry has been updated at least once." alt="" coords="2100,88,2315,128"/>
+<area shape="rect" id="Node000002" href="$database__helper_8c.html#a8daaadb48f61b10e8359c2719fe53c47" title="Checks if passed database entry has been periodically updated within the time interval." alt="" coords="1816,5,2044,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2126,87,1997,48,1999,43,2127,82"/>
+<area shape="rect" id="Node000003" href="$database__helper_8c.html#aa0d2762a0ab4d210b331cd07f1fa31c4" title="Checks if passed database entry has been updated within the last time interval." alt="" coords="1808,121,2052,146"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="2086,122,2053,125,2052,120,2086,116"/>
+<area shape="rect" id="Node000004" href="$redundancy_8c.html#a62a3c848bd137e8acbcdde8bdfa35717" title="Function to validate results of cell temperature measurement." alt="" coords="1513,85,1731,125"/>
+<area shape="poly" id="edge13_Node000001_Node000004" title=" " alt="" coords="2086,110,1732,108,1732,103,2086,105"/>
+<area shape="rect" id="Node000012" href="$redundancy_8c.html#aea4a1a518f430ebb0384fdf5dca1422e" title="Function to validate results of cell voltage measurement." alt="" coords="1484,150,1760,175"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="2144,135,2100,149,2052,160,1978,169,1902,174,1760,174,1760,169,1902,169,1977,164,2052,155,2098,144,2143,130"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1794,124,1731,118,1732,113,1795,118"/>
+<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="1795,149,1755,153,1755,147,1794,144"/>
+<area shape="rect" id="Node000005" href="$redundancy_8c.html#a950ca6f8b81ff95144621a1e1531d22d" title="Function to validate the measurement between redundant measurement values for cell voltage and cell t..." alt="" coords="1212,122,1436,147"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1499,120,1436,126,1436,121,1499,115"/>
+<area shape="rect" id="Node000006" href="$ftask__cfg_8c.html#a7f3620825ec0f5072516255d6febebdb" title="Cyclic 10 ms task." alt="" coords="940,122,1164,147"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1199,137,1164,137,1164,132,1199,132"/>
+<area shape="rect" id="Node000007" href="$ftask_8c.html#a2a1d135e2e4e6fef538294d8c43d0328" title="Creation of cyclic 10 ms task." alt="" coords="684,122,892,147"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="926,137,892,137,892,132,926,132"/>
+<area shape="rect" id="Node000008" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,122,636,147"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="670,137,636,137,636,132,670,132"/>
+<area shape="rect" id="Node000009" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,122,448,147"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="482,137,448,137,448,132,482,132"/>
+<area shape="rect" id="Node000010" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,122,184,147"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="218,137,184,137,184,132,218,132"/>
+<area shape="rect" id="Node000011" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,122,81,147"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="116,137,82,137,82,132,116,132"/>
+<area shape="poly" id="edge12_Node000012_Node000005" title=" " alt="" coords="1473,151,1436,148,1436,143,1474,146"/>
+</map>

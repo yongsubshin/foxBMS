@@ -1,0 +1,23 @@
+<map id="AFE_StartMeasurement" name="AFE_StartMeasurement">
+<area shape="rect" id="Node000001" title="Makes the initialization request to the AFE state machine." alt="" coords="5,132,180,157"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x_8c.html#a1c1ff182f2494eaee4800e7d91a5fdcb" title="Makes a request to the ADI driver." alt="" coords="247,5,387,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,130,159,90,227,48,260,33,262,38,229,52,162,95,111,134"/>
+<area shape="rect" id="Node000004" href="$ltc__6806_8c.html#a4bb4d1d651bd80b2151b62d35e3a2699" title="sets the current state request of the state variable ltc_state." alt="" coords="237,107,396,132"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="180,132,223,127,224,132,181,137"/>
+<area shape="rect" id="Node000006" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="473,56,629,81"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="120,129,169,109,227,91,287,80,348,73,459,66,459,72,348,78,288,86,229,97,171,114,122,134"/>
+<area shape="rect" id="Node000007" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="477,157,624,183"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="180,147,463,163,463,168,180,152"/>
+<area shape="rect" id="Node000008" href="$nxp__mc33775a__afe_8c.html#a334a022b9c2cf4f708686b2271e6d6c8" title=" " alt="" coords="228,208,405,233"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="132,155,266,201,265,206,130,160"/>
+<area shape="rect" id="Node000009" href="$ti__dummy__afe_8c.html#a204a9bbbf68dcac9181b684e11a16904" title="This function is used to wrap the TI AFE measurement API to the generic AFE measurement API." alt="" coords="235,257,398,283"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="109,156,160,199,193,223,229,244,245,250,243,255,227,248,190,227,156,203,106,160"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#abfcdf77954b6a87dca01c31efaf4d0b3" title="Post an item to the back the provided queue." alt="" coords="459,5,642,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,15,445,15,445,21,387,21"/>
+<area shape="rect" id="Node000005" href="$ltc__6806_8c.html#a42d4f8653843aeee6f118782dfff2c20" title="checks the state requests that are made." alt="" coords="461,107,640,132"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="396,117,447,117,447,122,396,122"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="376,104,478,82,479,87,377,109"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="377,130,479,152,478,157,376,135"/>
+<area shape="rect" id="Node000010" href="$ti__dummy_8c.html#a4b11954ce164634a9fdf35c7fe516bae" title=" " alt="" coords="453,257,648,283"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="398,267,440,267,440,273,398,273"/>
+</map>

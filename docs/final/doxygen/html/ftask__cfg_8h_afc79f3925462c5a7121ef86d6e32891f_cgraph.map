@@ -1,0 +1,19 @@
+<map id="FTSK_RunUserCodeCyclicAlgorithm100ms" name="FTSK_RunUserCodeCyclicAlgorithm100ms">
+<area shape="rect" id="Node000001" title="Cyclic 100 ms task for algorithms." alt="" coords="5,131,301,156"/>
+<area shape="rect" id="Node000002" href="$algorithm_8c.html#a4e741993fded0d4aa051dbb41de77001" title="handles the call of different algorithm functions when cycle time has expired" alt="" coords="349,131,501,156"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="302,141,336,141,336,146,302,146"/>
+<area shape="rect" id="Node000003" href="$algorithm_8c.html#a4500371b55e16ebcd577d234f4824895" title="initializes local variables and module internals needed to use the algorithm module" alt="" coords="571,5,718,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="436,129,482,85,514,61,548,40,564,33,566,38,551,44,517,65,486,89,440,133"/>
+<area shape="rect" id="Node000004" href="$algorithm__cfg_8c.html#ae4de9ff0cd89fabb1f2245d4d6f0f78b" title="Mark the current algorithm as done (will reset to ALGO_READY if possible)" alt="" coords="571,55,719,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="461,128,548,97,591,82,593,87,550,102,462,133"/>
+<area shape="rect" id="Node000005" href="$algorithm_8c.html#a25bb53555be2a84f5928f1581bf21d2b" title="Calling this function sets a signal that lets ALGO_Initialization() know that the initialization has ..." alt="" coords="549,156,740,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="502,149,536,153,535,159,502,155"/>
+<area shape="rect" id="Node000006" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="788,132,944,157"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="501,140,740,141,774,141,774,146,740,146,501,146"/>
+<area shape="rect" id="Node000007" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="793,181,939,207"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="451,154,496,175,550,191,609,200,669,203,779,200,779,206,669,209,608,205,549,197,494,180,449,159"/>
+<area shape="rect" id="Node000008" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="577,257,712,283"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="442,154,488,194,551,236,584,250,582,255,548,240,485,198,438,158"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="740,156,774,152,775,157,740,161"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="740,177,779,181,779,187,740,182"/>
+</map>

@@ -1,0 +1,54 @@
+<map id="foxbms&#45;2/src/app/driver/afe/adi/common/ades183x/config/adi_ades183x_cfg.h" name="foxbms&#45;2/src/app/driver/afe/adi/common/ades183x/config/adi_ades183x_cfg.h">
+<area shape="rect" id="Node000001" title="Header for the configuration for the ADI analog front&#45;end." alt="" coords="1199,5,1398,60"/>
+<area shape="rect" id="Node000002" href="$adi__ades1830__balancing_8c.html" title="Implementation of helpers for the balancing functionality." alt="" coords="1381,313,1558,368"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1387,62,1530,110,1691,160,1720,166,1746,168,1792,168,1814,170,1835,176,1855,189,1874,209,1883,224,1886,238,1883,253,1874,267,1859,277,1831,286,1750,304,1559,332,1558,326,1749,298,1830,281,1856,272,1870,263,1878,251,1881,238,1878,226,1870,212,1851,193,1832,181,1813,175,1792,173,1745,174,1719,171,1690,165,1528,115,1386,67"/>
+<area shape="rect" id="Node000003" href="$adi__ades1830__gpio__voltages_8c.html" title="Reading and the GPIO voltage registers of the ADI ADES1830." alt="" coords="249,313,450,368"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1186,41,1022,50,833,64,655,84,583,96,529,111,476,128,435,145,401,170,368,212,356,237,350,263,349,313,344,313,345,263,351,235,363,209,397,166,432,140,474,123,527,105,582,91,655,79,832,58,1022,44,1185,36"/>
+<area shape="rect" id="Node000004" href="$adi__ades1830__cfg_8c.html" title="Configuration for the ADI analog front&#45;end." alt="" coords="1703,108,1884,163"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1412,52,1685,105,1703,109,1702,115,1683,111,1411,57"/>
+<area shape="rect" id="Node000005" href="$adi__ades183x_8h.html" title="Declarations for the driver of the ADI ADES18x family of analog front&#45;ends." alt="" coords="1199,108,1398,163"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1301,74,1301,108,1296,108,1296,74"/>
+<area shape="rect" id="Node000011" href="$adi__ades183x__voltages_8c.html" title="Implementation of some software." alt="" coords="474,313,673,368"/>
+<area shape="poly" id="edge32_Node000001_Node000011" title=" " alt="" coords="1186,47,1073,64,941,96,873,117,805,144,740,176,679,213,651,236,627,263,591,314,586,311,623,259,648,232,676,209,737,171,803,139,871,112,940,90,1072,59,1186,41"/>
+<area shape="rect" id="Node000015" href="$adi__ades183x__diagnostic_8h.html" title="Headers for the diagnostic driver for the ADI analog front&#45;end." alt="" coords="377,211,580,265"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="1186,39,1036,45,866,58,709,79,646,93,600,110,567,132,539,158,497,212,493,209,535,155,564,127,597,106,645,88,708,74,865,53,1036,40,1185,34"/>
+<area shape="rect" id="Node000017" href="$adi__ades183x__helpers_8h.html" title="Headers for the diagnostic driver for the ADI analog front&#45;end." alt="" coords="705,211,903,265"/>
+<area shape="poly" id="edge24_Node000001_Node000017" title=" " alt="" coords="1223,68,869,213,867,208,1221,63"/>
+<area shape="rect" id="Node000018" href="$adi__ades183x__temperatures_8c.html" title="Helper functions related to temperature measurement." alt="" coords="1909,108,2131,163"/>
+<area shape="poly" id="edge31_Node000001_Node000018" title=" " alt="" coords="1412,43,1637,68,1896,105,1909,108,1908,113,1896,111,1636,73,1412,48"/>
+<area shape="rect" id="Node000019" href="$adi__ades183x__cfg_8c.html" title="Configuration for the ADI analog front&#45;end." alt="" coords="2155,108,2354,163"/>
+<area shape="poly" id="edge33_Node000001_Node000019" title=" " alt="" coords="1412,36,1741,58,1943,78,2144,105,2156,107,2155,113,2144,111,1942,83,1741,63,1411,41"/>
+<area shape="rect" id="Node000006" href="$adi__ades183x_8c.html" title="Driver for the ADI analog front&#45;end." alt="" coords="697,313,895,368"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1185,145,1043,155,889,169,761,189,718,200,695,213,687,225,686,236,696,264,716,291,743,311,739,315,712,294,691,267,680,237,682,223,692,209,716,195,760,184,889,164,1042,150,1185,140"/>
+<area shape="rect" id="Node000007" href="$adi__ades183x__buffers_8c.html" title="Buffers used by the driver for the ADI analog front&#45;end." alt="" coords="1714,313,1913,368"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1412,141,1546,151,1690,166,1810,185,1851,196,1874,209,1882,222,1885,236,1879,264,1863,291,1843,315,1839,311,1858,288,1874,262,1879,235,1877,224,1870,213,1849,201,1809,190,1690,171,1546,156,1412,146"/>
+<area shape="rect" id="Node000008" href="$adi__ades183x__buffers_8h.html" title="Header for the buffers used by the driver for the ADI analog front&#45;end." alt="" coords="927,211,1126,265"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="1216,170,1098,213,1097,208,1214,165"/>
+<area shape="rect" id="Node000009" href="$adi__ades183x__helpers_8c.html" title="Helper functionalities specific to the driver for the ADI ades183x." alt="" coords="1158,313,1357,368"/>
+<area shape="poly" id="edge15_Node000005_Node000009" title=" " alt="" coords="1228,172,1207,190,1190,212,1183,238,1190,264,1205,290,1225,311,1221,315,1201,293,1186,266,1178,238,1186,209,1203,186,1225,168"/>
+<area shape="rect" id="Node000012" href="$adi__ades183x__afe_8c.html" title="AFE driver implementation for ADI ICs." alt="" coords="1199,211,1398,265"/>
+<area shape="poly" id="edge16_Node000005_Node000012" title=" " alt="" coords="1301,176,1301,211,1296,211,1296,176"/>
+<area shape="rect" id="Node000013" href="$adi__ades183x__afe__dma_8c.html" title="Driver for the DMA module for the ADI driver." alt="" coords="1422,211,1637,265"/>
+<area shape="poly" id="edge17_Node000005_Node000013" title=" " alt="" coords="1372,166,1470,208,1468,213,1370,170"/>
+<area shape="rect" id="Node000014" href="$adi__ades183x__pec_8c.html" title="PEC computations." alt="" coords="1661,211,1859,265"/>
+<area shape="poly" id="edge18_Node000005_Node000014" title=" " alt="" coords="1412,157,1650,208,1661,211,1660,216,1649,213,1411,162"/>
+<area shape="poly" id="edge8_Node000008_Node000002" title=" " alt="" coords="1140,260,1370,311,1381,313,1380,319,1369,316,1139,265"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="914,268,787,285,687,292,588,299,463,316,451,318,450,313,462,311,587,294,686,287,786,280,914,263"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="955,273,857,316,855,311,953,268"/>
+<area shape="poly" id="edge11_Node000008_Node000007" title=" " alt="" coords="1140,256,1188,263,1474,299,1714,326,1713,331,1474,304,1188,268,1139,261"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="1100,268,1198,311,1196,316,1098,273"/>
+<area shape="rect" id="Node000010" href="$adi__ades183x__initialization_8c.html" title="Implementation of some software." alt="" coords="919,313,1134,368"/>
+<area shape="poly" id="edge13_Node000008_Node000010" title=" " alt="" coords="1029,279,1029,313,1024,313,1024,279"/>
+<area shape="poly" id="edge14_Node000008_Node000011" title=" " alt="" coords="914,268,686,316,673,319,672,314,685,311,913,263"/>
+<area shape="poly" id="edge20_Node000015_Node000003" title=" " alt="" coords="436,276,385,315,382,311,433,271"/>
+<area shape="poly" id="edge21_Node000015_Node000006" title=" " alt="" coords="575,267,714,311,713,316,573,272"/>
+<area shape="poly" id="edge23_Node000015_Node000011" title=" " alt="" coords="515,273,551,311,547,315,511,277"/>
+<area shape="rect" id="Node000016" href="$adi__ades183x__diagnostic__w_8c.html" title="Dummy diagnostics driver for the ADI analog front end." alt="" coords="5,313,224,368"/>
+<area shape="poly" id="edge22_Node000015_Node000016" title=" " alt="" coords="371,272,210,316,209,311,370,266"/>
+<area shape="poly" id="edge25_Node000017_Node000002" title=" " alt="" coords="917,263,1045,279,1146,286,1245,293,1370,311,1381,313,1380,318,1369,316,1244,298,1145,291,1045,284,917,268"/>
+<area shape="poly" id="edge26_Node000017_Node000003" title=" " alt="" coords="692,266,463,316,451,319,449,314,462,311,691,261"/>
+<area shape="poly" id="edge27_Node000017_Node000006" title=" " alt="" coords="803,279,801,313,795,313,798,279"/>
+<area shape="poly" id="edge28_Node000017_Node000009" title=" " alt="" coords="917,263,1147,311,1158,313,1157,318,1146,316,916,268"/>
+<area shape="poly" id="edge29_Node000017_Node000010" title=" " alt="" coords="875,268,970,311,968,316,873,273"/>
+<area shape="poly" id="edge30_Node000017_Node000011" title=" " alt="" coords="733,273,634,316,632,311,731,268"/>
+</map>

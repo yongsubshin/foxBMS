@@ -1,0 +1,5 @@
+<map id="MXM_InitializeStateStruct" name="MXM_InitializeStateStruct">
+<area shape="rect" id="Node000001" title="Initializes the state structs with default values." alt="" coords="5,5,196,31"/>
+<area shape="rect" id="Node000002" href="$mxm__17852_8c.html#a6233260ebe7abdd7645e6cb9d175f6de" title="returns the model ID of the daisy chain" alt="" coords="244,5,471,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,15,230,15,230,21,196,21"/>
+</map>

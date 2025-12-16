@@ -1,0 +1,5 @@
+<map id="SPI_GetChipSelectPin" name="SPI_GetChipSelectPin">
+<area shape="rect" id="Node000001" title="Gets the chip select pin (independently whether it is a hard&#45; or software chip selected one)" alt="" coords="5,5,167,31"/>
+<area shape="rect" id="Node000002" href="$spi_8c.html#ac0ea5cdabc29425ca4b346ff204460ef" title="Gets the hardware chip select pin." alt="" coords="215,5,439,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,15,201,15,201,21,167,21"/>
+</map>

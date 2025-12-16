@@ -1,0 +1,17 @@
+<map id="CANTX_BuildString0Message" name="CANTX_BuildString0Message">
+<area shape="rect" id="Node000001" title="sets the power signal of the StringP0 message" alt="" coords="5,95,216,121"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="269,5,482,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,93,263,55,290,47,291,52,265,60,150,98"/>
+<area shape="rect" id="Node000004" href="$can__cbs__tx__string-values-p0_8c.html#ad8b3f504d434efeb1b141aebe8a3abe2" title="calculates the return value of the current" alt="" coords="265,70,486,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="216,95,251,92,251,97,217,101"/>
+<area shape="rect" id="Node000006" href="$can__cbs__tx__string-values-p0_8c.html#a0235666628ea9f136c73fb412380e8e7" title="calculates the return value of the power" alt="" coords="269,119,482,145"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="217,115,255,118,255,124,216,120"/>
+<area shape="rect" id="Node000007" href="$can__cbs__tx__string-values-p0_8c.html#ac9a24a74e2a7f492e73278b366dd81b2" title="calculates the return value of the voltage" alt="" coords="264,169,487,194"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="149,118,265,155,298,163,297,168,263,160,147,123"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="535,13,757,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="482,23,521,23,521,28,482,28"/>
+<area shape="rect" id="Node000005" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="549,119,743,145"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="446,93,562,114,562,119,445,98"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="482,129,535,129,535,135,482,135"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="445,166,562,145,562,150,446,171"/>
+</map>

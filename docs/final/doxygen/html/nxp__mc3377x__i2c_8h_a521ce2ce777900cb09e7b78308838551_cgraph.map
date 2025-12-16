@@ -1,0 +1,54 @@
+<map id="N77x_InitializeI2c" name="N77x_InitializeI2c">
+<area shape="rect" id="Node000001" title="init I2C for the N77X slaves." alt="" coords="5,597,144,623"/>
+<area shape="rect" id="Node000002" href="$nxp__mc3377x-ll_8c.html#ac3c25850e67f6c74de3a9b01deeb9e7d" title="Write a value into a specific register in a specific device." alt="" coords="192,597,393,623"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,607,178,607,178,613,144,613"/>
+<area shape="rect" id="Node000003" href="$nxp__mc3377x-ll_8c.html#a04878a02f18cdac47a678471869aea9e" title="Composes a message." alt="" coords="465,270,692,310"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="303,595,549,318,553,322,307,599"/>
+<area shape="rect" id="Node000016" href="$nxp__mc3377x-ll_8c.html#ac6ffb0eb25c83ca332cef65122e24a61" title="Copies a message to the buffer to be passed to the SPI transmit functions." alt="" coords="466,473,691,499"/>
+<area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="307,595,362,551,400,527,440,508,463,500,465,505,442,512,403,532,366,556,310,599"/>
+<area shape="rect" id="Node000017" href="$nxp__mc3377x-ll_8c.html#a976c1225c4b0298961bc662d4b103401" title="Wait for the SPI transmit communication to complete, using notifications." alt="" coords="441,523,716,548"/>
+<area shape="poly" id="edge16_Node000002_Node000017" title=" " alt="" coords="325,595,379,575,441,557,480,548,481,553,442,562,381,581,327,600"/>
+<area shape="rect" id="Node000019" href="$os__freertos_8c.html#a25b7418eb914b83dd88bbc0424333139" title="Clear pending notification of a task, with index." alt="" coords="475,572,682,597"/>
+<area shape="poly" id="edge18_Node000002_Node000019" title=" " alt="" coords="393,598,461,592,462,598,394,604"/>
+<area shape="rect" id="Node000020" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="797,623,953,648"/>
+<area shape="poly" id="edge19_Node000002_Node000020" title=" " alt="" coords="394,612,784,629,783,634,394,617"/>
+<area shape="rect" id="Node000021" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="802,672,949,697"/>
+<area shape="poly" id="edge20_Node000002_Node000021" title=" " alt="" coords="368,620,442,631,789,673,788,678,441,637,367,625"/>
+<area shape="rect" id="Node000022" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="811,820,939,845"/>
+<area shape="poly" id="edge21_Node000002_Node000022" title=" " alt="" coords="304,621,325,651,356,689,396,728,443,760,487,780,533,796,629,817,720,828,798,832,798,837,720,834,628,823,532,801,485,785,440,764,393,732,352,693,321,654,300,624"/>
+<area shape="rect" id="Node000023" href="$spi_8c.html#a2a0f36d8cb7e54304284f758cc108c36" title="Transmits and receives data on SPI with DMA." alt="" coords="469,724,688,749"/>
+<area shape="poly" id="edge22_Node000002_Node000023" title=" " alt="" coords="311,621,367,661,404,683,442,702,491,718,489,723,440,707,401,688,364,665,308,625"/>
+<area shape="rect" id="Node000004" href="$uc__msg__t_8c.html#abcbeff3377331a049c97b7403ed941e5" title=" " alt="" coords="838,351,913,376"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="656,308,765,335,825,350,824,355,763,341,654,313"/>
+<area shape="rect" id="Node000006" href="$uc__msg__t_8c.html#a7f8e9597edfa81d78028f7ea457d5fbf" title=" " alt="" coords="835,400,915,425"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="613,308,682,347,765,385,823,401,821,406,763,390,679,352,611,313"/>
+<area shape="rect" id="Node000007" href="$uc__msg__t_8c.html#a3820d743d94cf73ac58e9a16645b44a9" title=" " alt="" coords="837,449,914,475"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="601,308,669,371,715,405,765,434,794,445,824,453,822,458,792,450,763,439,712,410,666,375,597,312"/>
+<area shape="rect" id="Node000008" href="$uc__msg__t_8c.html#a61a0e8dba459317314fb3117ddc9c491" title=" " alt="" coords="841,499,909,524"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="595,309,622,347,661,394,709,443,765,484,796,497,828,504,827,509,794,502,763,488,706,447,657,398,618,350,591,312"/>
+<area shape="rect" id="Node000009" href="$uc__msg__t_8c.html#a4ba0a5872ab51ba0269dc13de937d03c" title=" " alt="" coords="836,5,915,31"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="586,269,610,221,648,158,699,94,729,65,763,40,791,26,821,19,823,24,793,31,765,44,733,69,703,97,653,162,615,224,591,271"/>
+<area shape="rect" id="Node000010" href="$uc__msg__t_8c.html#a3c48e6a9f285dd481d3347e1091c0052" title=" " alt="" coords="826,55,925,80"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="590,268,617,230,656,181,705,131,763,89,787,78,811,71,813,77,788,83,765,94,709,135,660,184,621,233,595,271"/>
+<area shape="rect" id="Node000011" href="$uc__msg__t_8c.html#a70ab4fcb1b866d409b03e776f3152c40" title=" " alt="" coords="827,104,924,129"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="597,268,666,203,712,168,763,138,812,122,814,127,765,143,715,172,669,207,601,271"/>
+<area shape="rect" id="Node000012" href="$uc__msg__t_8c.html#a4b90b11dd448f470f3ea67a562fa6600" title=" " alt="" coords="832,153,919,179"/>
+<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="609,268,678,227,763,187,818,172,819,177,765,193,681,232,612,272"/>
+<area shape="rect" id="Node000013" href="$uc__msg__t_8c.html#a566e95d2a575519950669a0d60c79b04" title=" " alt="" coords="797,203,953,228"/>
+<area shape="poly" id="edge12_Node000003_Node000013" title=" " alt="" coords="649,267,763,237,799,228,800,234,765,242,650,273"/>
+<area shape="rect" id="Node000014" href="$uc__msg__t_8c.html#ac345657be7107582ca2c5a216a06d22d" title=" " alt="" coords="827,252,924,277"/>
+<area shape="poly" id="edge13_Node000003_Node000014" title=" " alt="" coords="692,278,813,267,813,273,693,283"/>
+<area shape="rect" id="Node000015" href="$uc__msg__t_8c.html#a66bb13bf2b9da86b53e0eeaa7fd8c854" title=" " alt="" coords="828,301,923,327"/>
+<area shape="poly" id="edge14_Node000003_Node000015" title=" " alt="" coords="693,297,815,306,814,312,692,302"/>
+<area shape="rect" id="Node000005" href="$uc__msg__t_8c.html#af2050c4f2b02419ffb51c48ade032c02" title=" " alt="" coords="1035,351,1144,376"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="913,361,1021,361,1021,366,913,366"/>
+<area shape="rect" id="Node000018" href="$os__freertos_8c.html#a7578e983d03af6f03fd3fe09f293cdb1" title="Wait for a notification, with index." alt="" coords="764,548,987,573"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="716,544,750,547,750,553,716,550"/>
+<area shape="poly" id="edge25_Node000023_Node000020" title=" " alt="" coords="605,721,676,690,763,657,792,649,793,654,765,662,678,695,607,726"/>
+<area shape="poly" id="edge26_Node000023_Node000021" title=" " alt="" coords="651,721,789,697,790,702,652,727"/>
+<area shape="poly" id="edge27_Node000023_Node000022" title=" " alt="" coords="613,747,765,806,799,815,797,820,763,811,611,752"/>
+<area shape="rect" id="Node000024" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="799,771,952,796"/>
+<area shape="poly" id="edge23_Node000023_Node000024" title=" " alt="" coords="660,747,786,767,785,772,660,752"/>
+<area shape="rect" id="Node000025" href="$fsystem_8h.html#af23205627be1616c6b1dcdb684060322" title="Switch back to user mode." alt="" coords="784,721,967,747"/>
+<area shape="poly" id="edge24_Node000023_Node000025" title=" " alt="" coords="688,733,770,732,770,738,688,738"/>
+</map>

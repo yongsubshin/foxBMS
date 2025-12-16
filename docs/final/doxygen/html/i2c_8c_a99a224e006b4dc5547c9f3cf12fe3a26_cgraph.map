@@ -1,0 +1,35 @@
+<map id="I2C_WriteReadDma" name="I2C_WriteReadDma">
+<area shape="rect" id="Node000001" title="reads from an I2C slave, using DMA." alt="" coords="5,228,155,253"/>
+<area shape="rect" id="Node000002" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="257,5,411,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,227,96,189,120,138,154,85,176,60,201,40,221,29,243,22,245,27,223,34,204,44,180,64,159,88,124,141,101,191,88,229"/>
+<area shape="rect" id="Node000003" href="$fsystem_8h.html#af23205627be1616c6b1dcdb684060322" title="Switch back to user mode." alt="" coords="243,55,425,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="85,226,102,197,127,160,161,121,201,89,228,77,231,82,204,94,164,125,131,163,106,200,90,229"/>
+<area shape="rect" id="Node000004" href="$i2c_8c.html#ac904024d75c223ad5c2a6a4f0467b5c3" title="Clear pending notifications." alt="" coords="251,104,417,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="91,226,136,182,167,158,202,138,237,126,238,131,204,143,170,163,139,186,94,230"/>
+<area shape="rect" id="Node000006" href="$i2c_8c.html#a7e25eedb7ca8d652b5dfa3524544e8d7" title="Return transmit time of a word in microseconds." alt="" coords="237,153,431,179"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="106,226,150,206,202,187,235,179,237,184,203,193,152,211,108,230"/>
+<area shape="rect" id="Node000007" href="$i2c_8c.html#aabdf9c7074f69f6486fb02d4297ec7f8" title="Wait for the I2C receive communication to complete, using notifications." alt="" coords="203,203,465,228"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="154,231,193,227,194,232,155,236"/>
+<area shape="rect" id="Node000009" href="$i2c_8c.html#a2708e6ee456b45b63fd1080bfb79fced" title="Wait for the I2C transmit communication to complete, using notifications." alt="" coords="203,252,465,277"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="155,245,190,248,189,254,154,250"/>
+<area shape="rect" id="Node000010" href="$i2c_8c.html#a79b77f8447ee8b71cd04895699df54bb" title="Waits for a stop condition to be detected." alt="" coords="280,301,388,327"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="110,251,203,286,267,301,266,306,202,291,108,256"/>
+<area shape="rect" id="Node000014" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="274,351,394,376"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="95,252,140,295,170,318,204,337,232,347,261,354,260,359,230,352,202,342,167,322,136,299,91,256"/>
+<area shape="rect" id="Node000015" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="256,400,412,425"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="90,252,106,281,132,318,164,355,204,386,244,402,242,407,201,391,161,359,127,321,102,284,85,255"/>
+<area shape="rect" id="Node000016" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="261,449,407,475"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="88,252,101,290,124,340,159,392,180,416,204,436,225,447,248,454,246,459,223,452,201,440,176,420,155,396,120,343,96,292,83,254"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#a25b7418eb914b83dd88bbc0424333139" title="Clear pending notification of a task, with index." alt="" coords="521,104,728,129"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="417,114,507,114,507,119,417,119"/>
+<area shape="rect" id="Node000008" href="$os__freertos_8c.html#a7578e983d03af6f03fd3fe09f293cdb1" title="Wait for a notification, with index." alt="" coords="513,227,736,252"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="466,224,500,226,500,232,465,229"/>
+<area shape="poly" id="edge9_Node000009_Node000008" title=" " alt="" coords="465,251,500,248,500,253,465,256"/>
+<area shape="rect" id="Node000011" href="$mcu_8c.html#a298a563701c7fc98c1f2750a1a2b8220" title="Get the current value of the Free Running Counter 0 (FRC0)" alt="" coords="784,289,987,315"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="388,310,770,302,770,307,388,316"/>
+<area shape="rect" id="Node000012" href="$mcu_8c.html#af5a3b75b7431935f913d80e31eb99690" title="Checks if a timeout in microseconds has elapsed." alt="" coords="547,340,702,365"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="389,318,534,338,533,343,388,324"/>
+<area shape="poly" id="edge14_Node000012_Node000011" title=" " alt="" coords="691,337,806,315,807,320,692,342"/>
+<area shape="rect" id="Node000013" href="$mcu_8c.html#a357da0bcb906f4ad573ed0d4244dd0a2" title="Convert the counter value FRC0 to a time in microseconds." alt="" coords="787,339,984,379"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="702,352,773,354,773,359,702,357"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="CANTX_SendMessageFatalErrorCode" name="CANTX_SendMessageFatalErrorCode">
+<area shape="rect" id="Node000001" title="Helper function to send the actual error Code." alt="" coords="5,31,264,56"/>
+<area shape="rect" id="Node000002" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="387,5,507,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,30,373,21,373,27,264,36"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="312,55,581,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="264,51,299,53,298,59,264,56"/>
+</map>

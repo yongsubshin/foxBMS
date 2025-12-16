@@ -1,0 +1,12 @@
+<map id="CANTX_SetBatteryCellMuxMinDischargeTemperatureMessageData" name="CANTX_SetBatteryCellMuxMinDischargeTemperatureMessageData">
+<area shape="rect" id="Node000001" title="Adds the data to the message." alt="" coords="5,49,264,89"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="357,5,552,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,46,360,30,361,35,262,51"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="645,74,859,114"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="264,71,631,86,631,92,264,77"/>
+<area shape="rect" id="Node000005" href="$can__cbs__tx__debug-build-configuration_8c.html#ab200ee49334c2e08a5f244255203c3bf" title="Sends the application configuration message." alt="" coords="312,107,597,132"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="262,86,361,102,360,107,261,91"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="907,81,1129,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="859,91,893,91,893,97,859,97"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="597,104,631,102,632,107,598,110"/>
+</map>

@@ -1,0 +1,48 @@
+<map id="LTC_CalculatePec15" name="LTC_CalculatePec15">
+<area shape="rect" id="Node000001" title="calculates the PEC15" alt="" coords="644,129,795,155"/>
+<area shape="rect" id="Node000002" href="$ltc__6813-1_8c.html#aa5c44fb985b3dd89bdf73ad534f4f1ce" title="sets the balancing according to the control values read in the database." alt="" coords="445,104,596,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="630,133,596,129,597,124,631,128"/>
+<area shape="rect" id="Node000004" href="$ltc__6806_8c.html#a5df2618318512a77c0fd7c0c3a3b13e6" title="checks if the data received from the daisy&#45;chain is not corrupt." alt="" coords="463,5,578,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="694,121,650,82,595,44,569,33,571,28,597,40,653,78,697,117"/>
+<area shape="rect" id="Node000007" href="$ltc__6813-1_8c.html#a5df2618318512a77c0fd7c0c3a3b13e6" title="checks if the data received from the daisy&#45;chain is not corrupt." alt="" coords="463,153,578,179"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="631,155,579,162,578,156,630,150"/>
+<area shape="rect" id="Node000008" href="$ltc__6806_8c.html#aaf84ea01e26f5cabd668be8bc46eda9a" title="initialize the daisy&#45;chain." alt="" coords="485,55,557,80"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="676,126,595,94,556,81,558,75,597,89,678,121"/>
+<area shape="rect" id="Node000009" href="$ltc__6813-1_8c.html#aaf84ea01e26f5cabd668be8bc46eda9a" title="initialize the daisy&#45;chain." alt="" coords="485,203,557,228"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="675,162,597,193,558,206,556,201,595,187,673,158"/>
+<area shape="rect" id="Node000010" href="$ltc__6813-1_8c.html#a8cc4616cd88973c4eff35c1a5490bee0" title="sends command and data to the LTC daisy&#45;chain." alt="" coords="451,401,591,427"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="703,167,534,403,529,399,699,164"/>
+<area shape="rect" id="Node000003" href="$ltc__6813-1_8c.html#acf30d82064c640d2c4f36cd270c0647b" title="trigger function for the LTC driver state machine." alt="" coords="13,352,107,377"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="432,108,368,106,298,112,228,129,195,143,164,161,141,182,122,206,92,261,75,314,66,352,61,351,70,312,87,259,117,203,137,178,161,157,192,139,226,124,297,107,368,101,432,102"/>
+<area shape="rect" id="Node000005" href="$ltc__6806_8c.html#acf30d82064c640d2c4f36cd270c0647b" title="trigger function for the LTC driver state machine." alt="" coords="233,28,327,53"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="450,27,328,39,327,34,449,22"/>
+<area shape="rect" id="Node000006" href="$ltc__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,28,115,53"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="219,43,115,43,115,38,219,38"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="449,159,385,155,310,158,234,173,198,187,164,204,144,219,127,238,98,280,79,321,68,353,63,351,74,319,94,277,122,234,141,215,161,200,196,182,233,168,310,153,385,150,450,153"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="470,65,327,49,328,43,471,59"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="471,210,407,204,328,205,243,216,203,228,164,244,131,268,104,298,70,353,65,350,100,295,128,264,161,240,201,223,242,211,327,199,407,199,471,205"/>
+<area shape="rect" id="Node000011" href="$ltc__6813-1_8c.html#a786975d6eab756509f5545e1593e76d0" title="sends data to the LTC daisy&#45;chain to control the user port expander from TI" alt="" coords="177,500,383,525"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="493,437,450,465,398,491,362,503,360,497,396,486,447,461,490,433"/>
+<area shape="rect" id="Node000012" href="$ltc__6813-1_8c.html#aab5393dbbf131697c9f2a99caa455bc2" title="sends data to the LTC daisy&#45;chain to read EEPROM on slaves." alt="" coords="163,549,397,575"/>
+<area shape="poly" id="edge15_Node000010_Node000012" title=" " alt="" coords="505,440,461,491,432,518,399,540,372,552,370,547,396,536,428,514,457,488,501,436"/>
+<area shape="rect" id="Node000013" href="$ltc__6813-1_8c.html#a144326ee126c8959c8cfe4066532359a" title="sends data to the LTC daisy&#45;chain to write EEPROM on slaves." alt="" coords="163,599,397,624"/>
+<area shape="poly" id="edge17_Node000010_Node000013" title=" " alt="" coords="511,441,494,475,470,516,438,556,399,590,376,601,374,596,396,585,434,552,465,513,490,472,506,438"/>
+<area shape="rect" id="Node000014" href="$ltc__6813-1_8c.html#ab6618edb82b72f99d9a6f68fc29bec40" title="sends data to the LTC daisy&#45;chain to communicate via I2C" alt="" coords="195,253,365,279"/>
+<area shape="poly" id="edge19_Node000010_Node000014" title=" " alt="" coords="501,392,457,341,428,315,396,294,364,281,366,276,399,289,431,311,461,338,505,389"/>
+<area shape="rect" id="Node000015" href="$ltc__6813-1_8c.html#a31ff8a37e41588d5c4da46b46b060d50" title="sends data to the LTC daisy&#45;chain to configure multiplexer channels." alt="" coords="203,303,357,328"/>
+<area shape="poly" id="edge21_Node000010_Node000015" title=" " alt="" coords="489,395,447,368,396,343,356,331,357,325,398,338,449,363,492,391"/>
+<area shape="rect" id="Node000016" href="$ltc__6813-1_8c.html#a9b561e1638689ec912cdfa268fde1e49" title="sends data to the LTC daisy&#45;chain to control the user port expander" alt="" coords="201,352,359,377"/>
+<area shape="poly" id="edge23_Node000010_Node000016" title=" " alt="" coords="444,401,342,380,343,375,445,396"/>
+<area shape="rect" id="Node000017" href="$ltc__6813-1_8c.html#a75d9e2c2e420fd17b5d22abab8773b8a" title="sends data to the LTC daisy&#45;chain to control the user port expander from TI" alt="" coords="165,401,395,427"/>
+<area shape="poly" id="edge25_Node000010_Node000017" title=" " alt="" coords="437,417,396,417,396,411,437,411"/>
+<area shape="rect" id="Node000018" href="$ltc__6813-1_8c.html#aa9f0ab2d87d3c99ece0b4813cb043120" title="sends data to the LTC daisy&#45;chain to control the user port expander from TI" alt="" coords="173,451,387,476"/>
+<area shape="poly" id="edge27_Node000010_Node000018" title=" " alt="" coords="445,432,398,442,343,453,342,448,397,437,444,427"/>
+<area shape="poly" id="edge14_Node000011_Node000003" title=" " alt="" coords="173,497,161,491,128,465,101,434,66,379,70,376,105,431,132,461,164,486,176,493"/>
+<area shape="poly" id="edge16_Node000012_Node000003" title=" " alt="" coords="169,545,161,540,140,522,122,502,93,456,74,412,62,378,67,377,79,410,98,453,126,498,144,519,164,536,172,541"/>
+<area shape="poly" id="edge18_Node000013_Node000003" title=" " alt="" coords="168,594,161,589,137,566,116,538,86,477,69,420,61,378,66,377,74,418,91,475,121,535,141,562,164,585,171,590"/>
+<area shape="poly" id="edge20_Node000014_Node000003" title=" " alt="" coords="187,285,164,294,114,323,77,354,74,350,111,319,162,289,185,280"/>
+<area shape="poly" id="edge22_Node000015_Node000003" title=" " alt="" coords="207,333,163,343,108,356,107,351,162,338,206,328"/>
+<area shape="poly" id="edge24_Node000016_Node000003" title=" " alt="" coords="187,367,107,367,107,362,187,362"/>
+<area shape="poly" id="edge26_Node000017_Node000003" title=" " alt="" coords="201,401,162,393,107,379,108,374,163,387,202,396"/>
+<area shape="poly" id="edge28_Node000018_Node000003" title=" " alt="" coords="181,449,161,442,111,411,73,379,76,375,114,407,164,437,183,444"/>
+</map>

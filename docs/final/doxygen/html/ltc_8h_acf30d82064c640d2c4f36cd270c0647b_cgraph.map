@@ -1,0 +1,229 @@
+<map id="LTC_Trigger" name="LTC_Trigger">
+<area shape="rect" id="Node000001" title="trigger function for the LTC driver state machine." alt="" coords="5,1423,100,1448"/>
+<area shape="rect" id="Node000002" href="$ltc__afe__dma_8c.html#a41589e9bbef5ab1714ce39c3202c038f" title="gets the SPI transmit status." alt="" coords="179,5,353,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,1422,52,1165,62,723,73,491,90,285,101,198,114,127,129,73,146,40,164,26,168,30,150,44,134,75,119,128,106,199,95,285,79,492,67,723,58,1165,57,1422"/>
+<area shape="rect" id="Node000003" href="$ltc__afe__dma_8c.html#ae079532d397f92e5636a273f36953034" title="sets the SPI transmit status." alt="" coords="173,55,359,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="51,1422,54,1176,65,752,77,531,93,333,116,181,130,130,146,98,160,85,163,89,150,101,135,132,121,182,99,334,82,531,71,752,59,1176,57,1422"/>
+<area shape="rect" id="Node000004" href="$diag_8c.html#a3e60a00edfbecf928fd6db140626647a" title="DIAG_CheckEvent provides a simple interface to check an event for STD_OK." alt="" coords="477,192,615,217"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="51,1423,54,1199,66,821,78,624,94,449,116,315,130,270,146,243,168,228,200,217,282,203,376,198,463,198,463,204,376,203,283,208,201,222,171,233,150,246,135,272,122,316,99,449,83,624,71,821,59,1199,57,1423"/>
+<area shape="rect" id="Node000005" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="791,249,904,275"/>
+<area shape="poly" id="edge17_Node000001_Node000005" title=" " alt="" coords="51,1422,52,1181,61,769,72,554,89,363,100,284,113,219,128,170,146,141,165,128,189,119,248,109,318,110,395,118,546,147,661,177,744,207,813,241,810,245,742,212,659,182,545,152,394,123,318,115,248,115,190,124,168,133,150,145,133,173,118,220,105,285,94,364,77,554,66,769,57,1181,57,1422"/>
+<area shape="rect" id="Node000017" href="$ltc__6813-1_8c.html#aa5c44fb985b3dd89bdf73ad534f4f1ce" title="sets the balancing according to the control values read in the database." alt="" coords="191,560,341,585"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="52,1422,61,1261,80,1000,93,865,108,745,126,654,135,622,146,603,160,590,177,581,179,586,163,595,150,606,140,624,131,655,113,746,98,865,85,1000,66,1261,57,1422"/>
+<area shape="rect" id="Node000021" href="$ltc__6806_8c.html#a5df2618318512a77c0fd7c0c3a3b13e6" title="checks if the data received from the daisy&#45;chain is not corrupt." alt="" coords="489,509,603,535"/>
+<area shape="poly" id="edge22_Node000001_Node000021" title=" " alt="" coords="52,1422,58,1250,75,969,87,824,103,696,123,598,134,565,146,545,170,531,203,521,290,510,387,509,475,514,475,519,387,515,291,516,204,526,172,536,150,549,138,568,128,600,108,697,93,825,80,970,64,1251,57,1423"/>
+<area shape="rect" id="Node000022" href="$ltc__6813-1_8c.html#a5df2618318512a77c0fd7c0c3a3b13e6" title="checks if the data received from the daisy&#45;chain is not corrupt." alt="" coords="489,743,603,768"/>
+<area shape="poly" id="edge24_Node000001_Node000022" title=" " alt="" coords="52,1423,60,1268,77,1019,90,891,106,778,124,693,135,664,146,647,175,624,204,610,232,603,260,602,289,607,320,617,385,646,403,661,412,677,419,694,434,711,457,725,482,736,480,741,454,729,430,715,415,697,407,680,399,664,383,651,318,622,288,612,260,608,233,608,206,615,178,629,150,650,139,666,129,694,111,779,95,892,83,1020,65,1269,57,1423"/>
+<area shape="rect" id="Node000023" href="$ltc__6806_8c.html#ad184ef8adbd5dadb067b1d96257531cc" title="re&#45;entrance check of LTC state machine trigger function" alt="" coords="183,1272,349,1297"/>
+<area shape="poly" id="edge26_Node000001_Node000023" title=" " alt="" coords="57,1421,89,1366,115,1334,147,1308,169,1296,172,1301,149,1312,119,1338,94,1369,62,1424"/>
+<area shape="rect" id="Node000026" href="$ltc__6806_8c.html#ae81b8aa0def104fff84ac45b1832c209" title="condition&#45;based state transition depending on retVal" alt="" coords="155,307,377,332"/>
+<area shape="poly" id="edge29_Node000001_Node000026" title=" " alt="" coords="52,1422,57,1218,72,875,85,697,101,538,121,417,133,375,146,350,160,337,163,341,150,353,138,377,126,418,106,539,90,698,78,876,62,1218,57,1422"/>
+<area shape="rect" id="Node000027" href="$ltc__6806_8c.html#a3c9b0317c936d8bc03fb8e118ac2043d" title="function for setting LTC_Trigger state transitions" alt="" coords="472,357,620,383"/>
+<area shape="poly" id="edge122_Node000001_Node000027" title=" " alt="" coords="52,1422,56,1224,70,894,82,723,98,571,119,456,132,417,146,393,168,379,199,369,280,359,372,357,458,360,458,366,372,362,281,364,200,375,170,384,150,397,137,419,124,457,104,572,87,724,75,895,61,1225,57,1423"/>
+<area shape="rect" id="Node000028" href="$ltc__6813-1_8c.html#ae81b8aa0def104fff84ac45b1832c209" title="condition&#45;based state transition depending on retVal" alt="" coords="155,408,377,433"/>
+<area shape="poly" id="edge32_Node000001_Node000028" title=" " alt="" coords="52,1423,58,1236,75,926,88,765,103,621,123,512,134,474,146,451,160,438,163,442,150,454,139,476,128,513,109,622,93,765,80,926,64,1236,57,1423"/>
+<area shape="rect" id="Node000029" href="$ltc__6813-1_8c.html#a3c9b0317c936d8bc03fb8e118ac2043d" title="function for setting LTC_Trigger state transitions" alt="" coords="472,459,620,484"/>
+<area shape="poly" id="edge123_Node000001_Node000029" title=" " alt="" coords="52,1423,58,1245,74,952,87,801,103,667,122,565,133,530,146,509,168,495,199,484,280,470,372,465,458,465,458,471,372,470,280,476,200,489,170,500,150,513,138,533,127,566,108,668,92,802,80,953,63,1245,57,1423"/>
+<area shape="rect" id="Node000030" href="$ltc__6813-1_8c.html#a36e5b2694d07c602032510a38c08536b" title="saves the read values of the external EEPROMs read from the LTC daisy&#45;chain." alt="" coords="165,1451,367,1476"/>
+<area shape="poly" id="edge35_Node000001_Node000030" title=" " alt="" coords="101,1439,156,1446,155,1451,100,1444"/>
+<area shape="rect" id="Node000031" href="$ltc__6813-1_8c.html#a51dd4cd3b1cdb24e6c3818f44213574a" title="brief missing" alt="" coords="149,1500,383,1525"/>
+<area shape="poly" id="edge36_Node000001_Node000031" title=" " alt="" coords="74,1446,108,1466,149,1485,178,1494,176,1499,147,1490,106,1471,72,1450"/>
+<area shape="rect" id="Node000032" href="$ltc__6813-1_8c.html#a786975d6eab756509f5545e1593e76d0" title="sends data to the LTC daisy&#45;chain to control the user port expander from TI" alt="" coords="163,809,369,835"/>
+<area shape="poly" id="edge37_Node000001_Node000032" title=" " alt="" coords="51,1422,55,1312,68,1137,80,1046,96,961,118,891,131,865,146,844,149,841,153,845,150,848,136,867,123,893,101,962,85,1046,73,1138,60,1312,57,1423"/>
+<area shape="rect" id="Node000034" href="$ltc__6813-1_8c.html#ab657476147f4ff820c7d803f5e6a965e" title="checks if the multiplexers acknowledged transmission." alt="" coords="167,1549,365,1575"/>
+<area shape="poly" id="edge40_Node000001_Node000034" title=" " alt="" coords="64,1447,98,1491,122,1514,149,1534,166,1542,163,1547,147,1539,118,1519,94,1494,60,1450"/>
+<area shape="rect" id="Node000035" href="$ltc__6813-1_8c.html#a9c38411ae514dc72ccfc19fbfbaf4cbb" title="sends 72 clock pulses to the LTC daisy&#45;chain." alt="" coords="213,1599,319,1624"/>
+<area shape="poly" id="edge41_Node000001_Node000035" title=" " alt="" coords="61,1447,72,1476,90,1513,116,1552,150,1584,173,1596,200,1604,198,1609,171,1601,146,1588,112,1555,86,1516,67,1478,56,1449"/>
+<area shape="rect" id="Node000036" href="$ltc__6806_8c.html#aaf84ea01e26f5cabd668be8bc46eda9a" title="initialize the daisy&#45;chain." alt="" coords="510,1057,582,1083"/>
+<area shape="poly" id="edge42_Node000001_Node000036" title=" " alt="" coords="53,1422,63,1354,82,1255,110,1159,127,1122,146,1097,173,1083,211,1073,306,1063,409,1061,496,1064,496,1070,409,1067,306,1068,212,1078,175,1088,150,1101,132,1125,115,1161,88,1257,68,1355,58,1423"/>
+<area shape="rect" id="Node000037" href="$ltc__6813-1_8c.html#aaf84ea01e26f5cabd668be8bc46eda9a" title="initialize the daisy&#45;chain." alt="" coords="510,1107,582,1132"/>
+<area shape="poly" id="edge44_Node000001_Node000037" title=" " alt="" coords="51,1422,53,1369,64,1292,76,1251,93,1211,116,1175,146,1144,188,1118,233,1101,281,1091,330,1087,423,1092,497,1104,496,1110,422,1097,330,1093,282,1097,235,1106,190,1123,150,1148,120,1178,97,1214,81,1253,69,1294,58,1369,56,1422"/>
+<area shape="rect" id="Node000038" href="$ltc__6806_8c.html#ad8da54dbf5d4f08339a5503091d94b7c" title="in the database, initializes the fields related to the LTC drivers." alt="" coords="181,1648,351,1673"/>
+<area shape="poly" id="edge46_Node000001_Node000038" title=" " alt="" coords="59,1447,67,1485,83,1535,110,1589,128,1613,150,1633,170,1645,167,1650,146,1637,124,1616,106,1591,78,1537,62,1486,53,1449"/>
+<area shape="rect" id="Node000039" href="$ltc__6813-1_8c.html#ad8da54dbf5d4f08339a5503091d94b7c" title="in the database, initializes the fields related to the LTC drivers." alt="" coords="181,1697,351,1723"/>
+<area shape="poly" id="edge47_Node000001_Node000039" title=" " alt="" coords="57,1448,63,1493,77,1557,89,1591,105,1625,125,1656,150,1683,170,1695,167,1700,146,1687,120,1659,100,1627,84,1593,72,1558,57,1494,52,1448"/>
+<area shape="rect" id="Node000040" href="$ltc__6806_8c.html#a31a0f262a3434597949aa3251b633a79" title="gets the measurement initialization status." alt="" coords="158,1322,374,1362"/>
+<area shape="poly" id="edge48_Node000001_Node000040" title=" " alt="" coords="69,1420,104,1396,147,1372,165,1364,167,1369,149,1376,106,1400,72,1425"/>
+<area shape="rect" id="Node000041" href="$ltc__6813-1_8c.html#a72419ebfb813340a9bf2340a04f6c647" title="saves the received values of the external port expander read from the LTC daisy&#45;chain." alt="" coords="159,1747,373,1772"/>
+<area shape="poly" id="edge51_Node000001_Node000041" title=" " alt="" coords="56,1448,59,1501,71,1578,82,1620,99,1661,121,1699,150,1732,156,1737,153,1741,146,1736,117,1702,94,1664,77,1622,66,1579,54,1502,51,1449"/>
+<area shape="rect" id="Node000042" href="$ltc__6813-1_8c.html#a6b5bfdf6afe283931dbb760008bfbac9" title="saves the received values of the external port expander from TI read from the LTC daisy&#45;chain." alt="" coords="153,1796,379,1821"/>
+<area shape="poly" id="edge52_Node000001_Node000042" title=" " alt="" coords="58,1448,69,1517,88,1618,116,1718,132,1756,150,1782,156,1787,152,1791,146,1785,127,1759,111,1719,83,1619,64,1518,53,1448"/>
+<area shape="rect" id="Node000043" href="$ltc__6806_8c.html#a2edbd2d522ed4c00589101197aaa4e70" title="send command to the LTC daisy&#45;chain and receives data from the LTC daisy&#45;chain." alt="" coords="197,1845,335,1871"/>
+<area shape="poly" id="edge53_Node000001_Node000043" title=" " alt="" coords="58,1448,67,1526,85,1642,113,1757,130,1801,150,1831,166,1842,184,1850,182,1855,163,1847,146,1835,125,1804,108,1758,80,1643,62,1527,53,1448"/>
+<area shape="rect" id="Node000044" href="$ltc__6813-1_8c.html#a2edbd2d522ed4c00589101197aaa4e70" title="send command to the LTC daisy&#45;chain and receives data from the LTC daisy&#45;chain." alt="" coords="197,1895,335,1920"/>
+<area shape="poly" id="edge54_Node000001_Node000044" title=" " alt="" coords="58,1448,65,1535,82,1666,94,1734,110,1796,128,1847,150,1880,166,1892,184,1900,182,1905,163,1897,146,1884,124,1849,105,1797,89,1735,77,1667,60,1536,52,1449"/>
+<area shape="rect" id="Node000045" href="$ltc__6806_8c.html#ab465bc3da734177a75cf5d92218f3cd4" title="resets the error table." alt="" coords="189,1944,343,1969"/>
+<area shape="poly" id="edge55_Node000001_Node000045" title=" " alt="" coords="57,1448,63,1543,79,1689,91,1765,107,1835,126,1892,138,1913,150,1929,178,1947,175,1952,146,1933,133,1916,122,1894,102,1836,86,1766,74,1690,58,1544,52,1448"/>
+<area shape="rect" id="Node000046" href="$ltc__6813-1_8c.html#ab465bc3da734177a75cf5d92218f3cd4" title="resets the error table." alt="" coords="189,1993,343,2019"/>
+<area shape="poly" id="edge56_Node000001_Node000046" title=" " alt="" coords="57,1448,62,1551,76,1712,88,1796,104,1874,125,1937,137,1961,150,1979,178,1997,175,2001,146,1983,132,1964,120,1939,99,1875,83,1797,71,1713,56,1552,52,1448"/>
+<area shape="rect" id="Node000047" href="$ltc__6813-1_8c.html#ac215f834513e975d151fac2a8a9bbe5f" title="stores the measured GPIOs in the database." alt="" coords="156,2043,376,2068"/>
+<area shape="poly" id="edge57_Node000001_Node000047" title=" " alt="" coords="57,1448,60,1560,73,1735,85,1828,101,1912,123,1982,136,2008,150,2028,154,2032,151,2036,146,2032,131,2011,118,1984,96,1914,79,1828,68,1736,55,1560,51,1448"/>
+<area shape="rect" id="Node000048" href="$ltc__6813-1_8c.html#a41269672bbe509e90a2199270a78ca0b" title="stores the measured balancing feedback values in the database." alt="" coords="161,2092,371,2117"/>
+<area shape="poly" id="edge58_Node000001_Node000048" title=" " alt="" coords="57,1448,59,1568,70,1758,82,1859,98,1951,121,2027,134,2056,150,2078,154,2082,151,2086,146,2081,130,2059,116,2029,93,1952,76,1860,65,1759,53,1568,51,1448"/>
+<area shape="rect" id="Node000049" href="$ltc__6806_8c.html#a68ee3c7e86c459f01878d9766ef0c917" title="Saves the last state and the last substate." alt="" coords="191,2141,341,2167"/>
+<area shape="poly" id="edge59_Node000001_Node000049" title=" " alt="" coords="56,1448,57,1576,67,1781,78,1890,95,1990,119,2072,133,2103,150,2127,163,2138,179,2145,176,2150,160,2142,146,2130,129,2106,114,2074,90,1991,73,1890,62,1782,52,1576,51,1448"/>
+<area shape="rect" id="Node000050" href="$ltc__6813-1_8c.html#a68ee3c7e86c459f01878d9766ef0c917" title="Saves the last state and the last substate." alt="" coords="191,2191,341,2216"/>
+<area shape="poly" id="edge60_Node000001_Node000050" title=" " alt="" coords="56,1448,56,1584,64,1805,75,1921,92,2029,117,2117,132,2151,150,2176,163,2187,179,2195,176,2199,160,2191,146,2180,128,2154,112,2119,87,2030,70,1922,59,1805,51,1585,51,1448"/>
+<area shape="rect" id="Node000051" href="$ltc__6813-1_8c.html#aeb2cd59e60f41953a1ede6c45b86b197" title="saves the multiplexer values read from the LTC daisy&#45;chain." alt="" coords="165,2240,367,2265"/>
+<area shape="poly" id="edge61_Node000001_Node000051" title=" " alt="" coords="57,1448,66,1603,85,1852,98,1980,114,2094,131,2180,140,2209,150,2226,156,2231,152,2235,146,2229,136,2211,126,2181,108,2095,93,1981,80,1853,61,1604,52,1449"/>
+<area shape="rect" id="Node000070" href="$ltc__6813-1_8c.html#a390d48bbc8d6bc0acb79f97c6ede3121" title="saves the GPIO voltage values read from the LTC daisy&#45;chain." alt="" coords="175,2289,357,2315"/>
+<area shape="poly" id="edge79_Node000001_Node000070" title=" " alt="" coords="57,1448,65,1611,84,1876,97,2012,112,2134,130,2226,140,2257,150,2275,164,2286,161,2290,146,2278,135,2259,125,2227,107,2135,91,2013,78,1876,60,1611,52,1448"/>
+<area shape="rect" id="Node000071" href="$ltc__6813-1_8c.html#a973bd56bdce8eaad67718772af315a14" title="saves the voltage values read from the LTC daisy&#45;chain." alt="" coords="165,2339,367,2364"/>
+<area shape="poly" id="edge80_Node000001_Node000071" title=" " alt="" coords="57,1448,65,1620,82,1900,95,2045,111,2174,129,2272,139,2305,150,2324,155,2329,151,2333,146,2328,134,2307,124,2274,105,2175,90,2046,77,1901,59,1620,52,1448"/>
+<area shape="rect" id="Node000072" href="$ltc__6806_8c.html#a76e6eb22347dc14af8170f679ee06a35" title="saves the voltage values read from the LTC daisy&#45;chain." alt="" coords="165,2389,367,2429"/>
+<area shape="poly" id="edge81_Node000001_Node000072" title=" " alt="" coords="57,1448,64,1628,82,1924,95,2077,110,2214,129,2318,139,2353,150,2374,156,2379,152,2383,146,2377,134,2355,124,2319,105,2214,89,2078,77,1924,59,1628,52,1448"/>
+<area shape="rect" id="Node000073" href="$ltc__6813-1_8c.html#a6c664def5b7059842ab106bbb743775d" title="stores the measured temperatures and the measured multiplexer feedback in the database." alt="" coords="180,156,352,181"/>
+<area shape="poly" id="edge82_Node000001_Node000073" title=" " alt="" coords="51,1423,55,1193,68,802,80,598,96,416,118,276,131,228,146,199,166,182,169,187,150,202,136,230,123,277,102,416,85,598,73,802,60,1193,57,1423"/>
+<area shape="rect" id="Node000077" href="$ltc__6806_8c.html#aa9babbfd0bbeef2b3107e8b28fb80b99" title="stores the measured voltages in the database." alt="" coords="197,257,335,283"/>
+<area shape="poly" id="edge87_Node000001_Node000077" title=" " alt="" coords="51,1422,56,1208,69,846,81,658,98,491,119,363,131,319,146,292,163,279,182,270,184,275,165,283,150,296,136,321,124,364,103,491,87,659,75,847,61,1208,57,1423"/>
+<area shape="rect" id="Node000079" href="$ltc__6813-1_8c.html#aab5393dbbf131697c9f2a99caa455bc2" title="sends data to the LTC daisy&#45;chain to read EEPROM on slaves." alt="" coords="149,908,383,933"/>
+<area shape="poly" id="edge90_Node000001_Node000079" title=" " alt="" coords="52,1422,58,1328,74,1183,86,1108,102,1039,122,982,133,959,146,943,150,940,153,943,150,946,138,962,127,984,107,1040,91,1109,79,1184,64,1328,57,1423"/>
+<area shape="rect" id="Node000081" href="$ltc__6813-1_8c.html#a144326ee126c8959c8cfe4066532359a" title="sends data to the LTC daisy&#45;chain to write EEPROM on slaves." alt="" coords="149,957,383,983"/>
+<area shape="poly" id="edge93_Node000001_Node000081" title=" " alt="" coords="52,1422,60,1336,77,1207,89,1139,105,1077,124,1027,146,992,150,989,153,993,150,996,128,1029,110,1079,95,1140,82,1207,65,1337,58,1423"/>
+<area shape="rect" id="Node000083" href="$ltc__6813-1_8c.html#ab6618edb82b72f99d9a6f68fc29bec40" title="sends data to the LTC daisy&#45;chain to communicate via I2C" alt="" coords="181,859,351,884"/>
+<area shape="poly" id="edge96_Node000001_Node000083" title=" " alt="" coords="52,1422,57,1319,71,1160,83,1076,99,1000,120,936,132,912,146,893,167,879,170,883,150,897,137,915,125,938,104,1001,88,1077,76,1160,62,1319,57,1422"/>
+<area shape="rect" id="Node000084" href="$ltc__6806_8c.html#a428e368fcc014375016c63a714201070" title="sets the measurement initialization status." alt="" coords="153,1386,379,1426"/>
+<area shape="poly" id="edge98_Node000001_Node000084" title=" " alt="" coords="100,1426,139,1421,140,1426,101,1432"/>
+<area shape="rect" id="Node000085" href="$ltc__6813-1_8c.html#a428e368fcc014375016c63a714201070" title="sets the measurement initialization status." alt="" coords="153,1158,379,1198"/>
+<area shape="poly" id="edge101_Node000001_Node000085" title=" " alt="" coords="53,1422,60,1381,76,1323,104,1261,123,1233,146,1208,152,1203,155,1208,150,1212,127,1236,108,1264,81,1325,65,1382,58,1423"/>
+<area shape="rect" id="Node000086" href="$ltc__6813-1_8c.html#a31ff8a37e41588d5c4da46b46b060d50" title="sends data to the LTC daisy&#45;chain to configure multiplexer channels." alt="" coords="189,1007,343,1032"/>
+<area shape="poly" id="edge104_Node000001_Node000086" title=" " alt="" coords="53,1422,63,1347,81,1235,109,1123,126,1080,146,1049,175,1030,178,1035,150,1053,131,1082,114,1125,87,1236,68,1347,58,1423"/>
+<area shape="rect" id="Node000088" href="$ltc__6813-1_8c.html#a9b561e1638689ec912cdfa268fde1e49" title="sends data to the LTC daisy&#45;chain to control the user port expander" alt="" coords="187,661,345,687"/>
+<area shape="poly" id="edge107_Node000001_Node000088" title=" " alt="" coords="51,1422,51,1287,59,1068,70,952,87,845,112,756,128,722,146,696,171,679,174,683,150,700,132,725,117,758,92,846,75,953,64,1068,56,1287,56,1422"/>
+<area shape="rect" id="Node000089" href="$ltc__6813-1_8c.html#a75d9e2c2e420fd17b5d22abab8773b8a" title="sends data to the LTC daisy&#45;chain to control the user port expander from TI" alt="" coords="151,711,381,736"/>
+<area shape="poly" id="edge109_Node000001_Node000089" title=" " alt="" coords="51,1422,52,1295,62,1091,73,983,90,883,114,801,129,770,146,746,149,743,153,746,150,749,133,772,119,803,95,884,78,983,67,1091,57,1295,56,1422"/>
+<area shape="rect" id="Node000090" href="$ltc__6813-1_8c.html#aa9f0ab2d87d3c99ece0b4813cb043120" title="sends data to the LTC daisy&#45;chain to control the user port expander from TI" alt="" coords="159,760,373,785"/>
+<area shape="poly" id="edge111_Node000001_Node000090" title=" " alt="" coords="51,1423,53,1304,65,1114,76,1014,93,922,116,846,130,817,146,795,149,792,153,795,150,798,134,820,121,848,98,924,82,1015,70,1115,59,1304,57,1423"/>
+<area shape="rect" id="Node000091" href="$ltc__6806_8c.html#a4d6cd672e9ee1b77017532fb3c1c8921" title="sets the transfer time needed to receive/send data with the LTC daisy&#45;chain." alt="" coords="184,2453,348,2479"/>
+<area shape="poly" id="edge113_Node000001_Node000091" title=" " alt="" coords="57,1448,63,1639,79,1957,91,2121,107,2268,127,2380,138,2417,150,2439,172,2455,169,2459,146,2442,133,2419,122,2381,102,2269,86,2122,74,1957,58,1639,52,1448"/>
+<area shape="rect" id="Node000093" href="$ltc__6813-1_8c.html#a4d6cd672e9ee1b77017532fb3c1c8921" title="sets the transfer time needed to receive/send data with the LTC daisy&#45;chain." alt="" coords="184,2503,348,2528"/>
+<area shape="poly" id="edge115_Node000001_Node000093" title=" " alt="" coords="57,1448,62,1648,77,1982,89,2155,105,2310,126,2427,137,2466,150,2490,172,2505,169,2510,146,2493,132,2468,120,2428,100,2310,84,2156,72,1982,57,1648,52,1448"/>
+<area shape="rect" id="Node000095" href="$ltc__6813-1_8c.html#a459710437b2c75f619542012990c7c07" title="tells LTC daisy&#45;chain to start measuring the voltage on GPIOS." alt="" coords="165,2552,367,2577"/>
+<area shape="poly" id="edge117_Node000001_Node000095" title=" " alt="" coords="57,1448,61,1656,76,2006,88,2188,104,2350,125,2473,137,2514,150,2539,155,2544,151,2548,146,2542,132,2517,119,2474,99,2351,83,2188,70,2006,56,1656,52,1448"/>
+<area shape="rect" id="Node000096" href="$ltc__6806_8c.html#a2784ea1ea6b725911b4da1aa5bd7f0c0" title="tells LTC daisy&#45;chain to start measuring the voltage on GPIOS." alt="" coords="148,2601,384,2627"/>
+<area shape="poly" id="edge118_Node000001_Node000096" title=" " alt="" coords="57,1448,61,1665,74,2031,86,2221,103,2390,124,2519,136,2563,150,2588,153,2591,149,2595,146,2592,131,2565,119,2521,97,2391,81,2221,69,2031,55,1665,51,1448"/>
+<area shape="rect" id="Node000097" href="$ltc__6813-1_8c.html#a2784ea1ea6b725911b4da1aa5bd7f0c0" title="tells LTC daisy&#45;chain to start measuring the voltage on GPIOS." alt="" coords="148,2651,384,2676"/>
+<area shape="poly" id="edge119_Node000001_Node000097" title=" " alt="" coords="57,1448,60,1673,73,2054,85,2253,101,2430,123,2566,136,2611,150,2638,153,2640,149,2644,146,2641,131,2613,118,2567,96,2431,79,2254,68,2055,55,1673,51,1448"/>
+<area shape="rect" id="Node000098" href="$ltc__6806_8c.html#a0a7c52466ebf10c28061886c671582bd" title="tells the LTC daisy&#45;chain to start measuring the voltage on all cells." alt="" coords="155,2700,377,2725"/>
+<area shape="poly" id="edge120_Node000001_Node000098" title=" " alt="" coords="57,1448,59,1682,71,2079,83,2286,100,2471,122,2612,135,2659,150,2687,153,2690,149,2693,146,2690,130,2661,117,2613,94,2472,78,2287,66,2079,54,1682,51,1448"/>
+<area shape="rect" id="Node000099" href="$ltc__6813-1_8c.html#a0a7c52466ebf10c28061886c671582bd" title="tells the LTC daisy&#45;chain to start measuring the voltage on all cells." alt="" coords="155,2749,377,2775"/>
+<area shape="poly" id="edge121_Node000001_Node000099" title=" " alt="" coords="57,1448,59,1690,70,2103,81,2319,98,2511,121,2658,135,2707,150,2736,153,2739,149,2743,146,2740,130,2709,116,2659,93,2512,76,2319,65,2104,53,1690,51,1448"/>
+<area shape="rect" id="Node000100" href="$ltc__6813-1_8c.html#ae64915bb7e301c45b702aebf2cfd86a5" title="saves the temperature value of the external temperature sensors read from the LTC daisy&#45;chain." alt="" coords="174,2799,358,2824"/>
+<area shape="poly" id="edge124_Node000001_Node000100" title=" " alt="" coords="57,1448,58,1697,69,2127,80,2351,97,2551,107,2635,120,2704,134,2755,150,2786,164,2797,160,2801,146,2789,129,2757,115,2705,102,2636,91,2552,75,2351,63,2127,53,1698,51,1448"/>
+<area shape="rect" id="Node000101" href="$ltc__6806_8c.html#a6bc859327ed6f6ac29c02103d71f8b93" title="transfers the current state request to the state machine." alt="" coords="171,1223,361,1248"/>
+<area shape="poly" id="edge125_Node000001_Node000101" title=" " alt="" coords="54,1421,64,1388,82,1343,109,1297,126,1275,146,1257,157,1251,159,1255,150,1261,130,1279,113,1300,87,1345,69,1390,59,1423"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="614,215,778,246,777,251,613,220"/>
+<area shape="rect" id="Node000006" href="$diag_8c.html#a59191bef7fcae145e2d834eb8f447025" title="DIAG_ClearFatalErrorById checks whether the error has been cleared before and if not sends a clear me..." alt="" coords="1065,249,1252,275"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="904,259,1052,259,1052,265,904,265"/>
+<area shape="rect" id="Node000014" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="1093,299,1224,324"/>
+<area shape="poly" id="edge13_Node000005_Node000014" title=" " alt="" coords="905,268,1080,296,1079,302,904,274"/>
+<area shape="rect" id="Node000015" href="$diag_8c.html#a4f4874e2e5766a401e9ab0c2721efda6" title="DIAG_SetFatalErrorById checks whether the error has been send before and if not send it per CAN...." alt="" coords="1071,200,1246,225"/>
+<area shape="poly" id="edge14_Node000005_Node000015" title=" " alt="" coords="904,250,1064,225,1065,230,905,256"/>
+<area shape="rect" id="Node000007" href="$can__cbs__tx__fatal-error_8c.html#af9d19804d03a440d5eb12e574a76bf30" title="Sends the Error ID per CAN." alt="" coords="1331,225,1511,251"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1252,251,1316,245,1317,250,1252,256"/>
+<area shape="rect" id="Node000013" href="$timer_8c.html#a8a878f1764cb181893c79d55b1c41a65" title="TIMER_stops stops a given virtual timer." alt="" coords="1371,275,1470,300"/>
+<area shape="poly" id="edge12_Node000006_Node000013" title=" " alt="" coords="1252,268,1358,279,1357,284,1252,274"/>
+<area shape="rect" id="Node000008" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="1581,189,1795,229"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1511,226,1567,219,1568,225,1511,231"/>
+<area shape="rect" id="Node000010" href="$can__cbs__tx__fatal-error_8c.html#a417ea445e91fa2826a6cbefbe8335661" title="Helper function to send the actual error Code." alt="" coords="1559,253,1817,279"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="1511,245,1553,249,1553,254,1511,250"/>
+<area shape="rect" id="Node000009" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="1889,196,2111,221"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1795,206,1875,206,1875,211,1795,211"/>
+<area shape="rect" id="Node000011" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="1940,299,2060,324"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1776,276,1926,298,1926,303,1776,281"/>
+<area shape="rect" id="Node000012" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="1865,249,2135,275"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="1817,262,1852,261,1852,267,1817,267"/>
+<area shape="poly" id="edge15_Node000015_Node000007" title=" " alt="" coords="1247,218,1317,225,1316,231,1246,224"/>
+<area shape="rect" id="Node000016" href="$timer_8c.html#a961668103b79a6b04dfd66e507bd2d7f" title="TIMER_start starts a given virtual timer." alt="" coords="1370,176,1471,201"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="1246,202,1356,192,1356,197,1247,207"/>
+<area shape="rect" id="Node000018" href="$ltc__pec_8c.html#afb47d1f12f35878bf9100c024fb821cc" title="calculates the PEC15" alt="" coords="772,776,923,801"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="341,560,411,555,493,557,579,569,621,580,661,596,690,612,718,631,767,677,806,724,833,763,829,766,802,727,763,681,715,635,688,616,659,600,619,585,578,574,493,562,411,560,342,565"/>
+<area shape="rect" id="Node000019" href="$ltc__6813-1_8c.html#ab951276e52308be2f92c00652713a055" title="gets the balancing orders from the database." alt="" coords="432,611,660,636"/>
+<area shape="poly" id="edge20_Node000017_Node000019" title=" " alt="" coords="337,583,462,606,461,611,336,588"/>
+<area shape="rect" id="Node000020" href="$ltc__6813-1__cfg_8c.html#a2129b2ac36880d677a5daddebd98c1a6" title="Get connected cell voltage input from an cell block index." alt="" coords="450,661,642,701"/>
+<area shape="poly" id="edge21_Node000017_Node000020" title=" " alt="" coords="335,583,385,602,400,613,410,624,419,635,433,645,450,653,447,658,431,650,416,639,406,628,397,617,383,607,333,588"/>
+<area shape="poly" id="edge23_Node000021_Node000018" title=" " alt="" coords="604,528,634,537,661,552,692,575,721,602,770,660,809,717,836,762,831,765,805,720,766,663,717,605,689,579,659,556,632,542,603,533"/>
+<area shape="poly" id="edge25_Node000022_Node000018" title=" " alt="" coords="604,759,758,776,757,781,603,764"/>
+<area shape="rect" id="Node000024" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="468,1297,624,1323"/>
+<area shape="poly" id="edge27_Node000023_Node000024" title=" " alt="" coords="349,1289,455,1299,454,1304,348,1295"/>
+<area shape="rect" id="Node000025" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="473,1248,619,1273"/>
+<area shape="poly" id="edge28_Node000023_Node000025" title=" " alt="" coords="348,1275,458,1265,459,1271,349,1280"/>
+<area shape="poly" id="edge30_Node000026_Node000005" title=" " alt="" coords="377,313,512,305,660,291,777,273,777,278,660,297,512,310,377,318"/>
+<area shape="poly" id="edge31_Node000026_Node000027" title=" " alt="" coords="337,329,462,352,461,357,336,335"/>
+<area shape="poly" id="edge33_Node000028_Node000005" title=" " alt="" coords="377,426,442,426,514,422,588,411,659,391,708,369,753,340,822,282,825,286,756,344,710,374,661,397,589,416,515,427,442,432,377,432"/>
+<area shape="poly" id="edge34_Node000028_Node000029" title=" " alt="" coords="337,431,462,454,461,459,336,436"/>
+<area shape="rect" id="Node000033" href="$ltc__6813-1_8c.html#a8cc4616cd88973c4eff35c1a5490bee0" title="sends command and data to the LTC daisy&#45;chain." alt="" coords="476,809,616,835"/>
+<area shape="poly" id="edge38_Node000032_Node000033" title=" " alt="" coords="369,819,462,819,462,825,369,825"/>
+<area shape="poly" id="edge39_Node000033_Node000018" title=" " alt="" coords="616,812,758,796,758,801,617,817"/>
+<area shape="poly" id="edge43_Node000036_Node000018" title=" " alt="" coords="582,1065,621,1058,659,1041,691,1017,720,988,770,924,808,862,833,813,837,815,813,865,774,927,724,991,694,1021,661,1046,622,1063,583,1071"/>
+<area shape="poly" id="edge45_Node000037_Node000018" title=" " alt="" coords="582,1116,621,1109,641,1102,658,1092,694,1062,726,1026,754,988,777,948,814,872,836,814,841,815,819,874,782,950,758,991,730,1030,698,1065,662,1096,643,1107,622,1114,583,1121"/>
+<area shape="poly" id="edge49_Node000040_Node000024" title=" " alt="" coords="374,1327,454,1318,454,1323,374,1332"/>
+<area shape="poly" id="edge50_Node000040_Node000025" title=" " alt="" coords="344,1319,383,1306,407,1294,431,1282,458,1274,460,1279,433,1287,409,1299,385,1311,346,1324"/>
+<area shape="rect" id="Node000052" href="$ltc__6813-1__cfg_8c.html#ac5835e0f4df145a23f5189ee0dc7056f" title="converts a raw voltage from multiplexer to a temperature value in deci °C." alt="" coords="446,2233,646,2273"/>
+<area shape="poly" id="edge62_Node000051_Node000052" title=" " alt="" coords="367,2250,432,2250,432,2255,367,2255"/>
+<area shape="rect" id="Node000053" href="$vishay__ntcle413e2103f102l__lookup-table_8c.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="770,2240,925,2265"/>
+<area shape="poly" id="edge63_Node000052_Node000053" title=" " alt="" coords="646,2250,756,2250,756,2255,646,2255"/>
+<area shape="rect" id="Node000054" href="$epcos__b57251v5103j060_8c.html#a60e7e40bc4662b44093a0a2b464bd395" title="returns temperature based on measured ADC voltage" alt="" coords="1037,2339,1280,2364"/>
+<area shape="poly" id="edge64_Node000053_Node000054" title=" " alt="" coords="878,2263,948,2293,1035,2323,1073,2333,1072,2338,1034,2329,947,2298,875,2268"/>
+<area shape="rect" id="Node000056" href="$epcos__b57251v5103j060_8c.html#a22b8fc0a39278f0c1a61c1cca7482b5a" title="returns temperature based on measured ADC voltage" alt="" coords="1047,2389,1270,2429"/>
+<area shape="poly" id="edge65_Node000053_Node000056" title=" " alt="" coords="866,2264,937,2316,985,2346,1036,2373,1058,2382,1056,2387,1034,2378,982,2351,934,2320,863,2268"/>
+<area shape="rect" id="Node000057" href="$epcos__b57861s0103f045_8c.html#a8bb26a9001e051fc2fee6ba77027b1b6" title="returns temperature based on measured ADC voltage" alt="" coords="1037,2453,1280,2479"/>
+<area shape="poly" id="edge66_Node000053_Node000057" title=" " alt="" coords="859,2264,885,2300,926,2347,977,2397,1036,2438,1054,2446,1051,2451,1033,2443,973,2401,922,2351,881,2303,855,2267"/>
+<area shape="rect" id="Node000058" href="$epcos__b57861s0103f045_8c.html#a3aca9a6a710bb21efc1a5d4ccf49b3e0" title="returns temperature based on measured ADC voltage" alt="" coords="1047,2503,1270,2543"/>
+<area shape="poly" id="edge67_Node000053_Node000058" title=" " alt="" coords="857,2264,880,2308,919,2369,972,2434,1003,2464,1036,2489,1046,2495,1044,2500,1033,2494,999,2468,968,2438,915,2372,876,2310,852,2267"/>
+<area shape="rect" id="Node000059" href="$fake__none_8c.html#a8519235f1cb368c712566dc0a6615a8a" title="returns a fake temperature" alt="" coords="1038,2568,1279,2593"/>
+<area shape="poly" id="edge68_Node000053_Node000059" title=" " alt="" coords="855,2265,874,2319,910,2398,935,2441,964,2482,998,2521,1036,2553,1048,2560,1045,2565,1033,2558,994,2525,960,2486,930,2444,905,2400,869,2321,850,2266"/>
+<area shape="rect" id="Node000060" href="$fake__none_8c.html#a8d502a27efdeb0f048997819e3ae4fc4" title="returns a fake temperature" alt="" coords="1048,2618,1269,2658"/>
+<area shape="poly" id="edge69_Node000053_Node000060" title=" " alt="" coords="854,2265,871,2326,905,2418,929,2469,959,2518,995,2564,1036,2604,1043,2609,1040,2613,1033,2608,991,2568,955,2521,925,2471,900,2420,866,2328,849,2266"/>
+<area shape="rect" id="Node000061" href="$murata__ncxxxxh103_8c.html#a0e6cfeee0f7fdf5504234ed54ddfc9b7" title="returns temperature based on measured ADC voltage." alt="" coords="1037,1863,1281,1888"/>
+<area shape="poly" id="edge70_Node000053_Node000061" title=" " alt="" coords="849,2239,865,2177,899,2084,924,2033,954,1984,990,1938,1033,1899,1043,1892,1046,1896,1036,1903,994,1941,958,1987,928,2036,904,2086,870,2179,854,2241"/>
+<area shape="rect" id="Node000062" href="$murata__ncxxxxh103_8c.html#a255c099fbd405cdc3b51c39a415c18e3" title="returns temperature based on measured ADC voltage" alt="" coords="1047,1913,1271,1953"/>
+<area shape="poly" id="edge71_Node000053_Node000062" title=" " alt="" coords="851,2239,871,2187,908,2112,933,2072,962,2032,996,1994,1033,1963,1041,1957,1044,1962,1036,1967,999,1998,966,2035,938,2075,913,2115,876,2190,855,2241"/>
+<area shape="rect" id="Node000063" href="$semitec__103jt_8c.html#a26f93447be1d7882e16a9624be22ab0f" title="returns temperature based on measured ADC voltage" alt="" coords="1035,1977,1283,2003"/>
+<area shape="poly" id="edge72_Node000053_Node000063" title=" " alt="" coords="852,2238,875,2194,914,2132,967,2066,999,2037,1033,2012,1045,2006,1047,2010,1036,2016,1002,2041,971,2070,918,2135,880,2197,857,2241"/>
+<area shape="rect" id="Node000064" href="$tdk__ntcgs103jf103ft8_8c.html#aa87a3225637583d135a53de72818b094" title="returns temperature based on measured ADC voltage" alt="" coords="1037,2027,1280,2052"/>
+<area shape="poly" id="edge73_Node000053_Node000064" title=" " alt="" coords="855,2238,881,2203,921,2154,973,2103,1002,2080,1033,2061,1048,2054,1050,2059,1036,2066,1005,2085,976,2107,925,2158,885,2206,859,2242"/>
+<area shape="rect" id="Node000065" href="$tdk__ntcg163jx103dt1s_8c.html#a8f3cc23e54dd363ac0b643c4dfefef0e" title="returns temperature based on measured ADC voltage" alt="" coords="1037,2076,1280,2101"/>
+<area shape="poly" id="edge74_Node000053_Node000065" title=" " alt="" coords="860,2238,929,2176,979,2140,1034,2110,1053,2103,1055,2108,1036,2115,982,2145,933,2180,863,2242"/>
+<area shape="rect" id="Node000066" href="$vishay__ntcalug01a103g_8c.html#a865b7c323eb0bdbd7420518e6b56cede" title="returns temperature based on measured ADC voltage." alt="" coords="1039,2125,1278,2151"/>
+<area shape="poly" id="edge75_Node000053_Node000066" title=" " alt="" coords="870,2237,941,2200,1034,2161,1067,2151,1069,2156,1036,2166,944,2205,872,2242"/>
+<area shape="rect" id="Node000067" href="$vishay__ntcalug01a103g_8c.html#a47e088f4023835e56cac22e035c66be8" title="returns temperature based on measured ADC voltage" alt="" coords="1049,2175,1268,2215"/>
+<area shape="poly" id="edge76_Node000053_Node000067" title=" " alt="" coords="917,2237,1036,2215,1037,2220,918,2243"/>
+<area shape="rect" id="Node000068" href="$vishay__ntcle317e4103sba_8c.html#ae917bb4796f0f8fa36201dbd92aae38c" title="returns temperature based on measured ADC voltage." alt="" coords="1039,2240,1278,2265"/>
+<area shape="poly" id="edge77_Node000053_Node000068" title=" " alt="" coords="925,2250,1026,2250,1026,2255,925,2255"/>
+<area shape="rect" id="Node000069" href="$vishay__ntcle413e2103f102l_8c.html#aaad7430280f6c4d6add34f90b3ef8159" title="returns temperature based on measured ADC voltage." alt="" coords="1039,2289,1278,2315"/>
+<area shape="poly" id="edge78_Node000053_Node000069" title=" " alt="" coords="925,2262,1065,2284,1064,2290,925,2267"/>
+<area shape="poly" id="edge86_Node000073_Node000004" title=" " alt="" coords="352,177,463,191,462,197,352,182"/>
+<area shape="rect" id="Node000074" href="$afe__plausibility_8c.html#a406894a58689eb99279a7569ffebb801" title="Cell temperature plausibility check." alt="" coords="445,41,647,81"/>
+<area shape="poly" id="edge83_Node000073_Node000074" title=" " alt="" coords="299,153,479,83,481,88,301,158"/>
+<area shape="rect" id="Node000075" href="$tsi__limits_8c.html#a161bdb7af8c149fe72731f43f0619dd9" title="Return the maximum plausible temperature." alt="" coords="708,73,987,99"/>
+<area shape="poly" id="edge84_Node000074_Node000075" title=" " alt="" coords="647,66,694,70,694,76,647,72"/>
+<area shape="rect" id="Node000076" href="$tsi__limits_8c.html#a9bf06d1c58f3a5ee9c9c8b1d611d1323" title="Return the minimum plausible temperature." alt="" coords="710,24,985,49"/>
+<area shape="poly" id="edge85_Node000074_Node000076" title=" " alt="" coords="647,50,696,46,697,51,647,55"/>
+<area shape="poly" id="edge89_Node000077_Node000004" title=" " alt="" coords="318,255,431,227,474,218,475,223,433,233,319,260"/>
+<area shape="rect" id="Node000078" href="$afe__plausibility_8c.html#ae3a0cab9bf3aeded2ce65f1d28bdda8b" title="Cell voltage measurement range plausibility check." alt="" coords="439,242,653,282"/>
+<area shape="poly" id="edge88_Node000077_Node000078" title=" " alt="" coords="335,265,425,263,425,268,336,271"/>
+<area shape="poly" id="edge92_Node000079_Node000033" title=" " alt="" coords="337,905,383,893,450,866,507,839,510,844,452,871,385,898,338,911"/>
+<area shape="rect" id="Node000080" href="$ltc__6813-1_8c.html#aef9bb34ca8083f1afaf3077e2b38138c" title="configures the data that will be sent to the LTC daisy&#45;chain to read EEPROM on slaves." alt="" coords="435,908,657,933"/>
+<area shape="poly" id="edge91_Node000079_Node000080" title=" " alt="" coords="383,918,421,918,421,923,383,923"/>
+<area shape="poly" id="edge95_Node000081_Node000033" title=" " alt="" coords="353,955,383,942,398,931,407,920,430,893,470,864,509,839,512,844,473,868,434,897,411,923,401,935,385,947,355,960"/>
+<area shape="rect" id="Node000082" href="$ltc__6813-1_8c.html#a1df4ae95928a7f0716a8229bbafb6635" title="configures the data that will be sent to the LTC daisy&#45;chain to write EEPROM on slaves." alt="" coords="434,957,658,983"/>
+<area shape="poly" id="edge94_Node000081_Node000082" title=" " alt="" coords="383,967,420,967,420,973,383,973"/>
+<area shape="poly" id="edge97_Node000083_Node000033" title=" " alt="" coords="338,856,462,834,463,839,339,861"/>
+<area shape="poly" id="edge99_Node000084_Node000024" title=" " alt="" coords="345,1383,383,1371,502,1326,504,1331,385,1377,346,1388"/>
+<area shape="poly" id="edge100_Node000084_Node000025" title=" " alt="" coords="364,1384,382,1372,399,1351,405,1328,412,1305,430,1283,458,1268,460,1273,434,1287,417,1307,410,1330,404,1353,386,1376,367,1388"/>
+<area shape="poly" id="edge102_Node000085_Node000024" title=" " alt="" coords="365,1196,386,1208,403,1227,410,1247,418,1265,434,1283,456,1294,454,1299,430,1287,413,1268,405,1249,398,1230,382,1212,362,1200"/>
+<area shape="poly" id="edge103_Node000085_Node000025" title=" " alt="" coords="343,1196,385,1207,494,1241,492,1246,383,1213,341,1201"/>
+<area shape="poly" id="edge106_Node000086_Node000033" title=" " alt="" coords="342,1011,363,1003,382,992,401,970,408,946,414,921,430,894,465,862,503,839,506,844,468,867,434,897,419,923,413,948,405,972,386,996,366,1008,344,1016"/>
+<area shape="rect" id="Node000087" href="$ltc__6813-1_8c.html#a8fb93d76d9466f8c499feae7c820bcc7" title="configures the data that will be sent to the LTC daisy&#45;chain to configure multiplexer channels." alt="" coords="454,1007,638,1032"/>
+<area shape="poly" id="edge105_Node000086_Node000087" title=" " alt="" coords="343,1017,440,1017,440,1022,343,1022"/>
+<area shape="poly" id="edge108_Node000088_Node000033" title=" " alt="" coords="347,678,367,685,386,696,404,716,411,737,418,757,434,777,455,791,478,802,475,807,452,796,430,781,413,760,406,739,399,719,382,700,365,690,345,683"/>
+<area shape="poly" id="edge110_Node000089_Node000033" title=" " alt="" coords="350,734,385,745,410,760,433,777,493,802,491,807,431,782,407,765,383,750,349,739"/>
+<area shape="poly" id="edge112_Node000090_Node000033" title=" " alt="" coords="339,783,463,805,462,810,338,788"/>
+<area shape="rect" id="Node000092" href="$ltc__6806_8c.html#a4fd9d165e4bc619474fe3d1653104833" title="gets the frequency of the SPI clock." alt="" coords="481,2453,611,2479"/>
+<area shape="poly" id="edge114_Node000091_Node000092" title=" " alt="" coords="348,2463,467,2463,467,2469,348,2469"/>
+<area shape="rect" id="Node000094" href="$ltc__6813-1_8c.html#a4fd9d165e4bc619474fe3d1653104833" title="gets the frequency of the SPI clock." alt="" coords="481,2503,611,2528"/>
+<area shape="poly" id="edge116_Node000093_Node000094" title=" " alt="" coords="348,2513,467,2513,467,2518,348,2518"/>
+<area shape="poly" id="edge126_Node000101_Node000024" title=" " alt="" coords="345,1245,385,1257,409,1270,433,1282,462,1291,461,1296,431,1287,407,1274,383,1262,344,1251"/>
+<area shape="poly" id="edge127_Node000101_Node000025" title=" " alt="" coords="362,1241,459,1250,459,1256,361,1247"/>
+</map>

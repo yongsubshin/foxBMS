@@ -1,0 +1,16 @@
+<map id="I2C_Read" name="I2C_Read">
+<area shape="rect" id="Node000001" title="reads from an I2C slave, no register address written first, blocking." alt="" coords="5,46,88,71"/>
+<area shape="rect" id="Node000002" href="$i2c_8c.html#a3ff82cda8c1d4a8b2d5fa48a5fc2c4a5" title="Waits for the I2C Rx buffer to be full." alt="" coords="136,21,267,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,49,122,44,123,49,89,55"/>
+<area shape="rect" id="Node000006" href="$i2c_8c.html#a79b77f8447ee8b71cd04895699df54bb" title="Waits for a stop condition to be detected." alt="" coords="147,70,255,95"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="89,62,134,70,133,75,88,68"/>
+<area shape="rect" id="Node000003" href="$mcu_8c.html#a298a563701c7fc98c1f2750a1a2b8220" title="Get the current value of the Free Running Counter 0 (FRC0)" alt="" coords="517,70,720,95"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="267,30,315,29,393,23,427,22,470,29,495,41,518,55,545,64,543,69,516,60,492,46,469,35,426,28,393,28,315,35,267,35"/>
+<area shape="rect" id="Node000004" href="$mcu_8c.html#af5a3b75b7431935f913d80e31eb99690" title="Checks if a timeout in microseconds has elapsed." alt="" coords="315,45,469,70"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="267,39,301,43,301,49,267,44"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="470,63,504,67,503,72,469,69"/>
+<area shape="rect" id="Node000005" href="$mcu_8c.html#a357da0bcb906f4ad573ed0d4244dd0a2" title="Convert the counter value FRC0 to a time in microseconds." alt="" coords="520,5,717,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="469,44,506,39,507,44,470,49"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="256,80,503,80,503,85,256,85"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="255,73,300,67,301,72,256,78"/>
+</map>

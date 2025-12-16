@@ -1,0 +1,33 @@
+<map id="foxbms&#45;2/src/app/driver/afe/debug/can/api/debug_can_afe_dma.c" name="foxbms&#45;2/src/app/driver/afe/debug/can/api/debug_can_afe_dma.c">
+<area shape="rect" id="Node000001" title="Driver for the DMA module for the fake driver." alt="" coords="363,5,550,60"/>
+<area shape="rect" id="Node000002" href="$afe__dma_8h.html" title="Headers for the driver for the general DMA module of monitoring ICs." alt="" coords="370,108,461,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="446,61,429,97,424,94,442,59"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="361,548,432,573"/>
+<area shape="poly" id="edge19_Node000001_Node000008" title=" " alt="" coords="470,60,490,120,498,156,501,193,501,416,493,454,474,489,449,518,425,541,421,537,446,515,470,486,488,452,495,415,495,193,492,157,485,121,465,61"/>
+<area shape="rect" id="Node000003" href="$dma__cfg_8h.html" title="Headers for the configuration for the DMA module." alt="" coords="251,181,342,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="398,136,329,176,327,172,395,131"/>
+<area shape="poly" id="edge18_Node000002_Node000008" title=" " alt="" coords="422,133,439,189,447,227,450,266,450,415,446,450,437,483,413,537,408,535,432,481,441,449,445,415,445,266,442,228,434,190,417,134"/>
+<area shape="rect" id="Node000004" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="146,255,309,280"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="287,209,250,247,246,243,283,205"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="333,255,410,280"/>
+<area shape="poly" id="edge16_Node000003_Node000011" title=" " alt="" coords="310,205,351,243,347,247,307,209"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="5,255,121,280"/>
+<area shape="poly" id="edge17_Node000003_Node000012" title=" " alt="" coords="260,209,115,253,113,248,258,204"/>
+<area shape="rect" id="Node000005" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="174,401,257,427"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="229,281,220,388,215,387,224,280"/>
+<area shape="rect" id="Node000006" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="280,475,359,500"/>
+<area shape="poly" id="edge13_Node000004_Node000006" title=" " alt="" coords="235,279,311,461,307,463,230,281"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="150,548,233,573"/>
+<area shape="poly" id="edge14_Node000004_Node000007" title=" " alt="" coords="147,281,99,299,78,312,60,330,48,348,41,364,37,396,40,431,41,475,38,488,40,499,60,519,84,534,111,544,137,551,136,556,109,549,81,539,56,523,36,501,33,488,35,474,34,431,31,396,35,362,43,345,56,326,75,308,97,294,145,276"/>
+<area shape="poly" id="edge15_Node000004_Node000008" title=" " alt="" coords="240,279,302,357,341,413,374,474,394,534,389,535,369,476,336,416,298,360,236,282"/>
+<area shape="rect" id="Node000010" href="$bms-slave__cfg_8h.html" title="Configuration of the foxBMS BMS&#45;Slave (e.g., value of balancing resistor, input capacitance...." alt="" coords="71,328,200,353"/>
+<area shape="poly" id="edge11_Node000004_Node000010" title=" " alt="" coords="214,282,163,322,159,317,211,278"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="234,424,292,464,289,469,231,429"/>
+<area shape="poly" id="edge9_Node000005_Node000007" title=" " alt="" coords="216,428,198,535,193,534,211,427"/>
+<area shape="poly" id="edge10_Node000005_Node000008" title=" " alt="" coords="223,426,241,461,254,481,270,498,309,524,349,542,347,547,306,528,267,502,250,484,236,464,218,428"/>
+<area shape="rect" id="Node000009" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="51,475,153,500"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="199,429,133,470,130,465,196,424"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="300,502,226,543,223,539,297,498"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="334,498,376,537,372,540,330,502"/>
+<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="150,351,194,390,190,394,146,355"/>
+</map>

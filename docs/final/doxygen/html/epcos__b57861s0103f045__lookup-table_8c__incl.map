@@ -1,0 +1,13 @@
+<map id="foxbms&#45;2/src/app/driver/ts/epcos/b57861s0103f045/lookup&#45;table/epcos_b57861s0103f045_lookup&#45;table.c" name="foxbms&#45;2/src/app/driver/ts/epcos/b57861s0103f045/lookup&#45;table/epcos_b57861s0103f045_lookup&#45;table.c">
+<area shape="rect" id="Node000001" title="Resistive divider used for measuring temperature." alt="" coords="101,5,373,75"/>
+<area shape="rect" id="Node000002" href="$epcos__b57861s0103f045_8h.html" title="Resistive divider used for measuring temperature." alt="" coords="5,123,200,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,77,132,117,129,112,187,73"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="202,196,273,221"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="240,75,240,182,235,182,235,75"/>
+<area shape="rect" id="Node000005" href="$tsi_8h.html" title="Temperature Sensor Interface on Slave Unit driver header." alt="" coords="275,123,325,148"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="262,73,287,110,282,113,258,76"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="61,196,144,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,148,105,182,100,182,100,148"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="126,146,204,187,202,192,123,150"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="292,150,259,187,255,184,288,147"/>
+</map>

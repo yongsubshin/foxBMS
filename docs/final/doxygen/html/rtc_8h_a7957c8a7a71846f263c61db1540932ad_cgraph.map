@@ -1,0 +1,100 @@
+<map id="RTC_Initialize" name="RTC_Initialize">
+<area shape="rect" id="Node000001" title="initialization of the RTC IC." alt="" coords="5,425,115,451"/>
+<area shape="rect" id="Node000002" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="736,104,849,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,424,99,363,127,328,161,297,231,254,306,219,384,190,462,167,607,135,722,120,723,125,608,140,463,172,386,195,308,224,234,259,164,301,131,331,104,366,69,426"/>
+<area shape="rect" id="Node000014" href="$i2c_8c.html#a9546fb9b900efe2915ccd3b2b2232883" title="reads from an I2C slave, no register address written first, blocking." alt="" coords="751,499,834,524"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="115,444,163,450,489,484,738,505,737,510,489,489,162,455,115,449"/>
+<area shape="rect" id="Node000020" href="$i2c_8c.html#adeeeebf0d17d996e83390232e8ea8625" title="writes to an I2C slave, no register address written first, blocking." alt="" coords="750,449,835,475"/>
+<area shape="poly" id="edge23_Node000001_Node000020" title=" " alt="" coords="115,437,736,458,736,463,115,442"/>
+<area shape="rect" id="Node000022" href="$i2c_8c.html#af04b33e3964bbbf260a563cd8b012342" title="writes to an I2C slave, no register address written first, using DMA." alt="" coords="735,252,851,277"/>
+<area shape="poly" id="edge28_Node000001_Node000022" title=" " alt="" coords="70,423,107,385,133,364,161,346,234,316,311,293,389,276,466,265,609,256,721,257,721,262,609,261,466,270,389,281,312,298,236,321,164,351,136,368,111,389,74,427"/>
+<area shape="rect" id="Node000031" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="185,527,331,552"/>
+<area shape="poly" id="edge38_Node000001_Node000031" title=" " alt="" coords="79,449,116,476,164,505,199,520,197,525,161,510,113,481,75,453"/>
+<area shape="rect" id="Node000032" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="191,576,325,601"/>
+<area shape="poly" id="edge39_Node000001_Node000032" title=" " alt="" coords="70,449,105,505,132,536,164,562,179,570,176,575,161,567,128,540,101,508,66,452"/>
+<area shape="rect" id="Node000033" href="$rtc_8c.html#a0380ff8d4714112489efb86714ea54cd" title="initialize system time with RTC time." alt="" coords="163,361,353,401"/>
+<area shape="poly" id="edge40_Node000001_Node000033" title=" " alt="" coords="104,423,175,402,176,407,105,428"/>
+<area shape="rect" id="Node000003" href="$diag_8c.html#a59191bef7fcae145e2d834eb8f447025" title="DIAG_ClearFatalErrorById checks whether the error has been cleared before and if not sends a clear me..." alt="" coords="999,104,1186,129"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="850,114,986,114,986,119,850,119"/>
+<area shape="rect" id="Node000011" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="1027,5,1158,31"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="817,102,880,70,961,39,1013,27,1015,32,962,45,883,75,819,106"/>
+<area shape="rect" id="Node000012" href="$diag_8c.html#a4f4874e2e5766a401e9ab0c2721efda6" title="DIAG_SetFatalErrorById checks whether the error has been send before and if not send it per CAN...." alt="" coords="1005,55,1180,80"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="849,105,1001,80,1002,85,850,110"/>
+<area shape="rect" id="Node000004" href="$can__cbs__tx__fatal-error_8c.html#af9d19804d03a440d5eb12e574a76bf30" title="Sends the Error ID per CAN." alt="" coords="1293,80,1473,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1186,106,1280,99,1280,104,1187,112"/>
+<area shape="rect" id="Node000010" href="$timer_8c.html#a8a878f1764cb181893c79d55b1c41a65" title="TIMER_stops stops a given virtual timer." alt="" coords="1334,129,1433,155"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="1187,122,1320,134,1320,139,1186,127"/>
+<area shape="rect" id="Node000005" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="1565,45,1779,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1473,81,1551,74,1552,79,1474,87"/>
+<area shape="rect" id="Node000007" href="$can__cbs__tx__fatal-error_8c.html#a417ea445e91fa2826a6cbefbe8335661" title="Helper function to send the actual error Code." alt="" coords="1543,109,1801,135"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="1474,99,1534,105,1533,111,1473,104"/>
+<area shape="rect" id="Node000006" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="1873,52,2095,77"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1779,62,1859,62,1859,67,1779,67"/>
+<area shape="rect" id="Node000008" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="1924,155,2044,180"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1760,132,1910,154,1910,159,1760,137"/>
+<area shape="rect" id="Node000009" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="1849,105,2119,131"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="1801,118,1836,117,1836,123,1801,123"/>
+<area shape="poly" id="edge12_Node000012_Node000004" title=" " alt="" coords="1180,72,1279,81,1279,86,1180,78"/>
+<area shape="rect" id="Node000013" href="$timer_8c.html#a961668103b79a6b04dfd66e507bd2d7f" title="TIMER_start starts a given virtual timer." alt="" coords="1333,31,1434,56"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="1180,58,1319,46,1319,51,1180,63"/>
+<area shape="rect" id="Node000015" href="$i2c_8c.html#a3ff82cda8c1d4a8b2d5fa48a5fc2c4a5" title="Waits for the I2C Rx buffer to be full." alt="" coords="1027,597,1158,623"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="819,522,883,553,962,583,1015,596,1013,601,961,589,880,558,817,526"/>
+<area shape="rect" id="Node000019" href="$i2c_8c.html#a79b77f8447ee8b71cd04895699df54bb" title="Waits for a stop condition to be detected." alt="" coords="1039,499,1147,524"/>
+<area shape="poly" id="edge20_Node000014_Node000019" title=" " alt="" coords="834,509,1025,509,1025,514,834,514"/>
+<area shape="rect" id="Node000016" href="$mcu_8c.html#a298a563701c7fc98c1f2750a1a2b8220" title="Get the current value of the Free Running Counter 0 (FRC0)" alt="" coords="1571,521,1773,547"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="1147,620,1218,632,1307,639,1354,638,1402,633,1449,623,1493,608,1508,597,1517,584,1526,570,1541,557,1559,549,1561,554,1544,562,1530,574,1521,587,1512,601,1496,612,1450,628,1403,638,1355,643,1307,644,1218,637,1146,625"/>
+<area shape="rect" id="Node000017" href="$mcu_8c.html#af5a3b75b7431935f913d80e31eb99690" title="Checks if a timeout in microseconds has elapsed." alt="" coords="1306,572,1461,597"/>
+<area shape="poly" id="edge17_Node000015_Node000017" title=" " alt="" coords="1158,602,1292,590,1292,595,1159,607"/>
+<area shape="poly" id="edge19_Node000017_Node000016" title=" " alt="" coords="1456,569,1585,547,1586,552,1457,575"/>
+<area shape="rect" id="Node000018" href="$mcu_8c.html#a357da0bcb906f4ad573ed0d4244dd0a2" title="Convert the counter value FRC0 to a time in microseconds." alt="" coords="1573,571,1771,611"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="1461,584,1560,586,1560,591,1461,589"/>
+<area shape="poly" id="edge21_Node000019_Node000016" title=" " alt="" coords="1147,508,1303,507,1495,513,1557,518,1557,523,1495,518,1303,512,1147,513"/>
+<area shape="poly" id="edge22_Node000019_Node000017" title=" " alt="" coords="1147,518,1225,534,1332,565,1330,570,1223,539,1146,523"/>
+<area shape="poly" id="edge24_Node000020_Node000019" title=" " alt="" coords="836,466,1025,498,1024,503,835,471"/>
+<area shape="rect" id="Node000021" href="$i2c_8c.html#a74b8989b1724cc1b675d538a9815861e" title="Waits for the I2C Tx buffer to be empty." alt="" coords="1025,548,1160,573"/>
+<area shape="poly" id="edge25_Node000020_Node000021" title=" " alt="" coords="836,462,875,470,915,485,930,497,939,511,948,523,963,534,987,545,1013,551,1011,557,985,550,960,539,944,527,935,514,926,501,912,490,874,475,835,467"/>
+<area shape="poly" id="edge26_Node000021_Node000016" title=" " alt="" coords="1160,555,1557,537,1557,542,1160,560"/>
+<area shape="poly" id="edge27_Node000021_Node000017" title=" " alt="" coords="1160,564,1292,575,1292,580,1160,569"/>
+<area shape="poly" id="edge35_Node000022_Node000019" title=" " alt="" coords="852,261,885,269,915,287,934,312,942,337,943,363,940,388,937,414,938,438,945,462,963,485,992,503,1025,511,1024,516,990,508,960,489,941,465,933,439,932,414,934,388,937,363,937,338,929,314,912,291,883,274,850,266"/>
+<area shape="rect" id="Node000023" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="1016,400,1169,425"/>
+<area shape="poly" id="edge29_Node000022_Node000023" title=" " alt="" coords="852,263,885,271,915,287,927,299,934,312,940,337,945,363,952,374,963,385,982,397,1004,404,1002,409,980,401,960,389,948,377,940,365,935,339,929,313,923,302,912,291,883,276,851,268"/>
+<area shape="rect" id="Node000024" href="$fsystem_8h.html#af23205627be1616c6b1dcdb684060322" title="Switch back to user mode." alt="" coords="1001,301,1184,327"/>
+<area shape="poly" id="edge30_Node000022_Node000024" title=" " alt="" coords="851,271,1002,296,1001,302,851,277"/>
+<area shape="rect" id="Node000025" href="$i2c_8c.html#ac904024d75c223ad5c2a6a4f0467b5c3" title="Clear pending notifications." alt="" coords="1009,351,1176,376"/>
+<area shape="poly" id="edge31_Node000022_Node000025" title=" " alt="" coords="852,266,884,274,915,286,930,299,940,312,948,324,963,336,997,349,995,354,960,340,944,328,935,315,926,302,912,291,882,279,850,272"/>
+<area shape="rect" id="Node000027" href="$i2c_8c.html#a2708e6ee456b45b63fd1080bfb79fced" title="Wait for the I2C transmit communication to complete, using notifications." alt="" coords="962,252,1223,277"/>
+<area shape="poly" id="edge33_Node000022_Node000027" title=" " alt="" coords="851,262,948,262,948,267,851,267"/>
+<area shape="rect" id="Node000029" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1015,153,1171,179"/>
+<area shape="poly" id="edge36_Node000022_Node000029" title=" " alt="" coords="850,257,882,249,912,237,926,226,935,213,944,200,960,188,1000,173,1002,178,963,192,948,204,939,216,930,229,915,242,884,255,852,262"/>
+<area shape="rect" id="Node000030" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1019,203,1166,228"/>
+<area shape="poly" id="edge37_Node000022_Node000030" title=" " alt="" coords="851,253,1005,227,1006,232,851,258"/>
+<area shape="rect" id="Node000026" href="$os__freertos_8c.html#a25b7418eb914b83dd88bbc0424333139" title="Clear pending notification of a task, with index." alt="" coords="1280,351,1487,376"/>
+<area shape="poly" id="edge32_Node000025_Node000026" title=" " alt="" coords="1176,361,1266,361,1266,366,1176,366"/>
+<area shape="rect" id="Node000028" href="$os__freertos_8c.html#a7578e983d03af6f03fd3fe09f293cdb1" title="Wait for a notification, with index." alt="" coords="1272,276,1495,301"/>
+<area shape="poly" id="edge34_Node000027_Node000028" title=" " alt="" coords="1224,273,1259,276,1258,281,1223,278"/>
+<area shape="rect" id="Node000034" href="$rtc_8c.html#a1d5240b81fe9ed39eb9ac7db1f6ccb44" title="Reads the time from the RTC IC." alt="" coords="453,372,572,397"/>
+<area shape="poly" id="edge41_Node000033_Node000034" title=" " alt="" coords="354,379,440,381,439,386,353,385"/>
+<area shape="rect" id="Node000037" href="$rtc_8c.html#a62d7ae0d57ecd3235b4293667da0d0ed" title="set the RTC system timer." alt="" coords="401,313,624,339"/>
+<area shape="poly" id="edge53_Node000033_Node000037" title=" " alt="" coords="351,358,439,339,440,344,352,363"/>
+<area shape="poly" id="edge42_Node000034_Node000002" title=" " alt="" coords="571,375,599,365,622,348,637,329,645,310,648,272,650,232,657,211,670,188,705,156,744,133,747,137,708,160,674,192,662,213,655,233,653,272,650,312,641,332,626,352,601,369,573,380"/>
+<area shape="poly" id="edge52_Node000034_Node000020" title=" " alt="" coords="557,395,625,417,673,434,737,449,735,455,671,439,623,422,555,400"/>
+<area shape="rect" id="Node000035" href="$i2c_8c.html#a87ea81c62fd94d7b0e049c896d0515dc" title="reads from an I2C slave, no register address written first, using DMA." alt="" coords="735,400,850,425"/>
+<area shape="poly" id="edge43_Node000034_Node000035" title=" " alt="" coords="572,388,722,403,721,408,572,393"/>
+<area shape="poly" id="edge49_Node000035_Node000019" title=" " alt="" coords="851,414,883,422,915,434,930,447,940,461,948,473,963,485,993,497,1025,505,1024,510,991,502,960,490,944,477,935,464,926,451,912,439,882,427,850,419"/>
+<area shape="poly" id="edge44_Node000035_Node000023" title=" " alt="" coords="850,410,1002,410,1002,415,850,415"/>
+<area shape="poly" id="edge45_Node000035_Node000024" title=" " alt="" coords="850,405,882,398,912,385,926,374,935,361,944,348,960,336,987,324,989,329,963,340,948,352,939,364,930,377,915,390,883,403,851,410"/>
+<area shape="poly" id="edge46_Node000035_Node000025" title=" " alt="" coords="850,401,1001,376,1001,381,851,406"/>
+<area shape="poly" id="edge50_Node000035_Node000029" title=" " alt="" coords="850,411,883,403,912,385,929,362,936,338,937,314,934,289,932,263,933,238,941,212,959,188,979,175,1000,166,1002,171,981,179,963,192,945,215,938,239,937,263,940,288,942,314,942,339,934,365,915,389,885,408,851,416"/>
+<area shape="poly" id="edge51_Node000035_Node000030" title=" " alt="" coords="850,410,883,402,912,385,926,368,933,351,934,313,937,275,944,256,960,237,981,223,1005,215,1007,220,983,228,963,241,949,258,942,276,940,313,938,352,930,371,915,389,885,407,851,415"/>
+<area shape="rect" id="Node000036" href="$i2c_8c.html#aabdf9c7074f69f6486fb02d4297ec7f8" title="Wait for the I2C receive communication to complete, using notifications." alt="" coords="961,449,1224,475"/>
+<area shape="poly" id="edge47_Node000035_Node000036" title=" " alt="" coords="851,419,1001,444,1001,450,850,425"/>
+<area shape="poly" id="edge48_Node000036_Node000028" title=" " alt="" coords="1201,447,1222,435,1234,424,1240,412,1247,388,1253,363,1270,336,1295,318,1321,304,1324,309,1297,322,1274,340,1258,365,1252,390,1245,415,1238,427,1226,439,1204,452"/>
+<area shape="rect" id="Node000038" href="$rtc_8c.html#aebef46df841323a07f9bf21b390810c9" title="Convert time from RTC_TIME_DATA_s to struct tm format." alt="" coords="694,301,891,327"/>
+<area shape="poly" id="edge54_Node000037_Node000038" title=" " alt="" coords="624,319,680,316,680,321,624,324"/>
+<area shape="rect" id="Node000039" href="$rtc_8c.html#a38419831efb8e12b2275b3f5c16c7b04" title="Set the RTC system timer value." alt="" coords="672,203,913,228"/>
+<area shape="poly" id="edge55_Node000037_Node000039" title=" " alt="" coords="532,311,592,274,671,237,697,229,699,234,673,242,595,279,534,315"/>
+<area shape="rect" id="Node000040" href="$rtc_8c.html#a51125f9e9e11ba4d06f263043bba6988" title="Convert time from struct tm to RTC_TIME_DATA_s format." alt="" coords="693,351,892,376"/>
+<area shape="poly" id="edge58_Node000037_Node000040" title=" " alt="" coords="609,336,684,346,683,351,608,341"/>
+<area shape="poly" id="edge56_Node000039_Node000029" title=" " alt="" coords="870,200,1001,178,1002,184,871,205"/>
+<area shape="poly" id="edge57_Node000039_Node000030" title=" " alt="" coords="914,213,1005,213,1005,218,914,218"/>
+</map>

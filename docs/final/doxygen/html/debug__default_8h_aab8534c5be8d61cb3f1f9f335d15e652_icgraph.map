@@ -1,0 +1,13 @@
+<map id="FAKE_IsFirstMeasurementCycleFinished" name="FAKE_IsFirstMeasurementCycleFinished">
+<area shape="rect" id="Node000001" title="return whether the first measurement cycle is finished" alt="" coords="827,37,1053,77"/>
+<area shape="rect" id="Node000002" href="$debug__default__afe_8c.html#a487b9e19d42344e6040f8bb41a0db9cb" title="Checks if the first AFE measurement cycle was made." alt="" coords="560,5,779,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="813,45,779,41,779,36,813,40"/>
+<area shape="rect" id="Node000003" href="$debug__default_8c.html#a10a87d31f072da72d5f1d47a8baa4413" title="Processes the initialization state." alt="" coords="573,69,765,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="814,75,766,81,765,75,813,70"/>
+<area shape="rect" id="Node000004" href="$debug__default_8c.html#aeb6e23ce50d19e616aab642a7bee7bd7" title="Defines the state transitions." alt="" coords="337,77,512,102"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="559,92,512,92,512,87,559,87"/>
+<area shape="rect" id="Node000005" href="$debug__default_8c.html#a3ff9b601ec0d377a3a78d8ce735c7971" title="Trigger function for the driver, called to advance the state machine." alt="" coords="163,77,289,102"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="323,92,290,92,290,87,323,87"/>
+<area shape="rect" id="Node000006" href="$debug__default__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,77,115,102"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="149,92,115,92,115,87,149,87"/>
+</map>

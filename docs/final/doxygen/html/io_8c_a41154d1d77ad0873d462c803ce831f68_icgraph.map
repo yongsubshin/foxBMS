@@ -1,0 +1,36 @@
+<map id="IO_SetPinDirectionToOutput" name="IO_SetPinDirectionToOutput">
+<area shape="rect" id="Node000001" title="Set pin to output by writing in pin direction register." alt="" coords="2228,70,2429,95"/>
+<area shape="rect" id="Node000002" href="$can_8c.html#a5c1c7ee71937637e326117ba125d72f8" title=" " alt="" coords="1979,21,2166,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2248,70,2139,49,2140,43,2249,65"/>
+<area shape="rect" id="Node000013" href="$interlock_8c.html#a0bfea49408f313de16210bb41b264006" title="Initializes required pins for interlock evaluation." alt="" coords="2002,70,2143,95"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="2215,85,2143,85,2143,80,2215,80"/>
+<area shape="rect" id="Node000015" href="$mxm__cfg_8c.html#a417b5a6e2fac6c926405a19edcc4c378" title="Initialize the pins connected to the MAX17841B." alt="" coords="1965,119,2180,145"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="2249,101,2140,122,2139,117,2248,95"/>
+<area shape="rect" id="Node000003" href="$can_8c.html#ad81d1fcadc20d4553accae9b7a7e5e3a" title="Enables the CAN transceiver.. This function sets th pins to enable the CAN transceiver...." alt="" coords="1804,17,1917,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1965,34,1918,33,1918,28,1965,29"/>
+<area shape="rect" id="Node000004" href="$sys_8c.html#ab9119b0dc92080bccc993dd04668d7a1" title="Processes the initialization state." alt="" coords="1572,5,1756,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1790,31,1756,30,1756,25,1790,25"/>
+<area shape="rect" id="Node000005" href="$sys_8c.html#a90dceb9878e7eb209511a7a9c0251ec4" title="Defines the state transitions." alt="" coords="1357,14,1524,39"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1558,29,1524,29,1524,24,1558,23"/>
+<area shape="rect" id="Node000006" href="$sys_8c.html#ade51c1203163eee5a4781db384725c95" title="tick function, call this to advance the state machine" alt="" coords="1212,14,1309,39"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1344,29,1309,29,1309,24,1344,24"/>
+<area shape="rect" id="Node000007" href="$ftask__cfg_8c.html#a7f3620825ec0f5072516255d6febebdb" title="Cyclic 10 ms task." alt="" coords="940,41,1164,66"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1198,37,1152,43,1151,38,1198,32"/>
+<area shape="rect" id="Node000008" href="$ftask_8c.html#a2a1d135e2e4e6fef538294d8c43d0328" title="Creation of cyclic 10 ms task." alt="" coords="684,41,892,66"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="926,56,892,56,892,51,926,51"/>
+<area shape="rect" id="Node000009" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,41,636,66"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="670,56,636,56,636,51,670,51"/>
+<area shape="rect" id="Node000010" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,41,448,66"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="482,56,448,56,448,51,482,51"/>
+<area shape="rect" id="Node000011" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,41,184,66"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="218,56,184,56,184,51,218,51"/>
+<area shape="rect" id="Node000012" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,41,81,66"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="116,56,82,56,82,51,116,51"/>
+<area shape="rect" id="Node000014" href="$interlock_8c.html#ab36dc56ba7d336a15ad43fb17da83e62" title="trigger function for the ILCK driver state machine." alt="" coords="1389,67,1492,93"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="1988,85,1492,83,1492,78,1988,80"/>
+<area shape="poly" id="edge14_Node000014_Node000007" title=" " alt="" coords="1375,78,1164,64,1164,58,1376,73"/>
+<area shape="rect" id="Node000016" href="$mxm__afe_8c.html#ab03833bf09e30722e8ef6b9e90cc353d" title=" " alt="" coords="1805,121,1916,146"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="1951,135,1916,136,1916,130,1951,130"/>
+<area shape="rect" id="Node000017" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="1609,121,1719,146"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="1792,136,1719,136,1719,131,1792,131"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="TSI_GetMaximumPlausibleTemperature" name="TSI_GetMaximumPlausibleTemperature">
+<area shape="rect" id="Node000001" title="Return the maximum plausible temperature." alt="" coords="1256,31,1535,56"/>
+<area shape="rect" id="Node000002" href="$afe__plausibility_8c.html#a406894a58689eb99279a7569ffebb801" title="Cell temperature plausibility check." alt="" coords="1007,23,1208,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1242,46,1208,46,1208,41,1242,41"/>
+<area shape="rect" id="Node000003" href="$ltc__6806_8c.html#a6c664def5b7059842ab106bbb743775d" title="stores the measured temperatures and the measured multiplexer feedback in the database." alt="" coords="774,5,946,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="993,34,946,29,947,24,993,29"/>
+<area shape="rect" id="Node000004" href="$mxm__1785x_8c.html#a920e0ec9a500bdd62f13a6c2f57a9163" title="Copies measured voltage data into the database." alt="" coords="761,55,959,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="993,57,959,60,959,55,993,52"/>
+<area shape="rect" id="Node000005" href="$mxm__17852_8c.html#a688e7e359e03e17fc0559720f0b8d586" title="State&#45;Machine implementation for operation state." alt="" coords="499,55,713,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="747,70,714,70,714,65,747,65"/>
+<area shape="rect" id="Node000006" href="$mxm__1785x_8c.html#aca60f84fd030e06f1ab2c57ba6bb8e7d" title="Main state&#45;machine implementation." alt="" coords="300,55,451,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="485,70,451,70,451,65,485,65"/>
+<area shape="rect" id="Node000007" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="163,55,252,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="286,70,252,70,252,65,286,65"/>
+<area shape="rect" id="Node000008" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,55,115,80"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="149,70,115,70,115,65,149,65"/>
+</map>

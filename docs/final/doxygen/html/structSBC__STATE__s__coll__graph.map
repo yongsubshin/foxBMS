@@ -1,0 +1,19 @@
+<map id="SBC_STATE_s" name="SBC_STATE_s">
+<area shape="rect" id="Node000001" title=" " alt="" coords="867,129,975,155"/>
+<area shape="rect" id="Node000002" href="$structFS85__STATE__s.html" title=" " alt="" coords="591,129,704,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="718,139,866,139,866,145,718,145"/>
+<area shape="rect" id="Node000003" href="$structSPI__INTERFACE__CONFIG__s.html" title=" " alt="" coords="248,5,440,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="454,28,512,42,568,65,609,96,638,127,634,131,606,100,565,70,510,47,453,33"/>
+<area shape="rect" id="Node000004" href="$structfs8x__drv__data__t.html" title="This data structure is used by the FS8x driver (this is the first parameter of most the FS8x function..." alt="" coords="281,55,407,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="422,75,493,88,567,106,621,127,619,132,566,111,492,93,421,80"/>
+<area shape="rect" id="Node000005" href="$structFS85__FIN__CONFIGURATION__s.html" title=" " alt="" coords="237,104,451,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="465,124,591,135,590,140,464,129"/>
+<area shape="rect" id="Node000006" href="$structFS85__MAIN__REGISTERS__s.html" title=" " alt="" coords="250,153,438,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="452,165,566,158,599,152,600,157,567,163,452,171"/>
+<area shape="rect" id="Node000007" href="$structFS85__FS__REGISTER__s.html" title=" " alt="" coords="264,203,424,228"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="437,210,502,202,566,186,599,171,627,153,630,157,602,175,568,191,502,207,438,215"/>
+<area shape="rect" id="Node000008" href="$structFS85__NVRAM__INFO__s.html" title=" " alt="" coords="263,252,425,277"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="439,260,503,250,535,240,565,226,588,210,608,191,636,154,640,157,612,194,592,215,568,231,537,245,505,255,440,266"/>
+<area shape="rect" id="Node000009" href="$structFRAM__SBC__INIT__s.html" title=" " alt="" coords="5,252,145,277"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="159,262,262,262,262,267,159,267"/>
+</map>

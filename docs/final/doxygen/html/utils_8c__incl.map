@@ -1,0 +1,15 @@
+<map id="foxbms&#45;2/src/app/driver/foxmath/utils.c" name="foxbms&#45;2/src/app/driver/foxmath/utils.c">
+<area shape="rect" id="Node000001" title="Util function implementations." alt="" coords="56,5,233,45"/>
+<area shape="rect" id="Node000002" href="$utils_8h.html" title="Utilities." alt="" coords="5,93,68,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,48,66,87,63,83,117,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="59,167,129,192"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="141,47,105,154,100,153,136,45"/>
+<area shape="rect" id="Node000004" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="144,93,223,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="156,44,174,80,169,82,152,47"/>
+<area shape="rect" id="Node000006" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="247,93,349,119"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="183,43,265,85,262,89,180,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="48,117,78,154,74,158,44,121"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="171,121,121,160,118,156,167,117"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="154,167,237,192"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="188,119,194,153,188,154,183,119"/>
+</map>

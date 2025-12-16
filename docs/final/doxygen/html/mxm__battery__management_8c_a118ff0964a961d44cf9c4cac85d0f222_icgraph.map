@@ -1,0 +1,20 @@
+<map id="MXM_5XSignalSuccess" name="MXM_5XSignalSuccess">
+<area shape="rect" id="Node000001" title="Signal that a chain of substates has been successfully handled." alt="" coords="791,95,961,121"/>
+<area shape="rect" id="Node000002" href="$mxm__battery__management_8c.html#a0702ba6d1b8e19c6a003232838a0d159" title="Handle the state MXM_STATEMACH_5X_41B_FMEA_CHECK." alt="" coords="516,5,743,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="830,93,742,60,704,48,705,43,744,55,832,88"/>
+<area shape="rect" id="Node000006" href="$mxm__battery__management_8c.html#ade338957069ff6f62cdfbfcebffc270a" title="Handle the state MXM_STATEMACH_5X_INIT." alt="" coords="537,70,722,95"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="776,100,722,95,722,90,777,95"/>
+<area shape="rect" id="Node000007" href="$mxm__battery__management_8c.html#a1df234e14c5b40e2798364aebc9e19f9" title="Handle the state MXM_STATEMACH_5X_READALL." alt="" coords="522,119,737,145"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="777,120,737,124,737,119,777,115"/>
+<area shape="rect" id="Node000008" href="$mxm__battery__management_8c.html#a8338520796dd87a45d39dd40a035e3bd" title="Handle the states MXM_STATEMACH_5X_WRITEALL and MXM_STATEMACH_5X_WRITE_DEVICE." alt="" coords="530,169,729,194"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="831,128,743,159,694,171,693,166,742,153,830,123"/>
+<area shape="rect" id="Node000003" href="$mxm__battery__management_8c.html#a325538715bf432ee4826598277aa29e3" title="Execute state&#45;machine for Battery Management Protocol." alt="" coords="300,95,468,121"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="542,52,517,60,417,98,415,93,515,55,540,47"/>
+<area shape="rect" id="Node000004" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="163,95,252,121"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="286,111,252,111,252,105,286,105"/>
+<area shape="rect" id="Node000005" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,95,115,121"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="149,111,115,111,115,105,149,105"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="524,96,469,102,468,97,523,91"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="508,123,468,119,468,114,509,118"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="551,168,515,159,416,123,418,118,517,153,552,163"/>
+</map>

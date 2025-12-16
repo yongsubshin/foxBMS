@@ -3,7 +3,7 @@
   "tool_version": "PARVIS-AICoder-MISRA AI Analysis v2.0",
   "analysis_mode": "ai_analysis",
   "module": "CAN Driver",
-  "source_path": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/can/",
+  "source_path": "foxbms-2/src/app/driver/can/",
   "rule_set": "MISRA C:2012",
   "coverage": "Rules 17.7, 15.7, 14.3, 10.x, 11.x",
   "files_analyzed": [

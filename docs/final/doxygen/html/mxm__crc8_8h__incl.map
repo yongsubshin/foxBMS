@@ -1,0 +1,17 @@
+<map id="foxbms&#45;2/src/app/driver/afe/maxim/common/mxm_crc8.h" name="foxbms&#45;2/src/app/driver/afe/maxim/common/mxm_crc8.h">
+<area shape="rect" id="Node000001" title="Headers for the CRC8 calculation for Maxim Integrated Monitoring devices." alt="" coords="166,5,362,60"/>
+<area shape="rect" id="Node000002" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="133,108,216,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,62,198,100,195,96,235,58"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="139,255,210,280"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="290,59,314,90,334,128,340,149,342,169,339,189,330,208,309,231,282,247,253,257,224,264,223,259,251,252,279,242,305,227,326,205,334,188,337,169,335,150,329,131,309,93,286,62"/>
+<area shape="rect" id="Node000006" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="213,181,315,207"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="267,60,267,168,261,168,261,60"/>
+<area shape="rect" id="Node000003" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="58,181,137,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="164,135,122,174,118,170,160,131"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,255,88,280"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="134,131,86,149,65,164,48,183,42,196,39,211,42,241,37,241,34,211,37,195,43,180,61,160,84,144,132,126"/>
+<area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="177,134,177,241,172,241,172,134"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="191,131,240,170,237,175,187,135"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="91,209,65,245,61,242,87,205"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="112,205,154,243,150,247,108,209"/>
+</map>

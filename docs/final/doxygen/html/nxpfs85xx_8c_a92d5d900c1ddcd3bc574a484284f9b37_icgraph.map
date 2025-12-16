@@ -1,0 +1,30 @@
+<map id="FS85_CheckRegisterValues" name="FS85_CheckRegisterValues">
+<area shape="rect" id="Node000001" title="Checks register value against expected value." alt="" coords="1895,56,2092,81"/>
+<area shape="rect" id="Node000002" href="$nxpfs85xx_8c.html#a58c801b43b87be739255fb72e8f5667f" title="Configures SBC during INIT_FS phase." alt="" coords="1389,57,1559,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1880,72,1559,72,1559,67,1880,66"/>
+<area shape="rect" id="Node000010" href="$nxpfs85xx_8c.html#a5128886f0bc8f14507994ee54d052eec" title="Perform RSTB safety path check." alt="" coords="1637,5,1847,31"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1915,56,1805,33,1806,28,1917,51"/>
+<area shape="rect" id="Node000012" href="$nxpfs85xx_8c.html#a0ee0ea27da5c2b26ae74e53e24acd4fb" title="Trigger watchdog." alt="" coords="1658,107,1826,132"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="1917,87,1806,109,1805,104,1915,82"/>
+<area shape="rect" id="Node000003" href="$sbc_8c.html#a3e0fcadd5fce6da908a572116eea2b4c" title="trigger function for the SYS driver state machine." alt="" coords="1212,57,1311,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1375,73,1311,73,1311,67,1375,67"/>
+<area shape="rect" id="Node000004" href="$ftask__cfg_8c.html#a7f3620825ec0f5072516255d6febebdb" title="Cyclic 10 ms task." alt="" coords="940,57,1164,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1198,73,1164,73,1164,67,1198,67"/>
+<area shape="rect" id="Node000005" href="$ftask_8c.html#a2a1d135e2e4e6fef538294d8c43d0328" title="Creation of cyclic 10 ms task." alt="" coords="684,57,892,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="926,73,892,73,892,67,926,67"/>
+<area shape="rect" id="Node000006" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,57,636,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="670,73,636,73,636,67,670,67"/>
+<area shape="rect" id="Node000007" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,57,448,83"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="482,73,448,73,448,67,482,67"/>
+<area shape="rect" id="Node000008" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,57,184,83"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="218,73,184,73,184,67,218,67"/>
+<area shape="rect" id="Node000009" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,57,81,83"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="116,73,82,73,82,67,116,67"/>
+<area shape="rect" id="Node000011" href="$nxpfs85xx_8c.html#adbcda981b42a9a928aca6e027ec1dd50" title="Performs SBC safety path checks." alt="" coords="1385,7,1563,32"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1624,21,1563,22,1563,16,1624,16"/>
+<area shape="poly" id="edge11_Node000011_Node000003" title=" " alt="" coords="1405,38,1359,49,1312,60,1310,55,1358,43,1404,33"/>
+<area shape="poly" id="edge13_Node000012_Node000002" title=" " alt="" coords="1659,107,1543,85,1544,80,1660,102"/>
+<area shape="rect" id="Node000013" href="$sbc_8c.html#a3b3ecf9852040dc365167e54c08de6b3" title="Triggers the watchdog if the timing requires it." alt="" coords="1359,107,1589,132"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="1644,122,1590,122,1590,117,1644,117"/>
+<area shape="poly" id="edge15_Node000013_Node000003" title=" " alt="" coords="1395,106,1358,98,1308,85,1310,80,1359,93,1396,101"/>
+</map>

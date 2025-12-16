@@ -1,0 +1,7 @@
+<map id="CAN_GetNodeConfigurationStructFromRegisterAddress" name="CAN_GetNodeConfigurationStructFromRegisterAddress">
+<area shape="rect" id="Node000001" title="get pointer CAN node configuration struct from register address" alt="" coords="411,5,612,45"/>
+<area shape="rect" id="Node000002" href="$can_8c.html#a05d26837076ad4f7a00fe6c690785d05" title="Called in case of CAN RX interrupt." alt="" coords="232,13,363,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="397,28,363,28,363,23,397,23"/>
+<area shape="rect" id="Node000003" href="$can_8c.html#acac999ab73fd61efe4dfc10883ea287c" title=" " alt="" coords="5,13,184,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="218,28,184,28,184,23,218,23"/>
+</map>

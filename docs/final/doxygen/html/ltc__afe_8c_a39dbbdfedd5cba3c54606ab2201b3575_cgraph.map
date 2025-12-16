@@ -1,0 +1,11 @@
+<map id="AFE_RequestOpenWireCheck" name="AFE_RequestOpenWireCheck">
+<area shape="rect" id="Node000001" title="Makes the request to the AFE state machine to perform open&#45;wire check." alt="" coords="5,55,216,80"/>
+<area shape="rect" id="Node000002" href="$ltc__6806_8c.html#a4bb4d1d651bd80b2151b62d35e3a2699" title="sets the current state request of the state variable ltc_state." alt="" coords="264,55,423,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,65,250,65,250,70,216,70"/>
+<area shape="rect" id="Node000003" href="$ltc__6806_8c.html#a42d4f8653843aeee6f118782dfff2c20" title="checks the state requests that are made." alt="" coords="471,5,649,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="399,52,490,31,491,36,400,57"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="482,55,638,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="423,65,468,65,468,70,423,70"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="487,104,633,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="400,77,491,98,490,104,399,83"/>
+</map>

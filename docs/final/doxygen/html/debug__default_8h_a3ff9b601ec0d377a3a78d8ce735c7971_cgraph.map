@@ -1,0 +1,35 @@
+<map id="FAKE_TriggerAfe" name="FAKE_TriggerAfe">
+<area shape="rect" id="Node000001" title="Trigger function for the driver, called to advance the state machine." alt="" coords="5,191,132,216"/>
+<area shape="rect" id="Node000002" href="$debug__default_8c.html#a17637e356b7871fff832fcf62a41862b" title="check for multiple calls of state machine trigger function" alt="" coords="702,5,889,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,188,338,121,492,79,649,41,699,31,700,36,650,46,493,84,339,126,112,193"/>
+<area shape="rect" id="Node000005" href="$debug__default_8c.html#aeb6e23ce50d19e616aab642a7bee7bd7" title="Defines the state transitions." alt="" coords="180,219,355,244"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="132,210,167,214,166,220,132,215"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="989,88,1145,113"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="890,26,942,41,967,56,991,73,1009,81,1007,86,988,78,964,61,940,46,888,31"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="994,39,1141,64"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="889,27,981,38,980,43,889,32"/>
+<area shape="rect" id="Node000006" href="$debug__default_8c.html#a10a87d31f072da72d5f1d47a8baa4413" title="Processes the initialization state." alt="" coords="406,183,598,223"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="355,218,392,214,393,219,355,224"/>
+<area shape="rect" id="Node000012" href="$debug__default_8c.html#a57644736c49d43c02a23f57a5813d6ec" title="Processes the running state." alt="" coords="403,248,601,273"/>
+<area shape="poly" id="edge15_Node000005_Node000012" title=" " alt="" coords="355,240,389,244,389,249,355,245"/>
+<area shape="rect" id="Node000013" href="$debug__default_8c.html#a9a894ac1dfc077dd766fa461b593f395" title="Sets the next state, the next substate and the timer value of the state variable." alt="" coords="444,297,560,323"/>
+<area shape="poly" id="edge19_Node000005_Node000013" title=" " alt="" coords="297,242,404,283,431,292,429,297,402,289,295,247"/>
+<area shape="rect" id="Node000007" href="$debug__default_8c.html#aab8534c5be8d61cb3f1f9f335d15e652" title="return whether the first measurement cycle is finished" alt="" coords="682,119,909,159"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="594,181,689,160,691,165,595,186"/>
+<area shape="rect" id="Node000008" href="$debug__default_8c.html#a16164818c401d35ed3e28bfa13b282db" title="Write temperature measurement data." alt="" coords="693,183,897,223"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="598,201,679,201,679,206,598,206"/>
+<area shape="rect" id="Node000009" href="$debug__default_8c.html#a136ef9e582647d6e404737c350daec02" title="Write voltage measurement data." alt="" coords="649,248,941,273"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="593,221,650,233,705,243,704,248,649,238,591,226"/>
+<area shape="rect" id="Node000010" href="$debug__default_8c.html#a1a89964c5c8faba29fe50b76e53271f1" title="Sets the indicator that one full measurement cycles was successful." alt="" coords="695,55,895,95"/>
+<area shape="poly" id="edge11_Node000006_Node000010" title=" " alt="" coords="527,181,580,142,648,105,681,93,683,98,650,110,583,146,530,185"/>
+<area shape="rect" id="Node000011" href="$debug__default_8c.html#aed7fa787a0f37e83b1664a3f2f3030bc" title="Sets the next substate and the timer value of the state variable." alt="" coords="726,297,865,323"/>
+<area shape="poly" id="edge14_Node000006_Node000011" title=" " alt="" coords="580,221,603,233,618,246,627,260,636,272,651,284,681,296,713,303,712,308,679,301,648,288,632,276,623,263,614,250,600,238,577,226"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="909,121,975,111,976,116,909,126"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="907,117,940,105,964,89,988,73,1004,66,1006,71,991,78,967,94,943,110,908,122"/>
+<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="896,82,976,90,975,95,895,87"/>
+<area shape="poly" id="edge13_Node000010_Node000004" title=" " alt="" coords="895,64,980,56,981,62,896,69"/>
+<area shape="poly" id="edge16_Node000012_Node000008" title=" " alt="" coords="567,245,679,223,680,228,568,251"/>
+<area shape="poly" id="edge17_Node000012_Node000009" title=" " alt="" coords="601,258,635,258,635,263,601,263"/>
+<area shape="poly" id="edge18_Node000012_Node000011" title=" " alt="" coords="576,271,650,283,713,294,712,299,649,289,575,276"/>
+<area shape="poly" id="edge20_Node000013_Node000011" title=" " alt="" coords="560,307,712,307,712,313,560,313"/>
+</map>

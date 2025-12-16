@@ -1,0 +1,7 @@
+<map id="foxbms&#45;2/src/app/driver/afe/ltc/6813&#45;1/config/ltc_6813&#45;1_cfg.h" name="foxbms&#45;2/src/app/driver/afe/ltc/6813&#45;1/config/ltc_6813&#45;1_cfg.h">
+<area shape="rect" id="Node000001" title="Header for the configuration for the LTC 6804&#45;1 6811&#45;1, 6812&#45;1, and 6813&#45;1 monitoring IC." alt="" coords="111,5,288,60"/>
+<area shape="rect" id="Node000002" href="$ltc__6813-1__cfg_8c.html" title="Configuration for the LTC analog front&#45;end." alt="" coords="5,108,183,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,72,123,110,120,106,160,68"/>
+<area shape="rect" id="Node000003" href="$ltc__6813-1_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="207,115,405,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,68,287,113,284,117,235,71"/>
+</map>

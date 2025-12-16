@@ -1,0 +1,5 @@
+<map id="CANTX_CalculateStringCurrent" name="CANTX_CalculateStringCurrent">
+<area shape="rect" id="Node000001" title="calculates the return value of the current" alt="" coords="5,5,227,31"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="275,5,469,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,15,261,15,261,21,227,21"/>
+</map>

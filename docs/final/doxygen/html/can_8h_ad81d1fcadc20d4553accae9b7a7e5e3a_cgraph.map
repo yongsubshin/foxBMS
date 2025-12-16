@@ -1,0 +1,29 @@
+<map id="CAN_Initialize" name="CAN_Initialize">
+<area shape="rect" id="Node000001" title="Enables the CAN transceiver.. This function sets th pins to enable the CAN transceiver...." alt="" coords="5,157,119,182"/>
+<area shape="rect" id="Node000002" href="$can_8c.html#afe2d59aab796885f9a7bcf27ecc2fba7" title="Calculate Reset Value for internal counter in CAN_PeriodicTransmit." alt="" coords="179,5,385,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,155,107,106,134,79,165,55,177,49,180,53,168,60,138,83,111,110,74,158"/>
+<area shape="rect" id="Node000003" href="$can_8c.html#ab21d13a8189c06dd81be780cf1f07ed5" title=" " alt="" coords="167,70,397,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="79,154,118,130,166,106,194,96,195,101,168,110,120,134,82,159"/>
+<area shape="rect" id="Node000004" href="$can_8c.html#ab1cb7378939dbd5b4f3459d400a1f83d" title="Initialize RX mailboxes for usage with extended identifiers." alt="" coords="181,120,383,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="118,159,167,153,167,158,119,164"/>
+<area shape="rect" id="Node000005" href="$can_8c.html#a5c1c7ee71937637e326117ba125d72f8" title=" " alt="" coords="189,185,375,210"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="119,174,176,181,175,186,118,179"/>
+<area shape="rect" id="Node000012" href="$can_8c.html#a1c82394533ff3d1897f27eb3015299a4" title=" " alt="" coords="184,235,380,275"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="87,180,168,219,192,228,190,233,166,224,85,185"/>
+<area shape="rect" id="Node000013" href="$can_8c.html#a4b21edebfa5f578978f072deb3c9833a" title=" " alt="" coords="184,299,380,339"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="73,181,110,231,137,260,168,284,179,291,176,295,165,289,133,264,106,235,69,184"/>
+<area shape="rect" id="Node000006" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="504,110,588,135"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="354,182,396,170,420,157,444,144,490,131,491,136,446,149,423,162,398,174,355,187"/>
+<area shape="rect" id="Node000007" href="$io_8c.html#a41154d1d77ad0873d462c803ce831f68" title="Set pin to output by writing in pin direction register." alt="" coords="445,159,647,185"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="375,186,431,180,432,186,376,191"/>
+<area shape="rect" id="Node000008" href="$pex_8c.html#a8d40659d3d10755949d65e36f483c504" title="sets pin to high." alt="" coords="499,209,593,234"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="376,203,485,213,485,219,375,208"/>
+<area shape="rect" id="Node000011" href="$pex_8c.html#aa2309e9dbd95438d52d80cad62ce5a45" title="sets pin to input." alt="" coords="447,258,645,283"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="354,208,398,220,423,232,446,244,470,252,469,257,444,249,420,237,396,225,353,213"/>
+<area shape="rect" id="Node000009" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="695,209,851,234"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="594,219,681,219,681,224,594,224"/>
+<area shape="rect" id="Node000010" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="699,258,846,283"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="594,229,701,252,699,258,593,234"/>
+<area shape="poly" id="edge11_Node000011_Node000009" title=" " alt="" coords="604,255,700,234,701,240,606,261"/>
+<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="646,268,686,268,686,273,646,273"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="CANTX_CalculateMaximumPackSoc" name="CANTX_CalculateMaximumPackSoc">
+<area shape="rect" id="Node000001" title="Calculates the return value of the maximum SOC." alt="" coords="5,70,260,95"/>
+<area shape="rect" id="Node000002" href="$bms_8c.html#a95febd341b208a988bb0462e81febca8" title="Returns number of connected strings." alt="" coords="311,5,529,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,67,305,45,306,51,198,73"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="323,70,517,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,80,309,80,309,85,260,85"/>
+<area shape="rect" id="Node000004" href="$can__cbs__tx__pack-state-estimation_8c.html#a7208460e9369587719dbde2d75671839" title="Gets the highest string SOC percentage from all connected Strings." alt="" coords="308,119,532,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="208,93,332,114,331,120,207,98"/>
+<area shape="rect" id="Node000005" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="580,119,731,145"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="532,129,566,129,566,135,532,135"/>
+</map>

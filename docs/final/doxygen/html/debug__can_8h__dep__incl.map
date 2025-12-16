@@ -1,0 +1,7 @@
+<map id="foxbms&#45;2/src/app/driver/afe/debug/can/debug_can.h" name="foxbms&#45;2/src/app/driver/afe/debug/can/debug_can.h">
+<area shape="rect" id="Node000001" title="Header for the driver implementation of the fake CAN to AFE driver." alt="" coords="106,5,310,45"/>
+<area shape="rect" id="Node000002" href="$debug__can__afe_8c.html" title="Implementation of the fake AFE driver." alt="" coords="5,93,192,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,56,131,95,128,91,174,52"/>
+<area shape="rect" id="Node000003" href="$debug__can_8c.html" title="Driver implementation of the fake CAN to AFE driver to receive CAN messages (cell temperatures and ce..." alt="" coords="216,101,419,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,52,297,99,294,103,239,56"/>
+</map>

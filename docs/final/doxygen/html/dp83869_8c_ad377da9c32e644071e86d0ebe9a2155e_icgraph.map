@@ -1,0 +1,5 @@
+<map id="PHY_SelectSpeed" name="PHY_SelectSpeed">
+<area shape="rect" id="Node000001" title="Select the data transmission rate." alt="" coords="215,5,349,31"/>
+<area shape="rect" id="Node000002" href="$dp83869_8c.html#adbd35cac880dcdb100932a2fc5c79b62" title="Enables PHY Loopback." alt="" coords="5,5,167,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,21,167,21,167,15,201,15"/>
+</map>

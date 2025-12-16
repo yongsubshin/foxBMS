@@ -1,0 +1,7 @@
+<map id="foxbms&#45;2/src/app/driver/can/cbs/tx&#45;async/can_cbs_tx_crash&#45;dump.h" name="foxbms&#45;2/src/app/driver/can/cbs/tx&#45;async/can_cbs_tx_crash&#45;dump.h">
+<area shape="rect" id="Node000001" title="CAN Tx callback functions for transmitting information on fatal errors." alt="" coords="108,5,285,60"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__crash-dump_8c.html" title="CAN." alt="" coords="5,108,183,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,72,123,110,119,106,158,68"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html" title="FreeRTOS specific implementation of the tasks and resources used by the system." alt="" coords="207,115,391,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,68,282,113,278,117,232,72"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="AFE_Initialize" name="AFE_Initialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,116,56"/>
+<area shape="rect" id="Node000002" href="$ltc__6806_8c.html#a7cd8b1e13abf2fb07eadc0fd3bb4fd6f" title="Sets the transceiver pins to enable LTC6820 IC." alt="" coords="164,31,361,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,41,150,41,150,46,116,46"/>
+<area shape="rect" id="Node000003" href="$pex_8c.html#a8d40659d3d10755949d65e36f483c504" title="sets pin to high." alt="" coords="461,5,556,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,31,447,22,448,27,362,36"/>
+<area shape="rect" id="Node000006" href="$pex_8c.html#aa2309e9dbd95438d52d80cad62ce5a45" title="sets pin to input." alt="" coords="409,55,608,80"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="362,50,396,54,395,59,361,56"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="656,5,812,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="556,15,642,15,642,21,556,21"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="661,55,807,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="557,26,662,49,661,54,556,31"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="567,52,661,31,663,36,568,57"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="608,65,647,65,647,70,608,70"/>
+</map>

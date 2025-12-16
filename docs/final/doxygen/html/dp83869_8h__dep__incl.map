@@ -1,0 +1,9 @@
+<map id="foxbms&#45;2/src/app/driver/phy/dp83869.h" name="foxbms&#45;2/src/app/driver/phy/dp83869.h">
+<area shape="rect" id="Node000001" title="Implementation of physical layer driver." alt="" coords="241,5,418,45"/>
+<area shape="rect" id="Node000002" href="$ethernet_8c.html" title="Implementation of ethernet software." alt="" coords="5,93,216,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,53,160,96,158,91,268,48"/>
+<area shape="rect" id="Node000003" href="$dp83869_8c.html" title="Implementation of physical layer driver." alt="" coords="241,93,418,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="332,59,332,93,327,93,327,59"/>
+<area shape="rect" id="Node000004" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="442,93,609,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="386,48,483,91,481,96,384,53"/>
+</map>

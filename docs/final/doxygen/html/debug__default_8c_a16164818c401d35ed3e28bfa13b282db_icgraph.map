@@ -1,0 +1,14 @@
+<map id="FAKE_SaveFakeTemperatureMeasurementData" name="FAKE_SaveFakeTemperatureMeasurementData">
+<area shape="rect" id="Node000001" title="Write temperature measurement data." alt="" coords="807,35,1011,75"/>
+<area shape="rect" id="Node000002" href="$debug__default_8c.html#a10a87d31f072da72d5f1d47a8baa4413" title="Processes the initialization state." alt="" coords="563,5,755,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="793,44,755,39,756,34,793,38"/>
+<area shape="rect" id="Node000006" href="$debug__default_8c.html#a57644736c49d43c02a23f57a5813d6ec" title="Processes the running state." alt="" coords="560,70,759,95"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="794,70,759,74,759,69,793,65"/>
+<area shape="rect" id="Node000003" href="$debug__default_8c.html#aeb6e23ce50d19e616aab642a7bee7bd7" title="Defines the state transitions." alt="" coords="337,42,512,67"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="550,42,513,46,512,41,549,36"/>
+<area shape="rect" id="Node000004" href="$debug__default_8c.html#a3ff9b601ec0d377a3a78d8ce735c7971" title="Trigger function for the driver, called to advance the state machine." alt="" coords="163,42,289,67"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="323,57,290,57,290,52,323,52"/>
+<area shape="rect" id="Node000005" href="$debug__default__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,42,115,67"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="149,57,115,57,115,52,149,52"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="546,72,512,68,513,62,547,67"/>
+</map>

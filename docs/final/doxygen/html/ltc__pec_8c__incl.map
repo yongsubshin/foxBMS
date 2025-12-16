@@ -1,0 +1,15 @@
+<map id="foxbms&#45;2/src/app/driver/afe/ltc/common/ltc_pec.c" name="foxbms&#45;2/src/app/driver/afe/ltc/common/ltc_pec.c">
+<area shape="rect" id="Node000001" title="Implements the CRC for the LTC LTC68xx&#45;x family of ICs." alt="" coords="67,5,256,45"/>
+<area shape="rect" id="Node000002" href="$ltc__pec_8h.html" title="Headers for the PEC computation." alt="" coords="5,93,85,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,48,75,88,72,83,132,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="75,167,146,192"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="157,47,121,154,116,153,152,45"/>
+<area shape="rect" id="Node000004" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="161,93,239,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,44,191,80,186,82,168,47"/>
+<area shape="rect" id="Node000006" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="263,93,366,119"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="199,43,281,85,279,89,197,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="58,117,93,155,89,158,54,121"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="187,121,138,160,134,156,184,117"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="171,167,253,192"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="205,119,210,153,205,154,199,119"/>
+</map>

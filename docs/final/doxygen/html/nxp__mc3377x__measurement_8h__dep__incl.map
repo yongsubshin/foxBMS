@@ -1,0 +1,7 @@
+<map id="foxbms&#45;2/src/app/driver/afe/nxp/common/mc3377x/nxp_mc3377x_measurement.h" name="foxbms&#45;2/src/app/driver/afe/nxp/common/mc3377x/nxp_mc3377x_measurement.h">
+<area shape="rect" id="Node000001" title="Header file of nxp_mc3377x_measurement.c." alt="" coords="105,5,332,60"/>
+<area shape="rect" id="Node000002" href="$nxp__mc3377x_8c.html" title="Driver for the MC3377X analog front&#45;end." alt="" coords="5,108,205,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,71,137,110,133,106,177,67"/>
+<area shape="rect" id="Node000003" href="$nxp__mc33775a__measurement_8c.html" title="Measurement functions of the MC33775A analog front&#45;end driver." alt="" coords="230,108,437,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,67,305,106,302,110,257,71"/>
+</map>

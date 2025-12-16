@@ -1,0 +1,27 @@
+<map id="PHY_Initialize" name="PHY_Initialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,116,105"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#ac05b1cb9c4afb4bd5e14f7e8fbd2bdcd" title="Delay a task for specified time." alt="" coords="429,55,544,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,77,110,44,136,28,163,15,201,6,240,3,318,10,389,27,446,47,444,52,388,32,317,15,240,8,202,12,165,20,138,32,113,49,76,81"/>
+<area shape="rect" id="Node000003" href="$dp83869_8c.html#a38a27d7b1ddbcdd6d21053903651edc0" title="Read the PHY ID." alt="" coords="196,31,287,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,77,182,57,183,62,109,82"/>
+<area shape="rect" id="Node000004" href="$dp83869_8c.html#ad1bd775e0ba92c2aeb69642cb26e65f0" title="Reads the link status of the PHY." alt="" coords="168,80,315,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="116,90,154,90,154,95,116,95"/>
+<area shape="rect" id="Node000005" href="$dp83869_8c.html#abcac8728de46769ab60a13b93a1d16c3" title="Perform a hardware reset of the PHY." alt="" coords="164,129,319,155"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="109,103,181,123,179,128,107,108"/>
+<area shape="rect" id="Node000008" href="$dp83869_8c.html#a5d37878a2dfb643b6bc3bec1c92cf022" title="Sets the PHY in MII mode." alt="" coords="175,268,307,293"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="76,104,220,256,216,259,72,107"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="315,82,415,72,416,77,315,88"/>
+<area shape="poly" id="edge8_Node000005_Node000002" title=" " alt="" coords="284,127,318,114,341,101,366,89,415,75,416,80,368,94,344,106,320,119,286,132"/>
+<area shape="rect" id="Node000006" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="437,104,537,129"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="319,131,423,120,423,126,319,137"/>
+<area shape="rect" id="Node000007" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="445,153,529,179"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="319,147,431,158,431,163,319,152"/>
+<area shape="rect" id="Node000009" href="$dp83869_8c.html#a5f3a9b6380aecb096d008ebd37d1a416" title="Reads register from the Extended Address Space." alt="" coords="367,203,607,243"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="296,265,387,244,388,249,297,270"/>
+<area shape="rect" id="Node000010" href="$dp83869_8c.html#a269e33ab55b1c6971e3669f638b988ec" title="Perform a software reset of the PHY." alt="" coords="412,268,561,293"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="308,278,398,278,398,283,308,283"/>
+<area shape="rect" id="Node000011" href="$dp83869_8c.html#af26a279e60c54c1a939f3b28114eb580" title="Triggers a software restart on the PHY." alt="" coords="407,317,566,343"/>
+<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="306,291,410,312,409,317,305,296"/>
+<area shape="rect" id="Node000012" href="$dp83869_8c.html#a950f62587760921c8ed36949b3f89cd3" title="Writes register from the Extended Address Space." alt="" coords="385,367,588,407"/>
+<area shape="poly" id="edge13_Node000008_Node000012" title=" " alt="" coords="262,291,308,322,368,353,387,360,385,365,366,358,306,326,259,296"/>
+</map>

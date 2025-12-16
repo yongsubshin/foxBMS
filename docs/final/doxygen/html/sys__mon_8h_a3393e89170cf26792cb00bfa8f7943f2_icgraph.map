@@ -1,0 +1,7 @@
+<map id="SYSM_ClearAllTimingViolations" name="SYSM_ClearAllTimingViolations">
+<area shape="rect" id="Node000001" title="Clears all timing violations (both current and recorded)" alt="" coords="483,13,709,38"/>
+<area shape="rect" id="Node000002" href="$can__cbs__rx__bms-state-request_8c.html#a41d6ab776c1727d39cad2e37355c390f" title="clears the persistent flags" alt="" coords="244,5,435,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="469,28,435,28,435,23,469,23"/>
+<area shape="rect" id="Node000003" href="$can__cbs__rx__bms-state-request_8c.html#ace804ae0e73ea0d6ef08cdc38e09ca35" title="CAN Rx callback function for state requests." alt="" coords="5,13,196,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="230,28,196,28,196,23,230,23"/>
+</map>

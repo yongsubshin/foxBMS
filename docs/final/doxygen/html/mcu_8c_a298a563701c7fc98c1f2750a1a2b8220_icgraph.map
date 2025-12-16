@@ -1,0 +1,87 @@
+<map id="MCU_GetFreeRunningCount" name="MCU_GetFreeRunningCount">
+<area shape="rect" id="Node000001" title="Get the current value of the Free Running Counter 0 (FRC0)" alt="" coords="2592,403,2795,428"/>
+<area shape="rect" id="Node000002" href="$i2c_8c.html#a3ff82cda8c1d4a8b2d5fa48a5fc2c4a5" title="Waits for the I2C Rx buffer to be full." alt="" coords="2209,403,2339,428"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2578,418,2340,418,2340,413,2578,413"/>
+<area shape="rect" id="Node000015" href="$i2c_8c.html#a79b77f8447ee8b71cd04895699df54bb" title="Waits for a stop condition to be detected." alt="" coords="2220,353,2328,379"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="2650,400,2600,381,2544,367,2501,363,2467,363,2389,367,2328,368,2328,363,2389,362,2467,358,2501,357,2544,362,2601,376,2652,395"/>
+<area shape="rect" id="Node000031" href="$i2c_8c.html#a74b8989b1724cc1b675d538a9815861e" title="Waits for the I2C Tx buffer to be empty." alt="" coords="2207,452,2341,477"/>
+<area shape="poly" id="edge47_Node000001_Node000031" title=" " alt="" coords="2579,431,2342,459,2341,454,2578,426"/>
+<area shape="rect" id="Node000032" href="$mcu_8c.html#af5a3b75b7431935f913d80e31eb99690" title="Checks if a timeout in microseconds has elapsed." alt="" coords="2389,377,2544,403"/>
+<area shape="poly" id="edge50_Node000001_Node000032" title=" " alt="" coords="2578,405,2544,401,2545,396,2579,400"/>
+<area shape="rect" id="Node000003" href="$dma_8c.html#a27a1d2fda92f10191a0c54ed6227c22e" title=" " alt="" coords="1984,501,2159,527"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2218,436,2208,442,2194,454,2185,467,2176,480,2160,492,2135,504,2133,499,2157,488,2172,476,2181,463,2190,450,2205,437,2215,431"/>
+<area shape="rect" id="Node000004" href="$i2c_8c.html#a9546fb9b900efe2915ccd3b2b2232883" title="reads from an I2C slave, no register address written first, blocking." alt="" coords="2030,353,2113,379"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="2208,402,2113,379,2114,373,2209,397"/>
+<area shape="rect" id="Node000014" href="$i2c_8c.html#a2ea96fba31aa7d20b39409c7b09dfce1" title="reads from an I2C slave, blocking." alt="" coords="2012,403,2131,428"/>
+<area shape="poly" id="edge14_Node000002_Node000014" title=" " alt="" coords="2195,418,2131,418,2131,413,2195,413"/>
+<area shape="rect" id="Node000005" href="$rtc_8c.html#a7e211808028bab21e95dc95b67c842f6" title="Read bit for battery voltage low flag." alt="" coords="1720,505,1936,545"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="2018,376,2001,382,1986,392,1975,404,1968,416,1962,442,1957,468,1950,482,1938,495,1920,507,1917,502,1934,491,1945,479,1952,466,1957,441,1963,414,1970,401,1982,388,1998,378,2016,371"/>
+<area shape="rect" id="Node000013" href="$rtc_8c.html#a7957c8a7a71846f263c61db1540932ad" title="initialization of the RTC IC." alt="" coords="1285,379,1394,404"/>
+<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="2016,371,1394,392,1394,387,2016,365"/>
+<area shape="rect" id="Node000006" href="$rtc_8c.html#a29ea3083fe4a8b3e1dc2e4262ae22863" title="trigger function for the RTC driver." alt="" coords="1100,379,1197,404"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1708,549,1604,559,1485,559,1423,553,1361,542,1301,526,1244,502,1214,481,1188,454,1155,406,1159,403,1192,451,1217,477,1247,497,1303,520,1363,537,1424,548,1485,554,1604,554,1707,544"/>
+<area shape="rect" id="Node000007" href="$ftask__cfg_8c.html#a6be3660b7f0fd3125febd329f698fdd0" title="Continuously running task for I2C." alt="" coords="884,252,1052,277"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1116,373,986,280,989,275,1119,368"/>
+<area shape="rect" id="Node000008" href="$ftask_8c.html#afb6bf58f9deabd4c07bf1d23fb68bb23" title="Creation of continuously running task for I2c." alt="" coords="684,252,836,277"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="870,267,837,267,837,262,870,262"/>
+<area shape="rect" id="Node000009" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,252,636,277"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="670,267,637,267,637,262,670,262"/>
+<area shape="rect" id="Node000010" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,252,448,277"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="482,267,448,267,448,262,482,262"/>
+<area shape="rect" id="Node000011" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,252,184,277"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="218,267,184,267,184,262,218,262"/>
+<area shape="rect" id="Node000012" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,252,81,277"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="116,267,82,267,82,262,116,262"/>
+<area shape="poly" id="edge13_Node000013_Node000006" title=" " alt="" coords="1271,394,1198,394,1198,389,1271,389"/>
+<area shape="poly" id="edge16_Node000015_Node000004" title=" " alt="" coords="2206,369,2113,369,2113,363,2206,363"/>
+<area shape="poly" id="edge43_Node000015_Node000014" title=" " alt="" coords="2209,384,2125,405,2124,400,2208,379"/>
+<area shape="rect" id="Node000016" href="$i2c_8c.html#a87ea81c62fd94d7b0e049c896d0515dc" title="reads from an I2C slave, no register address written first, using DMA." alt="" coords="2014,304,2129,329"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="2208,353,2124,332,2125,327,2209,348"/>
+<area shape="rect" id="Node000021" href="$i2c_8c.html#adeeeebf0d17d996e83390232e8ea8625" title="writes to an I2C slave, no register address written first, blocking." alt="" coords="2029,452,2114,477"/>
+<area shape="poly" id="edge26_Node000015_Node000021" title=" " alt="" coords="2218,387,2208,392,2194,404,2185,417,2176,429,2160,442,2115,459,2113,455,2157,437,2172,425,2181,413,2190,401,2205,388,2216,382"/>
+<area shape="rect" id="Node000022" href="$i2c_8c.html#af04b33e3964bbbf260a563cd8b012342" title="writes to an I2C slave, no register address written first, using DMA." alt="" coords="1770,153,1886,179"/>
+<area shape="poly" id="edge30_Node000015_Node000022" title=" " alt="" coords="2253,344,2213,298,2186,274,2157,254,2088,221,2015,198,1945,183,1886,174,1887,169,1946,178,2016,193,2090,217,2160,249,2190,270,2217,294,2257,341"/>
+<area shape="rect" id="Node000029" href="$i2c_8c.html#a99a224e006b4dc5547c9f3cf12fe3a26" title="reads from an I2C slave, using DMA." alt="" coords="1753,215,1903,240"/>
+<area shape="poly" id="edge44_Node000015_Node000029" title=" " alt="" coords="2245,347,2205,319,2158,294,2092,272,2024,255,1903,236,1903,231,2025,250,2094,266,2160,289,2208,314,2248,342"/>
+<area shape="rect" id="Node000017" href="$htsensor_8c.html#ae6b448a3870812ef650e9d4229160d33" title="triggers a measurement of the I2C humidity/temperature sensor." alt="" coords="1518,252,1635,277"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="1999,312,1635,273,1636,268,2000,307"/>
+<area shape="rect" id="Node000018" href="$rtc_8c.html#a1d5240b81fe9ed39eb9ac7db1f6ccb44" title="Reads the time from the RTC IC." alt="" coords="1769,455,1887,480"/>
+<area shape="poly" id="edge20_Node000016_Node000018" title=" " alt="" coords="2002,336,1985,343,1941,370,1901,402,1843,456,1839,453,1898,398,1938,366,1983,338,2000,331"/>
+<area shape="poly" id="edge19_Node000017_Node000007" title=" " alt="" coords="1504,267,1052,267,1052,262,1504,262"/>
+<area shape="rect" id="Node000019" href="$rtc_8c.html#a039fa95aa56e530d3dcc22a69c2dcdb9" title="Adjust RTC system timer with time from RTC IC." alt="" coords="1276,461,1403,487"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="1759,486,1721,495,1697,503,1672,509,1577,517,1481,509,1431,500,1385,489,1386,484,1432,495,1482,503,1577,511,1672,503,1695,498,1719,490,1758,481"/>
+<area shape="rect" id="Node000020" href="$rtc_8c.html#a0380ff8d4714112489efb86714ea54cd" title="initialize system time with RTC time." alt="" coords="1481,454,1672,494"/>
+<area shape="poly" id="edge23_Node000018_Node000020" title=" " alt="" coords="1755,472,1672,474,1672,469,1755,467"/>
+<area shape="poly" id="edge22_Node000019_Node000006" title=" " alt="" coords="1296,458,1178,407,1180,402,1298,453"/>
+<area shape="poly" id="edge25_Node000020_Node000013" title=" " alt="" coords="1505,452,1376,407,1378,402,1507,447"/>
+<area shape="poly" id="edge24_Node000020_Node000019" title=" " alt="" coords="1468,477,1403,477,1403,471,1468,471"/>
+<area shape="poly" id="edge27_Node000021_Node000005" title=" " alt="" coords="2016,481,1911,507,1909,502,2015,476"/>
+<area shape="poly" id="edge28_Node000021_Node000013" title=" " alt="" coords="2015,457,1936,445,1629,414,1394,397,1394,392,1630,408,1936,439,2016,452"/>
+<area shape="poly" id="edge29_Node000021_Node000018" title=" " alt="" coords="2015,468,1888,469,1888,464,2015,463"/>
+<area shape="poly" id="edge39_Node000022_Node000013" title=" " alt="" coords="1758,184,1722,204,1705,225,1699,246,1692,269,1674,291,1649,308,1626,320,1583,332,1538,338,1482,350,1382,381,1380,376,1481,345,1537,332,1582,326,1624,315,1646,304,1670,287,1687,266,1694,245,1701,222,1718,200,1756,179"/>
+<area shape="poly" id="edge31_Node000022_Node000017" title=" " alt="" coords="1766,186,1721,204,1698,223,1673,242,1636,256,1635,251,1671,237,1695,219,1719,200,1763,181"/>
+<area shape="rect" id="Node000023" href="$pex_8c.html#a5d846e986dcbe8c9e16b83d58b9cbead" title="sets direction of port expander pins over I2C." alt="" coords="1482,104,1671,129"/>
+<area shape="poly" id="edge32_Node000022_Node000023" title=" " alt="" coords="1756,155,1642,132,1643,127,1757,149"/>
+<area shape="rect" id="Node000025" href="$pex_8c.html#a17d126ca6c8edb476d0135ae08d7974e" title="sets polarity inversion state of port expander pins over I2C." alt="" coords="1487,5,1667,31"/>
+<area shape="poly" id="edge35_Node000022_Node000025" title=" " alt="" coords="1803,145,1746,94,1710,67,1671,44,1642,33,1644,28,1673,40,1713,63,1749,90,1807,141"/>
+<area shape="rect" id="Node000026" href="$pex_8c.html#ab1db7fbe9943ce4438904685b5a4c90b" title="sets output state of port expander pins over I2C." alt="" coords="1507,55,1647,80"/>
+<area shape="poly" id="edge37_Node000022_Node000026" title=" " alt="" coords="1791,149,1735,121,1671,94,1635,83,1637,78,1673,89,1738,116,1793,144"/>
+<area shape="rect" id="Node000027" href="$rtc_8c.html#a25a51db2bff8f71719db343ca25c2242" title="Write the time to the RTC IC." alt="" coords="1516,153,1637,179"/>
+<area shape="poly" id="edge40_Node000022_Node000027" title=" " alt="" coords="1756,169,1637,169,1637,163,1756,163"/>
+<area shape="rect" id="Node000024" href="$pex_8c.html#afbadfeadd499407022994619b481cf95" title="implements reading/writing to the port expander registers." alt="" coords="1290,104,1389,129"/>
+<area shape="poly" id="edge33_Node000023_Node000024" title=" " alt="" coords="1468,119,1389,119,1389,114,1468,114"/>
+<area shape="poly" id="edge34_Node000024_Node000007" title=" " alt="" coords="1294,137,1002,254,1000,249,1292,132"/>
+<area shape="poly" id="edge36_Node000025_Node000024" title=" " alt="" coords="1504,37,1482,44,1416,76,1362,106,1360,102,1413,71,1480,40,1502,32"/>
+<area shape="poly" id="edge38_Node000026_Node000024" title=" " alt="" coords="1502,85,1389,109,1388,104,1501,80"/>
+<area shape="rect" id="Node000028" href="$rtc_8c.html#a2433a4b1a5c12e221ee7936c394a902c" title="Check if a CAN message was received to set the RTC time." alt="" coords="1245,177,1433,203"/>
+<area shape="poly" id="edge41_Node000027_Node000028" title=" " alt="" coords="1502,176,1434,183,1433,178,1501,171"/>
+<area shape="poly" id="edge42_Node000028_Node000006" title=" " alt="" coords="1318,215,1164,380,1160,377,1314,212"/>
+<area shape="rect" id="Node000030" href="$pex_8c.html#afe839d448337e9e581fc930709061b94" title="reads input state of port expander pins over I2C." alt="" coords="1513,203,1640,228"/>
+<area shape="poly" id="edge45_Node000029_Node000030" title=" " alt="" coords="1740,226,1640,221,1640,216,1740,220"/>
+<area shape="poly" id="edge46_Node000030_Node000024" title=" " alt="" coords="1506,201,1480,192,1456,181,1432,167,1364,132,1367,127,1435,162,1458,176,1482,188,1508,196"/>
+<area shape="poly" id="edge49_Node000031_Node000014" title=" " alt="" coords="2208,451,2124,431,2125,425,2209,446"/>
+<area shape="poly" id="edge48_Node000031_Node000021" title=" " alt="" coords="2193,467,2114,467,2114,462,2193,462"/>
+<area shape="poly" id="edge51_Node000032_Node000002" title=" " alt="" coords="2376,405,2340,409,2340,404,2375,399"/>
+<area shape="poly" id="edge52_Node000032_Node000015" title=" " alt="" coords="2375,381,2328,375,2329,370,2376,376"/>
+<area shape="poly" id="edge53_Node000032_Node000031" title=" " alt="" coords="2422,410,2342,442,2310,454,2308,450,2340,437,2420,405"/>
+</map>

@@ -1,0 +1,30 @@
+<map id="CANTX_PackLimits" name="CANTX_PackLimits">
+<area shape="rect" id="Node000001" title="CAN Tx callback function for limit values." alt="" coords="5,181,149,206"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="197,155,467,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,184,191,179,191,185,150,189"/>
+<area shape="rect" id="Node000003" href="$can__cbs__tx__pack-limits_8c.html#a51ff20ddb57012f35a7947e00eaf1f75" title="Adds the data to the message." alt="" coords="215,205,449,230"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,197,201,202,201,208,149,203"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="541,5,755,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="446,202,465,190,478,175,485,159,488,125,491,90,499,72,513,55,527,45,530,49,516,59,503,75,497,91,494,125,490,160,483,178,468,194,449,207"/>
+<area shape="rect" id="Node000006" href="$can__cbs__tx__pack-limits_8c.html#a57ebf6500c09c88676f6c9b5e353cbaa" title="Calculates the return value of the maximum battery voltage." alt="" coords="523,69,773,109"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="440,202,465,190,481,174,488,156,496,137,513,119,522,113,525,118,516,123,501,140,493,158,485,177,468,194,443,207"/>
+<area shape="rect" id="Node000008" href="$can__cbs__tx__pack-limits_8c.html#a91e6b2be3a050246fd2eb6155fcecf87" title="Calculates the return value of the maximum charge current." alt="" coords="525,133,771,173"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="401,202,466,189,541,174,543,179,467,195,402,207"/>
+<area shape="rect" id="Node000009" href="$can__cbs__tx__pack-limits_8c.html#a39dedd566bdc4a485262ca287a1a311a" title="Calculates the return value of the maximum charge power." alt="" coords="525,197,771,237"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="450,215,511,215,511,220,450,220"/>
+<area shape="rect" id="Node000010" href="$can__cbs__tx__pack-limits_8c.html#a8386a33215138e9a407a3fcce140b9e2" title="Calculates the return value of the maximum discharge current." alt="" coords="515,261,781,301"/>
+<area shape="poly" id="edge11_Node000003_Node000010" title=" " alt="" coords="396,227,536,256,535,261,395,233"/>
+<area shape="rect" id="Node000011" href="$can__cbs__tx__pack-limits_8c.html#a63fcae9791c358d2cc30dfff9225ac15" title="Calculates the return value of the maximum discharge power." alt="" coords="515,325,781,365"/>
+<area shape="poly" id="edge13_Node000003_Node000011" title=" " alt="" coords="355,228,425,268,516,311,539,319,538,324,514,316,422,273,352,233"/>
+<area shape="rect" id="Node000012" href="$can__cbs__tx__pack-limits_8c.html#ad92d84f1ff512183cd97bbee4c0ad443" title="Calculates the return value of the minimum battery voltage." alt="" coords="525,389,771,429"/>
+<area shape="poly" id="edge15_Node000003_Node000012" title=" " alt="" coords="346,228,412,298,461,340,516,375,531,382,529,387,513,380,458,344,409,302,342,232"/>
+<area shape="rect" id="Node000005" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="829,13,1052,38"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="755,23,815,23,815,28,755,28"/>
+<area shape="rect" id="Node000007" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="843,237,1038,262"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="753,107,783,119,824,143,862,172,920,225,917,229,858,176,821,148,780,124,751,112"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="740,171,782,183,900,229,898,234,780,188,739,176"/>
+<area shape="poly" id="edge10_Node000009_Node000007" title=" " alt="" coords="772,228,830,235,829,240,771,233"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="781,264,829,259,830,264,782,269"/>
+<area shape="poly" id="edge14_Node000011_Node000007" title=" " alt="" coords="739,323,780,311,898,265,900,270,782,316,740,328"/>
+<area shape="poly" id="edge16_Node000012_Node000007" title=" " alt="" coords="751,387,780,375,821,351,858,323,917,270,920,274,862,327,824,356,783,380,753,392"/>
+</map>

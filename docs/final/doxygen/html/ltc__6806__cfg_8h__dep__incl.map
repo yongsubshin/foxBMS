@@ -1,0 +1,7 @@
+<map id="foxbms&#45;2/src/app/driver/afe/ltc/6806/config/ltc_6806_cfg.h" name="foxbms&#45;2/src/app/driver/afe/ltc/6806/config/ltc_6806_cfg.h">
+<area shape="rect" id="Node000001" title="Header for the configuration for the LTC 6806 monitoring IC." alt="" coords="105,5,283,60"/>
+<area shape="rect" id="Node000002" href="$ltc__6806__cfg_8c.html" title="Configuration for the LTC analog front&#45;end." alt="" coords="5,108,183,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,72,122,110,118,106,156,68"/>
+<area shape="rect" id="Node000003" href="$ltc__6806_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="207,115,384,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,68,278,113,274,117,229,72"/>
+</map>

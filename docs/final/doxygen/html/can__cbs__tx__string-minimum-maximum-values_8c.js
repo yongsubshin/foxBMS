@@ -1,0 +1,25 @@
+var can__cbs__tx__string_minimum_maximum_values_8c =
+[
+    [ "CANTX_FACTOR_MAXIMUM_CELL_TEMPERATURE", "can__cbs__tx__string-minimum-maximum-values_8c.html#a9ab9fc39f8d6b98e823e122083f23941", null ],
+    [ "CANTX_FACTOR_MINIMUM_CELL_TEMPERATURE", "can__cbs__tx__string-minimum-maximum-values_8c.html#a49cbe5db838add99289b605bfa70b1db", null ],
+    [ "CANTX_MAXIMUM_VALUE_MAXIMUM_CELL_TEMPERATURE_SIGNAL", "can__cbs__tx__string-minimum-maximum-values_8c.html#a6aa4b40a16cd04a79e22a44b182c8345", null ],
+    [ "CANTX_MAXIMUM_VALUE_MINIMUM_CELL_TEMPERATURE_SIGNAL", "can__cbs__tx__string-minimum-maximum-values_8c.html#ae793d658fff74f096937defd76d04462", null ],
+    [ "CANTX_MINIMUM_VALUE_MAXIMUM_CELL_TEMPERATURE_SIGNAL", "can__cbs__tx__string-minimum-maximum-values_8c.html#af4b5880c47cb1a6adcb18c70dba914c6", null ],
+    [ "CANTX_MINIMUM_VALUE_MINIMUM_CELL_TEMPERATURE_SIGNAL", "can__cbs__tx__string-minimum-maximum-values_8c.html#a105829fd0800299b815d16f093c32f5f", null ],
+    [ "CANTX_SIGNAL_STRING_MAXIMUM_CELL_TEMPERATURE_LENGTH", "can__cbs__tx__string-minimum-maximum-values_8c.html#aa2067b489c4a25e9adec82967ae86a5a", null ],
+    [ "CANTX_SIGNAL_STRING_MAXIMUM_CELL_TEMPERATURE_START_BIT", "can__cbs__tx__string-minimum-maximum-values_8c.html#abf260c1fd167c355834582d153c0933d", null ],
+    [ "CANTX_SIGNAL_STRING_MAXIMUM_CELL_VOLTAGE_LENGTH", "can__cbs__tx__string-minimum-maximum-values_8c.html#ae02bd0e8f7859f7cd47255c18880cacf", null ],
+    [ "CANTX_SIGNAL_STRING_MAXIMUM_CELL_VOLTAGE_START_BIT", "can__cbs__tx__string-minimum-maximum-values_8c.html#a0b304914142a516af335a7bd7b5716a1", null ],
+    [ "CANTX_SIGNAL_STRING_MINIMUM_CELL_TEMPERATURE_LENGTH", "can__cbs__tx__string-minimum-maximum-values_8c.html#a9c4f9b30722f731645e46efbc5894911", null ],
+    [ "CANTX_SIGNAL_STRING_MINIMUM_CELL_TEMPERATURE_START_BIT", "can__cbs__tx__string-minimum-maximum-values_8c.html#a602181ed68c39c6dbb093156e0c76232", null ],
+    [ "CANTX_SIGNAL_STRING_MINIMUM_CELL_VOLTAGE_LENGTH", "can__cbs__tx__string-minimum-maximum-values_8c.html#a6beaa00de2af165942a5f190cf03a56e", null ],
+    [ "CANTX_SIGNAL_STRING_MINIMUM_CELL_VOLTAGE_START_BIT", "can__cbs__tx__string-minimum-maximum-values_8c.html#a8dd337cab36c19945bb38f0bc01aac3f", null ],
+    [ "CANTX_STRING_MUX_LENGTH", "can__cbs__tx__string-minimum-maximum-values_8c.html#abc27fb2857a2776facaa64185aec5e9d", null ],
+    [ "CANTX_STRING_MUX_START_BIT", "can__cbs__tx__string-minimum-maximum-values_8c.html#a53a21e94764a0597e50af0911689240f", null ],
+    [ "CANTX_BuildStringMessage", "can__cbs__tx__string-minimum-maximum-values_8c.html#a7d795210472c264d78261ce03c9da5f5", null ],
+    [ "CANTX_CalculateStringMaximumTemperature", "can__cbs__tx__string-minimum-maximum-values_8c.html#a65f4d2c4f4c62269ad861175cb00256a", null ],
+    [ "CANTX_CalculateStringMinimumTemperature", "can__cbs__tx__string-minimum-maximum-values_8c.html#a42d09e468bc655582bd96c4e3989987a", null ],
+    [ "CANTX_StringMinimumMaximumValues", "can__cbs__tx__string-minimum-maximum-values_8c.html#ad0e0cd9e1c7e2886297146cb417b2534", null ],
+    [ "cantx_signalMaximumStringCellTemperature", "can__cbs__tx__string-minimum-maximum-values_8c.html#a637041c162201851662dac880c660589", null ],
+    [ "cantx_signalMinimumStringCellTemperature", "can__cbs__tx__string-minimum-maximum-values_8c.html#a7cdf4e33796597712fcdfd9ef92ec41d", null ]
+];

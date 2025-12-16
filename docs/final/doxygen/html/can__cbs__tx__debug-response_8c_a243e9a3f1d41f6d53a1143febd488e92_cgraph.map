@@ -1,0 +1,17 @@
+<map id="CANTX_TransmitRtcTime" name="CANTX_TransmitRtcTime">
+<area shape="rect" id="Node000001" title="Transmit the RTC time message." alt="" coords="5,42,189,67"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="243,5,457,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,41,229,37,230,42,190,47"/>
+<area shape="rect" id="Node000004" href="$rtc_8c.html#ae09c97b84e318d32d7c08ee56fe699b7" title="get the RTC system timer." alt="" coords="237,70,463,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="190,62,224,66,224,71,189,68"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="521,13,743,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="457,23,506,23,506,28,457,28"/>
+<area shape="rect" id="Node000005" href="$rtc_8c.html#ade1f047b937483cffdc3d556e3973c74" title="Get the RTC system timer value." alt="" coords="511,66,753,91"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="463,78,497,78,497,83,463,84"/>
+<area shape="rect" id="Node000008" href="$rtc_8c.html#a51125f9e9e11ba4d06f263043bba6988" title="Convert time from struct tm to RTC_TIME_DATA_s format." alt="" coords="533,115,731,141"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="430,93,540,111,539,116,429,98"/>
+<area shape="rect" id="Node000006" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="801,41,957,66"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="753,64,787,60,788,65,754,69"/>
+<area shape="rect" id="Node000007" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="806,90,953,115"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="754,88,793,92,792,97,753,93"/>
+</map>

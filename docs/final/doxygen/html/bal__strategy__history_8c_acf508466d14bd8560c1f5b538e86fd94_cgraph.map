@@ -1,0 +1,9 @@
+<map id="BAL_ComputeImbalances" name="BAL_ComputeImbalances">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,193,56"/>
+<area shape="rect" id="Node000002" href="$bal__cfg_8c.html#ae6943eea06cdd64870ce62e3ce1b60c2" title="get balancing threshold" alt="" coords="247,5,481,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,32,233,28,233,33,194,37"/>
+<area shape="rect" id="Node000003" href="$group__state-estimation-api.html#ga74af4e2bdb5a3caa9696292fb9217311" title="look&#45;up table for SOC initialization" alt="" coords="241,55,487,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,49,228,52,227,58,193,54"/>
+<area shape="rect" id="Node000004" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="535,55,725,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="487,65,521,65,521,70,487,70"/>
+</map>

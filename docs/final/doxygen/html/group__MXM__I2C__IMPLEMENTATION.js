@@ -1,0 +1,5 @@
+var group__MXM__I2C__IMPLEMENTATION =
+[
+    [ "MXM_I2C_MUX0_ADDRESS", "group__MXM__I2C__IMPLEMENTATION.html#ga3f96e1c214652c9f5ccc4f0f9f57f585", null ],
+    [ "MXM_I2C_MUX1_ADDRESS", "group__MXM__I2C__IMPLEMENTATION.html#gae2415ef8225fed149c945732e9c96940", null ]
+];

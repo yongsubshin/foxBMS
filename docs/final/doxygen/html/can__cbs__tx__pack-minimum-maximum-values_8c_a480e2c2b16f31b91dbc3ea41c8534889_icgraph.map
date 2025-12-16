@@ -1,0 +1,9 @@
+<map id="CANTX_GetPackMinimumTemperature" name="CANTX_GetPackMinimumTemperature">
+<area shape="rect" id="Node000001" title="Gets the value of the minimum pack temperature." alt="" coords="873,13,1144,38"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__pack-minimum-maximum-values_8c.html#a6b9b68db7c44dc495b9925bdbdafe945" title="Calculates the return value of the minimum pack temperature." alt="" coords="599,5,825,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="860,28,826,28,826,23,860,23"/>
+<area shape="rect" id="Node000003" href="$can__cbs__tx__pack-minimum-maximum-values_8c.html#aeab769bbb0b6ae11c5d7a1f8bc150d4d" title="Adds the data to the message about the pack values." alt="" coords="285,5,551,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="585,28,551,28,551,23,585,23"/>
+<area shape="rect" id="Node000004" href="$can__cbs__tx__pack-minimum-maximum-values_8c.html#a2076a4f1ebdfce844feb3d79991ccb57" title="CAN Tx callback function for min/max values." alt="" coords="5,5,237,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="272,28,237,28,237,23,272,23"/>
+</map>

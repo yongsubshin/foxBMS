@@ -1,0 +1,11 @@
+<map id="AFE_RequestBalancingFeedbackRead" name="AFE_RequestBalancingFeedbackRead">
+<area shape="rect" id="Node000001" title="Makes the request to the AFE state machine to read balancing feedback from the slaves." alt="" coords="5,55,272,80"/>
+<area shape="rect" id="Node000002" href="$ltc__6806_8c.html#a4bb4d1d651bd80b2151b62d35e3a2699" title="sets the current state request of the state variable ltc_state." alt="" coords="320,55,479,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="272,65,306,65,306,70,272,70"/>
+<area shape="rect" id="Node000003" href="$ltc__6806_8c.html#a42d4f8653843aeee6f118782dfff2c20" title="checks the state requests that are made." alt="" coords="527,5,705,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="455,52,546,31,547,36,456,57"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="538,55,694,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="479,65,524,65,524,70,479,70"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="543,104,689,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="456,77,547,98,546,104,455,83"/>
+</map>

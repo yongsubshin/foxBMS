@@ -1,0 +1,10 @@
+<map id="I2C_WaitTransmit" name="I2C_WaitTransmit">
+<area shape="rect" id="Node000001" title="Waits for the I2C Tx buffer to be empty." alt="" coords="5,31,140,56"/>
+<area shape="rect" id="Node000002" href="$mcu_8c.html#a298a563701c7fc98c1f2750a1a2b8220" title="Get the current value of the Free Running Counter 0 (FRC0)" alt="" coords="391,5,593,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,37,377,22,377,28,140,42"/>
+<area shape="rect" id="Node000003" href="$mcu_8c.html#af5a3b75b7431935f913d80e31eb99690" title="Checks if a timeout in microseconds has elapsed." alt="" coords="188,56,343,81"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,50,175,54,174,59,140,55"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="323,53,421,31,422,36,324,58"/>
+<area shape="rect" id="Node000004" href="$mcu_8c.html#a357da0bcb906f4ad573ed0d4244dd0a2" title="Convert the counter value FRC0 to a time in microseconds." alt="" coords="393,55,591,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="343,68,380,69,380,75,343,74"/>
+</map>

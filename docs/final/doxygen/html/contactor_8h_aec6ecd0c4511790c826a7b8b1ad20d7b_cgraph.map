@@ -1,0 +1,13 @@
+<map id="CONT_OpenAllPrechargeContactors" name="CONT_OpenAllPrechargeContactors">
+<area shape="rect" id="Node000001" title="This function iterates over all contactors and opens all currently closed precharge contactors." alt="" coords="5,31,257,56"/>
+<area shape="rect" id="Node000002" href="$sps_8c.html#a9cb3cd911b7a454365ab9c3cec7319a1" title="Request state of a contactor." alt="" coords="305,31,508,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,41,292,41,292,46,257,46"/>
+<area shape="rect" id="Node000003" href="$sps_8c.html#a12055277c605a27340a3938e6f84523a" title="Returns the channel affiliation." alt="" coords="557,5,749,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="508,30,543,27,543,32,508,36"/>
+<area shape="rect" id="Node000004" href="$sps_8c.html#acbea831bc7b455fd71f259e3a9e4c0aa" title="Request the functional state of a channel." alt="" coords="556,55,749,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="508,51,543,54,542,59,508,56"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="797,29,953,55"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="750,54,784,50,784,55,750,59"/>
+<area shape="rect" id="Node000006" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="802,79,949,104"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="750,75,788,79,788,85,750,80"/>
+</map>

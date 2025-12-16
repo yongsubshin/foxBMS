@@ -1,0 +1,7 @@
+<map id="foxbms&#45;2/src/app/driver/ts/vishay/ntcle317e4103sba/vishay_ntcle317e4103sba.h" name="foxbms&#45;2/src/app/driver/ts/vishay/ntcle317e4103sba/vishay_ntcle317e4103sba.h">
+<area shape="rect" id="Node000001" title="Resistive divider used for measuring temperature." alt="" coords="175,5,383,60"/>
+<area shape="rect" id="Node000002" href="$vishay__ntcle317e4103sba__lookup-table_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="5,108,285,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,71,189,110,186,106,234,67"/>
+<area shape="rect" id="Node000003" href="$vishay__ntcle317e4103sba_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="309,115,517,170"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="324,67,382,113,379,117,321,71"/>
+</map>

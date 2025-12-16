@@ -1,0 +1,9 @@
+<map id="ADI_InitializeConfiguration" name="ADI_InitializeConfiguration">
+<area shape="rect" id="Node000001" title="Initialize the driver configuration." alt="" coords="5,13,200,38"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x__helpers_8c.html#a9b90f96679fe496cd086a27c1fa999b1" title="Writes data in the configuration stored in AFE driver, for all AFEs in the daisy&#45;chain." alt="" coords="248,5,448,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,23,234,23,234,28,200,28"/>
+<area shape="rect" id="Node000003" href="$adi__ades183x__helpers_8c.html#ae7e1ce09ca32c7696caabab506e8e9a1" title="Writes data in the configuration stored in AFE driver, for a specific AFE." alt="" coords="496,5,696,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="448,23,482,23,482,28,448,28"/>
+<area shape="rect" id="Node000004" href="$adi__ades183x__helpers_8c.html#a0df95d2c1ba74a2d9fc727cd14abaec9" title="Helper function to write specific bits in data to be sent." alt="" coords="744,13,887,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="696,23,730,23,730,28,696,28"/>
+</map>

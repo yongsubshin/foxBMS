@@ -1,0 +1,23 @@
+<map id="SPS_Transmit" name="SPS_Transmit">
+<area shape="rect" id="Node000001" title="Transmit all assembled messages for one timeframe." alt="" coords="5,80,115,105"/>
+<area shape="rect" id="Node000002" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="197,55,317,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,83,182,74,183,79,115,88"/>
+<area shape="rect" id="Node000003" href="$spi_8c.html#ac84bc8424de860e2cd89fea2e89dd89a" title="Transmits and receives data on SPI without DMA." alt="" coords="163,104,351,129"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="115,97,149,101,149,106,115,102"/>
+<area shape="rect" id="Node000004" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="413,5,513,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="321,102,349,89,364,78,373,66,382,53,397,40,407,34,409,39,400,44,386,56,377,69,368,81,352,94,323,106"/>
+<area shape="rect" id="Node000005" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="421,55,505,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="310,101,406,78,407,83,311,107"/>
+<area shape="rect" id="Node000006" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="399,104,527,129"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="351,114,385,114,385,119,351,119"/>
+<area shape="rect" id="Node000007" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="423,203,502,228"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="282,127,400,188,417,195,414,200,398,192,280,132"/>
+<area shape="rect" id="Node000010" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="415,153,510,179"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="311,127,402,149,401,154,310,132"/>
+<area shape="rect" id="Node000008" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="575,153,731,179"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="502,203,589,180,591,185,503,208"/>
+<area shape="rect" id="Node000009" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="579,203,726,228"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="502,213,566,213,566,218,502,218"/>
+<area shape="poly" id="edge10_Node000010_Node000008" title=" " alt="" coords="510,163,561,163,561,169,510,169"/>
+<area shape="poly" id="edge11_Node000010_Node000009" title=" " alt="" coords="511,176,590,197,589,202,510,181"/>
+</map>

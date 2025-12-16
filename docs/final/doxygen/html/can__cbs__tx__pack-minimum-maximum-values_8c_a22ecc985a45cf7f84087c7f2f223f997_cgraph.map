@@ -1,0 +1,7 @@
+<map id="CANTX_GetPackMinimumVoltage" name="CANTX_GetPackMinimumVoltage">
+<area shape="rect" id="Node000001" title="Gets the value of the minimum pack voltage." alt="" coords="5,42,244,67"/>
+<area shape="rect" id="Node000002" href="$bms_8c.html#a95febd341b208a988bb0462e81febca8" title="Returns number of connected strings." alt="" coords="292,5,509,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,39,278,36,278,41,245,45"/>
+<area shape="rect" id="Node000003" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="325,70,476,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,64,312,71,311,76,244,69"/>
+</map>

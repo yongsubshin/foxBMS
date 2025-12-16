@@ -1,0 +1,18 @@
+<map id="foxbms&#45;2/src/app/driver/afe/ti/dummy/ti_dummy.h" name="foxbms&#45;2/src/app/driver/afe/ti/dummy/ti_dummy.h">
+<area shape="rect" id="Node000001" title="Configuration for the TI dummy analog front&#45;end." alt="" coords="62,5,257,45"/>
+<area shape="rect" id="Node000002" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="5,240,108,265"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,47,114,95,84,166,65,227,60,226,79,164,109,92,141,44"/>
+<area shape="rect" id="Node000003" href="$ti__afe_8h.html" title="AFE driver wrapper layer for TI ICs." alt="" coords="124,93,195,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,46,162,79,157,79,157,46"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="240,240,311,265"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="179,44,220,96,242,130,260,166,270,197,276,226,270,227,265,198,256,168,237,133,216,99,174,47"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="153,121,75,230,71,227,149,118"/>
+<area shape="rect" id="Node000004" href="$afe_8h.html" title="AFE driver header." alt="" coords="165,167,220,192"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="167,118,184,153,179,155,162,120"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="133,240,215,265"/>
+<area shape="poly" id="edge8_Node000003_Node000005" title=" " alt="" coords="159,119,154,152,155,192,166,227,161,228,150,192,149,152,154,119"/>
+<area shape="poly" id="edge9_Node000003_Node000006" title=" " alt="" coords="179,117,207,137,235,165,255,196,269,226,264,228,250,198,231,168,203,141,176,121"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="172,194,92,236,90,231,170,190"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="192,193,183,228,178,226,187,192"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="208,190,253,229,250,233,204,194"/>
+</map>

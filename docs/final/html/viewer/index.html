@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Viewer | foxBMS Documentation</title>
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <!-- Marked.js for Markdown rendering -->
+    <script src="../assets/js/marked.min.js"></script>
+    <!-- Highlight.js for syntax highlighting -->
+    <link rel="stylesheet" href="../assets/css/highlight-github.min.css">
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/highlight-json.min.js"></script>
+    <style>
+        :root {
+            --primary: #1a5f7a;
+            --secondary: #57c5b6;
+            --dark: #002b5b;
+            --light: #f8f9fa;
+            --success: #28a745;
+            --warning: #ffc107;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f7fa; line-height: 1.6; }
+
+        .header {
+            background: linear-gradient(135deg, #002b5b, #1a5f7a);
+            color: white;
+            padding: 1.5rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .header-content { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+        .back-link { color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; opacity: 0.8; padding: 0.5rem 1rem; border-radius: 4px; background: rgba(255,255,255,0.1); }
+        .back-link:hover { opacity: 1; background: rgba(255,255,255,0.2); }
+        .file-info { flex: 1; }
+        .file-name { font-size: 1.1rem; font-weight: 600; word-break: break-all; }
+        .file-type { font-size: 0.8rem; opacity: 0.8; }
+
+        .toolbar {
+            background: white;
+            padding: 0.75rem 2rem;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .toolbar-btn {
+            background: var(--light);
+            border: 1px solid #ddd;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: all 0.2s;
+        }
+        .toolbar-btn:hover { background: #e9ecef; border-color: var(--primary); }
+        .toolbar-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+        /* Markdown Styles */
+        .markdown-body {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .markdown-body h1 { color: var(--dark); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; margin-bottom: 1rem; }
+        .markdown-body h2 { color: var(--primary); margin-top: 2rem; margin-bottom: 1rem; }
+        .markdown-body h3 { color: #333; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        .markdown-body p { margin-bottom: 1rem; }
+        .markdown-body ul, .markdown-body ol { margin-bottom: 1rem; padding-left: 2rem; }
+        .markdown-body li { margin-bottom: 0.5rem; }
+        .markdown-body code { background: #f4f4f4; padding: 0.2rem 0.4rem; border-radius: 3px; font-family: 'Consolas', monospace; font-size: 0.9rem; }
+        .markdown-body pre { background: #f8f9fa; padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1rem; }
+        .markdown-body pre code { background: none; padding: 0; }
+        .markdown-body table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+        .markdown-body th, .markdown-body td { border: 1px solid #ddd; padding: 0.75rem; text-align: left; }
+        .markdown-body th { background: var(--light); font-weight: 600; }
+        .markdown-body blockquote { border-left: 4px solid var(--primary); padding-left: 1rem; margin: 1rem 0; color: #666; background: #f9f9f9; padding: 1rem; }
+        .markdown-body a { color: var(--primary); }
+        .markdown-body a:hover { text-decoration: underline; }
+        .markdown-body hr { border: none; border-top: 1px solid #ddd; margin: 2rem 0; }
+
+        /* JSON Styles */
+        .json-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .json-stats {
+            background: var(--light);
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .json-stat { text-align: center; }
+        .json-stat-value { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+        .json-stat-label { font-size: 0.8rem; color: #666; }
+
+        .json-view-toggle { padding: 1rem 1.5rem; background: #f8f9fa; border-bottom: 1px solid #ddd; }
+
+        .json-raw { padding: 1.5rem; overflow-x: auto; }
+        .json-raw pre { margin: 0; font-size: 0.85rem; }
+
+        .json-table { width: 100%; }
+        .json-table th { background: var(--primary); color: white; padding: 0.75rem; text-align: left; position: sticky; top: 0; }
+        .json-table td { padding: 0.6rem 0.75rem; border-bottom: 1px solid #eee; font-size: 0.85rem; vertical-align: top; }
+        .json-table tr:hover { background: #f8f9fa; }
+        .json-table .req-id { font-family: monospace; font-weight: 600; color: var(--primary); white-space: nowrap; }
+
+        .type-badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.7rem; font-weight: 600; }
+        .type-SWE { background: #cce5ff; color: #004085; }
+        .type-SAF { background: #f8d7da; color: #721c24; }
+        .type-INT { background: #fff3cd; color: #856404; }
+        .type-CFG { background: #d4edda; color: #155724; }
+
+        .loading { text-align: center; padding: 4rem; color: #666; }
+        .loading i { font-size: 3rem; margin-bottom: 1rem; animation: spin 1s linear infinite; }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+
+        .error { text-align: center; padding: 4rem; color: #dc3545; }
+        .error i { font-size: 3rem; margin-bottom: 1rem; }
+
+        .search-box { flex: 1; min-width: 200px; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container { padding: 1rem; }
+            .markdown-body { padding: 1rem; }
+            .json-stats { gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <a href="../process/index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back</a>
+            <div class="file-info">
+                <div class="file-name" id="fileName">Loading...</div>
+                <div class="file-type" id="fileType"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toolbar" id="toolbar" style="display: none;">
+        <input type="text" class="search-box" id="searchBox" placeholder="Search content...">
+        <button class="toolbar-btn" id="btnRaw" onclick="toggleView('raw')"><i class="fas fa-code"></i> Raw</button>
+        <button class="toolbar-btn active" id="btnTable" onclick="toggleView('table')"><i class="fas fa-table"></i> Table</button>
+        <button class="toolbar-btn" onclick="downloadFile()"><i class="fas fa-download"></i> Download</button>
+    </div>
+
+    <div class="container">
+        <div id="loading" class="loading">
+            <i class="fas fa-spinner"></i>
+            <p>Loading document...</p>
+        </div>
+        <div id="error" class="error" style="display: none;">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p id="errorMsg">Error loading file</p>
+        </div>
+        <div id="content"></div>
+    </div>
+
+    <script>
+        let currentData = null;
+        let currentType = null;
+        let currentView = 'table';
+
+        // Get file path from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const filePath = urlParams.get('file');
+
+        if (!filePath) {
+            showError('No file specified. Use ?file=path/to/file.md');
+        } else {
+            loadFile(filePath);
+        }
+
+        async function loadFile(path) {
+            try {
+                document.getElementById('fileName').textContent = path.split('/').pop();
+
+                const response = await fetch(path);
+                if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+
+                const content = await response.text();
+                const ext = path.split('.').pop().toLowerCase();
+
+                document.getElementById('loading').style.display = 'none';
+
+                if (ext === 'md') {
+                    currentType = 'markdown';
+                    document.getElementById('fileType').textContent = 'Markdown Document';
+                    renderMarkdown(content);
+                } else if (ext === 'json') {
+                    currentType = 'json';
+                    document.getElementById('fileType').textContent = 'JSON Data';
+                    document.getElementById('toolbar').style.display = 'flex';
+                    currentData = JSON.parse(content);
+                    renderJSON(currentData);
+                } else {
+                    currentType = 'text';
+                    document.getElementById('fileType').textContent = 'Text File';
+                    renderText(content);
+                }
+            } catch (err) {
+                showError(err.message);
+            }
+        }
+
+        function showError(msg) {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('error').style.display = 'block';
+            document.getElementById('errorMsg').textContent = msg;
+        }
+
+        function renderMarkdown(content) {
+            const html = marked.parse(content);
+            document.getElementById('content').innerHTML = `<div class="markdown-body">${html}</div>`;
+            // Highlight code blocks
+            document.querySelectorAll('pre code').forEach(block => {
+                hljs.highlightElement(block);
+            });
+        }
+
+        function renderText(content) {
+            document.getElementById('content').innerHTML = `<div class="markdown-body"><pre><code>${escapeHtml(content)}</code></pre></div>`;
+        }
+
+        function renderJSON(data) {
+            if (currentView === 'raw') {
+                renderJSONRaw(data);
+            } else {
+                renderJSONTable(data);
+            }
+        }
+
+        function renderJSONRaw(data) {
+            const formatted = JSON.stringify(data, null, 2);
+            document.getElementById('content').innerHTML = `
+                <div class="json-container">
+                    <div class="json-raw">
+                        <pre><code class="language-json">${escapeHtml(formatted)}</code></pre>
+                    </div>
+                </div>
+            `;
+            hljs.highlightAll();
+        }
+
+        function renderJSONTable(data) {
+            // Detect data structure
+            if (Array.isArray(data)) {
+                renderArrayTable(data);
+            } else if (data.requirements && Array.isArray(data.requirements)) {
+                renderArrayTable(data.requirements, data);
+            } else if (typeof data === 'object') {
+                renderObjectTable(data);
+            } else {
+                renderJSONRaw(data);
+            }
+        }
+
+        function renderArrayTable(arr, meta = null) {
+            if (arr.length === 0) {
+                document.getElementById('content').innerHTML = '<div class="json-container"><p style="padding: 2rem;">Empty array</p></div>';
+                return;
+            }
+
+            // Get all unique keys from all objects
+            const keys = [...new Set(arr.flatMap(obj => Object.keys(obj || {})))];
+
+            // Filter out internal/display keys as needed
+            const displayKeys = keys.filter(k => k !== '__meta');
+
+            // Stats
+            let statsHtml = '';
+            if (meta) {
+                statsHtml = `
+                    <div class="json-stats">
+                        <div class="json-stat"><div class="json-stat-value">${arr.length}</div><div class="json-stat-label">Total Items</div></div>
+                        ${meta.total_requirements ? `<div class="json-stat"><div class="json-stat-value">${meta.total_requirements}</div><div class="json-stat-label">Requirements</div></div>` : ''}
+                    </div>
+                `;
+            } else {
+                statsHtml = `
+                    <div class="json-stats">
+                        <div class="json-stat"><div class="json-stat-value">${arr.length}</div><div class="json-stat-label">Total Items</div></div>
+                        <div class="json-stat"><div class="json-stat-value">${displayKeys.length}</div><div class="json-stat-label">Fields</div></div>
+                    </div>
+                `;
+            }
+
+            // Table header
+            let headerHtml = '<tr>';
+            displayKeys.forEach(key => {
+                headerHtml += `<th>${formatHeader(key)}</th>`;
+            });
+            headerHtml += '</tr>';
+
+            // Table body
+            let bodyHtml = '';
+            arr.forEach(item => {
+                bodyHtml += '<tr>';
+                displayKeys.forEach(key => {
+                    bodyHtml += `<td>${formatValue(key, item[key])}</td>`;
+                });
+                bodyHtml += '</tr>';
+            });
+
+            document.getElementById('content').innerHTML = `
+                <div class="json-container">
+                    ${statsHtml}
+                    <div style="overflow-x: auto;">
+                        <table class="json-table">
+                            <thead>${headerHtml}</thead>
+                            <tbody>${bodyHtml}</tbody>
+                        </table>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderObjectTable(obj) {
+            let rows = '';
+            Object.entries(obj).forEach(([key, value]) => {
+                const displayValue = typeof value === 'object' ? JSON.stringify(value, null, 2) : value;
+                rows += `<tr><td><strong>${formatHeader(key)}</strong></td><td>${formatValue(key, value)}</td></tr>`;
+            });
+
+            document.getElementById('content').innerHTML = `
+                <div class="json-container">
+                    <table class="json-table">
+                        <thead><tr><th>Key</th><th>Value</th></tr></thead>
+                        <tbody>${rows}</tbody>
+                    </table>
+                </div>
+            `;
+        }
+
+        function formatHeader(key) {
+            return key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+        }
+
+        function formatValue(key, value) {
+            if (value === null || value === undefined) return '<span style="color:#999;">-</span>';
+
+            // Handle original_id conditional display
+            if (key === 'original_id') {
+                if (value === 'UNKNOWN' || value === 'unknown') {
+                    return '<span style="color:#999;">-</span>';
+                }
+            }
+
+            // Handle arrays
+            if (Array.isArray(value)) {
+                if (value.length === 0) return '<span style="color:#999;">-</span>';
+                return value.map(v => `<span class="module-tag" style="background:#e9ecef;padding:0.1rem 0.3rem;border-radius:3px;font-size:0.75rem;margin-right:0.25rem;">${escapeHtml(String(v))}</span>`).join('');
+            }
+
+            // Handle type badges
+            if (key === 'suggested_type' || key === 'type') {
+                return `<span class="type-badge type-${value}">${value}</span>`;
+            }
+
+            // Handle IDs
+            if (key === 'fbms_id' || key === 'req_id') {
+                return `<span class="req-id">${escapeHtml(String(value))}</span>`;
+            }
+
+            // Handle confidence
+            if (key === 'confidence') {
+                const color = value === 'high' ? 'var(--success)' : value === 'medium' ? 'var(--warning)' : '#666';
+                return `<span style="color:${color};font-weight:600;">${value}</span>`;
+            }
+
+            // Handle booleans
+            if (typeof value === 'boolean') {
+                return value ? '<i class="fas fa-check" style="color:var(--success);"></i>' : '<i class="fas fa-times" style="color:#999;"></i>';
+            }
+
+            // Handle objects
+            if (typeof value === 'object') {
+                return `<pre style="font-size:0.75rem;margin:0;white-space:pre-wrap;">${escapeHtml(JSON.stringify(value, null, 2))}</pre>`;
+            }
+
+            // Truncate long strings
+            const str = String(value);
+            if (str.length > 200) {
+                return `<span title="${escapeHtml(str)}">${escapeHtml(str.substring(0, 200))}...</span>`;
+            }
+
+            return escapeHtml(str);
+        }
+
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        function toggleView(view) {
+            currentView = view;
+            document.getElementById('btnRaw').classList.toggle('active', view === 'raw');
+            document.getElementById('btnTable').classList.toggle('active', view === 'table');
+            if (currentData) renderJSON(currentData);
+        }
+
+        function downloadFile() {
+            if (!filePath) return;
+            window.open(filePath, '_blank');
+        }
+
+        // Search functionality
+        document.getElementById('searchBox').addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase();
+            if (!query) {
+                document.querySelectorAll('.json-table tbody tr').forEach(row => row.style.display = '');
+                return;
+            }
+            document.querySelectorAll('.json-table tbody tr').forEach(row => {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(query) ? '' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

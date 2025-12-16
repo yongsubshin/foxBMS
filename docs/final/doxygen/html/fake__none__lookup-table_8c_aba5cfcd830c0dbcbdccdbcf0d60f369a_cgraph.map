@@ -1,0 +1,5 @@
+<map id="TSI_GetTemperature" name="TSI_GetTemperature">
+<area shape="rect" id="Node000001" title="translate a voltage to a temperature" alt="" coords="5,5,160,31"/>
+<area shape="rect" id="Node000002" href="$fake__none_8c.html#a8519235f1cb368c712566dc0a6615a8a" title="returns a fake temperature" alt="" coords="208,5,449,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,15,194,15,194,21,160,21"/>
+</map>

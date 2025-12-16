@@ -1,0 +1,9 @@
+<map id="CANRX_ImdResponseReadInsulationResistance" name="CANRX_ImdResponseReadInsulationResistance">
+<area shape="rect" id="Node000001" title="Gets insulation resistance from IMD response message and stores it in the data table." alt="" coords="5,35,265,75"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a844d064ef821d64e6ae5cd80e597d452" title="Copy CAN data from 8 bytes to a 64&#45;bit variable." alt="" coords="349,5,568,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,40,336,34,336,39,266,46"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="313,70,604,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="266,63,300,66,300,72,265,69"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="652,70,875,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="604,80,638,80,638,85,604,85"/>
+</map>

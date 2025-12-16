@@ -1,0 +1,5 @@
+<map id="CANTX_BuildPackMinimumMaximumValuesMessage" name="CANTX_BuildPackMinimumMaximumValuesMessage">
+<area shape="rect" id="Node000001" title="Adds the data to the message about the pack values." alt="" coords="285,5,551,45"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__pack-minimum-maximum-values_8c.html#a2076a4f1ebdfce844feb3d79991ccb57" title="CAN Tx callback function for min/max values." alt="" coords="5,5,237,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="272,28,237,28,237,23,272,23"/>
+</map>

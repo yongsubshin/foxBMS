@@ -1,0 +1,5 @@
+<map id="CANTX_VoltageSetData" name="CANTX_VoltageSetData">
+<area shape="rect" id="Node000001" title="Helper function for CANTX_CellVoltages()" alt="" coords="208,5,383,31"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__cell-voltages_8c.html#a2b521df0225246e64ce10dff8e30cb4a" title="CAN Tx callback function for cell voltages." alt="" coords="5,5,160,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,21,160,21,160,15,194,15"/>
+</map>

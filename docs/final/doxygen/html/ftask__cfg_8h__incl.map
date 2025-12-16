@@ -1,0 +1,12 @@
+<map id="foxbms&#45;2/src/app/task/config/ftask_cfg.h" name="foxbms&#45;2/src/app/task/config/ftask_cfg.h">
+<area shape="rect" id="Node000001" title="Task configuration header." alt="" coords="140,5,307,45"/>
+<area shape="rect" id="Node000002" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="168,93,217,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,47,205,81,200,80,213,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="240,167,311,192"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="232,45,269,153,264,154,227,47"/>
+<area shape="rect" id="Node000003" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="5,167,108,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="172,121,92,163,90,158,170,116"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="133,167,215,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="192,120,183,154,178,153,187,118"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="208,117,253,155,250,160,204,121"/>
+</map>

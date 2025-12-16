@@ -1,0 +1,9 @@
+<map id="MXM_HandleStateWriteall" name="MXM_HandleStateWriteall">
+<area shape="rect" id="Node000001" title="Handle the state machine&#45;transactions for a WRITEALL." alt="" coords="5,31,199,56"/>
+<area shape="rect" id="Node000002" href="$mxm__battery__management_8c.html#a9d5b57e8d6ecb30ba6426272f472e630" title="Set state request for the Battery Management State machine." alt="" coords="247,5,433,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,30,233,27,233,32,199,36"/>
+<area shape="rect" id="Node000003" href="$mxm__1785x_8c.html#a2cfdc33409d373e8721922acc6a9a3a9" title="This error handler is used as a last resort and tries a reset of the complete driver." alt="" coords="249,55,431,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,50,236,54,236,60,198,56"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="481,55,616,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="431,65,467,65,467,70,431,70"/>
+</map>

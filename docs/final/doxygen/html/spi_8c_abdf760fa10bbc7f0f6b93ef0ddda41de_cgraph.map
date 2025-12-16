@@ -1,0 +1,19 @@
+<map id="SPI_TransmitData" name="SPI_TransmitData">
+<area shape="rect" id="Node000001" title="Transmits data on SPI without DMA." alt="" coords="5,104,141,129"/>
+<area shape="rect" id="Node000002" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="203,5,303,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,102,134,72,188,40,201,33,204,38,191,44,137,76,93,106"/>
+<area shape="rect" id="Node000003" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="211,55,295,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,101,198,80,199,85,121,107"/>
+<area shape="rect" id="Node000004" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="189,104,317,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="142,114,175,114,175,119,142,119"/>
+<area shape="rect" id="Node000005" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="214,203,293,228"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="94,127,137,156,191,188,205,195,203,200,188,192,134,161,91,132"/>
+<area shape="rect" id="Node000008" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="206,153,301,179"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="121,127,193,147,192,152,120,132"/>
+<area shape="rect" id="Node000006" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="365,153,521,179"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="292,203,380,180,381,185,294,208"/>
+<area shape="rect" id="Node000007" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="370,203,517,228"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="293,213,356,213,356,218,293,218"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="301,163,352,163,352,169,301,169"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="302,176,381,197,380,202,300,181"/>
+</map>

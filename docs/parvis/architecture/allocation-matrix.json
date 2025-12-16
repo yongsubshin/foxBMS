@@ -1,0 +1,1062 @@
+{
+  "metadata": {
+    "document_id": "FBMS-WP-SWE2-002",
+    "title": "Requirements to Architecture Allocation Matrix",
+    "version": "1.0.0",
+    "date": "2025-12-16",
+    "aspice_process": "SWE.2 BP2 - Allocate software requirements",
+    "total_requirements": 147,
+    "total_components": 20,
+    "allocation_coverage": "100%"
+  },
+  "component_definitions": [
+    {
+      "component_id": "COMP-APP-BMS",
+      "name": "BMS Control",
+      "layer": "Application",
+      "asil": "D",
+      "source_path": "foxbms-2/src/app/application/bms/"
+    },
+    {
+      "component_id": "COMP-APP-ALGO",
+      "name": "Algorithm",
+      "layer": "Application",
+      "asil": "C",
+      "source_path": "foxbms-2/src/app/application/algorithm/"
+    },
+    {
+      "component_id": "COMP-APP-BAL",
+      "name": "Balancing",
+      "layer": "Application",
+      "asil": "B",
+      "source_path": "foxbms-2/src/app/application/bal/"
+    },
+    {
+      "component_id": "COMP-APP-SOA",
+      "name": "SOA Monitor",
+      "layer": "Application",
+      "asil": "D",
+      "source_path": "foxbms-2/src/app/application/soa/"
+    },
+    {
+      "component_id": "COMP-APP-RED",
+      "name": "Redundancy",
+      "layer": "Application",
+      "asil": "D",
+      "source_path": "foxbms-2/src/app/application/redundancy/"
+    },
+    {
+      "component_id": "COMP-APP-PLAUS",
+      "name": "Plausibility",
+      "layer": "Application",
+      "asil": "C",
+      "source_path": "foxbms-2/src/app/application/plausibility/"
+    },
+    {
+      "component_id": "COMP-ENG-DB",
+      "name": "Database",
+      "layer": "Engine",
+      "asil": "B",
+      "source_path": "foxbms-2/src/app/engine/database/"
+    },
+    {
+      "component_id": "COMP-ENG-DIAG",
+      "name": "Diagnostics",
+      "layer": "Engine",
+      "asil": "D",
+      "source_path": "foxbms-2/src/app/engine/diag/"
+    },
+    {
+      "component_id": "COMP-ENG-SYSMON",
+      "name": "System Monitor",
+      "layer": "Engine",
+      "asil": "D",
+      "source_path": "foxbms-2/src/app/engine/sys_mon/"
+    },
+    {
+      "component_id": "COMP-DRV-AFE",
+      "name": "AFE Driver",
+      "layer": "Driver",
+      "asil": "D",
+      "source_path": "foxbms-2/src/app/driver/afe/"
+    },
+    {
+      "component_id": "COMP-DRV-SBC",
+      "name": "SBC Driver",
+      "layer": "Driver",
+      "asil": "D",
+      "source_path": "foxbms-2/src/app/driver/sbc/"
+    },
+    {
+      "component_id": "COMP-DRV-CONT",
+      "name": "Contactor",
+      "layer": "Driver",
+      "asil": "D",
+      "source_path": "foxbms-2/src/app/driver/contactor/"
+    },
+    {
+      "component_id": "COMP-DRV-TS",
+      "name": "Temperature Sensor",
+      "layer": "Driver",
+      "asil": "C",
+      "source_path": "foxbms-2/src/app/driver/ts/"
+    },
+    {
+      "component_id": "COMP-DRV-SPS",
+      "name": "Smart Power Switch",
+      "layer": "Driver",
+      "asil": "C",
+      "source_path": "foxbms-2/src/app/driver/sps/"
+    },
+    {
+      "component_id": "COMP-DRV-CAN",
+      "name": "CAN Driver",
+      "layer": "Driver",
+      "asil": "B",
+      "source_path": "foxbms-2/src/app/driver/can/"
+    },
+    {
+      "component_id": "COMP-DRV-SPI",
+      "name": "SPI Driver",
+      "layer": "Driver",
+      "asil": "B",
+      "source_path": "foxbms-2/src/app/driver/spi/"
+    },
+    {
+      "component_id": "COMP-DRV-IO",
+      "name": "IO Driver",
+      "layer": "Driver",
+      "asil": "A",
+      "source_path": "foxbms-2/src/app/driver/io/"
+    },
+    {
+      "component_id": "COMP-DRV-ADC",
+      "name": "ADC Driver",
+      "layer": "Driver",
+      "asil": "B",
+      "source_path": "foxbms-2/src/app/driver/adc/"
+    },
+    {
+      "component_id": "COMP-DRV-ILCK",
+      "name": "Interlock Driver",
+      "layer": "Driver",
+      "asil": "B",
+      "source_path": "foxbms-2/src/app/driver/interlock/"
+    },
+    {
+      "component_id": "COMP-CFG",
+      "name": "Configuration",
+      "layer": "Application",
+      "asil": "D",
+      "source_path": "foxbms-2/src/app/application/config/"
+    }
+  ],
+  "allocations": [
+    {
+      "fbms_id": "FBMS-SAF-ALG-001",
+      "component_id": "COMP-APP-ALGO",
+      "allocation_type": "primary",
+      "rationale": "Algorithm execution timeout monitoring"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-002",
+      "component_id": "COMP-APP-ALGO",
+      "allocation_type": "primary",
+      "rationale": "Array bounds validation in algorithm module"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-003",
+      "component_id": "COMP-APP-ALGO",
+      "allocation_type": "primary",
+      "rationale": "String number validation for SOE calculations"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-004",
+      "component_id": "COMP-APP-ALGO",
+      "allocation_type": "primary",
+      "rationale": "SOC null pointer validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-005",
+      "component_id": "COMP-APP-ALGO",
+      "allocation_type": "primary",
+      "rationale": "SOC string validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-006",
+      "component_id": "COMP-APP-ALGO",
+      "allocation_type": "primary",
+      "rationale": "SOC calculation pointer validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-007",
+      "component_id": "COMP-APP-ALGO",
+      "allocation_type": "primary",
+      "rationale": "SOE calculation validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-008",
+      "component_id": "COMP-APP-ALGO",
+      "allocation_type": "primary",
+      "rationale": "SOE string validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-009",
+      "component_id": "COMP-APP-ALGO",
+      "allocation_type": "primary",
+      "rationale": "SOE calculation pointer validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-010",
+      "component_id": "COMP-APP-ALGO",
+      "allocation_type": "primary",
+      "rationale": "SOH capacity estimation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-011",
+      "component_id": "COMP-APP-ALGO",
+      "allocation_type": "primary",
+      "rationale": "SOH validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-012",
+      "component_id": "COMP-APP-ALGO",
+      "allocation_type": "primary",
+      "rationale": "SOH calculation pointer validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-013",
+      "component_id": "COMP-APP-ALGO",
+      "allocation_type": "primary",
+      "rationale": "SOF voltage limits"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-014",
+      "component_id": "COMP-APP-ALGO",
+      "allocation_type": "primary",
+      "rationale": "SOF temperature limits"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-015",
+      "component_id": "COMP-APP-ALGO",
+      "allocation_type": "primary",
+      "rationale": "ERROR state current limits to zero"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-001",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Open wire detection implementation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-002",
+      "component_id": "COMP-APP-PLAUS",
+      "allocation_type": "primary",
+      "rationale": "Voltage plausibility check"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-003",
+      "component_id": "COMP-APP-PLAUS",
+      "allocation_type": "primary",
+      "rationale": "Plausibility configuration validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-004",
+      "component_id": "COMP-APP-PLAUS",
+      "allocation_type": "primary",
+      "rationale": "Temperature plausibility check"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-005",
+      "component_id": "COMP-APP-PLAUS",
+      "allocation_type": "primary",
+      "rationale": "Temperature range configuration validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-006",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "AFE digital supply voltage monitoring"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-007",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "AFE analog supply voltage monitoring"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-008",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "AFE reference voltage monitoring"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-009",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "AFE die temperature monitoring"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-010",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "CRC validation on AFE communication"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-011",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Command counter verification"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-012",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Configuration register verification"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-013",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Stuck voltage register detection"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-014",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Stuck auxiliary register detection"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-015",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Redundant ADC measurement"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-016",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Open wire detection via pull-up resistors"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-017",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Null pointer validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-018",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Voltage store location validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-019",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Cleared value detection"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-020",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Diagnostic functions"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-021",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "LTC open wire detection"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-022",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "PEC validity tracking"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-023",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Open wire data storage"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-024",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "ADC self-test"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-025",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Digital filter self-test"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-026",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Pre-initialization self-checks"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-027",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Open wire result processing"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-028",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Error handler reset"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-029",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "State pointer null check"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-030",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Model ID validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-031",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Module index validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-032",
+      "component_id": "COMP-DRV-AFE",
+      "allocation_type": "primary",
+      "rationale": "Register verification failure count"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-001",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "Re-entrance protection"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-002",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "Atomic counter operation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-003",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "Instance pointer validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-004",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "Atomic state request update"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-005",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "Error state transition"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-006",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "Periodic watchdog triggering"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-007",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "Invalid state trap"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-008",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "Invalid substate trap"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-009",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "LBIST/ABIST1 verification"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-010",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "OTP CRC error detection"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-011",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "DATA/DATA_NOT writing"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-012",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "Error counter limit"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-013",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "ABIST2 verification"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-014",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "Error counter clearing"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-015",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "RSTB path check"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-016",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "FS0B path check"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-017",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "FS0B release protection"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-018",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "FS0B release preconditions"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-019",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "FS0B release value encryption"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-020",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "FIN pin short circuit detection"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-021",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "RSTB assertion test"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-022",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "Watchdog refresh success"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-023",
+      "component_id": "COMP-DRV-SBC",
+      "allocation_type": "primary",
+      "rationale": "Watchdog timing/data error flag"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-001",
+      "component_id": "COMP-DRV-TS",
+      "allocation_type": "primary",
+      "rationale": "Temperature conversion error handling"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-002",
+      "component_id": "COMP-DRV-TS",
+      "allocation_type": "primary",
+      "rationale": "Beta coefficient minimum validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-003",
+      "component_id": "COMP-DRV-TS",
+      "allocation_type": "primary",
+      "rationale": "Beta coefficient maximum validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-004",
+      "component_id": "COMP-DRV-TS",
+      "allocation_type": "primary",
+      "rationale": "Reference resistance range validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-005",
+      "component_id": "COMP-DRV-TS",
+      "allocation_type": "primary",
+      "rationale": "EPCOS B57251V5103J060 sensor error handling"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-006",
+      "component_id": "COMP-DRV-TS",
+      "allocation_type": "primary",
+      "rationale": "EPCOS B57861S0103F045 sensor error handling"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-007",
+      "component_id": "COMP-DRV-TS",
+      "allocation_type": "primary",
+      "rationale": "Murata NCXXXXH103 sensor error handling"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-008",
+      "component_id": "COMP-DRV-TS",
+      "allocation_type": "primary",
+      "rationale": "Vishay NTCALUG01A103G sensor error handling"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-009",
+      "component_id": "COMP-DRV-TS",
+      "allocation_type": "primary",
+      "rationale": "Vishay NTCLE317E4103SBA sensor error handling"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-010",
+      "component_id": "COMP-DRV-TS",
+      "allocation_type": "primary",
+      "rationale": "Vishay NTCLE413E2103F102L sensor error handling"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-011",
+      "component_id": "COMP-DRV-TS",
+      "allocation_type": "primary",
+      "rationale": "TDK NTCG163JX103DT1S sensor error handling"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-012",
+      "component_id": "COMP-DRV-TS",
+      "allocation_type": "primary",
+      "rationale": "Semitec 103JT sensor error handling"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-013",
+      "component_id": "COMP-DRV-TS",
+      "allocation_type": "primary",
+      "rationale": "Temperature measurement range validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-014",
+      "component_id": "COMP-DRV-TS",
+      "allocation_type": "primary",
+      "rationale": "INT16_MAX return on error"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-015",
+      "component_id": "COMP-DRV-TS",
+      "allocation_type": "primary",
+      "rationale": "INT16_MIN/MAX return on range exceeded"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-001",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Maximum discharge temperature limit"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-002",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Minimum discharge temperature limit"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-003",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Maximum charge temperature limit"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-004",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Minimum charge temperature limit"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-005",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Maximum voltage limit"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-006",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Minimum voltage limit"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-007",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Deep discharge voltage threshold"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-008",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Maximum discharge current limit"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-009",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Maximum charge current limit"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-010",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Contactor maximum break current"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-011",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Fuse trigger duration limit"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-012",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Maximum string current"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-013",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Maximum pack current"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-014",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Fuse voltage drop limit"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-015",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "String close timeout"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-016",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "String open timeout"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-017",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Next string voltage limit"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-018",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Average string current limit"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-019",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "BMS rest current threshold"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-020",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "SOC minimum rest time"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-021",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "SOE minimum rest time"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-022",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Balancing lower voltage limit"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-023",
+      "component_id": "COMP-CFG",
+      "allocation_type": "primary",
+      "rationale": "Balancing upper temperature limit"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-001",
+      "component_id": "COMP-DRV-ADC",
+      "allocation_type": "primary",
+      "rationale": "ADC channel range validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-002",
+      "component_id": "COMP-DRV-SPI",
+      "allocation_type": "primary",
+      "rationale": "SPI interface null check"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-003",
+      "component_id": "COMP-DRV-SPI",
+      "allocation_type": "primary",
+      "rationale": "SPI TX buffer null check"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-004",
+      "component_id": "COMP-DRV-SPI",
+      "allocation_type": "primary",
+      "rationale": "SPI RX buffer null check"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-005",
+      "component_id": "COMP-DRV-SPI",
+      "allocation_type": "primary",
+      "rationale": "SPI frame length validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-006",
+      "component_id": "COMP-DRV-IO",
+      "allocation_type": "primary",
+      "rationale": "IO port null check"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-007",
+      "component_id": "COMP-DRV-IO",
+      "allocation_type": "primary",
+      "rationale": "IO pin number range validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-008",
+      "component_id": "COMP-DRV-ILCK",
+      "allocation_type": "primary",
+      "rationale": "Interlock ADC value range validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-009",
+      "component_id": "COMP-DRV-SPS",
+      "allocation_type": "primary",
+      "rationale": "SPS channel index range validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-010",
+      "component_id": "COMP-DRV-SPS",
+      "allocation_type": "primary",
+      "rationale": "SPS contactor index range validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-011",
+      "component_id": "COMP-DRV-CONT",
+      "allocation_type": "primary",
+      "rationale": "Contactor name null validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-012",
+      "component_id": "COMP-DRV-CONT",
+      "allocation_type": "primary",
+      "rationale": "Contactor index range validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-013",
+      "component_id": "COMP-DRV-CONT",
+      "allocation_type": "primary",
+      "rationale": "Contactor configuration validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-014",
+      "component_id": "COMP-DRV-CONT",
+      "allocation_type": "primary",
+      "rationale": "Contactor state validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-015",
+      "component_id": "COMP-DRV-CONT",
+      "allocation_type": "primary",
+      "rationale": "Contactor feedback validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-001",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "String number range check"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-002",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Pack values pointer validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-003",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "String number parameter validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-004",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Contactor type invariant check"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-005",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Pack value pointer validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-006",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Pack values assertion"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-007",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "BMS calculation pointer validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-008",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "String bounds check"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-009",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Voltage calculation pointer"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-010",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Current calculation pointer"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-011",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Battery state update validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-012",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "String number in contactor control"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-013",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Invalid state FAS_TRAP"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-014",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "State transition string validation"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-015",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Contactor sequencing invariant"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-016",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Default case FAS_TRAP"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-017",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Precharge state FAS_TRAP"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-018",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Normal state FAS_TRAP"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-019",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Error state machine FAS_TRAP"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-020",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Discharge state FAS_TRAP"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-021",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Charge state FAS_TRAP"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-022",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Standby state FAS_TRAP"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-023",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Auxiliary function string check"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-024",
+      "component_id": "COMP-APP-BMS",
+      "allocation_type": "primary",
+      "rationale": "Monitoring function string check"
+    }
+  ],
+  "allocation_summary": {
+    "by_component": {
+      "COMP-APP-BMS": 24,
+      "COMP-APP-ALGO": 15,
+      "COMP-APP-PLAUS": 4,
+      "COMP-DRV-AFE": 32,
+      "COMP-DRV-SBC": 23,
+      "COMP-DRV-TS": 15,
+      "COMP-CFG": 23,
+      "COMP-DRV-ADC": 1,
+      "COMP-DRV-SPI": 4,
+      "COMP-DRV-IO": 2,
+      "COMP-DRV-ILCK": 1,
+      "COMP-DRV-SPS": 2,
+      "COMP-DRV-CONT": 5
+    },
+    "by_asil": {
+      "ASIL-D": 52,
+      "ASIL-C": 46,
+      "ASIL-B": 32,
+      "ASIL-A": 17
+    },
+    "orphan_requirements": 0
+  }
+}

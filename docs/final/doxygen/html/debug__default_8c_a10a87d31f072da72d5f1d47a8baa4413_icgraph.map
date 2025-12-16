@@ -1,0 +1,9 @@
+<map id="FAKE_ProcessInitializationState" name="FAKE_ProcessInitializationState">
+<area shape="rect" id="Node000001" title="Processes the initialization state." alt="" coords="560,5,752,45"/>
+<area shape="rect" id="Node000002" href="$debug__default_8c.html#aeb6e23ce50d19e616aab642a7bee7bd7" title="Defines the state transitions." alt="" coords="337,13,512,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="546,28,512,28,512,23,546,23"/>
+<area shape="rect" id="Node000003" href="$debug__default_8c.html#a3ff9b601ec0d377a3a78d8ce735c7971" title="Trigger function for the driver, called to advance the state machine." alt="" coords="163,13,289,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="323,28,290,28,290,23,323,23"/>
+<area shape="rect" id="Node000004" href="$debug__default__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,13,115,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,28,115,28,115,23,149,23"/>
+</map>

@@ -1,0 +1,89 @@
+<map id="MXM_41BStateHandlerInit" name="MXM_41BStateHandlerInit">
+<area shape="rect" id="Node000001" title="init state handler" alt="" coords="5,391,199,416"/>
+<area shape="rect" id="Node000002" href="$mxm__17841b_8c.html#a23f72a19d061e3fd2d4095f4e6b10d8c" title="Write the config register of MAX17841B." alt="" coords="258,203,475,228"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,389,160,320,200,280,245,245,278,230,281,235,248,250,203,284,164,324,113,392"/>
+<area shape="rect" id="Node000026" href="$mxm__17841b_8c.html#a578f763e28fa1230a131616778099702" title="Reset register copies to default." alt="" coords="268,354,465,394"/>
+<area shape="poly" id="edge28_Node000001_Node000026" title=" " alt="" coords="199,390,254,384,255,389,199,395"/>
+<area shape="rect" id="Node000027" href="$mxm__17841b_8c.html#a70233222d0d1b152129a1b518ceb8937" title="Read one or multiple registers of MAX17841B." alt="" coords="557,152,732,177"/>
+<area shape="poly" id="edge29_Node000001_Node000027" title=" " alt="" coords="105,389,121,348,149,292,190,234,216,208,245,188,284,169,325,156,367,147,409,142,492,141,563,147,563,153,491,146,410,148,368,152,326,161,286,174,248,192,219,213,194,237,154,295,126,350,110,391"/>
+<area shape="rect" id="Node000030" href="$mxm__17841b_8c.html#a4a89dee3ef42402bf77a05f83ab55d0f" title="Transition into idle, mark as an error occurred." alt="" coords="257,419,476,444"/>
+<area shape="poly" id="edge38_Node000001_Node000030" title=" " alt="" coords="199,411,244,416,243,421,199,416"/>
+<area shape="rect" id="Node000031" href="$mxm__17841b_8c.html#aae8820bfff22c08f9ab9cfc015f1cf6c" title="Transition into idle, mark as successful." alt="" coords="247,468,487,493"/>
+<area shape="poly" id="edge39_Node000001_Node000031" title=" " alt="" coords="136,414,247,453,285,462,284,468,246,458,134,419"/>
+<area shape="rect" id="Node000032" href="$mxm__cfg_8c.html#ae15c13f7eb4e91ae8876eb7d9562357f" title="Pulls the shutdown of the bridge IC high." alt="" coords="814,304,973,329"/>
+<area shape="poly" id="edge40_Node000001_Node000032" title=" " alt="" coords="125,388,179,362,246,339,320,325,397,315,549,304,688,303,801,307,800,313,688,309,549,310,397,320,321,330,247,345,181,367,127,393"/>
+<area shape="rect" id="Node000033" href="$mxm__cfg_8c.html#a4b68e64640670902e28f9db8742008df" title="Return whether SPI interface is ready." alt="" coords="277,517,457,543"/>
+<area shape="poly" id="edge42_Node000001_Node000033" title=" " alt="" coords="119,414,173,458,209,482,248,502,272,511,270,516,246,507,206,486,170,462,116,418"/>
+<area shape="rect" id="Node000035" href="$mxm__cfg_8c.html#aca1a692c6b1650c116b1580f5edcfd0d" title="Pulls the shutdown of the bridge IC low." alt="" coords="803,253,984,279"/>
+<area shape="poly" id="edge44_Node000001_Node000035" title=" " alt="" coords="115,389,169,346,206,324,246,306,317,286,390,271,464,260,538,254,675,250,789,254,789,259,675,255,538,259,465,266,391,276,318,291,248,311,209,328,173,351,119,393"/>
+<area shape="rect" id="Node000036" href="$os_8c.html#a53166653cb8fe3f7c0bfb86af6217fe5" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="271,567,462,592"/>
+<area shape="poly" id="edge46_Node000001_Node000036" title=" " alt="" coords="114,415,165,481,203,520,248,552,265,560,262,564,245,556,200,524,161,485,109,418"/>
+<area shape="rect" id="Node000038" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="577,621,712,647"/>
+<area shape="poly" id="edge49_Node000001_Node000038" title=" " alt="" coords="110,415,127,454,155,506,196,560,220,583,248,602,286,620,326,633,410,648,492,650,563,644,564,650,492,655,410,653,325,639,284,625,245,607,217,587,192,564,151,509,122,456,105,417"/>
+<area shape="rect" id="Node000003" href="$mxm__17841b_8c.html#a1e6810277173e48449155251562be540" title="Write one or multiple registers of MAX17841B." alt="" coords="557,203,733,228"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="476,213,543,213,543,218,476,218"/>
+<area shape="rect" id="Node000004" href="$mxm__cfg_8c.html#ae7cec69276fadde6665026fadc7eb390" title="Transmit data over SPI." alt="" coords="831,203,956,228"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="733,213,817,213,817,218,733,218"/>
+<area shape="rect" id="Node000005" href="$diag_8c.html#a3e60a00edfbecf928fd6db140626647a" title="DIAG_CheckEvent provides a simple interface to check an event for STD_OK." alt="" coords="1057,104,1195,129"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="952,200,983,186,997,175,1006,163,1015,150,1031,138,1044,132,1046,137,1033,143,1019,154,1010,166,1001,179,985,191,954,205"/>
+<area shape="rect" id="Node000018" href="$spi_8c.html#abdf760fa10bbc7f0f6b93ef0ddda41de" title="Transmits data on SPI without DMA." alt="" coords="1058,203,1194,228"/>
+<area shape="poly" id="edge18_Node000004_Node000018" title=" " alt="" coords="956,213,1044,213,1044,218,956,218"/>
+<area shape="rect" id="Node000006" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="1275,55,1389,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1179,101,1264,81,1266,86,1180,107"/>
+<area shape="rect" id="Node000007" href="$diag_8c.html#a59191bef7fcae145e2d834eb8f447025" title="DIAG_ClearFatalErrorById checks whether the error has been cleared before and if not sends a clear me..." alt="" coords="1444,5,1631,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1385,52,1470,31,1471,37,1386,57"/>
+<area shape="rect" id="Node000015" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="1472,55,1603,80"/>
+<area shape="poly" id="edge14_Node000006_Node000015" title=" " alt="" coords="1389,65,1458,65,1458,70,1389,70"/>
+<area shape="rect" id="Node000016" href="$diag_8c.html#a4f4874e2e5766a401e9ab0c2721efda6" title="DIAG_SetFatalErrorById checks whether the error has been send before and if not send it per CAN...." alt="" coords="1450,104,1625,129"/>
+<area shape="poly" id="edge15_Node000006_Node000016" title=" " alt="" coords="1386,77,1471,98,1470,103,1385,83"/>
+<area shape="rect" id="Node000008" href="$can__cbs__tx__fatal-error_8c.html#af9d19804d03a440d5eb12e574a76bf30" title="Sends the Error ID per CAN." alt="" coords="1679,55,1859,80"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1598,28,1696,49,1695,54,1597,33"/>
+<area shape="rect" id="Node000014" href="$timer_8c.html#a8a878f1764cb181893c79d55b1c41a65" title="TIMER_stops stops a given virtual timer." alt="" coords="1719,5,1818,31"/>
+<area shape="poly" id="edge13_Node000007_Node000014" title=" " alt="" coords="1631,15,1705,15,1705,21,1631,21"/>
+<area shape="rect" id="Node000009" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="1929,19,2143,59"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1859,55,1915,49,1916,55,1859,61"/>
+<area shape="rect" id="Node000011" href="$can__cbs__tx__fatal-error_8c.html#a417ea445e91fa2826a6cbefbe8335661" title="Helper function to send the actual error Code." alt="" coords="1907,84,2165,109"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="1859,75,1907,80,1906,85,1859,80"/>
+<area shape="rect" id="Node000010" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="2237,27,2459,52"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="2143,37,2223,37,2223,42,2143,42"/>
+<area shape="rect" id="Node000012" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="2288,80,2408,105"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="2165,92,2274,91,2274,96,2165,98"/>
+<area shape="rect" id="Node000013" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="2213,129,2483,155"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="2124,107,2247,125,2247,130,2124,112"/>
+<area shape="poly" id="edge16_Node000016_Node000008" title=" " alt="" coords="1597,101,1695,80,1696,86,1598,107"/>
+<area shape="rect" id="Node000017" href="$timer_8c.html#a961668103b79a6b04dfd66e507bd2d7f" title="TIMER_start starts a given virtual timer." alt="" coords="1718,104,1819,129"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="1625,114,1704,114,1704,119,1625,119"/>
+<area shape="rect" id="Node000019" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="1282,252,1382,277"/>
+<area shape="poly" id="edge19_Node000018_Node000019" title=" " alt="" coords="1180,225,1269,247,1268,252,1179,231"/>
+<area shape="rect" id="Node000020" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="1290,301,1374,327"/>
+<area shape="poly" id="edge20_Node000018_Node000020" title=" " alt="" coords="1152,226,1269,286,1286,294,1284,299,1267,291,1149,231"/>
+<area shape="rect" id="Node000021" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="1268,153,1396,179"/>
+<area shape="poly" id="edge21_Node000018_Node000021" title=" " alt="" coords="1179,200,1264,179,1266,185,1180,205"/>
+<area shape="rect" id="Node000022" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="1293,104,1371,129"/>
+<area shape="poly" id="edge22_Node000018_Node000022" title=" " alt="" coords="1190,200,1219,188,1233,176,1242,164,1251,151,1266,138,1278,132,1281,136,1270,143,1255,155,1246,167,1237,180,1221,192,1193,205"/>
+<area shape="rect" id="Node000025" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="1285,203,1379,228"/>
+<area shape="poly" id="edge25_Node000018_Node000025" title=" " alt="" coords="1194,213,1271,213,1271,218,1194,218"/>
+<area shape="rect" id="Node000023" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1459,153,1615,179"/>
+<area shape="poly" id="edge23_Node000022_Node000023" title=" " alt="" coords="1372,123,1471,148,1470,153,1371,129"/>
+<area shape="rect" id="Node000024" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1464,203,1611,228"/>
+<area shape="poly" id="edge24_Node000022_Node000024" title=" " alt="" coords="1373,126,1397,138,1413,151,1422,164,1431,176,1445,188,1461,195,1458,200,1443,192,1427,180,1418,167,1409,155,1395,143,1371,131"/>
+<area shape="poly" id="edge26_Node000025_Node000023" title=" " alt="" coords="1379,201,1470,179,1471,185,1380,207"/>
+<area shape="poly" id="edge27_Node000025_Node000024" title=" " alt="" coords="1380,213,1450,213,1450,218,1380,218"/>
+<area shape="rect" id="Node000028" href="$mxm__cfg_8c.html#a116a8b81cf7c1912c50c1212aa0ff9a8" title="Send and Receive data over SPI." alt="" coords="821,152,966,177"/>
+<area shape="poly" id="edge30_Node000027_Node000028" title=" " alt="" coords="732,162,807,162,807,167,732,167"/>
+<area shape="poly" id="edge31_Node000028_Node000005" title=" " alt="" coords="955,149,1050,130,1051,135,956,155"/>
+<area shape="rect" id="Node000029" href="$spi_8c.html#ac84bc8424de860e2cd89fea2e89dd89a" title="Transmits and receives data on SPI without DMA." alt="" coords="1032,153,1220,179"/>
+<area shape="poly" id="edge32_Node000028_Node000029" title=" " alt="" coords="966,162,1018,163,1018,168,966,168"/>
+<area shape="poly" id="edge33_Node000029_Node000019" title=" " alt="" coords="1196,176,1221,188,1237,200,1247,212,1255,225,1270,237,1281,244,1278,248,1266,241,1252,228,1242,216,1233,204,1219,192,1194,181"/>
+<area shape="poly" id="edge34_Node000029_Node000020" title=" " alt="" coords="1203,177,1222,188,1234,200,1241,213,1247,238,1253,262,1270,287,1279,294,1276,298,1266,291,1248,265,1242,239,1236,215,1229,203,1218,192,1200,181"/>
+<area shape="poly" id="edge35_Node000029_Node000021" title=" " alt="" coords="1220,163,1254,163,1254,169,1220,169"/>
+<area shape="poly" id="edge36_Node000029_Node000022" title=" " alt="" coords="1179,151,1279,127,1280,132,1180,156"/>
+<area shape="poly" id="edge37_Node000029_Node000025" title=" " alt="" coords="1180,176,1272,198,1270,203,1179,181"/>
+<area shape="poly" id="edge41_Node000032_Node000020" title=" " alt="" coords="973,314,1276,312,1276,317,973,319"/>
+<area shape="rect" id="Node000034" href="$spi_8c.html#a4e790e1a3c19c32a5f02a32053e96040" title="Returns STD_OK if the SPI interface can be used again." alt="" coords="541,507,748,532"/>
+<area shape="poly" id="edge43_Node000033_Node000034" title=" " alt="" coords="457,524,527,521,528,526,457,529"/>
+<area shape="poly" id="edge45_Node000035_Node000019" title=" " alt="" coords="984,263,1268,262,1268,268,984,268"/>
+<area shape="rect" id="Node000037" href="$os_8c.html#a834064ee9e9a90768918c776f5cb1bb7" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="535,557,755,597"/>
+<area shape="poly" id="edge47_Node000036_Node000037" title=" " alt="" coords="462,576,521,575,521,581,462,581"/>
+<area shape="poly" id="edge48_Node000036_Node000038" title=" " alt="" coords="432,589,566,616,565,621,431,595"/>
+</map>

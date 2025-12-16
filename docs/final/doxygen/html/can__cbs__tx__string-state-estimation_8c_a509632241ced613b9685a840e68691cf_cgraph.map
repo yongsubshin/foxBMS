@@ -1,0 +1,26 @@
+<map id="CANTX_BuildStringStateEstimationMessage" name="CANTX_BuildStringStateEstimationMessage">
+<area shape="rect" id="Node000001" title="Builds the message form the data." alt="" coords="5,161,255,201"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="327,5,541,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,159,216,107,257,79,302,55,320,47,322,52,304,60,260,83,219,111,155,163"/>
+<area shape="rect" id="Node000004" href="$can__cbs__tx__string-state-estimation_8c.html#a996abb024097f3508e4c41e726195595" title="Calculates the return value for the strings maximum SOC." alt="" coords="303,70,565,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="169,159,231,131,302,104,334,96,335,101,303,109,233,135,172,164"/>
+<area shape="rect" id="Node000006" href="$can__cbs__tx__string-state-estimation_8c.html#afe2146a53357182b8c2bdf4f3e65281a" title="Calculates the return value for the strings maximum SOE." alt="" coords="303,119,565,145"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="253,159,341,144,342,149,254,164"/>
+<area shape="rect" id="Node000007" href="$can__cbs__tx__string-state-estimation_8c.html#a1862757a12e05275dc44a04f0fb57d0f" title="Calculates the return value for the strings minimum SOC." alt="" coords="305,169,563,194"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="255,179,291,179,291,184,255,184"/>
+<area shape="rect" id="Node000008" href="$can__cbs__tx__string-state-estimation_8c.html#a709af483e9f0906062eb1631e461e922" title="Calculates the return value for the strings minimum SOE." alt="" coords="305,218,563,243"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="254,199,342,213,341,218,253,204"/>
+<area shape="rect" id="Node000009" href="$can__cbs__tx__string-state-estimation_8c.html#ae4dc09e851af7839e156f7f4d308ef32" title="Calculates the return value for the strings energy." alt="" coords="325,267,543,293"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="173,199,234,226,303,252,341,262,339,267,302,257,232,231,171,204"/>
+<area shape="rect" id="Node000010" href="$can__cbs__tx__string-state-estimation_8c.html#aa78c360277aa154241130e4ed1288083" title="Calculates the return value for the strings SOH." alt="" coords="335,317,533,342"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="154,200,218,252,260,280,304,303,324,310,323,315,302,308,257,285,215,257,151,204"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="613,13,836,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="541,23,599,23,599,28,541,28"/>
+<area shape="rect" id="Node000005" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="627,193,822,218"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="529,93,566,104,604,121,640,142,698,182,695,186,637,146,601,126,564,109,527,98"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="513,142,566,153,674,186,673,191,565,159,512,147"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="564,189,614,194,613,199,564,195"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="564,217,613,212,614,218,564,222"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="508,265,565,252,673,220,674,225,566,257,509,270"/>
+<area shape="poly" id="edge14_Node000010_Node000005" title=" " alt="" coords="528,314,564,303,602,286,637,265,696,224,699,229,640,269,604,290,566,308,529,319"/>
+</map>

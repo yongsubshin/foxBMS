@@ -1,0 +1,25 @@
+<map id="MXM_41BRegisterWrite" name="MXM_41BRegisterWrite">
+<area shape="rect" id="Node000001" title="Write one or multiple registers of MAX17841B." alt="" coords="1101,153,1277,179"/>
+<area shape="rect" id="Node000002" href="$mxm__17841b_8c.html#a23f72a19d061e3fd2d4095f4e6b10d8c" title="Write the config register of MAX17841B." alt="" coords="807,63,1025,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1140,151,1052,121,959,91,961,86,1054,115,1141,146"/>
+<area shape="rect" id="Node000008" href="$group__mxm-41b-state-handlers.html#ga660930e423c39dfb48ce3304564b894f" title="state handler for &quot;clear receive buffer&quot;" alt="" coords="524,119,731,159"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="1087,164,731,147,731,142,1087,159"/>
+<area shape="rect" id="Node000009" href="$group__mxm-41b-state-handlers.html#ga1367e1670ab7be0ea72a917396e6c813" title="state handler for &quot;clear transmit buffer&quot;" alt="" coords="813,174,1019,214"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="1088,179,1020,186,1019,181,1087,174"/>
+<area shape="rect" id="Node000010" href="$group__mxm-41b-state-handlers.html#gab36b0cda14a8403e19a2efcda97ebe8c" title="state handler for &quot;uart transaction&quot;" alt="" coords="779,239,1053,264"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="1153,187,1106,209,1054,229,1003,241,1002,236,1053,223,1104,204,1151,183"/>
+<area shape="rect" id="Node000003" href="$group__mxm-41b-state-handlers.html#gafed0c8a844b5fa7197d9257b159eca61" title="init state handler" alt="" coords="531,5,724,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="838,63,691,33,692,28,839,57"/>
+<area shape="rect" id="Node000007" href="$group__mxm-41b-state-handlers.html#gabb3eaec950481073e72929edfaf87144" title="state handler for &quot;write conf and int register&quot;" alt="" coords="524,55,731,95"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="793,78,731,78,731,73,793,73"/>
+<area shape="rect" id="Node000004" href="$mxm__17841b_8c.html#a0ea1ec4dd5b5f45e291edd394772ea46" title="Execute state&#45;machine for the MAX17841B." alt="" coords="300,127,476,152"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="547,37,525,46,489,65,456,88,405,128,402,124,453,83,487,61,523,41,545,32"/>
+<area shape="rect" id="Node000005" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="163,127,252,152"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="286,142,252,142,252,137,286,137"/>
+<area shape="rect" id="Node000006" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,127,115,152"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="149,142,115,142,115,137,149,137"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="539,102,437,129,436,124,538,96"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="510,142,476,142,476,137,510,137"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="799,195,666,189,524,174,434,155,435,150,524,169,667,184,799,190"/>
+<area shape="poly" id="edge13_Node000010_Node000004" title=" " alt="" coords="764,241,646,225,523,198,463,177,413,154,416,150,465,172,525,193,647,219,765,236"/>
+</map>

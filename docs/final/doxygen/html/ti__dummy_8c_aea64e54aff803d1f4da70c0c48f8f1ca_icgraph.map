@@ -1,0 +1,7 @@
+<map id="TIDUM_RequestOpenWireCheck" name="TIDUM_RequestOpenWireCheck">
+<area shape="rect" id="Node000001" title=" " alt="" coords="511,5,741,31"/>
+<area shape="rect" id="Node000002" href="$ti__dummy__afe_8c.html#a18a63269083305574aa7bc4e36fc197b" title="This function is used to wrap the TI AFE measurement API to the generic AFE measurement API." alt="" coords="264,5,463,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="497,21,463,21,463,15,497,15"/>
+<area shape="rect" id="Node000003" href="$ti__afe_8c.html#a39dbbdfedd5cba3c54606ab2201b3575" title="Makes the request to the AFE state machine to perform open&#45;wire check." alt="" coords="5,5,216,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="250,21,216,21,216,15,250,15"/>
+</map>

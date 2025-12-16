@@ -1,0 +1,32 @@
+<map id="CANTX_BuildPackMinimumMaximumValuesMessage" name="CANTX_BuildPackMinimumMaximumValuesMessage">
+<area shape="rect" id="Node000001" title="Adds the data to the message about the pack values." alt="" coords="5,120,271,160"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="327,5,541,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,117,318,62,357,47,359,52,320,66,185,122"/>
+<area shape="rect" id="Node000004" href="$can__cbs__tx__pack-minimum-maximum-values_8c.html#a3f54e6edacfab32d447226b1b66b20d0" title="Calculates the return value of the maximum pack temperature." alt="" coords="319,120,549,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="271,137,305,137,305,143,271,143"/>
+<area shape="rect" id="Node000009" href="$can__cbs__tx__pack-minimum-maximum-values_8c.html#a6b9b68db7c44dc495b9925bdbdafe945" title="Calculates the return value of the minimum pack temperature." alt="" coords="321,184,547,224"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="232,157,328,178,327,184,231,163"/>
+<area shape="rect" id="Node000011" href="$can__cbs__tx__pack-minimum-maximum-values_8c.html#a9a7bd8901ac44754b5e41bc3ac107985" title="Gets the value of the maximum pack voltage." alt="" coords="613,66,856,91"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="241,117,318,105,464,91,600,82,600,87,464,96,319,111,241,123"/>
+<area shape="rect" id="Node000012" href="$can__cbs__tx__pack-minimum-maximum-values_8c.html#a22ecc985a45cf7f84087c7f2f223f997" title="Gets the value of the minimum pack voltage." alt="" coords="615,263,854,289"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="170,158,236,198,277,218,319,233,391,251,464,263,602,274,601,279,463,268,390,256,318,239,275,223,234,202,167,162"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="623,13,846,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="541,23,610,23,610,28,541,28"/>
+<area shape="rect" id="Node000005" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="637,165,832,190"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="550,152,624,161,624,166,549,157"/>
+<area shape="rect" id="Node000006" href="$can__cbs__tx__pack-minimum-maximum-values_8c.html#a0801a85b30973976800ae3b1b6c55e5e" title="Gets the value of the maximum pack temperature." alt="" coords="597,115,872,141"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="550,133,583,131,584,137,550,138"/>
+<area shape="rect" id="Node000007" href="$bms_8c.html#a95febd341b208a988bb0462e81febca8" title="Returns number of connected strings." alt="" coords="920,187,1137,227"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="816,138,873,151,963,179,962,185,871,156,815,143"/>
+<area shape="rect" id="Node000008" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="953,126,1104,151"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="872,130,940,133,939,138,872,136"/>
+<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="547,191,623,184,624,190,548,197"/>
+<area shape="rect" id="Node000010" href="$can__cbs__tx__pack-minimum-maximum-values_8c.html#a480e2c2b16f31b91dbc3ea41c8534889" title="Gets the value of the minimum pack temperature." alt="" coords="599,214,870,239"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="548,210,586,213,586,218,547,215"/>
+<area shape="poly" id="edge11_Node000010_Node000007" title=" " alt="" coords="870,215,906,212,906,218,870,220"/>
+<area shape="poly" id="edge12_Node000010_Node000008" title=" " alt="" coords="832,211,871,200,895,187,919,172,969,153,971,158,921,177,898,192,873,205,833,217"/>
+<area shape="poly" id="edge14_Node000011_Node000007" title=" " alt="" coords="846,89,873,102,890,116,899,132,907,147,922,162,950,178,947,183,918,166,903,150,894,134,886,120,871,106,843,94"/>
+<area shape="poly" id="edge15_Node000011_Node000008" title=" " alt="" coords="807,89,873,101,960,120,959,126,871,107,806,94"/>
+<area shape="poly" id="edge17_Node000012_Node000007" title=" " alt="" coords="816,261,871,249,951,228,952,233,873,255,817,266"/>
+<area shape="poly" id="edge18_Node000012_Node000008" title=" " alt="" coords="849,261,870,250,887,232,894,213,902,193,918,173,951,154,954,159,922,177,906,195,899,215,891,235,874,254,852,266"/>
+</map>

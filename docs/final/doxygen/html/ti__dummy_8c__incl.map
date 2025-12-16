@@ -1,0 +1,22 @@
+<map id="foxbms&#45;2/src/app/driver/afe/ti/dummy/ti_dummy.c" name="foxbms&#45;2/src/app/driver/afe/ti/dummy/ti_dummy.c">
+<area shape="rect" id="Node000001" title="Configuration for the TI dummy analog front&#45;end." alt="" coords="59,5,252,45"/>
+<area shape="rect" id="Node000002" href="$afe_8h.html" title="AFE driver header." alt="" coords="95,240,149,265"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,47,112,68,96,94,90,129,93,165,102,199,113,227,108,229,97,200,87,166,84,129,92,92,108,65,129,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="249,313,320,339"/>
+<area shape="poly" id="edge13_Node000001_Node000005" title=" " alt="" coords="178,44,199,66,219,92,246,147,265,205,284,299,279,300,260,206,241,149,214,95,195,69,174,47"/>
+<area shape="rect" id="Node000006" href="$ti__dummy_8h.html" title="Configuration for the TI dummy analog front&#45;end." alt="" coords="106,93,205,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="158,46,158,79,153,79,153,46"/>
+<area shape="rect" id="Node000003" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="5,313,108,339"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,267,78,305,75,301,109,264"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="139,313,222,339"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="134,264,165,301,161,305,130,267"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="149,263,247,305,244,310,147,268"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="146,121,105,170,84,204,67,241,61,271,59,299,53,299,56,270,62,239,79,201,101,167,142,117"/>
+<area shape="poly" id="edge12_Node000006_Node000005" title=" " alt="" coords="168,117,206,165,247,238,277,300,272,302,242,240,201,168,164,121"/>
+<area shape="rect" id="Node000007" href="$ti__afe_8h.html" title="AFE driver wrapper layer for TI ICs." alt="" coords="120,167,191,192"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="158,119,158,153,153,153,153,119"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="152,193,136,229,131,227,147,191"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="137,195,110,215,86,241,71,271,63,300,58,299,66,269,81,239,107,211,134,190"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="160,192,179,299,174,300,155,193"/>
+<area shape="poly" id="edge11_Node000007_Node000005" title=" " alt="" coords="168,191,267,301,263,305,164,194"/>
+</map>

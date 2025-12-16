@@ -1,0 +1,7 @@
+<map id="PEX_SetPinPolarityRetained" name="PEX_SetPinPolarityRetained">
+<area shape="rect" id="Node000001" title="sets pin polarity to retained." alt="" coords="5,31,208,56"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="256,5,412,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,29,242,26,243,31,209,35"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="261,55,407,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,51,247,56,247,61,208,57"/>
+</map>

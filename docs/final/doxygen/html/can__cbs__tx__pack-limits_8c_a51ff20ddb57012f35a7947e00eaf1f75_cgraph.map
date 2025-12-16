@@ -1,0 +1,26 @@
+<map id="CANTX_BuildPackLimitsMessage" name="CANTX_BuildPackLimitsMessage">
+<area shape="rect" id="Node000001" title="Adds the data to the message." alt="" coords="5,205,240,230"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="315,5,528,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,203,191,132,235,90,287,55,301,48,303,53,289,60,239,95,194,136,135,206"/>
+<area shape="rect" id="Node000004" href="$can__cbs__tx__pack-limits_8c.html#a57ebf6500c09c88676f6c9b5e353cbaa" title="Calculates the return value of the maximum battery voltage." alt="" coords="297,69,546,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="140,202,203,162,244,139,287,119,309,111,311,116,289,124,247,143,206,166,143,207"/>
+<area shape="rect" id="Node000006" href="$can__cbs__tx__pack-limits_8c.html#a91e6b2be3a050246fd2eb6155fcecf87" title="Calculates the return value of the maximum charge current." alt="" coords="298,133,545,173"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="182,202,313,174,315,179,183,207"/>
+<area shape="rect" id="Node000007" href="$can__cbs__tx__pack-limits_8c.html#a39dedd566bdc4a485262ca287a1a311a" title="Calculates the return value of the maximum charge power." alt="" coords="298,197,545,237"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="240,215,284,215,284,220,240,220"/>
+<area shape="rect" id="Node000008" href="$can__cbs__tx__pack-limits_8c.html#a8386a33215138e9a407a3fcce140b9e2" title="Calculates the return value of the maximum discharge current." alt="" coords="288,261,555,301"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="183,227,315,256,313,261,182,233"/>
+<area shape="rect" id="Node000009" href="$can__cbs__tx__pack-limits_8c.html#a63fcae9791c358d2cc30dfff9225ac15" title="Calculates the return value of the maximum discharge power." alt="" coords="288,325,555,365"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="143,228,206,269,247,291,289,311,311,319,309,324,287,316,244,296,203,273,140,232"/>
+<area shape="rect" id="Node000010" href="$can__cbs__tx__pack-limits_8c.html#ad92d84f1ff512183cd97bbee4c0ad443" title="Calculates the return value of the minimum battery voltage." alt="" coords="299,389,544,429"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="135,228,194,299,239,340,289,375,303,382,301,387,287,380,235,344,191,302,131,232"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="603,13,825,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="528,23,589,23,589,28,528,28"/>
+<area shape="rect" id="Node000005" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="617,237,811,262"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="526,107,556,119,597,143,635,172,693,225,690,229,632,176,594,148,553,124,524,112"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="514,171,556,183,673,229,671,234,554,188,512,176"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="545,228,603,235,603,240,545,233"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="555,264,603,259,603,264,555,269"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="512,323,554,311,671,265,673,270,556,316,514,328"/>
+<area shape="poly" id="edge14_Node000010_Node000005" title=" " alt="" coords="524,387,553,375,594,351,632,323,690,270,693,274,635,327,597,356,556,380,526,392"/>
+</map>

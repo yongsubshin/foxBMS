@@ -1,0 +1,9 @@
+<map id="CANTX_TransmitBootMagicStart" name="CANTX_TransmitBootMagicStart">
+<area shape="rect" id="Node000001" title="Transmit the boot message and its magic start data." alt="" coords="5,13,236,38"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__debug-response_8c.html#aaf184f11fa4648ddc159ac41bd8c46c8" title="Transmit a boot message." alt="" coords="284,13,483,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,23,270,23,270,28,236,28"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="531,5,744,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="483,23,517,23,517,28,483,28"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="792,13,1015,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="744,23,778,23,778,28,744,28"/>
+</map>

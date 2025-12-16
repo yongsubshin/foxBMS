@@ -1,0 +1,138 @@
+<map id="N775_RetrieveMeasurement" name="N775_RetrieveMeasurement">
+<area shape="rect" id="Node000001" title="retrieves the measurement results." alt="" coords="5,1880,213,1905"/>
+<area shape="rect" id="Node000002" href="$nxp__mc33775a__measurement_8c.html#a1263656225eea7bb7244cb8d6ee7c241" title="retrieves the results of temperature measurements." alt="" coords="261,1125,468,1151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,1879,352,1163,357,1164,118,1880"/>
+<area shape="rect" id="Node000021" href="$nxp__mc33775a__measurement_8c.html#aa1c506cc17461b9fed7e19cdf29f9be1" title="retrieves the results of voltage measurements." alt="" coords="277,1831,452,1856"/>
+<area shape="poly" id="edge28_Node000001_Node000021" title=" " alt="" coords="175,1877,284,1856,285,1861,176,1883"/>
+<area shape="rect" id="Node000022" href="$nxp__mc3377x-ll_8c.html#a1d0e4d1c54be187abfe24be1f40bb9c3" title="Read a value from a specific register in a specific device." alt="" coords="265,1880,464,1905"/>
+<area shape="poly" id="edge29_Node000001_Node000022" title=" " alt="" coords="213,1890,252,1890,252,1895,213,1895"/>
+<area shape="rect" id="Node000023" href="$nxp__mc3377x-ll_8c.html#ac4d588b6872ff449b99b626282ce048f" title="Read multiple values from specific registers in a specific device." alt="" coords="527,1931,779,1956"/>
+<area shape="poly" id="edge76_Node000001_Node000023" title=" " alt="" coords="178,1903,262,1915,390,1927,513,1935,512,1940,390,1933,261,1921,177,1908"/>
+<area shape="rect" id="Node000059" href="$nxp__mc3377x__helpers_8c.html#af59d8f0750243c5eb8fef69d9d48b01c" title="handles error when doing measurements." alt="" coords="289,1981,441,2007"/>
+<area shape="poly" id="edge77_Node000001_Node000059" title=" " alt="" coords="137,1903,194,1930,262,1960,306,1975,304,1980,260,1964,192,1935,135,1908"/>
+<area shape="rect" id="Node000003" href="$nxp__mc3377x__helpers_8c.html#a4648035bdea53687e7637fb265c98900" title="converts a raw voltage from multiplexer to a temperature value in deci °C." alt="" coords="516,797,789,823"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="375,1123,629,831,633,835,379,1127"/>
+<area shape="rect" id="Node000004" href="$vishay__ntcle413e2103f102l__lookup-table_8c.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="897,436,1052,461"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="663,795,951,470,955,473,667,799"/>
+<area shape="rect" id="Node000005" href="$epcos__b57251v5103j060_8c.html#a60e7e40bc4662b44093a0a2b464bd395" title="returns temperature based on measured ADC voltage" alt="" coords="1163,673,1405,699"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="985,460,1010,500,1049,554,1100,611,1130,637,1161,658,1177,666,1174,671,1159,663,1126,641,1096,615,1044,558,1005,503,981,463"/>
+<area shape="rect" id="Node000007" href="$epcos__b57251v5103j060_8c.html#a22b8fc0a39278f0c1a61c1cca7482b5a" title="returns temperature based on measured ADC voltage" alt="" coords="1173,154,1395,194"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="980,434,1002,390,1041,328,1093,261,1124,230,1158,204,1168,198,1171,203,1162,208,1128,234,1097,264,1045,331,1007,393,984,437"/>
+<area shape="rect" id="Node000008" href="$epcos__b57861s0103f045_8c.html#a8bb26a9001e051fc2fee6ba77027b1b6" title="returns temperature based on measured ADC voltage" alt="" coords="1163,723,1405,748"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="983,461,1005,508,1042,576,1094,648,1126,680,1161,708,1174,715,1172,720,1159,712,1123,684,1090,651,1037,579,1000,511,979,463"/>
+<area shape="rect" id="Node000009" href="$epcos__b57861s0103f045_8c.html#a3aca9a6a710bb21efc1a5d4ccf49b3e0" title="returns temperature based on measured ADC voltage" alt="" coords="1173,218,1395,258"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="983,434,1010,400,1050,355,1101,308,1159,268,1172,261,1175,266,1161,272,1104,312,1054,359,1014,404,988,437"/>
+<area shape="rect" id="Node000010" href="$fake__none_8c.html#a8519235f1cb368c712566dc0a6615a8a" title="returns a fake temperature" alt="" coords="1163,283,1405,308"/>
+<area shape="poly" id="edge10_Node000004_Node000010" title=" " alt="" coords="988,434,1058,378,1107,345,1159,318,1184,309,1186,314,1161,323,1109,350,1061,382,992,438"/>
+<area shape="rect" id="Node000011" href="$fake__none_8c.html#a8d502a27efdeb0f048997819e3ae4fc4" title="returns a fake temperature" alt="" coords="1173,333,1395,373"/>
+<area shape="poly" id="edge11_Node000004_Node000011" title=" " alt="" coords="1009,433,1159,382,1188,374,1189,379,1161,387,1011,438"/>
+<area shape="rect" id="Node000012" href="$murata__ncxxxxh103_8c.html#a0e6cfeee0f7fdf5504234ed54ddfc9b7" title="returns temperature based on measured ADC voltage." alt="" coords="1162,772,1406,797"/>
+<area shape="poly" id="edge12_Node000004_Node000012" title=" " alt="" coords="982,461,1001,517,1036,598,1060,642,1089,685,1123,724,1162,757,1172,764,1169,768,1158,761,1119,728,1085,688,1055,645,1031,600,996,519,977,463"/>
+<area shape="rect" id="Node000013" href="$murata__ncxxxxh103_8c.html#a255c099fbd405cdc3b51c39a415c18e3" title="returns temperature based on measured ADC voltage" alt="" coords="1172,397,1396,437"/>
+<area shape="poly" id="edge14_Node000004_Node000013" title=" " alt="" coords="1052,438,1158,427,1158,432,1052,443"/>
+<area shape="rect" id="Node000014" href="$semitec__103jt_8c.html#a26f93447be1d7882e16a9624be22ab0f" title="returns temperature based on measured ADC voltage" alt="" coords="1160,5,1408,31"/>
+<area shape="poly" id="edge15_Node000004_Node000014" title=" " alt="" coords="975,435,988,365,1000,314,1018,257,1042,198,1073,140,1111,86,1158,40,1165,35,1168,39,1162,44,1116,89,1078,142,1047,200,1023,259,1005,315,993,366,980,436"/>
+<area shape="rect" id="Node000015" href="$tdk__ntcgs103jf103ft8_8c.html#aa87a3225637583d135a53de72818b094" title="returns temperature based on measured ADC voltage" alt="" coords="1163,55,1405,80"/>
+<area shape="poly" id="edge17_Node000004_Node000015" title=" " alt="" coords="976,435,991,372,1025,277,1049,226,1079,175,1115,129,1158,89,1165,84,1168,89,1162,93,1119,132,1083,178,1054,228,1029,279,997,373,981,436"/>
+<area shape="rect" id="Node000016" href="$tdk__ntcg163jx103dt1s_8c.html#a8f3cc23e54dd363ac0b643c4dfefef0e" title="returns temperature based on measured ADC voltage" alt="" coords="1163,104,1405,129"/>
+<area shape="poly" id="edge19_Node000004_Node000016" title=" " alt="" coords="977,435,996,380,1031,299,1056,255,1085,213,1119,173,1158,140,1170,133,1173,137,1162,144,1123,177,1089,216,1060,258,1036,301,1001,381,982,436"/>
+<area shape="rect" id="Node000017" href="$vishay__ntcalug01a103g_8c.html#a865b7c323eb0bdbd7420518e6b56cede" title="returns temperature based on measured ADC voltage." alt="" coords="1165,525,1403,551"/>
+<area shape="poly" id="edge21_Node000004_Node000017" title=" " alt="" coords="1010,459,1079,484,1161,510,1200,520,1199,525,1159,515,1077,489,1008,464"/>
+<area shape="rect" id="Node000018" href="$vishay__ntcalug01a103g_8c.html#a47e088f4023835e56cac22e035c66be8" title="returns temperature based on measured ADC voltage" alt="" coords="1175,461,1393,501"/>
+<area shape="poly" id="edge23_Node000004_Node000018" title=" " alt="" coords="1052,454,1161,465,1161,471,1052,459"/>
+<area shape="rect" id="Node000019" href="$vishay__ntcle317e4103sba_8c.html#ae917bb4796f0f8fa36201dbd92aae38c" title="returns temperature based on measured ADC voltage." alt="" coords="1165,575,1403,600"/>
+<area shape="poly" id="edge24_Node000004_Node000019" title=" " alt="" coords="994,459,1064,508,1111,536,1161,560,1189,569,1187,574,1159,564,1109,541,1061,513,991,464"/>
+<area shape="rect" id="Node000020" href="$vishay__ntcle413e2103f102l_8c.html#aaad7430280f6c4d6add34f90b3ef8159" title="returns temperature based on measured ADC voltage." alt="" coords="1165,624,1403,649"/>
+<area shape="poly" id="edge26_Node000004_Node000020" title=" " alt="" coords="988,460,1016,491,1056,532,1105,574,1161,609,1181,617,1179,622,1159,614,1102,578,1052,536,1012,495,984,463"/>
+<area shape="rect" id="Node000006" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="1456,575,1647,600"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1363,671,1407,658,1466,632,1517,605,1519,609,1469,637,1409,663,1364,676"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="1373,720,1407,708,1443,686,1477,659,1529,608,1532,612,1480,663,1446,690,1409,712,1375,725"/>
+<area shape="poly" id="edge13_Node000012_Node000006" title=" " alt="" coords="1379,769,1407,757,1449,724,1485,685,1514,645,1535,611,1539,614,1518,648,1489,688,1453,728,1409,762,1381,774"/>
+<area shape="poly" id="edge16_Node000014_Node000006" title=" " alt="" coords="1394,29,1410,40,1438,80,1463,139,1485,212,1505,291,1533,448,1549,560,1544,561,1528,449,1499,292,1480,213,1458,141,1434,83,1406,44,1391,33"/>
+<area shape="poly" id="edge18_Node000015_Node000006" title=" " alt="" coords="1394,78,1410,89,1436,125,1460,178,1482,243,1501,315,1531,457,1549,560,1543,561,1526,458,1496,316,1477,245,1455,180,1432,128,1406,93,1391,82"/>
+<area shape="poly" id="edge20_Node000016_Node000006" title=" " alt="" coords="1391,127,1410,140,1453,188,1486,244,1511,304,1529,365,1541,424,1548,479,1553,561,1548,561,1543,479,1536,425,1524,366,1506,305,1481,246,1448,191,1406,144,1388,132"/>
+<area shape="poly" id="edge22_Node000017_Node000006" title=" " alt="" coords="1354,548,1469,569,1468,575,1353,553"/>
+<area shape="poly" id="edge25_Node000019_Node000006" title=" " alt="" coords="1403,585,1442,585,1442,590,1403,590"/>
+<area shape="poly" id="edge27_Node000020_Node000006" title=" " alt="" coords="1353,621,1468,600,1469,605,1354,627"/>
+<area shape="poly" id="edge30_Node000022_Node000023" title=" " alt="" coords="438,1903,567,1926,566,1931,437,1908"/>
+<area shape="rect" id="Node000024" href="$nxp__mc3377x-ll_8c.html#a04878a02f18cdac47a678471869aea9e" title="Composes a message." alt="" coords="861,1631,1088,1671"/>
+<area shape="poly" id="edge31_Node000023_Node000024" title=" " alt="" coords="666,1928,939,1679,943,1683,670,1932"/>
+<area shape="rect" id="Node000037" href="$nxp__mc3377x-ll_8c.html#a436bee438a053a6bd1d0fe47e36d2458" title="Decomposes and analysis a message." alt="" coords="853,1110,1096,1150"/>
+<area shape="poly" id="edge44_Node000023_Node000037" title=" " alt="" coords="657,1930,958,1162,963,1164,661,1932"/>
+<area shape="rect" id="Node000049" href="$nxp__mc3377x-ll_8c.html#ac6ffb0eb25c83ca332cef65122e24a61" title="Copies a message to the buffer to be passed to the SPI transmit functions." alt="" coords="862,2007,1087,2032"/>
+<area shape="poly" id="edge58_Node000023_Node000049" title=" " alt="" coords="707,1953,838,1985,906,2001,905,2006,837,1990,706,1959"/>
+<area shape="rect" id="Node000050" href="$nxp__mc3377x-ll_8c.html#af5b6bb587d4ffec57eb184e0cd3a2e22" title="Wait for the SPI receive communication to complete, using notifications." alt="" coords="837,1855,1112,1880"/>
+<area shape="poly" id="edge59_Node000023_Node000050" title=" " alt="" coords="706,1928,837,1897,905,1881,906,1886,838,1902,707,1933"/>
+<area shape="rect" id="Node000052" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1206,1959,1362,1984"/>
+<area shape="poly" id="edge61_Node000023_Node000052" title=" " alt="" coords="779,1939,938,1940,1112,1947,1193,1956,1192,1961,1112,1953,938,1945,779,1944"/>
+<area shape="rect" id="Node000053" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1211,2008,1357,2033"/>
+<area shape="poly" id="edge62_Node000023_Node000053" title=" " alt="" coords="776,1953,1112,1993,1197,2005,1197,2010,1112,1998,776,1959"/>
+<area shape="rect" id="Node000054" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="1220,2156,1348,2181"/>
+<area shape="poly" id="edge63_Node000023_Node000054" title=" " alt="" coords="663,1955,687,1994,726,2046,777,2099,806,2122,838,2141,884,2159,933,2172,982,2180,1032,2185,1126,2185,1206,2178,1206,2184,1126,2191,1032,2190,982,2186,932,2177,883,2164,836,2146,803,2127,773,2103,721,2050,683,1997,659,1958"/>
+<area shape="rect" id="Node000055" href="$spi_8c.html#a997dce9b156595fa4486a547f7c55453" title="Transmits and receives data on SPI with DMA." alt="" coords="865,2105,1085,2131"/>
+<area shape="poly" id="edge64_Node000023_Node000055" title=" " alt="" coords="667,1955,735,2021,784,2060,838,2092,857,2099,855,2104,836,2096,781,2064,731,2025,663,1958"/>
+<area shape="rect" id="Node000058" href="$spi_8c.html#a2a0f36d8cb7e54304284f758cc108c36" title="Transmits and receives data on SPI with DMA." alt="" coords="865,2056,1084,2081"/>
+<area shape="poly" id="edge70_Node000023_Node000058" title=" " alt="" coords="674,1954,744,1998,790,2022,838,2042,865,2050,864,2055,836,2047,788,2027,741,2002,671,1958"/>
+<area shape="rect" id="Node000025" href="$uc__msg__t_8c.html#abcbeff3377331a049c97b7403ed941e5" title=" " alt="" coords="1247,1367,1321,1392"/>
+<area shape="poly" id="edge32_Node000024_Node000025" title=" " alt="" coords="982,1630,1006,1582,1044,1520,1095,1455,1125,1426,1159,1401,1195,1385,1232,1378,1233,1383,1197,1391,1161,1406,1129,1430,1099,1458,1048,1523,1010,1585,987,1632"/>
+<area shape="rect" id="Node000027" href="$uc__msg__t_8c.html#a7f8e9597edfa81d78028f7ea457d5fbf" title=" " alt="" coords="1244,1860,1324,1885"/>
+<area shape="poly" id="edge34_Node000024_Node000027" title=" " alt="" coords="991,1670,1018,1709,1057,1756,1105,1805,1161,1845,1195,1859,1231,1866,1229,1872,1194,1864,1159,1850,1102,1809,1053,1760,1013,1712,987,1673"/>
+<area shape="rect" id="Node000028" href="$uc__msg__t_8c.html#a3820d743d94cf73ac58e9a16645b44a9" title=" " alt="" coords="1245,1416,1323,1441"/>
+<area shape="poly" id="edge35_Node000024_Node000028" title=" " alt="" coords="986,1630,1013,1591,1052,1542,1101,1492,1159,1450,1194,1436,1231,1429,1232,1434,1196,1441,1161,1455,1105,1496,1056,1545,1017,1594,991,1633"/>
+<area shape="rect" id="Node000029" href="$uc__msg__t_8c.html#a61a0e8dba459317314fb3117ddc9c491" title=" " alt="" coords="1250,1465,1318,1491"/>
+<area shape="poly" id="edge36_Node000024_Node000029" title=" " alt="" coords="992,1629,1061,1564,1108,1529,1159,1500,1198,1486,1236,1479,1237,1484,1199,1491,1161,1504,1111,1533,1064,1569,996,1633"/>
+<area shape="rect" id="Node000030" href="$uc__msg__t_8c.html#a4ba0a5872ab51ba0269dc13de937d03c" title=" " alt="" coords="1245,1515,1323,1540"/>
+<area shape="poly" id="edge37_Node000024_Node000030" title=" " alt="" coords="1005,1629,1074,1588,1159,1549,1230,1531,1232,1536,1161,1554,1076,1593,1008,1633"/>
+<area shape="rect" id="Node000031" href="$uc__msg__t_8c.html#a3c48e6a9f285dd481d3347e1091c0052" title=" " alt="" coords="1235,1564,1333,1589"/>
+<area shape="poly" id="edge38_Node000024_Node000031" title=" " alt="" coords="1044,1629,1159,1598,1220,1585,1222,1590,1161,1603,1045,1634"/>
+<area shape="rect" id="Node000032" href="$uc__msg__t_8c.html#a70ab4fcb1b866d409b03e776f3152c40" title=" " alt="" coords="1235,1613,1333,1639"/>
+<area shape="poly" id="edge39_Node000024_Node000032" title=" " alt="" coords="1088,1639,1221,1628,1222,1634,1088,1645"/>
+<area shape="rect" id="Node000033" href="$uc__msg__t_8c.html#a4b90b11dd448f470f3ea67a562fa6600" title=" " alt="" coords="1241,1663,1327,1688"/>
+<area shape="poly" id="edge40_Node000024_Node000033" title=" " alt="" coords="1088,1657,1227,1668,1227,1674,1088,1663"/>
+<area shape="rect" id="Node000034" href="$uc__msg__t_8c.html#a566e95d2a575519950669a0d60c79b04" title=" " alt="" coords="1206,1712,1362,1737"/>
+<area shape="poly" id="edge41_Node000024_Node000034" title=" " alt="" coords="1050,1669,1161,1697,1205,1706,1204,1712,1159,1702,1049,1674"/>
+<area shape="rect" id="Node000035" href="$uc__msg__t_8c.html#ac345657be7107582ca2c5a216a06d22d" title=" " alt="" coords="1235,1761,1333,1787"/>
+<area shape="poly" id="edge42_Node000024_Node000035" title=" " alt="" coords="1009,1669,1077,1708,1161,1746,1222,1762,1221,1768,1159,1751,1075,1713,1006,1674"/>
+<area shape="rect" id="Node000036" href="$uc__msg__t_8c.html#a66bb13bf2b9da86b53e0eeaa7fd8c854" title=" " alt="" coords="1237,1811,1331,1836"/>
+<area shape="poly" id="edge43_Node000024_Node000036" title=" " alt="" coords="997,1670,1065,1733,1111,1767,1161,1796,1192,1807,1224,1814,1222,1819,1190,1812,1159,1800,1108,1771,1062,1737,993,1673"/>
+<area shape="rect" id="Node000026" href="$uc__msg__t_8c.html#af2050c4f2b02419ffb51c48ade032c02" title=" " alt="" coords="1497,1367,1606,1392"/>
+<area shape="poly" id="edge33_Node000025_Node000026" title=" " alt="" coords="1322,1377,1482,1377,1482,1382,1322,1382"/>
+<area shape="poly" id="edge45_Node000037_Node000025" title=" " alt="" coords="989,1149,1014,1192,1052,1248,1102,1305,1131,1330,1161,1352,1197,1367,1234,1374,1233,1379,1195,1372,1159,1356,1127,1334,1098,1308,1048,1251,1009,1195,984,1152"/>
+<area shape="rect" id="Node000038" href="$uc__msg__t_8c.html#aeb79d8bcb313f3d5201f9b92f7e68d80" title=" " alt="" coords="1241,1216,1327,1241"/>
+<area shape="poly" id="edge46_Node000037_Node000038" title=" " alt="" coords="1021,1148,1086,1175,1161,1201,1227,1217,1226,1222,1159,1206,1084,1180,1019,1152"/>
+<area shape="rect" id="Node000039" href="$uc__msg__t_8c.html#a5c3b93080f2cea2e1d431bc8e301fe57" title=" " alt="" coords="1517,1241,1586,1267"/>
+<area shape="poly" id="edge50_Node000037_Node000039" title=" " alt="" coords="999,1148,1067,1203,1112,1230,1161,1250,1206,1261,1253,1268,1348,1273,1434,1268,1502,1260,1503,1265,1435,1273,1348,1278,1253,1274,1205,1267,1159,1255,1110,1235,1064,1207,995,1152"/>
+<area shape="rect" id="Node000040" href="$uc__msg__t_8c.html#a79930a7d6bdf4b46c131c561f8bf4345" title=" " alt="" coords="1243,1317,1325,1343"/>
+<area shape="poly" id="edge48_Node000037_Node000040" title=" " alt="" coords="994,1149,1062,1221,1109,1261,1161,1296,1195,1310,1231,1319,1229,1325,1194,1315,1159,1300,1106,1266,1059,1225,991,1152"/>
+<area shape="rect" id="Node000041" href="$uc__msg__t_8c.html#aebd355929ddcb12add77ea470da270d8" title=" " alt="" coords="1245,821,1323,847"/>
+<area shape="poly" id="edge49_Node000037_Node000041" title=" " alt="" coords="981,1109,1003,1057,1040,988,1064,951,1092,916,1123,883,1159,856,1194,840,1230,833,1231,838,1195,845,1161,860,1127,887,1096,919,1068,954,1045,990,1008,1059,986,1111"/>
+<area shape="rect" id="Node000042" href="$uc__msg__t_8c.html#a42a0157d7fd0af5f2783bbd4fc0b5a86" title=" " alt="" coords="1245,871,1323,896"/>
+<area shape="poly" id="edge51_Node000037_Node000042" title=" " alt="" coords="984,1108,1009,1065,1048,1009,1098,952,1127,927,1159,905,1194,890,1230,883,1231,888,1195,895,1161,910,1130,931,1102,956,1052,1013,1014,1068,989,1111"/>
+<area shape="rect" id="Node000043" href="$uc__msg__t_8c.html#a30882817a21bb758c6405a075cf69bc4" title=" " alt="" coords="1235,920,1333,945"/>
+<area shape="poly" id="edge52_Node000037_Node000043" title=" " alt="" coords="989,1108,1017,1074,1056,1032,1105,989,1159,954,1189,942,1220,935,1222,940,1191,948,1161,959,1108,994,1060,1036,1021,1077,993,1111"/>
+<area shape="rect" id="Node000044" href="$uc__msg__t_8c.html#a9e8f6504496b80a1e4461e1ccb6f3c72" title=" " alt="" coords="1235,969,1333,995"/>
+<area shape="poly" id="edge53_Node000037_Node000044" title=" " alt="" coords="998,1108,1067,1055,1112,1027,1159,1004,1220,987,1221,992,1161,1008,1114,1032,1070,1060,1001,1112"/>
+<area shape="rect" id="Node000045" href="$uc__msg__t_8c.html#a024f025b6a2fc3b2894663a5e3ef4f08" title=" " alt="" coords="1241,1019,1327,1044"/>
+<area shape="poly" id="edge54_Node000037_Node000045" title=" " alt="" coords="1018,1107,1084,1079,1159,1053,1226,1037,1227,1043,1161,1058,1085,1084,1020,1112"/>
+<area shape="rect" id="Node000046" href="$uc__msg__t_8c.html#a5a66e019970aeacf3c8c5dfeae1a6a2c" title=" " alt="" coords="1205,1068,1363,1093"/>
+<area shape="poly" id="edge55_Node000037_Node000046" title=" " alt="" coords="1096,1108,1191,1093,1192,1098,1097,1113"/>
+<area shape="rect" id="Node000047" href="$uc__msg__t_8c.html#a712138a25ed5fafc1c9222ade44b89df" title=" " alt="" coords="1235,1117,1333,1143"/>
+<area shape="poly" id="edge56_Node000037_Node000047" title=" " alt="" coords="1096,1127,1221,1127,1221,1133,1096,1133"/>
+<area shape="rect" id="Node000048" href="$uc__msg__t_8c.html#a4f2b131cf2324463939987f712e96945" title=" " alt="" coords="1237,1167,1331,1192"/>
+<area shape="poly" id="edge57_Node000037_Node000048" title=" " alt="" coords="1097,1147,1224,1167,1223,1172,1096,1152"/>
+<area shape="poly" id="edge47_Node000038_Node000039" title=" " alt="" coords="1328,1230,1503,1247,1502,1252,1328,1235"/>
+<area shape="rect" id="Node000051" href="$os__freertos_8c.html#a7578e983d03af6f03fd3fe09f293cdb1" title="Wait for a notification, with index." alt="" coords="1173,1909,1395,1935"/>
+<area shape="poly" id="edge60_Node000050_Node000051" title=" " alt="" coords="1048,1877,1198,1904,1197,1909,1047,1883"/>
+<area shape="poly" id="edge67_Node000055_Node000052" title=" " alt="" coords="1084,2106,1110,2092,1121,2081,1128,2070,1134,2045,1139,2019,1146,2007,1158,1995,1191,1978,1194,1982,1162,1999,1151,2010,1144,2021,1139,2046,1133,2072,1126,2084,1114,2096,1086,2111"/>
+<area shape="poly" id="edge68_Node000055_Node000053" title=" " alt="" coords="1083,2103,1111,2092,1125,2081,1134,2069,1143,2056,1159,2044,1196,2029,1198,2034,1161,2048,1147,2059,1138,2072,1129,2085,1113,2096,1085,2108"/>
+<area shape="poly" id="edge69_Node000055_Node000054" title=" " alt="" coords="1053,2128,1207,2153,1206,2159,1053,2133"/>
+<area shape="rect" id="Node000056" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="1207,2057,1361,2083"/>
+<area shape="poly" id="edge65_Node000055_Node000056" title=" " alt="" coords="1057,2103,1193,2081,1194,2087,1057,2108"/>
+<area shape="rect" id="Node000057" href="$fsystem_8h.html#af23205627be1616c6b1dcdb684060322" title="Switch back to user mode." alt="" coords="1193,2107,1375,2132"/>
+<area shape="poly" id="edge66_Node000055_Node000057" title=" " alt="" coords="1085,2116,1179,2116,1179,2122,1085,2121"/>
+<area shape="poly" id="edge73_Node000058_Node000052" title=" " alt="" coords="1083,2053,1111,2042,1125,2031,1134,2019,1143,2006,1159,1994,1192,1981,1194,1986,1161,1999,1147,2010,1138,2022,1129,2035,1113,2047,1085,2058"/>
+<area shape="poly" id="edge74_Node000058_Node000053" title=" " alt="" coords="1057,2053,1197,2031,1198,2037,1057,2059"/>
+<area shape="poly" id="edge75_Node000058_Node000054" title=" " alt="" coords="1083,2079,1113,2092,1129,2104,1138,2118,1147,2131,1161,2142,1207,2159,1205,2164,1159,2147,1143,2134,1134,2121,1125,2108,1111,2096,1081,2084"/>
+<area shape="poly" id="edge71_Node000058_Node000056" title=" " alt="" coords="1084,2066,1194,2067,1194,2072,1084,2072"/>
+<area shape="poly" id="edge72_Node000058_Node000057" title=" " alt="" coords="1053,2079,1193,2102,1192,2107,1053,2084"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="LTC_CheckStateRequest" name="LTC_CheckStateRequest">
+<area shape="rect" id="Node000001" title="checks the state requests that are made." alt="" coords="212,5,391,31"/>
+<area shape="rect" id="Node000002" href="$ltc__6813-1_8c.html#a4bb4d1d651bd80b2151b62d35e3a2699" title="sets the current state request of the state variable ltc_state." alt="" coords="5,5,164,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,21,164,21,164,15,198,15"/>
+</map>

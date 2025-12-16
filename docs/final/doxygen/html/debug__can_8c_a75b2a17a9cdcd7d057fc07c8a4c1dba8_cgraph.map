@@ -1,0 +1,21 @@
+<map id="DECAN_TriggerAfe" name="DECAN_TriggerAfe">
+<area shape="rect" id="Node000001" title="afe trigger function" alt="" coords="5,104,147,129"/>
+<area shape="rect" id="Node000002" href="$debug__can_8c.html#a376493ba02a58bc7c9138109db7601b8" title="Receive can temperature data from queue and write into database." alt="" coords="195,29,461,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,101,144,82,194,63,227,55,228,60,195,69,146,87,103,106"/>
+<area shape="rect" id="Node000006" href="$debug__can_8c.html#af2243f9569087f7f7cc931bf36378dd0" title="Receive can voltage data from queue and write into database." alt="" coords="211,79,445,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="147,107,198,102,198,107,147,112"/>
+<area shape="rect" id="Node000008" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="255,128,401,153"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="147,121,242,130,241,135,147,126"/>
+<area shape="rect" id="Node000009" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="261,177,395,203"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="105,127,147,145,195,162,248,175,247,180,194,167,145,150,103,132"/>
+<area shape="rect" id="Node000003" href="$debug__can_8c.html#a0333e61ae892db63c9a3750a2e5718ad" title="Convert the one number index of the cell temperature into the indexes of cellTemperature_ddegC." alt="" coords="509,5,773,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="461,29,495,27,495,32,462,34"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#a285b22d2ef1448cae22a8965b5fec186" title="Receive an item from a queue." alt="" coords="554,55,729,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="462,50,541,57,540,62,461,55"/>
+<area shape="rect" id="Node000004" href="$debug__can_8c.html#a6e167e0bbe9304a6a000768491bba57c" title="A modified modulo operation: the input a can not be 0; if the result of a modulo operation is zero,..." alt="" coords="821,55,1056,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="719,28,848,50,847,55,718,33"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="445,80,540,72,540,78,445,85"/>
+<area shape="rect" id="Node000007" href="$debug__can_8c.html#a9193b7d369ae82a88ec8dcaf922d60d7" title="Convert the one number index of the cell voltage into the indexes of cellVoltage_mV." alt="" coords="526,104,757,129"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="445,98,512,104,512,109,445,103"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="718,101,847,80,848,85,719,107"/>
+</map>

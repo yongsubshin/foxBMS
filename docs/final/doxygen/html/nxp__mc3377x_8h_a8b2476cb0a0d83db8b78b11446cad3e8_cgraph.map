@@ -1,0 +1,7 @@
+<map id="N77x_IsFirstMeasurementCycleFinished" name="N77x_IsFirstMeasurementCycleFinished">
+<area shape="rect" id="Node000001" title="gets the measurement initialization status." alt="" coords="5,23,233,63"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="281,5,437,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,29,267,25,268,30,234,34"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="286,55,433,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,52,273,56,272,61,233,57"/>
+</map>

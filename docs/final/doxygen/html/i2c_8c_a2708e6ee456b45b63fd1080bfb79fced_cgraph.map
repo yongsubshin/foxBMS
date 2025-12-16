@@ -1,0 +1,5 @@
+<map id="I2C_WaitForTxCompletedNotification" name="I2C_WaitForTxCompletedNotification">
+<area shape="rect" id="Node000001" title="Wait for the I2C transmit communication to complete, using notifications." alt="" coords="5,5,267,31"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#a7578e983d03af6f03fd3fe09f293cdb1" title="Wait for a notification, with index." alt="" coords="315,5,537,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,15,301,15,301,21,267,21"/>
+</map>

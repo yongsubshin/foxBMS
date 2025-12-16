@@ -1,0 +1,47 @@
+<map id="ADI_ClearCommandCounter" name="ADI_ClearCommandCounter">
+<area shape="rect" id="Node000001" title="Send RSTCC to AFEs in daisy&#45;chain and clear command counter of AFE driver." alt="" coords="5,81,209,107"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x__helpers_8c.html#a0e36ae541215b657993954e49fc835bd" title="copy command bytes in variables." alt="" coords="257,56,447,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,81,244,77,244,82,210,86"/>
+<area shape="rect" id="Node000003" href="$adi__ades183x__helpers_8c.html#ad55d14108eb488d5eb623b7fe324d090" title="send command to the ades183x daisy&#45;chain (e.g., start voltage measurement)." alt="" coords="265,105,439,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,101,251,105,251,111,209,107"/>
+<area shape="rect" id="Node000004" href="$adi__ades183x__helpers_8c.html#aac7521dd5aa9b3e88fb1c9e05f3945b6" title="Increment command counter of AFE driver." alt="" coords="495,56,731,81"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="419,103,531,81,532,87,420,108"/>
+<area shape="rect" id="Node000005" href="$adi__ades183x__pec_8c.html#aef26ff9a18ed95ed079240e3cf48683e" title="calculates the PEC15" alt="" coords="567,105,658,131"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="440,115,553,115,553,121,440,121"/>
+<area shape="rect" id="Node000006" href="$adi__ades183x__helpers_8c.html#a9edad319da42f91773751ec974f19dc9" title="Transmits and receives data on SPI." alt="" coords="507,155,718,180"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="420,128,532,149,531,155,419,133"/>
+<area shape="rect" id="Node000007" href="$os__freertos_8c.html#a08e213470ff10fc5e7050bd78162a10b" title="Wait for a notification." alt="" coords="787,79,957,104"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="680,152,730,139,778,121,819,106,821,111,780,126,731,145,682,157"/>
+<area shape="rect" id="Node000008" href="$spi_8c.html#abdf760fa10bbc7f0f6b93ef0ddda41de" title="Transmits data on SPI without DMA." alt="" coords="1055,129,1191,155"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="718,159,1041,143,1041,149,719,165"/>
+<area shape="rect" id="Node000016" href="$spi_8c.html#a7257a51d6c1ff52a408850115e9a5ae8" title="Sends a dummy byte to wake up the SPI interface." alt="" coords="779,180,965,205"/>
+<area shape="poly" id="edge17_Node000006_Node000016" title=" " alt="" coords="718,175,765,180,765,185,718,180"/>
+<area shape="rect" id="Node000018" href="$spi_8c.html#a2a0f36d8cb7e54304284f758cc108c36" title="Transmits and receives data on SPI with DMA." alt="" coords="1013,292,1232,317"/>
+<area shape="poly" id="edge20_Node000006_Node000018" title=" " alt="" coords="654,178,779,215,1055,286,1054,291,778,221,653,183"/>
+<area shape="rect" id="Node000009" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="1321,5,1421,31"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1139,127,1198,84,1238,60,1279,40,1307,29,1309,34,1281,44,1240,65,1201,89,1142,131"/>
+<area shape="rect" id="Node000010" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="1329,55,1413,80"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="1161,127,1279,89,1315,79,1317,84,1281,94,1162,132"/>
+<area shape="rect" id="Node000011" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="1307,203,1435,228"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="1189,152,1233,165,1281,188,1307,196,1305,201,1279,192,1231,170,1187,157"/>
+<area shape="rect" id="Node000012" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="1332,104,1411,129"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="1191,132,1318,119,1319,125,1191,138"/>
+<area shape="rect" id="Node000015" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="1324,153,1419,179"/>
+<area shape="poly" id="edge14_Node000008_Node000015" title=" " alt="" coords="1191,146,1310,158,1310,163,1191,151"/>
+<area shape="rect" id="Node000013" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1511,129,1667,155"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1411,119,1498,129,1497,134,1411,124"/>
+<area shape="rect" id="Node000014" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1515,179,1662,204"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="1412,122,1464,138,1488,151,1512,164,1533,172,1531,177,1510,168,1486,155,1462,143,1410,127"/>
+<area shape="poly" id="edge15_Node000015_Node000013" title=" " alt="" coords="1418,158,1497,149,1497,155,1419,164"/>
+<area shape="poly" id="edge16_Node000015_Node000014" title=" " alt="" coords="1419,169,1502,179,1502,184,1418,174"/>
+<area shape="poly" id="edge19_Node000016_Node000008" title=" " alt="" coords="935,177,1046,155,1047,160,936,182"/>
+<area shape="rect" id="Node000017" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="1063,180,1183,205"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="966,190,1049,190,1049,195,966,195"/>
+<area shape="poly" id="edge25_Node000018_Node000011" title=" " alt="" coords="1158,289,1279,245,1320,230,1322,235,1281,250,1160,294"/>
+<area shape="poly" id="edge23_Node000018_Node000013" title=" " alt="" coords="1210,289,1363,264,1427,250,1461,238,1477,222,1485,203,1492,183,1509,164,1517,159,1520,163,1512,168,1497,186,1490,205,1482,225,1464,243,1428,255,1364,269,1211,295"/>
+<area shape="poly" id="edge24_Node000018_Node000014" title=" " alt="" coords="1232,311,1286,311,1345,308,1405,298,1462,282,1492,268,1519,250,1564,212,1568,216,1523,254,1494,273,1464,287,1406,304,1346,313,1287,317,1232,317"/>
+<area shape="rect" id="Node000019" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="1295,355,1448,380"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="1174,315,1308,349,1306,354,1173,320"/>
+<area shape="rect" id="Node000020" href="$fsystem_8h.html#af23205627be1616c6b1dcdb684060322" title="Switch back to user mode." alt="" coords="1280,404,1463,429"/>
+<area shape="poly" id="edge22_Node000018_Node000020" title=" " alt="" coords="1144,315,1204,352,1281,390,1302,398,1300,403,1279,395,1201,356,1142,320"/>
+</map>

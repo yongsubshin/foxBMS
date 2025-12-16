@@ -1,0 +1,19 @@
+<map id="foxbms&#45;2/src/app/driver/pex/pex.h" name="foxbms&#45;2/src/app/driver/pex/pex.h">
+<area shape="rect" id="Node000001" title="Header for the driver for the NXP PCA9539 port expander module." alt="" coords="752,5,929,45"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x_8c.html" title="Driver for the ADI analog front&#45;end." alt="" coords="5,93,204,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="738,36,499,58,357,75,216,96,205,98,204,93,215,91,356,70,498,53,738,31"/>
+<area shape="rect" id="Node000003" href="$ltc__6806_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="228,101,405,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="739,43,586,65,417,96,386,103,385,98,416,91,586,60,738,37"/>
+<area shape="rect" id="Node000004" href="$ltc__6813-1_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="429,101,628,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="765,52,592,103,591,98,764,47"/>
+<area shape="rect" id="Node000005" href="$nxp__mc33775a__afe_8c.html" title="API for MC33775A Analog Frontend." alt="" coords="652,93,829,148"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="812,57,771,95,767,91,809,53"/>
+<area shape="rect" id="Node000006" href="$can_8c.html" title="Driver for the CAN module." alt="" coords="853,101,1031,141"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="873,53,923,99,920,103,869,57"/>
+<area shape="rect" id="Node000007" href="$pex_8c.html" title="Driver for the NXP PCA9539 port expander module." alt="" coords="1055,101,1232,141"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="916,47,1083,98,1081,103,914,52"/>
+<area shape="rect" id="Node000008" href="$sps_8c.html" title="Driver for the smart power switches." alt="" coords="1256,101,1433,141"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="943,38,1087,61,1245,91,1277,98,1275,103,1244,96,1086,66,942,44"/>
+<area shape="rect" id="Node000009" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="1457,101,1624,141"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="943,30,1175,51,1311,68,1447,91,1478,98,1477,103,1445,96,1310,74,1174,56,943,36"/>
+</map>

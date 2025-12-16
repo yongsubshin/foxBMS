@@ -1,0 +1,1083 @@
+{
+  "extraction_metadata": {
+    "module": "ts",
+    "extraction_date": "2025-12-16",
+    "source_directory": "foxbms-2/src/app/driver/ts/",
+    "total_files_analyzed": 40,
+    "total_requirements_extracted": 89,
+    "confidence_distribution": {
+      "high": 71,
+      "medium": 15,
+      "low": 3
+    },
+    "high_confidence_percentage": 79.8
+  },
+  "requirements": [
+    {
+      "id": "TS-API-001",
+      "content": "The Temperature Sensor Interface shall translate an ADC voltage in mV to a temperature value in deci degrees Celsius according to the chosen temperature sensor implementation",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/api/tsi.h",
+        "line": "69-76",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/api"
+    },
+    {
+      "id": "TS-API-002",
+      "content": "The Temperature Sensor Interface shall provide a function to return the maximum plausible temperature that can be returned from the TSI in deci degrees Celsius",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/api/tsi.h",
+        "line": "78-84",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/api"
+    },
+    {
+      "id": "TS-API-003",
+      "content": "The Temperature Sensor Interface shall provide a function to return the minimum plausible temperature that can be returned from the TSI in deci degrees Celsius",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/api/tsi.h",
+        "line": "86-92",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/api"
+    },
+    {
+      "id": "TS-API-004",
+      "content": "The TSI header shall expose only the TSI_GetTemperature function as the public interface",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/api/tsi.h",
+        "line": "52-53",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/api"
+    },
+    {
+      "id": "TS-DEFS-001",
+      "content": "Temperature sensor lookup table entries shall store temperature in deci degrees Celsius (int16_t) and resistance in Ohms (float_t)",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "temperature_sensor_defs.h",
+        "line": "67-71",
+        "extraction_type": "typedef"
+      },
+      "module": "ts/common"
+    },
+    {
+      "id": "TS-DEFS-002",
+      "content": "Voltage conversion shall use a scaling factor of 1000.0f to convert between volts and millivolts",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "temperature_sensor_defs.h",
+        "line": "64-65",
+        "extraction_type": "config"
+      },
+      "module": "ts/common"
+    },
+    {
+      "id": "TS-BETA-001",
+      "content": "The Beta temperature calculation module shall convert measured ADC voltage in mV to temperature in deci degrees Celsius using the Beta (Steinhart-Hart) formula",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "beta.h",
+        "line": "115-122",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/beta"
+    },
+    {
+      "id": "TS-BETA-002",
+      "content": "The Beta calculation shall return FLT_MAX or FLT_MIN when the NTC is shorted or disconnected, and the caller shall check for these return values to prevent invalid data",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "beta.h",
+        "line": "118-120",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/beta"
+    },
+    {
+      "id": "TS-BETA-003",
+      "content": "The Beta module shall support configurable NTC position in resistor divider (R_1 or R_2 position) via BETA_POSITION_IN_RESISTOR_DIVIDER_IS_R_1 parameter",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "beta.h",
+        "line": "84-92",
+        "extraction_type": "config"
+      },
+      "module": "ts/beta"
+    },
+    {
+      "id": "TS-BETA-004",
+      "content": "The Beta module shall use a configurable resistor divider supply voltage, default 4.096V",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "beta.h",
+        "line": "94-95",
+        "extraction_type": "config"
+      },
+      "module": "ts/beta"
+    },
+    {
+      "id": "TS-BETA-005",
+      "content": "The Beta module shall use a configurable reference resistor value in the divider, default 10000.0 Ohm",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "beta.h",
+        "line": "97-101",
+        "extraction_type": "config"
+      },
+      "module": "ts/beta"
+    },
+    {
+      "id": "TS-BETA-006",
+      "content": "The Beta module shall use a reference temperature of 25.0 degrees Celsius for NTC calculations",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "beta.h",
+        "line": "103-104",
+        "extraction_type": "config"
+      },
+      "module": "ts/beta"
+    },
+    {
+      "id": "TS-BETA-007",
+      "content": "The Beta module shall use a configurable NTC resistance at reference temperature, default 10000.0 Ohm",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "beta.h",
+        "line": "106-107",
+        "extraction_type": "config"
+      },
+      "module": "ts/beta"
+    },
+    {
+      "id": "TS-BETA-008",
+      "content": "The Beta module shall use a configurable Beta coefficient for the NTC, default 3984.0",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "beta.h",
+        "line": "109-110",
+        "extraction_type": "config"
+      },
+      "module": "ts/beta"
+    },
+    {
+      "id": "TS-BETA-009",
+      "content": "The Beta temperature calculation shall use the Kelvin offset constant of 273.15 for temperature conversion",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "beta.c",
+        "line": "67-68",
+        "extraction_type": "config"
+      },
+      "module": "ts/beta"
+    },
+    {
+      "id": "TS-BETA-010",
+      "content": "When ADC voltage exceeds the maximum valid range, the Beta module shall return INT16_MIN indicating sensor disconnection or short circuit",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "beta.c",
+        "line": "113-115",
+        "extraction_type": "range_validation"
+      },
+      "module": "ts/beta"
+    },
+    {
+      "id": "TS-BETA-011",
+      "content": "When ADC voltage is below the minimum valid range, the Beta module shall return INT16_MAX indicating sensor out of operating range",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "beta.c",
+        "line": "116-118",
+        "extraction_type": "range_validation"
+      },
+      "module": "ts/beta"
+    },
+    {
+      "id": "TS-BETA-012",
+      "content": "When calculated NTC resistance is zero or negative, the Beta module shall return INT16_MIN as an invalid temperature indicator",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "beta.c",
+        "line": "140-148",
+        "extraction_type": "range_validation"
+      },
+      "module": "ts/beta"
+    },
+    {
+      "id": "TS-BETA-013",
+      "content": "The Beta module shall provide a function to calculate NTC resistance from a given temperature for computing Vmin and Vmax of the divider",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "beta.h",
+        "line": "132-139",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/beta"
+    },
+    {
+      "id": "TS-EPC00-001",
+      "content": "The EPCOS B57251V5103J060 temperature sensor driver shall convert ADC voltage in mV to temperature in deci degrees Celsius using lookup table interpolation",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.h",
+        "line": "103-110",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/epcos/b57251v5103j060"
+    },
+    {
+      "id": "TS-EPC00-002",
+      "content": "The EPCOS B57251V5103J060 driver shall return INT16_MAX or INT16_MIN when NTC is shorted or disconnected, and the caller shall check for these return values",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.h",
+        "line": "106-108",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/epcos/b57251v5103j060"
+    },
+    {
+      "id": "TS-EPC00-003",
+      "content": "The EPCOS B57251V5103J060 driver shall provide polynomial-based temperature calculation as an alternative to lookup table",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.h",
+        "line": "112-117",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/epcos/b57251v5103j060"
+    },
+    {
+      "id": "TS-EPC00-004",
+      "content": "The EPCOS B57251V5103J060 NTC position in resistor divider shall be configurable, default is R_2 (below voltage tap)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.h",
+        "line": "83-91",
+        "extraction_type": "config"
+      },
+      "module": "ts/epcos/b57251v5103j060"
+    },
+    {
+      "id": "TS-EPC00-005",
+      "content": "The EPCOS B57251V5103J060 resistor divider shall use a supply voltage of 2.5V",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.h",
+        "line": "93-94",
+        "extraction_type": "config"
+      },
+      "module": "ts/epcos/b57251v5103j060"
+    },
+    {
+      "id": "TS-EPC00-006",
+      "content": "The EPCOS B57251V5103J060 resistor divider shall use a reference resistor value of 10000.0 Ohm",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.h",
+        "line": "96-100",
+        "extraction_type": "config"
+      },
+      "module": "ts/epcos/b57251v5103j060"
+    },
+    {
+      "id": "TS-EPC00-007",
+      "content": "The EPCOS B57251V5103J060 lookup table shall cover a temperature range from -55.0 to +150.0 degrees Celsius with 5-degree resolution",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.c",
+        "line": "71-114",
+        "extraction_type": "lookup_table"
+      },
+      "module": "ts/epcos/b57251v5103j060"
+    },
+    {
+      "id": "TS-EPC00-008",
+      "content": "The EPCOS B57251V5103J060 lookup table shall be ordered from higher resistance (low temperature) to lower resistance (high temperature)",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.c",
+        "line": "70",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/epcos/b57251v5103j060"
+    },
+    {
+      "id": "TS-EPC00-009",
+      "content": "The EPCOS B57251V5103J060 driver shall use linear interpolation between LUT values but shall not extrapolate beyond LUT boundaries",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.c",
+        "line": "200-208",
+        "extraction_type": "algorithm"
+      },
+      "module": "ts/epcos/b57251v5103j060"
+    },
+    {
+      "id": "TS-EPC00-010",
+      "content": "The EPCOS B57251V5103J060 polynomial calculation shall use a 6th degree polynomial approximation",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.c",
+        "line": "216-231",
+        "extraction_type": "algorithm"
+      },
+      "module": "ts/epcos/b57251v5103j060"
+    },
+    {
+      "id": "TS-EPC01-001",
+      "content": "The EPCOS B57861S0103F045 temperature sensor driver shall convert ADC voltage in mV to temperature in deci degrees Celsius using lookup table interpolation",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/epcos/b57861s0103f045/epcos_b57861s0103f045.h",
+        "line": "104-111",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/epcos/b57861s0103f045"
+    },
+    {
+      "id": "TS-EPC01-002",
+      "content": "The EPCOS B57861S0103F045 driver shall return INT16_MAX or INT16_MIN when NTC is shorted or disconnected",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/epcos/b57861s0103f045/epcos_b57861s0103f045.h",
+        "line": "107-109",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/epcos/b57861s0103f045"
+    },
+    {
+      "id": "TS-EPC01-003",
+      "content": "The EPCOS B57861S0103F045 resistor divider shall use a supply voltage of 3.0V",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/epcos/b57861s0103f045/epcos_b57861s0103f045.h",
+        "line": "94-95",
+        "extraction_type": "config"
+      },
+      "module": "ts/epcos/b57861s0103f045"
+    },
+    {
+      "id": "TS-EPC01-004",
+      "content": "The EPCOS B57861S0103F045 lookup table shall cover a temperature range from -55.0 to +155.0 degrees Celsius",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/epcos/b57861s0103f045/epcos_b57861s0103f045.c",
+        "line": "71-115",
+        "extraction_type": "lookup_table"
+      },
+      "module": "ts/epcos/b57861s0103f045"
+    },
+    {
+      "id": "TS-EPC01-005",
+      "content": "The EPCOS B57861S0103F045 polynomial calculation shall use a 5th degree polynomial approximation for Vref=3V and 10k series resistor",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/epcos/b57861s0103f045/epcos_b57861s0103f045.c",
+        "line": "223-227",
+        "extraction_type": "algorithm"
+      },
+      "module": "ts/epcos/b57861s0103f045"
+    },
+    {
+      "id": "TS-MUR00-001",
+      "content": "The Murata NCxxxxH103 temperature sensor driver shall convert ADC voltage in mV to temperature in deci degrees Celsius using lookup table interpolation",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/murata/ncxxxxh103/murata_ncxxxxh103.h",
+        "line": "102-109",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/murata/ncxxxxh103"
+    },
+    {
+      "id": "TS-MUR00-002",
+      "content": "The Murata NCxxxxH103 driver shall return INT16_MAX or INT16_MIN when NTC is shorted or disconnected",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/murata/ncxxxxh103/murata_ncxxxxh103.h",
+        "line": "105-107",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/murata/ncxxxxh103"
+    },
+    {
+      "id": "TS-MUR00-003",
+      "content": "The Murata NCxxxxH103 resistor divider shall use a supply voltage of 3.3V",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/murata/ncxxxxh103/murata_ncxxxxh103.h",
+        "line": "92-93",
+        "extraction_type": "config"
+      },
+      "module": "ts/murata/ncxxxxh103"
+    },
+    {
+      "id": "TS-MUR00-004",
+      "content": "The Murata NCxxxxH103 lookup table shall cover a temperature range from -40.0 to +150.0 degrees Celsius with 5-degree resolution",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/murata/ncxxxxh103/murata_ncxxxxh103.c",
+        "line": "70-79",
+        "extraction_type": "lookup_table"
+      },
+      "module": "ts/murata/ncxxxxh103"
+    },
+    {
+      "id": "TS-MUR00-005",
+      "content": "The Murata NCxxxxH103 polynomial function shall trigger FAS_ASSERT trap as it is not yet implemented",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/murata/ncxxxxh103/murata_ncxxxxh103.c",
+        "line": "174-180",
+        "extraction_type": "assertion"
+      },
+      "module": "ts/murata/ncxxxxh103"
+    },
+    {
+      "id": "TS-VIS00-001",
+      "content": "The Vishay NTCALUG01A103G temperature sensor driver shall convert ADC voltage in mV to temperature in deci degrees Celsius using lookup table interpolation",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/vishay/ntcalug01a103g/vishay_ntcalug01a103g.h",
+        "line": "102-109",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/vishay/ntcalug01a103g"
+    },
+    {
+      "id": "TS-VIS00-002",
+      "content": "The Vishay NTCALUG01A103G driver shall return INT16_MAX or INT16_MIN when NTC is shorted or disconnected",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/vishay/ntcalug01a103g/vishay_ntcalug01a103g.h",
+        "line": "105-107",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/vishay/ntcalug01a103g"
+    },
+    {
+      "id": "TS-VIS00-003",
+      "content": "The Vishay NTCALUG01A103G resistor divider shall use a supply voltage of 3.0V",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/vishay/ntcalug01a103g/vishay_ntcalug01a103g.h",
+        "line": "92-93",
+        "extraction_type": "config"
+      },
+      "module": "ts/vishay/ntcalug01a103g"
+    },
+    {
+      "id": "TS-VIS00-004",
+      "content": "The Vishay NTCALUG01A103G lookup table shall cover a temperature range from -40.0 to +105.0 degrees Celsius with 1-degree resolution",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/vishay/ntcalug01a103g/vishay_ntcalug01a103g.c",
+        "line": "73-220",
+        "extraction_type": "lookup_table"
+      },
+      "module": "ts/vishay/ntcalug01a103g"
+    },
+    {
+      "id": "TS-VIS00-005",
+      "content": "The Vishay NTCALUG01A103G polynomial function shall trigger FAS_ASSERT trap as it is not yet implemented",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/vishay/ntcalug01a103g/vishay_ntcalug01a103g.c",
+        "line": "319-325",
+        "extraction_type": "assertion"
+      },
+      "module": "ts/vishay/ntcalug01a103g"
+    },
+    {
+      "id": "TS-VIS01-001",
+      "content": "The Vishay NTCLE317E4103SBA temperature sensor driver shall convert ADC voltage in mV to temperature in deci degrees Celsius using lookup table interpolation",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/vishay/ntcle317e4103sba/vishay_ntcle317e4103sba.h",
+        "line": "102-109",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/vishay/ntcle317e4103sba"
+    },
+    {
+      "id": "TS-VIS01-002",
+      "content": "The Vishay NTCLE317E4103SBA driver shall return INT16_MAX or INT16_MIN when NTC is shorted or disconnected",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/vishay/ntcle317e4103sba/vishay_ntcle317e4103sba.h",
+        "line": "105-107",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/vishay/ntcle317e4103sba"
+    },
+    {
+      "id": "TS-VIS01-003",
+      "content": "The Vishay NTCLE317E4103SBA resistor divider shall use a supply voltage of 3.0V",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/vishay/ntcle317e4103sba/vishay_ntcle317e4103sba.h",
+        "line": "92-93",
+        "extraction_type": "config"
+      },
+      "module": "ts/vishay/ntcle317e4103sba"
+    },
+    {
+      "id": "TS-VIS01-004",
+      "content": "The Vishay NTCLE317E4103SBA lookup table shall cover a temperature range from -55.0 to +150.0 degrees Celsius with 1-degree resolution",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/vishay/ntcle317e4103sba/vishay_ntcle317e4103sba.c",
+        "line": "72-108",
+        "extraction_type": "lookup_table"
+      },
+      "module": "ts/vishay/ntcle317e4103sba"
+    },
+    {
+      "id": "TS-VIS01-005",
+      "content": "The Vishay NTCLE317E4103SBA polynomial function shall trigger FAS_ASSERT trap as it is not yet implemented",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/vishay/ntcle317e4103sba/vishay_ntcle317e4103sba.c",
+        "line": "208-214",
+        "extraction_type": "assertion"
+      },
+      "module": "ts/vishay/ntcle317e4103sba"
+    },
+    {
+      "id": "TS-VIS02-001",
+      "content": "The Vishay NTCLE413E2103F102L temperature sensor driver shall convert ADC voltage in mV to temperature in deci degrees Celsius using lookup table interpolation",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/vishay/ntcle413e2103f102l/vishay_ntcle413e2103f102l.h",
+        "line": "102-109",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/vishay/ntcle413e2103f102l"
+    },
+    {
+      "id": "TS-VIS02-002",
+      "content": "The Vishay NTCLE413E2103F102L driver shall return INT16_MAX or INT16_MIN when NTC is shorted or disconnected",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/vishay/ntcle413e2103f102l/vishay_ntcle413e2103f102l.h",
+        "line": "105-107",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/vishay/ntcle413e2103f102l"
+    },
+    {
+      "id": "TS-VIS02-003",
+      "content": "The Vishay NTCLE413E2103F102L resistor divider shall use a supply voltage of 3.0V",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/vishay/ntcle413e2103f102l/vishay_ntcle413e2103f102l.h",
+        "line": "92-93",
+        "extraction_type": "config"
+      },
+      "module": "ts/vishay/ntcle413e2103f102l"
+    },
+    {
+      "id": "TS-VIS02-004",
+      "content": "The Vishay NTCLE413E2103F102L lookup table shall cover a temperature range from -40 to +105 degrees Celsius with 5-degree resolution",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/vishay/ntcle413e2103f102l/vishay_ntcle413e2103f102l.c",
+        "line": "74-79",
+        "extraction_type": "lookup_table"
+      },
+      "module": "ts/vishay/ntcle413e2103f102l"
+    },
+    {
+      "id": "TS-VIS02-005",
+      "content": "The Vishay NTCLE413E2103F102L polynomial function shall trigger FAS_ASSERT trap as it is not yet implemented",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/vishay/ntcle413e2103f102l/vishay_ntcle413e2103f102l.c",
+        "line": "180-186",
+        "extraction_type": "assertion"
+      },
+      "module": "ts/vishay/ntcle413e2103f102l"
+    },
+    {
+      "id": "TS-TDK01-001",
+      "content": "The TDK NTCG163JX103DT1S temperature sensor driver shall convert ADC voltage in mV to temperature in deci degrees Celsius using lookup table interpolation",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/tdk/ntcg163jx103dt1s/tdk_ntcg163jx103dt1s.h",
+        "line": "84-91",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/tdk/ntcg163jx103dt1s"
+    },
+    {
+      "id": "TS-TDK01-002",
+      "content": "The TDK NTCG163JX103DT1S driver shall return INT16_MAX or INT16_MIN when NTC is shorted or disconnected",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/tdk/ntcg163jx103dt1s/tdk_ntcg163jx103dt1s.h",
+        "line": "87-89",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/tdk/ntcg163jx103dt1s"
+    },
+    {
+      "id": "TS-TDK01-003",
+      "content": "The TDK NTCG163JX103DT1S resistor divider shall use a supply voltage of 2.5V",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/tdk/ntcg163jx103dt1s/tdk_ntcg163jx103dt1s.h",
+        "line": "74-75",
+        "extraction_type": "config"
+      },
+      "module": "ts/tdk/ntcg163jx103dt1s"
+    },
+    {
+      "id": "TS-TDK01-004",
+      "content": "The TDK NTCG163JX103DT1S lookup table shall cover a temperature range from -40.0 to +150.0 degrees Celsius with 5-degree resolution",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/tdk/ntcg163jx103dt1s/tdk_ntcg163jx103dt1s.c",
+        "line": "72-112",
+        "extraction_type": "lookup_table"
+      },
+      "module": "ts/tdk/ntcg163jx103dt1s"
+    },
+    {
+      "id": "TS-TDK01-005",
+      "content": "The TDK NTCG163JX103DT1S polynomial function shall trigger FAS_ASSERT trap as it is not yet implemented",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/tdk/ntcg163jx103dt1s/tdk_ntcg163jx103dt1s.c",
+        "line": "214-220",
+        "extraction_type": "assertion"
+      },
+      "module": "ts/tdk/ntcg163jx103dt1s"
+    },
+    {
+      "id": "TS-SEM00-001",
+      "content": "The Semitec 103JT temperature sensor driver shall convert ADC voltage in mV to temperature in deci degrees Celsius using lookup table interpolation",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/semitec/103jt/semitec_103jt.h",
+        "line": "104-111",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/semitec/103jt"
+    },
+    {
+      "id": "TS-SEM00-002",
+      "content": "The Semitec 103JT driver shall return INT16_MAX or INT16_MIN when NTC is shorted or disconnected",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/semitec/103jt/semitec_103jt.h",
+        "line": "107-109",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/semitec/103jt"
+    },
+    {
+      "id": "TS-SEM00-003",
+      "content": "The Semitec 103JT resistor divider shall use a supply voltage of 2.5V",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/semitec/103jt/semitec_103jt.h",
+        "line": "94-95",
+        "extraction_type": "config"
+      },
+      "module": "ts/semitec/103jt"
+    },
+    {
+      "id": "TS-SEM00-004",
+      "content": "The Semitec 103JT lookup table shall cover a temperature range from -50.0 to +90.0 degrees Celsius with 10-degree resolution",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/semitec/103jt/semitec_103jt.c",
+        "line": "73-90",
+        "extraction_type": "lookup_table"
+      },
+      "module": "ts/semitec/103jt"
+    },
+    {
+      "id": "TS-SEM00-005",
+      "content": "The Semitec 103JT polynomial function shall trigger FAS_ASSERT trap as it is not yet implemented",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/semitec/103jt/semitec_103jt.c",
+        "line": "188-194",
+        "extraction_type": "assertion"
+      },
+      "module": "ts/semitec/103jt"
+    },
+    {
+      "id": "TS-FAK00-001",
+      "content": "The fake temperature sensor driver shall return the ADC voltage value directly as a fake temperature for testing purposes",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/fake/none/fake_none.h",
+        "line": "67-72",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/fake/none"
+    },
+    {
+      "id": "TS-FAK00-002",
+      "content": "The fake temperature sensor lookup table function shall return the input ADC voltage cast to int16_t",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/fake/none/fake_none.c",
+        "line": "72-74",
+        "extraction_type": "implementation"
+      },
+      "module": "ts/fake/none"
+    },
+    {
+      "id": "TS-FAK00-003",
+      "content": "The fake temperature sensor polynomial function shall return the input ADC voltage cast to int16_t",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/ts/fake/none/fake_none.c",
+        "line": "76-78",
+        "extraction_type": "implementation"
+      },
+      "module": "ts/fake/none"
+    },
+    {
+      "id": "TS-COMMON-001",
+      "content": "All temperature sensor drivers shall use a consistent resistor divider calculation formula: R_2 = R_1 * (V_adc / (V_supply - V_adc)) when NTC is in R_2 position",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "multiple sensor implementations",
+        "line": "N/A",
+        "extraction_type": "algorithm"
+      },
+      "module": "ts/common"
+    },
+    {
+      "id": "TS-COMMON-002",
+      "content": "All temperature sensor drivers shall use a consistent resistor divider calculation formula: R_1 = R_2 * ((V_supply / V_adc) - 1) when NTC is in R_1 position",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "multiple sensor implementations",
+        "line": "N/A",
+        "extraction_type": "algorithm"
+      },
+      "module": "ts/common"
+    },
+    {
+      "id": "TS-COMMON-003",
+      "content": "All temperature sensor drivers shall use MATH_LinearInterpolation function for interpolation between LUT values",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "multiple sensor implementations",
+        "line": "N/A",
+        "extraction_type": "algorithm"
+      },
+      "module": "ts/common"
+    },
+    {
+      "id": "TS-COMMON-004",
+      "content": "All temperature sensor drivers shall validate ADC voltage against minimum and maximum bounds before calculation",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "multiple sensor implementations",
+        "line": "N/A",
+        "extraction_type": "range_validation"
+      },
+      "module": "ts/common"
+    },
+    {
+      "id": "TS-COMMON-005",
+      "content": "All temperature sensor drivers shall return INT16_MIN when measured ADC voltage exceeds maximum valid range indicating sensor disconnection or open circuit",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "multiple sensor implementations",
+        "line": "N/A",
+        "extraction_type": "error_handling"
+      },
+      "module": "ts/common"
+    },
+    {
+      "id": "TS-COMMON-006",
+      "content": "All temperature sensor drivers shall return INT16_MAX when measured ADC voltage is below minimum valid range indicating sensor short circuit",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "multiple sensor implementations",
+        "line": "N/A",
+        "extraction_type": "error_handling"
+      },
+      "module": "ts/common"
+    },
+    {
+      "id": "TS-COMMON-007",
+      "content": "All temperature sensor drivers shall use a reference resistor value of 10000.0 Ohm in the voltage divider",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "multiple sensor implementations",
+        "line": "N/A",
+        "extraction_type": "config"
+      },
+      "module": "ts/common"
+    },
+    {
+      "id": "TS-COMMON-008",
+      "content": "All NTC temperature sensors shall have a nominal resistance of 10000 Ohm at 25 degrees Celsius (10k NTC thermistors)",
+      "type": "HSI",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "multiple sensor implementations - LUT data",
+        "line": "N/A",
+        "extraction_type": "lookup_table"
+      },
+      "module": "ts/common"
+    },
+    {
+      "id": "TS-COMMON-009",
+      "content": "Temperature sensor lookup tables shall not extrapolate beyond the defined temperature range boundaries",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "multiple sensor implementations",
+        "line": "N/A",
+        "extraction_type": "algorithm"
+      },
+      "module": "ts/common"
+    },
+    {
+      "id": "TS-COMMON-010",
+      "content": "Temperature values shall be expressed in deci degrees Celsius (multiply by 10) for integer representation with 0.1 degree resolution",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "all temperature sensor headers",
+        "line": "N/A",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/common"
+    },
+    {
+      "id": "TS-CONFIG-001",
+      "content": "Temperature sensor implementations shall be selectable at compile time by linking the appropriate lookup-table or polynomial source file",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "medium",
+      "source": {
+        "file": "lookup-table/*.c and polynomial/*.c files",
+        "line": "N/A",
+        "extraction_type": "architecture"
+      },
+      "module": "ts/config"
+    },
+    {
+      "id": "TS-CONFIG-002",
+      "content": "Each sensor type shall provide both lookup table and polynomial implementations of the TSI_GetTemperature function",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "medium",
+      "source": {
+        "file": "all sensor directories",
+        "line": "N/A",
+        "extraction_type": "architecture"
+      },
+      "module": "ts/config"
+    },
+    {
+      "id": "TS-LUT-001",
+      "content": "Lookup tables shall be organized from higher resistance (lower temperature) to lower resistance (higher temperature)",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "all sensor LUT definitions",
+        "line": "N/A",
+        "extraction_type": "doxygen"
+      },
+      "module": "ts/common"
+    },
+    {
+      "id": "TS-LUT-002",
+      "content": "Lookup table size shall be computed at compile time using sizeof operator to avoid hardcoded array sizes",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "medium",
+      "source": {
+        "file": "all sensor implementations",
+        "line": "N/A",
+        "extraction_type": "implementation"
+      },
+      "module": "ts/common"
+    },
+    {
+      "id": "TS-LUT-003",
+      "content": "Lookup table interpolation shall find two adjacent entries that bracket the measured resistance value",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "medium",
+      "source": {
+        "file": "all sensor implementations",
+        "line": "N/A",
+        "extraction_type": "algorithm"
+      },
+      "module": "ts/common"
+    }
+  ]
+}

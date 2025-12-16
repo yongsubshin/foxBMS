@@ -1,0 +1,9 @@
+<map id="LTC_SetMuxChannel" name="LTC_SetMuxChannel">
+<area shape="rect" id="Node000001" title="sends data to the LTC daisy&#45;chain to configure multiplexer channels." alt="" coords="5,31,159,56"/>
+<area shape="rect" id="Node000002" href="$ltc__6813-1_8c.html#a8fb93d76d9466f8c499feae7c820bcc7" title="configures the data that will be sent to the LTC daisy&#45;chain to configure multiplexer channels." alt="" coords="207,5,391,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,32,193,28,193,33,159,37"/>
+<area shape="rect" id="Node000003" href="$ltc__6813-1_8c.html#a8cc4616cd88973c4eff35c1a5490bee0" title="sends command and data to the LTC daisy&#45;chain." alt="" coords="229,55,369,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,49,216,55,215,61,158,54"/>
+<area shape="rect" id="Node000004" href="$ltc__pec_8c.html#afb47d1f12f35878bf9100c024fb821cc" title="calculates the PEC15" alt="" coords="439,55,589,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="369,65,425,65,425,70,369,70"/>
+</map>

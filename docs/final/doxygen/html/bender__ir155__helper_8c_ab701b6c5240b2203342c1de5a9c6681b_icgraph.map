@@ -1,0 +1,25 @@
+<map id="IR155_CalculateResistance" name="IR155_CalculateResistance">
+<area shape="rect" id="Node000001" title="Calculate insulation resistance from measured duty cycle." alt="" coords="2337,5,2536,31"/>
+<area shape="rect" id="Node000002" href="$bender__ir155__helper_8c.html#ad9130c93fe6b062fc5f0c37595d1f040" title="Interface function which delivers the actual signal measurement (duty cycle) and evaluation...." alt="" coords="2067,5,2289,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2324,21,2290,21,2290,15,2324,15"/>
+<area shape="rect" id="Node000003" href="$bender__ir155_8c.html#a96bab0870acd1c5cb2153684bea56ca9" title=" " alt="" coords="1832,5,2019,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2053,21,2019,21,2019,15,2053,15"/>
+<area shape="rect" id="Node000004" href="$bender__ir155_8c.html#af128f9aa7b3fcd2f6765ce5122bb6e27" title="Processes the running state." alt="" coords="1592,5,1784,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1819,21,1784,21,1784,15,1819,15"/>
+<area shape="rect" id="Node000005" href="$imd_8c.html#a87872f9a830641539529f337d7ef7977" title="Defines the state transitions." alt="" coords="1375,5,1544,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1578,21,1544,21,1544,15,1578,15"/>
+<area shape="rect" id="Node000006" href="$imd_8c.html#a4e330aef339648367c39b94f5d2698f1" title="trigger function for the IMD driver state machine." alt="" coords="1228,5,1327,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1361,21,1327,21,1327,15,1361,15"/>
+<area shape="rect" id="Node000007" href="$ftask__cfg_8c.html#a5d63574dd6ec0e14d26d10acf949913b" title="Cyclic 100 ms task." alt="" coords="948,5,1180,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1214,21,1180,21,1180,15,1214,15"/>
+<area shape="rect" id="Node000008" href="$ftask_8c.html#a17cb1d3d5baac3aae72d9ecf340557f5" title="Creation of cyclic 100 ms task." alt="" coords="684,5,900,31"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="934,21,900,21,900,15,934,15"/>
+<area shape="rect" id="Node000009" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,5,636,31"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="670,21,636,21,636,15,670,15"/>
+<area shape="rect" id="Node000010" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,5,448,31"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="482,21,448,21,448,15,482,15"/>
+<area shape="rect" id="Node000011" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,5,184,31"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="218,21,184,21,184,15,218,15"/>
+<area shape="rect" id="Node000012" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,5,81,31"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="116,21,82,21,82,15,116,15"/>
+</map>

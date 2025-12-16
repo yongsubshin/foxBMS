@@ -1,0 +1,11 @@
+<map id="foxbms&#45;2/src/app/driver/ts/vishay/ntcalug01a103g/lookup&#45;table/vishay_ntcalug01a103g_lookup&#45;table.c" name="foxbms&#45;2/src/app/driver/ts/vishay/ntcalug01a103g/lookup&#45;table/vishay_ntcalug01a103g_lookup&#45;table.c">
+<area shape="rect" id="Node000001" title="Resistive divider used for measuring temperature." alt="" coords="5,5,271,75"/>
+<area shape="rect" id="Node000002" href="$tsi_8h.html" title="Temperature Sensor Interface on Slave Unit driver header." alt="" coords="50,123,101,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,76,93,113,89,110,113,73"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="103,196,173,221"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="141,75,141,182,135,182,135,75"/>
+<area shape="rect" id="Node000004" href="$vishay__ntcalug01a103g_8h.html" title="Resistive divider used for measuring temperature." alt="" coords="176,123,364,148"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,73,244,112,241,117,184,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,147,121,184,117,187,84,150"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="250,150,173,192,170,187,248,146"/>
+</map>

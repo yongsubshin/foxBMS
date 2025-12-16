@@ -841,7 +841,7 @@ The BMS module contains 78 decision points requiring MC/DC coverage for ASIL-D c
 
 ## Appendix B: Referenced Files
 
-- `/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/application/bms/bms.c`
-- `/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/application/bms/bms.h`
-- `/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/application/config/bms_cfg.h`
-- `/home/kevin/work/forBMS/foxBMS/foxbms-2/tests/unit/app/application/bms/test_bms.c`
+- `foxbms-2/src/app/application/bms/bms.c`
+- `foxbms-2/src/app/application/bms/bms.h`
+- `foxbms-2/src/app/application/config/bms_cfg.h`
+- `foxbms-2/tests/unit/app/application/bms/test_bms.c`

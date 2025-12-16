@@ -1,0 +1,9 @@
+<map id="foxbms&#45;2/src/app/driver/ts/murata/ncxxxxh103/murata_ncxxxxh103.h" name="foxbms&#45;2/src/app/driver/ts/murata/ncxxxxh103/murata_ncxxxxh103.h">
+<area shape="rect" id="Node000001" title="Resistive divider used for measuring temperature." alt="" coords="273,5,451,60"/>
+<area shape="rect" id="Node000002" href="$murata__ncxxxxh103__lookup-table_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="5,108,249,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="293,68,202,110,199,105,291,64"/>
+<area shape="rect" id="Node000003" href="$murata__ncxxxxh103_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="273,115,451,170"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="365,74,365,115,359,115,359,74"/>
+<area shape="rect" id="Node000004" href="$murata__ncxxxxh103__polynomial_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="475,108,711,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="432,64,522,105,520,110,430,68"/>
+</map>

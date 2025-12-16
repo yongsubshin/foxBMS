@@ -1,0 +1,38 @@
+<map id="N77X_STATE_s" name="N77X_STATE_s">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1105,230,1223,255"/>
+<area shape="rect" id="Node000002" href="$structSPI__INTERFACE__CONFIG__s.html" title=" " alt="" coords="725,170,917,195"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="932,186,1006,195,1082,209,1135,227,1133,232,1081,215,1005,200,931,192"/>
+<area shape="rect" id="Node000003" href="$structN77X__MUX__CH__CFG__s.html" title=" " alt="" coords="737,230,906,255"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="920,240,1105,240,1105,245,920,245"/>
+<area shape="rect" id="Node000004" href="$structN77X__DATA__s.html" title=" " alt="" coords="765,279,877,305"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="891,284,981,275,1081,260,1115,253,1116,258,1082,265,982,280,891,289"/>
+<area shape="rect" id="Node000005" href="$structDATA__BLOCK__CELL__VOLTAGE__s.html" title=" " alt="" coords="304,21,529,46"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="501,17,552,15,606,20,658,36,682,50,703,68,720,92,726,117,724,142,718,167,711,192,709,216,713,241,727,265,745,278,766,286,764,291,742,283,723,268,708,243,703,217,706,191,712,166,718,141,721,117,715,94,699,71,679,54,656,41,605,25,552,20,501,22"/>
+<area shape="rect" id="Node000006" href="$structDATA__BLOCK__HEADER__s.html" title=" " alt="" coords="5,217,188,242"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="112,204,140,168,180,125,228,85,256,68,284,55,323,44,324,49,286,60,258,73,232,89,183,129,144,171,116,207"/>
+<area shape="rect" id="Node000007" href="$structDATA__BLOCK__CELL__TEMPERATURE__s.html" title=" " alt="" coords="285,70,548,95"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="122,206,193,155,237,128,284,106,325,93,327,98,286,110,240,133,196,159,125,210"/>
+<area shape="rect" id="Node000008" href="$structDATA__BLOCK__ALL__GPIO__VOLTAGES__s.html" title=" " alt="" coords="329,120,505,160"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="150,210,211,191,285,169,331,157,332,163,286,175,213,196,151,215"/>
+<area shape="rect" id="Node000009" href="$structDATA__BLOCK__MIN__MAX__s.html" title=" " alt="" coords="321,185,512,210"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="201,216,321,204,321,209,202,222"/>
+<area shape="rect" id="Node000010" href="$structDATA__BLOCK__BALANCING__FEEDBACK__s.html" title=" " alt="" coords="321,235,513,275"/>
+<area shape="poly" id="edge13_Node000010_Node000006" title=" " alt="" coords="195,241,212,243,321,249,320,255,212,248,195,246"/>
+<area shape="rect" id="Node000011" href="$structDATA__BLOCK__BALANCING__CONTROL__s.html" title=" " alt="" coords="321,299,513,339"/>
+<area shape="poly" id="edge15_Node000011_Node000006" title=" " alt="" coords="145,244,213,267,325,296,324,301,211,272,144,249"/>
+<area shape="rect" id="Node000012" href="$structDATA__BLOCK__SLAVE__CONTROL__s.html" title=" " alt="" coords="297,363,536,389"/>
+<area shape="poly" id="edge17_Node000012_Node000006" title=" " alt="" coords="125,249,196,299,240,326,286,348,327,361,325,366,284,353,237,331,193,304,122,253"/>
+<area shape="rect" id="Node000013" href="$structDATA__BLOCK__OPEN__WIRE__s.html" title=" " alt="" coords="314,413,519,438"/>
+<area shape="poly" id="edge19_Node000013_Node000006" title=" " alt="" coords="117,252,159,303,214,357,248,382,286,399,325,410,323,415,284,404,245,386,210,361,155,306,113,255"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="562,85,647,97,680,107,703,121,716,139,721,157,717,194,712,230,716,248,727,265,745,278,766,286,764,291,742,283,723,268,711,250,707,230,712,193,716,158,712,141,700,125,678,112,646,102,561,90"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="519,133,566,138,615,148,662,166,703,194,715,212,716,231,717,248,727,265,745,277,766,284,764,289,743,282,723,269,712,250,711,231,710,214,699,198,659,171,613,153,565,143,519,139"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="527,205,614,221,702,248,727,264,766,278,764,283,724,269,700,253,613,226,526,210"/>
+<area shape="poly" id="edge12_Node000004_Node000010" title=" " alt="" coords="527,262,765,284,765,290,526,267"/>
+<area shape="poly" id="edge14_Node000004_Node000011" title=" " alt="" coords="527,312,701,301,765,295,765,301,702,307,527,317"/>
+<area shape="poly" id="edge16_Node000004_Node000012" title=" " alt="" coords="542,359,621,346,701,329,786,302,788,307,702,335,622,351,543,364"/>
+<area shape="poly" id="edge18_Node000004_Node000013" title=" " alt="" coords="533,415,617,401,659,390,700,375,732,359,761,339,805,303,808,307,764,344,734,363,702,380,661,395,618,406,533,420"/>
+<area shape="rect" id="Node000014" href="$structN77X__SUPPLY__CURRENT__s.html" title=" " alt="" coords="319,462,515,487"/>
+<area shape="poly" id="edge20_Node000004_Node000014" title=" " alt="" coords="528,473,615,461,659,448,700,430,738,401,770,366,795,331,811,303,816,306,800,334,775,369,742,405,703,434,661,453,617,466,529,479"/>
+<area shape="rect" id="Node000015" href="$structN77X__ERROR__TABLE__s.html" title=" " alt="" coords="331,511,502,537"/>
+<area shape="poly" id="edge21_Node000004_Node000015" title=" " alt="" coords="515,530,561,529,609,523,657,510,700,488,724,469,746,446,779,393,802,342,814,304,819,306,807,344,784,396,750,449,728,473,703,493,658,515,610,528,562,534,515,536"/>
+</map>

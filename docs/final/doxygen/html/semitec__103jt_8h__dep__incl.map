@@ -1,0 +1,7 @@
+<map id="foxbms&#45;2/src/app/driver/ts/semitec/103jt/semitec_103jt.h" name="foxbms&#45;2/src/app/driver/ts/semitec/103jt/semitec_103jt.h">
+<area shape="rect" id="Node000001" title="Resistive divider used for measuring temperature." alt="" coords="126,5,313,60"/>
+<area shape="rect" id="Node000002" href="$semitec__103jt__lookup-table_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="5,108,212,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,72,145,110,141,106,180,68"/>
+<area shape="rect" id="Node000003" href="$semitec__103jt_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="237,115,423,170"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="258,68,305,113,301,117,254,72"/>
+</map>

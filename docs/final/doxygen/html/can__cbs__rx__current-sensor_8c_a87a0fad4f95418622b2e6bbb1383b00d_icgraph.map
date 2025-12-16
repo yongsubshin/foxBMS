@@ -1,0 +1,5 @@
+<map id="CANRX_SetStringNumberBasedOnCanMessageId" name="CANRX_SetStringNumberBasedOnCanMessageId">
+<area shape="rect" id="Node000001" title="Sets the string number based on the associated CAN message ID." alt="" coords="220,5,447,45"/>
+<area shape="rect" id="Node000002" href="$can__cbs__rx__current-sensor_8c.html#a8eaf16ec181e2a6aca61b37e7c531484" title="CAN Rx callback function for current sensor measurements." alt="" coords="5,13,172,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,28,172,28,172,23,206,23"/>
+</map>

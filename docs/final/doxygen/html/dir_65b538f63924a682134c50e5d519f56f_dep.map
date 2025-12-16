@@ -1,0 +1,16 @@
+<map id="foxbms&#45;2/src/app/application/soa" name="foxbms&#45;2/src/app/application/soa">
+<area shape="rect" id="node1" href="dir_088e4610e51ce7f112c14923c6dcfdc4.html" title="bms" alt="" coords="27,125,77,151"/>
+<area shape="rect" id="node2" href="dir_121a590e55326b59558b37f44168378c.html" title="config" alt="" coords="101,125,163,151"/>
+<area shape="rect" id="node3" href="dir_65b538f63924a682134c50e5d519f56f.html" title="soa" alt="" coords="113,52,159,77"/>
+<area shape="poly" id="edge1" href="dir_000138_000027.html" alt="" coords="124,79,78,118,75,114,121,75"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000138_000027.html" title="1" alt="" coords="80,113,90,127"/>
+<area shape="poly" id="edge2" href="dir_000138_000039.html" alt="" coords="138,78,136,112,131,112,133,78"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000138_000039.html" title="3" alt="" coords="137,100,147,115"/>
+<area shape="rect" id="node4" href="dir_137c22078e1d6c44eba3e11cd570321d.html" title="driver" alt="" coords="187,125,247,151"/>
+<area shape="poly" id="edge3" href="dir_000138_000064.html" alt="" coords="151,75,196,114,192,118,147,79"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000138_000064.html" title="1" alt="" coords="191,100,201,114"/>
+<area shape="rect" id="node5" href="dir_3819707b9b31c7a9319bee80f394bcbf.html" title="engine" alt="" coords="272,125,339,151"/>
+<area shape="poly" id="edge4" href="dir_000138_000066.html" alt="" coords="160,73,266,118,264,122,158,78"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000138_000066.html" title="2" alt="" coords="260,103,269,118"/>
+<area shape="rect" id="clust1" href="dir_61b1f6c598782761888b4cd560d5d06b.html" title="application" alt="" coords="16,16,173,161"/>
+</map>

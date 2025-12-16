@@ -1,0 +1,11 @@
+<map id="MXM_ParseVoltageReadAll" name="MXM_ParseVoltageReadAll">
+<area shape="rect" id="Node000001" title="Parse a RX buffer containing voltage values." alt="" coords="5,5,201,31"/>
+<area shape="rect" id="Node000002" href="$mxm__1785x_8c.html#ac8a15260cff9ed6eb1682999e13bb9d3" title="Parse voltage values from a READALL receive buffer into an array." alt="" coords="249,5,472,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,15,236,15,236,21,202,21"/>
+<area shape="rect" id="Node000003" href="$mxm__1785x__tools_8c.html#ab437f79b3d0299bb51e1a22bcfb484d2" title="Convert a measurement value to a voltage value." alt="" coords="520,5,633,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="472,15,506,15,506,21,472,21"/>
+<area shape="rect" id="Node000004" href="$mxm__1785x__tools_8c.html#af328199dc46b6eab7f35f08f0f076145" title="Extract a value from a single register." alt="" coords="681,5,912,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="633,15,668,15,668,21,633,21"/>
+<area shape="rect" id="Node000005" href="$mxm__1785x__tools_8c.html#a0dc736d94a1c30286d2549d3efa99e2d" title="Find Position of first set bit in bitmask." alt="" coords="960,5,1089,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="913,15,946,15,946,21,913,21"/>
+</map>

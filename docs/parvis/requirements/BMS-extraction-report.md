@@ -74,5 +74,5 @@ The extraction from the BMS module was highly successful, with 111 requirements 
 
 ## Files Generated
 
-- `/home/kevin/work/forBMS/foxBMS/.moai/bms/requirements/extracted/BMS-extracted.json` - Machine-readable extraction results
-- `/home/kevin/work/forBMS/foxBMS/.moai/bms/requirements/extracted/BMS-extraction-report.md` - This report
+- `.moai/bms/requirements/extracted/BMS-extracted.json` - Machine-readable extraction results
+- `.moai/bms/requirements/extracted/BMS-extraction-report.md` - This report

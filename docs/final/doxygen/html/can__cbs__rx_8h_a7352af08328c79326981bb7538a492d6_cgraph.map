@@ -1,0 +1,17 @@
+<map id="CANRX_ImdInfoGetDataFromMessage" name="CANRX_ImdInfoGetDataFromMessage">
+<area shape="rect" id="Node000001" title="Gets data from IMD Info message and stores it in data table." alt="" coords="5,88,217,128"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a844d064ef821d64e6ae5cd80e597d452" title="Copy CAN data from 8 bytes to a 64&#45;bit variable." alt="" coords="273,5,491,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,85,265,55,292,47,293,52,266,60,172,90"/>
+<area shape="rect" id="Node000003" href="$can__cbs__rx__imd-info_8c.html#a3bad766af111bec803f4303cbf6e90fa" title="Reads imc status from imd info and sets flags of the data table." alt="" coords="301,70,463,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,95,286,89,287,94,218,101"/>
+<area shape="rect" id="Node000006" href="$can__cbs__rx__imd-info_8c.html#aebc5870dfe5009cf90d9f49e8f2021af" title="Reads measured resistance from imd info and writes it to the data table." alt="" coords="265,119,499,145"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="218,115,252,118,252,123,217,120"/>
+<area shape="rect" id="Node000007" href="$can__cbs__rx__imd-info_8c.html#a1db8d66697726458b88567a162447952" title="Reads vifc status from imd info and sets flags of the data table." alt="" coords="300,169,464,194"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="173,125,266,153,306,163,304,168,265,159,171,131"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="547,119,837,145"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="463,93,598,114,597,120,462,98"/>
+<area shape="rect" id="Node000005" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="885,119,1108,145"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="838,129,872,129,872,135,838,135"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="499,129,533,129,533,135,499,135"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="462,166,597,144,598,150,463,171"/>
+</map>

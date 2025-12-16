@@ -1,0 +1,11 @@
+<map id="CANTX_RequestEnableMeasurement" name="CANTX_RequestEnableMeasurement">
+<area shape="rect" id="Node000001" title="Request to enable measurement." alt="" coords="5,55,267,80"/>
+<area shape="rect" id="Node000002" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="389,5,509,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,52,375,27,376,32,218,57"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="315,55,584,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,65,301,65,301,70,267,70"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="343,105,556,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,77,330,100,329,105,206,83"/>
+<area shape="rect" id="Node000005" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="632,112,855,137"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="556,122,618,122,618,127,556,127"/>
+</map>

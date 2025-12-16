@@ -1,0 +1,5 @@
+<map id="N77x_WaitForRxCompletedNotification" name="N77x_WaitForRxCompletedNotification">
+<area shape="rect" id="Node000001" title="Wait for the SPI receive communication to complete, using notifications." alt="" coords="5,5,280,31"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#a7578e983d03af6f03fd3fe09f293cdb1" title="Wait for a notification, with index." alt="" coords="328,5,551,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,15,314,15,314,21,280,21"/>
+</map>

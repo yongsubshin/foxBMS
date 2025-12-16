@@ -1,0 +1,5 @@
+<map id="LTC_IsFirstMeasurementCycleFinished" name="LTC_IsFirstMeasurementCycleFinished">
+<area shape="rect" id="Node000001" title="gets the measurement initialization status." alt="" coords="148,5,364,45"/>
+<area shape="rect" id="Node000002" href="$ltc__6813-1_8c.html#acf30d82064c640d2c4f36cd270c0647b" title="trigger function for the LTC driver state machine." alt="" coords="5,13,100,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,28,100,28,100,23,134,23"/>
+</map>

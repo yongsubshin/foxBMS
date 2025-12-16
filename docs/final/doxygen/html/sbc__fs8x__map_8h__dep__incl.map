@@ -1,0 +1,22 @@
+<map id="foxbms&#45;2/src/app/driver/sbc/fs8x_driver/sbc_fs8x_map.h" name="foxbms&#45;2/src/app/driver/sbc/fs8x_driver/sbc_fs8x_map.h">
+<area shape="rect" id="Node000001" title="FS8x register map." alt="" coords="123,5,357,45"/>
+<area shape="rect" id="Node000002" href="$sbc__fs8x_8c.html" title="Driver functions for the FS8x SBC." alt="" coords="5,196,203,236"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,54,152,72,130,95,117,120,110,147,106,196,101,195,105,146,112,118,126,92,149,68,176,49"/>
+<area shape="rect" id="Node000003" href="$sbc__fs8x_8h.html" title="FS8x driver interface." alt="" coords="141,101,339,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="243,59,243,101,237,101,237,59"/>
+<area shape="rect" id="Node000010" href="$sbc__fs8x__communication_8c.html" title="Implementation of communication logic for NXP SBC FS8x." alt="" coords="364,93,551,148"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="298,48,397,91,395,96,296,53"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="203,151,133,198,130,194,200,146"/>
+<area shape="rect" id="Node000004" href="$nxpfs85xx_8h.html" title="Header for the driver for the FRAM module." alt="" coords="227,196,405,236"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="266,150,303,194,299,198,262,153"/>
+<area shape="rect" id="Node000005" href="$nxpfs85xx_8c.html" title="Driver for the FS85xx module." alt="" coords="127,284,305,324"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="285,247,240,286,236,282,282,243"/>
+<area shape="rect" id="Node000006" href="$sbc_8h.html" title="Header for the driver for the SBC module." alt="" coords="329,284,506,324"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="351,243,397,282,393,286,347,247"/>
+<area shape="rect" id="Node000007" href="$sbc_8c.html" title="Driver for the SBC module." alt="" coords="125,372,302,412"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="361,332,259,374,257,370,359,327"/>
+<area shape="rect" id="Node000008" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="326,372,509,412"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="420,338,420,372,415,372,415,338"/>
+<area shape="rect" id="Node000009" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="533,372,699,412"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="475,327,574,370,571,374,472,332"/>
+</map>

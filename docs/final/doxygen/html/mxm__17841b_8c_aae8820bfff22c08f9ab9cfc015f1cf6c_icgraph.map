@@ -1,0 +1,32 @@
+<map id="MXM_41BTransitionToIdleSuccess" name="MXM_41BTransitionToIdleSuccess">
+<area shape="rect" id="Node000001" title="Transition into idle, mark as successful." alt="" coords="847,209,1087,235"/>
+<area shape="rect" id="Node000002" href="$group__mxm-41b-state-handlers.html#gafd5389790a0314574db4f6927aef0ddc" title="state handler for &quot;check fmea&quot;" alt="" coords="537,5,786,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="948,199,923,164,889,122,846,80,797,46,768,33,770,28,800,41,850,76,893,118,927,161,952,196"/>
+<area shape="rect" id="Node000006" href="$group__mxm-41b-state-handlers.html#ga660930e423c39dfb48ce3304564b894f" title="state handler for &quot;clear receive buffer&quot;" alt="" coords="558,55,765,95"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="939,203,877,156,838,131,798,110,764,97,766,92,800,105,841,126,880,151,942,198"/>
+<area shape="rect" id="Node000007" href="$group__mxm-41b-state-handlers.html#ga1367e1670ab7be0ea72a917396e6c813" title="state handler for &quot;clear transmit buffer&quot;" alt="" coords="558,119,765,159"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="912,208,798,174,751,162,752,157,799,169,914,203"/>
+<area shape="rect" id="Node000008" href="$group__mxm-41b-state-handlers.html#gaf38f0269d733292924c94ca632bbbb60" title="state handler for &quot;get version&quot;" alt="" coords="540,184,783,209"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="833,214,783,209,783,204,833,208"/>
+<area shape="rect" id="Node000009" href="$group__mxm-41b-state-handlers.html#gafed0c8a844b5fa7197d9257b159eca61" title="init state handler" alt="" coords="565,233,758,259"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="833,235,758,241,758,236,833,230"/>
+<area shape="rect" id="Node000010" href="$group__mxm-41b-state-handlers.html#gad0516f91d78f46e8d6beaac3ec78b2af" title="state handler for &quot;read status register&quot;" alt="" coords="538,283,785,323"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="911,241,799,273,747,286,746,281,798,267,909,236"/>
+<area shape="rect" id="Node000011" href="$group__mxm-41b-state-handlers.html#gab36b0cda14a8403e19a2efcda97ebe8c" title="state handler for &quot;uart transaction&quot;" alt="" coords="524,348,799,373"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="942,246,880,293,841,317,800,338,759,351,758,345,798,333,839,313,877,288,939,242"/>
+<area shape="rect" id="Node000012" href="$group__mxm-41b-state-handlers.html#gabb3eaec950481073e72929edfaf87144" title="state handler for &quot;write conf and int register&quot;" alt="" coords="558,398,765,438"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="950,247,889,317,847,355,800,387,766,402,764,397,797,382,844,351,885,313,946,244"/>
+<area shape="rect" id="Node000003" href="$mxm__17841b_8c.html#a0ea1ec4dd5b5f45e291edd394772ea46" title="Execute state&#45;machine for the MAX17841B." alt="" coords="300,209,476,235"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="539,38,525,46,501,63,479,84,442,131,414,176,397,210,393,208,410,174,438,128,475,80,498,59,523,41,537,33"/>
+<area shape="rect" id="Node000004" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="163,209,252,235"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="286,225,252,225,252,219,286,219"/>
+<area shape="rect" id="Node000005" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,209,115,235"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="149,225,115,225,115,219,149,219"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="546,101,525,110,487,133,452,161,402,211,399,207,449,157,484,129,523,105,544,96"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="555,165,525,174,421,212,419,207,523,169,554,160"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="526,212,477,217,476,211,526,207"/>
+<area shape="poly" id="edge12_Node000009_Node000003" title=" " alt="" coords="551,239,476,232,476,227,551,234"/>
+<area shape="poly" id="edge14_Node000010_Node000003" title=" " alt="" coords="559,283,523,273,421,237,423,232,525,267,560,277"/>
+<area shape="poly" id="edge16_Node000011_Node000003" title=" " alt="" coords="545,347,523,338,484,315,449,287,399,237,402,233,452,283,487,310,525,333,547,342"/>
+<area shape="poly" id="edge18_Node000012_Node000003" title=" " alt="" coords="544,398,523,387,478,351,441,308,412,267,394,236,398,234,417,264,445,305,482,347,525,382,546,393"/>
+</map>

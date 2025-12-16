@@ -1,0 +1,10 @@
+<map id="DATA_GetStringNumberFromTemperatureIndex" name="DATA_GetStringNumberFromTemperatureIndex">
+<area shape="rect" id="Node000001" title="Returns string number of passed temperature sensor index." alt="" coords="764,5,973,45"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__cell-temperatures_8c.html#a0f0552ef3bbb5039a70a5ef3b02d7e17" title="Helper function for CANTX_CellTemperatures()" alt="" coords="241,13,449,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="750,25,716,24,497,24,450,25,450,20,497,19,716,19,750,19"/>
+<area shape="rect" id="Node000004" href="$database__helper_8c.html#a62e6d524ba958668d5ba9d749037b7b2" title="Returns module number of passed temperature sensor index." alt="" coords="497,33,716,73"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="751,41,716,44,716,39,750,35"/>
+<area shape="rect" id="Node000003" href="$can__cbs__tx__cell-temperatures_8c.html#aaf8bc7437c5c0aad966104472bb0191e" title="CAN Tx callback function for cell temperatures." alt="" coords="5,13,193,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="228,28,193,28,193,23,228,23"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="483,43,449,39,450,34,484,38"/>
+</map>

@@ -1,0 +1,28 @@
+<map id="ALGO_UnlockInitialization" name="ALGO_UnlockInitialization">
+<area shape="rect" id="Node000001" title="Calling this function sets a signal that lets ALGO_Initialization() know that the initialization has ..." alt="" coords="2016,32,2207,57"/>
+<area shape="rect" id="Node000002" href="$algorithm_8c.html#a4e741993fded0d4aa051dbb41de77001" title="handles the call of different algorithm functions when cycle time has expired" alt="" coords="1787,7,1939,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2002,36,1939,30,1939,24,2003,31"/>
+<area shape="rect" id="Node000009" href="$sys_8c.html#a6bd4af68fc419de0a0e5c8f10af30f2b" title="Processes the pre running state." alt="" coords="1757,56,1968,81"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="2003,58,1969,61,1968,56,2002,52"/>
+<area shape="rect" id="Node000003" href="$ftask__cfg_8c.html#afc79f3925462c5a7121ef86d6e32891f" title="Cyclic 100 ms task for algorithms." alt="" coords="1413,7,1709,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1773,22,1709,22,1709,17,1773,17"/>
+<area shape="rect" id="Node000004" href="$ftask_8c.html#a0ccb7ad889fa219c5243127bf8fbd8a3" title="Creation of cyclic 100 ms algorithm task." alt="" coords="940,5,1220,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1400,22,1220,21,1220,16,1400,16"/>
+<area shape="rect" id="Node000005" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,31,636,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="927,28,636,43,636,37,926,23"/>
+<area shape="rect" id="Node000006" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,31,448,56"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="482,46,448,46,448,41,482,41"/>
+<area shape="rect" id="Node000007" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,31,184,56"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="218,46,184,46,184,41,218,41"/>
+<area shape="rect" id="Node000008" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,31,81,56"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="116,46,82,46,82,41,116,41"/>
+<area shape="rect" id="Node000010" href="$sys_8c.html#a90dceb9878e7eb209511a7a9c0251ec4" title="Defines the state transitions." alt="" coords="1478,56,1645,81"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1744,71,1645,71,1645,66,1744,66"/>
+<area shape="rect" id="Node000011" href="$sys_8c.html#ade51c1203163eee5a4781db384725c95" title="tick function, call this to advance the state machine" alt="" coords="1268,56,1365,81"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1464,71,1365,71,1365,66,1464,66"/>
+<area shape="rect" id="Node000012" href="$ftask__cfg_8c.html#a7f3620825ec0f5072516255d6febebdb" title="Cyclic 10 ms task." alt="" coords="968,56,1192,81"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1255,71,1192,71,1192,66,1255,66"/>
+<area shape="rect" id="Node000013" href="$ftask_8c.html#a2a1d135e2e4e6fef538294d8c43d0328" title="Creation of cyclic 10 ms task." alt="" coords="684,56,892,81"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="954,71,892,71,892,66,954,66"/>
+<area shape="poly" id="edge13_Node000013_Node000005" title=" " alt="" coords="670,58,636,54,637,49,670,53"/>
+</map>

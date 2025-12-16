@@ -1,0 +1,30 @@
+<map id="foxbms&#45;2/src/app/application/algorithm/state_estimation/sof/trapezoid/sof_trapezoid_cfg.h" name="foxbms&#45;2/src/app/application/algorithm/state_estimation/sof/trapezoid/sof_trapezoid_cfg.h">
+<area shape="rect" id="Node000001" title="Header for SOF configuration." alt="" coords="33,5,275,60"/>
+<area shape="rect" id="Node000002" href="$battery__cell__cfg_8h.html" title="Configuration of the battery cell (e.g., minimum and maximum cell voltage)" alt="" coords="31,108,170,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,61,117,98,113,95,135,59"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,181,73,207"/>
+<area shape="poly" id="edge17_Node000001_Node000003" title=" " alt="" coords="76,62,45,82,22,109,17,123,17,138,27,168,22,170,12,139,12,122,17,107,42,78,73,58"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="223,401,293,427"/>
+<area shape="poly" id="edge18_Node000001_Node000004" title=" " alt="" coords="171,59,196,119,206,155,210,193,210,269,214,302,223,334,247,388,242,390,218,336,208,303,205,269,205,193,201,156,191,120,166,61"/>
+<area shape="rect" id="Node000005" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="349,108,511,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="239,58,381,101,379,106,238,63"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,135,60,173,56,169,89,132"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="105,133,131,228,157,291,191,352,210,373,231,391,227,395,206,377,186,355,152,294,126,230,100,134"/>
+<area shape="poly" id="edge16_Node000005_Node000004" title=" " alt="" coords="380,136,339,154,320,167,304,183,288,207,277,234,262,291,258,345,258,388,253,388,252,345,257,290,272,232,284,205,300,180,317,163,336,149,378,131"/>
+<area shape="rect" id="Node000006" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="393,255,475,280"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="439,132,449,154,458,181,457,214,448,243,443,241,452,213,453,182,444,156,434,135"/>
+<area shape="rect" id="Node000007" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="525,328,604,353"/>
+<area shape="poly" id="edge14_Node000005_Node000007" title=" " alt="" coords="442,132,478,180,522,253,555,314,550,317,517,255,473,183,437,135"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="523,401,606,427"/>
+<area shape="poly" id="edge15_Node000005_Node000008" title=" " alt="" coords="449,131,488,160,537,205,584,261,604,293,619,327,621,346,615,364,593,393,588,390,611,361,616,345,614,329,599,296,580,264,533,208,484,164,446,135"/>
+<area shape="rect" id="Node000010" href="$bms-slave__cfg_8h.html" title="Configuration of the foxBMS BMS&#45;Slave (e.g., value of balancing resistor, input capacitance...." alt="" coords="315,181,444,207"/>
+<area shape="poly" id="edge12_Node000005_Node000010" title=" " alt="" coords="424,135,398,172,393,169,419,132"/>
+<area shape="poly" id="edge11_Node000006_Node000004" title=" " alt="" coords="412,282,375,303,336,330,303,361,277,392,273,389,299,358,332,326,372,298,409,278"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="456,278,533,319,530,324,454,282"/>
+<area shape="poly" id="edge10_Node000006_Node000008" title=" " alt="" coords="447,279,547,389,543,393,443,282"/>
+<area shape="rect" id="Node000009" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="347,328,449,353"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="430,282,412,317,408,314,426,279"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="526,354,307,404,306,399,525,348"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="567,354,567,388,562,388,562,354"/>
+<area shape="poly" id="edge13_Node000010_Node000006" title=" " alt="" coords="390,205,419,242,415,245,386,209"/>
+</map>

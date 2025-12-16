@@ -1,0 +1,5 @@
+<map id="FS8x_SPI_CreateSendFrame" name="FS8x_SPI_CreateSendFrame">
+<area shape="rect" id="Node000001" title="Creates a raw frame for SPI transfer." alt="" coords="5,5,208,31"/>
+<area shape="rect" id="Node000002" href="$sbc__fs8x__communication_8c.html#a87db6e52e5d345e7ae7be0606196c27d" title="This function calculates CRC value of passed data array. Takes bytes in inverted order due to frame f..." alt="" coords="256,5,371,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,15,242,15,242,21,208,21"/>
+</map>

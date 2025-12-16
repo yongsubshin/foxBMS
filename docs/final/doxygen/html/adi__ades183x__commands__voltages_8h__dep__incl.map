@@ -1,0 +1,9 @@
+<map id="foxbms&#45;2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_commands_voltages.h" name="foxbms&#45;2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_commands_voltages.h">
+<area shape="rect" id="Node000001" title="Header file of some software." alt="" coords="231,5,501,60"/>
+<area shape="rect" id="Node000002" href="$adi__ades1830__gpio__voltages_8c.html" title="Reading and the GPIO voltage registers of the ADI ADES1830." alt="" coords="5,108,207,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,67,175,110,173,105,285,62"/>
+<area shape="rect" id="Node000003" href="$adi__ades183x__commands__voltages_8c.html" title="Command definitions related to voltage measurement only specific to the driver for the ADI ADES183x." alt="" coords="231,108,501,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="369,74,369,108,363,108,363,74"/>
+<area shape="rect" id="Node000004" href="$adi__ades183x__voltages_8c.html" title="Implementation of some software." alt="" coords="525,108,724,163"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="447,62,558,105,556,110,445,67"/>
+</map>

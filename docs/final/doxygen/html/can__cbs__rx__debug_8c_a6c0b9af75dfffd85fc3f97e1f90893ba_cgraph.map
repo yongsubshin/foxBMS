@@ -1,0 +1,11 @@
+<map id="CANRX_ProcessSoftwareResetMux" name="CANRX_ProcessSoftwareResetMux">
+<area shape="rect" id="Node000001" title="Parses CAN message to handle software related requests, e.g., a software reset of the BMS." alt="" coords="5,42,252,67"/>
+<area shape="rect" id="Node000002" href="$can__cbs__rx__debug_8c.html#a5535e0f454e41e00aaf92e77b563f558" title="Check if a software reset is requested." alt="" coords="300,5,519,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,39,286,36,287,41,251,45"/>
+<area shape="rect" id="Node000005" href="$reset_8c.html#a61214f27599c0125bcbb2ee8edf12fd1" title="Trigger a software reset of the BMS." alt="" coords="314,70,505,95"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="253,64,300,69,300,74,252,70"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="567,13,857,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="519,23,553,23,553,28,519,28"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="905,13,1128,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="858,23,892,23,892,28,858,28"/>
+</map>

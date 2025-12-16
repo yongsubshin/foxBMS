@@ -1,0 +1,9 @@
+<map id="CANTX_TransmitUptime" name="CANTX_TransmitUptime">
+<area shape="rect" id="Node000001" title="Transmit the uptime message." alt="" coords="5,42,184,67"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="232,5,445,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,41,218,37,219,42,184,47"/>
+<area shape="rect" id="Node000004" href="$os_8c.html#a3b5e85003989e4e8420563bfb71cd715" title="Function to get the current OS Time." alt="" coords="276,70,401,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="184,62,263,71,262,77,184,68"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="493,13,716,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="446,23,479,23,479,28,446,28"/>
+</map>

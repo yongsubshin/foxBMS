@@ -1,0 +1,21 @@
+<map id="foxbms&#45;2/src/app/application/config/battery_system_cfg.h" name="foxbms&#45;2/src/app/application/config/battery_system_cfg.h">
+<area shape="rect" id="Node000001" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="134,5,345,45"/>
+<area shape="rect" id="Node000002" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="145,167,228,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,46,215,120,200,155,195,153,210,118,232,45"/>
+<area shape="rect" id="Node000003" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="251,240,330,265"/>
+<area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="246,45,287,226,282,227,241,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="121,313,204,339"/>
+<area shape="poly" id="edge11_Node000001_Node000004" title=" " alt="" coords="144,48,100,67,62,95,35,129,23,160,12,240,9,253,11,264,31,284,55,299,82,310,108,316,107,322,80,315,52,304,27,288,7,267,3,253,6,240,18,159,31,126,58,91,97,62,142,43"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="255,313,326,339"/>
+<area shape="poly" id="edge12_Node000001_Node000005" title=" " alt="" coords="255,44,302,126,327,181,345,239,347,253,345,266,333,288,317,306,313,302,328,285,340,264,342,253,340,241,322,183,298,129,250,47"/>
+<area shape="rect" id="Node000007" href="$bms-slave__cfg_8h.html" title="Configuration of the foxBMS BMS&#45;Slave (e.g., value of balancing resistor, input capacitance...." alt="" coords="72,93,202,119"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="216,48,165,87,161,83,213,43"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="205,190,263,230,260,234,202,194"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="187,193,169,300,164,299,182,192"/>
+<area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="195,191,242,264,273,302,269,305,237,267,191,194"/>
+<area shape="rect" id="Node000006" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="22,240,124,265"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="170,194,104,235,101,230,167,190"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="271,268,197,309,194,304,268,263"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="293,266,293,300,288,300,288,266"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="147,117,173,154,168,157,143,121"/>
+</map>

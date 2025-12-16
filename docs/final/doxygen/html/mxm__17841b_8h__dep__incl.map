@@ -1,0 +1,35 @@
+<map id="foxbms&#45;2/src/app/driver/afe/maxim/common/mxm_17841b.h" name="foxbms&#45;2/src/app/driver/afe/maxim/common/mxm_17841b.h">
+<area shape="rect" id="Node000001" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="125,5,321,60"/>
+<area shape="rect" id="Node000002" href="$mxm__afe_8c.html" title="AFE driver implementation." alt="" coords="5,423,204,463"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,72,166,109,141,163,128,208,111,314,107,373,107,423,101,423,101,373,106,313,122,207,136,162,161,107,186,69"/>
+<area shape="rect" id="Node000003" href="$mxm__17841b_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="481,108,677,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="330,61,487,105,486,111,328,66"/>
+<area shape="rect" id="Node000004" href="$mxm__1785x_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="244,313,440,368"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,74,184,116,170,165,166,191,167,217,172,241,183,264,210,293,245,313,242,317,207,297,178,267,167,243,161,217,161,191,164,164,179,114,198,71"/>
+<area shape="rect" id="Node000007" href="$mxm__battery__management_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="261,108,457,163"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="271,66,325,106,322,110,268,70"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="269,376,150,426,148,421,267,371"/>
+<area shape="rect" id="Node000005" href="$mxm__1785x_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="405,416,601,471"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="397,373,462,414,460,418,394,377"/>
+<area shape="rect" id="Node000006" href="$mxm__17852_8c.html" title="Operation state machine implementation for the MAX17852." alt="" coords="917,416,1125,471"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="454,353,700,384,905,413,917,416,916,421,904,419,699,389,454,358"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="250,168,214,187,183,213,163,237,147,265,125,325,113,381,108,423,103,423,108,380,120,323,143,263,159,234,179,209,211,182,247,163"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="389,173,405,210,410,238,405,266,391,292,373,315,369,311,386,290,399,264,405,238,399,211,384,175"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="398,171,426,209,453,264,474,321,500,415,495,416,469,323,448,267,421,212,393,174"/>
+<area shape="poly" id="edge21_Node000007_Node000006" title=" " alt="" coords="471,160,562,172,645,174,791,176,855,185,886,194,916,207,945,225,973,248,1001,276,1028,312,1039,337,1042,365,1039,393,1033,416,1028,415,1034,392,1037,365,1034,339,1024,315,997,280,970,251,942,229,913,212,884,199,854,190,790,181,645,180,562,177,471,165"/>
+<area shape="rect" id="Node000008" href="$mxm__1785x__tools_8h.html" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="541,211,737,265"/>
+<area shape="poly" id="edge11_Node000007_Node000008" title=" " alt="" coords="446,165,567,208,565,213,444,170"/>
+<area shape="rect" id="Node000012" href="$mxm__battery__management_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="193,211,389,265"/>
+<area shape="poly" id="edge20_Node000007_Node000012" title=" " alt="" coords="336,176,311,212,307,209,332,173"/>
+<area shape="poly" id="edge13_Node000008_Node000004" title=" " alt="" coords="550,272,420,316,419,311,548,267"/>
+<area shape="poly" id="edge12_Node000008_Node000005" title=" " alt="" coords="594,276,558,315,530,367,513,416,508,415,525,365,553,312,590,272"/>
+<area shape="poly" id="edge19_Node000008_Node000006" title=" " alt="" coords="751,246,823,256,895,270,957,288,980,299,997,311,1014,336,1022,363,1026,416,1021,416,1017,364,1009,338,993,315,977,303,955,293,894,275,822,261,750,252"/>
+<area shape="rect" id="Node000009" href="$mxm__1785x__tools_8c.html" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="567,313,763,368"/>
+<area shape="poly" id="edge14_Node000008_Node000009" title=" " alt="" coords="652,278,661,313,655,314,647,279"/>
+<area shape="rect" id="Node000010" href="$mxm__registry_8h.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="787,313,983,368"/>
+<area shape="poly" id="edge15_Node000008_Node000010" title=" " alt="" coords="717,268,822,311,820,316,715,273"/>
+<area shape="poly" id="edge16_Node000010_Node000005" title=" " alt="" coords="774,374,603,419,601,414,773,369"/>
+<area shape="poly" id="edge18_Node000010_Node000006" title=" " alt="" coords="933,374,987,414,983,418,930,378"/>
+<area shape="rect" id="Node000011" href="$mxm__registry_8c.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="696,416,892,471"/>
+<area shape="poly" id="edge17_Node000010_Node000011" title=" " alt="" coords="854,380,820,418,816,414,850,377"/>
+</map>

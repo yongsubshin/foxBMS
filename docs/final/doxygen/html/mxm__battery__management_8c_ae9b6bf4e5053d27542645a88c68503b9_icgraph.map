@@ -1,0 +1,11 @@
+<map id="MXM_5XRepeatCurrentSubstate" name="MXM_5XRepeatCurrentSubstate">
+<area shape="rect" id="Node000001" title="repeat the current substate (by resetting to the entry state)" alt="" coords="749,5,980,31"/>
+<area shape="rect" id="Node000002" href="$mxm__battery__management_8c.html#ade338957069ff6f62cdfbfcebffc270a" title="Handle the state MXM_STATEMACH_5X_INIT." alt="" coords="516,5,701,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="736,21,701,21,701,15,736,15"/>
+<area shape="rect" id="Node000003" href="$mxm__battery__management_8c.html#a325538715bf432ee4826598277aa29e3" title="Execute state&#45;machine for Battery Management Protocol." alt="" coords="300,5,468,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="502,21,468,21,468,15,502,15"/>
+<area shape="rect" id="Node000004" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="163,5,252,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="286,21,252,21,252,15,286,15"/>
+<area shape="rect" id="Node000005" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,5,115,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="149,21,115,21,115,15,149,15"/>
+</map>

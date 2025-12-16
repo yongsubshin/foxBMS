@@ -1,0 +1,46 @@
+<map id="SPS_Ctrl" name="SPS_Ctrl">
+<area shape="rect" id="Node000001" title="Control function for the CONT driver state machine." alt="" coords="5,286,81,311"/>
+<area shape="rect" id="Node000002" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="630,14,730,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,285,50,248,64,197,89,144,107,120,128,99,185,61,249,35,316,17,384,7,451,3,514,4,617,13,616,18,513,9,451,8,385,12,317,22,251,40,188,66,131,103,111,123,94,147,69,199,55,249,49,286"/>
+<area shape="rect" id="Node000003" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="638,211,722,236"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="49,284,78,241,101,218,128,200,194,177,264,164,335,160,404,163,470,170,531,181,628,205,627,210,530,186,470,175,404,168,335,165,265,170,196,182,131,205,104,222,82,244,53,287"/>
+<area shape="rect" id="Node000004" href="$spi__cfg_8c.html#ac05f356ab006baab3e2d492bfefdb752" title="Switch the SPS spi handle to high speed." alt="" coords="135,214,322,254"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="77,283,128,264,151,256,153,261,130,269,78,288"/>
+<area shape="rect" id="Node000005" href="$spi__cfg_8c.html#a05ff5a51b7b9b82a1835c63ea30ea7cd" title="Switch the SPS spi handle to low speed." alt="" coords="135,278,322,318"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="82,296,122,296,122,301,82,301"/>
+<area shape="rect" id="Node000006" href="$sps_8c.html#a42bcd905bbbb0fd532ae59e3fd60faff" title="Read the current measurements for a specific output for all SPS ICs of the daisy&#45;chain." alt="" coords="141,343,317,368"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="77,309,130,328,161,337,160,342,129,333,75,314"/>
+<area shape="rect" id="Node000007" href="$sps_8c.html#a6f00c269d0e20b749d8c7a9867ff4ba4" title=" " alt="" coords="151,442,306,467"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="52,310,79,368,102,401,131,428,140,434,137,439,128,433,98,404,74,371,47,312"/>
+<area shape="rect" id="Node000009" href="$sps_8c.html#ad2fe38c253e1b0b76ac5b013a6ca9529" title="Assemble a general command to the SPS ICs." alt="" coords="131,491,327,516"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="49,311,57,345,72,390,96,438,112,459,131,478,137,482,134,487,128,482,108,463,92,440,67,392,52,346,44,312"/>
+<area shape="rect" id="Node000012" href="$sps_8c.html#a961f9c1c70ea7658911b9d91c209b0a0" title="Assemble an update to the channel state of the SPS ICs." alt="" coords="129,392,328,418"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="57,310,87,344,108,362,131,377,147,385,145,390,128,382,105,366,84,348,53,313"/>
+<area shape="rect" id="Node000013" href="$sps_8c.html#a3b0b5c63417cabc94688fd3cf78cd94c" title="Transmit all assembled messages for one timeframe." alt="" coords="174,114,283,139"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="47,284,74,224,97,188,128,156,160,139,162,143,131,161,102,191,79,226,51,287"/>
+<area shape="rect" id="Node000008" href="$sps_8c.html#a5aa51bd041468fa63d6992cbcb57ad3a" title="Sets the SPI Tx buffer for a register write access for a specific single SPS ICs in the daisy&#45;chain." alt="" coords="376,396,568,436"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="306,440,362,431,363,436,307,445"/>
+<area shape="rect" id="Node000010" href="$sps_8c.html#a42c6ab326377a351def20a0d748afb4e" title="Sets the SPI Tx buffer for a register read access for all SPS ICs of the daisy&#45;chain." alt="" coords="381,530,563,555"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="310,514,379,525,378,530,309,519"/>
+<area shape="rect" id="Node000011" href="$sps_8c.html#a7cfb82ab6fb733aaa092a2731ebb62b5" title="Sets the SPI Tx buffer for a register write access for all SPS ICs of the daisy&#45;chain." alt="" coords="380,480,564,506"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="327,497,366,495,366,500,327,502"/>
+<area shape="poly" id="edge12_Node000012_Node000008" title=" " alt="" coords="328,407,362,408,362,414,328,412"/>
+<area shape="rect" id="Node000014" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="412,64,532,90"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="283,113,398,89,399,95,284,118"/>
+<area shape="rect" id="Node000015" href="$spi_8c.html#ac84bc8424de860e2cd89fea2e89dd89a" title="Transmits and receives data on SPI without DMA." alt="" coords="378,114,566,139"/>
+<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="283,124,364,124,364,129,283,129"/>
+<area shape="poly" id="edge16_Node000015_Node000002" title=" " alt="" coords="539,111,567,99,581,87,590,75,599,62,614,48,624,43,627,47,618,53,603,65,594,78,585,91,569,103,541,116"/>
+<area shape="poly" id="edge17_Node000015_Node000003" title=" " alt="" coords="524,137,569,156,594,176,618,196,630,203,628,208,614,201,590,180,567,161,521,142"/>
+<area shape="rect" id="Node000016" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="616,63,744,88"/>
+<area shape="poly" id="edge18_Node000015_Node000016" title=" " alt="" coords="525,111,613,89,615,94,526,116"/>
+<area shape="rect" id="Node000017" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="641,162,719,187"/>
+<area shape="poly" id="edge19_Node000015_Node000017" title=" " alt="" coords="528,137,628,160,626,165,527,142"/>
+<area shape="rect" id="Node000020" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="633,112,727,138"/>
+<area shape="poly" id="edge22_Node000015_Node000020" title=" " alt="" coords="566,123,619,123,619,128,566,129"/>
+<area shape="rect" id="Node000018" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="792,112,948,138"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="719,162,807,139,808,144,720,167"/>
+<area shape="rect" id="Node000019" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="797,162,943,187"/>
+<area shape="poly" id="edge21_Node000017_Node000019" title=" " alt="" coords="720,172,783,172,783,177,720,177"/>
+<area shape="poly" id="edge23_Node000020_Node000018" title=" " alt="" coords="728,122,779,122,779,128,728,128"/>
+<area shape="poly" id="edge24_Node000020_Node000019" title=" " alt="" coords="728,135,808,156,806,161,727,140"/>
+</map>

@@ -1,0 +1,34 @@
+<map id="SPS_RequestContactorState" name="SPS_RequestContactorState">
+<area shape="rect" id="Node000001" title="Request state of a contactor." alt="" coords="1897,115,2100,140"/>
+<area shape="rect" id="Node000002" href="$contactor_8c.html#a359cf64388a3ce1432d648c5d2d74f96" title="Closes the contactor." alt="" coords="1641,39,1806,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1942,114,1849,86,1776,67,1777,62,1850,81,1944,109"/>
+<area shape="rect" id="Node000011" href="$contactor_8c.html#a5cee40865b2bcb852ed5f8679ba7b020" title="Open all contactors." alt="" coords="1363,90,1549,115"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="1883,125,1549,109,1550,104,1883,120"/>
+<area shape="rect" id="Node000012" href="$contactor_8c.html#aec6ecd0c4511790c826a7b8b1ad20d7b" title="This function iterates over all contactors and opens all currently closed precharge contactors." alt="" coords="1597,140,1849,166"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="1884,141,1850,144,1849,139,1883,136"/>
+<area shape="rect" id="Node000013" href="$contactor_8c.html#a8218cfd3f2ca325237b40624a6337f03" title="Opens the contactor." alt="" coords="1642,191,1805,216"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="1951,148,1850,180,1792,194,1790,188,1849,175,1949,143"/>
+<area shape="rect" id="Node000003" href="$bms_8c.html#a954a05b20669dc00663c4f0f2a729fcd" title="trigger function for the BMS driver state machine." alt="" coords="1212,115,1315,140"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1672,38,1608,21,1529,10,1487,8,1445,10,1403,17,1364,30,1334,48,1309,71,1274,116,1270,113,1305,68,1331,44,1362,25,1402,12,1444,5,1487,3,1530,4,1609,16,1673,32"/>
+<area shape="rect" id="Node000010" href="$contactor_8c.html#aeca7c362c6d4ae2446f879badaa74830" title="Closes precharge." alt="" coords="1373,40,1539,66"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="1627,55,1540,55,1540,50,1627,50"/>
+<area shape="rect" id="Node000004" href="$ftask__cfg_8c.html#a7f3620825ec0f5072516255d6febebdb" title="Cyclic 10 ms task." alt="" coords="940,115,1164,140"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1198,130,1164,130,1164,125,1198,125"/>
+<area shape="rect" id="Node000005" href="$ftask_8c.html#a2a1d135e2e4e6fef538294d8c43d0328" title="Creation of cyclic 10 ms task." alt="" coords="684,115,892,140"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="926,130,892,130,892,125,926,125"/>
+<area shape="rect" id="Node000006" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,115,636,140"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="670,130,636,130,636,125,670,125"/>
+<area shape="rect" id="Node000007" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,115,448,140"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="482,130,448,130,448,125,482,125"/>
+<area shape="rect" id="Node000008" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,115,184,140"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="218,130,184,130,184,125,218,125"/>
+<area shape="rect" id="Node000009" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,115,81,140"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="116,130,82,130,82,125,116,125"/>
+<area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="1385,72,1364,80,1322,98,1287,117,1285,113,1320,94,1362,75,1383,67"/>
+<area shape="poly" id="edge12_Node000011_Node000003" title=" " alt="" coords="1349,119,1315,124,1314,119,1349,114"/>
+<area shape="poly" id="edge14_Node000012_Node000003" title=" " alt="" coords="1583,148,1315,133,1315,128,1583,143"/>
+<area shape="poly" id="edge16_Node000013_Node000003" title=" " alt="" coords="1628,194,1362,152,1314,142,1315,137,1363,147,1629,189"/>
+<area shape="rect" id="Node000014" href="$contactor_8c.html#a7ad52b078cdb28d73da19979843fa3f4" title="Opens precharge." alt="" coords="1373,242,1539,267"/>
+<area shape="poly" id="edge17_Node000013_Node000014" title=" " alt="" coords="1642,222,1524,244,1523,239,1641,217"/>
+<area shape="poly" id="edge18_Node000014_Node000003" title=" " alt="" coords="1392,240,1361,225,1334,205,1309,182,1273,142,1277,139,1313,179,1337,201,1364,220,1394,235"/>
+</map>

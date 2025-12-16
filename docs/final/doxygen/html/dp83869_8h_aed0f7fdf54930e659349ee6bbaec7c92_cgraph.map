@@ -1,0 +1,5 @@
+<map id="PHY_GetOperationMode" name="PHY_GetOperationMode">
+<area shape="rect" id="Node000001" title="Returns the operation mode indicated in the Strap Status Register." alt="" coords="5,13,184,38"/>
+<area shape="rect" id="Node000002" href="$dp83869_8c.html#a5f3a9b6380aecb096d008ebd37d1a416" title="Reads register from the Extended Address Space." alt="" coords="232,5,472,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,23,218,23,218,28,184,28"/>
+</map>

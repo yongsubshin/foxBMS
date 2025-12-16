@@ -1,0 +1,7 @@
+<map id="MXM_GetDataFrom5XStateMachine" name="MXM_GetDataFrom5XStateMachine">
+<area shape="rect" id="Node000001" title="Retrieves data from lower state machine and writes it to the rx buffer." alt="" coords="5,31,260,56"/>
+<area shape="rect" id="Node000002" href="$mxm__battery__management_8c.html#ad89fd67b1337293d24504cdb05c19a59" title="Returns the last received DC byte." alt="" coords="308,5,487,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,28,294,25,294,30,260,34"/>
+<area shape="rect" id="Node000003" href="$mxm__battery__management_8c.html#a88722a84590c432f0bbfcdd77536c8db" title="Copy RX buffer into variable." alt="" coords="318,55,477,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,52,304,56,304,62,260,58"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="PEX_GetFromLocalVariable" name="PEX_GetFromLocalVariable">
+<area shape="rect" id="Node000001" title="copies values from the local variables to the externally available ones." alt="" coords="5,31,203,56"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="251,5,407,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,30,237,26,237,31,203,35"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="255,55,402,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,51,242,55,241,61,202,57"/>
+</map>

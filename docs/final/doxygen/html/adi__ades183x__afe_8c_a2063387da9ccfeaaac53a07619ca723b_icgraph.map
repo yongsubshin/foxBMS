@@ -1,0 +1,22 @@
+<map id="AFE_TriggerIc" name="AFE_TriggerIc">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1357,31,1467,56"/>
+<area shape="rect" id="Node000002" href="$meas_8c.html#a52f94c4bf46281650a38306fad8effc7" title="Control function that is called from the task every 1ms." alt="" coords="1196,31,1309,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1344,46,1309,46,1309,41,1344,41"/>
+<area shape="rect" id="Node000003" href="$ftask__cfg_8c.html#a1891c5a0ae2acb42fdf6f55363c61f8f" title="Continuously running task for AFEs." alt="" coords="955,5,1125,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1182,38,1125,31,1126,25,1182,32"/>
+<area shape="rect" id="Node000009" href="$ftask__cfg_8c.html#ae58bcb17fd6f8030313c90d4f02f9f96" title="Cyclic 1 ms task." alt="" coords="932,55,1148,80"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="1182,54,1148,58,1148,52,1182,49"/>
+<area shape="rect" id="Node000004" href="$ftask_8c.html#a4a202519a56cddc3958c1bebf22c5d66" title="Creation of continuously running task for AFEs." alt="" coords="707,5,861,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="941,21,861,21,861,15,941,15"/>
+<area shape="rect" id="Node000005" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,31,636,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="693,31,636,38,636,33,692,26"/>
+<area shape="rect" id="Node000006" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,31,448,56"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="482,46,448,46,448,41,482,41"/>
+<area shape="rect" id="Node000007" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,31,184,56"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="218,46,184,46,184,41,218,41"/>
+<area shape="rect" id="Node000008" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,31,81,56"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="116,46,82,46,82,41,116,41"/>
+<area shape="rect" id="Node000010" href="$ftask_8c.html#a4fdc9f7eff77294f53e37225751fe564" title="Creation of cyclic 1 ms task." alt="" coords="684,55,884,80"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="919,70,884,70,884,65,919,65"/>
+<area shape="poly" id="edge10_Node000010_Node000005" title=" " alt="" coords="670,57,636,54,636,48,671,52"/>
+</map>

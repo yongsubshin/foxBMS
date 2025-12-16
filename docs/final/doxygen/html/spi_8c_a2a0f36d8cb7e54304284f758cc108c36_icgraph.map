@@ -1,0 +1,159 @@
+<map id="SPI_TransmitReceiveDataDma" name="SPI_TransmitReceiveDataDma">
+<area shape="rect" id="Node000001" title="Transmits and receives data on SPI with DMA." alt="" coords="3701,1272,3920,1297"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x__helpers_8c.html#a9edad319da42f91773751ec974f19dc9" title="Transmits and receives data on SPI." alt="" coords="3422,796,3633,821"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="3793,1262,3534,823,3539,820,3797,1259"/>
+<area shape="rect" id="Node000040" href="$nxp__mc3377x-ll_8c.html#ac4d588b6872ff449b99b626282ce048f" title="Read multiple values from specific registers in a specific device." alt="" coords="3401,1459,3653,1484"/>
+<area shape="poly" id="edge61_Node000001_Node000040" title=" " alt="" coords="3780,1307,3549,1461,3546,1456,3777,1303"/>
+<area shape="rect" id="Node000053" href="$nxp__mc3377x-ll_8c.html#ac3c25850e67f6c74de3a9b01deeb9e7d" title="Write a value into a specific register in a specific device." alt="" coords="3152,1272,3353,1297"/>
+<area shape="poly" id="edge83_Node000001_Node000053" title=" " alt="" coords="3687,1287,3354,1287,3354,1282,3687,1282"/>
+<area shape="rect" id="Node000003" href="$adi__ades183x__helpers_8c.html#a1d3a54a6f57885e412672c1b8a8ef511" title="send command to the ades183x daisy&#45;chain to read a register." alt="" coords="3183,665,3322,691"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="3486,792,3280,693,3282,688,3488,788"/>
+<area shape="rect" id="Node000030" href="$adi__ades183x__helpers_8c.html#ad55d14108eb488d5eb623b7fe324d090" title="send command to the ades183x daisy&#45;chain (e.g., start voltage measurement)." alt="" coords="2909,297,3083,323"/>
+<area shape="poly" id="edge38_Node000002_Node000030" title=" " alt="" coords="3506,787,3445,711,3350,602,3233,482,3168,423,3102,369,3063,344,3026,325,3028,320,3066,340,3106,365,3172,419,3236,478,3354,599,3449,707,3510,783"/>
+<area shape="rect" id="Node000035" href="$adi__ades183x__initialization_8c.html#a5b280ca73e87678d6477e786fc260bda" title="Wake up the AFE." alt="" coords="3163,915,3342,940"/>
+<area shape="poly" id="edge52_Node000002_Node000035" title=" " alt="" coords="3485,829,3284,917,3282,912,3483,824"/>
+<area shape="rect" id="Node000036" href="$adi__ades183x__helpers_8c.html#a5f08addb54c17a918cf0e4fd90114bda" title="sends command to the ades183x daisy&#45;chain to write data." alt="" coords="3182,796,3323,821"/>
+<area shape="poly" id="edge54_Node000002_Node000036" title=" " alt="" coords="3408,811,3324,811,3324,806,3408,806"/>
+<area shape="rect" id="Node000004" href="$adi__ades1830__gpio__voltages_8c.html#a8e0311e2d7bf6fc23de2d88347fa3a08" title="Stores GPIO voltages." alt="" coords="2076,351,2237,376"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="3222,659,3032,525,2923,456,2876,430,2839,414,2788,401,2721,391,2556,377,2382,370,2238,367,2238,361,2382,364,2556,372,2722,386,2790,396,2841,409,2879,425,2926,451,3035,521,3225,655"/>
+<area shape="rect" id="Node000017" href="$adi__ades183x__initialization_8c.html#a6ae7b20c52ba97b81202504b97682da4" title="TODO." alt="" coords="2626,805,2819,845"/>
+<area shape="poly" id="edge17_Node000003_Node000017" title=" " alt="" coords="3231,702,3177,748,3142,770,3105,788,3032,810,2957,823,2885,830,2820,831,2820,826,2884,824,2957,818,3031,805,3103,784,3140,766,3174,743,3227,698"/>
+<area shape="rect" id="Node000018" href="$adi__ades183x__initialization_8c.html#aa516aa9e66d4dd66a4c24655849c0707" title="Implements the initialization for the ades183x driver." alt="" coords="2339,679,2537,704"/>
+<area shape="poly" id="edge25_Node000003_Node000018" title=" " alt="" coords="3219,700,3166,725,3104,745,2857,748,2605,743,2533,727,2472,707,2473,702,2534,722,2606,738,2857,743,3104,739,3165,720,3217,695"/>
+<area shape="rect" id="Node000020" href="$adi__ades183x__initialization_8c.html#ae9f779f108dd80511d0b6ace3f3f0cb5" title="TODO." alt="" coords="2905,626,3087,666"/>
+<area shape="poly" id="edge21_Node000003_Node000020" title=" " alt="" coords="3169,670,3087,660,3087,655,3170,665"/>
+<area shape="rect" id="Node000021" href="$adi__ades183x__voltages_8c.html#aaeef9f18e7911c4df1ff770108860a92" title="Reads and stores string and module voltages." alt="" coords="2605,56,2840,81"/>
+<area shape="poly" id="edge23_Node000003_Node000021" title=" " alt="" coords="3245,652,3230,583,3203,488,3161,384,3134,333,3102,286,3042,219,2986,175,2922,142,2839,103,2784,84,2786,79,2841,98,2925,137,2989,171,3046,215,3106,283,3138,330,3166,381,3208,487,3235,582,3250,651"/>
+<area shape="rect" id="Node000022" href="$adi__ades183x__voltages_8c.html#a352abba3ac5b56d8b91627b61035191a" title="Copies the related command bytes to read the average voltage registers." alt="" coords="2896,72,3096,97"/>
+<area shape="poly" id="edge26_Node000003_Node000022" title=" " alt="" coords="3247,652,3239,563,3216,435,3197,364,3172,293,3141,223,3102,160,3085,140,3065,124,3025,100,3027,95,3068,120,3089,137,3106,156,3146,221,3177,291,3202,363,3221,434,3244,562,3253,651"/>
+<area shape="rect" id="Node000024" href="$adi__ades183x__helpers_8c.html#aaf96dd588e15d5ca35b1aa627fee3520" title="Sends data in the configuration stored in driver to all AFEs in the daisy chain, for a specific confi..." alt="" coords="2888,690,3104,730"/>
+<area shape="poly" id="edge29_Node000003_Node000024" title=" " alt="" coords="3170,691,3105,699,3104,694,3170,686"/>
+<area shape="rect" id="Node000005" href="$adi__ades183x_8c.html#abbd2cae828e06fecab18f603efe803d0" title=" " alt="" coords="1741,193,1995,219"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="2106,348,2041,318,2017,301,1993,283,1891,221,1894,217,1996,278,2020,296,2044,313,2108,343"/>
+<area shape="rect" id="Node000006" href="$adi__ades183x_8c.html#ad91881ebcf4cc246ad2248e96b568245" title="Implements the actual measurement sequence for the ADI driver." alt="" coords="1515,247,1693,272"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1791,224,1668,249,1667,244,1790,219"/>
+<area shape="rect" id="Node000007" href="$adi__ades183x__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="1357,247,1467,272"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1501,262,1467,262,1467,257,1501,257"/>
+<area shape="rect" id="Node000008" href="$meas_8c.html#a52f94c4bf46281650a38306fad8effc7" title="Control function that is called from the task every 1ms." alt="" coords="1196,247,1309,272"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1344,262,1309,262,1309,257,1344,257"/>
+<area shape="rect" id="Node000009" href="$ftask__cfg_8c.html#a1891c5a0ae2acb42fdf6f55363c61f8f" title="Continuously running task for AFEs." alt="" coords="955,221,1125,247"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1182,254,1125,247,1126,241,1182,248"/>
+<area shape="rect" id="Node000015" href="$ftask__cfg_8c.html#ae58bcb17fd6f8030313c90d4f02f9f96" title="Cyclic 1 ms task." alt="" coords="932,271,1148,296"/>
+<area shape="poly" id="edge14_Node000008_Node000015" title=" " alt="" coords="1182,270,1148,274,1148,268,1182,265"/>
+<area shape="rect" id="Node000010" href="$ftask_8c.html#a4a202519a56cddc3958c1bebf22c5d66" title="Creation of continuously running task for AFEs." alt="" coords="707,221,861,247"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="941,237,861,237,861,231,941,231"/>
+<area shape="rect" id="Node000011" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,247,636,272"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="693,247,636,254,636,249,692,242"/>
+<area shape="rect" id="Node000012" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,247,448,272"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="482,262,448,262,448,257,482,257"/>
+<area shape="rect" id="Node000013" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,247,184,272"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="218,262,184,262,184,257,218,257"/>
+<area shape="rect" id="Node000014" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,247,81,272"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="116,262,82,262,82,257,116,257"/>
+<area shape="rect" id="Node000016" href="$ftask_8c.html#a4fdc9f7eff77294f53e37225751fe564" title="Creation of cyclic 1 ms task." alt="" coords="684,271,884,296"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="919,286,884,286,884,281,919,281"/>
+<area shape="poly" id="edge16_Node000016_Node000011" title=" " alt="" coords="670,273,636,270,636,264,671,268"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="2640,803,2604,788,2522,746,2458,707,2460,702,2524,741,2606,784,2642,798"/>
+<area shape="rect" id="Node000019" href="$adi__ades183x_8c.html#af426a7527df2f35e0118b6d4c2878ca9" title="Runs the initialization sequence of the driver." alt="" coords="1761,293,1975,333"/>
+<area shape="poly" id="edge19_Node000018_Node000019" title=" " alt="" coords="2404,673,1898,335,1901,331,2407,668"/>
+<area shape="poly" id="edge20_Node000019_Node000006" title=" " alt="" coords="1755,293,1667,275,1668,269,1756,287"/>
+<area shape="poly" id="edge22_Node000020_Node000018" title=" " alt="" coords="2892,657,2538,686,2537,681,2891,652"/>
+<area shape="poly" id="edge24_Node000021_Node000005" title=" " alt="" coords="2591,59,2473,54,2334,56,2187,71,2114,85,2044,103,1996,123,1951,148,1886,195,1883,191,1948,143,1993,118,2042,98,2113,80,2186,66,2334,51,2473,49,2591,53"/>
+<area shape="rect" id="Node000023" href="$adi__ades183x__voltages_8c.html#a5a4d5ad9299c357939fe281c1ef22593" title="Reads and stores cell voltages." alt="" coords="2373,5,2503,31"/>
+<area shape="poly" id="edge27_Node000022_Node000023" title=" " alt="" coords="2942,71,2840,46,2749,34,2657,27,2504,21,2504,15,2658,21,2749,29,2840,41,2943,65"/>
+<area shape="poly" id="edge28_Node000023_Node000005" title=" " alt="" coords="2359,13,2289,11,2209,14,2124,27,2083,38,2044,52,1990,84,1943,124,1906,164,1881,195,1877,191,1902,160,1939,120,1987,79,2042,48,2082,33,2123,22,2208,9,2289,5,2359,7"/>
+<area shape="rect" id="Node000025" href="$adi__ades183x__initialization_8c.html#a13daf3205c3acefab53d26dae9980b2b" title="Reset TODO." alt="" coords="2623,704,2823,729"/>
+<area shape="poly" id="edge30_Node000024_Node000025" title=" " alt="" coords="2874,716,2823,717,2823,712,2874,710"/>
+<area shape="rect" id="Node000026" href="$adi__ades183x__helpers_8c.html#a874fd38186e3406d26e3a669b92783e4" title="Sends data in the configuration stored in driver to all AFEs in the daisy chain, for all configuratio..." alt="" coords="2615,423,2831,463"/>
+<area shape="poly" id="edge32_Node000024_Node000026" title=" " alt="" coords="2891,684,2886,680,2871,661,2863,642,2858,605,2855,567,2850,548,2838,528,2803,492,2763,466,2766,461,2806,488,2842,524,2854,546,2861,566,2863,605,2868,641,2875,658,2890,676,2894,680"/>
+<area shape="poly" id="edge31_Node000025_Node000018" title=" " alt="" coords="2608,709,2537,703,2538,698,2609,704"/>
+<area shape="poly" id="edge37_Node000026_Node000018" title=" " alt="" coords="2629,471,2607,484,2578,507,2552,533,2505,589,2470,642,2448,680,2444,677,2466,639,2501,586,2548,529,2575,503,2604,480,2626,467"/>
+<area shape="rect" id="Node000027" href="$adi__ades1830__balancing_8c.html#a159252cb5bb314c615da5f613831aa32" title="Disable balancing." alt="" coords="2345,323,2531,348"/>
+<area shape="poly" id="edge33_Node000026_Node000027" title=" " alt="" coords="2655,421,2472,351,2473,346,2657,416"/>
+<area shape="rect" id="Node000028" href="$adi__ades1830__balancing_8c.html#a01ddff0dd52df42dc48fdc646be9c5bc" title="Determines how the balancing registers need to be set." alt="" coords="2319,423,2557,463"/>
+<area shape="poly" id="edge34_Node000026_Node000028" title=" " alt="" coords="2601,446,2558,446,2558,441,2601,441"/>
+<area shape="rect" id="Node000029" href="$adi__ades183x_8c.html#a030ee5d9aeb5ff5ec2283e630c9d224f" title="Sets the balancing according to the control values read in the database." alt="" coords="2081,279,2232,304"/>
+<area shape="poly" id="edge35_Node000028_Node000029" title=" " alt="" coords="2395,418,2337,379,2269,340,2192,307,2194,302,2272,336,2340,375,2398,413"/>
+<area shape="poly" id="edge36_Node000029_Node000005" title=" " alt="" coords="2079,278,2042,269,1902,221,1904,216,2043,263,2080,273"/>
+<area shape="poly" id="edge47_Node000030_Node000005" title=" " alt="" coords="2895,298,2886,292,2873,278,2866,264,2862,234,2857,205,2851,192,2838,180,2773,139,2712,115,2654,106,2597,107,2472,128,2400,140,2319,147,2181,157,2043,175,1929,196,1928,191,2042,170,2180,152,2318,142,2400,134,2471,123,2596,102,2655,101,2713,110,2775,134,2842,176,2855,189,2862,204,2867,233,2871,262,2878,275,2890,288,2898,294"/>
+<area shape="poly" id="edge44_Node000030_Node000018" title=" " alt="" coords="2981,336,2958,368,2926,407,2886,446,2841,478,2808,493,2778,501,2723,504,2669,507,2639,514,2607,528,2555,564,2510,607,2474,649,2450,680,2446,677,2470,645,2506,604,2551,560,2604,524,2638,509,2668,501,2723,499,2777,496,2806,488,2839,473,2883,441,2922,404,2954,365,2977,333"/>
+<area shape="poly" id="edge43_Node000030_Node000021" title=" " alt="" coords="2968,290,2928,248,2886,197,2872,169,2865,146,2857,124,2838,103,2803,84,2806,79,2842,99,2861,121,2870,144,2877,167,2890,194,2932,245,2972,286"/>
+<area shape="poly" id="edge42_Node000030_Node000027" title=" " alt="" coords="2895,317,2532,334,2532,328,2895,312"/>
+<area shape="poly" id="edge39_Node000030_Node000029" title=" " alt="" coords="2895,309,2840,307,2232,295,2232,290,2840,302,2895,304"/>
+<area shape="rect" id="Node000031" href="$adi__ades183x__helpers_8c.html#a4936e0089a71c132bbb577336e531635" title="Send RSTCC to AFEs in daisy&#45;chain and clear command counter of AFE driver." alt="" coords="2621,539,2825,564"/>
+<area shape="poly" id="edge40_Node000030_Node000031" title=" " alt="" coords="2985,337,2964,377,2932,427,2891,478,2841,522,2800,541,2798,536,2839,517,2887,475,2928,424,2959,375,2981,334"/>
+<area shape="rect" id="Node000032" href="$adi__ades183x__voltages_8c.html#a9b52b886ed0afba9c8ebcc16b22710ce" title="Restart cell voltage measurement." alt="" coords="2339,157,2537,197"/>
+<area shape="poly" id="edge45_Node000030_Node000032" title=" " alt="" coords="2967,291,2910,252,2876,233,2839,218,2762,198,2682,185,2605,179,2537,177,2537,171,2605,173,2682,180,2763,192,2841,213,2878,228,2913,248,2970,287"/>
+<area shape="rect" id="Node000033" href="$adi__ades183x__initialization_8c.html#a81f034003e88e25a36509825ceeb81a6" title="Start cell voltage measurement." alt="" coords="2607,589,2838,629"/>
+<area shape="poly" id="edge48_Node000030_Node000033" title=" " alt="" coords="2990,336,2971,387,2940,452,2898,520,2871,551,2842,577,2820,591,2817,586,2838,573,2867,547,2893,517,2936,450,2966,385,2984,335"/>
+<area shape="rect" id="Node000034" href="$adi__ades183x__voltages_8c.html#a04eb427c69716b48ddbb8e3a02d24ce4" title="Stop cell voltage measurement." alt="" coords="2043,214,2271,254"/>
+<area shape="poly" id="edge50_Node000030_Node000034" title=" " alt="" coords="2916,298,2840,286,2686,270,2531,257,2271,241,2271,236,2532,252,2686,264,2840,281,2917,292"/>
+<area shape="poly" id="edge41_Node000031_Node000018" title=" " alt="" coords="2630,570,2606,579,2561,603,2518,631,2455,681,2452,676,2515,626,2558,598,2604,574,2629,565"/>
+<area shape="poly" id="edge46_Node000032_Node000005" title=" " alt="" coords="2326,185,1995,202,1995,197,2325,180"/>
+<area shape="poly" id="edge49_Node000033_Node000018" title=" " alt="" coords="2640,635,2484,681,2482,676,2639,630"/>
+<area shape="poly" id="edge51_Node000034_Node000005" title=" " alt="" coords="2029,224,1994,221,1995,216,2029,219"/>
+<area shape="poly" id="edge53_Node000035_Node000018" title=" " alt="" coords="3210,948,3098,986,3023,1004,2942,1019,2856,1026,2769,1023,2726,1016,2684,1006,2643,991,2604,972,2567,945,2535,911,2508,873,2486,833,2455,758,2440,705,2445,704,2460,756,2491,831,2512,870,2539,908,2570,941,2607,968,2645,987,2685,1001,2727,1011,2769,1018,2856,1021,2941,1014,3022,999,3096,981,3208,943"/>
+<area shape="poly" id="edge55_Node000036_Node000024" title=" " alt="" coords="3205,793,3048,733,3050,728,3207,788"/>
+<area shape="rect" id="Node000037" href="$adi__ades183x__helpers_8c.html#aa1da17b6dd65b118d4b3df07365dd576" title="Write the same 6 bytes to all devices in the daisy&#45;chain." alt="" coords="2905,876,3087,901"/>
+<area shape="poly" id="edge56_Node000036_Node000037" title=" " alt="" coords="3199,828,3039,878,3037,873,3197,823"/>
+<area shape="rect" id="Node000038" href="$adi__ades183x__initialization_8c.html#aedca0f855f5d548324c0ce55a7bfe64e" title="TODO." alt="" coords="2627,869,2818,909"/>
+<area shape="poly" id="edge57_Node000037_Node000038" title=" " alt="" coords="2891,891,2818,891,2818,886,2891,886"/>
+<area shape="rect" id="Node000039" href="$adi__ades183x__initialization_8c.html#aa37447ca8ef5722846e1ce36e2046636" title="Disable balancing." alt="" coords="2607,933,2838,959"/>
+<area shape="poly" id="edge59_Node000037_Node000039" title=" " alt="" coords="2922,907,2784,936,2783,931,2920,902"/>
+<area shape="poly" id="edge58_Node000038_Node000018" title=" " alt="" coords="2617,866,2604,859,2552,822,2507,778,2447,706,2451,703,2511,775,2556,818,2607,854,2619,861"/>
+<area shape="poly" id="edge60_Node000039_Node000018" title=" " alt="" coords="2617,930,2604,923,2572,899,2544,870,2496,807,2462,748,2442,705,2447,703,2467,745,2501,804,2548,867,2576,895,2607,918,2620,926"/>
+<area shape="rect" id="Node000041" href="$nxp__mc33775a__i2c_8c.html#af7a448ad369d145891a8d4b5c014bd04" title="Functionality for case Read of N77x_TransmitI2c function." alt="" coords="2911,1483,3081,1508"/>
+<area shape="poly" id="edge62_Node000040_Node000041" title=" " alt="" coords="3388,1480,3082,1494,3081,1489,3387,1475"/>
+<area shape="rect" id="Node000042" href="$nxp__mc33775a__i2c_8c.html#a2efbc1d9973c7c1a19164c6a87192594" title="transmit over I2C on NXP slave." alt="" coords="2653,1457,2792,1483"/>
+<area shape="poly" id="edge82_Node000040_Node000042" title=" " alt="" coords="3496,1494,3393,1551,3322,1584,3241,1614,3154,1637,3064,1650,3019,1650,2974,1647,2930,1638,2887,1624,2860,1611,2834,1595,2789,1555,2753,1515,2730,1484,2735,1481,2757,1512,2792,1551,2837,1590,2862,1607,2889,1620,2931,1633,2975,1641,3019,1645,3064,1644,3153,1632,3240,1609,3320,1579,3391,1546,3494,1489"/>
+<area shape="rect" id="Node000046" href="$nxp__mc33775a__measurement_8c.html#a3de395d79b55ad1c2425e351ae1a3078" title="retrieves the measurement results." alt="" coords="2892,1584,3100,1609"/>
+<area shape="poly" id="edge67_Node000040_Node000046" title=" " alt="" coords="3460,1490,3052,1587,3050,1581,3459,1485"/>
+<area shape="rect" id="Node000048" href="$nxp__mc3377x-ll_8c.html#a1d0e4d1c54be187abfe24be1f40bb9c3" title="Read a value from a specific register in a specific device." alt="" coords="3153,1433,3352,1459"/>
+<area shape="poly" id="edge70_Node000040_Node000048" title=" " alt="" coords="3387,1461,3352,1458,3352,1452,3388,1456"/>
+<area shape="rect" id="Node000050" href="$nxp__mc3377x_8c.html#af96ccb2dc4798e34bfeb300b38b7c2a9" title="enumerates the N77X slaves." alt="" coords="2929,1335,3063,1360"/>
+<area shape="poly" id="edge81_Node000040_Node000050" title=" " alt="" coords="3472,1457,3353,1423,3197,1388,3063,1362,3064,1357,3199,1383,3354,1418,3474,1452"/>
+<area shape="poly" id="edge63_Node000041_Node000042" title=" " alt="" coords="2897,1489,2792,1479,2792,1474,2897,1484"/>
+<area shape="rect" id="Node000043" href="$nxp__mc3377x_8c.html#a8e909d543eb29b0c8e65e9b56ef4700c" title="trigger function for the N77X driver state machine." alt="" coords="2379,1296,2497,1321"/>
+<area shape="poly" id="edge64_Node000042_Node000043" title=" " alt="" coords="2686,1453,2460,1324,2463,1319,2688,1448"/>
+<area shape="rect" id="Node000044" href="$nxp__mc33775a__afe_8c.html#ae6df9bbde43f01a4a74a0e34d48cd844" title=" " alt="" coords="2101,1296,2213,1321"/>
+<area shape="poly" id="edge65_Node000043_Node000044" title=" " alt="" coords="2365,1311,2213,1311,2213,1306,2365,1306"/>
+<area shape="rect" id="Node000045" href="$nxp__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="1813,1296,1923,1321"/>
+<area shape="poly" id="edge66_Node000044_Node000045" title=" " alt="" coords="2087,1311,1923,1311,1923,1306,2087,1306"/>
+<area shape="rect" id="Node000047" href="$nxp__mc33775a__measurement_8c.html#aaf06f93b9f83bb3cb81761c0a0a4c872" title="captures the measurement." alt="" coords="2621,1347,2825,1372"/>
+<area shape="poly" id="edge68_Node000046_Node000047" title=" " alt="" coords="2959,1579,2922,1553,2886,1521,2871,1501,2862,1483,2853,1466,2838,1446,2790,1405,2744,1374,2747,1370,2793,1401,2842,1443,2857,1463,2866,1481,2875,1498,2890,1518,2926,1549,2962,1575"/>
+<area shape="poly" id="edge69_Node000047_Node000043" title=" " alt="" coords="2636,1347,2497,1322,2498,1316,2637,1342"/>
+<area shape="poly" id="edge71_Node000048_Node000041" title=" " alt="" coords="3173,1464,3063,1485,3062,1480,3172,1459"/>
+<area shape="poly" id="edge80_Node000048_Node000042" title=" " alt="" coords="3223,1469,3169,1498,3138,1512,3105,1522,3044,1533,2997,1535,2948,1531,2888,1522,2816,1506,2755,1485,2757,1480,2817,1500,2888,1517,2949,1526,2997,1530,3044,1528,3103,1517,3136,1507,3167,1493,3220,1464"/>
+<area shape="poly" id="edge74_Node000048_Node000046" title=" " alt="" coords="3231,1471,3176,1519,3142,1545,3105,1567,3055,1586,3053,1581,3103,1562,3139,1540,3173,1515,3227,1467"/>
+<area shape="rect" id="Node000049" href="$nxp__mc33775a__i2c_8c.html#a61057faba4572853a60cb4300ecf1f14" title="Functionality for case Write of N77x_TransmitI2c function." alt="" coords="2909,1433,3083,1459"/>
+<area shape="poly" id="edge72_Node000048_Node000049" title=" " alt="" coords="3139,1449,3083,1449,3083,1443,3139,1443"/>
+<area shape="poly" id="edge75_Node000048_Node000050" title=" " alt="" coords="3217,1429,3164,1400,3103,1374,3063,1362,3064,1357,3105,1369,3167,1396,3219,1424"/>
+<area shape="rect" id="Node000052" href="$nxp__mc3377x__mux_8c.html#aa0d2758b63d2aaa8904a86b15412bb67" title="sets mux channel." alt="" coords="2913,1384,3079,1409"/>
+<area shape="poly" id="edge78_Node000048_Node000052" title=" " alt="" coords="3172,1433,3062,1412,3063,1407,3173,1428"/>
+<area shape="poly" id="edge73_Node000049_Node000042" title=" " alt="" coords="2896,1457,2793,1467,2792,1461,2895,1452"/>
+<area shape="rect" id="Node000051" href="$nxp__mc3377x_8c.html#a9c267502ad4d574290f4331bb57748f6" title="initializes the N77X driver." alt="" coords="2663,1184,2782,1209"/>
+<area shape="poly" id="edge76_Node000050_Node000051" title=" " alt="" coords="2958,1330,2746,1212,2748,1207,2961,1326"/>
+<area shape="poly" id="edge77_Node000051_Node000043" title=" " alt="" coords="2677,1217,2472,1298,2470,1293,2675,1212"/>
+<area shape="poly" id="edge79_Node000052_Node000043" title=" " alt="" coords="2908,1382,2887,1374,2872,1364,2862,1354,2853,1344,2839,1336,2795,1322,2749,1312,2655,1302,2569,1300,2498,1305,2497,1299,2569,1295,2656,1296,2750,1307,2796,1317,2841,1332,2856,1340,2866,1350,2875,1360,2889,1369,2910,1377"/>
+<area shape="poly" id="edge84_Node000053_Node000041" title=" " alt="" coords="3236,1310,3164,1405,3129,1449,3106,1472,3078,1485,3076,1480,3102,1468,3125,1445,3160,1401,3232,1307"/>
+<area shape="poly" id="edge99_Node000053_Node000042" title=" " alt="" coords="3138,1277,3078,1278,3014,1284,2949,1299,2889,1324,2873,1337,2864,1351,2856,1367,2842,1385,2792,1428,2746,1459,2743,1455,2788,1423,2838,1381,2851,1364,2860,1349,2869,1333,2887,1320,2948,1294,3013,1279,3078,1272,3138,1271"/>
+<area shape="poly" id="edge85_Node000053_Node000049" title=" " alt="" coords="3235,1310,3181,1367,3145,1397,3105,1423,3074,1436,3072,1431,3103,1418,3142,1393,3177,1363,3231,1306"/>
+<area shape="poly" id="edge93_Node000053_Node000050" title=" " alt="" coords="3187,1303,3050,1337,3048,1332,3186,1298"/>
+<area shape="poly" id="edge96_Node000053_Node000052" title=" " alt="" coords="3224,1307,3170,1341,3105,1374,3065,1387,3063,1381,3103,1369,3167,1337,3221,1303"/>
+<area shape="rect" id="Node000054" href="$nxp__mc33775a__measurement_8c.html#ae5879c008572d1d6b71f8fa89cba7561" title="initializes the measurement." alt="" coords="2909,1233,3083,1259"/>
+<area shape="poly" id="edge86_Node000053_Node000054" title=" " alt="" coords="3154,1273,3081,1261,3081,1256,3155,1267"/>
+<area shape="rect" id="Node000055" href="$nxp__mc33775a__balancing_8c.html#a7c0fe4b31305c6fa9d831818a1904299" title="manages balancing." alt="" coords="2641,1085,2804,1111"/>
+<area shape="poly" id="edge88_Node000053_Node000055" title=" " alt="" coords="3240,1260,3222,1217,3193,1165,3153,1114,3130,1092,3103,1075,3058,1057,3010,1048,2961,1046,2913,1049,2824,1067,2757,1088,2756,1083,2823,1062,2912,1044,2961,1041,3011,1043,3059,1052,3105,1070,3133,1088,3157,1110,3198,1162,3227,1215,3245,1258"/>
+<area shape="rect" id="Node000056" href="$nxp__mc33775a__balancing_8c.html#a22f2203c1e17edb5d7b962dc0ccc3b28" title="setups balancing." alt="" coords="2920,1085,3072,1111"/>
+<area shape="poly" id="edge90_Node000053_Node000056" title=" " alt="" coords="3234,1262,3182,1192,3145,1155,3103,1124,3071,1111,3073,1106,3105,1120,3148,1151,3186,1189,3239,1259"/>
+<area shape="rect" id="Node000057" href="$nxp__mc33775a__i2c_8c.html#a521ce2ce777900cb09e7b78308838551" title="init I2C for the N77X slaves." alt="" coords="2927,1135,3065,1160"/>
+<area shape="poly" id="edge94_Node000053_Node000057" title=" " alt="" coords="3227,1265,3173,1218,3139,1194,3103,1174,3065,1161,3066,1155,3105,1169,3142,1189,3177,1214,3231,1261"/>
+<area shape="rect" id="Node000058" href="$nxp__mc33775a__measurement_8c.html#a82fb71ae2cc396d6c529edde24776eb8" title="starts the measurement." alt="" coords="2904,1184,3088,1209"/>
+<area shape="poly" id="edge97_Node000053_Node000058" title=" " alt="" coords="3213,1268,3161,1245,3103,1223,3063,1212,3064,1207,3105,1218,3163,1240,3215,1264"/>
+<area shape="poly" id="edge87_Node000054_Node000047" title=" " alt="" coords="2934,1265,2889,1280,2811,1316,2748,1349,2746,1344,2808,1311,2887,1276,2932,1260"/>
+<area shape="poly" id="edge89_Node000055_Node000043" title=" " alt="" coords="2689,1120,2607,1174,2520,1242,2455,1298,2452,1294,2516,1238,2604,1169,2686,1115"/>
+<area shape="poly" id="edge92_Node000056_Node000051" title=" " alt="" coords="2916,1117,2889,1125,2811,1156,2749,1186,2747,1182,2809,1151,2887,1119,2914,1112"/>
+<area shape="poly" id="edge91_Node000056_Node000055" title=" " alt="" coords="2907,1101,2804,1101,2804,1095,2907,1095"/>
+<area shape="poly" id="edge95_Node000057_Node000051" title=" " alt="" coords="2913,1165,2783,1189,2782,1183,2913,1160"/>
+<area shape="poly" id="edge98_Node000058_Node000051" title=" " alt="" coords="2890,1199,2782,1199,2782,1194,2890,1194"/>
+</map>

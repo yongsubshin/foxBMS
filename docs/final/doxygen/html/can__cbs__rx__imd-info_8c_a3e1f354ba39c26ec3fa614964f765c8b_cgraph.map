@@ -1,0 +1,17 @@
+<map id="CANRX_ImdInfoIsSelfTestFinished" name="CANRX_ImdInfoIsSelfTestFinished">
+<area shape="rect" id="Node000001" title="Checks if self test has finished." alt="" coords="5,106,247,131"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a844d064ef821d64e6ae5cd80e597d452" title="Copy CAN data from 8 bytes to a 64&#45;bit variable." alt="" coords="300,5,519,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,103,294,55,320,47,322,52,296,60,161,108"/>
+<area shape="rect" id="Node000003" href="$can__cbs__rx__imd-info_8c.html#acb58f50c84e0b5535f7de21401174be6" title="Checks if insulation measurement is active." alt="" coords="295,69,524,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="246,104,281,100,281,105,247,109"/>
+<area shape="rect" id="Node000006" href="$can__cbs__rx__imd-info_8c.html#ab4c6aa275c9c2c90014343b1b9bdd1f7" title="Checks if a self test has been executed." alt="" coords="317,134,502,159"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="247,128,303,133,302,139,247,133"/>
+<area shape="rect" id="Node000007" href="$can__cbs__rx__imd-info_8c.html#af0a8049d7635c0448e97df9ce69c5b28" title="Checks if self test is running." alt="" coords="320,183,499,209"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="166,129,295,168,334,178,333,183,294,173,165,134"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="572,134,863,159"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="518,107,635,129,634,134,517,112"/>
+<area shape="rect" id="Node000005" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="911,134,1133,159"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="863,144,897,144,897,149,863,149"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="502,144,559,144,559,149,502,149"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="489,181,623,159,624,164,490,186"/>
+</map>

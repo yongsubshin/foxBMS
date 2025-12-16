@@ -1,0 +1,11 @@
+<map id="DATA_Task" name="DATA_Task">
+<area shape="rect" id="Node000001" title="trigger of database manager" alt="" coords="5,42,97,67"/>
+<area shape="rect" id="Node000002" href="$database_8c.html#a2457542b9b35e65267a0aaa0a7be0c5c" title=" " alt="" coords="145,5,344,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,45,131,40,132,45,98,50"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#a285b22d2ef1448cae22a8965b5fec186" title="Receive an item from a queue." alt="" coords="157,70,332,95"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="98,59,144,65,143,71,97,64"/>
+<area shape="rect" id="Node000003" href="$database_8c.html#afed1a594f60622f1e922ce814a7703e8" title=" " alt="" coords="392,13,519,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,23,378,23,378,28,345,28"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="567,13,701,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="519,23,553,23,553,28,519,28"/>
+</map>

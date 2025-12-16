@@ -1,0 +1,7 @@
+<map id="TIDUM_Initialize" name="TIDUM_Initialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="309,5,439,31"/>
+<area shape="rect" id="Node000002" href="$ti__dummy__afe_8c.html#a75f03a696cc08601e30c865e5d1c0def" title="This function is used to wrap the TI AFE measurement API to the generic AFE measurement API." alt="" coords="164,5,261,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="296,21,262,21,262,15,296,15"/>
+<area shape="rect" id="Node000003" href="$ti__afe_8c.html#ab03833bf09e30722e8ef6b9e90cc353d" title=" " alt="" coords="5,5,116,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="150,21,116,21,116,15,150,15"/>
+</map>

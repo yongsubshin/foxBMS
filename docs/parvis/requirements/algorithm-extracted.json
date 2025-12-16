@@ -1,0 +1,1075 @@
+{
+  "extraction_metadata": {
+    "module": "algorithm",
+    "extraction_date": "2025-12-16",
+    "source_directory": "foxbms-2/src/app/application/algorithm/",
+    "total_files_analyzed": 24,
+    "extraction_patterns": ["doxygen", "assertion", "state_machine", "config", "interface"]
+  },
+  "requirements": [
+    {
+      "id": "ALGO-MGR-001",
+      "content": "The algorithm module shall provide a main execution handler (ALGO_MainFunction) that manages the cyclic execution of registered algorithms based on their configured cycle times",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "algorithm.c",
+        "line": "115-152",
+        "extraction_type": "doxygen"
+      },
+      "module": "algorithm/manager"
+    },
+    {
+      "id": "ALGO-MGR-002",
+      "content": "The algorithm module shall provide an initialization unlock mechanism (ALGO_UnlockInitialization) that signals the system to run algorithm initialization routines",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "algorithm.h",
+        "line": "66-70",
+        "extraction_type": "doxygen"
+      },
+      "module": "algorithm/manager"
+    },
+    {
+      "id": "ALGO-MGR-003",
+      "content": "The algorithm module shall monitor calculation execution time of different algorithms to detect runtime violations",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "algorithm.h",
+        "line": "78-81",
+        "extraction_type": "doxygen"
+      },
+      "module": "algorithm/manager"
+    },
+    {
+      "id": "ALGO-MGR-004",
+      "content": "The algorithm cycle time configuration shall be a multiple of the ALGO_TICK_ms (100ms) base tick time",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "algorithm.c",
+        "line": "87",
+        "extraction_type": "assertion"
+      },
+      "module": "algorithm/manager"
+    },
+    {
+      "id": "ALGO-MGR-005",
+      "content": "The algorithm initialization function shall return either STD_OK (successful initialization) or STD_NOT_OK (failed initialization)",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "algorithm.c",
+        "line": "96",
+        "extraction_type": "assertion"
+      },
+      "module": "algorithm/manager"
+    },
+    {
+      "id": "ALGO-MGR-006",
+      "content": "An algorithm exceeding its maximum calculation duration shall be blocked from further execution",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "algorithm.c",
+        "line": "158-165",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/manager"
+    },
+    {
+      "id": "ALGO-MGR-007",
+      "content": "The algorithm module shall support the following states: UNINITIALIZED, READY, RUNNING, BLOCKED, FAILED_INIT, and REINIT_REQUESTED",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "algorithm_cfg.h",
+        "line": "82-91",
+        "extraction_type": "state_machine"
+      },
+      "module": "algorithm/manager"
+    },
+    {
+      "id": "ALGO-MGR-008",
+      "content": "The algorithm index parameter for ALGO_MarkAsDone and ALGO_MarkAsReinit shall be validated to be within the configured algorithm array bounds",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "algorithm_cfg.c",
+        "line": "83,94",
+        "extraction_type": "assertion"
+      },
+      "module": "algorithm/manager"
+    },
+    {
+      "id": "ALGO-CFG-001",
+      "content": "The algorithm base tick time shall be configured as ALGO_TICK_ms = 100ms for scheduling algorithm execution",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "algorithm_cfg.h",
+        "line": "69",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/config"
+    },
+    {
+      "id": "ALGO-CFG-002",
+      "content": "Each algorithm task configuration shall include: current execution state, cycle time in ms, maximum calculation duration in ms, start timestamp, initialization function pointer, and computation function pointer",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "algorithm_cfg.h",
+        "line": "94-102",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/config"
+    },
+    {
+      "id": "ALGO-MA-001",
+      "content": "The moving average algorithm shall calculate current and power moving averages over multiple time windows: 1s, 5s, 10s, 30s, 60s, and a configurable interval",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "moving_average.c",
+        "line": "71-101",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/moving_average"
+    },
+    {
+      "id": "ALGO-MA-002",
+      "content": "The configurable moving average duration for current measurement shall be MOVING_AVERAGE_DURATION_CURRENT_CONFIG_ms = 3000ms",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "moving_average.h",
+        "line": "62",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/moving_average"
+    },
+    {
+      "id": "ALGO-MA-003",
+      "content": "The configurable moving average duration for power measurement shall be MOVING_AVERAGE_DURATION_POWER_CONFIG_ms = 3000ms",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "moving_average.h",
+        "line": "63",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/moving_average"
+    },
+    {
+      "id": "ALGO-MA-004",
+      "content": "The moving average algorithm shall only use valid current measurements (invalidCurrentMeasurement flag equals 0) for calculations",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "moving_average.c",
+        "line": "201-206",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/moving_average"
+    },
+    {
+      "id": "ALGO-MA-005",
+      "content": "The moving average algorithm shall only use valid power measurements (invalidPowerMeasurement flag equals 0) for calculations",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "moving_average.c",
+        "line": "321-326",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/moving_average"
+    },
+    {
+      "id": "ALGO-SE-001",
+      "content": "The state estimation module shall provide wrapper functions for SOC, SOE, and SOH initialization that delegate to algorithm-specific implementations",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "state_estimation.h",
+        "line": "74-92",
+        "extraction_type": "doxygen"
+      },
+      "module": "algorithm/state_estimation"
+    },
+    {
+      "id": "ALGO-SE-002",
+      "content": "The state estimation module shall provide a main function (SE_RunStateEstimations) that executes SOC, SOE, and SOH calculations in sequence",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "state_estimation.c",
+        "line": "95-101",
+        "extraction_type": "doxygen"
+      },
+      "module": "algorithm/state_estimation"
+    },
+    {
+      "id": "ALGO-SE-003",
+      "content": "The state estimation module shall validate the stringNumber parameter to be less than BS_NR_OF_STRINGS for all initialization functions",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "state_estimation.c",
+        "line": "78,84,90",
+        "extraction_type": "assertion"
+      },
+      "module": "algorithm/state_estimation"
+    },
+    {
+      "id": "ALGO-SE-004",
+      "content": "The state estimation module shall write updated SOC, SOE, and SOH values to the database after calculation",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "state_estimation.c",
+        "line": "100",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/state_estimation"
+    },
+    {
+      "id": "ALGO-SOC-001",
+      "content": "The SOC counting algorithm shall calculate State of Charge using coulomb counting (Ah integration) based on current sensor measurements",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "soc_counting.c",
+        "line": "51-52",
+        "extraction_type": "doxygen"
+      },
+      "module": "algorithm/soc"
+    },
+    {
+      "id": "ALGO-SOC-002",
+      "content": "The SOC initialization function shall validate that pSocValues pointer is not NULL",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "soc_counting.c",
+        "line": "254",
+        "extraction_type": "assertion"
+      },
+      "module": "algorithm/soc"
+    },
+    {
+      "id": "ALGO-SOC-003",
+      "content": "The SOC initialization function shall validate that stringNumber is less than BS_NR_OF_STRINGS",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "soc_counting.c",
+        "line": "255",
+        "extraction_type": "assertion"
+      },
+      "module": "algorithm/soc"
+    },
+    {
+      "id": "ALGO-SOC-004",
+      "content": "The SOC calculation function shall validate that pSocValues pointer is not NULL before processing",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "soc_counting.c",
+        "line": "301",
+        "extraction_type": "assertion"
+      },
+      "module": "algorithm/soc"
+    },
+    {
+      "id": "ALGO-SOC-005",
+      "content": "The SOC values shall be limited to the range 0.0% to 100.0% (SOC_MINIMUM_SOC_perc to SOC_MAXIMUM_SOC_perc)",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "soc_counting.c",
+        "line": "84-87",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/soc"
+    },
+    {
+      "id": "ALGO-SOC-006",
+      "content": "The SOC module shall track minimum, maximum, and average SOC values per string",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "soc_counting.c",
+        "line": "189-191",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/soc"
+    },
+    {
+      "id": "ALGO-SOC-007",
+      "content": "The SOC module shall recalibrate SOC values via voltage-based lookup table when the battery system is at rest (BMS_AT_REST)",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "soc_counting.c",
+        "line": "313-315",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/soc"
+    },
+    {
+      "id": "ALGO-SOC-008",
+      "content": "The SOC lookup function shall return SOC percentage in range 0.0% to 100.0% based on cell voltage input in mV",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "state_estimation.h",
+        "line": "119-124",
+        "extraction_type": "doxygen"
+      },
+      "module": "algorithm/soc"
+    },
+    {
+      "id": "ALGO-SOC-009",
+      "content": "The SOC module shall support coulomb counting from current sensor when available (ccPresent = true) or fallback to current integration",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "soc_counting.c",
+        "line": "260-282",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/soc"
+    },
+    {
+      "id": "ALGO-SOC-010",
+      "content": "The SOC module shall persist SOC values to non-volatile memory (FRAM) for recovery after power cycle",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "soc_counting.c",
+        "line": "178,214,395",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/soc"
+    },
+    {
+      "id": "ALGO-SOC-011",
+      "content": "The SOC module shall track charge throughput and discharge throughput in Ampere-seconds per string",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "soc_counting.c",
+        "line": "78-79,342-348",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/soc"
+    },
+    {
+      "id": "ALGO-SOC-012",
+      "content": "The string capacity for SOC calculation shall be derived from BC_CAPACITY_mAh multiplied by BS_NR_OF_PARALLEL_CELLS_PER_CELL_BLOCK",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "soc_counting_cfg.h",
+        "line": "73",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/soc"
+    },
+    {
+      "id": "ALGO-SOC-013",
+      "content": "The SOC lookup table shall use linear interpolation between voltage points and shall not extrapolate beyond table boundaries",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "soc_counting.c",
+        "line": "415-430",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/soc"
+    },
+    {
+      "id": "ALGO-SOE-001",
+      "content": "The SOE counting algorithm shall calculate State of Energy using energy counting (Wh integration) based on current and voltage measurements",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "soe_counting.c",
+        "line": "51-52",
+        "extraction_type": "doxygen"
+      },
+      "module": "algorithm/soe"
+    },
+    {
+      "id": "ALGO-SOE-002",
+      "content": "The SOE initialization function shall validate that pSoeValues pointer is not NULL",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "soe_counting.c",
+        "line": "322",
+        "extraction_type": "assertion"
+      },
+      "module": "algorithm/soe"
+    },
+    {
+      "id": "ALGO-SOE-003",
+      "content": "The SOE initialization function shall validate that stringNumber is less than BS_NR_OF_STRINGS",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "soe_counting.c",
+        "line": "323",
+        "extraction_type": "assertion"
+      },
+      "module": "algorithm/soe"
+    },
+    {
+      "id": "ALGO-SOE-004",
+      "content": "The SOE calculation function shall validate that pSoeValues pointer is not NULL before processing",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "soe_counting.c",
+        "line": "368",
+        "extraction_type": "assertion"
+      },
+      "module": "algorithm/soe"
+    },
+    {
+      "id": "ALGO-SOE-005",
+      "content": "The SOE values shall be limited to the range 0.0% to 100.0% (MINIMUM_SOE_PERC to MAXIMUM_SOE_PERC)",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "soe_counting.c",
+        "line": "88-89",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/soe"
+    },
+    {
+      "id": "ALGO-SOE-006",
+      "content": "The SOE module shall track minimum, maximum, and average SOE values per string in both percentage and Wh units",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "soe_counting.c",
+        "line": "265-271",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/soe"
+    },
+    {
+      "id": "ALGO-SOE-007",
+      "content": "The SOE module shall recalibrate SOE values via voltage-based lookup table when the battery system is at rest (BMS_AT_REST)",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "soe_counting.c",
+        "line": "379-381",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/soe"
+    },
+    {
+      "id": "ALGO-SOE-008",
+      "content": "The SOE module shall support energy counting from current sensor when available (ec_present = true) or fallback to manual energy integration",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "soe_counting.c",
+        "line": "343-363",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/soe"
+    },
+    {
+      "id": "ALGO-SOE-009",
+      "content": "The SOE module shall persist SOE values to non-volatile memory (FRAM) for recovery after power cycle",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "soe_counting.c",
+        "line": "215,481",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/soe"
+    },
+    {
+      "id": "ALGO-SOE-010",
+      "content": "The SOE module shall track charge energy throughput and discharge energy throughput in Wh per string",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "soe_counting.c",
+        "line": "80-81,409-416",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/soe"
+    },
+    {
+      "id": "ALGO-SOE-011",
+      "content": "The string energy for SOE calculation shall be derived from BC_ENERGY_Wh multiplied by BS_NR_OF_CELL_BLOCKS_PER_STRING and BS_NR_OF_PARALLEL_CELLS_PER_CELL_BLOCK",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "soe_counting_cfg.h",
+        "line": "74-75",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/soe"
+    },
+    {
+      "id": "ALGO-SOE-012",
+      "content": "The SOE lookup table shall use linear interpolation between voltage points and shall not extrapolate beyond table boundaries",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "soe_counting.c",
+        "line": "232-248",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/soe"
+    },
+    {
+      "id": "ALGO-SOH-001",
+      "content": "The SOH module shall calculate State of Health and provide minimum, maximum, and average SOH values per string",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "state_estimation.h",
+        "line": "141-151",
+        "extraction_type": "doxygen"
+      },
+      "module": "algorithm/soh"
+    },
+    {
+      "id": "ALGO-SOH-002",
+      "content": "The SOH initialization function shall validate that pSohValues pointer is not NULL",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "soh_none.c",
+        "line": "72",
+        "extraction_type": "assertion"
+      },
+      "module": "algorithm/soh"
+    },
+    {
+      "id": "ALGO-SOH-003",
+      "content": "The SOH initialization function shall validate that stringNumber is less than BS_NR_OF_STRINGS",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "soh_none.c",
+        "line": "73",
+        "extraction_type": "assertion"
+      },
+      "module": "algorithm/soh"
+    },
+    {
+      "id": "ALGO-SOH-004",
+      "content": "The SOH calculation function shall validate that pSohValues pointer is not NULL before processing",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "soh_none.c",
+        "line": "77",
+        "extraction_type": "assertion"
+      },
+      "module": "algorithm/soh"
+    },
+    {
+      "id": "ALGO-SOF-001",
+      "content": "The SOF trapezoid algorithm shall calculate State of Function (current derating) based on cell voltage and temperature limits using a trapezoidal profile",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.h",
+        "line": "51-53",
+        "extraction_type": "doxygen"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-002",
+      "content": "The SOF module shall calculate four current limits: continuous charge, peak charge, continuous discharge, and peak discharge currents",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.h",
+        "line": "69-74",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-003",
+      "content": "The SOF initialization (SOF_Init) shall calculate the derating curve parameters at startup using linear function parameter extraction",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.h",
+        "line": "100-108",
+        "extraction_type": "doxygen"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-004",
+      "content": "The SOF voltage-based current limit calculation shall validate that all pointer parameters are not NULL",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.c",
+        "line": "197-199",
+        "extraction_type": "assertion"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-005",
+      "content": "The SOF temperature-based current limit calculation shall validate that all pointer parameters are not NULL",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.c",
+        "line": "242-244",
+        "extraction_type": "assertion"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-006",
+      "content": "The SOF module shall set discharge current to zero when cell voltage is at or below the limit lower cell voltage threshold",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.c",
+        "line": "204-207",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-007",
+      "content": "The SOF module shall set charge current to zero when cell voltage is at or above the limit upper cell voltage threshold",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.c",
+        "line": "220-223",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-008",
+      "content": "The SOF module shall derate discharge current at low temperatures, allowing limp home current below cutoff temperature and zero current below limit temperature",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.c",
+        "line": "250-265",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-009",
+      "content": "The SOF module shall derate charge current at low temperatures, allowing zero current below limit temperature",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.c",
+        "line": "267-281",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-010",
+      "content": "The SOF module shall derate discharge current at high temperatures, setting to zero above limit temperature",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.c",
+        "line": "283-305",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-011",
+      "content": "The SOF module shall derate charge current at high temperatures, setting to zero above limit temperature",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.c",
+        "line": "307-329",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-012",
+      "content": "The SOF module shall calculate the minimum of voltage-based and temperature-based current limits as the final allowed current",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.c",
+        "line": "332-347,387",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-013",
+      "content": "The SOF module shall only calculate current limits for strings that are currently closed (connected)",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.c",
+        "line": "374",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-014",
+      "content": "The SOF module shall set all pack current limits to zero when a transition to ERROR state is active in the BMS state machine",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.c",
+        "line": "426-431",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-015",
+      "content": "The SOF pack current limits shall be calculated as the sum of minimum string currents across all closed strings",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.c",
+        "line": "418-421",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-016",
+      "content": "The SOF string current shall be limited to BS_MAXIMUM_STRING_CURRENT_mA maximum",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid.c",
+        "line": "410-415",
+        "extraction_type": "interface"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-CFG-001",
+      "content": "The maximum continuous charge current shall be calculated from BC_CURRENT_MAX_CHARGE_MOL_mA multiplied by BS_NR_OF_PARALLEL_CELLS_PER_CELL_BLOCK",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid_cfg.h",
+        "line": "72-73",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-CFG-002",
+      "content": "The maximum continuous discharge current shall be calculated from BC_CURRENT_MAX_DISCHARGE_MOL_mA multiplied by BS_NR_OF_PARALLEL_CELLS_PER_CELL_BLOCK",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid_cfg.h",
+        "line": "79-80",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-CFG-003",
+      "content": "The limp home current shall be configured as SOF_STRING_CURRENT_LIMP_HOME_mA = 20000mA",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid_cfg.h",
+        "line": "87",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-CFG-004",
+      "content": "The low temperature discharge cutoff shall be derived from BC_TEMPERATURE_MIN_DISCHARGE_MOL_ddegC",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid_cfg.h",
+        "line": "94",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-CFG-005",
+      "content": "The low temperature discharge limit shall be derived from BC_TEMPERATURE_MIN_DISCHARGE_MSL_ddegC",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid_cfg.h",
+        "line": "101",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-CFG-006",
+      "content": "The low temperature charge cutoff shall be derived from BC_TEMPERATURE_MIN_CHARGE_MOL_ddegC",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid_cfg.h",
+        "line": "108",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-CFG-007",
+      "content": "The low temperature charge limit shall be derived from BC_TEMPERATURE_MIN_CHARGE_MSL_ddegC",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid_cfg.h",
+        "line": "115",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-CFG-008",
+      "content": "The high temperature discharge cutoff shall be derived from BC_TEMPERATURE_MAX_DISCHARGE_MOL_ddegC",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid_cfg.h",
+        "line": "122",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-CFG-009",
+      "content": "The high temperature discharge limit shall be derived from BC_TEMPERATURE_MAX_DISCHARGE_MSL_ddegC",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid_cfg.h",
+        "line": "129",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-CFG-010",
+      "content": "The high temperature charge cutoff shall be derived from BC_TEMPERATURE_MAX_CHARGE_MOL_ddegC",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid_cfg.h",
+        "line": "136",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-CFG-011",
+      "content": "The high temperature charge limit shall be derived from BC_TEMPERATURE_MAX_CHARGE_MSL_ddegC",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid_cfg.h",
+        "line": "143",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-CFG-012",
+      "content": "The upper cell voltage cutoff for charge derating shall be derived from BC_VOLTAGE_MAX_MOL_mV",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid_cfg.h",
+        "line": "148",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-CFG-013",
+      "content": "The upper cell voltage limit for charge derating shall be derived from BC_VOLTAGE_MAX_RSL_mV",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid_cfg.h",
+        "line": "153",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-CFG-014",
+      "content": "The lower cell voltage cutoff for discharge derating shall be derived from BC_VOLTAGE_MIN_MOL_mV",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid_cfg.h",
+        "line": "158",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/sof"
+    },
+    {
+      "id": "ALGO-SOF-CFG-015",
+      "content": "The lower cell voltage limit for discharge derating shall be derived from BC_VOLTAGE_MIN_RSL_mV",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sof_trapezoid_cfg.h",
+        "line": "163",
+        "extraction_type": "config"
+      },
+      "module": "algorithm/sof"
+    }
+  ],
+  "extraction_summary": {
+    "total_requirements": 84,
+    "by_type": {
+      "SWE": 47,
+      "FSR": 16,
+      "CFG": 21,
+      "HSI": 0
+    },
+    "by_classification": {
+      "functional": 40,
+      "safety": 16,
+      "interface": 11,
+      "constraint": 17
+    },
+    "by_confidence": {
+      "high": 84,
+      "medium": 0,
+      "low": 0
+    },
+    "by_module": {
+      "algorithm/manager": 10,
+      "algorithm/config": 2,
+      "algorithm/moving_average": 5,
+      "algorithm/state_estimation": 4,
+      "algorithm/soc": 14,
+      "algorithm/soe": 12,
+      "algorithm/soh": 4,
+      "algorithm/sof": 33
+    },
+    "by_extraction_type": {
+      "doxygen": 12,
+      "assertion": 14,
+      "state_machine": 1,
+      "config": 22,
+      "interface": 35
+    }
+  }
+}

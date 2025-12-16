@@ -1,0 +1,17 @@
+<map id="HTSEN_ConvertRawHumidity" name="HTSEN_ConvertRawHumidity">
+<area shape="rect" id="Node000001" title="computes humidity measurement from raw value." alt="" coords="1265,5,1477,31"/>
+<area shape="rect" id="Node000002" href="$htsensor_8c.html#ae6b448a3870812ef650e9d4229160d33" title="triggers a measurement of the I2C humidity/temperature sensor." alt="" coords="1100,5,1217,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1252,21,1217,21,1217,15,1252,15"/>
+<area shape="rect" id="Node000003" href="$ftask__cfg_8c.html#a6be3660b7f0fd3125febd329f698fdd0" title="Continuously running task for I2C." alt="" coords="884,5,1052,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1086,21,1052,21,1052,15,1086,15"/>
+<area shape="rect" id="Node000004" href="$ftask_8c.html#afb6bf58f9deabd4c07bf1d23fb68bb23" title="Creation of continuously running task for I2c." alt="" coords="684,5,836,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="870,21,837,21,837,15,870,15"/>
+<area shape="rect" id="Node000005" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,5,636,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="670,21,637,21,637,15,670,15"/>
+<area shape="rect" id="Node000006" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,5,448,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="482,21,448,21,448,15,482,15"/>
+<area shape="rect" id="Node000007" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,5,184,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="218,21,184,21,184,15,218,15"/>
+<area shape="rect" id="Node000008" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,5,81,31"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="116,21,82,21,82,15,116,15"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="AFE_Initialize" name="AFE_Initialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,116,105"/>
+<area shape="rect" id="Node000002" href="$nxp__mc33775a__afe_8c.html#a7bd1bfeeaf45758a46b525e5ca37112c" title=" " alt="" coords="164,80,276,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,90,150,90,150,95,116,95"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="351,5,496,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="242,78,279,58,323,40,347,32,349,37,325,44,282,63,245,82"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="356,55,491,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="276,83,342,75,343,80,277,88"/>
+<area shape="rect" id="Node000005" href="$pex_8c.html#a8d40659d3d10755949d65e36f483c504" title="sets pin to high." alt="" coords="376,104,471,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="276,97,362,107,362,112,276,102"/>
+<area shape="rect" id="Node000008" href="$pex_8c.html#aa2309e9dbd95438d52d80cad62ce5a45" title="sets pin to input." alt="" coords="324,153,523,179"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="246,103,325,138,353,147,352,152,323,143,244,108"/>
+<area shape="rect" id="Node000006" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="571,104,727,129"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="471,114,557,114,557,119,471,119"/>
+<area shape="rect" id="Node000007" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="575,153,722,179"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="471,124,577,148,576,153,470,129"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="481,151,576,130,577,135,483,156"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="523,163,561,163,561,169,523,169"/>
+</map>

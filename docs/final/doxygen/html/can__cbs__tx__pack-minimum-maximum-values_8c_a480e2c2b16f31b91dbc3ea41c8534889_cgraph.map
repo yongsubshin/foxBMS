@@ -1,0 +1,7 @@
+<map id="CANTX_GetPackMinimumTemperature" name="CANTX_GetPackMinimumTemperature">
+<area shape="rect" id="Node000001" title="Gets the value of the minimum pack temperature." alt="" coords="5,42,276,67"/>
+<area shape="rect" id="Node000002" href="$bms_8c.html#a95febd341b208a988bb0462e81febca8" title="Returns number of connected strings." alt="" coords="324,5,541,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,39,310,35,310,40,267,45"/>
+<area shape="rect" id="Node000003" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="357,70,508,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="273,65,344,72,343,77,273,70"/>
+</map>

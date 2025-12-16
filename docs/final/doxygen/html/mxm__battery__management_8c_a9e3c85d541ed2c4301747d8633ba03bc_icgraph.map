@@ -1,0 +1,33 @@
+<map id="MXM_52IsUserAccessibleRegister" name="MXM_52IsUserAccessibleRegister">
+<area shape="rect" id="Node000001" title="Check if a register address is user accessible in MAX17852." alt="" coords="1385,109,1628,134"/>
+<area shape="rect" id="Node000002" href="$mxm__battery__management_8c.html#adcda2712e58935f41533d2b54c90aee5" title="Check if a register address is user accessible." alt="" coords="1095,109,1337,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1372,124,1338,124,1338,119,1372,119"/>
+<area shape="rect" id="Node000003" href="$mxm__battery__management_8c.html#a3104abb7090df5484e17abc4a226cbbb" title="clears the command buffer and writes READALL into the buffer" alt="" coords="800,5,1047,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1171,106,1046,60,1006,48,1007,43,1048,55,1172,101"/>
+<area shape="rect" id="Node000008" href="$mxm__battery__management_8c.html#a37cd677bbc5d05d70dfb76a0a5eb4624" title="clears the command buffer and writes WRITEALL into the buffer" alt="" coords="800,69,1047,109"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="1086,110,1046,105,1047,100,1086,104"/>
+<area shape="rect" id="Node000010" href="$mxm__battery__management_8c.html#ae0d3c986bdb0719700b05d295c0cbae3" title="clears the command buffer and writes a WRITEDEVICE message" alt="" coords="800,133,1047,173"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="1086,138,1047,143,1046,137,1086,133"/>
+<area shape="rect" id="Node000011" href="$mxm__battery__management_8c.html#a871192ccec4147196c1ad237e68c1b40" title="runs a selfcheck for the address space check" alt="" coords="808,197,1039,237"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="1172,142,1048,188,1007,200,1006,195,1046,183,1171,137"/>
+<area shape="rect" id="Node000004" href="$mxm__battery__management_8c.html#a1df234e14c5b40e2798364aebc9e19f9" title="Handle the state MXM_STATEMACH_5X_READALL." alt="" coords="537,25,752,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="786,34,752,35,752,30,786,29"/>
+<area shape="rect" id="Node000005" href="$mxm__battery__management_8c.html#a325538715bf432ee4826598277aa29e3" title="Execute state&#45;machine for Battery Management Protocol." alt="" coords="321,85,489,110"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="581,56,457,87,456,82,579,51"/>
+<area shape="rect" id="Node000006" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="173,141,263,166"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="350,116,262,143,261,138,348,111"/>
+<area shape="rect" id="Node000007" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,166,115,191"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="160,165,116,173,115,167,159,160"/>
+<area shape="rect" id="Node000009" href="$mxm__battery__management_8c.html#a8338520796dd87a45d39dd40a035e3bd" title="Handle the states MXM_STATEMACH_5X_WRITEALL and MXM_STATEMACH_5X_WRITE_DEVICE." alt="" coords="545,85,744,110"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="786,96,744,97,744,92,786,91"/>
+<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="532,100,490,100,490,95,532,95"/>
+<area shape="poly" id="edge11_Node000010_Node000009" title=" " alt="" coords="809,133,708,113,709,107,811,128"/>
+<area shape="rect" id="Node000012" href="$mxm__1785x_8c.html#a22499bf1d575d8d09dc565b966339349" title="Execute all pre&#45;init self&#45;checks." alt="" coords="560,191,729,217"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="794,214,729,211,730,205,794,208"/>
+<area shape="rect" id="Node000013" href="$mxm__afe_8c.html#ab03833bf09e30722e8ef6b9e90cc353d" title=" " alt="" coords="163,190,273,215"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="546,206,273,206,273,200,546,201"/>
+<area shape="rect" id="Node000014" href="$mxm__1785x_8c.html#aca60f84fd030e06f1ab2c57ba6bb8e7d" title="Main state&#45;machine implementation." alt="" coords="330,141,481,166"/>
+<area shape="poly" id="edge16_Node000012_Node000014" title=" " alt="" coords="570,191,465,169,467,163,571,186"/>
+<area shape="poly" id="edge15_Node000013_Node000007" title=" " alt="" coords="149,195,114,190,115,184,149,190"/>
+<area shape="poly" id="edge17_Node000014_Node000006" title=" " alt="" coords="317,156,263,156,263,151,317,151"/>
+</map>

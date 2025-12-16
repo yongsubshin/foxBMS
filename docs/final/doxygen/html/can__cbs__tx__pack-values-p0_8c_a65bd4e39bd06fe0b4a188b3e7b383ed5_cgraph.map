@@ -1,0 +1,20 @@
+<map id="CANTX_BuildP0Message" name="CANTX_BuildP0Message">
+<area shape="rect" id="Node000001" title="builds the PackP0 message" alt="" coords="5,119,187,145"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="244,5,457,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,117,168,86,234,55,255,47,256,52,236,60,171,91,119,121"/>
+<area shape="rect" id="Node000004" href="$can__cbs__tx__pack-values-p0_8c.html#a803ccc0053e1d99b0f16bbd0fd0f104b" title="calculates the return value of the battery voltage" alt="" coords="235,70,467,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,117,271,95,272,101,163,122"/>
+<area shape="rect" id="Node000006" href="$can__cbs__tx__pack-values-p0_8c.html#a086cc8ad2505d2326710a09887185ce6" title="calculates the return value of the battery voltage" alt="" coords="247,119,455,145"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="187,129,233,129,233,135,187,135"/>
+<area shape="rect" id="Node000007" href="$can__cbs__tx__pack-values-p0_8c.html#a33ec8e8dcf535104aa63e04d023e2ed3" title="calculates the return value of the battery voltage" alt="" coords="259,169,442,194"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="163,142,272,163,271,169,162,147"/>
+<area shape="rect" id="Node000008" href="$can__cbs__tx__pack-values-p0_8c.html#aa92046c4b66bb581f5dbd5049fedceef" title="calculates the return value of the battery voltage" alt="" coords="263,218,438,243"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="118,142,170,173,236,204,261,212,259,217,234,209,167,178,115,147"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="515,13,737,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="457,23,501,23,501,28,457,28"/>
+<area shape="rect" id="Node000005" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="529,143,723,169"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="419,93,467,104,575,136,573,141,466,109,418,98"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="455,138,515,144,515,149,454,144"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="442,170,515,164,516,169,442,176"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="418,215,466,204,575,171,577,176,467,209,419,221"/>
+</map>

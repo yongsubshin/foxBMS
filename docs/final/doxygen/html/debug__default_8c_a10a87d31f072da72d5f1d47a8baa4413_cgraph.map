@@ -1,0 +1,19 @@
+<map id="FAKE_ProcessInitializationState" name="FAKE_ProcessInitializationState">
+<area shape="rect" id="Node000001" title="Processes the initialization state." alt="" coords="5,133,197,173"/>
+<area shape="rect" id="Node000002" href="$debug__default_8c.html#aab8534c5be8d61cb3f1f9f335d15e652" title="return whether the first measurement cycle is finished" alt="" coords="278,69,505,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,131,245,119,286,110,287,115,246,124,192,136"/>
+<area shape="rect" id="Node000005" href="$debug__default_8c.html#a16164818c401d35ed3e28bfa13b282db" title="Write temperature measurement data." alt="" coords="289,133,493,173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="198,151,276,151,276,156,198,156"/>
+<area shape="rect" id="Node000006" href="$debug__default_8c.html#a136ef9e582647d6e404737c350daec02" title="Write voltage measurement data." alt="" coords="245,198,537,223"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="189,171,246,183,301,193,300,198,245,188,188,176"/>
+<area shape="rect" id="Node000007" href="$debug__default_8c.html#a1a89964c5c8faba29fe50b76e53271f1" title="Sets the indicator that one full measurement cycles was successful." alt="" coords="291,5,491,45"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="125,131,177,92,244,55,277,43,279,48,246,60,180,97,128,135"/>
+<area shape="rect" id="Node000008" href="$debug__default_8c.html#aed7fa787a0f37e83b1664a3f2f3030bc" title="Sets the next substate and the timer value of the state variable." alt="" coords="322,247,461,273"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="132,171,184,204,246,233,309,249,308,254,244,239,181,209,129,176"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="585,17,741,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="483,67,537,55,592,42,593,48,538,60,484,72"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="590,70,737,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="505,84,576,82,576,87,505,89"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="491,24,572,25,572,31,491,29"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="487,43,590,65,589,70,486,48"/>
+</map>

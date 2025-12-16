@@ -1,0 +1,17 @@
+<map id="LTC_CheckStateRequest" name="LTC_CheckStateRequest">
+<area shape="rect" id="Node000001" title="checks the state requests that are made." alt="" coords="527,129,705,155"/>
+<area shape="rect" id="Node000002" href="$ltc__6806_8c.html#a4bb4d1d651bd80b2151b62d35e3a2699" title="sets the current state request of the state variable ltc_state." alt="" coords="320,129,479,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="513,145,479,145,479,139,513,139"/>
+<area shape="rect" id="Node000003" href="$ltc__afe_8c.html#a50f12334f9b0fe3ed02e981d8719bdf8" title="Makes the request to the AFE state machine to read balancing feedback from the slaves." alt="" coords="5,5,272,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="375,121,329,81,301,61,271,44,239,33,241,28,273,40,304,56,333,77,378,117"/>
+<area shape="rect" id="Node000004" href="$ltc__afe_8c.html#a06aa90f6f0c6b94404fe41e7c59d9559" title="Makes the request to the AFE state machine to read from the external EEPROM on slaves." alt="" coords="43,55,234,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="358,126,271,94,224,83,225,77,273,89,360,121"/>
+<area shape="rect" id="Node000005" href="$ltc__afe_8c.html#a0957e75c9c3201d46962d11616df2454" title="Makes the request to the AFE state machine to write to the external EEPROM on slaves." alt="" coords="43,104,235,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="306,136,234,129,235,123,307,130"/>
+<area shape="rect" id="Node000006" href="$ltc__afe_8c.html#a39dbbdfedd5cba3c54606ab2201b3575" title="Makes the request to the AFE state machine to perform open&#45;wire check." alt="" coords="33,153,244,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="306,153,244,159,244,154,306,148"/>
+<area shape="rect" id="Node000007" href="$ltc__afe_8c.html#a6156d307209cbe933ff3ba53446e829c" title="Makes the request to the AFE state machine to read from the external temperature sensor on slaves." alt="" coords="27,203,250,228"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="358,162,273,193,219,205,218,200,271,187,356,157"/>
+<area shape="rect" id="Node000008" href="$ltc__afe_8c.html#ab3b5eae4af8524afe67f0dd7a7d54829" title="Makes the initialization request to the AFE state machine." alt="" coords="51,252,226,277"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="378,166,332,205,304,225,273,242,227,257,225,252,271,237,301,221,329,201,374,162"/>
+</map>

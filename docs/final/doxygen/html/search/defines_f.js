@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['unit_5fconversion_5ffactor_5f1000000_5finteger_0',['UNIT_CONVERSION_FACTOR_1000000_INTEGER',['../foxmath_8h.html#a6a9b399bf222c2dbb2b0ee7a54dc25d2',1,'foxmath.h']]],
+  ['unit_5fconversion_5ffactor_5f1000_5ffloat_1',['UNIT_CONVERSION_FACTOR_1000_FLOAT',['../foxmath_8h.html#a46606019ffdf10818217e2eb3e42123a',1,'foxmath.h']]],
+  ['unit_5fconversion_5ffactor_5f1000_5finteger_2',['UNIT_CONVERSION_FACTOR_1000_INTEGER',['../foxmath_8h.html#abfd8472944571dc705a067b9f5b45086',1,'foxmath.h']]],
+  ['unit_5fconversion_5ffactor_5f100_5ffloat_3',['UNIT_CONVERSION_FACTOR_100_FLOAT',['../foxmath_8h.html#ae8d12a63cc8fbbc8cdb82e8c4cc6f519',1,'foxmath.h']]],
+  ['unit_5fconversion_5ffactor_5f100_5finteger_4',['UNIT_CONVERSION_FACTOR_100_INTEGER',['../foxmath_8h.html#a55c9f5aa78cf5ad07c6cd51cde758f22',1,'foxmath.h']]],
+  ['unit_5fconversion_5ffactor_5f10_5ffloat_5',['UNIT_CONVERSION_FACTOR_10_FLOAT',['../foxmath_8h.html#afbdcf9114d7a034092b248291d0b55ba',1,'foxmath.h']]],
+  ['unit_5fconversion_5ffactor_5f1_5f1000_5fth_5ffloat_6',['UNIT_CONVERSION_FACTOR_1_1000_TH_FLOAT',['../foxmath_8h.html#a0bc05eaefc7a822f5bc5c39b53660084',1,'foxmath.h']]],
+  ['unit_5fconversion_5ffactor_5f1_5f100_5fth_5ffloat_7',['UNIT_CONVERSION_FACTOR_1_100_TH_FLOAT',['../foxmath_8h.html#a2a9ab3c4caa52ede5ca113d92002f781',1,'foxmath.h']]],
+  ['unit_5fconversion_5ffactor_5f1_5f10_5fth_5ffloat_8',['UNIT_CONVERSION_FACTOR_1_10_TH_FLOAT',['../foxmath_8h.html#a93a9ab59c8f8d7a69908da19a19aabaa',1,'foxmath.h']]],
+  ['unit_5fconversion_5ffactor_5f1_5ffloat_9',['UNIT_CONVERSION_FACTOR_1_FLOAT',['../foxmath_8h.html#ad6bee38f476e5d521ea14a2f7b7b039c',1,'foxmath.h']]],
+  ['unit_5fconversion_5ffactor_5f85_5finteger_10',['UNIT_CONVERSION_FACTOR_85_INTEGER',['../foxmath_8h.html#a9bb55d646d5df0a1e7e344b4eb66f018',1,'foxmath.h']]],
+  ['util_5fbit_5fmask_5flsb_11',['UTIL_BIT_MASK_LSB',['../utils_8h.html#ac09ff33a793dcc97abc4780743d7984c',1,'utils.h']]],
+  ['util_5fshift_5ffour_5fbytes_12',['UTIL_SHIFT_FOUR_BYTES',['../utils_8h.html#a1446f3e20409569c09c209e40a52905f',1,'utils.h']]],
+  ['util_5fshift_5fone_5fbyte_13',['UTIL_SHIFT_ONE_BYTE',['../utils_8h.html#ac6660b7215ad0bbf524ad36f391d1b83',1,'utils.h']]],
+  ['util_5fshift_5fthree_5fbytes_14',['UTIL_SHIFT_THREE_BYTES',['../utils_8h.html#a992ba8dd386854caa8c45dc95c959ed1',1,'utils.h']]],
+  ['util_5fshift_5ftwo_5fbytes_15',['UTIL_SHIFT_TWO_BYTES',['../utils_8h.html#a99f08ea6e44a35db32bca748cdfbb942',1,'utils.h']]],
+  ['util_5fshift_5fzero_5fbytes_16',['UTIL_SHIFT_ZERO_BYTES',['../utils_8h.html#aa0619e6e8aa39b643a840eb14f3193bf',1,'utils.h']]]
+];

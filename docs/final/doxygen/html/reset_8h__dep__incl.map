@@ -1,0 +1,7 @@
+<map id="foxbms&#45;2/src/app/engine/sys/reset.h" name="foxbms&#45;2/src/app/engine/sys/reset.h">
+<area shape="rect" id="Node000001" title="Software reset driver header." alt="" coords="104,5,287,45"/>
+<area shape="rect" id="Node000002" href="$can__cbs__rx__debug_8c.html" title="CAN driver Rx callback implementation." alt="" coords="5,93,183,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,57,124,95,121,91,163,53"/>
+<area shape="rect" id="Node000003" href="$reset_8c.html" title="Software reset driver." alt="" coords="207,101,389,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="228,53,279,99,275,103,225,57"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="FTSK_RunUserCodeCyclicAlgorithm100ms" name="FTSK_RunUserCodeCyclicAlgorithm100ms">
+<area shape="rect" id="Node000001" title="Cyclic 100 ms task for algorithms." alt="" coords="1012,5,1308,31"/>
+<area shape="rect" id="Node000002" href="$ftask_8c.html#a0ccb7ad889fa219c5243127bf8fbd8a3" title="Creation of cyclic 100 ms algorithm task." alt="" coords="684,5,964,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="999,21,964,21,964,15,999,15"/>
+<area shape="rect" id="Node000003" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,5,636,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="670,21,636,21,636,15,670,15"/>
+<area shape="rect" id="Node000004" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,5,448,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="482,21,448,21,448,15,482,15"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,5,184,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="218,21,184,21,184,15,218,15"/>
+<area shape="rect" id="Node000006" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,5,81,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="116,21,82,21,82,15,116,15"/>
+</map>

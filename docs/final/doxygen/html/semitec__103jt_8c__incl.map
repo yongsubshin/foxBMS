@@ -1,0 +1,28 @@
+<map id="foxbms&#45;2/src/app/driver/ts/semitec/103jt/semitec_103jt.c" name="foxbms&#45;2/src/app/driver/ts/semitec/103jt/semitec_103jt.c">
+<area shape="rect" id="Node000001" title="Resistive divider used for measuring temperature." alt="" coords="231,5,418,60"/>
+<area shape="rect" id="Node000002" href="$semitec__103jt_8h.html" title="Resistive divider used for measuring temperature." alt="" coords="5,115,132,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,63,114,113,112,108,252,58"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="188,196,259,221"/>
+<area shape="poly" id="edge16_Node000001_Node000003" title=" " alt="" coords="251,62,221,82,198,109,192,127,194,146,209,183,205,185,189,148,187,127,193,107,217,78,248,58"/>
+<area shape="rect" id="Node000004" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="208,115,287,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="305,62,268,106,264,103,301,59"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="283,196,366,221"/>
+<area shape="poly" id="edge15_Node000001_Node000005" title=" " alt="" coords="327,60,327,183,322,183,322,60"/>
+<area shape="rect" id="Node000006" href="$foxmath_8h.html" title="Math library for often used math functions." alt="" coords="592,115,681,141"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="413,58,586,109,585,114,412,63"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="509,196,577,221"/>
+<area shape="poly" id="edge14_Node000001_Node000007" title=" " alt="" coords="419,44,449,53,479,66,507,84,531,106,541,124,547,144,549,182,544,182,542,145,536,126,527,110,504,88,477,71,448,58,417,49"/>
+<area shape="rect" id="Node000010" href="$temperature__sensor__defs_8h.html" title="TODO." alt="" coords="363,108,516,148"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="359,58,407,97,404,101,356,62"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,138,189,187,187,192,90,143"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="246,142,233,183,228,182,241,140"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="261,139,305,184,302,188,257,143"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="592,140,273,199,272,193,591,135"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="625,143,569,189,566,185,621,139"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="696,196,759,221"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="652,139,705,185,702,189,648,143"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="601,196,672,221"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="639,141,639,182,634,182,634,141"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="389,151,269,194,267,189,387,146"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="466,146,519,185,515,190,463,150"/>
+</map>

@@ -1,0 +1,466 @@
+{
+  "metadata": {
+    "document_id": "FBMS-WP-SWE3-TRACE",
+    "version": "1.0.0",
+    "generation_date": "2025-12-16",
+    "phase": "L3 - Software Detailed Design",
+    "aspice_process": "SWE.3",
+    "description": "Design element traceability for V-Model L3 phase"
+  },
+  "design_elements": {
+    "COMP-APP-BMS": {
+      "document": "detailed-design-bms.md",
+      "type": "Software Unit",
+      "asil": "D",
+      "source_files": [
+        "foxbms-2/src/app/application/bms/bms.c",
+        "foxbms-2/src/app/application/bms/bms.h",
+        "foxbms-2/src/app/application/config/bms_cfg.h"
+      ],
+      "state_machines": {
+        "BMS_STATEMACH_e": {
+          "states": 13,
+          "description": "BMS main state machine"
+        },
+        "BMS_STATEMACH_SUB_e": {
+          "states": 24,
+          "description": "BMS substate machine"
+        }
+      },
+      "functions": [
+        {
+          "name": "BMS_Trigger",
+          "safety_critical": true,
+          "asil": "D",
+          "assertions": 0,
+          "description": "Main state machine trigger"
+        },
+        {
+          "name": "BMS_SetStateRequest",
+          "safety_critical": true,
+          "asil": "D",
+          "assertions": 0,
+          "description": "State request handler"
+        },
+        {
+          "name": "BMS_CheckPrecharge",
+          "safety_critical": true,
+          "asil": "D",
+          "assertions": 2,
+          "description": "Precharge verification"
+        },
+        {
+          "name": "BMS_IsBatterySystemStateOkay",
+          "safety_critical": true,
+          "asil": "D",
+          "assertions": 0,
+          "description": "System state verification"
+        },
+        {
+          "name": "BMS_GetFirstContactorToBeOpened",
+          "safety_critical": true,
+          "asil": "D",
+          "assertions": 1,
+          "description": "Safe contactor opening order"
+        }
+      ],
+      "data_structures": [
+        {
+          "name": "BMS_STATE_s",
+          "description": "BMS state variable structure",
+          "fields": 28
+        }
+      ],
+      "safety_mechanisms": {
+        "fas_assert_count": 24,
+        "fas_trap_count": 4,
+        "reentrance_protection": true,
+        "critical_sections": true
+      },
+      "traced_requirements": [
+        "FBMS-FUNC-APP-001",
+        "FBMS-FUNC-APP-002",
+        "FBMS-FUNC-APP-003",
+        "FBMS-SAFETY-APP-001",
+        "FBMS-SAFETY-APP-002",
+        "FBMS-SAFETY-APP-003"
+      ]
+    },
+    "COMP-DRV-AFE": {
+      "document": "detailed-design-afe.md",
+      "type": "Software Unit",
+      "asil": "D",
+      "source_files": [
+        "foxbms-2/src/app/driver/afe/api/afe.h",
+        "foxbms-2/src/app/driver/afe/adi/*.c",
+        "foxbms-2/src/app/driver/afe/maxim/*.c",
+        "foxbms-2/src/app/driver/afe/ltc/*.c",
+        "foxbms-2/src/app/driver/afe/nxp/*.c"
+      ],
+      "supported_devices": [
+        "ADI ADES183x",
+        "Maxim MAX1785x",
+        "LTC6811/6813",
+        "NXP MC33775A"
+      ],
+      "functions": [
+        {
+          "name": "AFE_TriggerIc",
+          "safety_critical": true,
+          "asil": "D",
+          "description": "AFE state machine trigger"
+        },
+        {
+          "name": "AFE_Initialize",
+          "safety_critical": true,
+          "asil": "D",
+          "description": "AFE initialization"
+        },
+        {
+          "name": "AFE_IsFirstMeasurementCycleFinished",
+          "safety_critical": true,
+          "asil": "D",
+          "description": "First measurement validation"
+        },
+        {
+          "name": "AFE_RequestOpenWireCheck",
+          "safety_critical": true,
+          "asil": "D",
+          "description": "Open wire detection"
+        }
+      ],
+      "data_structures": [
+        {
+          "name": "AFE_I2C_QUEUE_s",
+          "description": "I2C transfer queue",
+          "fields": 8
+        }
+      ],
+      "safety_mechanisms": {
+        "pec_crc_validation": true,
+        "redundant_adc": true,
+        "plausibility_checks": true,
+        "open_wire_detection": true
+      },
+      "traced_requirements": [
+        "FBMS-FUNC-DRV-001",
+        "FBMS-SAFETY-DRV-001",
+        "FBMS-SAFETY-DRV-002",
+        "FBMS-SAFETY-DRV-003",
+        "FBMS-SAFETY-DRV-004"
+      ]
+    },
+    "COMP-DRV-SBC": {
+      "document": "detailed-design-sbc.md",
+      "type": "Software Unit",
+      "asil": "D",
+      "source_files": [
+        "foxbms-2/src/app/driver/sbc/sbc.c",
+        "foxbms-2/src/app/driver/sbc/sbc.h",
+        "foxbms-2/src/app/driver/sbc/nxpfs85xx.c",
+        "foxbms-2/src/app/driver/sbc/nxpfs85xx.h"
+      ],
+      "state_machines": {
+        "SBC_STATEMACHINE_e": {
+          "states": 5,
+          "description": "SBC main state machine"
+        },
+        "SBC_STATEMACHINE_SUB_e": {
+          "states": 6,
+          "description": "SBC substate machine"
+        }
+      },
+      "functions": [
+        {
+          "name": "SBC_Trigger",
+          "safety_critical": true,
+          "asil": "D",
+          "assertions": 1,
+          "description": "SBC state machine trigger"
+        },
+        {
+          "name": "SBC_SetStateRequest",
+          "safety_critical": true,
+          "asil": "D",
+          "assertions": 1,
+          "description": "State request handler"
+        },
+        {
+          "name": "FS85_InitializeFsPhase",
+          "safety_critical": true,
+          "asil": "D",
+          "description": "INIT_FS phase configuration"
+        },
+        {
+          "name": "FS85_TriggerWatchdog",
+          "safety_critical": true,
+          "asil": "D",
+          "description": "Watchdog trigger"
+        },
+        {
+          "name": "FS85_SafetyPathChecks",
+          "safety_critical": true,
+          "asil": "D",
+          "description": "Safety path verification"
+        }
+      ],
+      "data_structures": [
+        {
+          "name": "SBC_STATE_s",
+          "description": "SBC state variable",
+          "fields": 14
+        },
+        {
+          "name": "FS85_STATE_s",
+          "description": "FS85xx instance state",
+          "fields": 7
+        },
+        {
+          "name": "FS85_FS_REGISTER_s",
+          "description": "Fail-safe registers",
+          "fields": 16
+        }
+      ],
+      "safety_mechanisms": {
+        "window_watchdog": true,
+        "fault_error_counter": true,
+        "fs0b_safe_state_output": true,
+        "lbist_abist_verification": true,
+        "otp_crc_verification": true,
+        "data_not_verification": true
+      },
+      "traced_requirements": [
+        "FBMS-FUNC-DRV-010",
+        "FBMS-SAFETY-DRV-010",
+        "FBMS-SAFETY-DRV-011",
+        "FBMS-SAFETY-DRV-012",
+        "FBMS-SAFETY-DRV-013"
+      ]
+    },
+    "COMP-DRV-CONT": {
+      "document": "detailed-design-contactor.md",
+      "type": "Software Unit",
+      "asil": "D",
+      "source_files": [
+        "foxbms-2/src/app/driver/contactor/contactor.c",
+        "foxbms-2/src/app/driver/contactor/contactor.h",
+        "foxbms-2/src/app/driver/config/contactor_cfg.h",
+        "foxbms-2/src/app/driver/config/contactor_cfg.c"
+      ],
+      "functions": [
+        {
+          "name": "CONT_Initialize",
+          "safety_critical": true,
+          "asil": "D",
+          "description": "Contactor initialization"
+        },
+        {
+          "name": "CONT_OpenContactor",
+          "safety_critical": true,
+          "asil": "D",
+          "assertions": 2,
+          "description": "Open single contactor"
+        },
+        {
+          "name": "CONT_CloseContactor",
+          "safety_critical": true,
+          "asil": "D",
+          "assertions": 2,
+          "description": "Close single contactor"
+        },
+        {
+          "name": "CONT_OpenAllContactors",
+          "safety_critical": true,
+          "asil": "D",
+          "description": "Emergency safe state"
+        },
+        {
+          "name": "CONT_CheckFeedback",
+          "safety_critical": true,
+          "asil": "D",
+          "description": "Feedback validation"
+        },
+        {
+          "name": "CONT_GetContactorState",
+          "safety_critical": true,
+          "asil": "D",
+          "assertions": 2,
+          "description": "Get feedback state"
+        }
+      ],
+      "data_structures": [
+        {
+          "name": "CONT_CONTACTOR_STATE_s",
+          "description": "Contactor state registry",
+          "fields": 7
+        }
+      ],
+      "safety_mechanisms": {
+        "feedback_monitoring": true,
+        "breaking_direction_selection": true,
+        "initialization_verification": true,
+        "diagnostic_reporting": true
+      },
+      "traced_requirements": [
+        "FBMS-FUNC-DRV-020",
+        "FBMS-FUNC-DRV-021",
+        "FBMS-FUNC-DRV-022",
+        "FBMS-SAFETY-DRV-020",
+        "FBMS-SAFETY-DRV-021"
+      ]
+    }
+  },
+  "interfaces": {
+    "IF-INT-001": {
+      "document": "interface-control-document.md",
+      "name": "BMS to DATABASE",
+      "source": "COMP-APP-BMS",
+      "destination": "COMP-ENG-DB",
+      "asil": "D",
+      "traced_requirements": [
+        "FBMS-FUNC-INT-001"
+      ]
+    },
+    "IF-INT-002": {
+      "document": "interface-control-document.md",
+      "name": "AFE to DATABASE",
+      "source": "COMP-DRV-AFE",
+      "destination": "COMP-ENG-DB",
+      "asil": "D",
+      "traced_requirements": [
+        "FBMS-FUNC-INT-002"
+      ]
+    },
+    "IF-INT-004": {
+      "document": "interface-control-document.md",
+      "name": "SOA to DIAG",
+      "source": "COMP-APP-SOA",
+      "destination": "COMP-ENG-DIAG",
+      "asil": "D",
+      "traced_requirements": [
+        "FBMS-SAFETY-INT-001"
+      ]
+    },
+    "IF-INT-005": {
+      "document": "interface-control-document.md",
+      "name": "BMS to CONTACTOR",
+      "source": "COMP-APP-BMS",
+      "destination": "COMP-DRV-CONT",
+      "asil": "D",
+      "traced_requirements": [
+        "FBMS-SAFETY-INT-002"
+      ]
+    },
+    "IF-INT-006": {
+      "document": "interface-control-document.md",
+      "name": "SBC to SPI",
+      "source": "COMP-DRV-SBC",
+      "destination": "COMP-DRV-SPI",
+      "asil": "D",
+      "traced_requirements": [
+        "FBMS-SAFETY-INT-003"
+      ]
+    },
+    "IF-EXT-001": {
+      "document": "interface-control-document.md",
+      "name": "CAN Bus",
+      "type": "external",
+      "asil": "B",
+      "traced_requirements": [
+        "FBMS-FUNC-EXT-001"
+      ]
+    },
+    "IF-EXT-002": {
+      "document": "interface-control-document.md",
+      "name": "AFE SPI/isoSPI",
+      "type": "external",
+      "asil": "D",
+      "traced_requirements": [
+        "FBMS-SAFETY-EXT-001"
+      ]
+    }
+  },
+  "state_diagrams": {
+    "BMS_Main": {
+      "document": "state-diagrams.md",
+      "section": "1",
+      "states": 13,
+      "transitions": 18
+    },
+    "BMS_Precharge": {
+      "document": "state-diagrams.md",
+      "section": "2",
+      "states": 8,
+      "transitions": 12
+    },
+    "BMS_OpenContactors": {
+      "document": "state-diagrams.md",
+      "section": "3",
+      "states": 6,
+      "transitions": 9
+    },
+    "SBC_Main": {
+      "document": "state-diagrams.md",
+      "section": "4",
+      "states": 5,
+      "transitions": 6
+    },
+    "AFE_Measurement": {
+      "document": "state-diagrams.md",
+      "section": "6",
+      "states": 10,
+      "transitions": 14
+    }
+  },
+  "traceability_summary": {
+    "design_to_requirement": {
+      "total_design_elements": 4,
+      "traced_requirements": 27,
+      "coverage_percentage": 100
+    },
+    "design_to_source": {
+      "total_source_files": 15,
+      "documented_files": 15,
+      "coverage_percentage": 100
+    },
+    "safety_mechanisms": {
+      "fas_assert_usage": "Documented in all modules",
+      "fas_trap_usage": "Documented in all modules",
+      "critical_sections": "Documented where applicable",
+      "watchdog_handling": "COMP-DRV-SBC",
+      "feedback_monitoring": "COMP-DRV-CONT",
+      "crc_validation": "COMP-DRV-AFE"
+    }
+  },
+  "quality_gate_compliance": {
+    "SWE3_BP1": {
+      "criteria": "Develop detailed design",
+      "status": "PASS",
+      "evidence": [
+        "detailed-design-bms.md",
+        "detailed-design-afe.md",
+        "detailed-design-sbc.md",
+        "detailed-design-contactor.md"
+      ]
+    },
+    "SWE3_BP2": {
+      "criteria": "Define interfaces of software units",
+      "status": "PASS",
+      "evidence": [
+        "interface-control-document.md"
+      ]
+    },
+    "SWE3_BP3": {
+      "criteria": "Describe dynamic behavior",
+      "status": "PASS",
+      "evidence": [
+        "state-diagrams.md"
+      ]
+    },
+    "SWE3_BP4": {
+      "criteria": "Evaluate detailed design",
+      "status": "PENDING",
+      "notes": "Awaiting formal review"
+    }
+  }
+}

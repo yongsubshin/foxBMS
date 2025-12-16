@@ -1,0 +1,9 @@
+<map id="CAN_SendMessagesFromQueue" name="CAN_SendMessagesFromQueue">
+<area shape="rect" id="Node000001" title="Reads messages from TX Queue and sends them via CAN." alt="" coords="5,55,235,80"/>
+<area shape="rect" id="Node000002" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="314,5,434,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,52,300,30,301,35,187,57"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#a285b22d2ef1448cae22a8965b5fec186" title="Receive an item from a queue." alt="" coords="287,55,461,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,65,273,65,273,70,235,70"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#abfcdf77954b6a87dca01c31efaf4d0b3" title="Post an item to the back the provided queue." alt="" coords="283,104,465,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,77,295,99,294,104,186,83"/>
+</map>

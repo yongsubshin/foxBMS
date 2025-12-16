@@ -1,0 +1,15 @@
+<map id="MXM_5XConstructCommandBufferWriteDevice" name="MXM_5XConstructCommandBufferWriteDevice">
+<area shape="rect" id="Node000001" title="clears the command buffer and writes a WRITEDEVICE message" alt="" coords="5,47,252,87"/>
+<area shape="rect" id="Node000002" href="$mxm__battery__management_8c.html#a50b3a6cf0784bcc3ec9ed55af937447b" title="Clear the command&#45;buffer." alt="" coords="312,5,531,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,45,332,30,333,36,248,50"/>
+<area shape="rect" id="Node000003" href="$mxm__battery__management_8c.html#adcda2712e58935f41533d2b54c90aee5" title="Check if a register address is user accessible." alt="" coords="300,55,543,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,65,286,65,286,70,252,70"/>
+<area shape="rect" id="Node000006" href="$mxm__crc8_8c.html#a9371d7335e3bcd1601e34612ea47dbf4" title="Compute CRC8 with initial value set to 0x00." alt="" coords="373,104,470,129"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="248,85,360,104,359,109,248,90"/>
+<area shape="rect" id="Node000004" href="$mxm__battery__management_8c.html#a9e3c85d541ed2c4301747d8633ba03bc" title="Check if a register address is user accessible in MAX17852." alt="" coords="591,5,833,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="496,52,622,30,623,36,497,57"/>
+<area shape="rect" id="Node000005" href="$mxm__battery__management_8c.html#aacd19e9ba1a28a8d4ac5fde5677c93e2" title="Check if a register address is user accessible in MAX17853." alt="" coords="591,55,833,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="543,65,577,65,577,70,543,70"/>
+<area shape="rect" id="Node000007" href="$mxm__crc8_8c.html#aff7b770d0d6a3773b0fe425eb9bb9d8d" title="Compute CRC8 (0xA6) with initial value." alt="" coords="620,104,804,129"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="470,114,606,114,606,119,470,119"/>
+</map>

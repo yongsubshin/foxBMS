@@ -1,0 +1,9 @@
+<map id="SPS_GetChannelPexFeedback" name="SPS_GetChannelPexFeedback">
+<area shape="rect" id="Node000001" title="Get the feedback state of a channel." alt="" coords="5,31,220,56"/>
+<area shape="rect" id="Node000002" href="$pex_8c.html#a6a7f4e6a2f532e9093c7be8498032590" title="get pin state of port expander pins." alt="" coords="268,31,365,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,41,254,41,254,46,221,46"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="413,5,569,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="365,34,399,29,400,34,366,39"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="418,55,565,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="366,47,405,53,404,58,365,53"/>
+</map>

@@ -1,0 +1,31 @@
+<map id="LTC_DATA_s" name="LTC_DATA_s">
+<area shape="rect" id="Node000001" title=" " alt="" coords="725,267,824,293"/>
+<area shape="rect" id="Node000002" href="$structSPI__INTERFACE__CONFIG__s.html" title=" " alt="" coords="321,21,513,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="505,17,554,15,606,20,657,34,681,46,703,61,725,83,743,110,755,139,764,170,774,226,776,267,771,267,769,227,759,171,750,141,738,113,721,87,700,65,678,50,655,39,605,25,554,21,505,22"/>
+<area shape="rect" id="Node000003" href="$structDATA__BLOCK__CELL__VOLTAGE__s.html" title=" " alt="" coords="304,70,529,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="543,75,584,80,626,89,666,104,703,126,734,159,755,199,767,237,774,267,769,268,762,239,750,201,729,162,700,130,664,109,625,94,584,85,543,80"/>
+<area shape="rect" id="Node000004" href="$structDATA__BLOCK__HEADER__s.html" title=" " alt="" coords="5,241,188,266"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="116,228,146,198,185,163,232,130,284,104,324,93,326,98,286,109,235,134,189,167,149,202,120,232"/>
+<area shape="rect" id="Node000005" href="$structDATA__BLOCK__CELL__TEMPERATURE__s.html" title=" " alt="" coords="285,119,548,145"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="129,231,199,192,284,155,331,142,332,147,286,160,201,197,132,236"/>
+<area shape="rect" id="Node000006" href="$structDATA__BLOCK__BALANCING__FEEDBACK__s.html" title=" " alt="" coords="321,169,513,209"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="174,235,320,206,321,211,175,241"/>
+<area shape="rect" id="Node000007" href="$structDATA__BLOCK__BALANCING__CONTROL__s.html" title=" " alt="" coords="321,233,513,273"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="201,251,321,251,321,256,201,256"/>
+<area shape="rect" id="Node000008" href="$structDATA__BLOCK__SLAVE__CONTROL__s.html" title=" " alt="" coords="297,298,536,323"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="182,266,346,295,345,301,181,271"/>
+<area shape="rect" id="Node000009" href="$structDATA__BLOCK__ALL__GPIO__VOLTAGES__s.html" title=" " alt="" coords="329,348,505,388"/>
+<area shape="poly" id="edge13_Node000009_Node000004" title=" " alt="" coords="138,270,206,301,286,332,330,345,328,350,284,337,204,306,135,275"/>
+<area shape="rect" id="Node000010" href="$structDATA__BLOCK__OPEN__WIRE__s.html" title=" " alt="" coords="314,413,519,438"/>
+<area shape="poly" id="edge15_Node000010_Node000004" title=" " alt="" coords="121,274,190,337,236,370,286,398,324,410,322,415,284,402,234,375,187,341,117,278"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="562,142,634,161,670,175,703,192,724,209,743,229,768,265,764,268,738,232,721,213,700,197,667,180,633,166,561,147"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="527,201,613,218,702,243,752,265,750,270,700,248,612,224,526,207"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="526,259,725,274,725,279,526,264"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="549,305,701,292,725,288,726,293,702,297,550,310"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="518,361,608,349,655,339,700,324,731,309,756,291,759,295,734,313,702,329,657,344,609,354,518,367"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="533,423,575,419,618,410,661,396,700,376,723,358,742,334,766,291,770,294,746,337,727,361,703,381,663,401,620,415,576,424,534,429"/>
+<area shape="rect" id="Node000011" href="$structLTC__OPENWIRE__DETECTION__s.html" title=" " alt="" coords="308,462,525,487"/>
+<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="539,483,581,480,623,472,663,459,700,438,717,423,730,405,751,363,763,323,769,293,774,294,768,325,756,365,735,407,720,426,703,442,665,464,624,478,581,485,539,488"/>
+<area shape="rect" id="Node000012" href="$structLTC__ERRORTABLE__s.html" title=" " alt="" coords="342,511,491,537"/>
+<area shape="poly" id="edge17_Node000001_Node000012" title=" " alt="" coords="488,536,539,541,595,539,651,527,676,516,700,501,722,478,739,452,752,422,760,392,769,334,771,293,776,293,775,335,766,393,757,424,744,454,726,482,703,505,679,520,652,532,596,544,539,546,488,541"/>
+</map>

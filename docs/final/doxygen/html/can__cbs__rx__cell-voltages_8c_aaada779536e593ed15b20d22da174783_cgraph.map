@@ -1,0 +1,7 @@
+<map id="CANRX_GetCanAfeCellVoltagesFromMessage" name="CANRX_GetCanAfeCellVoltagesFromMessage">
+<area shape="rect" id="Node000001" title="get the cell voltage signal from can message data" alt="" coords="5,5,232,45"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="280,13,571,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,23,266,23,266,28,232,28"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="619,13,841,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="571,23,605,23,605,28,571,28"/>
+</map>

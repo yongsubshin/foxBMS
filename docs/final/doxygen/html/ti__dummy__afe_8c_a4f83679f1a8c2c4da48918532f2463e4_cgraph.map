@@ -1,0 +1,5 @@
+<map id="TI_RequestBalancingFeedbackRead" name="TI_RequestBalancingFeedbackRead">
+<area shape="rect" id="Node000001" title="This function is used to wrap the TI AFE measurement API to the generic AFE measurement API." alt="" coords="5,5,259,31"/>
+<area shape="rect" id="Node000002" href="$ti__dummy_8c.html#a43e91a14daba8fccc75f69fadbd326d5" title=" " alt="" coords="307,5,592,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,15,293,15,293,21,259,21"/>
+</map>

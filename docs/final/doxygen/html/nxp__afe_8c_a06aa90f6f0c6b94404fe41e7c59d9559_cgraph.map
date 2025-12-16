@@ -1,0 +1,5 @@
+<map id="AFE_RequestEepromRead" name="AFE_RequestEepromRead">
+<area shape="rect" id="Node000001" title="Makes the request to the AFE state machine to read from the external EEPROM on slaves." alt="" coords="5,5,196,31"/>
+<area shape="rect" id="Node000002" href="$nxp__mc33775a__afe_8c.html#a108550559d1bf3380dd3ec170cc9a837" title=" " alt="" coords="244,5,436,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,15,230,15,230,21,196,21"/>
+</map>

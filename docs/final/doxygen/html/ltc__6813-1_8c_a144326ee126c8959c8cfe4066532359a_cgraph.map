@@ -1,0 +1,9 @@
+<map id="LTC_SendEepromWriteCommand" name="LTC_SendEepromWriteCommand">
+<area shape="rect" id="Node000001" title="sends data to the LTC daisy&#45;chain to write EEPROM on slaves." alt="" coords="5,31,240,56"/>
+<area shape="rect" id="Node000002" href="$ltc__6813-1_8c.html#a1df4ae95928a7f0716a8229bbafb6635" title="configures the data that will be sent to the LTC daisy&#45;chain to write EEPROM on slaves." alt="" coords="288,5,512,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,30,274,27,275,32,240,35"/>
+<area shape="rect" id="Node000003" href="$ltc__6813-1_8c.html#a8cc4616cd88973c4eff35c1a5490bee0" title="sends command and data to the LTC daisy&#45;chain." alt="" coords="330,55,470,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="240,51,317,57,316,63,240,56"/>
+<area shape="rect" id="Node000004" href="$ltc__pec_8c.html#afb47d1f12f35878bf9100c024fb821cc" title="calculates the PEC15" alt="" coords="560,55,711,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="471,65,546,65,546,70,471,70"/>
+</map>

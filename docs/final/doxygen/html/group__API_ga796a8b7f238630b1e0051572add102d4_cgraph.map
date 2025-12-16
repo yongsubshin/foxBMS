@@ -1,0 +1,40 @@
+<map id="FS8x_FS0B_Release" name="FS8x_FS0B_Release">
+<area shape="rect" id="Node000001" title="FS0B release routine." alt="" coords="5,70,156,95"/>
+<area shape="rect" id="Node000002" href="$group__API.html#ga13e5ab89af0a74158bdff99b29eb76ec" title="Reads actual Fault Error Counter value." alt="" coords="204,5,400,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,67,211,46,212,51,131,73"/>
+<area shape="rect" id="Node000003" href="$group__API.html#gab8787e2ae04f3f2810ca95df41b69190" title="Performs a read from a single FS8x register." alt="" coords="449,70,596,95"/>
+<area shape="poly" id="edge19_Node000001_Node000003" title=" " alt="" coords="156,80,435,80,435,85,156,85"/>
+<area shape="rect" id="Node000017" href="$group__API.html#ga45774357f5c85905d3b03812c03a0eb4" title="Sends write command to the FS8x." alt="" coords="448,121,597,146"/>
+<area shape="poly" id="edge20_Node000001_Node000017" title=" " alt="" coords="156,89,434,121,434,126,156,94"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="380,43,460,64,459,69,379,48"/>
+<area shape="rect" id="Node000004" href="$sbc__fs8x__communication_8c.html#adab1bd280fc620a6cd8c881dbc3773ff" title="Performs SPI transfer of the txData. Received frame is saved into rxData structure." alt="" coords="645,95,816,121"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="597,89,632,93,632,99,596,94"/>
+<area shape="rect" id="Node000005" href="$sbc__fs8x__communication_8c.html#a80544b95c576332d48a6f882957018d8" title="Performs CRC check of the data array." alt="" coords="902,95,1029,121"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="816,105,888,105,888,111,816,111"/>
+<area shape="rect" id="Node000007" href="$sbc__fs8x__communication_8c.html#ae5b596457c82d4c45e811ad4c404b312" title="Creates a raw frame for SPI transfer." alt="" coords="864,46,1067,71"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="791,93,890,72,891,77,792,98"/>
+<area shape="rect" id="Node000008" href="$group__Extern.html#ga1b7c11ee24b9fe8c8e104ae40a350e26" title="This function transfers single frame through blocking SPI communication in both directions...." alt="" coords="880,145,1051,170"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="792,118,891,139,890,144,791,123"/>
+<area shape="rect" id="Node000006" href="$sbc__fs8x__communication_8c.html#a87db6e52e5d345e7ae7be0606196c27d" title="This function calculates CRC value of passed data array. Takes bytes in inverted order due to frame f..." alt="" coords="1151,71,1266,97"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1029,99,1137,88,1138,94,1030,104"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="1067,67,1138,74,1138,79,1067,72"/>
+<area shape="rect" id="Node000009" href="$spi_8c.html#ac84bc8424de860e2cd89fea2e89dd89a" title="Transmits and receives data on SPI without DMA." alt="" coords="1115,145,1303,170"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="1051,155,1101,155,1101,160,1051,160"/>
+<area shape="rect" id="Node000010" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="1365,46,1465,71"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1233,142,1350,80,1364,74,1367,79,1352,85,1235,147"/>
+<area shape="rect" id="Node000011" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="1373,95,1457,121"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="1262,142,1358,119,1359,124,1263,147"/>
+<area shape="rect" id="Node000012" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="1351,145,1479,170"/>
+<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="1303,155,1337,155,1337,160,1303,160"/>
+<area shape="rect" id="Node000013" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="1375,243,1454,269"/>
+<area shape="poly" id="edge13_Node000009_Node000013" title=" " alt="" coords="1233,168,1352,230,1367,236,1364,241,1350,234,1231,172"/>
+<area shape="rect" id="Node000016" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="1367,194,1462,219"/>
+<area shape="poly" id="edge16_Node000009_Node000016" title=" " alt="" coords="1263,167,1354,190,1353,195,1262,173"/>
+<area shape="rect" id="Node000014" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1527,194,1683,219"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="1454,243,1541,220,1543,225,1455,248"/>
+<area shape="rect" id="Node000015" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1531,243,1678,269"/>
+<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="1454,253,1518,253,1518,259,1454,259"/>
+<area shape="poly" id="edge17_Node000016_Node000014" title=" " alt="" coords="1462,204,1513,204,1513,209,1462,209"/>
+<area shape="poly" id="edge18_Node000016_Node000015" title=" " alt="" coords="1463,216,1542,237,1541,242,1462,221"/>
+<area shape="poly" id="edge21_Node000017_Node000004" title=" " alt="" coords="597,122,631,117,632,123,598,127"/>
+</map>

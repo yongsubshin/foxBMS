@@ -6,7 +6,7 @@
 |-------|-------|
 | Report ID | MISRA-DIAG-001 |
 | Target File | diag.c |
-| Full Path | /home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/engine/diag/diag.c |
+| Full Path | foxbms-2/src/app/engine/diag/diag.c |
 | Analysis Date | 2025-12-16 |
 | Last Updated | 2025-12-16 |
 | Analysis Mode | AI-Based Pattern Analysis (Full Coverage) |
@@ -216,7 +216,7 @@ For ASIL-D software components, ISO 26262-6 requires:
 
 ## Appendix: DIAG_IMPACT_LEVEL_e Definition
 
-From `/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/engine/config/diag_cfg.h` (lines 243-246):
+From `foxbms-2/src/app/engine/config/diag_cfg.h` (lines 243-246):
 
 ```c
 /** impact level of diagnosis event */

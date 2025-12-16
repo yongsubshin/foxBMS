@@ -1,0 +1,4345 @@
+{
+  "metadata": {
+    "generation_date": "2025-12-16T08:42:52.541856",
+    "total_requirements": 648,
+    "matrix_type": "bidirectional"
+  },
+  "by_module": {
+    "algorithm/manager": [
+      "FBMS-SWE-ALG-001",
+      "FBMS-SWE-ALG-002",
+      "FBMS-SWE-ALG-003",
+      "FBMS-SWE-ALG-004",
+      "FBMS-SWE-ALG-005",
+      "FBMS-SAF-ALG-001",
+      "FBMS-SWE-ALG-006",
+      "FBMS-SAF-ALG-002"
+    ],
+    "algorithm/config": [
+      "FBMS-SWE-ALG-007",
+      "FBMS-SWE-ALG-008"
+    ],
+    "algorithm/moving_average": [
+      "FBMS-SWE-ALG-009",
+      "FBMS-SWE-ALG-010",
+      "FBMS-SWE-ALG-011",
+      "FBMS-SWE-ALG-012",
+      "FBMS-SWE-ALG-013"
+    ],
+    "algorithm/state_estimation": [
+      "FBMS-SWE-ALG-014",
+      "FBMS-SWE-ALG-015",
+      "FBMS-SAF-ALG-003",
+      "FBMS-SWE-ALG-016"
+    ],
+    "algorithm/soc": [
+      "FBMS-SWE-ALG-017",
+      "FBMS-SAF-ALG-004",
+      "FBMS-SAF-ALG-005",
+      "FBMS-SAF-ALG-006",
+      "FBMS-SWE-ALG-018",
+      "FBMS-SWE-ALG-019",
+      "FBMS-SWE-ALG-020",
+      "FBMS-SWE-ALG-021",
+      "FBMS-SWE-ALG-022",
+      "FBMS-SWE-ALG-023",
+      "FBMS-SWE-ALG-024",
+      "FBMS-SWE-ALG-025",
+      "FBMS-SWE-ALG-026"
+    ],
+    "algorithm/soe": [
+      "FBMS-SWE-ALG-027",
+      "FBMS-SAF-ALG-007",
+      "FBMS-SAF-ALG-008",
+      "FBMS-SAF-ALG-009",
+      "FBMS-SWE-ALG-028",
+      "FBMS-SWE-ALG-029",
+      "FBMS-SWE-ALG-030",
+      "FBMS-SWE-ALG-031",
+      "FBMS-SWE-ALG-032",
+      "FBMS-SWE-ALG-033",
+      "FBMS-SWE-ALG-034",
+      "FBMS-SWE-ALG-035"
+    ],
+    "algorithm/soh": [
+      "FBMS-SWE-ALG-036",
+      "FBMS-SAF-ALG-010",
+      "FBMS-SAF-ALG-011",
+      "FBMS-SAF-ALG-012"
+    ],
+    "algorithm/sof": [
+      "FBMS-SWE-ALG-037",
+      "FBMS-SWE-ALG-038",
+      "FBMS-SWE-ALG-039",
+      "FBMS-SAF-ALG-013",
+      "FBMS-SAF-ALG-014",
+      "FBMS-SWE-ALG-040",
+      "FBMS-SWE-ALG-041",
+      "FBMS-SWE-ALG-042",
+      "FBMS-SWE-ALG-043",
+      "FBMS-SWE-ALG-044",
+      "FBMS-SWE-ALG-045",
+      "FBMS-SWE-ALG-046",
+      "FBMS-SWE-ALG-047",
+      "FBMS-SAF-ALG-015",
+      "FBMS-SWE-ALG-048",
+      "FBMS-SWE-ALG-049",
+      "FBMS-SWE-ALG-050",
+      "FBMS-SWE-ALG-051",
+      "FBMS-SWE-ALG-052",
+      "FBMS-SWE-ALG-053",
+      "FBMS-SWE-ALG-054",
+      "FBMS-SWE-ALG-055",
+      "FBMS-SWE-ALG-056",
+      "FBMS-SWE-ALG-057",
+      "FBMS-SWE-ALG-058",
+      "FBMS-SWE-ALG-059",
+      "FBMS-SWE-ALG-060",
+      "FBMS-SWE-ALG-061",
+      "FBMS-SWE-ALG-062",
+      "FBMS-SWE-ALG-063",
+      "FBMS-SWE-ALG-064"
+    ],
+    "afe/api": [
+      "FBMS-SWE-AFE-001",
+      "FBMS-SWE-AFE-002",
+      "FBMS-SWE-AFE-003",
+      "FBMS-SWE-AFE-004",
+      "FBMS-SWE-AFE-005",
+      "FBMS-SWE-AFE-006",
+      "FBMS-SAF-AFE-001",
+      "FBMS-SWE-AFE-007",
+      "FBMS-SWE-AFE-008",
+      "FBMS-SAF-AFE-002",
+      "FBMS-SWE-AFE-009",
+      "FBMS-SAF-AFE-003",
+      "FBMS-SAF-AFE-004",
+      "FBMS-SAF-AFE-005",
+      "FBMS-SWE-AFE-010"
+    ],
+    "afe/adi": [
+      "FBMS-SWE-AFE-011",
+      "FBMS-SWE-AFE-012",
+      "FBMS-SWE-AFE-013",
+      "FBMS-SWE-AFE-014",
+      "FBMS-SWE-AFE-015",
+      "FBMS-SAF-AFE-006",
+      "FBMS-SAF-AFE-007",
+      "FBMS-SAF-AFE-008",
+      "FBMS-SAF-AFE-009",
+      "FBMS-SWE-AFE-016",
+      "FBMS-SWE-AFE-017",
+      "FBMS-SWE-AFE-018",
+      "FBMS-SWE-AFE-019",
+      "FBMS-SAF-AFE-010",
+      "FBMS-SAF-AFE-011",
+      "FBMS-SAF-AFE-012",
+      "FBMS-SAF-AFE-013",
+      "FBMS-SAF-AFE-014",
+      "FBMS-SAF-AFE-015",
+      "FBMS-SWE-AFE-020",
+      "FBMS-SWE-AFE-021",
+      "FBMS-SWE-AFE-022",
+      "FBMS-SAF-AFE-016",
+      "FBMS-SAF-AFE-017",
+      "FBMS-SAF-AFE-018",
+      "FBMS-SWE-AFE-023",
+      "FBMS-SWE-AFE-024",
+      "FBMS-SAF-AFE-019",
+      "FBMS-SAF-AFE-020",
+      "FBMS-SWE-AFE-025",
+      "FBMS-SWE-AFE-026",
+      "FBMS-SWE-AFE-027",
+      "FBMS-SWE-AFE-028"
+    ],
+    "afe/ltc": [
+      "FBMS-SWE-AFE-029",
+      "FBMS-SWE-AFE-030",
+      "FBMS-SWE-AFE-031",
+      "FBMS-SWE-AFE-032",
+      "FBMS-SAF-AFE-021",
+      "FBMS-SAF-AFE-022",
+      "FBMS-SAF-AFE-023",
+      "FBMS-SWE-AFE-033",
+      "FBMS-SWE-AFE-034",
+      "FBMS-SAF-AFE-024",
+      "FBMS-SAF-AFE-025",
+      "FBMS-SWE-AFE-035",
+      "FBMS-SWE-AFE-036"
+    ],
+    "afe/maxim": [
+      "FBMS-SWE-AFE-037",
+      "FBMS-SWE-AFE-038",
+      "FBMS-SWE-AFE-039",
+      "FBMS-SAF-AFE-026",
+      "FBMS-SAF-AFE-027",
+      "FBMS-SAF-AFE-028",
+      "FBMS-SAF-AFE-029",
+      "FBMS-SAF-AFE-030",
+      "FBMS-SAF-AFE-031",
+      "FBMS-SAF-AFE-032"
+    ],
+    "afe/nxp": [
+      "FBMS-SWE-AFE-040",
+      "FBMS-SWE-AFE-041",
+      "FBMS-SWE-AFE-042"
+    ],
+    "afe/ti": [
+      "FBMS-SWE-AFE-043",
+      "FBMS-SWE-AFE-044",
+      "FBMS-SWE-AFE-045",
+      "FBMS-SWE-AFE-046"
+    ],
+    "ts/api": [
+      "FBMS-SWE-TMP-001",
+      "FBMS-SWE-TMP-002",
+      "FBMS-SWE-TMP-003",
+      "FBMS-SWE-TMP-004"
+    ],
+    "ts/common": [
+      "FBMS-SWE-TMP-005",
+      "FBMS-SWE-TMP-006",
+      "FBMS-SWE-TMP-056",
+      "FBMS-SWE-TMP-057",
+      "FBMS-SWE-TMP-058",
+      "FBMS-SAF-TMP-013",
+      "FBMS-SAF-TMP-014",
+      "FBMS-SAF-TMP-015",
+      "FBMS-SWE-TMP-059",
+      "FBMS-INT-TMP-001",
+      "FBMS-SWE-TMP-060",
+      "FBMS-SWE-TMP-061",
+      "FBMS-SWE-TMP-064",
+      "FBMS-SWE-TMP-065",
+      "FBMS-SWE-TMP-066"
+    ],
+    "ts/beta": [
+      "FBMS-SWE-TMP-007",
+      "FBMS-SAF-TMP-001",
+      "FBMS-SWE-TMP-008",
+      "FBMS-SWE-TMP-009",
+      "FBMS-SWE-TMP-010",
+      "FBMS-SWE-TMP-011",
+      "FBMS-SWE-TMP-012",
+      "FBMS-SWE-TMP-013",
+      "FBMS-SWE-TMP-014",
+      "FBMS-SAF-TMP-002",
+      "FBMS-SAF-TMP-003",
+      "FBMS-SAF-TMP-004",
+      "FBMS-SWE-TMP-015"
+    ],
+    "ts/epcos/b57251v5103j060": [
+      "FBMS-SWE-TMP-016",
+      "FBMS-SAF-TMP-005",
+      "FBMS-SWE-TMP-017",
+      "FBMS-SWE-TMP-018",
+      "FBMS-SWE-TMP-019",
+      "FBMS-SWE-TMP-020",
+      "FBMS-SWE-TMP-021",
+      "FBMS-SWE-TMP-022",
+      "FBMS-SWE-TMP-023",
+      "FBMS-SWE-TMP-024"
+    ],
+    "ts/epcos/b57861s0103f045": [
+      "FBMS-SWE-TMP-025",
+      "FBMS-SAF-TMP-006",
+      "FBMS-SWE-TMP-026",
+      "FBMS-SWE-TMP-027",
+      "FBMS-SWE-TMP-028"
+    ],
+    "ts/murata/ncxxxxh103": [
+      "FBMS-SWE-TMP-029",
+      "FBMS-SAF-TMP-007",
+      "FBMS-SWE-TMP-030",
+      "FBMS-SWE-TMP-031",
+      "FBMS-SWE-TMP-032"
+    ],
+    "ts/vishay/ntcalug01a103g": [
+      "FBMS-SWE-TMP-033",
+      "FBMS-SAF-TMP-008",
+      "FBMS-SWE-TMP-034",
+      "FBMS-SWE-TMP-035",
+      "FBMS-SWE-TMP-036"
+    ],
+    "ts/vishay/ntcle317e4103sba": [
+      "FBMS-SWE-TMP-037",
+      "FBMS-SAF-TMP-009",
+      "FBMS-SWE-TMP-038",
+      "FBMS-SWE-TMP-039",
+      "FBMS-SWE-TMP-040"
+    ],
+    "ts/vishay/ntcle413e2103f102l": [
+      "FBMS-SWE-TMP-041",
+      "FBMS-SAF-TMP-010",
+      "FBMS-SWE-TMP-042",
+      "FBMS-SWE-TMP-043",
+      "FBMS-SWE-TMP-044"
+    ],
+    "ts/tdk/ntcg163jx103dt1s": [
+      "FBMS-SWE-TMP-045",
+      "FBMS-SAF-TMP-011",
+      "FBMS-SWE-TMP-046",
+      "FBMS-SWE-TMP-047",
+      "FBMS-SWE-TMP-048"
+    ],
+    "ts/semitec/103jt": [
+      "FBMS-SWE-TMP-049",
+      "FBMS-SAF-TMP-012",
+      "FBMS-SWE-TMP-050",
+      "FBMS-SWE-TMP-051",
+      "FBMS-SWE-TMP-052"
+    ],
+    "ts/fake/none": [
+      "FBMS-SWE-TMP-053",
+      "FBMS-SWE-TMP-054",
+      "FBMS-SWE-TMP-055"
+    ],
+    "ts/config": [
+      "FBMS-SWE-TMP-062",
+      "FBMS-SWE-TMP-063"
+    ],
+    "config/application": [
+      "FBMS-SAF-CFG-001",
+      "FBMS-SAF-CFG-002",
+      "FBMS-SAF-CFG-003",
+      "FBMS-SAF-CFG-004",
+      "FBMS-SAF-CFG-005",
+      "FBMS-SWE-CFG-001",
+      "FBMS-SAF-CFG-006",
+      "FBMS-SAF-CFG-007",
+      "FBMS-SAF-CFG-008",
+      "FBMS-SAF-CFG-009",
+      "FBMS-SWE-CFG-002",
+      "FBMS-SWE-CFG-003",
+      "FBMS-SWE-CFG-004",
+      "FBMS-SWE-CFG-005",
+      "FBMS-SWE-CFG-006",
+      "FBMS-SWE-CFG-007",
+      "FBMS-SWE-CFG-008",
+      "FBMS-SWE-CFG-009",
+      "FBMS-SWE-CFG-010",
+      "FBMS-SWE-CFG-011",
+      "FBMS-SWE-CFG-012",
+      "FBMS-SWE-CFG-013",
+      "FBMS-SWE-CFG-014",
+      "FBMS-SAF-CFG-010",
+      "FBMS-SAF-CFG-011",
+      "FBMS-SAF-CFG-012",
+      "FBMS-SAF-CFG-013",
+      "FBMS-SWE-CFG-015",
+      "FBMS-SWE-CFG-016",
+      "FBMS-SWE-CFG-017",
+      "FBMS-SWE-CFG-018",
+      "FBMS-SWE-CFG-019",
+      "FBMS-SWE-CFG-020",
+      "FBMS-SWE-CFG-021",
+      "FBMS-SAF-CFG-014",
+      "FBMS-SWE-CFG-022",
+      "FBMS-SWE-CFG-023",
+      "FBMS-SWE-CFG-024",
+      "FBMS-SWE-CFG-025",
+      "FBMS-SWE-CFG-026",
+      "FBMS-SWE-CFG-027",
+      "FBMS-SWE-CFG-028",
+      "FBMS-SWE-CFG-029",
+      "FBMS-SWE-CFG-030",
+      "FBMS-SWE-CFG-031",
+      "FBMS-SAF-CFG-015",
+      "FBMS-SAF-CFG-016",
+      "FBMS-SAF-CFG-017",
+      "FBMS-SAF-CFG-018",
+      "FBMS-SWE-CFG-032",
+      "FBMS-SWE-CFG-033",
+      "FBMS-SAF-CFG-019",
+      "FBMS-SWE-CFG-034",
+      "FBMS-SWE-CFG-035",
+      "FBMS-SWE-CFG-036",
+      "FBMS-SAF-CFG-020",
+      "FBMS-SAF-CFG-021",
+      "FBMS-SWE-CFG-037",
+      "FBMS-SWE-CFG-038",
+      "FBMS-SWE-CFG-039",
+      "FBMS-SWE-CFG-040",
+      "FBMS-SWE-CFG-041",
+      "FBMS-SWE-CFG-042",
+      "FBMS-SWE-CFG-043",
+      "FBMS-SAF-CFG-022",
+      "FBMS-SAF-CFG-023",
+      "FBMS-SWE-CFG-044",
+      "FBMS-SWE-CFG-045",
+      "FBMS-SWE-CFG-046",
+      "FBMS-SWE-CFG-047",
+      "FBMS-SWE-CFG-048",
+      "FBMS-SWE-CFG-049",
+      "FBMS-SWE-CFG-050",
+      "FBMS-SWE-CFG-051",
+      "FBMS-SWE-CFG-052"
+    ],
+    "config/driver": [
+      "FBMS-SWE-CFG-053",
+      "FBMS-SWE-CFG-054",
+      "FBMS-SWE-CFG-055",
+      "FBMS-SWE-CFG-056",
+      "FBMS-SWE-CFG-057",
+      "FBMS-SWE-CFG-058",
+      "FBMS-SWE-CFG-059",
+      "FBMS-SWE-CFG-060",
+      "FBMS-SWE-CFG-061",
+      "FBMS-SWE-CFG-062",
+      "FBMS-SWE-CFG-063",
+      "FBMS-SWE-CFG-064",
+      "FBMS-SWE-CFG-065",
+      "FBMS-SWE-CFG-066",
+      "FBMS-SWE-CFG-067",
+      "FBMS-SWE-CFG-068",
+      "FBMS-SWE-CFG-069",
+      "FBMS-SWE-CFG-070",
+      "FBMS-SWE-CFG-071",
+      "FBMS-SWE-CFG-072",
+      "FBMS-SWE-CFG-073",
+      "FBMS-SWE-CFG-074",
+      "FBMS-SWE-CFG-075",
+      "FBMS-SWE-CFG-076",
+      "FBMS-SWE-CFG-077"
+    ],
+    "sbc": [
+      "FBMS-SWE-SBC-001",
+      "FBMS-SWE-SBC-002",
+      "FBMS-SAF-SBC-001",
+      "FBMS-SAF-SBC-002",
+      "FBMS-SAF-SBC-003",
+      "FBMS-SWE-SBC-003",
+      "FBMS-SWE-SBC-004",
+      "FBMS-SAF-SBC-004",
+      "FBMS-SWE-SBC-005",
+      "FBMS-SAF-SBC-005",
+      "FBMS-SAF-SBC-006",
+      "FBMS-SWE-SBC-006",
+      "FBMS-SWE-SBC-007",
+      "FBMS-SWE-SBC-008",
+      "FBMS-SAF-SBC-007",
+      "FBMS-SAF-SBC-008",
+      "FBMS-SAF-SBC-009",
+      "FBMS-SWE-SBC-009",
+      "FBMS-SAF-SBC-010",
+      "FBMS-SWE-SBC-010",
+      "FBMS-SAF-SBC-011",
+      "FBMS-SWE-SBC-011",
+      "FBMS-SWE-SBC-012",
+      "FBMS-SWE-SBC-013",
+      "FBMS-SWE-SBC-014",
+      "FBMS-SAF-SBC-012",
+      "FBMS-SWE-SBC-015",
+      "FBMS-SWE-SBC-016",
+      "FBMS-SAF-SBC-013",
+      "FBMS-SWE-SBC-017",
+      "FBMS-SWE-SBC-018",
+      "FBMS-SAF-SBC-014",
+      "FBMS-SWE-SBC-019",
+      "FBMS-SAF-SBC-015",
+      "FBMS-SAF-SBC-016",
+      "FBMS-SAF-SBC-017",
+      "FBMS-SAF-SBC-018",
+      "FBMS-SAF-SBC-019",
+      "FBMS-SWE-SBC-020",
+      "FBMS-SAF-SBC-020",
+      "FBMS-SWE-SBC-021",
+      "FBMS-SAF-SBC-021",
+      "FBMS-SAF-SBC-022",
+      "FBMS-SAF-SBC-023",
+      "FBMS-SWE-SBC-022",
+      "FBMS-SWE-SBC-023",
+      "FBMS-INT-SBC-001",
+      "FBMS-INT-SBC-002",
+      "FBMS-INT-SBC-003",
+      "FBMS-INT-SBC-004",
+      "FBMS-SWE-SBC-024",
+      "FBMS-SWE-SBC-025"
+    ],
+    "driver/adc": [
+      "FBMS-SWE-DRV-001",
+      "FBMS-SWE-DRV-002",
+      "FBMS-SWE-DRV-003",
+      "FBMS-SWE-DRV-004",
+      "FBMS-SWE-DRV-005",
+      "FBMS-SWE-DRV-006",
+      "FBMS-SAF-DRV-001"
+    ],
+    "driver/spi": [
+      "FBMS-SWE-DRV-007",
+      "FBMS-SWE-DRV-008",
+      "FBMS-SWE-DRV-009",
+      "FBMS-SWE-DRV-010",
+      "FBMS-SWE-DRV-011",
+      "FBMS-SWE-DRV-012",
+      "FBMS-SWE-DRV-013",
+      "FBMS-SWE-DRV-014",
+      "FBMS-SWE-DRV-015",
+      "FBMS-SAF-DRV-002",
+      "FBMS-SAF-DRV-003",
+      "FBMS-SAF-DRV-004",
+      "FBMS-SAF-DRV-005"
+    ],
+    "driver/i2c": [
+      "FBMS-SWE-DRV-016",
+      "FBMS-SWE-DRV-017",
+      "FBMS-SWE-DRV-018",
+      "FBMS-SWE-DRV-019",
+      "FBMS-SWE-DRV-020",
+      "FBMS-SWE-DRV-021",
+      "FBMS-SWE-DRV-022",
+      "FBMS-SWE-DRV-023"
+    ],
+    "driver/dma": [
+      "FBMS-SWE-DRV-024",
+      "FBMS-SWE-DRV-025",
+      "FBMS-SWE-DRV-026",
+      "FBMS-SWE-DRV-027",
+      "FBMS-SWE-DRV-028",
+      "FBMS-SWE-DRV-029"
+    ],
+    "driver/pwm": [
+      "FBMS-SWE-DRV-030",
+      "FBMS-SWE-DRV-031",
+      "FBMS-SWE-DRV-032",
+      "FBMS-SWE-DRV-033",
+      "FBMS-SWE-DRV-034",
+      "FBMS-SWE-DRV-035"
+    ],
+    "driver/rtc": [
+      "FBMS-SWE-DRV-036",
+      "FBMS-INT-DRV-001",
+      "FBMS-SWE-DRV-037",
+      "FBMS-SWE-DRV-038",
+      "FBMS-SWE-DRV-039",
+      "FBMS-SWE-DRV-040",
+      "FBMS-SWE-DRV-041"
+    ],
+    "driver/io": [
+      "FBMS-SWE-DRV-042",
+      "FBMS-SWE-DRV-043",
+      "FBMS-SWE-DRV-044",
+      "FBMS-SWE-DRV-045",
+      "FBMS-SWE-DRV-046",
+      "FBMS-SWE-DRV-047",
+      "FBMS-SAF-DRV-006",
+      "FBMS-SAF-DRV-007"
+    ],
+    "driver/led": [
+      "FBMS-SWE-DRV-048",
+      "FBMS-SWE-DRV-049",
+      "FBMS-SWE-DRV-050",
+      "FBMS-SWE-DRV-051",
+      "FBMS-SWE-DRV-052"
+    ],
+    "driver/mcu": [
+      "FBMS-SWE-DRV-053",
+      "FBMS-SWE-DRV-054",
+      "FBMS-SWE-DRV-055",
+      "FBMS-SWE-DRV-056",
+      "FBMS-SWE-DRV-057",
+      "FBMS-SWE-DRV-058"
+    ],
+    "driver/interlock": [
+      "FBMS-SWE-DRV-059",
+      "FBMS-SWE-DRV-060",
+      "FBMS-SWE-DRV-061",
+      "FBMS-SWE-DRV-062",
+      "FBMS-INT-DRV-002",
+      "FBMS-INT-DRV-003",
+      "FBMS-SWE-DRV-063",
+      "FBMS-SAF-DRV-008",
+      "FBMS-SWE-DRV-064"
+    ],
+    "driver/fram": [
+      "FBMS-SWE-DRV-065",
+      "FBMS-SWE-DRV-066",
+      "FBMS-SWE-DRV-067",
+      "FBMS-SWE-DRV-068",
+      "FBMS-SWE-DRV-069",
+      "FBMS-SWE-DRV-070",
+      "FBMS-SWE-DRV-071"
+    ],
+    "driver/foxmath": [
+      "FBMS-SWE-DRV-072",
+      "FBMS-SWE-DRV-073",
+      "FBMS-SWE-DRV-074",
+      "FBMS-SWE-DRV-075"
+    ],
+    "driver/checksum": [
+      "FBMS-SWE-DRV-076",
+      "FBMS-SWE-DRV-077"
+    ],
+    "driver/crc": [
+      "FBMS-SWE-DRV-078",
+      "FBMS-SWE-DRV-079",
+      "FBMS-SWE-DRV-080"
+    ],
+    "driver/pex": [
+      "FBMS-SWE-DRV-081",
+      "FBMS-SWE-DRV-082",
+      "FBMS-SWE-DRV-083",
+      "FBMS-SWE-DRV-084",
+      "FBMS-SWE-DRV-085",
+      "FBMS-SWE-DRV-086"
+    ],
+    "driver/phy": [
+      "FBMS-SWE-DRV-087",
+      "FBMS-SWE-DRV-088",
+      "FBMS-SWE-DRV-089",
+      "FBMS-SWE-DRV-090"
+    ],
+    "driver/meas": [
+      "FBMS-SWE-DRV-091",
+      "FBMS-SWE-DRV-092",
+      "FBMS-SWE-DRV-093",
+      "FBMS-SWE-DRV-094",
+      "FBMS-SWE-DRV-095"
+    ],
+    "driver/htsensor": [
+      "FBMS-SWE-DRV-096",
+      "FBMS-SWE-DRV-097",
+      "FBMS-SWE-DRV-098"
+    ],
+    "driver/sps": [
+      "FBMS-SWE-DRV-099",
+      "FBMS-SWE-DRV-100",
+      "FBMS-SWE-DRV-101",
+      "FBMS-SWE-DRV-102",
+      "FBMS-SWE-DRV-103",
+      "FBMS-SWE-DRV-104",
+      "FBMS-SWE-DRV-105",
+      "FBMS-SWE-DRV-106",
+      "FBMS-SWE-DRV-107",
+      "FBMS-SWE-DRV-108",
+      "FBMS-SAF-DRV-009",
+      "FBMS-SAF-DRV-010",
+      "FBMS-SWE-DRV-109"
+    ],
+    "driver/contactor": [
+      "FBMS-SWE-DRV-110",
+      "FBMS-SWE-DRV-111",
+      "FBMS-SWE-DRV-112",
+      "FBMS-SWE-DRV-113",
+      "FBMS-SWE-DRV-114",
+      "FBMS-SWE-DRV-115",
+      "FBMS-SWE-DRV-116",
+      "FBMS-SWE-DRV-117",
+      "FBMS-SWE-DRV-118",
+      "FBMS-SAF-DRV-011",
+      "FBMS-SAF-DRV-012",
+      "FBMS-SAF-DRV-013",
+      "FBMS-SAF-DRV-014",
+      "FBMS-SAF-DRV-015"
+    ],
+    "driver/can": [
+      "FBMS-SWE-DRV-119",
+      "FBMS-SWE-DRV-120",
+      "FBMS-SWE-DRV-121",
+      "FBMS-SWE-DRV-122",
+      "FBMS-SWE-DRV-123",
+      "FBMS-SWE-DRV-124",
+      "FBMS-SWE-DRV-125",
+      "FBMS-SWE-DRV-126",
+      "FBMS-SWE-DRV-127",
+      "FBMS-SWE-DRV-128"
+    ],
+    "unknown": [
+      "FBMS-SWE-BMS-001",
+      "FBMS-SWE-BMS-002",
+      "FBMS-SWE-BMS-003",
+      "FBMS-SWE-BMS-004",
+      "FBMS-SWE-BMS-005",
+      "FBMS-SWE-BMS-006",
+      "FBMS-SWE-BMS-007",
+      "FBMS-SWE-BMS-008",
+      "FBMS-SWE-BMS-009",
+      "FBMS-SWE-BMS-010",
+      "FBMS-SWE-BMS-011",
+      "FBMS-SWE-BMS-012",
+      "FBMS-SWE-BMS-013",
+      "FBMS-SWE-BMS-014",
+      "FBMS-SWE-BMS-015",
+      "FBMS-SWE-BMS-016",
+      "FBMS-SWE-BMS-017",
+      "FBMS-SWE-BMS-018",
+      "FBMS-SWE-BMS-019",
+      "FBMS-SWE-BMS-020",
+      "FBMS-SWE-BMS-021",
+      "FBMS-SWE-BMS-022",
+      "FBMS-SWE-BMS-023",
+      "FBMS-SWE-BMS-024",
+      "FBMS-SWE-BMS-025",
+      "FBMS-SWE-BMS-026",
+      "FBMS-SWE-BMS-027",
+      "FBMS-SWE-BMS-028",
+      "FBMS-SWE-BMS-029",
+      "FBMS-SWE-BMS-030",
+      "FBMS-SWE-BMS-031",
+      "FBMS-SWE-BMS-032",
+      "FBMS-SWE-BMS-033",
+      "FBMS-SWE-BMS-034",
+      "FBMS-SWE-BMS-035",
+      "FBMS-SWE-BMS-036",
+      "FBMS-SWE-BMS-037",
+      "FBMS-SWE-BMS-038",
+      "FBMS-SWE-BMS-039",
+      "FBMS-SWE-BMS-040",
+      "FBMS-SWE-BMS-041",
+      "FBMS-SWE-BMS-042",
+      "FBMS-SWE-BMS-043",
+      "FBMS-SWE-BMS-044",
+      "FBMS-SWE-BMS-045",
+      "FBMS-SWE-BMS-046",
+      "FBMS-SWE-BMS-047",
+      "FBMS-SWE-BMS-048",
+      "FBMS-SWE-BMS-049",
+      "FBMS-SWE-BMS-050",
+      "FBMS-SWE-BMS-051",
+      "FBMS-SWE-BMS-052",
+      "FBMS-SWE-BMS-053",
+      "FBMS-SWE-BMS-054",
+      "FBMS-SWE-BMS-055",
+      "FBMS-SWE-BMS-056",
+      "FBMS-SWE-BMS-057",
+      "FBMS-SWE-BMS-058",
+      "FBMS-SWE-BMS-059",
+      "FBMS-SWE-BMS-060",
+      "FBMS-SWE-BMS-061",
+      "FBMS-SWE-BMS-062",
+      "FBMS-SWE-BMS-063",
+      "FBMS-SWE-BMS-064",
+      "FBMS-SWE-BMS-065",
+      "FBMS-SWE-BMS-066",
+      "FBMS-SWE-BMS-067",
+      "FBMS-SWE-BMS-068",
+      "FBMS-SWE-BMS-069",
+      "FBMS-SWE-BMS-070",
+      "FBMS-SWE-BMS-071",
+      "FBMS-SWE-BMS-072",
+      "FBMS-SWE-BMS-073",
+      "FBMS-SWE-BMS-074",
+      "FBMS-SWE-BMS-075",
+      "FBMS-SWE-BMS-076",
+      "FBMS-SWE-BMS-077",
+      "FBMS-SWE-BMS-078",
+      "FBMS-SWE-BMS-079",
+      "FBMS-SWE-BMS-080",
+      "FBMS-SWE-BMS-081",
+      "FBMS-SWE-BMS-082",
+      "FBMS-SWE-BMS-083",
+      "FBMS-SWE-BMS-084",
+      "FBMS-SWE-BMS-085",
+      "FBMS-SWE-BMS-086",
+      "FBMS-SWE-BMS-087",
+      "FBMS-SWE-BMS-088",
+      "FBMS-SWE-BMS-089",
+      "FBMS-SWE-BMS-090",
+      "FBMS-SWE-BMS-091",
+      "FBMS-SWE-BMS-092",
+      "FBMS-SWE-BMS-093",
+      "FBMS-SWE-BMS-094",
+      "FBMS-SWE-BMS-095",
+      "FBMS-SWE-BMS-096",
+      "FBMS-SWE-BMS-097",
+      "FBMS-SWE-BMS-098",
+      "FBMS-SWE-BMS-099",
+      "FBMS-SWE-BMS-100",
+      "FBMS-SWE-BMS-101",
+      "FBMS-SWE-BMS-102",
+      "FBMS-SWE-BMS-103",
+      "FBMS-SWE-BMS-104",
+      "FBMS-SWE-BMS-105",
+      "FBMS-SWE-BMS-106",
+      "FBMS-SWE-BMS-107",
+      "FBMS-SWE-BMS-108",
+      "FBMS-SWE-BMS-109",
+      "FBMS-SWE-BMS-110",
+      "FBMS-SWE-BMS-111"
+    ]
+  },
+  "by_type": {
+    "SWE": [
+      "FBMS-SWE-ALG-001",
+      "FBMS-SWE-ALG-002",
+      "FBMS-SWE-ALG-003",
+      "FBMS-SWE-ALG-005",
+      "FBMS-SWE-ALG-006",
+      "FBMS-SWE-ALG-008",
+      "FBMS-SWE-ALG-009",
+      "FBMS-SWE-ALG-012",
+      "FBMS-SWE-ALG-013",
+      "FBMS-SWE-ALG-014",
+      "FBMS-SWE-ALG-015",
+      "FBMS-SWE-ALG-016",
+      "FBMS-SWE-ALG-017",
+      "FBMS-SWE-ALG-018",
+      "FBMS-SWE-ALG-019",
+      "FBMS-SWE-ALG-020",
+      "FBMS-SWE-ALG-021",
+      "FBMS-SWE-ALG-022",
+      "FBMS-SWE-ALG-023",
+      "FBMS-SWE-ALG-024",
+      "FBMS-SWE-ALG-026",
+      "FBMS-SWE-ALG-027",
+      "FBMS-SWE-ALG-028",
+      "FBMS-SWE-ALG-029",
+      "FBMS-SWE-ALG-030",
+      "FBMS-SWE-ALG-031",
+      "FBMS-SWE-ALG-032",
+      "FBMS-SWE-ALG-033",
+      "FBMS-SWE-ALG-035",
+      "FBMS-SWE-ALG-036",
+      "FBMS-SWE-ALG-037",
+      "FBMS-SWE-ALG-038",
+      "FBMS-SWE-ALG-039",
+      "FBMS-SWE-ALG-040",
+      "FBMS-SWE-ALG-041",
+      "FBMS-SWE-ALG-042",
+      "FBMS-SWE-ALG-043",
+      "FBMS-SWE-ALG-044",
+      "FBMS-SWE-ALG-045",
+      "FBMS-SWE-ALG-046",
+      "FBMS-SWE-ALG-047",
+      "FBMS-SWE-ALG-048",
+      "FBMS-SWE-AFE-001",
+      "FBMS-SWE-AFE-002",
+      "FBMS-SWE-AFE-003",
+      "FBMS-SWE-AFE-004",
+      "FBMS-SWE-AFE-005",
+      "FBMS-SWE-AFE-006",
+      "FBMS-SWE-AFE-009",
+      "FBMS-SWE-AFE-010",
+      "FBMS-SWE-AFE-011",
+      "FBMS-SWE-AFE-012",
+      "FBMS-SWE-AFE-013",
+      "FBMS-SWE-AFE-023",
+      "FBMS-SWE-AFE-024",
+      "FBMS-SWE-AFE-025",
+      "FBMS-SWE-AFE-029",
+      "FBMS-SWE-AFE-030",
+      "FBMS-SWE-AFE-031",
+      "FBMS-SWE-AFE-032",
+      "FBMS-SWE-AFE-033",
+      "FBMS-SWE-AFE-034",
+      "FBMS-SWE-AFE-035",
+      "FBMS-SWE-AFE-036",
+      "FBMS-SWE-AFE-037",
+      "FBMS-SWE-AFE-040",
+      "FBMS-SWE-AFE-041",
+      "FBMS-SWE-AFE-043",
+      "FBMS-SWE-AFE-044",
+      "FBMS-SWE-AFE-045",
+      "FBMS-SWE-AFE-046",
+      "FBMS-SWE-TMP-001",
+      "FBMS-SWE-TMP-002",
+      "FBMS-SWE-TMP-003",
+      "FBMS-SWE-TMP-004",
+      "FBMS-SWE-TMP-005",
+      "FBMS-SWE-TMP-007",
+      "FBMS-SWE-TMP-014",
+      "FBMS-SWE-TMP-015",
+      "FBMS-SWE-TMP-016",
+      "FBMS-SWE-TMP-017",
+      "FBMS-SWE-TMP-021",
+      "FBMS-SWE-TMP-022",
+      "FBMS-SWE-TMP-023",
+      "FBMS-SWE-TMP-024",
+      "FBMS-SWE-TMP-025",
+      "FBMS-SWE-TMP-027",
+      "FBMS-SWE-TMP-028",
+      "FBMS-SWE-TMP-029",
+      "FBMS-SWE-TMP-031",
+      "FBMS-SWE-TMP-032",
+      "FBMS-SWE-TMP-033",
+      "FBMS-SWE-TMP-035",
+      "FBMS-SWE-TMP-036",
+      "FBMS-SWE-TMP-037",
+      "FBMS-SWE-TMP-039",
+      "FBMS-SWE-TMP-040",
+      "FBMS-SWE-TMP-041",
+      "FBMS-SWE-TMP-043",
+      "FBMS-SWE-TMP-044",
+      "FBMS-SWE-TMP-045",
+      "FBMS-SWE-TMP-047",
+      "FBMS-SWE-TMP-048",
+      "FBMS-SWE-TMP-049",
+      "FBMS-SWE-TMP-051",
+      "FBMS-SWE-TMP-052",
+      "FBMS-SWE-TMP-053",
+      "FBMS-SWE-TMP-054",
+      "FBMS-SWE-TMP-055",
+      "FBMS-SWE-TMP-056",
+      "FBMS-SWE-TMP-057",
+      "FBMS-SWE-TMP-058",
+      "FBMS-SWE-TMP-060",
+      "FBMS-SWE-TMP-061",
+      "FBMS-SWE-TMP-063",
+      "FBMS-SWE-TMP-064",
+      "FBMS-SWE-TMP-065",
+      "FBMS-SWE-TMP-066",
+      "FBMS-SWE-SBC-001",
+      "FBMS-SWE-SBC-002",
+      "FBMS-SWE-SBC-003",
+      "FBMS-SWE-SBC-004",
+      "FBMS-SWE-SBC-005",
+      "FBMS-SWE-SBC-007",
+      "FBMS-SWE-SBC-008",
+      "FBMS-SWE-SBC-009",
+      "FBMS-SWE-SBC-010",
+      "FBMS-SWE-SBC-016",
+      "FBMS-SWE-SBC-017",
+      "FBMS-SWE-SBC-018",
+      "FBMS-SWE-SBC-020",
+      "FBMS-SWE-SBC-021",
+      "FBMS-SWE-SBC-022",
+      "FBMS-SWE-SBC-024",
+      "FBMS-SWE-DRV-001",
+      "FBMS-SWE-DRV-002",
+      "FBMS-SWE-DRV-003",
+      "FBMS-SWE-DRV-007",
+      "FBMS-SWE-DRV-008",
+      "FBMS-SWE-DRV-009",
+      "FBMS-SWE-DRV-010",
+      "FBMS-SWE-DRV-011",
+      "FBMS-SWE-DRV-012",
+      "FBMS-SWE-DRV-013",
+      "FBMS-SWE-DRV-015",
+      "FBMS-SWE-DRV-016",
+      "FBMS-SWE-DRV-017",
+      "FBMS-SWE-DRV-018",
+      "FBMS-SWE-DRV-019",
+      "FBMS-SWE-DRV-020",
+      "FBMS-SWE-DRV-021",
+      "FBMS-SWE-DRV-024",
+      "FBMS-SWE-DRV-025",
+      "FBMS-SWE-DRV-026",
+      "FBMS-SWE-DRV-030",
+      "FBMS-SWE-DRV-031",
+      "FBMS-SWE-DRV-032",
+      "FBMS-SWE-DRV-033",
+      "FBMS-SWE-DRV-034",
+      "FBMS-SWE-DRV-035",
+      "FBMS-SWE-DRV-036",
+      "FBMS-SWE-DRV-037",
+      "FBMS-SWE-DRV-038",
+      "FBMS-SWE-DRV-039",
+      "FBMS-SWE-DRV-040",
+      "FBMS-SWE-DRV-042",
+      "FBMS-SWE-DRV-043",
+      "FBMS-SWE-DRV-044",
+      "FBMS-SWE-DRV-045",
+      "FBMS-SWE-DRV-046",
+      "FBMS-SWE-DRV-047",
+      "FBMS-SWE-DRV-048",
+      "FBMS-SWE-DRV-051",
+      "FBMS-SWE-DRV-052",
+      "FBMS-SWE-DRV-053",
+      "FBMS-SWE-DRV-056",
+      "FBMS-SWE-DRV-057",
+      "FBMS-SWE-DRV-058",
+      "FBMS-SWE-DRV-059",
+      "FBMS-SWE-DRV-060",
+      "FBMS-SWE-DRV-061",
+      "FBMS-SWE-DRV-062",
+      "FBMS-SWE-DRV-064",
+      "FBMS-SWE-DRV-065",
+      "FBMS-SWE-DRV-066",
+      "FBMS-SWE-DRV-067",
+      "FBMS-SWE-DRV-068",
+      "FBMS-SWE-DRV-069",
+      "FBMS-SWE-DRV-072",
+      "FBMS-SWE-DRV-073",
+      "FBMS-SWE-DRV-074",
+      "FBMS-SWE-DRV-075",
+      "FBMS-SWE-DRV-076",
+      "FBMS-SWE-DRV-077",
+      "FBMS-SWE-DRV-078",
+      "FBMS-SWE-DRV-080",
+      "FBMS-SWE-DRV-081",
+      "FBMS-SWE-DRV-083",
+      "FBMS-SWE-DRV-084",
+      "FBMS-SWE-DRV-085",
+      "FBMS-SWE-DRV-086",
+      "FBMS-SWE-DRV-087",
+      "FBMS-SWE-DRV-091",
+      "FBMS-SWE-DRV-092",
+      "FBMS-SWE-DRV-093",
+      "FBMS-SWE-DRV-094",
+      "FBMS-SWE-DRV-095",
+      "FBMS-SWE-DRV-096",
+      "FBMS-SWE-DRV-097",
+      "FBMS-SWE-DRV-098",
+      "FBMS-SWE-DRV-099",
+      "FBMS-SWE-DRV-100",
+      "FBMS-SWE-DRV-101",
+      "FBMS-SWE-DRV-102",
+      "FBMS-SWE-DRV-103",
+      "FBMS-SWE-DRV-108",
+      "FBMS-SWE-DRV-109",
+      "FBMS-SWE-DRV-110",
+      "FBMS-SWE-DRV-111",
+      "FBMS-SWE-DRV-112",
+      "FBMS-SWE-DRV-113",
+      "FBMS-SWE-DRV-114",
+      "FBMS-SWE-DRV-115",
+      "FBMS-SWE-DRV-116",
+      "FBMS-SWE-DRV-117",
+      "FBMS-SWE-DRV-118",
+      "FBMS-SWE-DRV-119",
+      "FBMS-SWE-DRV-123",
+      "FBMS-SWE-DRV-124",
+      "FBMS-SWE-DRV-125",
+      "FBMS-SWE-DRV-126",
+      "FBMS-SWE-DRV-127",
+      "FBMS-SWE-DRV-128",
+      "FBMS-SWE-BMS-001",
+      "FBMS-SWE-BMS-002",
+      "FBMS-SWE-BMS-003",
+      "FBMS-SWE-BMS-004",
+      "FBMS-SWE-BMS-005",
+      "FBMS-SWE-BMS-006",
+      "FBMS-SWE-BMS-007",
+      "FBMS-SWE-BMS-008",
+      "FBMS-SWE-BMS-009",
+      "FBMS-SWE-BMS-010",
+      "FBMS-SWE-BMS-011",
+      "FBMS-SWE-BMS-012",
+      "FBMS-SWE-BMS-013",
+      "FBMS-SWE-BMS-014",
+      "FBMS-SWE-BMS-015",
+      "FBMS-SWE-BMS-016",
+      "FBMS-SWE-BMS-017",
+      "FBMS-SWE-BMS-018",
+      "FBMS-SWE-BMS-019",
+      "FBMS-SWE-BMS-020",
+      "FBMS-SWE-BMS-021",
+      "FBMS-SWE-BMS-022",
+      "FBMS-SWE-BMS-023",
+      "FBMS-SWE-BMS-024",
+      "FBMS-SWE-BMS-025",
+      "FBMS-SWE-BMS-026",
+      "FBMS-SWE-BMS-027",
+      "FBMS-SWE-BMS-028",
+      "FBMS-SWE-BMS-029",
+      "FBMS-SWE-BMS-030",
+      "FBMS-SWE-BMS-031",
+      "FBMS-SWE-BMS-032",
+      "FBMS-SWE-BMS-033",
+      "FBMS-SWE-BMS-034",
+      "FBMS-SWE-BMS-035",
+      "FBMS-SWE-BMS-036",
+      "FBMS-SWE-BMS-037",
+      "FBMS-SWE-BMS-038",
+      "FBMS-SWE-BMS-039",
+      "FBMS-SWE-BMS-040",
+      "FBMS-SWE-BMS-041",
+      "FBMS-SWE-BMS-042",
+      "FBMS-SWE-BMS-043",
+      "FBMS-SWE-BMS-044",
+      "FBMS-SWE-BMS-045",
+      "FBMS-SWE-BMS-046",
+      "FBMS-SWE-BMS-047",
+      "FBMS-SWE-BMS-048",
+      "FBMS-SWE-BMS-049",
+      "FBMS-SWE-BMS-050",
+      "FBMS-SWE-BMS-051",
+      "FBMS-SWE-BMS-052",
+      "FBMS-SWE-BMS-053",
+      "FBMS-SWE-BMS-054",
+      "FBMS-SWE-BMS-055",
+      "FBMS-SWE-BMS-056",
+      "FBMS-SWE-BMS-057",
+      "FBMS-SWE-BMS-058",
+      "FBMS-SWE-BMS-059",
+      "FBMS-SWE-BMS-060",
+      "FBMS-SWE-BMS-061",
+      "FBMS-SWE-BMS-062",
+      "FBMS-SWE-BMS-063",
+      "FBMS-SWE-BMS-064",
+      "FBMS-SWE-BMS-065",
+      "FBMS-SWE-BMS-066",
+      "FBMS-SWE-BMS-067",
+      "FBMS-SWE-BMS-068",
+      "FBMS-SWE-BMS-069",
+      "FBMS-SWE-BMS-070",
+      "FBMS-SWE-BMS-071",
+      "FBMS-SWE-BMS-072",
+      "FBMS-SWE-BMS-073",
+      "FBMS-SWE-BMS-074",
+      "FBMS-SWE-BMS-075",
+      "FBMS-SWE-BMS-076",
+      "FBMS-SWE-BMS-077",
+      "FBMS-SWE-BMS-078",
+      "FBMS-SWE-BMS-079",
+      "FBMS-SWE-BMS-080",
+      "FBMS-SWE-BMS-081",
+      "FBMS-SWE-BMS-082",
+      "FBMS-SWE-BMS-083",
+      "FBMS-SWE-BMS-084",
+      "FBMS-SWE-BMS-085",
+      "FBMS-SWE-BMS-086",
+      "FBMS-SWE-BMS-087",
+      "FBMS-SWE-BMS-088",
+      "FBMS-SWE-BMS-089",
+      "FBMS-SWE-BMS-090",
+      "FBMS-SWE-BMS-091",
+      "FBMS-SWE-BMS-092",
+      "FBMS-SWE-BMS-093",
+      "FBMS-SWE-BMS-094",
+      "FBMS-SWE-BMS-095",
+      "FBMS-SWE-BMS-096",
+      "FBMS-SWE-BMS-097",
+      "FBMS-SWE-BMS-098",
+      "FBMS-SWE-BMS-099",
+      "FBMS-SWE-BMS-100",
+      "FBMS-SWE-BMS-101",
+      "FBMS-SWE-BMS-102",
+      "FBMS-SWE-BMS-103",
+      "FBMS-SWE-BMS-104",
+      "FBMS-SWE-BMS-105",
+      "FBMS-SWE-BMS-106",
+      "FBMS-SWE-BMS-107",
+      "FBMS-SWE-BMS-108",
+      "FBMS-SWE-BMS-109",
+      "FBMS-SWE-BMS-110",
+      "FBMS-SWE-BMS-111"
+    ],
+    "CFG": [
+      "FBMS-SWE-ALG-004",
+      "FBMS-SWE-ALG-007",
+      "FBMS-SWE-ALG-010",
+      "FBMS-SWE-ALG-011",
+      "FBMS-SWE-ALG-025",
+      "FBMS-SWE-ALG-034",
+      "FBMS-SWE-ALG-049",
+      "FBMS-SWE-ALG-050",
+      "FBMS-SWE-ALG-051",
+      "FBMS-SWE-ALG-052",
+      "FBMS-SWE-ALG-053",
+      "FBMS-SWE-ALG-054",
+      "FBMS-SWE-ALG-055",
+      "FBMS-SWE-ALG-056",
+      "FBMS-SWE-ALG-057",
+      "FBMS-SWE-ALG-058",
+      "FBMS-SWE-ALG-059",
+      "FBMS-SWE-ALG-060",
+      "FBMS-SWE-ALG-061",
+      "FBMS-SWE-ALG-062",
+      "FBMS-SWE-ALG-063",
+      "FBMS-SWE-ALG-064",
+      "FBMS-SWE-AFE-007",
+      "FBMS-SWE-AFE-008",
+      "FBMS-SWE-AFE-014",
+      "FBMS-SWE-AFE-015",
+      "FBMS-SWE-AFE-016",
+      "FBMS-SWE-AFE-017",
+      "FBMS-SWE-AFE-018",
+      "FBMS-SWE-AFE-019",
+      "FBMS-SWE-AFE-020",
+      "FBMS-SWE-AFE-021",
+      "FBMS-SWE-AFE-022",
+      "FBMS-SWE-AFE-026",
+      "FBMS-SWE-AFE-027",
+      "FBMS-SWE-AFE-028",
+      "FBMS-SWE-AFE-038",
+      "FBMS-SWE-AFE-039",
+      "FBMS-SWE-AFE-042",
+      "FBMS-SWE-TMP-006",
+      "FBMS-SWE-TMP-008",
+      "FBMS-SWE-TMP-009",
+      "FBMS-SWE-TMP-010",
+      "FBMS-SWE-TMP-011",
+      "FBMS-SWE-TMP-012",
+      "FBMS-SWE-TMP-013",
+      "FBMS-SWE-TMP-018",
+      "FBMS-SWE-TMP-019",
+      "FBMS-SWE-TMP-020",
+      "FBMS-SWE-TMP-026",
+      "FBMS-SWE-TMP-030",
+      "FBMS-SWE-TMP-034",
+      "FBMS-SWE-TMP-038",
+      "FBMS-SWE-TMP-042",
+      "FBMS-SWE-TMP-046",
+      "FBMS-SWE-TMP-050",
+      "FBMS-SWE-TMP-059",
+      "FBMS-SWE-TMP-062",
+      "FBMS-SAF-CFG-001",
+      "FBMS-SAF-CFG-002",
+      "FBMS-SAF-CFG-003",
+      "FBMS-SAF-CFG-004",
+      "FBMS-SAF-CFG-005",
+      "FBMS-SWE-CFG-001",
+      "FBMS-SAF-CFG-006",
+      "FBMS-SAF-CFG-007",
+      "FBMS-SAF-CFG-008",
+      "FBMS-SAF-CFG-009",
+      "FBMS-SWE-CFG-002",
+      "FBMS-SWE-CFG-003",
+      "FBMS-SWE-CFG-004",
+      "FBMS-SWE-CFG-005",
+      "FBMS-SWE-CFG-006",
+      "FBMS-SWE-CFG-007",
+      "FBMS-SWE-CFG-008",
+      "FBMS-SWE-CFG-009",
+      "FBMS-SWE-CFG-010",
+      "FBMS-SWE-CFG-011",
+      "FBMS-SWE-CFG-012",
+      "FBMS-SWE-CFG-013",
+      "FBMS-SWE-CFG-014",
+      "FBMS-SAF-CFG-010",
+      "FBMS-SAF-CFG-011",
+      "FBMS-SAF-CFG-012",
+      "FBMS-SAF-CFG-013",
+      "FBMS-SWE-CFG-015",
+      "FBMS-SWE-CFG-016",
+      "FBMS-SWE-CFG-017",
+      "FBMS-SWE-CFG-018",
+      "FBMS-SWE-CFG-019",
+      "FBMS-SWE-CFG-020",
+      "FBMS-SWE-CFG-021",
+      "FBMS-SAF-CFG-014",
+      "FBMS-SWE-CFG-022",
+      "FBMS-SWE-CFG-023",
+      "FBMS-SWE-CFG-024",
+      "FBMS-SWE-CFG-025",
+      "FBMS-SWE-CFG-026",
+      "FBMS-SWE-CFG-027",
+      "FBMS-SWE-CFG-028",
+      "FBMS-SWE-CFG-029",
+      "FBMS-SWE-CFG-030",
+      "FBMS-SWE-CFG-031",
+      "FBMS-SAF-CFG-015",
+      "FBMS-SAF-CFG-016",
+      "FBMS-SAF-CFG-017",
+      "FBMS-SAF-CFG-018",
+      "FBMS-SWE-CFG-032",
+      "FBMS-SWE-CFG-033",
+      "FBMS-SAF-CFG-019",
+      "FBMS-SWE-CFG-034",
+      "FBMS-SWE-CFG-035",
+      "FBMS-SWE-CFG-036",
+      "FBMS-SAF-CFG-020",
+      "FBMS-SAF-CFG-021",
+      "FBMS-SWE-CFG-037",
+      "FBMS-SWE-CFG-038",
+      "FBMS-SWE-CFG-039",
+      "FBMS-SWE-CFG-040",
+      "FBMS-SWE-CFG-041",
+      "FBMS-SWE-CFG-042",
+      "FBMS-SWE-CFG-043",
+      "FBMS-SAF-CFG-022",
+      "FBMS-SAF-CFG-023",
+      "FBMS-SWE-CFG-044",
+      "FBMS-SWE-CFG-045",
+      "FBMS-SWE-CFG-046",
+      "FBMS-SWE-CFG-047",
+      "FBMS-SWE-CFG-048",
+      "FBMS-SWE-CFG-049",
+      "FBMS-SWE-CFG-050",
+      "FBMS-SWE-CFG-051",
+      "FBMS-SWE-CFG-052",
+      "FBMS-SWE-CFG-053",
+      "FBMS-SWE-CFG-054",
+      "FBMS-SWE-CFG-055",
+      "FBMS-SWE-CFG-056",
+      "FBMS-SWE-CFG-057",
+      "FBMS-SWE-CFG-058",
+      "FBMS-SWE-CFG-059",
+      "FBMS-SWE-CFG-060",
+      "FBMS-SWE-CFG-061",
+      "FBMS-SWE-CFG-062",
+      "FBMS-SWE-CFG-063",
+      "FBMS-SWE-CFG-064",
+      "FBMS-SWE-CFG-065",
+      "FBMS-SWE-CFG-066",
+      "FBMS-SWE-CFG-067",
+      "FBMS-SWE-CFG-068",
+      "FBMS-SWE-CFG-069",
+      "FBMS-SWE-CFG-070",
+      "FBMS-SWE-CFG-071",
+      "FBMS-SWE-CFG-072",
+      "FBMS-SWE-CFG-073",
+      "FBMS-SWE-CFG-074",
+      "FBMS-SWE-CFG-075",
+      "FBMS-SWE-CFG-076",
+      "FBMS-SWE-CFG-077",
+      "FBMS-SWE-SBC-006",
+      "FBMS-SWE-SBC-011",
+      "FBMS-SWE-SBC-012",
+      "FBMS-SWE-SBC-013",
+      "FBMS-SWE-SBC-014",
+      "FBMS-SWE-SBC-015",
+      "FBMS-SWE-SBC-019",
+      "FBMS-SWE-SBC-023",
+      "FBMS-SWE-SBC-025",
+      "FBMS-SWE-DRV-004",
+      "FBMS-SWE-DRV-005",
+      "FBMS-SWE-DRV-006",
+      "FBMS-SWE-DRV-014",
+      "FBMS-SWE-DRV-022",
+      "FBMS-SWE-DRV-023",
+      "FBMS-SWE-DRV-027",
+      "FBMS-SWE-DRV-028",
+      "FBMS-SWE-DRV-029",
+      "FBMS-SWE-DRV-041",
+      "FBMS-SWE-DRV-049",
+      "FBMS-SWE-DRV-050",
+      "FBMS-SWE-DRV-054",
+      "FBMS-SWE-DRV-055",
+      "FBMS-SWE-DRV-063",
+      "FBMS-SWE-DRV-070",
+      "FBMS-SWE-DRV-071",
+      "FBMS-SWE-DRV-079",
+      "FBMS-SWE-DRV-082",
+      "FBMS-SWE-DRV-088",
+      "FBMS-SWE-DRV-089",
+      "FBMS-SWE-DRV-090",
+      "FBMS-SWE-DRV-104",
+      "FBMS-SWE-DRV-105",
+      "FBMS-SWE-DRV-106",
+      "FBMS-SWE-DRV-107",
+      "FBMS-SWE-DRV-120",
+      "FBMS-SWE-DRV-121",
+      "FBMS-SWE-DRV-122"
+    ],
+    "FSR": [
+      "FBMS-SAF-ALG-001",
+      "FBMS-SAF-ALG-002",
+      "FBMS-SAF-ALG-003",
+      "FBMS-SAF-ALG-004",
+      "FBMS-SAF-ALG-005",
+      "FBMS-SAF-ALG-006",
+      "FBMS-SAF-ALG-007",
+      "FBMS-SAF-ALG-008",
+      "FBMS-SAF-ALG-009",
+      "FBMS-SAF-ALG-010",
+      "FBMS-SAF-ALG-011",
+      "FBMS-SAF-ALG-012",
+      "FBMS-SAF-ALG-013",
+      "FBMS-SAF-ALG-014",
+      "FBMS-SAF-ALG-015",
+      "FBMS-SAF-AFE-001",
+      "FBMS-SAF-AFE-002",
+      "FBMS-SAF-AFE-003",
+      "FBMS-SAF-AFE-004",
+      "FBMS-SAF-AFE-005",
+      "FBMS-SAF-AFE-006",
+      "FBMS-SAF-AFE-007",
+      "FBMS-SAF-AFE-008",
+      "FBMS-SAF-AFE-009",
+      "FBMS-SAF-AFE-010",
+      "FBMS-SAF-AFE-011",
+      "FBMS-SAF-AFE-012",
+      "FBMS-SAF-AFE-013",
+      "FBMS-SAF-AFE-014",
+      "FBMS-SAF-AFE-015",
+      "FBMS-SAF-AFE-016",
+      "FBMS-SAF-AFE-017",
+      "FBMS-SAF-AFE-018",
+      "FBMS-SAF-AFE-019",
+      "FBMS-SAF-AFE-020",
+      "FBMS-SAF-AFE-021",
+      "FBMS-SAF-AFE-022",
+      "FBMS-SAF-AFE-023",
+      "FBMS-SAF-AFE-024",
+      "FBMS-SAF-AFE-025",
+      "FBMS-SAF-AFE-026",
+      "FBMS-SAF-AFE-027",
+      "FBMS-SAF-AFE-028",
+      "FBMS-SAF-AFE-029",
+      "FBMS-SAF-AFE-030",
+      "FBMS-SAF-AFE-031",
+      "FBMS-SAF-AFE-032",
+      "FBMS-SAF-TMP-001",
+      "FBMS-SAF-TMP-002",
+      "FBMS-SAF-TMP-003",
+      "FBMS-SAF-TMP-004",
+      "FBMS-SAF-TMP-005",
+      "FBMS-SAF-TMP-006",
+      "FBMS-SAF-TMP-007",
+      "FBMS-SAF-TMP-008",
+      "FBMS-SAF-TMP-009",
+      "FBMS-SAF-TMP-010",
+      "FBMS-SAF-TMP-011",
+      "FBMS-SAF-TMP-012",
+      "FBMS-SAF-TMP-013",
+      "FBMS-SAF-TMP-014",
+      "FBMS-SAF-TMP-015",
+      "FBMS-SAF-SBC-001",
+      "FBMS-SAF-SBC-002",
+      "FBMS-SAF-SBC-003",
+      "FBMS-SAF-SBC-004",
+      "FBMS-SAF-SBC-005",
+      "FBMS-SAF-SBC-006",
+      "FBMS-SAF-SBC-007",
+      "FBMS-SAF-SBC-008",
+      "FBMS-SAF-SBC-009",
+      "FBMS-SAF-SBC-010",
+      "FBMS-SAF-SBC-011",
+      "FBMS-SAF-SBC-012",
+      "FBMS-SAF-SBC-013",
+      "FBMS-SAF-SBC-014",
+      "FBMS-SAF-SBC-015",
+      "FBMS-SAF-SBC-016",
+      "FBMS-SAF-SBC-017",
+      "FBMS-SAF-SBC-018",
+      "FBMS-SAF-SBC-019",
+      "FBMS-SAF-SBC-020",
+      "FBMS-SAF-SBC-021",
+      "FBMS-SAF-SBC-022",
+      "FBMS-SAF-SBC-023",
+      "FBMS-SAF-DRV-001",
+      "FBMS-SAF-DRV-002",
+      "FBMS-SAF-DRV-003",
+      "FBMS-SAF-DRV-004",
+      "FBMS-SAF-DRV-005",
+      "FBMS-SAF-DRV-006",
+      "FBMS-SAF-DRV-007",
+      "FBMS-SAF-DRV-008",
+      "FBMS-SAF-DRV-009",
+      "FBMS-SAF-DRV-010",
+      "FBMS-SAF-DRV-011",
+      "FBMS-SAF-DRV-012",
+      "FBMS-SAF-DRV-013",
+      "FBMS-SAF-DRV-014",
+      "FBMS-SAF-DRV-015"
+    ],
+    "HSI": [
+      "FBMS-INT-TMP-001",
+      "FBMS-INT-SBC-001",
+      "FBMS-INT-SBC-002",
+      "FBMS-INT-SBC-003",
+      "FBMS-INT-SBC-004",
+      "FBMS-INT-DRV-001",
+      "FBMS-INT-DRV-002",
+      "FBMS-INT-DRV-003"
+    ]
+  },
+  "by_source_file": {
+    "algorithm-extracted.json": [
+      "FBMS-SWE-ALG-001",
+      "FBMS-SWE-ALG-002",
+      "FBMS-SWE-ALG-003",
+      "FBMS-SWE-ALG-004",
+      "FBMS-SWE-ALG-005",
+      "FBMS-SAF-ALG-001",
+      "FBMS-SWE-ALG-006",
+      "FBMS-SAF-ALG-002",
+      "FBMS-SWE-ALG-007",
+      "FBMS-SWE-ALG-008",
+      "FBMS-SWE-ALG-009",
+      "FBMS-SWE-ALG-010",
+      "FBMS-SWE-ALG-011",
+      "FBMS-SWE-ALG-012",
+      "FBMS-SWE-ALG-013",
+      "FBMS-SWE-ALG-014",
+      "FBMS-SWE-ALG-015",
+      "FBMS-SAF-ALG-003",
+      "FBMS-SWE-ALG-016",
+      "FBMS-SWE-ALG-017",
+      "FBMS-SAF-ALG-004",
+      "FBMS-SAF-ALG-005",
+      "FBMS-SAF-ALG-006",
+      "FBMS-SWE-ALG-018",
+      "FBMS-SWE-ALG-019",
+      "FBMS-SWE-ALG-020",
+      "FBMS-SWE-ALG-021",
+      "FBMS-SWE-ALG-022",
+      "FBMS-SWE-ALG-023",
+      "FBMS-SWE-ALG-024",
+      "FBMS-SWE-ALG-025",
+      "FBMS-SWE-ALG-026",
+      "FBMS-SWE-ALG-027",
+      "FBMS-SAF-ALG-007",
+      "FBMS-SAF-ALG-008",
+      "FBMS-SAF-ALG-009",
+      "FBMS-SWE-ALG-028",
+      "FBMS-SWE-ALG-029",
+      "FBMS-SWE-ALG-030",
+      "FBMS-SWE-ALG-031",
+      "FBMS-SWE-ALG-032",
+      "FBMS-SWE-ALG-033",
+      "FBMS-SWE-ALG-034",
+      "FBMS-SWE-ALG-035",
+      "FBMS-SWE-ALG-036",
+      "FBMS-SAF-ALG-010",
+      "FBMS-SAF-ALG-011",
+      "FBMS-SAF-ALG-012",
+      "FBMS-SWE-ALG-037",
+      "FBMS-SWE-ALG-038",
+      "FBMS-SWE-ALG-039",
+      "FBMS-SAF-ALG-013",
+      "FBMS-SAF-ALG-014",
+      "FBMS-SWE-ALG-040",
+      "FBMS-SWE-ALG-041",
+      "FBMS-SWE-ALG-042",
+      "FBMS-SWE-ALG-043",
+      "FBMS-SWE-ALG-044",
+      "FBMS-SWE-ALG-045",
+      "FBMS-SWE-ALG-046",
+      "FBMS-SWE-ALG-047",
+      "FBMS-SAF-ALG-015",
+      "FBMS-SWE-ALG-048",
+      "FBMS-SWE-ALG-049",
+      "FBMS-SWE-ALG-050",
+      "FBMS-SWE-ALG-051",
+      "FBMS-SWE-ALG-052",
+      "FBMS-SWE-ALG-053",
+      "FBMS-SWE-ALG-054",
+      "FBMS-SWE-ALG-055",
+      "FBMS-SWE-ALG-056",
+      "FBMS-SWE-ALG-057",
+      "FBMS-SWE-ALG-058",
+      "FBMS-SWE-ALG-059",
+      "FBMS-SWE-ALG-060",
+      "FBMS-SWE-ALG-061",
+      "FBMS-SWE-ALG-062",
+      "FBMS-SWE-ALG-063",
+      "FBMS-SWE-ALG-064"
+    ],
+    "afe-extracted.json": [
+      "FBMS-SWE-AFE-001",
+      "FBMS-SWE-AFE-002",
+      "FBMS-SWE-AFE-003",
+      "FBMS-SWE-AFE-004",
+      "FBMS-SWE-AFE-005",
+      "FBMS-SWE-AFE-006",
+      "FBMS-SAF-AFE-001",
+      "FBMS-SWE-AFE-007",
+      "FBMS-SWE-AFE-008",
+      "FBMS-SAF-AFE-002",
+      "FBMS-SWE-AFE-009",
+      "FBMS-SAF-AFE-003",
+      "FBMS-SAF-AFE-004",
+      "FBMS-SAF-AFE-005",
+      "FBMS-SWE-AFE-010",
+      "FBMS-SWE-AFE-011",
+      "FBMS-SWE-AFE-012",
+      "FBMS-SWE-AFE-013",
+      "FBMS-SWE-AFE-014",
+      "FBMS-SWE-AFE-015",
+      "FBMS-SAF-AFE-006",
+      "FBMS-SAF-AFE-007",
+      "FBMS-SAF-AFE-008",
+      "FBMS-SAF-AFE-009",
+      "FBMS-SWE-AFE-016",
+      "FBMS-SWE-AFE-017",
+      "FBMS-SWE-AFE-018",
+      "FBMS-SWE-AFE-019",
+      "FBMS-SAF-AFE-010",
+      "FBMS-SAF-AFE-011",
+      "FBMS-SAF-AFE-012",
+      "FBMS-SAF-AFE-013",
+      "FBMS-SAF-AFE-014",
+      "FBMS-SAF-AFE-015",
+      "FBMS-SWE-AFE-020",
+      "FBMS-SWE-AFE-021",
+      "FBMS-SWE-AFE-022",
+      "FBMS-SAF-AFE-016",
+      "FBMS-SAF-AFE-017",
+      "FBMS-SAF-AFE-018",
+      "FBMS-SWE-AFE-023",
+      "FBMS-SWE-AFE-024",
+      "FBMS-SAF-AFE-019",
+      "FBMS-SAF-AFE-020",
+      "FBMS-SWE-AFE-025",
+      "FBMS-SWE-AFE-026",
+      "FBMS-SWE-AFE-027",
+      "FBMS-SWE-AFE-028",
+      "FBMS-SWE-AFE-029",
+      "FBMS-SWE-AFE-030",
+      "FBMS-SWE-AFE-031",
+      "FBMS-SWE-AFE-032",
+      "FBMS-SAF-AFE-021",
+      "FBMS-SAF-AFE-022",
+      "FBMS-SAF-AFE-023",
+      "FBMS-SWE-AFE-033",
+      "FBMS-SWE-AFE-034",
+      "FBMS-SAF-AFE-024",
+      "FBMS-SAF-AFE-025",
+      "FBMS-SWE-AFE-035",
+      "FBMS-SWE-AFE-036",
+      "FBMS-SWE-AFE-037",
+      "FBMS-SWE-AFE-038",
+      "FBMS-SWE-AFE-039",
+      "FBMS-SAF-AFE-026",
+      "FBMS-SAF-AFE-027",
+      "FBMS-SAF-AFE-028",
+      "FBMS-SAF-AFE-029",
+      "FBMS-SAF-AFE-030",
+      "FBMS-SAF-AFE-031",
+      "FBMS-SAF-AFE-032",
+      "FBMS-SWE-AFE-040",
+      "FBMS-SWE-AFE-041",
+      "FBMS-SWE-AFE-042",
+      "FBMS-SWE-AFE-043",
+      "FBMS-SWE-AFE-044",
+      "FBMS-SWE-AFE-045",
+      "FBMS-SWE-AFE-046"
+    ],
+    "ts-extracted.json": [
+      "FBMS-SWE-TMP-001",
+      "FBMS-SWE-TMP-002",
+      "FBMS-SWE-TMP-003",
+      "FBMS-SWE-TMP-004",
+      "FBMS-SWE-TMP-005",
+      "FBMS-SWE-TMP-006",
+      "FBMS-SWE-TMP-007",
+      "FBMS-SAF-TMP-001",
+      "FBMS-SWE-TMP-008",
+      "FBMS-SWE-TMP-009",
+      "FBMS-SWE-TMP-010",
+      "FBMS-SWE-TMP-011",
+      "FBMS-SWE-TMP-012",
+      "FBMS-SWE-TMP-013",
+      "FBMS-SWE-TMP-014",
+      "FBMS-SAF-TMP-002",
+      "FBMS-SAF-TMP-003",
+      "FBMS-SAF-TMP-004",
+      "FBMS-SWE-TMP-015",
+      "FBMS-SWE-TMP-016",
+      "FBMS-SAF-TMP-005",
+      "FBMS-SWE-TMP-017",
+      "FBMS-SWE-TMP-018",
+      "FBMS-SWE-TMP-019",
+      "FBMS-SWE-TMP-020",
+      "FBMS-SWE-TMP-021",
+      "FBMS-SWE-TMP-022",
+      "FBMS-SWE-TMP-023",
+      "FBMS-SWE-TMP-024",
+      "FBMS-SWE-TMP-025",
+      "FBMS-SAF-TMP-006",
+      "FBMS-SWE-TMP-026",
+      "FBMS-SWE-TMP-027",
+      "FBMS-SWE-TMP-028",
+      "FBMS-SWE-TMP-029",
+      "FBMS-SAF-TMP-007",
+      "FBMS-SWE-TMP-030",
+      "FBMS-SWE-TMP-031",
+      "FBMS-SWE-TMP-032",
+      "FBMS-SWE-TMP-033",
+      "FBMS-SAF-TMP-008",
+      "FBMS-SWE-TMP-034",
+      "FBMS-SWE-TMP-035",
+      "FBMS-SWE-TMP-036",
+      "FBMS-SWE-TMP-037",
+      "FBMS-SAF-TMP-009",
+      "FBMS-SWE-TMP-038",
+      "FBMS-SWE-TMP-039",
+      "FBMS-SWE-TMP-040",
+      "FBMS-SWE-TMP-041",
+      "FBMS-SAF-TMP-010",
+      "FBMS-SWE-TMP-042",
+      "FBMS-SWE-TMP-043",
+      "FBMS-SWE-TMP-044",
+      "FBMS-SWE-TMP-045",
+      "FBMS-SAF-TMP-011",
+      "FBMS-SWE-TMP-046",
+      "FBMS-SWE-TMP-047",
+      "FBMS-SWE-TMP-048",
+      "FBMS-SWE-TMP-049",
+      "FBMS-SAF-TMP-012",
+      "FBMS-SWE-TMP-050",
+      "FBMS-SWE-TMP-051",
+      "FBMS-SWE-TMP-052",
+      "FBMS-SWE-TMP-053",
+      "FBMS-SWE-TMP-054",
+      "FBMS-SWE-TMP-055",
+      "FBMS-SWE-TMP-056",
+      "FBMS-SWE-TMP-057",
+      "FBMS-SWE-TMP-058",
+      "FBMS-SAF-TMP-013",
+      "FBMS-SAF-TMP-014",
+      "FBMS-SAF-TMP-015",
+      "FBMS-SWE-TMP-059",
+      "FBMS-INT-TMP-001",
+      "FBMS-SWE-TMP-060",
+      "FBMS-SWE-TMP-061",
+      "FBMS-SWE-TMP-062",
+      "FBMS-SWE-TMP-063",
+      "FBMS-SWE-TMP-064",
+      "FBMS-SWE-TMP-065",
+      "FBMS-SWE-TMP-066"
+    ],
+    "config-extracted.json": [
+      "FBMS-SAF-CFG-001",
+      "FBMS-SAF-CFG-002",
+      "FBMS-SAF-CFG-003",
+      "FBMS-SAF-CFG-004",
+      "FBMS-SAF-CFG-005",
+      "FBMS-SWE-CFG-001",
+      "FBMS-SAF-CFG-006",
+      "FBMS-SAF-CFG-007",
+      "FBMS-SAF-CFG-008",
+      "FBMS-SAF-CFG-009",
+      "FBMS-SWE-CFG-002",
+      "FBMS-SWE-CFG-003",
+      "FBMS-SWE-CFG-004",
+      "FBMS-SWE-CFG-005",
+      "FBMS-SWE-CFG-006",
+      "FBMS-SWE-CFG-007",
+      "FBMS-SWE-CFG-008",
+      "FBMS-SWE-CFG-009",
+      "FBMS-SWE-CFG-010",
+      "FBMS-SWE-CFG-011",
+      "FBMS-SWE-CFG-012",
+      "FBMS-SWE-CFG-013",
+      "FBMS-SWE-CFG-014",
+      "FBMS-SAF-CFG-010",
+      "FBMS-SAF-CFG-011",
+      "FBMS-SAF-CFG-012",
+      "FBMS-SAF-CFG-013",
+      "FBMS-SWE-CFG-015",
+      "FBMS-SWE-CFG-016",
+      "FBMS-SWE-CFG-017",
+      "FBMS-SWE-CFG-018",
+      "FBMS-SWE-CFG-019",
+      "FBMS-SWE-CFG-020",
+      "FBMS-SWE-CFG-021",
+      "FBMS-SAF-CFG-014",
+      "FBMS-SWE-CFG-022",
+      "FBMS-SWE-CFG-023",
+      "FBMS-SWE-CFG-024",
+      "FBMS-SWE-CFG-025",
+      "FBMS-SWE-CFG-026",
+      "FBMS-SWE-CFG-027",
+      "FBMS-SWE-CFG-028",
+      "FBMS-SWE-CFG-029",
+      "FBMS-SWE-CFG-030",
+      "FBMS-SWE-CFG-031",
+      "FBMS-SAF-CFG-015",
+      "FBMS-SAF-CFG-016",
+      "FBMS-SAF-CFG-017",
+      "FBMS-SAF-CFG-018",
+      "FBMS-SWE-CFG-032",
+      "FBMS-SWE-CFG-033",
+      "FBMS-SAF-CFG-019",
+      "FBMS-SWE-CFG-034",
+      "FBMS-SWE-CFG-035",
+      "FBMS-SWE-CFG-036",
+      "FBMS-SAF-CFG-020",
+      "FBMS-SAF-CFG-021",
+      "FBMS-SWE-CFG-037",
+      "FBMS-SWE-CFG-038",
+      "FBMS-SWE-CFG-039",
+      "FBMS-SWE-CFG-040",
+      "FBMS-SWE-CFG-041",
+      "FBMS-SWE-CFG-042",
+      "FBMS-SWE-CFG-043",
+      "FBMS-SAF-CFG-022",
+      "FBMS-SAF-CFG-023",
+      "FBMS-SWE-CFG-044",
+      "FBMS-SWE-CFG-045",
+      "FBMS-SWE-CFG-046",
+      "FBMS-SWE-CFG-047",
+      "FBMS-SWE-CFG-048",
+      "FBMS-SWE-CFG-049",
+      "FBMS-SWE-CFG-050",
+      "FBMS-SWE-CFG-051",
+      "FBMS-SWE-CFG-052",
+      "FBMS-SWE-CFG-053",
+      "FBMS-SWE-CFG-054",
+      "FBMS-SWE-CFG-055",
+      "FBMS-SWE-CFG-056",
+      "FBMS-SWE-CFG-057",
+      "FBMS-SWE-CFG-058",
+      "FBMS-SWE-CFG-059",
+      "FBMS-SWE-CFG-060",
+      "FBMS-SWE-CFG-061",
+      "FBMS-SWE-CFG-062",
+      "FBMS-SWE-CFG-063",
+      "FBMS-SWE-CFG-064",
+      "FBMS-SWE-CFG-065",
+      "FBMS-SWE-CFG-066",
+      "FBMS-SWE-CFG-067",
+      "FBMS-SWE-CFG-068",
+      "FBMS-SWE-CFG-069",
+      "FBMS-SWE-CFG-070",
+      "FBMS-SWE-CFG-071",
+      "FBMS-SWE-CFG-072",
+      "FBMS-SWE-CFG-073",
+      "FBMS-SWE-CFG-074",
+      "FBMS-SWE-CFG-075",
+      "FBMS-SWE-CFG-076",
+      "FBMS-SWE-CFG-077"
+    ],
+    "sbc-extracted.json": [
+      "FBMS-SWE-SBC-001",
+      "FBMS-SWE-SBC-002",
+      "FBMS-SAF-SBC-001",
+      "FBMS-SAF-SBC-002",
+      "FBMS-SAF-SBC-003",
+      "FBMS-SWE-SBC-003",
+      "FBMS-SWE-SBC-004",
+      "FBMS-SAF-SBC-004",
+      "FBMS-SWE-SBC-005",
+      "FBMS-SAF-SBC-005",
+      "FBMS-SAF-SBC-006",
+      "FBMS-SWE-SBC-006",
+      "FBMS-SWE-SBC-007",
+      "FBMS-SWE-SBC-008",
+      "FBMS-SAF-SBC-007",
+      "FBMS-SAF-SBC-008",
+      "FBMS-SAF-SBC-009",
+      "FBMS-SWE-SBC-009",
+      "FBMS-SAF-SBC-010",
+      "FBMS-SWE-SBC-010",
+      "FBMS-SAF-SBC-011",
+      "FBMS-SWE-SBC-011",
+      "FBMS-SWE-SBC-012",
+      "FBMS-SWE-SBC-013",
+      "FBMS-SWE-SBC-014",
+      "FBMS-SAF-SBC-012",
+      "FBMS-SWE-SBC-015",
+      "FBMS-SWE-SBC-016",
+      "FBMS-SAF-SBC-013",
+      "FBMS-SWE-SBC-017",
+      "FBMS-SWE-SBC-018",
+      "FBMS-SAF-SBC-014",
+      "FBMS-SWE-SBC-019",
+      "FBMS-SAF-SBC-015",
+      "FBMS-SAF-SBC-016",
+      "FBMS-SAF-SBC-017",
+      "FBMS-SAF-SBC-018",
+      "FBMS-SAF-SBC-019",
+      "FBMS-SWE-SBC-020",
+      "FBMS-SAF-SBC-020",
+      "FBMS-SWE-SBC-021",
+      "FBMS-SAF-SBC-021",
+      "FBMS-SAF-SBC-022",
+      "FBMS-SAF-SBC-023",
+      "FBMS-SWE-SBC-022",
+      "FBMS-SWE-SBC-023",
+      "FBMS-INT-SBC-001",
+      "FBMS-INT-SBC-002",
+      "FBMS-INT-SBC-003",
+      "FBMS-INT-SBC-004",
+      "FBMS-SWE-SBC-024",
+      "FBMS-SWE-SBC-025"
+    ],
+    "drivers-extracted.json": [
+      "FBMS-SWE-DRV-001",
+      "FBMS-SWE-DRV-002",
+      "FBMS-SWE-DRV-003",
+      "FBMS-SWE-DRV-004",
+      "FBMS-SWE-DRV-005",
+      "FBMS-SWE-DRV-006",
+      "FBMS-SAF-DRV-001",
+      "FBMS-SWE-DRV-007",
+      "FBMS-SWE-DRV-008",
+      "FBMS-SWE-DRV-009",
+      "FBMS-SWE-DRV-010",
+      "FBMS-SWE-DRV-011",
+      "FBMS-SWE-DRV-012",
+      "FBMS-SWE-DRV-013",
+      "FBMS-SWE-DRV-014",
+      "FBMS-SWE-DRV-015",
+      "FBMS-SAF-DRV-002",
+      "FBMS-SAF-DRV-003",
+      "FBMS-SAF-DRV-004",
+      "FBMS-SAF-DRV-005",
+      "FBMS-SWE-DRV-016",
+      "FBMS-SWE-DRV-017",
+      "FBMS-SWE-DRV-018",
+      "FBMS-SWE-DRV-019",
+      "FBMS-SWE-DRV-020",
+      "FBMS-SWE-DRV-021",
+      "FBMS-SWE-DRV-022",
+      "FBMS-SWE-DRV-023",
+      "FBMS-SWE-DRV-024",
+      "FBMS-SWE-DRV-025",
+      "FBMS-SWE-DRV-026",
+      "FBMS-SWE-DRV-027",
+      "FBMS-SWE-DRV-028",
+      "FBMS-SWE-DRV-029",
+      "FBMS-SWE-DRV-030",
+      "FBMS-SWE-DRV-031",
+      "FBMS-SWE-DRV-032",
+      "FBMS-SWE-DRV-033",
+      "FBMS-SWE-DRV-034",
+      "FBMS-SWE-DRV-035",
+      "FBMS-SWE-DRV-036",
+      "FBMS-INT-DRV-001",
+      "FBMS-SWE-DRV-037",
+      "FBMS-SWE-DRV-038",
+      "FBMS-SWE-DRV-039",
+      "FBMS-SWE-DRV-040",
+      "FBMS-SWE-DRV-041",
+      "FBMS-SWE-DRV-042",
+      "FBMS-SWE-DRV-043",
+      "FBMS-SWE-DRV-044",
+      "FBMS-SWE-DRV-045",
+      "FBMS-SWE-DRV-046",
+      "FBMS-SWE-DRV-047",
+      "FBMS-SAF-DRV-006",
+      "FBMS-SAF-DRV-007",
+      "FBMS-SWE-DRV-048",
+      "FBMS-SWE-DRV-049",
+      "FBMS-SWE-DRV-050",
+      "FBMS-SWE-DRV-051",
+      "FBMS-SWE-DRV-052",
+      "FBMS-SWE-DRV-053",
+      "FBMS-SWE-DRV-054",
+      "FBMS-SWE-DRV-055",
+      "FBMS-SWE-DRV-056",
+      "FBMS-SWE-DRV-057",
+      "FBMS-SWE-DRV-058",
+      "FBMS-SWE-DRV-059",
+      "FBMS-SWE-DRV-060",
+      "FBMS-SWE-DRV-061",
+      "FBMS-SWE-DRV-062",
+      "FBMS-INT-DRV-002",
+      "FBMS-INT-DRV-003",
+      "FBMS-SWE-DRV-063",
+      "FBMS-SAF-DRV-008",
+      "FBMS-SWE-DRV-064",
+      "FBMS-SWE-DRV-065",
+      "FBMS-SWE-DRV-066",
+      "FBMS-SWE-DRV-067",
+      "FBMS-SWE-DRV-068",
+      "FBMS-SWE-DRV-069",
+      "FBMS-SWE-DRV-070",
+      "FBMS-SWE-DRV-071",
+      "FBMS-SWE-DRV-072",
+      "FBMS-SWE-DRV-073",
+      "FBMS-SWE-DRV-074",
+      "FBMS-SWE-DRV-075",
+      "FBMS-SWE-DRV-076",
+      "FBMS-SWE-DRV-077",
+      "FBMS-SWE-DRV-078",
+      "FBMS-SWE-DRV-079",
+      "FBMS-SWE-DRV-080",
+      "FBMS-SWE-DRV-081",
+      "FBMS-SWE-DRV-082",
+      "FBMS-SWE-DRV-083",
+      "FBMS-SWE-DRV-084",
+      "FBMS-SWE-DRV-085",
+      "FBMS-SWE-DRV-086",
+      "FBMS-SWE-DRV-087",
+      "FBMS-SWE-DRV-088",
+      "FBMS-SWE-DRV-089",
+      "FBMS-SWE-DRV-090",
+      "FBMS-SWE-DRV-091",
+      "FBMS-SWE-DRV-092",
+      "FBMS-SWE-DRV-093",
+      "FBMS-SWE-DRV-094",
+      "FBMS-SWE-DRV-095",
+      "FBMS-SWE-DRV-096",
+      "FBMS-SWE-DRV-097",
+      "FBMS-SWE-DRV-098",
+      "FBMS-SWE-DRV-099",
+      "FBMS-SWE-DRV-100",
+      "FBMS-SWE-DRV-101",
+      "FBMS-SWE-DRV-102",
+      "FBMS-SWE-DRV-103",
+      "FBMS-SWE-DRV-104",
+      "FBMS-SWE-DRV-105",
+      "FBMS-SWE-DRV-106",
+      "FBMS-SWE-DRV-107",
+      "FBMS-SWE-DRV-108",
+      "FBMS-SAF-DRV-009",
+      "FBMS-SAF-DRV-010",
+      "FBMS-SWE-DRV-109",
+      "FBMS-SWE-DRV-110",
+      "FBMS-SWE-DRV-111",
+      "FBMS-SWE-DRV-112",
+      "FBMS-SWE-DRV-113",
+      "FBMS-SWE-DRV-114",
+      "FBMS-SWE-DRV-115",
+      "FBMS-SWE-DRV-116",
+      "FBMS-SWE-DRV-117",
+      "FBMS-SWE-DRV-118",
+      "FBMS-SAF-DRV-011",
+      "FBMS-SAF-DRV-012",
+      "FBMS-SAF-DRV-013",
+      "FBMS-SAF-DRV-014",
+      "FBMS-SAF-DRV-015",
+      "FBMS-SWE-DRV-119",
+      "FBMS-SWE-DRV-120",
+      "FBMS-SWE-DRV-121",
+      "FBMS-SWE-DRV-122",
+      "FBMS-SWE-DRV-123",
+      "FBMS-SWE-DRV-124",
+      "FBMS-SWE-DRV-125",
+      "FBMS-SWE-DRV-126",
+      "FBMS-SWE-DRV-127",
+      "FBMS-SWE-DRV-128"
+    ],
+    "BMS-extracted.json": [
+      "FBMS-SWE-BMS-001",
+      "FBMS-SWE-BMS-002",
+      "FBMS-SWE-BMS-003",
+      "FBMS-SWE-BMS-004",
+      "FBMS-SWE-BMS-005",
+      "FBMS-SWE-BMS-006",
+      "FBMS-SWE-BMS-007",
+      "FBMS-SWE-BMS-008",
+      "FBMS-SWE-BMS-009",
+      "FBMS-SWE-BMS-010",
+      "FBMS-SWE-BMS-011",
+      "FBMS-SWE-BMS-012",
+      "FBMS-SWE-BMS-013",
+      "FBMS-SWE-BMS-014",
+      "FBMS-SWE-BMS-015",
+      "FBMS-SWE-BMS-016",
+      "FBMS-SWE-BMS-017",
+      "FBMS-SWE-BMS-018",
+      "FBMS-SWE-BMS-019",
+      "FBMS-SWE-BMS-020",
+      "FBMS-SWE-BMS-021",
+      "FBMS-SWE-BMS-022",
+      "FBMS-SWE-BMS-023",
+      "FBMS-SWE-BMS-024",
+      "FBMS-SWE-BMS-025",
+      "FBMS-SWE-BMS-026",
+      "FBMS-SWE-BMS-027",
+      "FBMS-SWE-BMS-028",
+      "FBMS-SWE-BMS-029",
+      "FBMS-SWE-BMS-030",
+      "FBMS-SWE-BMS-031",
+      "FBMS-SWE-BMS-032",
+      "FBMS-SWE-BMS-033",
+      "FBMS-SWE-BMS-034",
+      "FBMS-SWE-BMS-035",
+      "FBMS-SWE-BMS-036",
+      "FBMS-SWE-BMS-037",
+      "FBMS-SWE-BMS-038",
+      "FBMS-SWE-BMS-039",
+      "FBMS-SWE-BMS-040",
+      "FBMS-SWE-BMS-041",
+      "FBMS-SWE-BMS-042",
+      "FBMS-SWE-BMS-043",
+      "FBMS-SWE-BMS-044",
+      "FBMS-SWE-BMS-045",
+      "FBMS-SWE-BMS-046",
+      "FBMS-SWE-BMS-047",
+      "FBMS-SWE-BMS-048",
+      "FBMS-SWE-BMS-049",
+      "FBMS-SWE-BMS-050",
+      "FBMS-SWE-BMS-051",
+      "FBMS-SWE-BMS-052",
+      "FBMS-SWE-BMS-053",
+      "FBMS-SWE-BMS-054",
+      "FBMS-SWE-BMS-055",
+      "FBMS-SWE-BMS-056",
+      "FBMS-SWE-BMS-057",
+      "FBMS-SWE-BMS-058",
+      "FBMS-SWE-BMS-059",
+      "FBMS-SWE-BMS-060",
+      "FBMS-SWE-BMS-061",
+      "FBMS-SWE-BMS-062",
+      "FBMS-SWE-BMS-063",
+      "FBMS-SWE-BMS-064",
+      "FBMS-SWE-BMS-065",
+      "FBMS-SWE-BMS-066",
+      "FBMS-SWE-BMS-067",
+      "FBMS-SWE-BMS-068",
+      "FBMS-SWE-BMS-069",
+      "FBMS-SWE-BMS-070",
+      "FBMS-SWE-BMS-071",
+      "FBMS-SWE-BMS-072",
+      "FBMS-SWE-BMS-073",
+      "FBMS-SWE-BMS-074",
+      "FBMS-SWE-BMS-075",
+      "FBMS-SWE-BMS-076",
+      "FBMS-SWE-BMS-077",
+      "FBMS-SWE-BMS-078",
+      "FBMS-SWE-BMS-079",
+      "FBMS-SWE-BMS-080",
+      "FBMS-SWE-BMS-081",
+      "FBMS-SWE-BMS-082",
+      "FBMS-SWE-BMS-083",
+      "FBMS-SWE-BMS-084",
+      "FBMS-SWE-BMS-085",
+      "FBMS-SWE-BMS-086",
+      "FBMS-SWE-BMS-087",
+      "FBMS-SWE-BMS-088",
+      "FBMS-SWE-BMS-089",
+      "FBMS-SWE-BMS-090",
+      "FBMS-SWE-BMS-091",
+      "FBMS-SWE-BMS-092",
+      "FBMS-SWE-BMS-093",
+      "FBMS-SWE-BMS-094",
+      "FBMS-SWE-BMS-095",
+      "FBMS-SWE-BMS-096",
+      "FBMS-SWE-BMS-097",
+      "FBMS-SWE-BMS-098",
+      "FBMS-SWE-BMS-099",
+      "FBMS-SWE-BMS-100",
+      "FBMS-SWE-BMS-101",
+      "FBMS-SWE-BMS-102",
+      "FBMS-SWE-BMS-103",
+      "FBMS-SWE-BMS-104",
+      "FBMS-SWE-BMS-105",
+      "FBMS-SWE-BMS-106",
+      "FBMS-SWE-BMS-107",
+      "FBMS-SWE-BMS-108",
+      "FBMS-SWE-BMS-109",
+      "FBMS-SWE-BMS-110",
+      "FBMS-SWE-BMS-111"
+    ]
+  },
+  "by_confidence": {
+    "high": [
+      "FBMS-SWE-ALG-001",
+      "FBMS-SWE-ALG-002",
+      "FBMS-SWE-ALG-003",
+      "FBMS-SWE-ALG-004",
+      "FBMS-SWE-ALG-005",
+      "FBMS-SAF-ALG-001",
+      "FBMS-SWE-ALG-006",
+      "FBMS-SAF-ALG-002",
+      "FBMS-SWE-ALG-007",
+      "FBMS-SWE-ALG-008",
+      "FBMS-SWE-ALG-009",
+      "FBMS-SWE-ALG-010",
+      "FBMS-SWE-ALG-011",
+      "FBMS-SWE-ALG-012",
+      "FBMS-SWE-ALG-013",
+      "FBMS-SWE-ALG-014",
+      "FBMS-SWE-ALG-015",
+      "FBMS-SAF-ALG-003",
+      "FBMS-SWE-ALG-016",
+      "FBMS-SWE-ALG-017",
+      "FBMS-SAF-ALG-004",
+      "FBMS-SAF-ALG-005",
+      "FBMS-SAF-ALG-006",
+      "FBMS-SWE-ALG-018",
+      "FBMS-SWE-ALG-019",
+      "FBMS-SWE-ALG-020",
+      "FBMS-SWE-ALG-021",
+      "FBMS-SWE-ALG-022",
+      "FBMS-SWE-ALG-023",
+      "FBMS-SWE-ALG-024",
+      "FBMS-SWE-ALG-025",
+      "FBMS-SWE-ALG-026",
+      "FBMS-SWE-ALG-027",
+      "FBMS-SAF-ALG-007",
+      "FBMS-SAF-ALG-008",
+      "FBMS-SAF-ALG-009",
+      "FBMS-SWE-ALG-028",
+      "FBMS-SWE-ALG-029",
+      "FBMS-SWE-ALG-030",
+      "FBMS-SWE-ALG-031",
+      "FBMS-SWE-ALG-032",
+      "FBMS-SWE-ALG-033",
+      "FBMS-SWE-ALG-034",
+      "FBMS-SWE-ALG-035",
+      "FBMS-SWE-ALG-036",
+      "FBMS-SAF-ALG-010",
+      "FBMS-SAF-ALG-011",
+      "FBMS-SAF-ALG-012",
+      "FBMS-SWE-ALG-037",
+      "FBMS-SWE-ALG-038",
+      "FBMS-SWE-ALG-039",
+      "FBMS-SAF-ALG-013",
+      "FBMS-SAF-ALG-014",
+      "FBMS-SWE-ALG-040",
+      "FBMS-SWE-ALG-041",
+      "FBMS-SWE-ALG-042",
+      "FBMS-SWE-ALG-043",
+      "FBMS-SWE-ALG-044",
+      "FBMS-SWE-ALG-045",
+      "FBMS-SWE-ALG-046",
+      "FBMS-SWE-ALG-047",
+      "FBMS-SAF-ALG-015",
+      "FBMS-SWE-ALG-048",
+      "FBMS-SWE-ALG-049",
+      "FBMS-SWE-ALG-050",
+      "FBMS-SWE-ALG-051",
+      "FBMS-SWE-ALG-052",
+      "FBMS-SWE-ALG-053",
+      "FBMS-SWE-ALG-054",
+      "FBMS-SWE-ALG-055",
+      "FBMS-SWE-ALG-056",
+      "FBMS-SWE-ALG-057",
+      "FBMS-SWE-ALG-058",
+      "FBMS-SWE-ALG-059",
+      "FBMS-SWE-ALG-060",
+      "FBMS-SWE-ALG-061",
+      "FBMS-SWE-ALG-062",
+      "FBMS-SWE-ALG-063",
+      "FBMS-SWE-ALG-064",
+      "FBMS-SWE-AFE-001",
+      "FBMS-SWE-AFE-002",
+      "FBMS-SWE-AFE-003",
+      "FBMS-SWE-AFE-004",
+      "FBMS-SWE-AFE-005",
+      "FBMS-SWE-AFE-006",
+      "FBMS-SAF-AFE-001",
+      "FBMS-SWE-AFE-007",
+      "FBMS-SWE-AFE-008",
+      "FBMS-SAF-AFE-002",
+      "FBMS-SWE-AFE-009",
+      "FBMS-SAF-AFE-003",
+      "FBMS-SAF-AFE-004",
+      "FBMS-SAF-AFE-005",
+      "FBMS-SWE-AFE-010",
+      "FBMS-SWE-AFE-011",
+      "FBMS-SWE-AFE-012",
+      "FBMS-SWE-AFE-013",
+      "FBMS-SWE-AFE-014",
+      "FBMS-SWE-AFE-015",
+      "FBMS-SAF-AFE-006",
+      "FBMS-SAF-AFE-007",
+      "FBMS-SAF-AFE-008",
+      "FBMS-SAF-AFE-009",
+      "FBMS-SWE-AFE-016",
+      "FBMS-SWE-AFE-017",
+      "FBMS-SWE-AFE-018",
+      "FBMS-SWE-AFE-019",
+      "FBMS-SAF-AFE-010",
+      "FBMS-SAF-AFE-011",
+      "FBMS-SAF-AFE-012",
+      "FBMS-SAF-AFE-013",
+      "FBMS-SAF-AFE-014",
+      "FBMS-SAF-AFE-015",
+      "FBMS-SWE-AFE-020",
+      "FBMS-SWE-AFE-021",
+      "FBMS-SWE-AFE-022",
+      "FBMS-SAF-AFE-016",
+      "FBMS-SAF-AFE-017",
+      "FBMS-SAF-AFE-018",
+      "FBMS-SWE-AFE-023",
+      "FBMS-SWE-AFE-024",
+      "FBMS-SAF-AFE-019",
+      "FBMS-SAF-AFE-020",
+      "FBMS-SWE-AFE-025",
+      "FBMS-SWE-AFE-026",
+      "FBMS-SWE-AFE-027",
+      "FBMS-SWE-AFE-028",
+      "FBMS-SWE-AFE-029",
+      "FBMS-SWE-AFE-030",
+      "FBMS-SWE-AFE-031",
+      "FBMS-SWE-AFE-032",
+      "FBMS-SAF-AFE-021",
+      "FBMS-SAF-AFE-022",
+      "FBMS-SAF-AFE-023",
+      "FBMS-SWE-AFE-033",
+      "FBMS-SWE-AFE-034",
+      "FBMS-SAF-AFE-024",
+      "FBMS-SAF-AFE-025",
+      "FBMS-SWE-AFE-035",
+      "FBMS-SWE-AFE-036",
+      "FBMS-SWE-AFE-037",
+      "FBMS-SWE-AFE-038",
+      "FBMS-SWE-AFE-039",
+      "FBMS-SAF-AFE-026",
+      "FBMS-SAF-AFE-027",
+      "FBMS-SAF-AFE-028",
+      "FBMS-SAF-AFE-029",
+      "FBMS-SAF-AFE-030",
+      "FBMS-SAF-AFE-031",
+      "FBMS-SAF-AFE-032",
+      "FBMS-SWE-AFE-040",
+      "FBMS-SWE-AFE-041",
+      "FBMS-SWE-AFE-042",
+      "FBMS-SWE-AFE-043",
+      "FBMS-SWE-AFE-044",
+      "FBMS-SWE-AFE-045",
+      "FBMS-SWE-AFE-046",
+      "FBMS-SWE-TMP-001",
+      "FBMS-SWE-TMP-002",
+      "FBMS-SWE-TMP-003",
+      "FBMS-SWE-TMP-004",
+      "FBMS-SWE-TMP-005",
+      "FBMS-SWE-TMP-006",
+      "FBMS-SWE-TMP-007",
+      "FBMS-SAF-TMP-001",
+      "FBMS-SWE-TMP-008",
+      "FBMS-SWE-TMP-009",
+      "FBMS-SWE-TMP-010",
+      "FBMS-SWE-TMP-011",
+      "FBMS-SWE-TMP-012",
+      "FBMS-SWE-TMP-013",
+      "FBMS-SWE-TMP-014",
+      "FBMS-SAF-TMP-002",
+      "FBMS-SAF-TMP-003",
+      "FBMS-SAF-TMP-004",
+      "FBMS-SWE-TMP-015",
+      "FBMS-SWE-TMP-016",
+      "FBMS-SAF-TMP-005",
+      "FBMS-SWE-TMP-017",
+      "FBMS-SWE-TMP-018",
+      "FBMS-SWE-TMP-019",
+      "FBMS-SWE-TMP-020",
+      "FBMS-SWE-TMP-021",
+      "FBMS-SWE-TMP-022",
+      "FBMS-SWE-TMP-023",
+      "FBMS-SWE-TMP-024",
+      "FBMS-SWE-TMP-025",
+      "FBMS-SAF-TMP-006",
+      "FBMS-SWE-TMP-026",
+      "FBMS-SWE-TMP-027",
+      "FBMS-SWE-TMP-028",
+      "FBMS-SWE-TMP-029",
+      "FBMS-SAF-TMP-007",
+      "FBMS-SWE-TMP-030",
+      "FBMS-SWE-TMP-031",
+      "FBMS-SWE-TMP-032",
+      "FBMS-SWE-TMP-033",
+      "FBMS-SAF-TMP-008",
+      "FBMS-SWE-TMP-034",
+      "FBMS-SWE-TMP-035",
+      "FBMS-SWE-TMP-036",
+      "FBMS-SWE-TMP-037",
+      "FBMS-SAF-TMP-009",
+      "FBMS-SWE-TMP-038",
+      "FBMS-SWE-TMP-039",
+      "FBMS-SWE-TMP-040",
+      "FBMS-SWE-TMP-041",
+      "FBMS-SAF-TMP-010",
+      "FBMS-SWE-TMP-042",
+      "FBMS-SWE-TMP-043",
+      "FBMS-SWE-TMP-044",
+      "FBMS-SWE-TMP-045",
+      "FBMS-SAF-TMP-011",
+      "FBMS-SWE-TMP-046",
+      "FBMS-SWE-TMP-047",
+      "FBMS-SWE-TMP-048",
+      "FBMS-SWE-TMP-049",
+      "FBMS-SAF-TMP-012",
+      "FBMS-SWE-TMP-050",
+      "FBMS-SWE-TMP-051",
+      "FBMS-SWE-TMP-052",
+      "FBMS-SWE-TMP-053",
+      "FBMS-SWE-TMP-054",
+      "FBMS-SWE-TMP-055",
+      "FBMS-SWE-TMP-056",
+      "FBMS-SWE-TMP-057",
+      "FBMS-SWE-TMP-058",
+      "FBMS-SAF-TMP-013",
+      "FBMS-SAF-TMP-014",
+      "FBMS-SAF-TMP-015",
+      "FBMS-SWE-TMP-059",
+      "FBMS-INT-TMP-001",
+      "FBMS-SWE-TMP-060",
+      "FBMS-SWE-TMP-061",
+      "FBMS-SWE-TMP-064",
+      "FBMS-SAF-CFG-001",
+      "FBMS-SAF-CFG-002",
+      "FBMS-SAF-CFG-003",
+      "FBMS-SAF-CFG-004",
+      "FBMS-SAF-CFG-005",
+      "FBMS-SWE-CFG-001",
+      "FBMS-SAF-CFG-006",
+      "FBMS-SAF-CFG-007",
+      "FBMS-SAF-CFG-008",
+      "FBMS-SAF-CFG-009",
+      "FBMS-SWE-CFG-002",
+      "FBMS-SWE-CFG-003",
+      "FBMS-SWE-CFG-004",
+      "FBMS-SWE-CFG-005",
+      "FBMS-SWE-CFG-006",
+      "FBMS-SWE-CFG-007",
+      "FBMS-SWE-CFG-008",
+      "FBMS-SWE-CFG-009",
+      "FBMS-SWE-CFG-010",
+      "FBMS-SWE-CFG-011",
+      "FBMS-SWE-CFG-012",
+      "FBMS-SWE-CFG-013",
+      "FBMS-SWE-CFG-014",
+      "FBMS-SAF-CFG-010",
+      "FBMS-SAF-CFG-011",
+      "FBMS-SAF-CFG-012",
+      "FBMS-SAF-CFG-013",
+      "FBMS-SWE-CFG-015",
+      "FBMS-SWE-CFG-016",
+      "FBMS-SWE-CFG-017",
+      "FBMS-SWE-CFG-018",
+      "FBMS-SWE-CFG-019",
+      "FBMS-SWE-CFG-020",
+      "FBMS-SWE-CFG-021",
+      "FBMS-SAF-CFG-014",
+      "FBMS-SWE-CFG-022",
+      "FBMS-SWE-CFG-023",
+      "FBMS-SWE-CFG-024",
+      "FBMS-SWE-CFG-025",
+      "FBMS-SWE-CFG-026",
+      "FBMS-SWE-CFG-027",
+      "FBMS-SWE-CFG-028",
+      "FBMS-SWE-CFG-029",
+      "FBMS-SWE-CFG-030",
+      "FBMS-SWE-CFG-031",
+      "FBMS-SAF-CFG-015",
+      "FBMS-SAF-CFG-016",
+      "FBMS-SAF-CFG-017",
+      "FBMS-SAF-CFG-018",
+      "FBMS-SWE-CFG-032",
+      "FBMS-SWE-CFG-033",
+      "FBMS-SAF-CFG-019",
+      "FBMS-SWE-CFG-034",
+      "FBMS-SWE-CFG-035",
+      "FBMS-SWE-CFG-036",
+      "FBMS-SAF-CFG-020",
+      "FBMS-SAF-CFG-021",
+      "FBMS-SWE-CFG-037",
+      "FBMS-SWE-CFG-038",
+      "FBMS-SWE-CFG-039",
+      "FBMS-SWE-CFG-040",
+      "FBMS-SWE-CFG-041",
+      "FBMS-SWE-CFG-042",
+      "FBMS-SWE-CFG-043",
+      "FBMS-SAF-CFG-022",
+      "FBMS-SAF-CFG-023",
+      "FBMS-SWE-CFG-044",
+      "FBMS-SWE-CFG-045",
+      "FBMS-SWE-CFG-046",
+      "FBMS-SWE-CFG-047",
+      "FBMS-SWE-CFG-048",
+      "FBMS-SWE-CFG-049",
+      "FBMS-SWE-CFG-050",
+      "FBMS-SWE-CFG-051",
+      "FBMS-SWE-CFG-052",
+      "FBMS-SWE-CFG-053",
+      "FBMS-SWE-CFG-054",
+      "FBMS-SWE-CFG-055",
+      "FBMS-SWE-CFG-056",
+      "FBMS-SWE-CFG-057",
+      "FBMS-SWE-CFG-058",
+      "FBMS-SWE-CFG-059",
+      "FBMS-SWE-CFG-060",
+      "FBMS-SWE-CFG-061",
+      "FBMS-SWE-CFG-062",
+      "FBMS-SWE-CFG-063",
+      "FBMS-SWE-CFG-064",
+      "FBMS-SWE-CFG-065",
+      "FBMS-SWE-CFG-066",
+      "FBMS-SWE-CFG-067",
+      "FBMS-SWE-CFG-068",
+      "FBMS-SWE-CFG-069",
+      "FBMS-SWE-CFG-070",
+      "FBMS-SWE-CFG-071",
+      "FBMS-SWE-CFG-072",
+      "FBMS-SWE-CFG-073",
+      "FBMS-SWE-CFG-074",
+      "FBMS-SWE-CFG-075",
+      "FBMS-SWE-CFG-076",
+      "FBMS-SWE-CFG-077",
+      "FBMS-SWE-SBC-001",
+      "FBMS-SWE-SBC-002",
+      "FBMS-SAF-SBC-001",
+      "FBMS-SAF-SBC-002",
+      "FBMS-SAF-SBC-003",
+      "FBMS-SWE-SBC-003",
+      "FBMS-SWE-SBC-004",
+      "FBMS-SAF-SBC-004",
+      "FBMS-SWE-SBC-005",
+      "FBMS-SAF-SBC-005",
+      "FBMS-SAF-SBC-006",
+      "FBMS-SWE-SBC-006",
+      "FBMS-SWE-SBC-007",
+      "FBMS-SWE-SBC-008",
+      "FBMS-SAF-SBC-007",
+      "FBMS-SAF-SBC-008",
+      "FBMS-SAF-SBC-009",
+      "FBMS-SWE-SBC-009",
+      "FBMS-SAF-SBC-010",
+      "FBMS-SWE-SBC-010",
+      "FBMS-SAF-SBC-011",
+      "FBMS-SWE-SBC-011",
+      "FBMS-SWE-SBC-012",
+      "FBMS-SWE-SBC-013",
+      "FBMS-SWE-SBC-014",
+      "FBMS-SAF-SBC-012",
+      "FBMS-SWE-SBC-015",
+      "FBMS-SWE-SBC-016",
+      "FBMS-SAF-SBC-013",
+      "FBMS-SWE-SBC-017",
+      "FBMS-SWE-SBC-018",
+      "FBMS-SAF-SBC-014",
+      "FBMS-SWE-SBC-019",
+      "FBMS-SAF-SBC-015",
+      "FBMS-SAF-SBC-016",
+      "FBMS-SAF-SBC-017",
+      "FBMS-SAF-SBC-018",
+      "FBMS-SAF-SBC-019",
+      "FBMS-SWE-SBC-020",
+      "FBMS-SAF-SBC-020",
+      "FBMS-SWE-SBC-021",
+      "FBMS-SAF-SBC-021",
+      "FBMS-SAF-SBC-022",
+      "FBMS-SAF-SBC-023",
+      "FBMS-SWE-SBC-022",
+      "FBMS-SWE-SBC-023",
+      "FBMS-INT-SBC-001",
+      "FBMS-INT-SBC-002",
+      "FBMS-INT-SBC-003",
+      "FBMS-INT-SBC-004",
+      "FBMS-SWE-SBC-024",
+      "FBMS-SWE-SBC-025",
+      "FBMS-SWE-DRV-001",
+      "FBMS-SWE-DRV-002",
+      "FBMS-SWE-DRV-003",
+      "FBMS-SWE-DRV-004",
+      "FBMS-SWE-DRV-005",
+      "FBMS-SWE-DRV-006",
+      "FBMS-SAF-DRV-001",
+      "FBMS-SWE-DRV-007",
+      "FBMS-SWE-DRV-008",
+      "FBMS-SWE-DRV-009",
+      "FBMS-SWE-DRV-010",
+      "FBMS-SWE-DRV-011",
+      "FBMS-SWE-DRV-012",
+      "FBMS-SWE-DRV-013",
+      "FBMS-SWE-DRV-014",
+      "FBMS-SWE-DRV-015",
+      "FBMS-SAF-DRV-002",
+      "FBMS-SAF-DRV-003",
+      "FBMS-SAF-DRV-004",
+      "FBMS-SAF-DRV-005",
+      "FBMS-SWE-DRV-016",
+      "FBMS-SWE-DRV-017",
+      "FBMS-SWE-DRV-018",
+      "FBMS-SWE-DRV-019",
+      "FBMS-SWE-DRV-020",
+      "FBMS-SWE-DRV-021",
+      "FBMS-SWE-DRV-022",
+      "FBMS-SWE-DRV-023",
+      "FBMS-SWE-DRV-024",
+      "FBMS-SWE-DRV-025",
+      "FBMS-SWE-DRV-026",
+      "FBMS-SWE-DRV-027",
+      "FBMS-SWE-DRV-028",
+      "FBMS-SWE-DRV-029",
+      "FBMS-SWE-DRV-030",
+      "FBMS-SWE-DRV-031",
+      "FBMS-SWE-DRV-032",
+      "FBMS-SWE-DRV-033",
+      "FBMS-SWE-DRV-034",
+      "FBMS-SWE-DRV-035",
+      "FBMS-SWE-DRV-036",
+      "FBMS-INT-DRV-001",
+      "FBMS-SWE-DRV-037",
+      "FBMS-SWE-DRV-038",
+      "FBMS-SWE-DRV-039",
+      "FBMS-SWE-DRV-040",
+      "FBMS-SWE-DRV-041",
+      "FBMS-SWE-DRV-042",
+      "FBMS-SWE-DRV-043",
+      "FBMS-SWE-DRV-044",
+      "FBMS-SWE-DRV-045",
+      "FBMS-SWE-DRV-046",
+      "FBMS-SWE-DRV-047",
+      "FBMS-SAF-DRV-006",
+      "FBMS-SAF-DRV-007",
+      "FBMS-SWE-DRV-048",
+      "FBMS-SWE-DRV-049",
+      "FBMS-SWE-DRV-050",
+      "FBMS-SWE-DRV-051",
+      "FBMS-SWE-DRV-052",
+      "FBMS-SWE-DRV-053",
+      "FBMS-SWE-DRV-054",
+      "FBMS-SWE-DRV-055",
+      "FBMS-SWE-DRV-056",
+      "FBMS-SWE-DRV-057",
+      "FBMS-SWE-DRV-058",
+      "FBMS-SWE-DRV-059",
+      "FBMS-SWE-DRV-060",
+      "FBMS-SWE-DRV-061",
+      "FBMS-SWE-DRV-062",
+      "FBMS-INT-DRV-002",
+      "FBMS-INT-DRV-003",
+      "FBMS-SWE-DRV-063",
+      "FBMS-SAF-DRV-008",
+      "FBMS-SWE-DRV-064",
+      "FBMS-SWE-DRV-065",
+      "FBMS-SWE-DRV-066",
+      "FBMS-SWE-DRV-067",
+      "FBMS-SWE-DRV-068",
+      "FBMS-SWE-DRV-069",
+      "FBMS-SWE-DRV-070",
+      "FBMS-SWE-DRV-071",
+      "FBMS-SWE-DRV-072",
+      "FBMS-SWE-DRV-073",
+      "FBMS-SWE-DRV-074",
+      "FBMS-SWE-DRV-075",
+      "FBMS-SWE-DRV-076",
+      "FBMS-SWE-DRV-077",
+      "FBMS-SWE-DRV-078",
+      "FBMS-SWE-DRV-079",
+      "FBMS-SWE-DRV-080",
+      "FBMS-SWE-DRV-081",
+      "FBMS-SWE-DRV-082",
+      "FBMS-SWE-DRV-083",
+      "FBMS-SWE-DRV-084",
+      "FBMS-SWE-DRV-085",
+      "FBMS-SWE-DRV-086",
+      "FBMS-SWE-DRV-087",
+      "FBMS-SWE-DRV-088",
+      "FBMS-SWE-DRV-089",
+      "FBMS-SWE-DRV-090",
+      "FBMS-SWE-DRV-091",
+      "FBMS-SWE-DRV-092",
+      "FBMS-SWE-DRV-093",
+      "FBMS-SWE-DRV-094",
+      "FBMS-SWE-DRV-095",
+      "FBMS-SWE-DRV-096",
+      "FBMS-SWE-DRV-097",
+      "FBMS-SWE-DRV-098",
+      "FBMS-SWE-DRV-099",
+      "FBMS-SWE-DRV-100",
+      "FBMS-SWE-DRV-101",
+      "FBMS-SWE-DRV-102",
+      "FBMS-SWE-DRV-103",
+      "FBMS-SWE-DRV-104",
+      "FBMS-SWE-DRV-105",
+      "FBMS-SWE-DRV-106",
+      "FBMS-SWE-DRV-107",
+      "FBMS-SWE-DRV-108",
+      "FBMS-SAF-DRV-009",
+      "FBMS-SAF-DRV-010",
+      "FBMS-SWE-DRV-109",
+      "FBMS-SWE-DRV-110",
+      "FBMS-SWE-DRV-111",
+      "FBMS-SWE-DRV-112",
+      "FBMS-SWE-DRV-113",
+      "FBMS-SWE-DRV-114",
+      "FBMS-SWE-DRV-115",
+      "FBMS-SWE-DRV-116",
+      "FBMS-SWE-DRV-117",
+      "FBMS-SWE-DRV-118",
+      "FBMS-SAF-DRV-011",
+      "FBMS-SAF-DRV-012",
+      "FBMS-SAF-DRV-013",
+      "FBMS-SAF-DRV-014",
+      "FBMS-SAF-DRV-015",
+      "FBMS-SWE-DRV-119",
+      "FBMS-SWE-DRV-120",
+      "FBMS-SWE-DRV-121",
+      "FBMS-SWE-DRV-122",
+      "FBMS-SWE-DRV-123",
+      "FBMS-SWE-DRV-124",
+      "FBMS-SWE-DRV-125",
+      "FBMS-SWE-DRV-126",
+      "FBMS-SWE-DRV-127",
+      "FBMS-SWE-DRV-128",
+      "FBMS-SWE-BMS-001",
+      "FBMS-SWE-BMS-002",
+      "FBMS-SWE-BMS-003",
+      "FBMS-SWE-BMS-004",
+      "FBMS-SWE-BMS-005",
+      "FBMS-SWE-BMS-006",
+      "FBMS-SWE-BMS-007",
+      "FBMS-SWE-BMS-008",
+      "FBMS-SWE-BMS-011",
+      "FBMS-SWE-BMS-012",
+      "FBMS-SWE-BMS-013",
+      "FBMS-SWE-BMS-014",
+      "FBMS-SWE-BMS-015",
+      "FBMS-SWE-BMS-017",
+      "FBMS-SWE-BMS-018",
+      "FBMS-SWE-BMS-019",
+      "FBMS-SWE-BMS-020",
+      "FBMS-SWE-BMS-021",
+      "FBMS-SWE-BMS-023",
+      "FBMS-SWE-BMS-024",
+      "FBMS-SWE-BMS-025",
+      "FBMS-SWE-BMS-026",
+      "FBMS-SWE-BMS-027",
+      "FBMS-SWE-BMS-028",
+      "FBMS-SWE-BMS-029",
+      "FBMS-SWE-BMS-030",
+      "FBMS-SWE-BMS-032",
+      "FBMS-SWE-BMS-041",
+      "FBMS-SWE-BMS-042",
+      "FBMS-SWE-BMS-043",
+      "FBMS-SWE-BMS-044",
+      "FBMS-SWE-BMS-045",
+      "FBMS-SWE-BMS-046",
+      "FBMS-SWE-BMS-047",
+      "FBMS-SWE-BMS-048",
+      "FBMS-SWE-BMS-049",
+      "FBMS-SWE-BMS-057",
+      "FBMS-SWE-BMS-058",
+      "FBMS-SWE-BMS-059",
+      "FBMS-SWE-BMS-060",
+      "FBMS-SWE-BMS-061",
+      "FBMS-SWE-BMS-062",
+      "FBMS-SWE-BMS-063",
+      "FBMS-SWE-BMS-064",
+      "FBMS-SWE-BMS-065",
+      "FBMS-SWE-BMS-066",
+      "FBMS-SWE-BMS-067",
+      "FBMS-SWE-BMS-068",
+      "FBMS-SWE-BMS-069",
+      "FBMS-SWE-BMS-070",
+      "FBMS-SWE-BMS-071",
+      "FBMS-SWE-BMS-072",
+      "FBMS-SWE-BMS-073",
+      "FBMS-SWE-BMS-074",
+      "FBMS-SWE-BMS-075",
+      "FBMS-SWE-BMS-076",
+      "FBMS-SWE-BMS-077",
+      "FBMS-SWE-BMS-078",
+      "FBMS-SWE-BMS-079",
+      "FBMS-SWE-BMS-080",
+      "FBMS-SWE-BMS-081",
+      "FBMS-SWE-BMS-082",
+      "FBMS-SWE-BMS-083",
+      "FBMS-SWE-BMS-084",
+      "FBMS-SWE-BMS-085",
+      "FBMS-SWE-BMS-086",
+      "FBMS-SWE-BMS-087",
+      "FBMS-SWE-BMS-088",
+      "FBMS-SWE-BMS-089",
+      "FBMS-SWE-BMS-090",
+      "FBMS-SWE-BMS-091",
+      "FBMS-SWE-BMS-092",
+      "FBMS-SWE-BMS-093",
+      "FBMS-SWE-BMS-094",
+      "FBMS-SWE-BMS-095",
+      "FBMS-SWE-BMS-096",
+      "FBMS-SWE-BMS-097",
+      "FBMS-SWE-BMS-098",
+      "FBMS-SWE-BMS-099",
+      "FBMS-SWE-BMS-100",
+      "FBMS-SWE-BMS-101",
+      "FBMS-SWE-BMS-102",
+      "FBMS-SWE-BMS-103",
+      "FBMS-SWE-BMS-104",
+      "FBMS-SWE-BMS-105",
+      "FBMS-SWE-BMS-106",
+      "FBMS-SWE-BMS-107",
+      "FBMS-SWE-BMS-108",
+      "FBMS-SWE-BMS-109",
+      "FBMS-SWE-BMS-111"
+    ],
+    "medium": [
+      "FBMS-SWE-TMP-062",
+      "FBMS-SWE-TMP-063",
+      "FBMS-SWE-TMP-065",
+      "FBMS-SWE-TMP-066",
+      "FBMS-SWE-BMS-009",
+      "FBMS-SWE-BMS-010",
+      "FBMS-SWE-BMS-016",
+      "FBMS-SWE-BMS-022",
+      "FBMS-SWE-BMS-031",
+      "FBMS-SWE-BMS-033",
+      "FBMS-SWE-BMS-034",
+      "FBMS-SWE-BMS-035",
+      "FBMS-SWE-BMS-036",
+      "FBMS-SWE-BMS-037",
+      "FBMS-SWE-BMS-038",
+      "FBMS-SWE-BMS-039",
+      "FBMS-SWE-BMS-040",
+      "FBMS-SWE-BMS-050",
+      "FBMS-SWE-BMS-051",
+      "FBMS-SWE-BMS-052",
+      "FBMS-SWE-BMS-053",
+      "FBMS-SWE-BMS-054",
+      "FBMS-SWE-BMS-055",
+      "FBMS-SWE-BMS-056",
+      "FBMS-SWE-BMS-110"
+    ]
+  },
+  "cross_references": [],
+  "source_to_requirement": {
+    "algorithm.c:115-152": [
+      "FBMS-SWE-ALG-001"
+    ],
+    "algorithm.h:66-70": [
+      "FBMS-SWE-ALG-002"
+    ],
+    "algorithm.h:78-81": [
+      "FBMS-SWE-ALG-003"
+    ],
+    "algorithm.c:87": [
+      "FBMS-SWE-ALG-004"
+    ],
+    "algorithm.c:96": [
+      "FBMS-SWE-ALG-005"
+    ],
+    "algorithm.c:158-165": [
+      "FBMS-SAF-ALG-001"
+    ],
+    "algorithm_cfg.h:82-91": [
+      "FBMS-SWE-ALG-006"
+    ],
+    "algorithm_cfg.c:83,94": [
+      "FBMS-SAF-ALG-002"
+    ],
+    "algorithm_cfg.h:69": [
+      "FBMS-SWE-ALG-007"
+    ],
+    "algorithm_cfg.h:94-102": [
+      "FBMS-SWE-ALG-008"
+    ],
+    "moving_average.c:71-101": [
+      "FBMS-SWE-ALG-009"
+    ],
+    "moving_average.h:62": [
+      "FBMS-SWE-ALG-010"
+    ],
+    "moving_average.h:63": [
+      "FBMS-SWE-ALG-011"
+    ],
+    "moving_average.c:201-206": [
+      "FBMS-SWE-ALG-012"
+    ],
+    "moving_average.c:321-326": [
+      "FBMS-SWE-ALG-013"
+    ],
+    "state_estimation.h:74-92": [
+      "FBMS-SWE-ALG-014"
+    ],
+    "state_estimation.c:95-101": [
+      "FBMS-SWE-ALG-015"
+    ],
+    "state_estimation.c:78,84,90": [
+      "FBMS-SAF-ALG-003"
+    ],
+    "state_estimation.c:100": [
+      "FBMS-SWE-ALG-016"
+    ],
+    "soc_counting.c:51-52": [
+      "FBMS-SWE-ALG-017"
+    ],
+    "soc_counting.c:254": [
+      "FBMS-SAF-ALG-004"
+    ],
+    "soc_counting.c:255": [
+      "FBMS-SAF-ALG-005"
+    ],
+    "soc_counting.c:301": [
+      "FBMS-SAF-ALG-006"
+    ],
+    "soc_counting.c:84-87": [
+      "FBMS-SWE-ALG-018"
+    ],
+    "soc_counting.c:189-191": [
+      "FBMS-SWE-ALG-019"
+    ],
+    "soc_counting.c:313-315": [
+      "FBMS-SWE-ALG-020"
+    ],
+    "state_estimation.h:119-124": [
+      "FBMS-SWE-ALG-021"
+    ],
+    "soc_counting.c:260-282": [
+      "FBMS-SWE-ALG-022"
+    ],
+    "soc_counting.c:178,214,395": [
+      "FBMS-SWE-ALG-023"
+    ],
+    "soc_counting.c:78-79,342-348": [
+      "FBMS-SWE-ALG-024"
+    ],
+    "soc_counting_cfg.h:73": [
+      "FBMS-SWE-ALG-025"
+    ],
+    "soc_counting.c:415-430": [
+      "FBMS-SWE-ALG-026"
+    ],
+    "soe_counting.c:51-52": [
+      "FBMS-SWE-ALG-027"
+    ],
+    "soe_counting.c:322": [
+      "FBMS-SAF-ALG-007"
+    ],
+    "soe_counting.c:323": [
+      "FBMS-SAF-ALG-008"
+    ],
+    "soe_counting.c:368": [
+      "FBMS-SAF-ALG-009"
+    ],
+    "soe_counting.c:88-89": [
+      "FBMS-SWE-ALG-028"
+    ],
+    "soe_counting.c:265-271": [
+      "FBMS-SWE-ALG-029"
+    ],
+    "soe_counting.c:379-381": [
+      "FBMS-SWE-ALG-030"
+    ],
+    "soe_counting.c:343-363": [
+      "FBMS-SWE-ALG-031"
+    ],
+    "soe_counting.c:215,481": [
+      "FBMS-SWE-ALG-032"
+    ],
+    "soe_counting.c:80-81,409-416": [
+      "FBMS-SWE-ALG-033"
+    ],
+    "soe_counting_cfg.h:74-75": [
+      "FBMS-SWE-ALG-034"
+    ],
+    "soe_counting.c:232-248": [
+      "FBMS-SWE-ALG-035"
+    ],
+    "state_estimation.h:141-151": [
+      "FBMS-SWE-ALG-036"
+    ],
+    "soh_none.c:72": [
+      "FBMS-SAF-ALG-010"
+    ],
+    "soh_none.c:73": [
+      "FBMS-SAF-ALG-011"
+    ],
+    "soh_none.c:77": [
+      "FBMS-SAF-ALG-012"
+    ],
+    "sof_trapezoid.h:51-53": [
+      "FBMS-SWE-ALG-037"
+    ],
+    "sof_trapezoid.h:69-74": [
+      "FBMS-SWE-ALG-038"
+    ],
+    "sof_trapezoid.h:100-108": [
+      "FBMS-SWE-ALG-039"
+    ],
+    "sof_trapezoid.c:197-199": [
+      "FBMS-SAF-ALG-013"
+    ],
+    "sof_trapezoid.c:242-244": [
+      "FBMS-SAF-ALG-014"
+    ],
+    "sof_trapezoid.c:204-207": [
+      "FBMS-SWE-ALG-040"
+    ],
+    "sof_trapezoid.c:220-223": [
+      "FBMS-SWE-ALG-041"
+    ],
+    "sof_trapezoid.c:250-265": [
+      "FBMS-SWE-ALG-042"
+    ],
+    "sof_trapezoid.c:267-281": [
+      "FBMS-SWE-ALG-043"
+    ],
+    "sof_trapezoid.c:283-305": [
+      "FBMS-SWE-ALG-044"
+    ],
+    "sof_trapezoid.c:307-329": [
+      "FBMS-SWE-ALG-045"
+    ],
+    "sof_trapezoid.c:332-347,387": [
+      "FBMS-SWE-ALG-046"
+    ],
+    "sof_trapezoid.c:374": [
+      "FBMS-SWE-ALG-047"
+    ],
+    "sof_trapezoid.c:426-431": [
+      "FBMS-SAF-ALG-015"
+    ],
+    "sof_trapezoid.c:418-421": [
+      "FBMS-SWE-ALG-048"
+    ],
+    "sof_trapezoid.c:410-415": [
+      "FBMS-SWE-ALG-049"
+    ],
+    "sof_trapezoid_cfg.h:72-73": [
+      "FBMS-SWE-ALG-050"
+    ],
+    "sof_trapezoid_cfg.h:79-80": [
+      "FBMS-SWE-ALG-051"
+    ],
+    "sof_trapezoid_cfg.h:87": [
+      "FBMS-SWE-ALG-052"
+    ],
+    "sof_trapezoid_cfg.h:94": [
+      "FBMS-SWE-ALG-053"
+    ],
+    "sof_trapezoid_cfg.h:101": [
+      "FBMS-SWE-ALG-054"
+    ],
+    "sof_trapezoid_cfg.h:108": [
+      "FBMS-SWE-ALG-055"
+    ],
+    "sof_trapezoid_cfg.h:115": [
+      "FBMS-SWE-ALG-056"
+    ],
+    "sof_trapezoid_cfg.h:122": [
+      "FBMS-SWE-ALG-057"
+    ],
+    "sof_trapezoid_cfg.h:129": [
+      "FBMS-SWE-ALG-058"
+    ],
+    "sof_trapezoid_cfg.h:136": [
+      "FBMS-SWE-ALG-059"
+    ],
+    "sof_trapezoid_cfg.h:143": [
+      "FBMS-SWE-ALG-060"
+    ],
+    "sof_trapezoid_cfg.h:148": [
+      "FBMS-SWE-ALG-061"
+    ],
+    "sof_trapezoid_cfg.h:153": [
+      "FBMS-SWE-ALG-062"
+    ],
+    "sof_trapezoid_cfg.h:158": [
+      "FBMS-SWE-ALG-063"
+    ],
+    "sof_trapezoid_cfg.h:163": [
+      "FBMS-SWE-ALG-064"
+    ],
+    "foxbms-2/src/app/driver/afe/api/afe.h:108": [
+      "FBMS-SWE-AFE-001"
+    ],
+    "foxbms-2/src/app/driver/afe/api/afe.h:111": [
+      "FBMS-SWE-AFE-002"
+    ],
+    "foxbms-2/src/app/driver/afe/api/afe.h:114-118": [
+      "FBMS-SWE-AFE-003"
+    ],
+    "foxbms-2/src/app/driver/afe/api/afe.h:120-124": [
+      "FBMS-SWE-AFE-004"
+    ],
+    "foxbms-2/src/app/driver/afe/api/afe.h:126-131": [
+      "FBMS-SWE-AFE-005"
+    ],
+    "foxbms-2/src/app/driver/afe/api/afe.h:133-138": [
+      "FBMS-SWE-AFE-006"
+    ],
+    "foxbms-2/src/app/driver/afe/api/afe.h:154-159": [
+      "FBMS-SAF-AFE-001"
+    ],
+    "foxbms-2/src/app/driver/afe/api/afe.h:99": [
+      "FBMS-SWE-AFE-007"
+    ],
+    "foxbms-2/src/app/driver/afe/api/afe.h:102": [
+      "FBMS-SWE-AFE-008"
+    ],
+    "foxbms-2/src/app/driver/afe/api/afe_plausibility.h:67-83": [
+      "FBMS-SAF-AFE-002"
+    ],
+    "foxbms-2/src/app/driver/afe/api/afe_plausibility.h:88-99": [
+      "FBMS-SWE-AFE-009"
+    ],
+    "foxbms-2/src/app/driver/afe/api/afe_plausibility.c:79": [
+      "FBMS-SAF-AFE-003"
+    ],
+    "foxbms-2/src/app/driver/afe/api/afe_plausibility.h:101-106": [
+      "FBMS-SAF-AFE-004"
+    ],
+    "foxbms-2/src/app/driver/afe/api/afe_plausibility.c:96": [
+      "FBMS-SAF-AFE-005"
+    ],
+    "foxbms-2/src/app/driver/afe/api/afe_dma.h:68-72": [
+      "FBMS-SWE-AFE-010"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x.h:51-57": [
+      "FBMS-SWE-AFE-011"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x.h:78": [
+      "FBMS-SWE-AFE-012"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x.h:99-104": [
+      "FBMS-SWE-AFE-013"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:211-213": [
+      "FBMS-SWE-AFE-014"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:218": [
+      "FBMS-SWE-AFE-015"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:220-223": [
+      "FBMS-SAF-AFE-006"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:224-227": [
+      "FBMS-SAF-AFE-007"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:228-231": [
+      "FBMS-SAF-AFE-008"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:232-235": [
+      "FBMS-SAF-AFE-009"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:198": [
+      "FBMS-SWE-AFE-016"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:201": [
+      "FBMS-SWE-AFE-017"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:117-119": [
+      "FBMS-SWE-AFE-018"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:120-125": [
+      "FBMS-SWE-AFE-019"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:395-397": [
+      "FBMS-SAF-AFE-010"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:396": [
+      "FBMS-SAF-AFE-011"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:399-401": [
+      "FBMS-SAF-AFE-012"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:402-403": [
+      "FBMS-SAF-AFE-013"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:404-405": [
+      "FBMS-SAF-AFE-014"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:80-86": [
+      "FBMS-SAF-AFE-015"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:511-518": [
+      "FBMS-SWE-AFE-020"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:521-528": [
+      "FBMS-SWE-AFE-021"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:531": [
+      "FBMS-SWE-AFE-022"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:159-165": [
+      "FBMS-SAF-AFE-016"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_voltages.c:143,154,165,176,189-191,218-224": [
+      "FBMS-SAF-AFE-017"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_voltages.c:191": [
+      "FBMS-SAF-AFE-018"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_voltages.c:351": [
+      "FBMS-SWE-AFE-023"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:289-293": [
+      "FBMS-SWE-AFE-024"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_voltages.c:320": [
+      "FBMS-SAF-AFE-019"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_diagnostic.h:74-102": [
+      "FBMS-SAF-AFE-020"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/config/adi_ades183x_cfg.h:91-101": [
+      "FBMS-SWE-AFE-025"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/config/adi_ades183x_cfg.h:68-72": [
+      "FBMS-SWE-AFE-026"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:567": [
+      "FBMS-SWE-AFE-027"
+    ],
+    "foxbms-2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h:570": [
+      "FBMS-SWE-AFE-028"
+    ],
+    "foxbms-2/src/app/driver/afe/ltc/common/ltc_defs.h:122-161": [
+      "FBMS-SWE-AFE-029"
+    ],
+    "foxbms-2/src/app/driver/afe/ltc/common/ltc_defs.h:92-105": [
+      "FBMS-SWE-AFE-030"
+    ],
+    "foxbms-2/src/app/driver/afe/ltc/common/ltc_defs.h:107-119": [
+      "FBMS-SWE-AFE-031"
+    ],
+    "foxbms-2/src/app/driver/afe/ltc/common/ltc_defs.h:113-118": [
+      "FBMS-SWE-AFE-032"
+    ],
+    "foxbms-2/src/app/driver/afe/ltc/common/ltc_defs.h:236-243": [
+      "FBMS-SAF-AFE-021"
+    ],
+    "foxbms-2/src/app/driver/afe/ltc/common/ltc_defs.h:70-77": [
+      "FBMS-SAF-AFE-022"
+    ],
+    "foxbms-2/src/app/driver/afe/ltc/common/ltc_defs.h:79-84": [
+      "FBMS-SAF-AFE-023"
+    ],
+    "foxbms-2/src/app/driver/afe/ltc/common/ltc.h:76-81": [
+      "FBMS-SWE-AFE-033"
+    ],
+    "foxbms-2/src/app/driver/afe/ltc/common/ltc.h:83-98": [
+      "FBMS-SWE-AFE-034"
+    ],
+    "foxbms-2/src/app/driver/afe/ltc/common/ltc_defs.h:256-264": [
+      "FBMS-SAF-AFE-024"
+    ],
+    "foxbms-2/src/app/driver/afe/ltc/common/ltc_defs.h:266-283": [
+      "FBMS-SAF-AFE-025"
+    ],
+    "foxbms-2/src/app/driver/afe/ltc/common/ltc_defs.h:310-336": [
+      "FBMS-SWE-AFE-035"
+    ],
+    "foxbms-2/src/app/driver/afe/ltc/common/ltc_defs.h:338-348": [
+      "FBMS-SWE-AFE-036"
+    ],
+    "foxbms-2/src/app/driver/afe/maxim/common/mxm_1785x.h:53-75": [
+      "FBMS-SWE-AFE-037"
+    ],
+    "foxbms-2/src/app/driver/afe/maxim/common/mxm_1785x.h:99": [
+      "FBMS-SWE-AFE-038"
+    ],
+    "foxbms-2/src/app/driver/afe/maxim/common/mxm_1785x.h:108": [
+      "FBMS-SWE-AFE-039"
+    ],
+    "foxbms-2/src/app/driver/afe/maxim/common/mxm_1785x.h:275-295": [
+      "FBMS-SAF-AFE-026"
+    ],
+    "foxbms-2/src/app/driver/afe/maxim/common/mxm_1785x.h:193-201": [
+      "FBMS-SAF-AFE-027"
+    ],
+    "foxbms-2/src/app/driver/afe/maxim/common/mxm_1785x.h:203-212": [
+      "FBMS-SAF-AFE-028"
+    ],
+    "foxbms-2/src/app/driver/afe/maxim/common/mxm_battery_management.c:252,323,332,358,392,424,432": [
+      "FBMS-SAF-AFE-029"
+    ],
+    "foxbms-2/src/app/driver/afe/maxim/common/mxm_battery_management.c:260": [
+      "FBMS-SAF-AFE-030"
+    ],
+    "foxbms-2/src/app/driver/afe/maxim/common/mxm_battery_management.c:959": [
+      "FBMS-SAF-AFE-031"
+    ],
+    "foxbms-2/src/app/driver/afe/maxim/common/mxm_battery_management.c:985": [
+      "FBMS-SAF-AFE-032"
+    ],
+    "foxbms-2/src/app/driver/afe/nxp/common/mc3377x/nxp_mc3377x.h:86-93": [
+      "FBMS-SWE-AFE-040"
+    ],
+    "foxbms-2/src/app/driver/afe/nxp/common/mc3377x/nxp_mc3377x.h:79-84": [
+      "FBMS-SWE-AFE-041"
+    ],
+    "foxbms-2/src/app/driver/afe/nxp/mc33775a/config/nxp_mc33775a_cfg.h:66-70": [
+      "FBMS-SWE-AFE-042"
+    ],
+    "foxbms-2/src/app/driver/afe/ti/dummy/ti_dummy.h:72": [
+      "FBMS-SWE-AFE-043"
+    ],
+    "foxbms-2/src/app/driver/afe/ti/dummy/ti_dummy.h:73": [
+      "FBMS-SWE-AFE-044"
+    ],
+    "foxbms-2/src/app/driver/afe/ti/dummy/ti_dummy.h:74-79": [
+      "FBMS-SWE-AFE-045"
+    ],
+    "foxbms-2/src/app/driver/afe/ti/dummy/ti_dummy.h:80": [
+      "FBMS-SWE-AFE-046"
+    ],
+    "api/tsi.h:69-76": [
+      "FBMS-SWE-TMP-001"
+    ],
+    "api/tsi.h:78-84": [
+      "FBMS-SWE-TMP-002"
+    ],
+    "api/tsi.h:86-92": [
+      "FBMS-SWE-TMP-003"
+    ],
+    "api/tsi.h:52-53": [
+      "FBMS-SWE-TMP-004"
+    ],
+    "temperature_sensor_defs.h:67-71": [
+      "FBMS-SWE-TMP-005"
+    ],
+    "temperature_sensor_defs.h:64-65": [
+      "FBMS-SWE-TMP-006"
+    ],
+    "beta.h:115-122": [
+      "FBMS-SWE-TMP-007"
+    ],
+    "beta.h:118-120": [
+      "FBMS-SAF-TMP-001"
+    ],
+    "beta.h:84-92": [
+      "FBMS-SWE-TMP-008"
+    ],
+    "beta.h:94-95": [
+      "FBMS-SWE-TMP-009"
+    ],
+    "beta.h:97-101": [
+      "FBMS-SWE-TMP-010"
+    ],
+    "beta.h:103-104": [
+      "FBMS-SWE-TMP-011"
+    ],
+    "beta.h:106-107": [
+      "FBMS-SWE-TMP-012"
+    ],
+    "beta.h:109-110": [
+      "FBMS-SWE-TMP-013"
+    ],
+    "beta.c:67-68": [
+      "FBMS-SWE-TMP-014"
+    ],
+    "beta.c:113-115": [
+      "FBMS-SAF-TMP-002"
+    ],
+    "beta.c:116-118": [
+      "FBMS-SAF-TMP-003"
+    ],
+    "beta.c:140-148": [
+      "FBMS-SAF-TMP-004"
+    ],
+    "beta.h:132-139": [
+      "FBMS-SWE-TMP-015"
+    ],
+    "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.h:103-110": [
+      "FBMS-SWE-TMP-016"
+    ],
+    "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.h:106-108": [
+      "FBMS-SAF-TMP-005"
+    ],
+    "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.h:112-117": [
+      "FBMS-SWE-TMP-017"
+    ],
+    "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.h:83-91": [
+      "FBMS-SWE-TMP-018"
+    ],
+    "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.h:93-94": [
+      "FBMS-SWE-TMP-019"
+    ],
+    "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.h:96-100": [
+      "FBMS-SWE-TMP-020"
+    ],
+    "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.c:71-114": [
+      "FBMS-SWE-TMP-021"
+    ],
+    "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.c:70": [
+      "FBMS-SWE-TMP-022"
+    ],
+    "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.c:200-208": [
+      "FBMS-SWE-TMP-023"
+    ],
+    "foxbms-2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.c:216-231": [
+      "FBMS-SWE-TMP-024"
+    ],
+    "foxbms-2/src/app/driver/ts/epcos/b57861s0103f045/epcos_b57861s0103f045.h:104-111": [
+      "FBMS-SWE-TMP-025"
+    ],
+    "foxbms-2/src/app/driver/ts/epcos/b57861s0103f045/epcos_b57861s0103f045.h:107-109": [
+      "FBMS-SAF-TMP-006"
+    ],
+    "foxbms-2/src/app/driver/ts/epcos/b57861s0103f045/epcos_b57861s0103f045.h:94-95": [
+      "FBMS-SWE-TMP-026"
+    ],
+    "foxbms-2/src/app/driver/ts/epcos/b57861s0103f045/epcos_b57861s0103f045.c:71-115": [
+      "FBMS-SWE-TMP-027"
+    ],
+    "foxbms-2/src/app/driver/ts/epcos/b57861s0103f045/epcos_b57861s0103f045.c:223-227": [
+      "FBMS-SWE-TMP-028"
+    ],
+    "foxbms-2/src/app/driver/ts/murata/ncxxxxh103/murata_ncxxxxh103.h:102-109": [
+      "FBMS-SWE-TMP-029"
+    ],
+    "foxbms-2/src/app/driver/ts/murata/ncxxxxh103/murata_ncxxxxh103.h:105-107": [
+      "FBMS-SAF-TMP-007"
+    ],
+    "foxbms-2/src/app/driver/ts/murata/ncxxxxh103/murata_ncxxxxh103.h:92-93": [
+      "FBMS-SWE-TMP-030"
+    ],
+    "foxbms-2/src/app/driver/ts/murata/ncxxxxh103/murata_ncxxxxh103.c:70-79": [
+      "FBMS-SWE-TMP-031"
+    ],
+    "foxbms-2/src/app/driver/ts/murata/ncxxxxh103/murata_ncxxxxh103.c:174-180": [
+      "FBMS-SWE-TMP-032"
+    ],
+    "foxbms-2/src/app/driver/ts/vishay/ntcalug01a103g/vishay_ntcalug01a103g.h:102-109": [
+      "FBMS-SWE-TMP-033"
+    ],
+    "foxbms-2/src/app/driver/ts/vishay/ntcalug01a103g/vishay_ntcalug01a103g.h:105-107": [
+      "FBMS-SAF-TMP-008"
+    ],
+    "foxbms-2/src/app/driver/ts/vishay/ntcalug01a103g/vishay_ntcalug01a103g.h:92-93": [
+      "FBMS-SWE-TMP-034"
+    ],
+    "foxbms-2/src/app/driver/ts/vishay/ntcalug01a103g/vishay_ntcalug01a103g.c:73-220": [
+      "FBMS-SWE-TMP-035"
+    ],
+    "foxbms-2/src/app/driver/ts/vishay/ntcalug01a103g/vishay_ntcalug01a103g.c:319-325": [
+      "FBMS-SWE-TMP-036"
+    ],
+    "foxbms-2/src/app/driver/ts/vishay/ntcle317e4103sba/vishay_ntcle317e4103sba.h:102-109": [
+      "FBMS-SWE-TMP-037"
+    ],
+    "foxbms-2/src/app/driver/ts/vishay/ntcle317e4103sba/vishay_ntcle317e4103sba.h:105-107": [
+      "FBMS-SAF-TMP-009"
+    ],
+    "foxbms-2/src/app/driver/ts/vishay/ntcle317e4103sba/vishay_ntcle317e4103sba.h:92-93": [
+      "FBMS-SWE-TMP-038"
+    ],
+    "foxbms-2/src/app/driver/ts/vishay/ntcle317e4103sba/vishay_ntcle317e4103sba.c:72-108": [
+      "FBMS-SWE-TMP-039"
+    ],
+    "foxbms-2/src/app/driver/ts/vishay/ntcle317e4103sba/vishay_ntcle317e4103sba.c:208-214": [
+      "FBMS-SWE-TMP-040"
+    ],
+    "foxbms-2/src/app/driver/ts/vishay/ntcle413e2103f102l/vishay_ntcle413e2103f102l.h:102-109": [
+      "FBMS-SWE-TMP-041"
+    ],
+    "foxbms-2/src/app/driver/ts/vishay/ntcle413e2103f102l/vishay_ntcle413e2103f102l.h:105-107": [
+      "FBMS-SAF-TMP-010"
+    ],
+    "foxbms-2/src/app/driver/ts/vishay/ntcle413e2103f102l/vishay_ntcle413e2103f102l.h:92-93": [
+      "FBMS-SWE-TMP-042"
+    ],
+    "foxbms-2/src/app/driver/ts/vishay/ntcle413e2103f102l/vishay_ntcle413e2103f102l.c:74-79": [
+      "FBMS-SWE-TMP-043"
+    ],
+    "foxbms-2/src/app/driver/ts/vishay/ntcle413e2103f102l/vishay_ntcle413e2103f102l.c:180-186": [
+      "FBMS-SWE-TMP-044"
+    ],
+    "foxbms-2/src/app/driver/ts/tdk/ntcg163jx103dt1s/tdk_ntcg163jx103dt1s.h:84-91": [
+      "FBMS-SWE-TMP-045"
+    ],
+    "foxbms-2/src/app/driver/ts/tdk/ntcg163jx103dt1s/tdk_ntcg163jx103dt1s.h:87-89": [
+      "FBMS-SAF-TMP-011"
+    ],
+    "foxbms-2/src/app/driver/ts/tdk/ntcg163jx103dt1s/tdk_ntcg163jx103dt1s.h:74-75": [
+      "FBMS-SWE-TMP-046"
+    ],
+    "foxbms-2/src/app/driver/ts/tdk/ntcg163jx103dt1s/tdk_ntcg163jx103dt1s.c:72-112": [
+      "FBMS-SWE-TMP-047"
+    ],
+    "foxbms-2/src/app/driver/ts/tdk/ntcg163jx103dt1s/tdk_ntcg163jx103dt1s.c:214-220": [
+      "FBMS-SWE-TMP-048"
+    ],
+    "foxbms-2/src/app/driver/ts/semitec/103jt/semitec_103jt.h:104-111": [
+      "FBMS-SWE-TMP-049"
+    ],
+    "foxbms-2/src/app/driver/ts/semitec/103jt/semitec_103jt.h:107-109": [
+      "FBMS-SAF-TMP-012"
+    ],
+    "foxbms-2/src/app/driver/ts/semitec/103jt/semitec_103jt.h:94-95": [
+      "FBMS-SWE-TMP-050"
+    ],
+    "foxbms-2/src/app/driver/ts/semitec/103jt/semitec_103jt.c:73-90": [
+      "FBMS-SWE-TMP-051"
+    ],
+    "foxbms-2/src/app/driver/ts/semitec/103jt/semitec_103jt.c:188-194": [
+      "FBMS-SWE-TMP-052"
+    ],
+    "foxbms-2/src/app/driver/ts/fake/none/fake_none.h:67-72": [
+      "FBMS-SWE-TMP-053"
+    ],
+    "foxbms-2/src/app/driver/ts/fake/none/fake_none.c:72-74": [
+      "FBMS-SWE-TMP-054"
+    ],
+    "foxbms-2/src/app/driver/ts/fake/none/fake_none.c:76-78": [
+      "FBMS-SWE-TMP-055"
+    ],
+    "multiple sensor implementations:N/A": [
+      "FBMS-SWE-TMP-056",
+      "FBMS-SWE-TMP-057",
+      "FBMS-SWE-TMP-058",
+      "FBMS-SAF-TMP-013",
+      "FBMS-SAF-TMP-014",
+      "FBMS-SAF-TMP-015",
+      "FBMS-SWE-TMP-059",
+      "FBMS-SWE-TMP-060"
+    ],
+    "multiple sensor implementations - LUT data:N/A": [
+      "FBMS-INT-TMP-001"
+    ],
+    "all temperature sensor headers:N/A": [
+      "FBMS-SWE-TMP-061"
+    ],
+    "lookup-table/*.c and polynomial/*.c files:N/A": [
+      "FBMS-SWE-TMP-062"
+    ],
+    "all sensor directories:N/A": [
+      "FBMS-SWE-TMP-063"
+    ],
+    "all sensor LUT definitions:N/A": [
+      "FBMS-SWE-TMP-064"
+    ],
+    "all sensor implementations:N/A": [
+      "FBMS-SWE-TMP-065",
+      "FBMS-SWE-TMP-066"
+    ],
+    "foxbms-2/src/app/application/config/battery_cell_cfg.h:79-81": [
+      "FBMS-SAF-CFG-001"
+    ],
+    "foxbms-2/src/app/application/config/battery_cell_cfg.h:94-96": [
+      "FBMS-SAF-CFG-002"
+    ],
+    "foxbms-2/src/app/application/config/battery_cell_cfg.h:109-111": [
+      "FBMS-SAF-CFG-003"
+    ],
+    "foxbms-2/src/app/application/config/battery_cell_cfg.h:124-126": [
+      "FBMS-SAF-CFG-004"
+    ],
+    "foxbms-2/src/app/application/config/battery_cell_cfg.h:139-141": [
+      "FBMS-SAF-CFG-005"
+    ],
+    "foxbms-2/src/app/application/config/battery_cell_cfg.h:149": [
+      "FBMS-SWE-CFG-001"
+    ],
+    "foxbms-2/src/app/application/config/battery_cell_cfg.h:161-163": [
+      "FBMS-SAF-CFG-006"
+    ],
+    "foxbms-2/src/app/application/config/battery_cell_cfg.h:175": [
+      "FBMS-SAF-CFG-007"
+    ],
+    "foxbms-2/src/app/application/config/battery_cell_cfg.h:187-189": [
+      "FBMS-SAF-CFG-008"
+    ],
+    "foxbms-2/src/app/application/config/battery_cell_cfg.h:202-204": [
+      "FBMS-SAF-CFG-009"
+    ],
+    "foxbms-2/src/app/application/config/battery_cell_cfg.h:212": [
+      "FBMS-SWE-CFG-002"
+    ],
+    "foxbms-2/src/app/application/config/battery_cell_cfg.h:219": [
+      "FBMS-SWE-CFG-003"
+    ],
+    "foxbms-2/src/app/application/config/battery_cell_cfg.h:221-222": [
+      "FBMS-SWE-CFG-004"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:103": [
+      "FBMS-SWE-CFG-005"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:116": [
+      "FBMS-SWE-CFG-006"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:126": [
+      "FBMS-SWE-CFG-007"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:134": [
+      "FBMS-SWE-CFG-008"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:140": [
+      "FBMS-SWE-CFG-009"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:142-143": [
+      "FBMS-SWE-CFG-010"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:162": [
+      "FBMS-SWE-CFG-011"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:172": [
+      "FBMS-SWE-CFG-012"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:175": [
+      "FBMS-SWE-CFG-013"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:178": [
+      "FBMS-SWE-CFG-014"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:192": [
+      "FBMS-SAF-CFG-010"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:202": [
+      "FBMS-SAF-CFG-011"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:210": [
+      "FBMS-SAF-CFG-012"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:218": [
+      "FBMS-SAF-CFG-013"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:225": [
+      "FBMS-SWE-CFG-015"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:233": [
+      "FBMS-SWE-CFG-016"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:241": [
+      "FBMS-SWE-CFG-017"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:248": [
+      "FBMS-SWE-CFG-018"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:262": [
+      "FBMS-SWE-CFG-019"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:268": [
+      "FBMS-SWE-CFG-020"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:274": [
+      "FBMS-SWE-CFG-021"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:287": [
+      "FBMS-SAF-CFG-014"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:326": [
+      "FBMS-SWE-CFG-022"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:329": [
+      "FBMS-SWE-CFG-023"
+    ],
+    "foxbms-2/src/app/application/config/battery_system_cfg.h:344": [
+      "FBMS-SWE-CFG-024"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:93": [
+      "FBMS-SWE-CFG-025"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:103": [
+      "FBMS-SWE-CFG-026"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:109": [
+      "FBMS-SWE-CFG-027"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:115": [
+      "FBMS-SWE-CFG-028"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:118": [
+      "FBMS-SWE-CFG-029"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:121": [
+      "FBMS-SWE-CFG-030"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:124": [
+      "FBMS-SWE-CFG-031"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:130": [
+      "FBMS-SAF-CFG-015"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:136": [
+      "FBMS-SAF-CFG-016"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:142": [
+      "FBMS-SAF-CFG-017"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:145": [
+      "FBMS-SAF-CFG-018"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:148": [
+      "FBMS-SWE-CFG-032"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:151": [
+      "FBMS-SWE-CFG-033"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:164": [
+      "FBMS-SAF-CFG-019"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:167": [
+      "FBMS-SWE-CFG-034"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:170": [
+      "FBMS-SWE-CFG-035"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:173": [
+      "FBMS-SWE-CFG-036"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:185": [
+      "FBMS-SAF-CFG-020"
+    ],
+    "foxbms-2/src/app/application/config/bms_cfg.h:191": [
+      "FBMS-SAF-CFG-021"
+    ],
+    "foxbms-2/src/app/application/config/bal_cfg.h:65": [
+      "FBMS-SWE-CFG-037"
+    ],
+    "foxbms-2/src/app/application/config/bal_cfg.h:69": [
+      "FBMS-SWE-CFG-038"
+    ],
+    "foxbms-2/src/app/application/config/bal_cfg.h:72": [
+      "FBMS-SWE-CFG-039"
+    ],
+    "foxbms-2/src/app/application/config/bal_cfg.h:75": [
+      "FBMS-SWE-CFG-040"
+    ],
+    "foxbms-2/src/app/application/config/bal_cfg.h:78": [
+      "FBMS-SWE-CFG-041"
+    ],
+    "foxbms-2/src/app/application/config/bal_cfg.h:81": [
+      "FBMS-SWE-CFG-042"
+    ],
+    "foxbms-2/src/app/application/config/bal_cfg.h:84": [
+      "FBMS-SWE-CFG-043"
+    ],
+    "foxbms-2/src/app/application/config/bal_cfg.h:87": [
+      "FBMS-SAF-CFG-022"
+    ],
+    "foxbms-2/src/app/application/config/bal_cfg.h:90": [
+      "FBMS-SAF-CFG-023"
+    ],
+    "foxbms-2/src/app/application/config/plausibility_cfg.h:69": [
+      "FBMS-SWE-CFG-044"
+    ],
+    "foxbms-2/src/app/application/config/plausibility_cfg.h:77": [
+      "FBMS-SWE-CFG-045"
+    ],
+    "foxbms-2/src/app/application/config/plausibility_cfg.h:86": [
+      "FBMS-SWE-CFG-046"
+    ],
+    "foxbms-2/src/app/application/config/plausibility_cfg.h:95": [
+      "FBMS-SWE-CFG-047"
+    ],
+    "foxbms-2/src/app/application/config/plausibility_cfg.h:104": [
+      "FBMS-SWE-CFG-048"
+    ],
+    "foxbms-2/src/app/application/config/bms-slave_cfg.h:70": [
+      "FBMS-SWE-CFG-049"
+    ],
+    "foxbms-2/src/app/application/config/bms-slave_cfg.h:76": [
+      "FBMS-SWE-CFG-050"
+    ],
+    "foxbms-2/src/app/application/config/bms-slave_cfg.h:79": [
+      "FBMS-SWE-CFG-051"
+    ],
+    "foxbms-2/src/app/application/config/bms-slave_cfg.h:83": [
+      "FBMS-SWE-CFG-052"
+    ],
+    "foxbms-2/src/app/driver/config/spi_cfg.h:78": [
+      "FBMS-SWE-CFG-053"
+    ],
+    "foxbms-2/src/app/driver/config/spi_cfg.h:99": [
+      "FBMS-SWE-CFG-054"
+    ],
+    "foxbms-2/src/app/driver/config/spi_cfg.h:102": [
+      "FBMS-SWE-CFG-055"
+    ],
+    "foxbms-2/src/app/driver/config/spi_cfg.h:105": [
+      "FBMS-SWE-CFG-056"
+    ],
+    "foxbms-2/src/app/driver/config/can_cfg.h:103": [
+      "FBMS-SWE-CFG-057"
+    ],
+    "foxbms-2/src/app/driver/config/can_cfg.h:105": [
+      "FBMS-SWE-CFG-058"
+    ],
+    "foxbms-2/src/app/driver/config/can_cfg.h:110": [
+      "FBMS-SWE-CFG-059"
+    ],
+    "foxbms-2/src/app/driver/config/can_cfg.h:114": [
+      "FBMS-SWE-CFG-060"
+    ],
+    "foxbms-2/src/app/driver/config/can_cfg.h:116": [
+      "FBMS-SWE-CFG-061"
+    ],
+    "foxbms-2/src/app/driver/config/sps_cfg.h:82": [
+      "FBMS-SWE-CFG-062"
+    ],
+    "foxbms-2/src/app/driver/config/sps_cfg.h:85": [
+      "FBMS-SWE-CFG-063"
+    ],
+    "foxbms-2/src/app/driver/config/sps_cfg.h:164": [
+      "FBMS-SWE-CFG-064"
+    ],
+    "foxbms-2/src/app/driver/config/sps_cfg.h:167": [
+      "FBMS-SWE-CFG-065"
+    ],
+    "foxbms-2/src/app/driver/config/sps_cfg.h:99": [
+      "FBMS-SWE-CFG-066"
+    ],
+    "foxbms-2/src/app/driver/config/sps_cfg.h:105-107": [
+      "FBMS-SWE-CFG-067"
+    ],
+    "foxbms-2/src/app/driver/config/interlock_cfg.h:79": [
+      "FBMS-SWE-CFG-068"
+    ],
+    "foxbms-2/src/app/driver/config/interlock_cfg.h:81": [
+      "FBMS-SWE-CFG-069"
+    ],
+    "foxbms-2/src/app/driver/config/interlock_cfg.h:83": [
+      "FBMS-SWE-CFG-070"
+    ],
+    "foxbms-2/src/app/driver/config/interlock_cfg.h:85": [
+      "FBMS-SWE-CFG-071"
+    ],
+    "foxbms-2/src/app/driver/config/interlock_cfg.h:89": [
+      "FBMS-SWE-CFG-072"
+    ],
+    "foxbms-2/src/app/driver/config/interlock_cfg.h:107": [
+      "FBMS-SWE-CFG-073"
+    ],
+    "foxbms-2/src/app/driver/config/pex_cfg.h:69": [
+      "FBMS-SWE-CFG-074"
+    ],
+    "foxbms-2/src/app/driver/config/dma_cfg.h:112": [
+      "FBMS-SWE-CFG-075"
+    ],
+    "foxbms-2/src/app/driver/config/tsi_plausibility_cfg.h:70": [
+      "FBMS-SWE-CFG-076"
+    ],
+    "foxbms-2/src/app/driver/config/tsi_plausibility_cfg.h:79": [
+      "FBMS-SWE-CFG-077"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.h:137-144": [
+      "FBMS-SWE-SBC-001"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.h:68-82": [
+      "FBMS-SWE-SBC-002"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.c:107-116": [
+      "FBMS-SAF-SBC-001"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.c:188-202": [
+      "FBMS-SAF-SBC-002"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.c:150,164,189,205,218,239,246,262,268": [
+      "FBMS-SAF-SBC-003"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.c:163-186": [
+      "FBMS-SWE-SBC-003"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.h:127-134": [
+      "FBMS-SWE-SBC-004"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.c:245-259": [
+      "FBMS-SAF-SBC-004"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.c:303": [
+      "FBMS-SWE-SBC-005"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.c:313-322": [
+      "FBMS-SAF-SBC-005"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.c:277-281": [
+      "FBMS-SAF-SBC-006"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.h:103-105": [
+      "FBMS-SWE-SBC-006"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.c:217-236": [
+      "FBMS-SWE-SBC-007"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.c:367-382": [
+      "FBMS-SWE-SBC-008"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.c:403-406": [
+      "FBMS-SAF-SBC-007"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.c:382-384": [
+      "FBMS-SAF-SBC-008"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:591-599": [
+      "FBMS-SAF-SBC-009"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:606-617": [
+      "FBMS-SWE-SBC-009"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:619-624": [
+      "FBMS-SAF-SBC-010"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:626-650": [
+      "FBMS-SWE-SBC-010"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:548-558": [
+      "FBMS-SAF-SBC-011"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:728-735": [
+      "FBMS-SWE-SBC-011"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:738-743": [
+      "FBMS-SWE-SBC-012"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:745-748": [
+      "FBMS-SWE-SBC-013"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:760-765": [
+      "FBMS-SWE-SBC-014"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:767-771": [
+      "FBMS-SAF-SBC-012"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:773-776": [
+      "FBMS-SWE-SBC-015"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:843-846": [
+      "FBMS-SWE-SBC-016"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:847-858": [
+      "FBMS-SAF-SBC-013"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:860-872": [
+      "FBMS-SWE-SBC-017"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:874-888": [
+      "FBMS-SWE-SBC-018"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:952-998": [
+      "FBMS-SAF-SBC-014"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:969-986": [
+      "FBMS-SWE-SBC-019"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:222-230": [
+      "FBMS-SAF-SBC-015"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:232-240": [
+      "FBMS-SAF-SBC-016"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:1026-1032": [
+      "FBMS-SAF-SBC-017"
+    ],
+    "foxbms-2/src/app/driver/sbc/fs8x_driver/sbc_fs8x.c:184-218": [
+      "FBMS-SAF-SBC-018"
+    ],
+    "foxbms-2/src/app/driver/sbc/fs8x_driver/sbc_fs8x.c:219-232": [
+      "FBMS-SAF-SBC-019"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:1040-1043": [
+      "FBMS-SWE-SBC-020"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:1168-1206": [
+      "FBMS-SAF-SBC-020"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:1196-1199": [
+      "FBMS-SWE-SBC-021"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:1218-1246": [
+      "FBMS-SAF-SBC-021"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:1084-1117": [
+      "FBMS-SAF-SBC-022"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:1098-1112": [
+      "FBMS-SAF-SBC-023"
+    ],
+    "foxbms-2/src/app/driver/sbc/nxpfs85xx.c:914-942": [
+      "FBMS-SWE-SBC-022"
+    ],
+    "foxbms-2/src/app/driver/sbc/sbc.c:391-394": [
+      "FBMS-SWE-SBC-023"
+    ],
+    "foxbms-2/src/app/driver/sbc/fs8x_driver/sbc_fs8x_communication.c:71-73": [
+      "FBMS-INT-SBC-001"
+    ],
+    "foxbms-2/src/app/driver/sbc/fs8x_driver/sbc_fs8x_communication.h:60": [
+      "FBMS-INT-SBC-002"
+    ],
+    "foxbms-2/src/app/driver/sbc/fs8x_driver/sbc_fs8x_communication.c:196-200": [
+      "FBMS-INT-SBC-003"
+    ],
+    "foxbms-2/src/app/driver/sbc/fs8x_driver/sbc_fs8x_communication.c:438-458": [
+      "FBMS-INT-SBC-004"
+    ],
+    "foxbms-2/src/app/driver/sbc/fs8x_driver/sbc_fs8x.c:160-182": [
+      "FBMS-SWE-SBC-024"
+    ],
+    "foxbms-2/src/app/driver/sbc/fs8x_driver/sbc_fs8x.h:59": [
+      "FBMS-SWE-SBC-025"
+    ],
+    "adc.h:43-53": [
+      "FBMS-SWE-DRV-001"
+    ],
+    "adc.h:91-95": [
+      "FBMS-SWE-DRV-002"
+    ],
+    "adc.h:101-105": [
+      "FBMS-SWE-DRV-003"
+    ],
+    "adc.h:75": [
+      "FBMS-SWE-DRV-004"
+    ],
+    "adc.h:77": [
+      "FBMS-SWE-DRV-005"
+    ],
+    "adc.h:79": [
+      "FBMS-SWE-DRV-006"
+    ],
+    "adc.c:135": [
+      "FBMS-SAF-DRV-001"
+    ],
+    "spi.h:43-53": [
+      "FBMS-SWE-DRV-007"
+    ],
+    "spi.h:70-76": [
+      "FBMS-SWE-DRV-008"
+    ],
+    "spi.h:79-86": [
+      "FBMS-SWE-DRV-009"
+    ],
+    "spi.h:88-100": [
+      "FBMS-SWE-DRV-010"
+    ],
+    "spi.h:102-119": [
+      "FBMS-SWE-DRV-011"
+    ],
+    "spi.h:141-158": [
+      "FBMS-SWE-DRV-012"
+    ],
+    "spi.h:179-186": [
+      "FBMS-SWE-DRV-013"
+    ],
+    "spi_cfg.h:78": [
+      "FBMS-SWE-DRV-014"
+    ],
+    "spi_cfg.h:114-120": [
+      "FBMS-SWE-DRV-015"
+    ],
+    "spi.c:266": [
+      "FBMS-SAF-DRV-002"
+    ],
+    "spi.c:277": [
+      "FBMS-SAF-DRV-003"
+    ],
+    "spi.c:278": [
+      "FBMS-SAF-DRV-004"
+    ],
+    "spi.c:176": [
+      "FBMS-SAF-DRV-005"
+    ],
+    "i2c.h:43-53": [
+      "FBMS-SWE-DRV-016"
+    ],
+    "i2c.h:124-129": [
+      "FBMS-SWE-DRV-017"
+    ],
+    "i2c.h:131-139": [
+      "FBMS-SWE-DRV-018"
+    ],
+    "i2c.h:141-153": [
+      "FBMS-SWE-DRV-019"
+    ],
+    "i2c.h:173-185": [
+      "FBMS-SWE-DRV-020"
+    ],
+    "i2c.h:187-199": [
+      "FBMS-SWE-DRV-021"
+    ],
+    "i2c.h:69": [
+      "FBMS-SWE-DRV-022"
+    ],
+    "i2c.h:98": [
+      "FBMS-SWE-DRV-023"
+    ],
+    "dma.h:43-54": [
+      "FBMS-SWE-DRV-024"
+    ],
+    "dma.h:70-74": [
+      "FBMS-SWE-DRV-025"
+    ],
+    "dma.h:76-80": [
+      "FBMS-SWE-DRV-026"
+    ],
+    "dma_cfg.h:112": [
+      "FBMS-SWE-DRV-027"
+    ],
+    "dma_cfg.h:72-73": [
+      "FBMS-SWE-DRV-028"
+    ],
+    "dma_cfg.h:82-85": [
+      "FBMS-SWE-DRV-029"
+    ],
+    "pwm.h:43-57": [
+      "FBMS-SWE-DRV-030"
+    ],
+    "pwm.h:79-81": [
+      "FBMS-SWE-DRV-031"
+    ],
+    "pwm.h:83-87": [
+      "FBMS-SWE-DRV-032"
+    ],
+    "pwm.h:89-90": [
+      "FBMS-SWE-DRV-033"
+    ],
+    "pwm.h:92-97": [
+      "FBMS-SWE-DRV-034"
+    ],
+    "pwm.h:99-100": [
+      "FBMS-SWE-DRV-035"
+    ],
+    "rtc.h:43-54": [
+      "FBMS-SWE-DRV-036"
+    ],
+    "rtc.h:76-78": [
+      "FBMS-INT-DRV-001"
+    ],
+    "rtc.h:209-214": [
+      "FBMS-SWE-DRV-037"
+    ],
+    "rtc.h:216-221": [
+      "FBMS-SWE-DRV-038"
+    ],
+    "rtc.h:223-227": [
+      "FBMS-SWE-DRV-039"
+    ],
+    "rtc.h:194-203": [
+      "FBMS-SWE-DRV-040"
+    ],
+    "rtc.h:185": [
+      "FBMS-SWE-DRV-041"
+    ],
+    "io.h:43-53": [
+      "FBMS-SWE-DRV-042"
+    ],
+    "io.h:69-77": [
+      "FBMS-SWE-DRV-043"
+    ],
+    "io.h:79-87": [
+      "FBMS-SWE-DRV-044"
+    ],
+    "io.h:89-97": [
+      "FBMS-SWE-DRV-045"
+    ],
+    "io.h:99-107": [
+      "FBMS-SWE-DRV-046"
+    ],
+    "io.h:109-118": [
+      "FBMS-SWE-DRV-047"
+    ],
+    "io.c:77": [
+      "FBMS-SAF-DRV-006"
+    ],
+    "io.c:78": [
+      "FBMS-SAF-DRV-007"
+    ],
+    "led.h:43-63": [
+      "FBMS-SWE-DRV-048"
+    ],
+    "led.h:74": [
+      "FBMS-SWE-DRV-049"
+    ],
+    "led.h:76": [
+      "FBMS-SWE-DRV-050"
+    ],
+    "led.h:81-86": [
+      "FBMS-SWE-DRV-051"
+    ],
+    "led.h:88-92": [
+      "FBMS-SWE-DRV-052"
+    ],
+    "mcu.h:43-53": [
+      "FBMS-SWE-DRV-053"
+    ],
+    "mcu.h:64-69": [
+      "FBMS-SWE-DRV-054"
+    ],
+    "mcu.h:71-75": [
+      "FBMS-SWE-DRV-055"
+    ],
+    "mcu.h:88-95": [
+      "FBMS-SWE-DRV-056"
+    ],
+    "mcu.h:97-104": [
+      "FBMS-SWE-DRV-057"
+    ],
+    "mcu.h:117-127": [
+      "FBMS-SWE-DRV-058"
+    ],
+    "interlock.c:43-68": [
+      "FBMS-SWE-DRV-059"
+    ],
+    "interlock.h:65-73": [
+      "FBMS-SWE-DRV-060"
+    ],
+    "interlock.h:120-134": [
+      "FBMS-SWE-DRV-061"
+    ],
+    "interlock.h:146-151": [
+      "FBMS-SWE-DRV-062"
+    ],
+    "interlock_cfg.h:72": [
+      "FBMS-INT-DRV-002"
+    ],
+    "interlock_cfg.h:75": [
+      "FBMS-INT-DRV-003"
+    ],
+    "interlock_cfg.h:87-89": [
+      "FBMS-SWE-DRV-063"
+    ],
+    "interlock.c:316": [
+      "FBMS-SAF-DRV-008"
+    ],
+    "interlock.c:308-310": [
+      "FBMS-SWE-DRV-064"
+    ],
+    "fram.h:43-53": [
+      "FBMS-SWE-DRV-065"
+    ],
+    "fram.h:71-75": [
+      "FBMS-SWE-DRV-066"
+    ],
+    "fram.h:85-93": [
+      "FBMS-SWE-DRV-067"
+    ],
+    "fram.h:95-103": [
+      "FBMS-SWE-DRV-068"
+    ],
+    "fram_cfg.h:88-94": [
+      "FBMS-SWE-DRV-069"
+    ],
+    "fram_cfg.h:103-113": [
+      "FBMS-SWE-DRV-070"
+    ],
+    "fram_cfg.h:71": [
+      "FBMS-SWE-DRV-071"
+    ],
+    "foxmath.h:43-56": [
+      "FBMS-SWE-DRV-072"
+    ],
+    "foxmath.h:89-97": [
+      "FBMS-SWE-DRV-073"
+    ],
+    "foxmath.h:99-115": [
+      "FBMS-SWE-DRV-074"
+    ],
+    "foxmath.h:159-164": [
+      "FBMS-SWE-DRV-075"
+    ],
+    "checksum.h:43-53": [
+      "FBMS-SWE-DRV-076"
+    ],
+    "checksum.h:69-70": [
+      "FBMS-SWE-DRV-077"
+    ],
+    "crc.h:43-53": [
+      "FBMS-SWE-DRV-078"
+    ],
+    "crc.h:68-71": [
+      "FBMS-SWE-DRV-079"
+    ],
+    "crc.h:108-119": [
+      "FBMS-SWE-DRV-080"
+    ],
+    "pex.h:43-54": [
+      "FBMS-SWE-DRV-081"
+    ],
+    "pex_cfg.h:69": [
+      "FBMS-SWE-DRV-082"
+    ],
+    "pex.h:76-80": [
+      "FBMS-SWE-DRV-083"
+    ],
+    "pex.h:82-87": [
+      "FBMS-SWE-DRV-084"
+    ],
+    "pex.h:89-95": [
+      "FBMS-SWE-DRV-085"
+    ],
+    "pex.h:131-139": [
+      "FBMS-SWE-DRV-086"
+    ],
+    "phy_cfg.h:43-53": [
+      "FBMS-SWE-DRV-087"
+    ],
+    "phy_cfg.h:62": [
+      "FBMS-SWE-DRV-088"
+    ],
+    "phy_cfg.h:69": [
+      "FBMS-SWE-DRV-089"
+    ],
+    "phy_cfg.h:71": [
+      "FBMS-SWE-DRV-090"
+    ],
+    "meas.h:43-55": [
+      "FBMS-SWE-DRV-091"
+    ],
+    "meas.h:72-75": [
+      "FBMS-SWE-DRV-092"
+    ],
+    "meas.h:77-83": [
+      "FBMS-SWE-DRV-093"
+    ],
+    "meas.h:85-89": [
+      "FBMS-SWE-DRV-094"
+    ],
+    "meas.h:124-128": [
+      "FBMS-SWE-DRV-095"
+    ],
+    "htsensor.h:43-53": [
+      "FBMS-SWE-DRV-096"
+    ],
+    "htsensor.h:64-70": [
+      "FBMS-SWE-DRV-097"
+    ],
+    "htsensor.h:76-81": [
+      "FBMS-SWE-DRV-098"
+    ],
+    "sps.h:43-53": [
+      "FBMS-SWE-DRV-099"
+    ],
+    "sps.h:74-79": [
+      "FBMS-SWE-DRV-100"
+    ],
+    "sps.h:81-87": [
+      "FBMS-SWE-DRV-101"
+    ],
+    "sps.h:89-97": [
+      "FBMS-SWE-DRV-102"
+    ],
+    "sps.h:109-117": [
+      "FBMS-SWE-DRV-103"
+    ],
+    "sps_cfg.h:82": [
+      "FBMS-SWE-DRV-104"
+    ],
+    "sps_cfg.h:85": [
+      "FBMS-SWE-DRV-105"
+    ],
+    "sps_cfg.h:163": [
+      "FBMS-SWE-DRV-106"
+    ],
+    "sps_cfg.h:166": [
+      "FBMS-SWE-DRV-107"
+    ],
+    "sps_cfg.h:209-221": [
+      "FBMS-SWE-DRV-108"
+    ],
+    "sps.c:477": [
+      "FBMS-SAF-DRV-009"
+    ],
+    "sps.c:478": [
+      "FBMS-SAF-DRV-010"
+    ],
+    "sps_types.h:67-76": [
+      "FBMS-SWE-DRV-109"
+    ],
+    "contactor.h:43-53": [
+      "FBMS-SWE-DRV-110"
+    ],
+    "contactor.h:70-77": [
+      "FBMS-SWE-DRV-111"
+    ],
+    "contactor.h:79-85": [
+      "FBMS-SWE-DRV-112"
+    ],
+    "contactor.h:87-93": [
+      "FBMS-SWE-DRV-113"
+    ],
+    "contactor.h:119-121": [
+      "FBMS-SWE-DRV-114"
+    ],
+    "contactor.h:123-128": [
+      "FBMS-SWE-DRV-115"
+    ],
+    "contactor_cfg.h:69-74": [
+      "FBMS-SWE-DRV-116"
+    ],
+    "contactor_cfg.h:76-82": [
+      "FBMS-SWE-DRV-117"
+    ],
+    "contactor_cfg.h:84-90": [
+      "FBMS-SWE-DRV-118"
+    ],
+    "contactor.c:166": [
+      "FBMS-SAF-DRV-011"
+    ],
+    "contactor.c:167": [
+      "FBMS-SAF-DRV-012"
+    ],
+    "contactor.c:115": [
+      "FBMS-SAF-DRV-013"
+    ],
+    "contactor.c:120": [
+      "FBMS-SAF-DRV-014"
+    ],
+    "contactor.c:160": [
+      "FBMS-SAF-DRV-015"
+    ],
+    "can.h:43-54": [
+      "FBMS-SWE-DRV-119"
+    ],
+    "can.h:66-67": [
+      "FBMS-SWE-DRV-120"
+    ],
+    "can.h:69-72": [
+      "FBMS-SWE-DRV-121"
+    ],
+    "can.h:74-77": [
+      "FBMS-SWE-DRV-122"
+    ],
+    "can.h:91-101": [
+      "FBMS-SWE-DRV-123"
+    ],
+    "can.h:108-112": [
+      "FBMS-SWE-DRV-124"
+    ],
+    "can.h:114-122": [
+      "FBMS-SWE-DRV-125"
+    ],
+    "can.h:124-129": [
+      "FBMS-SWE-DRV-126"
+    ],
+    "can.h:131-136": [
+      "FBMS-SWE-DRV-127"
+    ],
+    "can.h:138-142": [
+      "FBMS-SWE-DRV-128"
+    ]
+  },
+  "statistics": {
+    "modules_count": 52,
+    "types_count": 4,
+    "source_files_count": 7,
+    "source_locations_count": 529,
+    "confidence_distribution": {
+      "high": 623,
+      "medium": 25
+    }
+  }
+}

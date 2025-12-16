@@ -1,0 +1,5 @@
+<map id="TI_RequestOpenWireCheck" name="TI_RequestOpenWireCheck">
+<area shape="rect" id="Node000001" title="This function is used to wrap the TI AFE measurement API to the generic AFE measurement API." alt="" coords="5,5,204,31"/>
+<area shape="rect" id="Node000002" href="$ti__dummy_8c.html#aea64e54aff803d1f4da70c0c48f8f1ca" title=" " alt="" coords="252,5,483,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,15,238,15,238,21,204,21"/>
+</map>

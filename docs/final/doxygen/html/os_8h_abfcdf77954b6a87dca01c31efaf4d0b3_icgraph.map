@@ -1,0 +1,79 @@
+<map id="OS_SendToBackOfQueue" name="OS_SendToBackOfQueue">
+<area shape="rect" id="Node000001" title="Post an item to the back the provided queue." alt="" coords="2571,304,2753,329"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x_8c.html#a1c1ff182f2494eaee4800e7d91a5fdcb" title="Makes a request to the ADI driver." alt="" coords="2338,5,2478,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2652,291,2637,241,2611,176,2573,109,2549,79,2521,52,2501,39,2477,30,2479,25,2503,34,2524,48,2553,75,2577,106,2616,173,2642,239,2657,290"/>
+<area shape="rect" id="Node000014" href="$can_8c.html#a20938e5f84711f226ac95482c64ac286" title="Handles the processing of messages that are meant to be transmitted." alt="" coords="2073,56,2238,81"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="2651,291,2634,247,2608,192,2570,139,2547,115,2521,96,2486,79,2448,66,2408,57,2368,53,2291,52,2225,59,2224,53,2291,47,2369,48,2409,52,2449,61,2488,74,2524,92,2551,111,2575,135,2612,190,2639,245,2656,290"/>
+<area shape="rect" id="Node000016" href="$can_8c.html#a74014489033fb7ffc48e59fbcc1d0a61" title="Reads messages from TX Queue and sends them via CAN." alt="" coords="2293,107,2523,132"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="2646,293,2626,259,2598,219,2563,179,2521,146,2498,134,2500,130,2524,141,2567,175,2602,215,2631,256,2650,290"/>
+<area shape="rect" id="Node000017" href="$can__cbs__rx__cell-temperatures_8c.html#ab19b7a9c1f0a37aac483d3e9eb8442b0" title="CAN Rx callback function to handle cell&#45;temperatures message." alt="" coords="2313,156,2503,181"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="2640,295,2590,244,2557,217,2521,195,2493,184,2495,179,2524,190,2560,213,2593,240,2643,291"/>
+<area shape="rect" id="Node000018" href="$can__cbs__rx__cell-voltages_8c.html#acc01cd124262964bbe5ae56110c1d8da" title="CAN Rx callback function to handle cell&#45;voltages message." alt="" coords="2330,205,2486,231"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="2629,299,2579,271,2522,244,2484,233,2485,228,2524,240,2582,266,2631,294"/>
+<area shape="rect" id="Node000019" href="$can__cbs__rx__imd-info_8c.html#af8ddfa5fe87efe7ef92069155fddec0c" title="CAN Rx callback function for IMD info messages." alt="" coords="2345,255,2471,280"/>
+<area shape="poly" id="edge20_Node000001_Node000019" title=" " alt="" coords="2582,304,2470,282,2471,277,2583,299"/>
+<area shape="rect" id="Node000020" href="$can__cbs__rx__imd-response_8c.html#a3e8c44f080c5fcfb3254c6812bc669bd" title="CAN Rx callback function for IMD response messages." alt="" coords="2327,304,2489,329"/>
+<area shape="poly" id="edge21_Node000001_Node000020" title=" " alt="" coords="2557,319,2490,319,2490,314,2557,314"/>
+<area shape="rect" id="Node000021" href="$can__cbs__rx__debug_8c.html#ab61b61ff3f51b4ad209a607b2c843c8f" title="Parses CAN message to set the RTC clock." alt="" coords="2321,353,2495,379"/>
+<area shape="poly" id="edge22_Node000001_Node000021" title=" " alt="" coords="2583,335,2475,356,2474,351,2582,329"/>
+<area shape="rect" id="Node000023" href="$database_8c.html#a223139493fd5d48663da58dcf3789b73" title=" " alt="" coords="2301,403,2515,428"/>
+<area shape="poly" id="edge24_Node000001_Node000023" title=" " alt="" coords="2631,339,2581,366,2524,392,2481,405,2480,400,2522,388,2579,362,2628,334"/>
+<area shape="rect" id="Node000032" href="$nxp__mc33775a__i2c_8c.html#ae008be3e6e19dfc6da9e7706b9ca9f41" title="trigger a read on the I2C bus of the slave." alt="" coords="2351,452,2465,477"/>
+<area shape="poly" id="edge33_Node000001_Node000032" title=" " alt="" coords="2643,342,2593,393,2560,419,2524,442,2495,453,2466,461,2465,455,2494,448,2521,437,2557,415,2589,389,2640,338"/>
+<area shape="rect" id="Node000033" href="$nxp__mc33775a__i2c_8c.html#a7a2906f96565c4d495a40f618b5b0a4e" title="trigger a write on the I2C bus of the slave." alt="" coords="2349,501,2467,527"/>
+<area shape="poly" id="edge34_Node000001_Node000033" title=" " alt="" coords="2650,343,2630,377,2602,417,2566,457,2524,491,2497,504,2468,511,2466,506,2495,499,2521,486,2563,453,2598,414,2626,374,2646,340"/>
+<area shape="rect" id="Node000034" href="$nxp__mc33775a__i2c_8c.html#a011313da17c93c5d7a3cbfc2a711f877" title="trigger a read on the I2C bus of the slave, first write address of register to read." alt="" coords="2333,551,2483,576"/>
+<area shape="poly" id="edge35_Node000001_Node000034" title=" " alt="" coords="2655,343,2637,387,2610,440,2572,495,2550,519,2524,540,2505,551,2485,558,2483,553,2503,546,2521,536,2546,515,2568,491,2605,438,2632,385,2650,341"/>
+<area shape="rect" id="Node000035" href="$nxp__mc33775a__i2c_8c.html#a2efbc1d9973c7c1a19164c6a87192594" title="transmit over I2C on NXP slave." alt="" coords="2339,600,2477,625"/>
+<area shape="poly" id="edge36_Node000001_Node000035" title=" " alt="" coords="2658,344,2643,396,2617,463,2578,532,2553,563,2524,589,2502,602,2479,610,2477,605,2500,597,2521,585,2549,559,2574,529,2612,461,2638,395,2653,342"/>
+<area shape="rect" id="Node000003" href="$adi__ades183x__afe_8c.html#ab3b5eae4af8524afe67f0dd7a7d54829" title="Makes the initialization request to the AFE state machine." alt="" coords="2068,5,2243,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2324,21,2243,21,2243,15,2324,15"/>
+<area shape="rect" id="Node000004" href="$meas_8c.html#a55247d0978a7017843bdb63b1e1c0d3d" title="Makes the initialization request to the AFE state machine." alt="" coords="1831,5,2017,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="2054,21,2018,21,2018,15,2054,15"/>
+<area shape="rect" id="Node000005" href="$sys_8c.html#a6bd4af68fc419de0a0e5c8f10af30f2b" title="Processes the pre running state." alt="" coords="1572,5,1783,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1817,21,1783,21,1783,15,1817,15"/>
+<area shape="rect" id="Node000006" href="$sys_8c.html#a90dceb9878e7eb209511a7a9c0251ec4" title="Defines the state transitions." alt="" coords="1357,5,1524,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1558,21,1524,21,1524,15,1558,15"/>
+<area shape="rect" id="Node000007" href="$sys_8c.html#ade51c1203163eee5a4781db384725c95" title="tick function, call this to advance the state machine" alt="" coords="1212,5,1309,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1344,21,1309,21,1309,15,1344,15"/>
+<area shape="rect" id="Node000008" href="$ftask__cfg_8c.html#a7f3620825ec0f5072516255d6febebdb" title="Cyclic 10 ms task." alt="" coords="940,31,1164,56"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1199,28,1157,33,1156,28,1198,23"/>
+<area shape="rect" id="Node000009" href="$ftask_8c.html#a2a1d135e2e4e6fef538294d8c43d0328" title="Creation of cyclic 10 ms task." alt="" coords="684,31,892,56"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="926,46,892,46,892,41,926,41"/>
+<area shape="rect" id="Node000010" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,31,636,56"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="670,46,636,46,636,41,670,41"/>
+<area shape="rect" id="Node000011" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,31,448,56"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="482,46,448,46,448,41,482,41"/>
+<area shape="rect" id="Node000012" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,31,184,56"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="218,46,184,46,184,41,218,41"/>
+<area shape="rect" id="Node000013" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,31,81,56"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="116,46,82,46,82,41,116,41"/>
+<area shape="rect" id="Node000015" href="$can_8c.html#a18598f23edcb4ba38ed4741c0efb912f" title="Calls the functions to drive the CAN interface. Makes the CAN timing checks and sends the periodic me..." alt="" coords="1369,56,1513,81"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="2059,71,1513,71,1513,66,2059,66"/>
+<area shape="poly" id="edge15_Node000015_Node000008" title=" " alt="" coords="1355,66,1164,53,1164,48,1355,60"/>
+<area shape="poly" id="edge17_Node000016_Node000014" title=" " alt="" coords="2330,106,2219,84,2220,79,2331,101"/>
+<area shape="rect" id="Node000022" href="$can__cbs__rx__debug_8c.html#a84497271094adbc56d3660ee37d154a8" title="CAN Rx callback function for debug messages." alt="" coords="2097,180,2214,205"/>
+<area shape="poly" id="edge23_Node000021_Node000022" title=" " alt="" coords="2307,353,2292,343,2278,327,2271,311,2266,279,2262,248,2256,233,2244,219,2229,209,2213,202,2215,197,2232,204,2247,215,2260,230,2268,247,2272,279,2276,310,2282,324,2295,339,2310,349"/>
+<area shape="rect" id="Node000024" href="$database_8c.html#a3a926434d881422fd69bc625003d3c07" title="Reads one data block in database by value." alt="" coords="2070,229,2241,255"/>
+<area shape="poly" id="edge25_Node000023_Node000024" title=" " alt="" coords="2300,398,2292,392,2278,377,2271,361,2266,329,2262,297,2256,283,2244,268,2227,257,2230,252,2247,264,2260,280,2268,296,2272,328,2276,359,2282,374,2295,388,2303,394"/>
+<area shape="rect" id="Node000025" href="$database_8c.html#a1ddbc4822f6bf2697a26612a7007a2b3" title="Reads two data blocks in database by value." alt="" coords="2066,279,2245,304"/>
+<area shape="poly" id="edge26_Node000023_Node000025" title=" " alt="" coords="2304,400,2292,392,2274,374,2267,354,2259,335,2244,317,2224,307,2226,302,2247,313,2264,332,2272,352,2279,371,2295,388,2307,395"/>
+<area shape="rect" id="Node000026" href="$database_8c.html#a5cafc28dc4d27bcdf765e88a05d67322" title="Reads three data blocks in database by value." alt="" coords="2066,328,2245,353"/>
+<area shape="poly" id="edge27_Node000023_Node000026" title=" " alt="" coords="2323,402,2292,392,2268,380,2244,367,2210,356,2212,351,2246,362,2271,375,2294,388,2324,397"/>
+<area shape="rect" id="Node000027" href="$database_8c.html#ab18503c1308d453174b301541931259e" title="Reads four data blocks in database by value." alt="" coords="2066,377,2245,403"/>
+<area shape="poly" id="edge28_Node000023_Node000027" title=" " alt="" coords="2287,406,2244,402,2245,396,2287,401"/>
+<area shape="rect" id="Node000028" href="$database_8c.html#a4cea311cf371ea2a1a0351bd2a5aa6c5" title="Stores one data block in database." alt="" coords="2069,427,2242,452"/>
+<area shape="poly" id="edge29_Node000023_Node000028" title=" " alt="" coords="2288,429,2242,434,2242,428,2287,424"/>
+<area shape="rect" id="Node000029" href="$database_8c.html#ac0cb3f517495fa215cdee3e0368b6db3" title="Stores two data blocks in database." alt="" coords="2065,476,2245,501"/>
+<area shape="poly" id="edge30_Node000023_Node000029" title=" " alt="" coords="2320,434,2294,442,2270,453,2246,466,2208,478,2207,473,2244,461,2268,449,2292,437,2319,429"/>
+<area shape="rect" id="Node000030" href="$database_8c.html#a7970fdaa809559651ddd0413d90f1fa9" title="Stores three data blocks in database." alt="" coords="2065,525,2245,551"/>
+<area shape="poly" id="edge31_Node000023_Node000030" title=" " alt="" coords="2304,436,2295,441,2279,458,2272,477,2264,496,2247,515,2223,528,2220,523,2244,511,2259,493,2267,475,2274,455,2292,437,2301,431"/>
+<area shape="rect" id="Node000031" href="$database_8c.html#a04d39e707172d3528e6948ec8c498935" title="Stores four data blocks in database." alt="" coords="2065,575,2245,600"/>
+<area shape="poly" id="edge32_Node000023_Node000031" title=" " alt="" coords="2301,437,2295,441,2282,455,2276,470,2271,500,2267,532,2260,548,2247,564,2227,577,2224,572,2244,560,2256,546,2262,531,2266,500,2271,468,2278,452,2292,437,2297,433"/>
+<area shape="rect" id="Node000036" href="$nxp__mc3377x_8c.html#a8e909d543eb29b0c8e65e9b56ef4700c" title="trigger function for the N77X driver state machine." alt="" coords="2096,624,2215,649"/>
+<area shape="poly" id="edge37_Node000035_Node000036" title=" " alt="" coords="2325,623,2215,634,2214,628,2325,618"/>
+<area shape="rect" id="Node000037" href="$nxp__mc33775a__afe_8c.html#ae6df9bbde43f01a4a74a0e34d48cd844" title=" " alt="" coords="1868,624,1980,649"/>
+<area shape="poly" id="edge38_Node000036_Node000037" title=" " alt="" coords="2082,639,1980,639,1980,634,2082,634"/>
+<area shape="rect" id="Node000038" href="$nxp__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="1623,624,1732,649"/>
+<area shape="poly" id="edge39_Node000037_Node000038" title=" " alt="" coords="1854,639,1732,639,1732,634,1854,634"/>
+</map>

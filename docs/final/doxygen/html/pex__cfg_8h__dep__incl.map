@@ -1,0 +1,25 @@
+<map id="foxbms&#45;2/src/app/driver/config/pex_cfg.h" name="foxbms&#45;2/src/app/driver/config/pex_cfg.h">
+<area shape="rect" id="Node000001" title="Headers for the configuration for the NXP PCA9539 port expander module." alt="" coords="551,5,728,45"/>
+<area shape="rect" id="Node000002" href="$pex__cfg_8c.html" title="Configuration for the NXP PCA9539 port expander module." alt="" coords="349,93,527,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="583,53,483,96,481,91,581,48"/>
+<area shape="rect" id="Node000003" href="$sps__cfg_8c.html" title="Configuration for the driver for the smart power switches (SPS)" alt="" coords="551,93,728,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="642,59,642,93,637,93,637,59"/>
+<area shape="rect" id="Node000004" href="$pex_8h.html" title="Header for the driver for the NXP PCA9539 port expander module." alt="" coords="752,93,929,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="697,48,798,91,796,96,695,53"/>
+<area shape="rect" id="Node000005" href="$adi__ades183x_8c.html" title="Driver for the ADI analog front&#45;end." alt="" coords="5,181,204,236"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="739,136,591,152,475,158,360,165,216,184,205,186,204,181,215,179,360,160,475,153,590,146,738,131"/>
+<area shape="rect" id="Node000006" href="$ltc__6806_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="228,189,405,229"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="739,136,577,158,507,168,419,184,386,191,385,186,417,179,506,163,576,153,738,131"/>
+<area shape="rect" id="Node000007" href="$ltc__6813-1_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="429,189,628,229"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="765,140,592,191,591,186,764,135"/>
+<area shape="rect" id="Node000008" href="$nxp__mc33775a__afe_8c.html" title="API for MC33775A Analog Frontend." alt="" coords="652,181,829,236"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="812,145,771,183,767,179,809,141"/>
+<area shape="rect" id="Node000009" href="$can_8c.html" title="Driver for the CAN module." alt="" coords="853,189,1031,229"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="873,141,923,187,920,191,869,145"/>
+<area shape="rect" id="Node000010" href="$pex_8c.html" title="Driver for the NXP PCA9539 port expander module." alt="" coords="1055,189,1232,229"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="916,135,1083,186,1081,191,914,140"/>
+<area shape="rect" id="Node000011" href="$sps_8c.html" title="Driver for the smart power switches." alt="" coords="1256,189,1433,229"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="943,126,1087,149,1245,179,1277,186,1275,191,1244,184,1086,154,942,132"/>
+<area shape="rect" id="Node000012" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="1457,189,1624,229"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="943,118,1175,139,1311,156,1447,179,1478,186,1477,191,1445,184,1310,162,1174,144,943,124"/>
+</map>

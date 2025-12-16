@@ -1,0 +1,5 @@
+<map id="DIAG_EventToBool" name="DIAG_EventToBool">
+<area shape="rect" id="Node000001" title="convert a DIAG_EVENT_e to a boolean for the violation flags in the database" alt="" coords="265,5,408,31"/>
+<area shape="rect" id="Node000002" href="$diag__cbs__sys-mon_8c.html#a97133cc511847b0111236756b533cbec" title="Callback function for system monitoring related diagnosis events." alt="" coords="5,5,217,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,21,218,21,218,15,251,15"/>
+</map>

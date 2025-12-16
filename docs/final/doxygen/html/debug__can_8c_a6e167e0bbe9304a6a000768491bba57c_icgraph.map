@@ -1,0 +1,16 @@
+<map id="DECAN_ModifiedModuloFunction" name="DECAN_ModifiedModuloFunction">
+<area shape="rect" id="Node000001" title="A modified modulo operation: the input a can not be 0; if the result of a modulo operation is zero,..." alt="" coords="979,31,1213,56"/>
+<area shape="rect" id="Node000002" href="$debug__can_8c.html#a0333e61ae892db63c9a3750a2e5718ad" title="Convert the one number index of the cell temperature into the indexes of cellTemperature_ddegC." alt="" coords="667,5,931,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="965,35,931,32,931,27,965,30"/>
+<area shape="rect" id="Node000006" href="$debug__can_8c.html#a9193b7d369ae82a88ec8dcaf922d60d7" title="Convert the one number index of the cell voltage into the indexes of cellVoltage_mV." alt="" coords="683,55,914,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="965,57,914,61,914,55,965,51"/>
+<area shape="rect" id="Node000003" href="$debug__can_8c.html#a376493ba02a58bc7c9138109db7601b8" title="Receive can temperature data from queue and write into database." alt="" coords="352,5,619,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="653,21,619,21,619,15,653,15"/>
+<area shape="rect" id="Node000004" href="$debug__can_8c.html#a75b2a17a9cdcd7d057fc07c8a4c1dba8" title="afe trigger function" alt="" coords="163,31,304,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="346,35,305,39,304,34,345,29"/>
+<area shape="rect" id="Node000005" href="$debug__can__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,31,115,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="149,46,115,46,115,41,149,41"/>
+<area shape="rect" id="Node000007" href="$debug__can_8c.html#af2243f9569087f7f7cc931bf36378dd0" title="Receive can voltage data from queue and write into database." alt="" coords="369,55,602,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="669,70,602,70,602,65,669,65"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="355,58,304,53,305,47,355,52"/>
+</map>

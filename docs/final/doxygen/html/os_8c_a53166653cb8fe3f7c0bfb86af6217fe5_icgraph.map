@@ -1,0 +1,24 @@
+<map id="OS_CheckTimeHasPassed" name="OS_CheckTimeHasPassed">
+<area shape="rect" id="Node000001" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="825,105,1016,131"/>
+<area shape="rect" id="Node000002" href="$can__cbs__rx__bms-state-request_8c.html#a2d1ba216820adc3d6451a650ccbedcdb" title="handles the mode request" alt="" coords="567,5,777,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="887,100,836,72,776,44,740,33,741,28,778,40,838,67,889,96"/>
+<area shape="rect" id="Node000004" href="$group__mxm-41b-state-handlers.html#gafed0c8a844b5fa7197d9257b159eca61" title="init state handler" alt="" coords="575,55,769,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="844,105,734,83,736,77,845,100"/>
+<area shape="rect" id="Node000006" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="163,131,252,156"/>
+<area shape="poly" id="edge12_Node000001_Node000006" title=" " alt="" coords="812,124,252,144,252,139,812,119"/>
+<area shape="rect" id="Node000008" href="$mxm__battery__management_8c.html#ade338957069ff6f62cdfbfcebffc270a" title="Handle the state MXM_STATEMACH_5X_INIT." alt="" coords="579,156,765,181"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="845,136,736,159,734,153,844,131"/>
+<area shape="rect" id="Node000010" href="$mxm__1785x_8c.html#a1179710d3b5b7a5c11863c4d0569b95a" title="Function that checks if the error counter can be reset." alt="" coords="300,206,519,246"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="891,141,840,171,778,197,712,212,644,223,519,231,519,225,644,217,711,207,777,191,838,166,889,136"/>
+<area shape="rect" id="Node000003" href="$can__cbs__rx__bms-state-request_8c.html#ace804ae0e73ea0d6ef08cdc38e09ca35" title="CAN Rx callback function for state requests." alt="" coords="314,5,505,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="553,21,505,21,505,15,553,15"/>
+<area shape="rect" id="Node000005" href="$mxm__17841b_8c.html#a0ea1ec4dd5b5f45e291edd394772ea46" title="Execute state&#45;machine for the MAX17841B." alt="" coords="321,55,497,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="561,70,497,70,497,65,561,65"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="347,86,301,102,234,133,231,128,299,97,345,81"/>
+<area shape="rect" id="Node000007" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,131,115,156"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="149,146,115,146,115,141,149,141"/>
+<area shape="rect" id="Node000009" href="$mxm__battery__management_8c.html#a325538715bf432ee4826598277aa29e3" title="Execute state&#45;machine for Battery Management Protocol." alt="" coords="325,156,493,181"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="565,171,494,171,494,166,565,166"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="311,159,252,152,253,146,312,154"/>
+<area shape="poly" id="edge11_Node000010_Node000006" title=" " alt="" coords="319,204,299,196,227,158,230,154,301,192,320,199"/>
+</map>

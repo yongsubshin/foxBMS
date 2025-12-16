@@ -1,0 +1,11 @@
+<map id="CANTX_CalculateMinimumPackSoc" name="CANTX_CalculateMinimumPackSoc">
+<area shape="rect" id="Node000001" title="Calculates the return value of the minimum SOC." alt="" coords="5,70,256,95"/>
+<area shape="rect" id="Node000002" href="$bms_8c.html#a95febd341b208a988bb0462e81febca8" title="Returns number of connected strings." alt="" coords="305,5,523,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,67,301,45,302,51,195,73"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="317,70,511,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="256,80,302,80,302,85,256,85"/>
+<area shape="rect" id="Node000004" href="$can__cbs__tx__pack-state-estimation_8c.html#aafe1cddfa5d77da5e19a643c19811613" title="Gets the lowest string SOC percentage from all connected Strings." alt="" coords="304,119,524,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="205,93,327,114,326,119,204,98"/>
+<area shape="rect" id="Node000005" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="572,119,723,145"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="524,129,558,129,558,135,524,135"/>
+</map>

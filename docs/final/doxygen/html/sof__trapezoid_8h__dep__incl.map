@@ -1,0 +1,9 @@
+<map id="foxbms&#45;2/src/app/application/algorithm/state_estimation/sof/trapezoid/sof_trapezoid.h" name="foxbms&#45;2/src/app/application/algorithm/state_estimation/sof/trapezoid/sof_trapezoid.h">
+<area shape="rect" id="Node000001" title="Header for SOX module, responsible for current derating calculation." alt="" coords="228,5,443,60"/>
+<area shape="rect" id="Node000002" href="$sof__trapezoid_8c.html" title="SOF modules responsible for current derating calculation." alt="" coords="5,108,220,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,68,172,110,170,106,264,63"/>
+<area shape="rect" id="Node000003" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="244,115,427,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="338,74,338,115,333,115,333,74"/>
+<area shape="rect" id="Node000004" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="451,115,617,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="400,64,498,113,495,117,398,68"/>
+</map>

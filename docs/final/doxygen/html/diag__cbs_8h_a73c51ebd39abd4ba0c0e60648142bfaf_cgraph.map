@@ -1,0 +1,27 @@
+<map id="DIAG_ErrorDeepDischarge" name="DIAG_ErrorDeepDischarge">
+<area shape="rect" id="Node000001" title="diagnosis callback function for deep discharge events" alt="" coords="5,179,197,204"/>
+<area shape="rect" id="Node000002" href="$fram_8c.html#ad5c5ec1fd0a6c3667185d3b75064e359" title="Writes a variable to the FRAM." alt="" coords="245,179,379,204"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,189,232,189,232,194,198,194"/>
+<area shape="rect" id="Node000003" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="468,5,607,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="317,177,332,148,355,111,387,72,425,40,453,27,455,32,428,44,390,76,360,114,336,151,322,180"/>
+<area shape="rect" id="Node000004" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="487,55,587,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="322,177,364,133,393,109,426,89,473,73,475,78,428,94,396,114,367,137,326,180"/>
+<area shape="rect" id="Node000005" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="495,104,579,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="337,176,378,157,426,138,481,124,482,129,427,143,380,162,339,181"/>
+<area shape="rect" id="Node000006" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="477,153,597,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="379,181,464,172,464,177,379,187"/>
+<area shape="rect" id="Node000007" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="427,203,648,228"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="379,196,414,199,413,205,379,201"/>
+<area shape="rect" id="Node000008" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="473,252,601,277"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="341,202,428,237,461,246,459,251,426,242,339,207"/>
+<area shape="rect" id="Node000009" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="498,301,577,327"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="326,202,368,244,397,267,428,286,456,297,485,305,484,310,454,302,425,291,394,271,365,248,323,206"/>
+<area shape="rect" id="Node000012" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="490,351,585,376"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="322,203,360,267,391,305,428,336,452,347,477,355,476,360,450,352,425,340,387,308,356,271,317,206"/>
+<area shape="rect" id="Node000010" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="696,301,852,327"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="577,311,682,311,682,317,577,317"/>
+<area shape="rect" id="Node000011" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="701,351,847,376"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="577,319,699,345,698,350,576,325"/>
+<area shape="poly" id="edge12_Node000012_Node000010" title=" " alt="" coords="584,351,698,327,699,332,585,356"/>
+<area shape="poly" id="edge13_Node000012_Node000011" title=" " alt="" coords="585,361,687,361,687,366,585,366"/>
+</map>

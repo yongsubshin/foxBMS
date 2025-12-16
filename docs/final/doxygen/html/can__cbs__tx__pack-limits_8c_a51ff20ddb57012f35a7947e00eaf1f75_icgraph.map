@@ -1,0 +1,5 @@
+<map id="CANTX_BuildPackLimitsMessage" name="CANTX_BuildPackLimitsMessage">
+<area shape="rect" id="Node000001" title="Adds the data to the message." alt="" coords="197,5,432,31"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__pack-limits_8c.html#aa69ac2d8276f26b94a3021d3c5c7806b" title="CAN Tx callback function for limit values." alt="" coords="5,5,149,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,21,150,21,150,15,183,15"/>
+</map>

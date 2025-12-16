@@ -1,0 +1,17 @@
+<map id="CAN_InitializeTransceiver" name="CAN_InitializeTransceiver">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,192,105"/>
+<area shape="rect" id="Node000002" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="299,5,383,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,77,239,39,285,27,286,32,241,45,133,82"/>
+<area shape="rect" id="Node000003" href="$io_8c.html#a41154d1d77ad0873d462c803ce831f68" title="Set pin to output by writing in pin direction register." alt="" coords="240,55,441,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="192,80,226,77,227,82,192,86"/>
+<area shape="rect" id="Node000004" href="$pex_8c.html#a8d40659d3d10755949d65e36f483c504" title="sets pin to high." alt="" coords="293,104,388,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="192,99,280,108,279,113,192,105"/>
+<area shape="rect" id="Node000007" href="$pex_8c.html#aa2309e9dbd95438d52d80cad62ce5a45" title="sets pin to input." alt="" coords="241,153,440,179"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="136,103,241,138,274,147,272,152,239,143,134,108"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="489,104,645,129"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="388,114,476,114,476,119,388,119"/>
+<area shape="rect" id="Node000006" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="494,153,641,179"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="389,124,495,148,494,153,388,129"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="399,151,494,130,495,135,400,156"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="440,163,480,163,480,169,440,169"/>
+</map>

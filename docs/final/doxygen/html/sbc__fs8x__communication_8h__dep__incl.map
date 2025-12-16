@@ -1,0 +1,9 @@
+<map id="foxbms&#45;2/src/app/driver/sbc/fs8x_driver/sbc_fs8x_communication.h" name="foxbms&#45;2/src/app/driver/sbc/fs8x_driver/sbc_fs8x_communication.h">
+<area shape="rect" id="Node000001" title="This file contains functions for SPI/I2C communication." alt="" coords="227,5,413,60"/>
+<area shape="rect" id="Node000002" href="$sbc__fs8x_8c.html" title="Driver functions for the FS8x SBC." alt="" coords="5,115,203,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,68,146,118,143,113,251,63"/>
+<area shape="rect" id="Node000003" href="$sbc__fs8x__communication_8c.html" title="Implementation of communication logic for NXP SBC FS8x." alt="" coords="227,108,413,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="323,74,323,108,317,108,317,74"/>
+<area shape="rect" id="Node000004" href="$nxpfs85xx_8c.html" title="Driver for the FS85xx module." alt="" coords="438,115,615,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="387,63,489,113,486,117,385,68"/>
+</map>

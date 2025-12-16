@@ -1,0 +1,36 @@
+<map id="MXM_5XStateHandlerInit" name="MXM_5XStateHandlerInit">
+<area shape="rect" id="Node000001" title="Handle the state MXM_STATEMACH_5X_INIT." alt="" coords="5,244,191,269"/>
+<area shape="rect" id="Node000002" href="$mxm__17841b_8c.html#abe201e911023d8c53709b38f447aa3ca" title="Read the value of a register function." alt="" coords="247,5,477,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,243,117,203,145,147,185,89,209,62,237,40,246,34,249,39,240,44,213,66,189,92,149,150,122,205,106,245"/>
+<area shape="rect" id="Node000005" href="$mxm__17841b_8c.html#a09d0707cc15516727d085687d87bba85" title="Set state transition for MAX17841B&#45;state&#45;machine." alt="" coords="265,55,459,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="104,242,123,211,152,169,191,125,237,89,251,82,253,87,240,94,194,129,156,172,127,214,108,245"/>
+<area shape="rect" id="Node000006" href="$mxm__17841b_8c.html#a1ec8677952d5efa533f6dc3286d1d4fd" title="Write a register function." alt="" coords="247,104,477,129"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="109,242,161,192,197,163,237,140,259,131,261,136,240,144,200,168,164,196,112,246"/>
+<area shape="rect" id="Node000008" href="$mxm__battery__management_8c.html#a926546d8531e4e20be9ef1209155cdbe" title="clears the command buffer and writes HELLO ALL into the buffer" alt="" coords="239,154,485,194"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="131,241,238,203,266,195,267,200,239,209,133,246"/>
+<area shape="rect" id="Node000010" href="$mxm__battery__management_8c.html#a897cfb71c20c5967d5b552ccf1155763" title="handles the error of the underlying state&#45;machine (by resetting it and counting the error)" alt="" coords="255,219,469,244"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="190,245,241,240,241,246,191,250"/>
+<area shape="rect" id="Node000011" href="$mxm__battery__management_8c.html#ae9b6bf4e5053d27542645a88c68503b9" title="repeat the current substate (by resetting to the entry state)" alt="" coords="247,268,477,293"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="191,262,233,266,233,272,190,268"/>
+<area shape="rect" id="Node000012" href="$mxm__battery__management_8c.html#a118ff0964a961d44cf9c4cac85d0f222" title="Signal that a chain of substates has been successfully handled." alt="" coords="277,317,447,343"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="134,267,239,302,279,312,278,317,238,307,132,272"/>
+<area shape="rect" id="Node000013" href="$mxm__battery__management_8c.html#a08d5ab7b4b3254f41e6661ee677f854e" title="sets all internal state variables so that upon next execution the next substate is entered" alt="" coords="537,336,750,361"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="113,267,165,312,201,334,240,351,281,362,325,369,413,374,495,370,566,361,566,366,496,375,413,379,324,375,280,367,238,357,198,339,162,316,110,271"/>
+<area shape="rect" id="Node000014" href="$os_8c.html#a53166653cb8fe3f7c0bfb86af6217fe5" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="267,419,457,444"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="110,268,160,330,198,366,240,397,274,412,272,417,237,402,194,370,157,334,106,271"/>
+<area shape="rect" id="Node000016" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="576,469,711,495"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="106,268,122,307,149,359,189,412,213,436,240,454,279,473,320,486,363,494,406,499,490,500,562,494,563,499,490,506,406,505,362,500,319,491,277,478,237,459,209,440,185,416,145,362,117,309,101,271"/>
+<area shape="rect" id="Node000003" href="$mxm__bit__extract_8c.html#aac9f739280cfb96575a7dc1e860dae41" title="read a value from a register supplied as variable" alt="" coords="565,19,721,44"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="477,21,552,24,551,30,477,26"/>
+<area shape="rect" id="Node000004" href="$mxm__bit__extract_8c.html#a99ab333298a01410347cff8b97125e12" title="Extract a bit value function." alt="" coords="801,56,876,81"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="711,41,788,56,787,62,710,47"/>
+<area shape="rect" id="Node000007" href="$mxm__bit__extract_8c.html#a935209b68c7ac65dd559d91d93a8a7e0" title="write a value to a register supplied as variable" alt="" coords="564,92,723,117"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="477,109,550,106,550,111,478,114"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="712,89,787,75,788,81,713,95"/>
+<area shape="rect" id="Node000009" href="$mxm__battery__management_8c.html#a50b3a6cf0784bcc3ec9ed55af937447b" title="Clear the command&#45;buffer." alt="" coords="534,161,753,187"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="486,171,520,171,520,177,486,177"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="448,333,523,338,523,343,448,338"/>
+<area shape="rect" id="Node000015" href="$os_8c.html#a834064ee9e9a90768918c776f5cb1bb7" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="533,405,753,445"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="458,426,519,425,519,430,458,432"/>
+<area shape="poly" id="edge17_Node000014_Node000016" title=" " alt="" coords="434,441,563,465,562,470,433,447"/>
+</map>

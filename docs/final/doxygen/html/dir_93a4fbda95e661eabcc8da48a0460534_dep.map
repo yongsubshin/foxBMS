@@ -1,0 +1,13 @@
+<map id="foxbms&#45;2/src/app/engine/hw_info" name="foxbms&#45;2/src/app/engine/hw_info">
+<area shape="rect" id="node1" href="dir_a7aec9f880b2b2b549018b1a726e0ee5.html" title="database" alt="" coords="27,125,109,151"/>
+<area shape="rect" id="node2" href="dir_e631b60e63d01886113a4dcd2f370bd0.html" title="diag" alt="" coords="133,125,184,151"/>
+<area shape="rect" id="node3" href="dir_93a4fbda95e661eabcc8da48a0460534.html" title="hw_info" alt="" coords="110,52,183,77"/>
+<area shape="poly" id="edge2" href="dir_000080_000056.html" alt="" coords="136,79,93,118,89,114,132,75"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000080_000056.html" title="1" alt="" coords="95,112,105,127"/>
+<area shape="poly" id="edge3" href="dir_000080_000062.html" alt="" coords="151,77,157,111,152,112,146,78"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000080_000062.html" title="1" alt="" coords="157,99,167,113"/>
+<area shape="rect" id="node4" href="dir_32ea6d1433c9101bf202a1f0791f509d.html" title="main" alt="" coords="209,125,263,151"/>
+<area shape="poly" id="edge1" href="dir_000080_000100.html" alt="" coords="163,75,212,114,209,119,159,79"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000080_000100.html" title="1" alt="" coords="208,100,217,115"/>
+<area shape="rect" id="clust1" href="dir_3819707b9b31c7a9319bee80f394bcbf.html" title="engine" alt="" coords="16,16,195,161"/>
+</map>

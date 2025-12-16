@@ -1,0 +1,5 @@
+<map id="CANRX_TransferImdResponseMessageToCanBuffer" name="CANRX_TransferImdResponseMessageToCanBuffer">
+<area shape="rect" id="Node000001" title="Reads the information from the can data and transfers it to a can buffer element." alt="" coords="216,5,431,45"/>
+<area shape="rect" id="Node000002" href="$can__cbs__rx__imd-response_8c.html#a3e8c44f080c5fcfb3254c6812bc669bd" title="CAN Rx callback function for IMD response messages." alt="" coords="5,13,168,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,28,168,28,168,23,202,23"/>
+</map>

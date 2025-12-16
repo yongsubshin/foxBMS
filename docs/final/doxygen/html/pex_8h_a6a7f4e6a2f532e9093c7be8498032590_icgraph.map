@@ -1,0 +1,23 @@
+<map id="PEX_GetPin" name="PEX_GetPin">
+<area shape="rect" id="Node000001" title="get pin state of port expander pins." alt="" coords="2143,5,2240,31"/>
+<area shape="rect" id="Node000002" href="$sps_8c.html#a033367817569ec2519c57fed158ef2a3" title="Get the feedback state of a channel." alt="" coords="1880,5,2095,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2129,21,2095,21,2095,15,2129,15"/>
+<area shape="rect" id="Node000003" href="$contactor_8c.html#a6bc75e3a0508862d0624a5b9b2862221" title="Reads the feedback of all contactors." alt="" coords="1579,5,1832,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1866,21,1832,21,1832,15,1866,15"/>
+<area shape="rect" id="Node000004" href="$contactor_8c.html#a2b2ba5d5312f7ea19245ce7012fa38d5" title="checks the feedback of all contactors" alt="" coords="1363,5,1531,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1565,21,1531,21,1531,15,1565,15"/>
+<area shape="rect" id="Node000005" href="$bms_8c.html#a954a05b20669dc00663c4f0f2a729fcd" title="trigger function for the BMS driver state machine." alt="" coords="1212,5,1315,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1349,21,1315,21,1315,15,1349,15"/>
+<area shape="rect" id="Node000006" href="$ftask__cfg_8c.html#a7f3620825ec0f5072516255d6febebdb" title="Cyclic 10 ms task." alt="" coords="940,5,1164,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1198,21,1164,21,1164,15,1198,15"/>
+<area shape="rect" id="Node000007" href="$ftask_8c.html#a2a1d135e2e4e6fef538294d8c43d0328" title="Creation of cyclic 10 ms task." alt="" coords="684,5,892,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="926,21,892,21,892,15,926,15"/>
+<area shape="rect" id="Node000008" href="$ftask__freertos_8c.html#acae8871d81e223d555652ef9c187898b" title="Creates all tasks of the group." alt="" coords="496,5,636,31"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="670,21,636,21,636,15,670,15"/>
+<area shape="rect" id="Node000009" href="$os_8c.html#a87194f95c7417a637c16c86b64f371e7" title="Initialization the RTOS interface." alt="" coords="232,5,448,31"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="482,21,448,21,448,15,482,15"/>
+<area shape="rect" id="Node000010" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,5,184,31"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="218,21,184,21,184,15,218,15"/>
+<area shape="rect" id="Node000011" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,5,81,31"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="116,21,82,21,82,15,116,15"/>
+</map>

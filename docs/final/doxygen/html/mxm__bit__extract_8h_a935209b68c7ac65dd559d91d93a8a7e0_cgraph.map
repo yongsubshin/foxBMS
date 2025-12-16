@@ -1,0 +1,5 @@
+<map id="mxm_41bWriteValue" name="mxm_41bWriteValue">
+<area shape="rect" id="Node000001" title="write a value to a register supplied as variable" alt="" coords="5,5,164,31"/>
+<area shape="rect" id="Node000002" href="$mxm__bit__extract_8c.html#a99ab333298a01410347cff8b97125e12" title="Extract a bit value function." alt="" coords="212,5,287,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,15,198,15,198,21,164,21"/>
+</map>

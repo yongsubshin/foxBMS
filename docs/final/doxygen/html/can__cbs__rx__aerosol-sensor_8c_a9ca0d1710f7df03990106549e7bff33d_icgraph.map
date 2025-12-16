@@ -1,0 +1,5 @@
+<map id="CANRX_SetAerosolSensorCrcCheckCode" name="CANRX_SetAerosolSensorCrcCheckCode">
+<area shape="rect" id="Node000001" title="Sets CRC check code from sensor in database." alt="" coords="221,5,432,45"/>
+<area shape="rect" id="Node000002" href="$can__cbs__rx__aerosol-sensor_8c.html#ad27254d24cd7a5184063cbf0182bb8ee" title="CAN Rx callback function for aerosol sensor messages." alt="" coords="5,13,173,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,28,174,28,174,23,208,23"/>
+</map>

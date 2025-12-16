@@ -1,0 +1,7 @@
+<map id="BAL_SetBalancingThreshold" name="BAL_SetBalancingThreshold">
+<area shape="rect" id="Node000001" title="set balancing threshold" alt="" coords="516,5,719,31"/>
+<area shape="rect" id="Node000002" href="$can__cbs__rx__bms-state-request_8c.html#a6015069f6046762fc47a450a1202cc5a" title="sets the balancing threshold" alt="" coords="244,5,468,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="502,21,468,21,468,15,502,15"/>
+<area shape="rect" id="Node000003" href="$can__cbs__rx__bms-state-request_8c.html#ace804ae0e73ea0d6ef08cdc38e09ca35" title="CAN Rx callback function for state requests." alt="" coords="5,5,196,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="230,21,196,21,196,15,230,15"/>
+</map>

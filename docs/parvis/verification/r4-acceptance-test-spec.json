@@ -1,0 +1,2108 @@
+{
+  "metadata": {
+    "document_id": "R4-ACC-TEST-SPEC",
+    "document_title": "R4 System Acceptance Test Specification for foxBMS BMS",
+    "version": "1.0.0",
+    "creation_date": "2025-12-16",
+    "standard_compliance": [
+      "ISO 26262-4:2018 Clause 11 (Product Release for Production)",
+      "ISO 26262-6:2018 Part 6",
+      "ASPICE SYS.5 (System Qualification Test)"
+    ],
+    "applicable_asil_levels": ["ASIL-A", "ASIL-B", "ASIL-C", "ASIL-D"],
+    "total_test_cases": 56,
+    "test_categories": {
+      "functional_validation": 18,
+      "safety_validation": 18,
+      "performance_validation": 10,
+      "environmental_validation": 10
+    },
+    "traceability": {
+      "unified_requirements": 648,
+      "safety_requirements": 147,
+      "safety_goals": 3,
+      "r3_system_tests": 48
+    },
+    "phase": "R4 System Acceptance",
+    "predecessor_document": "R3-SYS-TEST-SPEC"
+  },
+  "safety_goals": {
+    "SG-BMS-001": {
+      "description": "Prevention of thermal runaway conditions",
+      "asil_level": "ASIL-D",
+      "safe_state": "All contactors open, battery isolated",
+      "fault_tolerant_time_interval_ms": 500,
+      "validation_tests": [
+        "R4-ACC-SAF-001", "R4-ACC-SAF-002", "R4-ACC-SAF-003",
+        "R4-ACC-SAF-004", "R4-ACC-SAF-005", "R4-ACC-SAF-006"
+      ]
+    },
+    "SG-BMS-002": {
+      "description": "Prevention of overcharge and overdischarge conditions",
+      "asil_level": "ASIL-C",
+      "safe_state": "Charge/discharge current limited to zero, contactors open",
+      "fault_tolerant_time_interval_ms": 1000,
+      "validation_tests": [
+        "R4-ACC-SAF-007", "R4-ACC-SAF-008", "R4-ACC-SAF-009",
+        "R4-ACC-SAF-010", "R4-ACC-SAF-011", "R4-ACC-SAF-012"
+      ]
+    },
+    "SG-BMS-003": {
+      "description": "Prevention of overcurrent conditions",
+      "asil_level": "ASIL-B",
+      "safe_state": "Current limited, contactors opened if threshold exceeded",
+      "fault_tolerant_time_interval_ms": 100,
+      "validation_tests": [
+        "R4-ACC-SAF-013", "R4-ACC-SAF-014", "R4-ACC-SAF-015",
+        "R4-ACC-SAF-016", "R4-ACC-SAF-017", "R4-ACC-SAF-018"
+      ]
+    }
+  },
+  "acceptance_test_cases": {
+    "functional_validation": [
+      {
+        "id": "R4-ACC-FUN-001",
+        "title": "Complete BMS Power-On Initialization Sequence",
+        "category": "Functional Validation",
+        "objective": "Validate that the BMS completes full power-on initialization and transitions to operational readiness within specified time",
+        "preconditions": [
+          "Battery pack connected with valid cell voltages",
+          "All contactors in open state",
+          "Power supply within operational range (12V nominal)",
+          "CAN bus interface available"
+        ],
+        "test_steps": [
+          "Apply power to BMS controller",
+          "Monitor MCU initialization sequence",
+          "Verify SBC initialization completes with watchdog active",
+          "Verify AFE daisy chain communication established",
+          "Verify initial cell voltage measurement cycle completes",
+          "Verify BMS transitions through INITIALIZATION to STANDBY state",
+          "Verify CAN status message indicates operational state"
+        ],
+        "expected_results": [
+          "MCU boots within 100ms of power application",
+          "SBC enters RUNNING state with FS0B released within 500ms",
+          "AFE communication verified for all ICs in chain within 1000ms",
+          "Cell voltages read and validated within 2000ms",
+          "BMS state reaches STANDBY within 3000ms total",
+          "CAN message BMS_STATE indicates STANDBY"
+        ],
+        "pass_criteria": "BMS reaches operational STANDBY state within 3 seconds with all subsystems functional",
+        "requirement_refs": [
+          "FBMS-SWE-BMS-001", "FBMS-SWE-BMS-059", "FBMS-SWE-BMS-060",
+          "SBC-001", "SBC-034", "AFE-API-001"
+        ],
+        "asil_level": "QM",
+        "test_method": "Requirements-based acceptance testing"
+      },
+      {
+        "id": "R4-ACC-FUN-002",
+        "title": "Complete Precharge Sequence Validation",
+        "category": "Functional Validation",
+        "objective": "Validate the complete precharge sequence from request to normal operation mode including voltage equalization verification",
+        "preconditions": [
+          "BMS in STANDBY state",
+          "All strings available and healthy",
+          "Pack voltage measured and valid",
+          "External load connected with precharge resistor path"
+        ],
+        "test_steps": [
+          "Request precharge via CAN command",
+          "Verify BMS accepts request and transitions to PRECHARGE state",
+          "Monitor minus contactor close sequence (FBMS-SWE-BMS-084)",
+          "Monitor precharge contactor close sequence (FBMS-SWE-BMS-085)",
+          "Verify voltage rise on load side",
+          "Verify voltage comparison passes threshold (FBMS-SWE-BMS-086)",
+          "Monitor precharge contactor open sequence (FBMS-SWE-BMS-087)",
+          "Monitor plus contactor close sequence (FBMS-SWE-BMS-096)",
+          "Verify transition to NORMAL state (FBMS-SWE-BMS-065)"
+        ],
+        "expected_results": [
+          "Precharge request accepted within 10ms",
+          "Minus contactor closes with feedback verification",
+          "Precharge contactor closes, inrush current limited",
+          "Load voltage reaches 90% of string voltage within precharge timeout",
+          "Precharge contactor opens after voltage equalization",
+          "Plus contactor closes establishing full power path",
+          "BMS enters NORMAL state",
+          "Total precharge time less than configured timeout"
+        ],
+        "pass_criteria": "Complete precharge sequence executed with correct contactor sequencing and voltage verification",
+        "requirement_refs": [
+          "FBMS-SWE-BMS-064", "FBMS-SWE-BMS-084", "FBMS-SWE-BMS-085",
+          "FBMS-SWE-BMS-086", "FBMS-SWE-BMS-087", "FBMS-SWE-BMS-096",
+          "FBMS-SWE-BMS-065"
+        ],
+        "asil_level": "QM",
+        "test_method": "Requirements-based acceptance testing"
+      },
+      {
+        "id": "R4-ACC-FUN-003",
+        "title": "Multi-String Connection and Load Balancing",
+        "category": "Functional Validation",
+        "objective": "Validate correct connection sequencing for multiple battery strings with current balancing verification",
+        "preconditions": [
+          "BMS configured for BS_NR_OF_STRINGS greater than 1",
+          "All strings with valid cell voltages within matching threshold",
+          "BMS in STANDBY or single-string NORMAL state"
+        ],
+        "test_steps": [
+          "Initiate first string precharge sequence",
+          "Verify first string connects successfully",
+          "Monitor string voltage matching for additional strings",
+          "Initiate second string connection via FBMS-SWE-BMS-095",
+          "Verify string closing sequence (FBMS-SWE-BMS-097)",
+          "Measure current distribution across strings",
+          "Repeat for all configured strings",
+          "Verify BMS_GetNumberOfConnectedStrings returns correct count"
+        ],
+        "expected_results": [
+          "First string connects via normal precharge sequence",
+          "Additional strings connect when voltage within threshold",
+          "Each string connection verified via contactor feedback",
+          "Current distributes approximately equally across strings",
+          "All BS_NR_OF_STRINGS connected and operational",
+          "Connected string count correctly reported"
+        ],
+        "pass_criteria": "All strings connected with balanced current distribution within 10% tolerance",
+        "requirement_refs": [
+          "FBMS-SWE-BMS-011", "FBMS-SWE-BMS-012", "FBMS-SWE-BMS-014",
+          "FBMS-SWE-BMS-054", "FBMS-SWE-BMS-095", "FBMS-SWE-BMS-097"
+        ],
+        "asil_level": "QM",
+        "test_method": "Requirements-based acceptance testing"
+      },
+      {
+        "id": "R4-ACC-FUN-004",
+        "title": "SOC Calculation Accuracy Validation",
+        "category": "Functional Validation",
+        "objective": "Validate SOC calculation accuracy throughout charge and discharge cycles including voltage-based recalibration",
+        "preconditions": [
+          "BMS in NORMAL operational state",
+          "Current sensor calibrated and operational",
+          "Known initial SOC state (fully charged or discharged)"
+        ],
+        "test_steps": [
+          "Establish known initial SOC via voltage lookup at rest (ALGO-SOC-007)",
+          "Apply constant discharge current for measured capacity removal",
+          "Record coulomb-counted SOC change (ALGO-SOC-001)",
+          "Compare calculated SOC with expected value based on current integration",
+          "Allow battery to rest for relaxation period",
+          "Verify SOC recalibration via voltage lookup (ALGO-SOC-013)",
+          "Record deviation between coulomb count and voltage-based SOC",
+          "Verify SOC persists to FRAM (ALGO-SOC-010)"
+        ],
+        "expected_results": [
+          "Initial SOC correctly determined from voltage lookup table",
+          "Coulomb counting tracks capacity removal accurately",
+          "SOC deviation less than 5% after discharge cycle",
+          "Voltage-based recalibration corrects accumulated drift",
+          "Final SOC matches expected value within 5% tolerance",
+          "SOC value correctly written to FRAM for persistence"
+        ],
+        "pass_criteria": "SOC calculation error less than 5% throughout complete charge/discharge cycle",
+        "requirement_refs": [
+          "ALGO-SOC-001", "ALGO-SOC-005", "ALGO-SOC-006",
+          "ALGO-SOC-007", "ALGO-SOC-010", "ALGO-SOC-013",
+          "DRV-FRAM-003"
+        ],
+        "asil_level": "ASIL-B",
+        "test_method": "Requirements-based acceptance testing with measurement"
+      },
+      {
+        "id": "R4-ACC-FUN-005",
+        "title": "SOE Energy Estimation Validation",
+        "category": "Functional Validation",
+        "objective": "Validate SOE calculation correctly estimates remaining energy capacity accounting for temperature and aging effects",
+        "preconditions": [
+          "BMS in NORMAL operational state",
+          "Known battery capacity and initial state",
+          "Temperature measurement stable"
+        ],
+        "test_steps": [
+          "Record initial SOE at known charge state",
+          "Apply discharge at controlled rate",
+          "Monitor SOE decrease against energy removed (ALGO-SOE-001)",
+          "Vary temperature within operational range",
+          "Verify temperature compensation in SOE calculation (ALGO-SOE-003)",
+          "Compare SOE with energy meter measurement",
+          "Verify SOE correctly accounts for efficiency losses"
+        ],
+        "expected_results": [
+          "SOE decreases proportionally with energy removal",
+          "Temperature compensation correctly applied",
+          "SOE accuracy within 10% of actual remaining energy",
+          "SOE correctly predicts zero at actual depletion"
+        ],
+        "pass_criteria": "SOE prediction error less than 10% throughout operational range",
+        "requirement_refs": [
+          "ALGO-SOE-001", "ALGO-SOE-003", "ALGO-SOE-008", "ALGO-SOE-009"
+        ],
+        "asil_level": "QM",
+        "test_method": "Requirements-based acceptance testing with measurement"
+      },
+      {
+        "id": "R4-ACC-FUN-006",
+        "title": "Cell Voltage Measurement Accuracy",
+        "category": "Functional Validation",
+        "objective": "Validate cell voltage measurement accuracy across the full operational range using calibrated reference",
+        "preconditions": [
+          "AFE measurement chain operational",
+          "Calibrated voltage reference available",
+          "All cell connections verified good"
+        ],
+        "test_steps": [
+          "Apply known reference voltage to cell inputs",
+          "Trigger AFE measurement cycle (AFE_TriggerIc per AFE-API-001)",
+          "Read cell voltage values from database",
+          "Compare measured values with reference at low voltage (2000mV)",
+          "Compare measured values with reference at mid voltage (3400mV)",
+          "Compare measured values with reference at high voltage (4200mV)",
+          "Verify C-ADC and S-ADC readings match (AFE-ADI-019)",
+          "Calculate measurement error statistics"
+        ],
+        "expected_results": [
+          "AFE measurement cycle completes within 10ms",
+          "Voltage reading error less than 1.2mV per AFE-ADI-004",
+          "C-ADC and S-ADC readings within 5mV per AFE-ADI-020",
+          "Measurement linearity verified across range",
+          "All cells measured correctly"
+        ],
+        "pass_criteria": "Cell voltage measurement error less than 1.2mV across 2000-4500mV range",
+        "requirement_refs": [
+          "AFE-API-001", "AFE-ADI-004", "AFE-ADI-019", "AFE-ADI-020", "AFE-ADI-027"
+        ],
+        "asil_level": "ASIL-C",
+        "test_method": "Requirements-based acceptance testing with calibrated measurement"
+      },
+      {
+        "id": "R4-ACC-FUN-007",
+        "title": "Temperature Measurement and NTC Validation",
+        "category": "Functional Validation",
+        "objective": "Validate temperature measurement accuracy using NTC sensors with lookup table interpolation",
+        "preconditions": [
+          "AFE temperature channels configured",
+          "NTC sensors connected and functional",
+          "Temperature reference available"
+        ],
+        "test_steps": [
+          "Request temperature measurement (AFE_RequestTemperatureRead per AFE-API-005)",
+          "Apply known temperature to NTC sensors using thermal chamber",
+          "Read temperature values from database",
+          "Verify NTC lookup table interpolation (AFE-ADI-030)",
+          "Test across temperature range: -40C, 0C, 25C, 45C, 60C",
+          "Verify temperature plausibility check (AFE-PLAUS-004)",
+          "Calculate measurement error at each point"
+        ],
+        "expected_results": [
+          "Temperature measurement completes within AFE cycle",
+          "Temperature error less than 2 degrees C",
+          "NTC lookup correctly interpolates values",
+          "Plausibility check accepts valid temperatures",
+          "All temperature channels report correctly"
+        ],
+        "pass_criteria": "Temperature measurement error less than 2 degrees C across -40C to 60C range",
+        "requirement_refs": [
+          "AFE-API-005", "AFE-ADI-030", "AFE-PLAUS-004", "AFE-PLAUS-005"
+        ],
+        "asil_level": "ASIL-C",
+        "test_method": "Requirements-based acceptance testing with thermal reference"
+      },
+      {
+        "id": "R4-ACC-FUN-008",
+        "title": "CAN Communication Protocol Validation",
+        "category": "Functional Validation",
+        "objective": "Validate complete CAN communication protocol including message transmission, reception, and error handling",
+        "preconditions": [
+          "CAN interface initialized (DRV-CAN-008)",
+          "CAN transceiver enabled",
+          "CAN analyzer connected to bus"
+        ],
+        "test_steps": [
+          "Verify periodic message transmission at configured rates",
+          "Capture BMS state message and verify content",
+          "Capture cell voltage messages and verify data encoding",
+          "Capture temperature messages and verify data encoding",
+          "Capture current limit messages and verify values",
+          "Send state request via CAN and verify reception",
+          "Inject CAN bus error and verify error handling",
+          "Verify message recovery after error"
+        ],
+        "expected_results": [
+          "Periodic messages transmitted at correct intervals (DRV-CAN-004)",
+          "State messages correctly encode BMS state",
+          "Voltage/temperature data correctly packed",
+          "Current limit messages contain SOF-calculated values",
+          "State requests correctly received and processed",
+          "Bus errors detected and logged",
+          "Communication recovers after transient errors"
+        ],
+        "pass_criteria": "All CAN messages transmitted at correct rates with correct content encoding",
+        "requirement_refs": [
+          "DRV-CAN-001", "DRV-CAN-004", "DRV-CAN-005", "DRV-CAN-006",
+          "DRV-CAN-007", "DRV-CAN-008", "DRV-CAN-009"
+        ],
+        "asil_level": "QM",
+        "test_method": "Protocol conformance testing"
+      },
+      {
+        "id": "R4-ACC-FUN-009",
+        "title": "Cell Balancing Operation Validation",
+        "category": "Functional Validation",
+        "objective": "Validate passive cell balancing operation for voltage equalization across all cells",
+        "preconditions": [
+          "BMS in CHARGE or NORMAL state",
+          "Cell voltage imbalance present (greater than threshold)",
+          "Balancing function enabled"
+        ],
+        "test_steps": [
+          "Identify cells requiring balancing based on voltage difference",
+          "Verify balancing algorithm selects correct cells",
+          "Request balancing via AFE_RequestBalancingFeedbackRead (AFE-API-006)",
+          "Monitor balancing MOSFET activation on slave modules",
+          "Measure balancing current on high cells",
+          "Monitor cell voltage convergence over time",
+          "Verify balancing deactivates when threshold reached"
+        ],
+        "expected_results": [
+          "High voltage cells correctly identified",
+          "Balancing MOSFETs activated on appropriate cells",
+          "Balancing current within specification",
+          "Cell voltages converge toward minimum voltage",
+          "Balancing automatically stops at equalization threshold",
+          "No thermal issues during balancing"
+        ],
+        "pass_criteria": "Cell voltages equalized to within 10mV after balancing period",
+        "requirement_refs": [
+          "AFE-API-006", "AFE-ADI-012", "AFE-LTC-001", "AFE-LTC-002"
+        ],
+        "asil_level": "QM",
+        "test_method": "Requirements-based acceptance testing"
+      },
+      {
+        "id": "R4-ACC-FUN-010",
+        "title": "FRAM Data Persistence Validation",
+        "category": "Functional Validation",
+        "objective": "Validate critical data persistence across power cycles using FRAM storage",
+        "preconditions": [
+          "BMS operational with valid SOC/SOE values",
+          "FRAM initialized (DRV-FRAM-002)",
+          "Power cycle capability available"
+        ],
+        "test_steps": [
+          "Record current SOC/SOE/SBC state values",
+          "Verify FRAM_WriteData writes data correctly (DRV-FRAM-003)",
+          "Verify CRC calculated and stored (DRV-FRAM-007)",
+          "Execute controlled power cycle",
+          "Verify FRAM_ReadData on startup (DRV-FRAM-004)",
+          "Verify CRC validation passes",
+          "Compare recovered values with pre-power-cycle values",
+          "Verify SBC initialization uses recovered state (SBC-039)"
+        ],
+        "expected_results": [
+          "SOC/SOE values written to FRAM with valid CRC",
+          "Power cycle completes without data loss",
+          "FRAM data read successfully on startup",
+          "CRC validation confirms data integrity",
+          "SOC/SOE values match pre-power-cycle within tolerance",
+          "SBC skips already-completed initialization steps",
+          "Deep discharge flag correctly persists (DRV-FRAM-006)"
+        ],
+        "pass_criteria": "All critical data persisted and recovered correctly across power cycle",
+        "requirement_refs": [
+          "DRV-FRAM-002", "DRV-FRAM-003", "DRV-FRAM-004",
+          "DRV-FRAM-006", "DRV-FRAM-007", "ALGO-SOC-010",
+          "ALGO-SOE-009", "SBC-039"
+        ],
+        "asil_level": "ASIL-B",
+        "test_method": "Requirements-based acceptance testing"
+      },
+      {
+        "id": "R4-ACC-FUN-011",
+        "title": "Algorithm Execution Cycle Validation",
+        "category": "Functional Validation",
+        "objective": "Validate algorithm manager executes all registered algorithms at configured cycle times",
+        "preconditions": [
+          "Algorithm manager initialized (ALGO-MGR-001)",
+          "SOC, SOE, SOF algorithms registered",
+          "System in NORMAL operational state"
+        ],
+        "test_steps": [
+          "Monitor ALGO_MainFunction execution timing (ALGO-CFG-001)",
+          "Verify 100ms algorithm tick period (ALGO-MGR-004)",
+          "Measure SOC algorithm execution time",
+          "Measure SOE algorithm execution time",
+          "Measure SOF algorithm execution time",
+          "Verify total execution within maximum duration (ALGO-MGR-006)",
+          "Verify algorithm state transitions (ALGO-MGR-007)",
+          "Verify database updates with calculated values (ALGO-SE-004)"
+        ],
+        "expected_results": [
+          "Algorithm main function called every 100ms",
+          "All registered algorithms execute per cycle time",
+          "Individual algorithm execution within budget",
+          "No algorithm blocked due to timeout",
+          "SOC/SOE/SOF values updated in database each cycle",
+          "Algorithm states remain RUNNING"
+        ],
+        "pass_criteria": "All algorithms execute within 100ms cycle budget with correct output",
+        "requirement_refs": [
+          "ALGO-MGR-001", "ALGO-MGR-003", "ALGO-MGR-004",
+          "ALGO-MGR-006", "ALGO-MGR-007", "ALGO-CFG-001",
+          "ALGO-SE-004"
+        ],
+        "asil_level": "QM",
+        "test_method": "Requirements-based acceptance testing with timing measurement"
+      },
+      {
+        "id": "R4-ACC-FUN-012",
+        "title": "State Request Processing Validation",
+        "category": "Functional Validation",
+        "objective": "Validate BMS correctly processes all valid state requests and rejects invalid requests",
+        "preconditions": [
+          "BMS in known operational state",
+          "State machine operational"
+        ],
+        "test_steps": [
+          "Submit state request via BMS_SetStateRequest (FBMS-SWE-BMS-045)",
+          "Verify request validation (FBMS-SWE-BMS-002)",
+          "Verify request transfer to state machine (FBMS-SWE-BMS-003)",
+          "Monitor state transition for valid requests",
+          "Submit invalid state request for current state",
+          "Verify invalid request rejected",
+          "Verify current state via BMS_GetState (FBMS-SWE-BMS-046)",
+          "Test all valid state transitions from each state"
+        ],
+        "expected_results": [
+          "Valid requests accepted within 10ms",
+          "Request validated for current state legality",
+          "State transition occurs correctly",
+          "Invalid requests rejected without state change",
+          "Current state correctly reported via API",
+          "All valid transition paths verified"
+        ],
+        "pass_criteria": "All valid state requests processed correctly; all invalid requests rejected",
+        "requirement_refs": [
+          "FBMS-SWE-BMS-002", "FBMS-SWE-BMS-003", "FBMS-SWE-BMS-045",
+          "FBMS-SWE-BMS-046", "FBMS-SWE-BMS-047", "FBMS-SWE-BMS-110"
+        ],
+        "asil_level": "QM",
+        "test_method": "Requirements-based acceptance testing"
+      },
+      {
+        "id": "R4-ACC-FUN-013",
+        "title": "Interlock Circuit Monitoring Validation",
+        "category": "Functional Validation",
+        "objective": "Validate interlock circuit monitoring detects open condition and triggers appropriate system response",
+        "preconditions": [
+          "Interlock driver initialized (DRV-ILCK-002)",
+          "Interlock circuit connected and closed",
+          "BMS in operational state"
+        ],
+        "test_steps": [
+          "Verify interlock supply enabled (DRV-ILCK-005)",
+          "Read interlock feedback (DRV-ILCK-006)",
+          "Verify voltage divider scaling (DRV-ILCK-007)",
+          "Trigger interlock state machine (DRV-ILCK-004)",
+          "Open interlock circuit (simulate cover removal)",
+          "Verify interlock open detected within 1ms",
+          "Verify diagnostic reporting (DRV-ILCK-009)",
+          "Verify BMS state transition response"
+        ],
+        "expected_results": [
+          "Interlock high-side driver active at pin 30",
+          "Feedback correctly read at pin 29",
+          "Voltage correctly scaled per divider ratio",
+          "Interlock open detected within 1ms cycle",
+          "DIAG_ID_INTERLOCK_FEEDBACK diagnostic created",
+          "BMS initiates safe state transition"
+        ],
+        "pass_criteria": "Interlock open condition detected within 1ms with correct system response",
+        "requirement_refs": [
+          "DRV-ILCK-001", "DRV-ILCK-002", "DRV-ILCK-004",
+          "DRV-ILCK-005", "DRV-ILCK-006", "DRV-ILCK-007", "DRV-ILCK-009"
+        ],
+        "asil_level": "ASIL-B",
+        "test_method": "Requirements-based acceptance testing"
+      },
+      {
+        "id": "R4-ACC-FUN-014",
+        "title": "RTC Time Keeping Validation",
+        "category": "Functional Validation",
+        "objective": "Validate RTC maintains accurate time across power cycles",
+        "preconditions": [
+          "I2C initialized (DRV-I2C-002)",
+          "RTC PCF2131 connected at address 0x53 (DRV-RTC-002)",
+          "Power cycle capability available"
+        ],
+        "test_steps": [
+          "Set RTC to known time value",
+          "Wait defined period (e.g., 1 hour)",
+          "Read RTC time and verify accuracy (DRV-RTC-003)",
+          "Execute power cycle with RTC battery backup",
+          "Read RTC time after power restoration",
+          "Verify time maintained across power cycle",
+          "Verify RTC_IncrementSystemTime function (DRV-RTC-004)"
+        ],
+        "expected_results": [
+          "Time set correctly via I2C write",
+          "Time advances accurately during wait period",
+          "Accuracy better than 1 second per day",
+          "Time maintained across power cycle",
+          "System time correctly incremented each ms"
+        ],
+        "pass_criteria": "RTC maintains time with less than 1 second per day drift",
+        "requirement_refs": [
+          "DRV-I2C-001", "DRV-I2C-002", "DRV-I2C-003",
+          "DRV-RTC-001", "DRV-RTC-002", "DRV-RTC-003", "DRV-RTC-004"
+        ],
+        "asil_level": "QM",
+        "test_method": "Requirements-based acceptance testing"
+      },
+      {
+        "id": "R4-ACC-FUN-015",
+        "title": "Humidity Sensor Integration Validation",
+        "category": "Functional Validation",
+        "objective": "Validate humidity and ambient temperature measurement via I2C sensor",
+        "preconditions": [
+          "I2C initialized",
+          "Humidity sensor connected",
+          "Environmental chamber available"
+        ],
+        "test_steps": [
+          "Trigger humidity sensor measurement (DRV-HTSEN-003)",
+          "Read humidity value via DMA transfer (DRV-I2C-005)",
+          "Verify timeout handling (DRV-I2C-007)",
+          "Vary humidity in environmental chamber",
+          "Verify humidity measurement tracks environmental changes",
+          "Verify ambient temperature reading accuracy"
+        ],
+        "expected_results": [
+          "Humidity sensor state machine cycles correctly",
+          "DMA transfer completes within timeout",
+          "Humidity reading within 5% accuracy",
+          "Temperature reading within 2C accuracy",
+          "Readings track environmental changes correctly"
+        ],
+        "pass_criteria": "Humidity measurement accuracy within 5% RH; temperature within 2C",
+        "requirement_refs": [
+          "DRV-HTSEN-001", "DRV-HTSEN-003", "DRV-I2C-005", "DRV-I2C-007"
+        ],
+        "asil_level": "QM",
+        "test_method": "Requirements-based acceptance testing"
+      },
+      {
+        "id": "R4-ACC-FUN-016",
+        "title": "LED Status Indication Validation",
+        "category": "Functional Validation",
+        "objective": "Validate LED status indication correctly reflects BMS operational state",
+        "preconditions": [
+          "LED driver initialized",
+          "Status LEDs connected",
+          "BMS operational"
+        ],
+        "test_steps": [
+          "Verify LED_Trigger function called at 1ms (DRV-LED-005)",
+          "Transition BMS through all operational states",
+          "Observe LED indication for each state",
+          "Verify error state LED indication",
+          "Verify initialization LED sequence"
+        ],
+        "expected_results": [
+          "LED driver executes each ms",
+          "Each BMS state has distinct LED indication",
+          "Error state clearly indicated",
+          "Initialization sequence visible during boot"
+        ],
+        "pass_criteria": "LED indication correctly reflects BMS state",
+        "requirement_refs": [
+          "DRV-LED-005"
+        ],
+        "asil_level": "QM",
+        "test_method": "Visual inspection with state verification"
+      },
+      {
+        "id": "R4-ACC-FUN-017",
+        "title": "Port Expander I/O Control Validation",
+        "category": "Functional Validation",
+        "objective": "Validate port expander provides correct auxiliary I/O control",
+        "preconditions": [
+          "Port expanders initialized (DRV-PEX-003)",
+          "I2C communication operational"
+        ],
+        "test_steps": [
+          "Initialize port expander state (DRV-PEX-003)",
+          "Set output pin high (DRV-PEX-004)",
+          "Verify output state with external measurement",
+          "Reset output pin low (DRV-PEX-005)",
+          "Verify output state changed",
+          "Trigger I2C cycle (DRV-PEX-006)",
+          "Read input pin state",
+          "Toggle external input and verify reading changes"
+        ],
+        "expected_results": [
+          "Port expanders initialized successfully",
+          "Output pins controllable high/low",
+          "Output state matches command",
+          "Input pins correctly read external state",
+          "I2C cycle completes without error"
+        ],
+        "pass_criteria": "Port expander I/O correctly controllable and readable",
+        "requirement_refs": [
+          "DRV-PEX-001", "DRV-PEX-002", "DRV-PEX-003",
+          "DRV-PEX-004", "DRV-PEX-005", "DRV-PEX-006"
+        ],
+        "asil_level": "QM",
+        "test_method": "Requirements-based acceptance testing"
+      },
+      {
+        "id": "R4-ACC-FUN-018",
+        "title": "ADC Measurement Chain Validation",
+        "category": "Functional Validation",
+        "objective": "Validate internal ADC measurement chain for analog inputs",
+        "preconditions": [
+          "ADC module initialized",
+          "Analog inputs connected",
+          "Reference voltages stable"
+        ],
+        "test_steps": [
+          "Start ADC conversion (DRV-ADC-002)",
+          "Wait for conversion complete",
+          "Read ADC values",
+          "Verify high reference (5000mV per DRV-ADC-004)",
+          "Verify low reference (0mV per DRV-ADC-005)",
+          "Verify 12-bit resolution (DRV-ADC-006)",
+          "Apply known voltages and verify accuracy"
+        ],
+        "expected_results": [
+          "ADC state machine transitions correctly",
+          "Conversion completes within expected time",
+          "Reference voltages verified",
+          "12-bit resolution achieved",
+          "Measurement accuracy within specification"
+        ],
+        "pass_criteria": "ADC measurements accurate within 1% of full scale",
+        "requirement_refs": [
+          "DRV-ADC-001", "DRV-ADC-002", "DRV-ADC-003",
+          "DRV-ADC-004", "DRV-ADC-005", "DRV-ADC-006"
+        ],
+        "asil_level": "QM",
+        "test_method": "Requirements-based acceptance testing with calibrated measurement"
+      }
+    ],
+    "safety_validation": [
+      {
+        "id": "R4-ACC-SAF-001",
+        "title": "SG-BMS-001: Overtemperature Detection and Safe State (Cell Level)",
+        "category": "Safety Validation",
+        "objective": "Validate cell overtemperature detection triggers complete safe state transition within FTTI",
+        "preconditions": [
+          "BMS in NORMAL operation state",
+          "All strings connected",
+          "AFE measurement operational",
+          "Thermal test capability available"
+        ],
+        "test_steps": [
+          "Apply cell temperature above BC_TEMPERATURE_MAX_DISCHARGE_MSL_ddegC threshold",
+          "Start timing measurement at injection point",
+          "Monitor DIAG module for DIAG_ID_TEMP_OVERTEMPERATURE_DISCHARGE_MSL flag",
+          "Verify BMS state machine transition to ERROR state",
+          "Verify CONT_OpenAllContactors is called",
+          "Verify all contactor feedback indicates OPEN state",
+          "Measure total response time from detection to isolation"
+        ],
+        "expected_results": [
+          "Diagnostic flag DIAG_ID_TEMP_OVERTEMPERATURE_DISCHARGE_MSL set within 100ms",
+          "BMS transitions to BMS_STATEMACH_ERROR within 500ms",
+          "All contactors open within 500ms FTTI",
+          "SPS channels for contactors show CONT_SWITCH_OFF state",
+          "Total response time less than 500ms FTTI"
+        ],
+        "pass_criteria": "Total response time from temperature exceedance to contactors open less than 500ms FTTI",
+        "requirement_refs": [
+          "FBMS-SWE-BMS-055", "FBMS-SWE-BMS-068", "ALGO-SOF-010", "ALGO-SOF-011"
+        ],
+        "asil_level": "ASIL-D",
+        "test_method": "Fault injection with timing verification per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-002",
+        "title": "SG-BMS-001: AFE Communication Failure Safe State",
+        "category": "Safety Validation",
+        "objective": "Validate AFE communication failure detection triggers safe state entry",
+        "preconditions": [
+          "BMS in NORMAL operation state",
+          "AFE daisy chain operational",
+          "CRC validation enabled"
+        ],
+        "test_steps": [
+          "Inject CRC error in AFE communication (corrupt isoSPI response)",
+          "Monitor AFE-ADI-014 CRC validation",
+          "Verify command counter mismatch detection per AFE-ADI-015",
+          "Monitor BMS state machine response",
+          "Verify measurement data marked as invalid",
+          "Verify contactor opening if error persists"
+        ],
+        "expected_results": [
+          "CRC error counter incremented for affected IC",
+          "Command counter validation fails",
+          "Diagnostic entry DIAG_ID_AFE_COM recorded",
+          "BMS marks string measurement data as invalid",
+          "Contactor opening initiated if error persists greater than 3 cycles"
+        ],
+        "pass_criteria": "Communication failure detected within single measurement cycle (10ms); safe state if persistent",
+        "requirement_refs": [
+          "AFE-ADI-014", "AFE-ADI-015", "AFE-ADI-016", "AFE-API-001"
+        ],
+        "asil_level": "ASIL-D",
+        "test_method": "Fault injection per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-003",
+        "title": "SG-BMS-001: SBC Watchdog Failure Safe State",
+        "category": "Safety Validation",
+        "objective": "Validate SBC watchdog failure triggers system safe state",
+        "preconditions": [
+          "SBC in RUNNING state (SBC-001)",
+          "Watchdog active with 128ms window (SBC-022)",
+          "FS0B released, safety path operational"
+        ],
+        "test_steps": [
+          "Block SBC_TriggerWatchdogIfRequired execution",
+          "Monitor watchdog window timeout (128ms per SBC-022)",
+          "Observe fault error counter increment (SBC-025)",
+          "Verify FS0B assertion when counter reaches limit (8)",
+          "Verify MCU reset via RSTB if configured (SBC-027)"
+        ],
+        "expected_results": [
+          "Watchdog timeout detected by FS85 SBC",
+          "Fault error counter increments per bad refresh",
+          "FS0B asserts low after 8 bad watchdog events",
+          "System enters safe state with contactors open"
+        ],
+        "pass_criteria": "Safe state achieved within 8 x 128ms = 1024ms of watchdog failure",
+        "requirement_refs": [
+          "SBC-011", "SBC-022", "SBC-025", "SBC-026", "SBC-043", "SBC-044"
+        ],
+        "asil_level": "ASIL-D",
+        "test_method": "Fault injection with timing verification per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-004",
+        "title": "SG-BMS-001: Open Wire Detection and String Isolation",
+        "category": "Safety Validation",
+        "objective": "Validate open wire detection triggers safe state for affected string",
+        "preconditions": [
+          "BMS in NORMAL state",
+          "Open wire check period elapsed (30000ms per AFE-API-008)",
+          "All cell connections verified good"
+        ],
+        "test_steps": [
+          "Simulate open wire condition on cell voltage sense line",
+          "Trigger AFE_RequestOpenWireCheck for affected string",
+          "Monitor AFE-ADI-023 open wire detection with 470 Ohm pull-up",
+          "Verify diagnostic entry for open wire",
+          "Verify string isolation or system safe state"
+        ],
+        "expected_results": [
+          "Open wire detected via voltage comparison with pull-up active",
+          "DIAG_ID_AFE_OPEN_WIRE diagnostic entry created",
+          "Affected string marked as faulted",
+          "If multiple strings affected, BMS transitions to ERROR"
+        ],
+        "pass_criteria": "Open wire fault detected and string isolated within 2 measurement cycles",
+        "requirement_refs": [
+          "AFE-API-007", "AFE-API-008", "AFE-ADI-023", "FBMS-SWE-BMS-009"
+        ],
+        "asil_level": "ASIL-C",
+        "test_method": "Fault injection per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-005",
+        "title": "SG-BMS-001: Redundant ADC Stuck Value Detection",
+        "category": "Safety Validation",
+        "objective": "Validate redundant ADC comparison detects stuck values",
+        "preconditions": [
+          "AFE measurement operational",
+          "C-ADC and S-ADC both measuring (AFE-ADI-019)",
+          "Comparison threshold configured per AFE-ADI-020"
+        ],
+        "test_steps": [
+          "Inject stuck voltage value to C-ADC measurement",
+          "Trigger voltage register read and comparison",
+          "Verify stuck register detection per AFE-ADI-017",
+          "Monitor diagnostic response",
+          "Verify measurement marked invalid"
+        ],
+        "expected_results": [
+          "C-ADC vs S-ADC comparison exceeds threshold",
+          "Stuck voltage register detected (0x8000 per AFE-ADI-028)",
+          "Diagnostic entry created for measurement failure",
+          "Cell voltage marked as invalid (INT16_MAX per AFE-API-009)"
+        ],
+        "pass_criteria": "Stuck value detected within single measurement cycle",
+        "requirement_refs": [
+          "AFE-ADI-017", "AFE-ADI-019", "AFE-ADI-020", "AFE-ADI-028", "AFE-API-009"
+        ],
+        "asil_level": "ASIL-C",
+        "test_method": "Fault injection per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-006",
+        "title": "SG-BMS-001: Interlock Open Triggers Contactor Opening",
+        "category": "Safety Validation",
+        "objective": "Validate interlock feedback triggers contactor opening",
+        "preconditions": [
+          "BMS in NORMAL state",
+          "Interlock closed and monitored",
+          "Contactor feedback operational"
+        ],
+        "test_steps": [
+          "Open interlock circuit (simulate cover removal)",
+          "Monitor ILCK interlock feedback pin (DRV-ILCK-006)",
+          "Verify DIAG_ID_INTERLOCK_FEEDBACK diagnostic entry",
+          "Verify BMS state machine response",
+          "Verify contactor opening sequence"
+        ],
+        "expected_results": [
+          "Interlock feedback change detected within 1ms cycle",
+          "Diagnostic entry DIAG_ID_INTERLOCK_FEEDBACK created",
+          "BMS transitions to BMS_STATEMACH_OPEN_CONTACTORS",
+          "All contactors opened in sequence"
+        ],
+        "pass_criteria": "Safe state achieved within 500ms of interlock opening",
+        "requirement_refs": [
+          "DRV-ILCK-001", "DRV-ILCK-006", "DRV-ILCK-009", "FBMS-SWE-BMS-062"
+        ],
+        "asil_level": "ASIL-C",
+        "test_method": "Fault injection per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-007",
+        "title": "SG-BMS-002: Cell Overvoltage Current Limitation",
+        "category": "Safety Validation",
+        "objective": "Validate cell overvoltage during charge triggers current limitation",
+        "preconditions": [
+          "BMS in CHARGE state",
+          "All strings connected",
+          "Valid cell voltage measurements"
+        ],
+        "test_steps": [
+          "Inject cell voltage above BC_VOLTAGE_MAX_RSL_mV threshold",
+          "Monitor SOF voltage-based current limit calculation",
+          "Verify charge current limit reduction per ALGO-SOF-007",
+          "Inject voltage to BC_VOLTAGE_MAX_MSL_mV threshold",
+          "Verify SOF pack current limits set to zero at MSL"
+        ],
+        "expected_results": [
+          "Cell overvoltage detected within AFE measurement cycle",
+          "SOF calculates reduced charge current limit at RSL",
+          "Charge current limited to zero at MSL threshold",
+          "CAN message reports updated current limits"
+        ],
+        "pass_criteria": "Charge current limitation active within 100ms of overvoltage detection",
+        "requirement_refs": [
+          "ALGO-SOF-007", "ALGO-SOF-CFG-012", "ALGO-SOF-CFG-013", "ALGO-SOF-004"
+        ],
+        "asil_level": "ASIL-C",
+        "test_method": "Fault injection per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-008",
+        "title": "SG-BMS-002: SOC Limit Prevents Overcharge",
+        "category": "Safety Validation",
+        "objective": "Validate SOC limits prevent overcharge at 100%",
+        "preconditions": [
+          "BMS in CHARGE state",
+          "SOC approaching 100% (ALGO-SOC-005)",
+          "Valid current sensor measurements"
+        ],
+        "test_steps": [
+          "Continue charging until SOC reaches MAXIMUM_SOC_perc",
+          "Monitor SOC calculation and limiting (ALGO-SOC-005)",
+          "Verify charge current limit approaches zero at 100% SOC",
+          "Verify BMS prevents further charging",
+          "Attempt to force additional charge"
+        ],
+        "expected_results": [
+          "SOC correctly limited to 100% maximum",
+          "SOF reduces charge current as SOC approaches 100%",
+          "Charge disabled when SOC reaches 100%",
+          "CAN message indicates fully charged state"
+        ],
+        "pass_criteria": "No overcharge beyond 100% SOC, charge current zero at full SOC",
+        "requirement_refs": [
+          "ALGO-SOC-005", "ALGO-SOC-006", "ALGO-SOF-001", "ALGO-SOF-002"
+        ],
+        "asil_level": "ASIL-C",
+        "test_method": "Requirements-based testing per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-009",
+        "title": "SG-BMS-002: Cell Undervoltage Discharge Cutoff",
+        "category": "Safety Validation",
+        "objective": "Validate cell undervoltage triggers discharge current cutoff",
+        "preconditions": [
+          "BMS in DISCHARGE state",
+          "SOC approaching 0%",
+          "Valid cell voltage measurements"
+        ],
+        "test_steps": [
+          "Continue discharging until cell voltage approaches BC_VOLTAGE_MIN_RSL_mV",
+          "Monitor SOF voltage-based current limit (ALGO-SOF-006)",
+          "Verify discharge current limit reduction at RSL",
+          "Continue to BC_VOLTAGE_MIN_MSL_mV threshold",
+          "Verify discharge current cutoff at MSL voltage"
+        ],
+        "expected_results": [
+          "Cell undervoltage detected",
+          "SOF discharge current limit reduced at RSL",
+          "Discharge current set to zero at MSL",
+          "BMS remains operational but blocks discharge"
+        ],
+        "pass_criteria": "Discharge blocked at undervoltage threshold, no deep discharge",
+        "requirement_refs": [
+          "ALGO-SOF-006", "ALGO-SOF-CFG-014", "ALGO-SOF-CFG-015"
+        ],
+        "asil_level": "ASIL-C",
+        "test_method": "Requirements-based testing per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-010",
+        "title": "SG-BMS-002: Low Temperature Charge Prevention",
+        "category": "Safety Validation",
+        "objective": "Validate low temperature charge prevention (lithium plating prevention)",
+        "preconditions": [
+          "BMS in STANDBY or CHARGE state",
+          "Cell temperature below BC_TEMPERATURE_MIN_CHARGE_MOL_ddegC",
+          "Thermal chamber capability available"
+        ],
+        "test_steps": [
+          "Cool cells to temperature below charge cutoff threshold",
+          "Request charge operation",
+          "Monitor SOF temperature-based charge limit (ALGO-SOF-009)",
+          "Verify charge current set to zero",
+          "Attempt to force charge via external charger"
+        ],
+        "expected_results": [
+          "Low temperature detected below cutoff threshold",
+          "SOF charge current limit calculated as zero",
+          "Charge operation blocked",
+          "CAN message indicates temperature limitation"
+        ],
+        "pass_criteria": "Charge blocked at low temperature, no lithium plating risk",
+        "requirement_refs": [
+          "ALGO-SOF-009", "ALGO-SOF-CFG-006", "ALGO-SOF-CFG-007", "ALGO-SOF-005"
+        ],
+        "asil_level": "ASIL-C",
+        "test_method": "Requirements-based testing per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-011",
+        "title": "SG-BMS-002: High Temperature Charge Derating",
+        "category": "Safety Validation",
+        "objective": "Validate high temperature charge derating",
+        "preconditions": [
+          "BMS in CHARGE state",
+          "Cell temperature above BC_TEMPERATURE_MAX_CHARGE_MOL_ddegC",
+          "Thermal control capability available"
+        ],
+        "test_steps": [
+          "Heat cells to temperature above charge cutoff temperature",
+          "Monitor SOF temperature-based charge limit (ALGO-SOF-011)",
+          "Verify charge current derating curve",
+          "Continue heating to MSL temperature",
+          "Verify charge current zero at MSL temperature"
+        ],
+        "expected_results": [
+          "High temperature detected above cutoff threshold",
+          "SOF charge current progressively derated",
+          "Charge current set to zero at MSL temperature",
+          "Diagnostic entry for high temperature if persists"
+        ],
+        "pass_criteria": "Charge current limited proportionally to temperature, thermal protection maintained",
+        "requirement_refs": [
+          "ALGO-SOF-011", "ALGO-SOF-CFG-010", "ALGO-SOF-CFG-011"
+        ],
+        "asil_level": "ASIL-C",
+        "test_method": "Requirements-based testing per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-012",
+        "title": "SG-BMS-002: Deep Discharge Flag Persistence",
+        "category": "Safety Validation",
+        "objective": "Validate deep discharge protection via FRAM flag persistence",
+        "preconditions": [
+          "BMS in operation",
+          "Battery voltage approaching deep discharge threshold",
+          "FRAM accessible for write"
+        ],
+        "test_steps": [
+          "Allow battery to discharge to deep discharge threshold",
+          "Verify deep discharge flag set in FRAM (DRV-FRAM-006)",
+          "Power cycle BMS",
+          "Verify BMS reads deep discharge flag on startup",
+          "Verify restricted operation until battery recharged"
+        ],
+        "expected_results": [
+          "Deep discharge condition detected",
+          "DEEP_DISCHARGE_FLAG written to FRAM",
+          "Flag persists across power cycle",
+          "BMS restricts discharge on restart",
+          "Full operation restored after recharge"
+        ],
+        "pass_criteria": "Deep discharge protection persists across power cycles",
+        "requirement_refs": [
+          "DRV-FRAM-003", "DRV-FRAM-004", "DRV-FRAM-006", "ALGO-SOC-010"
+        ],
+        "asil_level": "ASIL-B",
+        "test_method": "Requirements-based testing per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-013",
+        "title": "SG-BMS-003: Overcurrent Detection and Safe State",
+        "category": "Safety Validation",
+        "objective": "Validate current limitation check triggers safe state on violation",
+        "preconditions": [
+          "BMS in NORMAL state",
+          "Current sensor operational",
+          "Pack current within limits"
+        ],
+        "test_steps": [
+          "Inject pack current exceeding BS_MAXIMUM_STRING_CURRENT_mA",
+          "Monitor BMS current limitation check (FBMS-SWE-BMS-010)",
+          "Verify diagnostic entry for overcurrent",
+          "Verify BMS response to current violation",
+          "Measure response time to contactor opening"
+        ],
+        "expected_results": [
+          "Overcurrent detected via current sensor",
+          "FBMS-SWE-BMS-010 check fails",
+          "Diagnostic entry for overcurrent condition",
+          "BMS initiates contactor opening"
+        ],
+        "pass_criteria": "Overcurrent response initiated within 100ms FTTI",
+        "requirement_refs": [
+          "FBMS-SWE-BMS-010", "ALGO-SOF-016", "DRV-CAN-010"
+        ],
+        "asil_level": "ASIL-B",
+        "test_method": "Fault injection per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-014",
+        "title": "SG-BMS-003: Current Sensor Presence Detection",
+        "category": "Safety Validation",
+        "objective": "Validate current sensor presence detection and degraded mode operation",
+        "preconditions": [
+          "BMS initializing",
+          "Current sensor connected via CAN"
+        ],
+        "test_steps": [
+          "Monitor CAN_IsCurrentSensorPresent function (DRV-CAN-010)",
+          "Verify current sensor CAN message reception",
+          "Disconnect current sensor CAN",
+          "Verify BMS detects missing current sensor",
+          "Verify degraded mode operation without sensor"
+        ],
+        "expected_results": [
+          "Current sensor presence flag correctly set when connected",
+          "BMS uses current sensor data when present",
+          "BMS detects sensor loss when disconnected",
+          "BMS enters degraded mode if sensor missing",
+          "Diagnostic entry for missing current sensor"
+        ],
+        "pass_criteria": "Current sensor presence correctly detected, degraded mode active if missing",
+        "requirement_refs": [
+          "DRV-CAN-010", "ALGO-SOC-009", "ALGO-SOE-008"
+        ],
+        "asil_level": "ASIL-B",
+        "test_method": "Fault injection per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-015",
+        "title": "SG-BMS-003: Limp Home Current Mode",
+        "category": "Safety Validation",
+        "objective": "Validate limp home current mode on low temperature discharge",
+        "preconditions": [
+          "BMS in DISCHARGE state",
+          "Cell temperature below BC_TEMPERATURE_MIN_DISCHARGE_MOL_ddegC",
+          "Above BC_TEMPERATURE_MIN_DISCHARGE_MSL_ddegC"
+        ],
+        "test_steps": [
+          "Cool cells to temperature in limp home range",
+          "Monitor SOF discharge current limit calculation",
+          "Verify limp home current limit applied (ALGO-SOF-008)",
+          "Verify SOF_STRING_CURRENT_LIMP_HOME_mA limit (20000mA per SOF-CFG-003)",
+          "Verify limited discharge operation continues"
+        ],
+        "expected_results": [
+          "Temperature in limp home range detected",
+          "Discharge current limited to 20000mA",
+          "Reduced discharge allows battery operation",
+          "Full discharge restored when temperature rises"
+        ],
+        "pass_criteria": "Limp home current correctly applied in cold conditions",
+        "requirement_refs": [
+          "ALGO-SOF-008", "ALGO-SOF-CFG-003", "ALGO-SOF-CFG-004", "ALGO-SOF-CFG-005"
+        ],
+        "asil_level": "ASIL-B",
+        "test_method": "Requirements-based testing per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-016",
+        "title": "SG-BMS-003: Pack Current Limit from String Minimums",
+        "category": "Safety Validation",
+        "objective": "Validate pack current limits calculated from string minimums",
+        "preconditions": [
+          "Multiple strings connected",
+          "Varying cell conditions across strings"
+        ],
+        "test_steps": [
+          "Configure different voltage/temperature conditions per string",
+          "Monitor SOF per-string current limit calculation",
+          "Verify pack current = sum of string minimums (ALGO-SOF-015)",
+          "Verify weakest cell limits pack current",
+          "Verify CAN message reports correct pack limits"
+        ],
+        "expected_results": [
+          "Per-string current limits calculated correctly",
+          "Pack current limit is sum of string minimums",
+          "Weakest cell in any string limits pack",
+          "CAN reports correct pack current limits"
+        ],
+        "pass_criteria": "Pack current correctly limited by weakest cell across all strings",
+        "requirement_refs": [
+          "ALGO-SOF-012", "ALGO-SOF-013", "ALGO-SOF-015"
+        ],
+        "asil_level": "ASIL-B",
+        "test_method": "Requirements-based testing per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-017",
+        "title": "SG-BMS-003: Moving Average Overcurrent Filtering",
+        "category": "Safety Validation",
+        "objective": "Validate moving average current calculation filters transients",
+        "preconditions": [
+          "BMS in NORMAL state",
+          "Current measurement valid",
+          "Moving average algorithm running"
+        ],
+        "test_steps": [
+          "Apply varying current over time windows (1s, 5s, 10s, 30s, 60s per ALGO-MA-001)",
+          "Monitor moving average calculation (ALGO-MA-002)",
+          "Inject transient current spike below threshold",
+          "Verify transient filtered by moving average",
+          "Apply sustained overcurrent above threshold",
+          "Verify sustained overcurrent detected"
+        ],
+        "expected_results": [
+          "Moving average calculated over all time windows",
+          "Invalid measurements excluded (ALGO-MA-004)",
+          "Transient spikes correctly filtered",
+          "Sustained overcurrent detected and acted upon"
+        ],
+        "pass_criteria": "Moving average correctly filters transients while detecting sustained overcurrent",
+        "requirement_refs": [
+          "ALGO-MA-001", "ALGO-MA-002", "ALGO-MA-004"
+        ],
+        "asil_level": "ASIL-A",
+        "test_method": "Requirements-based testing per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-SAF-018",
+        "title": "SG-BMS-003: Zero Current Limits During ERROR Transition",
+        "category": "Safety Validation",
+        "objective": "Validate zero current limits during ERROR state transition",
+        "preconditions": [
+          "BMS transitioning to ERROR state",
+          "Fault condition active"
+        ],
+        "test_steps": [
+          "Trigger fault condition causing ERROR transition",
+          "Monitor SOF pack current limits during transition (ALGO-SOF-014)",
+          "Verify all current limits set to zero",
+          "Verify CAN reports zero current limits",
+          "Verify immediate load shedding"
+        ],
+        "expected_results": [
+          "ERROR transition detected by SOF module",
+          "All pack current limits set to 0mA",
+          "Charge and discharge disabled",
+          "CAN message indicates zero current limits"
+        ],
+        "pass_criteria": "All current limits zero during ERROR transition, immediate load shedding",
+        "requirement_refs": [
+          "ALGO-SOF-014", "FBMS-SWE-BMS-068"
+        ],
+        "asil_level": "ASIL-B",
+        "test_method": "Fault injection per ISO 26262-4 Table 8"
+      }
+    ],
+    "performance_validation": [
+      {
+        "id": "R4-ACC-PERF-001",
+        "title": "1ms HAL Task Timing Validation",
+        "category": "Performance Validation",
+        "objective": "Validate HAL 1ms task timing performance meets requirements",
+        "preconditions": [
+          "RTOS running",
+          "All 1ms tasks configured",
+          "Timer interrupts operational",
+          "Timing measurement capability available"
+        ],
+        "test_steps": [
+          "Monitor 1ms task execution start times over 1000 cycles",
+          "Measure task execution duration for each 1ms task",
+          "Calculate jitter statistics",
+          "Verify LED_Trigger at 1ms (DRV-LED-005)",
+          "Verify RTC_IncrementSystemTime at 1ms (DRV-RTC-004)",
+          "Verify MEAS_Control at 1ms (DRV-MEAS-003)"
+        ],
+        "expected_results": [
+          "Task starts within 50us of scheduled time",
+          "Individual task execution less than 500us",
+          "Jitter less than 100us (10%) over measurement period",
+          "LED toggle function executes each ms",
+          "RTC system time increments each ms",
+          "Measurement control executes each ms"
+        ],
+        "pass_criteria": "1ms task timing maintained with less than 10% jitter",
+        "requirement_refs": [
+          "DRV-LED-005", "DRV-RTC-004", "DRV-MEAS-003", "DRV-ILCK-004", "AFE-LTC-008"
+        ],
+        "asil_level": "QM",
+        "test_method": "Resource usage verification per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-PERF-002",
+        "title": "10ms BMS Task Timing Validation",
+        "category": "Performance Validation",
+        "objective": "Validate BMS 10ms task timing performance meets requirements",
+        "preconditions": [
+          "RTOS running",
+          "10ms BMS task configured",
+          "Timing measurement capability available"
+        ],
+        "test_steps": [
+          "Monitor BMS_Trigger execution at 10ms (FBMS-SWE-BMS-049)",
+          "Verify SBC_Trigger at 10ms (SBC-002)",
+          "Verify SPS_Ctrl at 10ms (DRV-SPS-003)",
+          "Measure worst-case execution time over extended period",
+          "Verify no task overrun"
+        ],
+        "expected_results": [
+          "BMS trigger executes every 10ms +/- 500us",
+          "SBC trigger executes within same cycle",
+          "SPS control executes within same cycle",
+          "WCET less than 5ms (50% CPU budget)",
+          "No task overrun events"
+        ],
+        "pass_criteria": "10ms task timing maintained with less than 5% jitter",
+        "requirement_refs": [
+          "FBMS-SWE-BMS-049", "SBC-002", "DRV-SPS-003", "DRV-CAN-004"
+        ],
+        "asil_level": "QM",
+        "test_method": "Resource usage verification per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-PERF-003",
+        "title": "100ms Algorithm Task Timing Validation",
+        "category": "Performance Validation",
+        "objective": "Validate algorithm 100ms task timing performance meets requirements",
+        "preconditions": [
+          "Algorithm manager initialized",
+          "All algorithms registered",
+          "Timing measurement capability available"
+        ],
+        "test_steps": [
+          "Monitor ALGO_MainFunction at 100ms (ALGO-CFG-001)",
+          "Verify algorithm tick matches 100ms (ALGO-MGR-004)",
+          "Measure SOC calculation time",
+          "Measure SOE calculation time",
+          "Measure SOF calculation time",
+          "Verify total execution less than max duration"
+        ],
+        "expected_results": [
+          "Algorithm main function called every 100ms +/- 5ms",
+          "Tick period validated per ALGO-MGR-004",
+          "SOC calculation completes within budget",
+          "SOE calculation completes within budget",
+          "SOF calculation completes within budget",
+          "Total less than configured max duration"
+        ],
+        "pass_criteria": "100ms algorithm cycle completed within timing budget",
+        "requirement_refs": [
+          "ALGO-CFG-001", "ALGO-MGR-001", "ALGO-MGR-003", "ALGO-MGR-004", "ALGO-CFG-002"
+        ],
+        "asil_level": "QM",
+        "test_method": "Resource usage verification per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-PERF-004",
+        "title": "Stack Usage Margin Validation",
+        "category": "Performance Validation",
+        "objective": "Validate stack usage across all tasks maintains safety margin",
+        "preconditions": [
+          "Stack monitoring enabled",
+          "All tasks running",
+          "Maximum load conditions achievable"
+        ],
+        "test_steps": [
+          "Initialize stack with watermark pattern",
+          "Run system under maximum load",
+          "Execute all code paths",
+          "Trigger all interrupt handlers",
+          "Measure stack high water marks for each task",
+          "Calculate stack usage percentage"
+        ],
+        "expected_results": [
+          "Stack pattern initialized correctly",
+          "All code paths executed",
+          "All interrupt handlers run",
+          "Stack high water marks recorded",
+          "No stack overflow detected",
+          "Stack usage less than 80% of allocated"
+        ],
+        "pass_criteria": "All task stacks have greater than 20% margin",
+        "requirement_refs": [],
+        "asil_level": "QM",
+        "test_method": "Resource usage verification per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-PERF-005",
+        "title": "CPU Load Validation Under All Modes",
+        "category": "Performance Validation",
+        "objective": "Validate CPU load maintains margin under all operational modes",
+        "preconditions": [
+          "CPU monitoring enabled",
+          "All tasks running normally"
+        ],
+        "test_steps": [
+          "Measure idle task runtime",
+          "Calculate total CPU usage in steady-state operation",
+          "Monitor during precharge sequence",
+          "Monitor during balancing operation",
+          "Monitor during error handling",
+          "Record peak CPU usage in each mode"
+        ],
+        "expected_results": [
+          "Idle task runs measurable amount",
+          "Steady-state CPU load less than 70%",
+          "Precharge CPU load less than 80%",
+          "Balancing CPU load less than 75%",
+          "Error handling CPU load less than 90%"
+        ],
+        "pass_criteria": "CPU load maintains greater than 10% margin in all modes",
+        "requirement_refs": [],
+        "asil_level": "QM",
+        "test_method": "Resource usage verification per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-PERF-006",
+        "title": "Safety-Critical WCET Validation",
+        "category": "Performance Validation",
+        "objective": "Validate worst-case execution time for safety-critical functions meets FTTI budget",
+        "preconditions": [
+          "Timing instrumentation enabled",
+          "System under maximum data conditions",
+          "JTAG trace capability available"
+        ],
+        "test_steps": [
+          "Measure CONT_OpenAllContactors execution time (DRV-CONT-005)",
+          "Measure BMS state machine cycle time",
+          "Measure diagnostic handler execution time",
+          "Measure SBC watchdog refresh time (SBC-011)",
+          "Measure AFE communication cycle time",
+          "Compare against FTTI requirements"
+        ],
+        "expected_results": [
+          "Contactor open less than 10ms execution",
+          "BMS state cycle less than 5ms execution",
+          "Diagnostic handler less than 1ms execution",
+          "SBC watchdog less than 1ms execution",
+          "AFE cycle less than 10ms execution",
+          "All less than 50% of FTTI budget"
+        ],
+        "pass_criteria": "All safety-critical WCETs within FTTI timing budget with 50% margin",
+        "requirement_refs": [
+          "DRV-CONT-005", "FBMS-SWE-BMS-001", "SBC-011"
+        ],
+        "asil_level": "ASIL-C",
+        "test_method": "Resource usage verification per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-PERF-007",
+        "title": "AFE Communication Timing Validation",
+        "category": "Performance Validation",
+        "objective": "Validate SPI/DMA transfer timing for AFE communication meets requirements",
+        "preconditions": [
+          "SPI configured with DMA",
+          "AFE daisy chain connected",
+          "Timing measurement capability available"
+        ],
+        "test_steps": [
+          "Measure SPI clock frequency (DRV-SPI-006)",
+          "Measure DMA transfer time (DRV-DMA-003)",
+          "Measure total AFE read cycle time",
+          "Verify against transmission timeout (AFE-ADI-010)",
+          "Verify isoSPI wakeup time (AFE-ADI-011)"
+        ],
+        "expected_results": [
+          "SPI clock within specification",
+          "DMA transfer completes without timeout",
+          "AFE read cycle less than 5ms for full daisy chain",
+          "Transmission timeout 10ms not exceeded",
+          "isoSPI wakeup less than 100us after sleep"
+        ],
+        "pass_criteria": "AFE communication completes within timing constraints",
+        "requirement_refs": [
+          "AFE-ADI-010", "AFE-ADI-011", "DRV-SPI-006", "DRV-DMA-003"
+        ],
+        "asil_level": "QM",
+        "test_method": "Resource usage verification per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-PERF-008",
+        "title": "MCU Delay Function Accuracy Validation",
+        "category": "Performance Validation",
+        "objective": "Validate MCU delay function accuracy across range",
+        "preconditions": [
+          "Free Running Counter operational",
+          "MCU_Delay_us function available (DRV-MCU-004)",
+          "Oscilloscope measurement capability"
+        ],
+        "test_steps": [
+          "Measure MCU_Delay_us(100) accuracy with GPIO toggle",
+          "Measure MCU_Delay_us(1000) accuracy",
+          "Verify MCU_GetFreeRunningCount (DRV-MCU-005)",
+          "Verify MCU_IsTimeElapsed (DRV-MCU-006)",
+          "Test across range of delay values"
+        ],
+        "expected_results": [
+          "100us delay accurate within +/- 10%",
+          "1000us delay accurate within +/- 5%",
+          "Counter value correctly read",
+          "Elapsed time detection accurate",
+          "All delay values within tolerance"
+        ],
+        "pass_criteria": "MCU timing functions accurate within specified tolerance",
+        "requirement_refs": [
+          "DRV-MCU-004", "DRV-MCU-005", "DRV-MCU-006"
+        ],
+        "asil_level": "QM",
+        "test_method": "Resource usage verification per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-PERF-009",
+        "title": "Contactor Response Time Validation",
+        "category": "Performance Validation",
+        "objective": "Validate contactor open and close response times meet specifications",
+        "preconditions": [
+          "Contactor driver initialized",
+          "SPS operational",
+          "Contactor feedback functional",
+          "Timing measurement capability available"
+        ],
+        "test_steps": [
+          "Issue contactor close command",
+          "Measure time from command to feedback indicating closed",
+          "Issue contactor open command",
+          "Measure time from command to feedback indicating open",
+          "Repeat for all contactors",
+          "Record worst-case times"
+        ],
+        "expected_results": [
+          "Contactor close completes within 100ms",
+          "Contactor open completes within 50ms",
+          "Feedback correctly indicates state change",
+          "All contactors meet timing specification"
+        ],
+        "pass_criteria": "Contactor open less than 50ms, close less than 100ms for all contactors",
+        "requirement_refs": [
+          "DRV-CONT-003", "DRV-CONT-004", "DRV-CONT-005", "DRV-CONT-006"
+        ],
+        "asil_level": "ASIL-C",
+        "test_method": "Resource usage verification per ISO 26262-4 Table 8"
+      },
+      {
+        "id": "R4-ACC-PERF-010",
+        "title": "End-to-End Response Time Validation",
+        "category": "Performance Validation",
+        "objective": "Validate complete end-to-end fault detection to safe state timing",
+        "preconditions": [
+          "BMS in NORMAL operational state",
+          "All systems operational",
+          "Timing measurement capability from fault injection to contactor open"
+        ],
+        "test_steps": [
+          "Inject overtemperature fault condition",
+          "Start timing measurement at injection",
+          "Monitor fault detection at AFE",
+          "Monitor diagnostic processing",
+          "Monitor BMS state transition",
+          "Monitor contactor opening command",
+          "Stop timing at contactor feedback open",
+          "Calculate total end-to-end response time"
+        ],
+        "expected_results": [
+          "Fault detected within AFE cycle (10ms)",
+          "Diagnostic processed within BMS cycle (10ms)",
+          "State transition initiated within 1 cycle",
+          "Contactor open command issued immediately",
+          "Contactor opens within mechanical time",
+          "Total response less than FTTI"
+        ],
+        "pass_criteria": "Total end-to-end response time less than 500ms FTTI for SG-BMS-001",
+        "requirement_refs": [
+          "FBMS-SWE-BMS-055", "FBMS-SWE-BMS-068", "DRV-CONT-005"
+        ],
+        "asil_level": "ASIL-D",
+        "test_method": "End-to-end timing verification per ISO 26262-4 Table 8"
+      }
+    ],
+    "environmental_validation": [
+      {
+        "id": "R4-ACC-ENV-001",
+        "title": "Low Temperature Operation Validation (-40C)",
+        "category": "Environmental Validation",
+        "objective": "Validate BMS operates correctly at minimum temperature limit",
+        "preconditions": [
+          "Environmental chamber available",
+          "BMS and battery pack installed in chamber",
+          "Soaking time completed at -40C"
+        ],
+        "test_steps": [
+          "Soak BMS at -40C for minimum 2 hours",
+          "Power on BMS and verify initialization",
+          "Verify AFE communication functional",
+          "Verify cell voltage readings valid",
+          "Verify temperature readings valid",
+          "Verify CAN communication functional",
+          "Execute limited discharge operation (limp home mode)",
+          "Verify SOF limits correctly applied"
+        ],
+        "expected_results": [
+          "BMS initializes successfully at -40C",
+          "AFE communication stable",
+          "Cell voltage accuracy maintained",
+          "Temperature readings accurate",
+          "CAN communication reliable",
+          "Limp home discharge mode active",
+          "Charge blocked per low temperature protection"
+        ],
+        "pass_criteria": "BMS fully functional at -40C with correct temperature-based protections active",
+        "requirement_refs": [
+          "ALGO-SOF-008", "ALGO-SOF-009", "ALGO-SOF-CFG-003", "ALGO-SOF-CFG-004"
+        ],
+        "asil_level": "QM",
+        "test_method": "Environmental stress testing per ISO 26262-4"
+      },
+      {
+        "id": "R4-ACC-ENV-002",
+        "title": "High Temperature Operation Validation (+85C)",
+        "category": "Environmental Validation",
+        "objective": "Validate BMS operates correctly at maximum temperature limit",
+        "preconditions": [
+          "Environmental chamber available",
+          "BMS installed in chamber",
+          "Soaking time completed at +85C"
+        ],
+        "test_steps": [
+          "Soak BMS at +85C for minimum 2 hours",
+          "Power on BMS and verify initialization",
+          "Verify AFE communication functional",
+          "Verify all measurements valid",
+          "Verify CAN communication functional",
+          "Verify SOF derating correctly applied",
+          "Monitor for thermal drift or instability"
+        ],
+        "expected_results": [
+          "BMS initializes successfully at +85C",
+          "All communications stable",
+          "Measurement accuracy maintained",
+          "SOF derating active at high temperature",
+          "No thermal instability observed"
+        ],
+        "pass_criteria": "BMS fully functional at +85C with correct temperature derating active",
+        "requirement_refs": [
+          "ALGO-SOF-010", "ALGO-SOF-011", "ALGO-SOF-CFG-010", "ALGO-SOF-CFG-011"
+        ],
+        "asil_level": "QM",
+        "test_method": "Environmental stress testing per ISO 26262-4"
+      },
+      {
+        "id": "R4-ACC-ENV-003",
+        "title": "Temperature Cycling Robustness",
+        "category": "Environmental Validation",
+        "objective": "Validate BMS survives temperature cycling without degradation",
+        "preconditions": [
+          "Environmental chamber with rapid thermal cycling capability",
+          "BMS installed and powered"
+        ],
+        "test_steps": [
+          "Execute 100 temperature cycles from -40C to +85C",
+          "Cycle rate: 30 minutes cold soak, 30 minutes hot soak",
+          "Monitor BMS operation continuously during cycling",
+          "Perform functional test after every 10 cycles",
+          "Record any anomalies or failures",
+          "Perform complete functional test after all cycles"
+        ],
+        "expected_results": [
+          "No failures during temperature cycling",
+          "Functional tests pass at each checkpoint",
+          "No solder joint failures",
+          "No connector issues",
+          "Full functionality maintained after 100 cycles"
+        ],
+        "pass_criteria": "BMS maintains full functionality through 100 temperature cycles",
+        "requirement_refs": [],
+        "asil_level": "QM",
+        "test_method": "Environmental stress testing per ISO 26262-4"
+      },
+      {
+        "id": "R4-ACC-ENV-004",
+        "title": "Supply Voltage Variation Validation",
+        "category": "Environmental Validation",
+        "objective": "Validate BMS operates correctly across supply voltage range",
+        "preconditions": [
+          "Programmable power supply available",
+          "BMS operational"
+        ],
+        "test_steps": [
+          "Set supply to minimum voltage (9V)",
+          "Verify BMS operates correctly",
+          "Verify SBC undervoltage detection (SBC-003)",
+          "Gradually increase to nominal (12V)",
+          "Verify continuous operation during ramp",
+          "Set supply to maximum voltage (16V)",
+          "Verify BMS operates correctly",
+          "Verify SBC overvoltage detection (SBC-003)"
+        ],
+        "expected_results": [
+          "BMS operates at 9V minimum",
+          "SBC undervoltage threshold detected correctly",
+          "No dropout during voltage ramp",
+          "Full operation at 12V nominal",
+          "BMS operates at 16V maximum",
+          "SBC overvoltage threshold detected correctly"
+        ],
+        "pass_criteria": "BMS operates correctly across 9V to 16V supply range",
+        "requirement_refs": [
+          "SBC-003", "SBC-004", "SBC-005"
+        ],
+        "asil_level": "QM",
+        "test_method": "Environmental stress testing per ISO 26262-4"
+      },
+      {
+        "id": "R4-ACC-ENV-005",
+        "title": "Supply Voltage Transient Immunity",
+        "category": "Environmental Validation",
+        "objective": "Validate BMS survives automotive supply voltage transients",
+        "preconditions": [
+          "Automotive voltage transient generator available",
+          "BMS operational"
+        ],
+        "test_steps": [
+          "Apply ISO 7637-2 Test Pulse 1 (load dump)",
+          "Apply ISO 7637-2 Test Pulse 2a/2b (supply interruption)",
+          "Apply ISO 7637-2 Test Pulse 3a/3b (switching transients)",
+          "Monitor BMS operation during each transient",
+          "Verify SBC transient protection (SBC-007)",
+          "Verify no data corruption or state machine upset",
+          "Verify FRAM data integrity after transients"
+        ],
+        "expected_results": [
+          "BMS survives load dump transients",
+          "BMS recovers from supply interruptions",
+          "Switching transients do not cause malfunction",
+          "SBC provides transient protection",
+          "No data corruption observed",
+          "FRAM integrity maintained"
+        ],
+        "pass_criteria": "BMS survives all ISO 7637-2 transients without permanent damage or data loss",
+        "requirement_refs": [
+          "SBC-007", "DRV-FRAM-007"
+        ],
+        "asil_level": "QM",
+        "test_method": "Environmental stress testing per ISO 26262-4"
+      },
+      {
+        "id": "R4-ACC-ENV-006",
+        "title": "Humidity Robustness Validation",
+        "category": "Environmental Validation",
+        "objective": "Validate BMS operates correctly under high humidity conditions",
+        "preconditions": [
+          "Environmental chamber with humidity control",
+          "BMS installed"
+        ],
+        "test_steps": [
+          "Set chamber to 95% RH at 40C",
+          "Soak for 24 hours",
+          "Power on BMS",
+          "Verify all functions operational",
+          "Verify no condensation-related failures",
+          "Verify insulation resistance adequate",
+          "Perform isoSPI communication verification"
+        ],
+        "expected_results": [
+          "BMS powers on successfully",
+          "All functions operational",
+          "No condensation failures",
+          "Insulation resistance above minimum",
+          "isoSPI isolation maintained"
+        ],
+        "pass_criteria": "BMS operates correctly at 95% RH without insulation breakdown",
+        "requirement_refs": [],
+        "asil_level": "QM",
+        "test_method": "Environmental stress testing per ISO 26262-4"
+      },
+      {
+        "id": "R4-ACC-ENV-007",
+        "title": "Vibration Robustness Validation",
+        "category": "Environmental Validation",
+        "objective": "Validate BMS survives automotive vibration profiles",
+        "preconditions": [
+          "Vibration table available",
+          "BMS mounted per automotive fixture requirements"
+        ],
+        "test_steps": [
+          "Apply random vibration per ISO 16750-3 profile",
+          "Monitor BMS operation during vibration",
+          "Check for intermittent connections",
+          "Check AFE communication stability",
+          "Check contactor feedback stability",
+          "Perform post-vibration functional test"
+        ],
+        "expected_results": [
+          "No failures during vibration exposure",
+          "No intermittent connections detected",
+          "AFE communication stable during vibration",
+          "Contactor feedback stable",
+          "Post-vibration test passes"
+        ],
+        "pass_criteria": "BMS maintains functionality during and after automotive vibration exposure",
+        "requirement_refs": [],
+        "asil_level": "QM",
+        "test_method": "Environmental stress testing per ISO 26262-4"
+      },
+      {
+        "id": "R4-ACC-ENV-008",
+        "title": "EMC Immunity Validation",
+        "category": "Environmental Validation",
+        "objective": "Validate BMS immune to electromagnetic interference",
+        "preconditions": [
+          "EMC test facility available",
+          "BMS operational in shielded chamber"
+        ],
+        "test_steps": [
+          "Perform radiated immunity per ISO 11452-2",
+          "Perform conducted immunity per ISO 11452-4",
+          "Perform bulk current injection per ISO 11452-4",
+          "Monitor BMS operation during each test",
+          "Verify no false fault detections",
+          "Verify CAN communication maintained",
+          "Verify measurement accuracy maintained"
+        ],
+        "expected_results": [
+          "BMS operates through radiated immunity test",
+          "BMS operates through conducted immunity test",
+          "BMS operates through BCI test",
+          "No false fault detections",
+          "CAN communication reliable",
+          "Measurement accuracy maintained"
+        ],
+        "pass_criteria": "BMS maintains full functionality during EMC immunity testing",
+        "requirement_refs": [],
+        "asil_level": "QM",
+        "test_method": "Environmental stress testing per ISO 26262-4"
+      },
+      {
+        "id": "R4-ACC-ENV-009",
+        "title": "ESD Immunity Validation",
+        "category": "Environmental Validation",
+        "objective": "Validate BMS immune to electrostatic discharge",
+        "preconditions": [
+          "ESD test equipment available",
+          "BMS accessible for contact and air discharge"
+        ],
+        "test_steps": [
+          "Apply contact discharge (+/- 4kV) to all accessible points",
+          "Apply air discharge (+/- 8kV) to all accessible surfaces",
+          "Include CAN connector pins",
+          "Include power supply pins",
+          "Monitor BMS operation during discharge",
+          "Verify no permanent damage",
+          "Perform functional test after all discharges"
+        ],
+        "expected_results": [
+          "BMS survives contact discharge",
+          "BMS survives air discharge",
+          "No latch-up conditions",
+          "No permanent damage",
+          "Functional test passes after ESD exposure"
+        ],
+        "pass_criteria": "BMS survives ESD testing without permanent damage",
+        "requirement_refs": [],
+        "asil_level": "QM",
+        "test_method": "Environmental stress testing per ISO 26262-4"
+      },
+      {
+        "id": "R4-ACC-ENV-010",
+        "title": "Power Cycling Robustness Validation",
+        "category": "Environmental Validation",
+        "objective": "Validate BMS survives repeated power cycling without degradation",
+        "preconditions": [
+          "Automated power cycling capability",
+          "BMS operational"
+        ],
+        "test_steps": [
+          "Execute 1000 power cycles",
+          "Cycle profile: 2s off, 5s on",
+          "Verify BMS initializes correctly each cycle",
+          "Verify FRAM data persistence across cycles",
+          "Verify SBC initialization state management (SBC-039)",
+          "Perform full functional test after 100, 500, 1000 cycles",
+          "Record any initialization failures"
+        ],
+        "expected_results": [
+          "All 1000 power cycles complete",
+          "BMS initializes correctly each time",
+          "FRAM data maintained across all cycles",
+          "SBC state correctly managed",
+          "No degradation observed",
+          "Zero initialization failures"
+        ],
+        "pass_criteria": "BMS survives 1000 power cycles with 100% initialization success",
+        "requirement_refs": [
+          "DRV-FRAM-003", "DRV-FRAM-004", "SBC-039"
+        ],
+        "asil_level": "QM",
+        "test_method": "Environmental stress testing per ISO 26262-4"
+      }
+    ]
+  },
+  "end_to_end_scenario_tests": [
+    {
+      "scenario_id": "R4-E2E-001",
+      "title": "Complete Normal Operation Cycle",
+      "description": "Full cycle from power-on through charging, driving, and shutdown",
+      "test_cases": ["R4-ACC-FUN-001", "R4-ACC-FUN-002", "R4-ACC-FUN-004", "R4-ACC-FUN-008"],
+      "scenario_steps": [
+        "Power on BMS - verify initialization sequence",
+        "Connect charger - verify precharge and charge mode entry",
+        "Complete charging cycle - verify SOC reaches 100% with charge termination",
+        "Disconnect charger - verify state transition to standby",
+        "Connect load - verify precharge and normal operation",
+        "Complete drive cycle with varying load - verify SOC tracking and current limits",
+        "Normal shutdown - verify contactor opening sequence and state persistence"
+      ],
+      "duration_estimate_hours": 8,
+      "coverage": ["SG-BMS-002", "Functional requirements", "Normal operation paths"]
+    },
+    {
+      "scenario_id": "R4-E2E-002",
+      "title": "Fault Injection and Recovery Scenario",
+      "description": "Systematic fault injection covering all safety-critical failure modes",
+      "test_cases": ["R4-ACC-SAF-001", "R4-ACC-SAF-002", "R4-ACC-SAF-003", "R4-ACC-SAF-004"],
+      "scenario_steps": [
+        "Start in normal operation",
+        "Inject AFE communication fault - verify detection and recovery",
+        "Inject cell overvoltage - verify protection activation",
+        "Inject cell undervoltage - verify protection activation",
+        "Inject overtemperature - verify safe state entry within FTTI",
+        "Inject SBC watchdog miss - verify reset and recovery",
+        "Inject interlock open - verify contactor opening",
+        "Verify system recovery after fault clearance"
+      ],
+      "duration_estimate_hours": 6,
+      "coverage": ["SG-BMS-001", "SG-BMS-002", "SG-BMS-003", "All safety mechanisms"]
+    },
+    {
+      "scenario_id": "R4-E2E-003",
+      "title": "Multi-String Operation and Balancing Scenario",
+      "description": "Multi-string connection, load balancing, and cell balancing operation",
+      "test_cases": ["R4-ACC-FUN-003", "R4-ACC-FUN-009"],
+      "scenario_steps": [
+        "Initialize with multiple strings available",
+        "Connect first string via precharge",
+        "Verify current measurement on first string",
+        "Connect additional strings - verify voltage matching",
+        "Apply load - verify current sharing across strings",
+        "Introduce cell imbalance - verify balancing activation",
+        "Monitor balancing until equalization complete",
+        "Disconnect strings in sequence - verify orderly shutdown"
+      ],
+      "duration_estimate_hours": 4,
+      "coverage": ["Multi-string operation", "Cell balancing", "Current sharing"]
+    },
+    {
+      "scenario_id": "R4-E2E-004",
+      "title": "Temperature Extreme Operation Scenario",
+      "description": "Operation across full temperature range with protection verification",
+      "test_cases": ["R4-ACC-SAF-010", "R4-ACC-SAF-011", "R4-ACC-SAF-015", "R4-ACC-ENV-001", "R4-ACC-ENV-002"],
+      "scenario_steps": [
+        "Start at nominal temperature (25C)",
+        "Cool to -30C - verify limp home mode activation",
+        "Attempt charge at -30C - verify charge blocked",
+        "Cool to -40C - verify minimum operation",
+        "Warm to nominal - verify full capability restoration",
+        "Heat to +50C - verify charge derating activation",
+        "Heat to +60C - verify discharge derating activation",
+        "Heat to warning threshold - verify protection activation"
+      ],
+      "duration_estimate_hours": 12,
+      "coverage": ["SG-BMS-001", "SG-BMS-002", "Temperature protection", "SOF derating"]
+    },
+    {
+      "scenario_id": "R4-E2E-005",
+      "title": "Edge Case Boundary Validation Scenario",
+      "description": "Testing at all voltage, temperature, and current boundaries",
+      "test_cases": ["R4-ACC-SAF-007", "R4-ACC-SAF-008", "R4-ACC-SAF-009", "R4-ACC-SAF-013"],
+      "scenario_steps": [
+        "Charge to maximum cell voltage boundary - verify protection at threshold",
+        "Discharge to minimum cell voltage boundary - verify protection at threshold",
+        "Apply maximum rated current - verify limit enforcement",
+        "Approach SOC boundaries (0% and 100%) - verify limiting behavior",
+        "Combine multiple boundary conditions simultaneously",
+        "Verify no protection gaps at boundary intersections",
+        "Verify correct hysteresis behavior when exiting boundary conditions"
+      ],
+      "duration_estimate_hours": 6,
+      "coverage": ["All protection boundaries", "Corner cases", "Hysteresis behavior"]
+    }
+  ],
+  "compliance_verification": {
+    "iso_26262_compliance": {
+      "part_4_clause_11": {
+        "description": "Product Release for Production",
+        "requirements": [
+          "All safety goals verified through system testing",
+          "All safety mechanisms verified functional",
+          "All ASIL-D requirements verified with independence",
+          "Residual risk acceptable per safety assessment",
+          "All safety anomalies resolved or accepted"
+        ],
+        "evidence_references": [
+          "R4-ACC-SAF-001 through R4-ACC-SAF-018 test results",
+          "Safety goal verification matrix",
+          "Safety mechanism verification report",
+          "Independent verification report for ASIL-D"
+        ]
+      },
+      "part_6_table_9": {
+        "description": "Structural Coverage Requirements",
+        "requirements": {
+          "ASIL-D": "100% MC/DC coverage for safety-critical code",
+          "ASIL-C": "100% MC/DC coverage recommended",
+          "ASIL-B": "100% branch coverage",
+          "ASIL-A": "100% statement coverage"
+        },
+        "evidence_references": [
+          "MC/DC coverage report",
+          "Branch coverage report",
+          "Statement coverage report"
+        ]
+      }
+    },
+    "aspice_sys5_compliance": {
+      "bp1_qualification_test_strategy": {
+        "status": "Compliant",
+        "evidence": "Section: metadata and test_categories"
+      },
+      "bp2_qualification_test_specification": {
+        "status": "Compliant",
+        "evidence": "Section: acceptance_test_cases"
+      },
+      "bp3_test_case_selection": {
+        "status": "Compliant",
+        "evidence": "56 test cases covering functional, safety, performance, environmental"
+      },
+      "bp4_qualification_test_execution": {
+        "status": "Planned",
+        "evidence": "To be generated upon test execution"
+      },
+      "bp5_bidirectional_traceability": {
+        "status": "Compliant",
+        "evidence": "requirement_refs in each test case"
+      },
+      "bp6_results_communication": {
+        "status": "Planned",
+        "evidence": "Acceptance test report to be generated"
+      }
+    },
+    "work_products": {
+      "08_54_system_qualification_test_plan": {
+        "status": "Complete",
+        "location": "This document - metadata and test strategy sections"
+      },
+      "08_55_system_qualification_test_specification": {
+        "status": "Complete",
+        "location": "This document - acceptance_test_cases section"
+      },
+      "08_56_system_qualification_test_report": {
+        "status": "Planned",
+        "location": "To be generated upon test execution"
+      },
+      "13_22_traceability_record": {
+        "status": "Complete",
+        "location": "requirement_refs in each test case"
+      }
+    }
+  },
+  "test_environment": {
+    "hardware": {
+      "target_mcu": "TMS570LC4357",
+      "afe_ics": ["ADI ADES183x", "LTC681x", "Maxim 1785x", "NXP MC33775A"],
+      "sbc": "NXP FS85xx",
+      "communication": ["CAN", "SPI", "I2C", "isoSPI"],
+      "peripherals": ["RTC PCF2131", "FRAM", "Port Expanders PCA9539", "Smart Power Switch"]
+    },
+    "test_equipment": {
+      "battery_simulator": "Multi-channel cell voltage/temperature simulator",
+      "current_source": "Bidirectional programmable current source (charge/discharge)",
+      "power_supply": "Programmable 12V automotive power supply with transient capability",
+      "can_interface": "Vector CANcaseXL or PCAN for bus monitoring and injection",
+      "environmental_chamber": "Temperature range -40C to +85C with humidity control",
+      "timing_analyzer": "Sub-microsecond timing measurement capability",
+      "fault_injection": "Signal injection and communication corruption capability"
+    },
+    "test_automation": {
+      "framework": "Python-based test automation with hardware control",
+      "reporting": "Automated test report generation in JSON and PDF formats",
+      "coverage_integration": "Integration with gcov/lcov and VectorCAST for coverage tracking"
+    }
+  },
+  "traceability_summary": {
+    "safety_goal_coverage": {
+      "SG-BMS-001": {
+        "test_count": 6,
+        "test_ids": ["R4-ACC-SAF-001", "R4-ACC-SAF-002", "R4-ACC-SAF-003", "R4-ACC-SAF-004", "R4-ACC-SAF-005", "R4-ACC-SAF-006"],
+        "verification_methods": ["Fault injection", "Timing verification", "End-to-end verification"]
+      },
+      "SG-BMS-002": {
+        "test_count": 6,
+        "test_ids": ["R4-ACC-SAF-007", "R4-ACC-SAF-008", "R4-ACC-SAF-009", "R4-ACC-SAF-010", "R4-ACC-SAF-011", "R4-ACC-SAF-012"],
+        "verification_methods": ["Fault injection", "Boundary testing", "Requirements-based testing"]
+      },
+      "SG-BMS-003": {
+        "test_count": 6,
+        "test_ids": ["R4-ACC-SAF-013", "R4-ACC-SAF-014", "R4-ACC-SAF-015", "R4-ACC-SAF-016", "R4-ACC-SAF-017", "R4-ACC-SAF-018"],
+        "verification_methods": ["Fault injection", "Requirements-based testing"]
+      }
+    },
+    "asil_distribution": {
+      "ASIL-D": 5,
+      "ASIL-C": 13,
+      "ASIL-B": 8,
+      "ASIL-A": 1,
+      "QM": 29
+    },
+    "category_distribution": {
+      "functional_validation": 18,
+      "safety_validation": 18,
+      "performance_validation": 10,
+      "environmental_validation": 10
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<map id="LTC_IsFirstMeasurementCycleFinished" name="LTC_IsFirstMeasurementCycleFinished">
+<area shape="rect" id="Node000001" title="gets the measurement initialization status." alt="" coords="429,35,645,75"/>
+<area shape="rect" id="Node000002" href="$ltc__afe_8c.html#a487b9e19d42344e6040f8bb41a0db9cb" title="Checks if the first AFE measurement cycle was made." alt="" coords="163,5,381,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="415,44,381,40,382,35,416,39"/>
+<area shape="rect" id="Node000003" href="$ltc__6806_8c.html#acf30d82064c640d2c4f36cd270c0647b" title="trigger function for the LTC driver state machine." alt="" coords="225,70,319,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="416,70,320,80,319,75,415,65"/>
+<area shape="rect" id="Node000004" href="$ltc__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,70,115,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="211,85,115,85,115,80,211,80"/>
+</map>

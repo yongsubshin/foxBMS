@@ -1,0 +1,13 @@
+<map id="CONT_OpenAllContactors" name="CONT_OpenAllContactors">
+<area shape="rect" id="Node000001" title="Open all contactors." alt="" coords="5,31,192,56"/>
+<area shape="rect" id="Node000002" href="$sps_8c.html#a9cb3cd911b7a454365ab9c3cec7319a1" title="Request state of a contactor." alt="" coords="240,31,443,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,41,226,41,226,46,192,46"/>
+<area shape="rect" id="Node000003" href="$sps_8c.html#a12055277c605a27340a3938e6f84523a" title="Returns the channel affiliation." alt="" coords="491,5,683,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="442,30,477,27,478,32,443,36"/>
+<area shape="rect" id="Node000004" href="$sps_8c.html#acbea831bc7b455fd71f259e3a9e4c0aa" title="Request the functional state of a channel." alt="" coords="491,55,684,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="443,51,477,54,477,59,442,56"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="732,29,888,55"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="684,54,718,50,719,55,685,59"/>
+<area shape="rect" id="Node000006" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="737,79,883,104"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="685,75,723,79,723,85,684,80"/>
+</map>

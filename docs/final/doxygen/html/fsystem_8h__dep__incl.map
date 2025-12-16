@@ -1,0 +1,11 @@
+<map id="foxbms&#45;2/src/app/main/include/fsystem.h" name="foxbms&#45;2/src/app/main/include/fsystem.h">
+<area shape="rect" id="Node000001" title="Function to switch between user mode and privilege mode." alt="" coords="309,5,481,45"/>
+<area shape="rect" id="Node000002" href="$i2c_8c.html" title="Driver for the I2C module." alt="" coords="5,93,183,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="317,52,161,96,159,91,315,47"/>
+<area shape="rect" id="Node000003" href="$pwm_8c.html" title="Implementation of the PWM module." alt="" coords="207,93,384,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="365,56,319,95,316,91,361,52"/>
+<area shape="rect" id="Node000004" href="$nxpfs85xx_8c.html" title="Driver for the FS85xx module." alt="" coords="408,93,585,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="430,52,476,91,473,95,427,56"/>
+<area shape="rect" id="Node000005" href="$spi_8c.html" title="Driver for the SPI module." alt="" coords="609,93,787,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="476,47,632,91,631,96,474,52"/>
+</map>

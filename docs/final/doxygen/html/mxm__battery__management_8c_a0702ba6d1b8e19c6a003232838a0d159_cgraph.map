@@ -1,0 +1,13 @@
+<map id="MXM_5XStateHandler41BFmeaCheck" name="MXM_5XStateHandler41BFmeaCheck">
+<area shape="rect" id="Node000001" title="Handle the state MXM_STATEMACH_5X_41B_FMEA_CHECK." alt="" coords="5,73,232,113"/>
+<area shape="rect" id="Node000002" href="$mxm__17841b_8c.html#a09d0707cc15516727d085687d87bba85" title="Set state transition for MAX17841B&#45;state&#45;machine." alt="" coords="280,5,475,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,70,279,39,309,32,310,37,281,45,181,75"/>
+<area shape="rect" id="Node000003" href="$mxm__battery__management_8c.html#afc6212ecb11ce7bc23db37409d4faaff" title="Signal that an error has occurred in a chain of substates." alt="" coords="302,55,453,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,79,288,73,288,79,233,84"/>
+<area shape="rect" id="Node000004" href="$mxm__battery__management_8c.html#a08d5ab7b4b3254f41e6661ee677f854e" title="sets all internal state variables so that upon next execution the next substate is entered" alt="" coords="523,105,736,131"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="232,96,509,109,508,115,232,101"/>
+<area shape="rect" id="Node000005" href="$mxm__battery__management_8c.html#a118ff0964a961d44cf9c4cac85d0f222" title="Signal that a chain of substates has been successfully handled." alt="" coords="292,156,463,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="188,110,321,149,319,155,187,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="442,78,553,100,552,105,441,83"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="441,153,552,131,553,136,442,158"/>
+</map>

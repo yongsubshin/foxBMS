@@ -1,0 +1,5 @@
+<map id="LTC_WriteRegister" name="LTC_WriteRegister">
+<area shape="rect" id="Node000001" title="sends command and data to the LTC daisy&#45;chain." alt="" coords="5,5,145,31"/>
+<area shape="rect" id="Node000002" href="$ltc__pec_8c.html#afb47d1f12f35878bf9100c024fb821cc" title="calculates the PEC15" alt="" coords="193,5,344,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,15,179,15,179,21,146,21"/>
+</map>

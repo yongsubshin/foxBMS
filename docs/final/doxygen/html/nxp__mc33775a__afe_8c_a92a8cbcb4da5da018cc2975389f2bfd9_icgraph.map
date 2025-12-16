@@ -1,0 +1,5 @@
+<map id="NXP_RequestEepromWrite" name="NXP_RequestEepromWrite">
+<area shape="rect" id="Node000001" title=" " alt="" coords="245,5,440,31"/>
+<area shape="rect" id="Node000002" href="$nxp__afe_8c.html#a0957e75c9c3201d46962d11616df2454" title="Makes the request to the AFE state machine to write to the external EEPROM on slaves." alt="" coords="5,5,197,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,21,197,21,197,15,232,15"/>
+</map>

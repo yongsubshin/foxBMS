@@ -1,0 +1,11 @@
+<map id="PHY_SetMiiMode" name="PHY_SetMiiMode">
+<area shape="rect" id="Node000001" title="Sets the PHY in MII mode." alt="" coords="5,95,137,121"/>
+<area shape="rect" id="Node000002" href="$dp83869_8c.html#a5f3a9b6380aecb096d008ebd37d1a416" title="Reads register from the Extended Address Space." alt="" coords="185,5,425,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,93,184,55,209,47,210,52,186,60,99,98"/>
+<area shape="rect" id="Node000003" href="$dp83869_8c.html#a269e33ab55b1c6971e3669f638b988ec" title="Perform a software reset of the PHY." alt="" coords="231,70,380,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,98,217,90,217,95,138,104"/>
+<area shape="rect" id="Node000004" href="$dp83869_8c.html#af26a279e60c54c1a939f3b28114eb580" title="Triggers a software restart on the PHY." alt="" coords="226,119,385,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="138,112,213,120,212,125,137,117"/>
+<area shape="rect" id="Node000005" href="$dp83869_8c.html#a950f62587760921c8ed36949b3f89cd3" title="Writes register from the Extended Address Space." alt="" coords="204,169,407,209"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="101,118,186,153,215,163,213,168,184,159,99,123"/>
+</map>

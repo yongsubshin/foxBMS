@@ -1,0 +1,18 @@
+<map id="MXM_41BInitializeRegisterCopies" name="MXM_41BInitializeRegisterCopies">
+<area shape="rect" id="Node000001" title="Reset register copies to default." alt="" coords="835,35,1032,75"/>
+<area shape="rect" id="Node000002" href="$mxm__17841b_8c.html#aa8c348a44f50adf5f26f84b20bcbda67" title="Initializes the state struct with default values." alt="" coords="572,15,787,41"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="821,46,787,42,787,37,821,40"/>
+<area shape="rect" id="Node000006" href="$group__mxm-41b-state-handlers.html#gafed0c8a844b5fa7197d9257b159eca61" title="init state handler" alt="" coords="583,66,776,91"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="821,68,776,72,776,67,821,63"/>
+<area shape="rect" id="Node000003" href="$mxm__afe_8c.html#aaffcb81a4a3d59c74740a345fe57e519" title="Initialize the state structs." alt="" coords="321,5,524,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="558,29,524,29,524,24,558,24"/>
+<area shape="rect" id="Node000004" href="$mxm__afe_8c.html#ab03833bf09e30722e8ef6b9e90cc353d" title=" " alt="" coords="163,15,273,41"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="307,30,274,30,274,25,307,24"/>
+<area shape="rect" id="Node000005" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,42,115,67"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="150,42,115,48,114,43,149,37"/>
+<area shape="rect" id="Node000007" href="$mxm__17841b_8c.html#a0ea1ec4dd5b5f45e291edd394772ea46" title="Execute state&#45;machine for the MAX17841B." alt="" coords="335,70,511,95"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="569,83,511,84,511,79,569,78"/>
+<area shape="rect" id="Node000008" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="173,66,263,91"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="321,83,263,82,263,77,321,78"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="159,72,115,66,116,60,160,67"/>
+</map>

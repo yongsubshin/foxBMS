@@ -1,0 +1,11 @@
+<map id="SPI_InitializeChipSelectsAfe" name="SPI_InitializeChipSelectsAfe">
+<area shape="rect" id="Node000001" title="Initializes the chip selects of the SPI module that are specific for an AFE interface board." alt="" coords="615,5,817,31"/>
+<area shape="rect" id="Node000002" href="$spi_8c.html#a105eb9d03cf284ed32710fcd8fc42e8a" title="Initializes all chip selects of the SPI module." alt="" coords="385,5,567,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="601,21,567,21,567,15,601,15"/>
+<area shape="rect" id="Node000003" href="$spi_8c.html#afe52fd1b883a29133b7a8974837e0c4b" title="Initializes the SPI module." alt="" coords="232,5,337,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="372,21,338,21,338,15,372,15"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function of foxBMS." alt="" coords="129,5,184,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="218,21,184,21,184,15,218,15"/>
+<area shape="rect" id="Node000005" href="$fstartup_8c.html#a3c8534f5781f4cf53ffbeb6d35880b27" title="Startup Routine." alt="" coords="5,5,81,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="116,21,82,21,82,15,116,15"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="FAKE_ProcessRunningState" name="FAKE_ProcessRunningState">
+<area shape="rect" id="Node000001" title="Processes the running state." alt="" coords="5,70,204,95"/>
+<area shape="rect" id="Node000002" href="$debug__default_8c.html#a16164818c401d35ed3e28bfa13b282db" title="Write temperature measurement data." alt="" coords="296,5,500,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,67,282,45,283,50,171,73"/>
+<area shape="rect" id="Node000003" href="$debug__default_8c.html#a136ef9e582647d6e404737c350daec02" title="Write voltage measurement data." alt="" coords="252,70,544,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,80,238,80,238,85,204,85"/>
+<area shape="rect" id="Node000004" href="$debug__default_8c.html#aed7fa787a0f37e83b1664a3f2f3030bc" title="Sets the next substate and the timer value of the state variable." alt="" coords="329,119,467,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="181,93,316,116,315,121,180,98"/>
+</map>

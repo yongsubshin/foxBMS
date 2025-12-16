@@ -1,0 +1,19 @@
+<map id="foxbms&#45;2/src/app/driver/afe/nxp/common/mc3377x/nxp_mc3377x_i2c.h" name="foxbms&#45;2/src/app/driver/afe/nxp/common/mc3377x/nxp_mc3377x_i2c.h">
+<area shape="rect" id="Node000001" title="Header file of nxp_mc3377x_i2c.c." alt="" coords="560,5,760,60"/>
+<area shape="rect" id="Node000002" href="$nxp__mc3377x_8c.html" title="Driver for the MC3377X analog front&#45;end." alt="" coords="5,211,205,265"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="577,67,178,213,176,208,575,62"/>
+<area shape="rect" id="Node000003" href="$nxp__mc3377x_8h.html" title="Headers for the driver for the MC3377X analog front&#45;end." alt="" coords="560,108,760,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="663,74,663,108,657,108,657,74"/>
+<area shape="rect" id="Node000007" href="$nxp__mc33775a__i2c_8c.html" title="I2C functions of the MC33775A analog front&#45;end driver." alt="" coords="1110,211,1287,265"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="743,62,1130,208,1128,213,741,67"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="547,156,390,182,218,213,206,216,205,210,217,208,390,176,546,151"/>
+<area shape="rect" id="Node000004" href="$nxp__mc3377x__afe__dma_8c.html" title="Driver for the DMA module for the MC3377X analog front&#45;end driver." alt="" coords="229,211,429,265"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="562,169,416,213,415,208,560,164"/>
+<area shape="rect" id="Node000005" href="$nxp__mc3377x__mux_8c.html" title="Multiplexer functions of the MC3377X analog front&#45;end driver." alt="" coords="453,211,653,265"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="624,174,583,213,579,209,620,170"/>
+<area shape="rect" id="Node000006" href="$nxp__mc33775a__afe_8c.html" title="API for MC33775A Analog Frontend." alt="" coords="678,211,855,265"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="700,170,741,209,737,213,696,174"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="774,150,929,175,1099,208,1110,211,1109,216,1098,213,928,181,773,156"/>
+<area shape="rect" id="Node000008" href="$nxp__mc33775a__measurement_8c.html" title="Measurement functions of the MC33775A analog front&#45;end driver." alt="" coords="879,211,1086,265"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="758,164,899,208,898,213,756,169"/>
+</map>

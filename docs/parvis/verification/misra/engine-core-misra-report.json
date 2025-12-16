@@ -10,7 +10,7 @@
   },
   "analysis_scope": {
     "module": "Engine Core",
-    "base_path": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/engine",
+    "base_path": "foxbms-2/src/app/engine",
     "source_files": [
       {
         "file": "diag/diag.c",

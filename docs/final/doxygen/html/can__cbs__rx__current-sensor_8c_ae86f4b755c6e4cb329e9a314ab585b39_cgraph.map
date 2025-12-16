@@ -1,0 +1,5 @@
+<map id="CANRX_SetPower" name="CANRX_SetPower">
+<area shape="rect" id="Node000001" title="Sets power measurement value in the CAN data shim." alt="" coords="5,5,141,31"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="189,5,324,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,15,175,15,175,21,141,21"/>
+</map>

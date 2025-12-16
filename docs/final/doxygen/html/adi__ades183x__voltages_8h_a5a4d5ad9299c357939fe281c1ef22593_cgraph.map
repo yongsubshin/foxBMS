@@ -1,0 +1,91 @@
+<map id="ADI_GetVoltages" name="ADI_GetVoltages">
+<area shape="rect" id="Node000001" title="Reads and stores cell voltages." alt="" coords="5,151,136,176"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x__voltages_8c.html#a178fd68f29c6798ddb44ae6f73cf0ec8" title="Copies the related command bytes to read the average voltage registers." alt="" coords="192,207,435,247"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,174,185,193,218,201,216,207,183,198,115,179"/>
+<area shape="rect" id="Node000004" href="$adi__ades183x__voltages_8c.html#aec227c518ff047a786a533004ae92c74" title="Copies the related command bytes to read the voltage registers." alt="" coords="206,15,421,55"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="81,149,123,107,151,84,183,65,198,58,201,63,185,70,155,89,126,111,85,153"/>
+<area shape="rect" id="Node000005" href="$adi__ades183x__voltages_8c.html#aeefb24f2c9113de4823f9f8453ed79e4" title="Copies the related command bytes to read the filtered voltage registers." alt="" coords="194,79,433,119"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="115,148,183,129,216,120,218,125,185,134,116,153"/>
+<area shape="rect" id="Node000006" href="$adi__ades183x__voltages_8c.html#a39e9b27dcb57202f5571abb458c226f8" title="Copies the related command bytes to read the redundant voltage registers." alt="" coords="184,143,443,183"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="136,161,170,161,170,166,136,166"/>
+<area shape="rect" id="Node000007" href="$adi__ades183x__voltages_8c.html#a352abba3ac5b56d8b91627b61035191a" title="Copies the related command bytes to read the average voltage registers." alt="" coords="213,272,413,297"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="85,174,126,216,154,238,185,257,206,265,204,270,183,262,151,243,123,220,81,178"/>
+<area shape="rect" id="Node000003" href="$adi__ades183x__helpers_8c.html#a0e36ae541215b657993954e49fc835bd" title="copy command bytes in variables." alt="" coords="510,131,699,156"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="399,205,442,193,490,175,547,157,548,162,492,181,443,198,401,210"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="405,53,444,65,511,93,569,122,567,127,509,98,442,70,404,58"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="433,115,507,126,506,131,433,120"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="443,152,496,148,496,153,443,157"/>
+<area shape="rect" id="Node000008" href="$adi__ades183x__helpers_8c.html#a1d3a54a6f57885e412672c1b8a8ef511" title="send command to the ades183x daisy&#45;chain to read a register." alt="" coords="535,285,674,311"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="414,287,522,292,521,297,413,292"/>
+<area shape="rect" id="Node000026" href="$adi__ades183x__voltages_8c.html#aefc85ded8c737694729f38c1333a6637" title="Saves the cell voltage values read from the daisy&#45;chain." alt="" coords="491,189,719,215"/>
+<area shape="poly" id="edge34_Node000007_Node000026" title=" " alt="" coords="388,269,442,257,558,217,560,222,443,262,389,275"/>
+<area shape="rect" id="Node000009" href="$adi__ades183x__pec_8c.html#a8661f30ff23f8c9a902a894676002b18" title="calculates the PEC10 K" alt="" coords="827,355,917,380"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="650,308,767,341,814,352,813,357,766,346,648,313"/>
+<area shape="rect" id="Node000010" href="$adi__ades183x__pec_8c.html#aef26ff9a18ed95ed079240e3cf48683e" title="calculates the PEC15" alt="" coords="827,256,917,281"/>
+<area shape="poly" id="edge12_Node000008_Node000010" title=" " alt="" coords="674,288,813,272,813,278,674,293"/>
+<area shape="rect" id="Node000011" href="$adi__ades183x__helpers_8c.html#a9edad319da42f91773751ec974f19dc9" title="Transmits and receives data on SPI." alt="" coords="767,305,977,331"/>
+<area shape="poly" id="edge13_Node000008_Node000011" title=" " alt="" coords="674,300,753,306,753,312,674,306"/>
+<area shape="rect" id="Node000012" href="$os__freertos_8c.html#a08e213470ff10fc5e7050bd78162a10b" title="Wait for a notification." alt="" coords="1033,305,1204,331"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="978,315,1019,315,1019,321,978,321"/>
+<area shape="rect" id="Node000013" href="$spi_8c.html#abdf760fa10bbc7f0f6b93ef0ddda41de" title="Transmits data on SPI without DMA." alt="" coords="1301,407,1437,432"/>
+<area shape="poly" id="edge15_Node000011_Node000013" title=" " alt="" coords="936,328,1293,401,1292,407,935,333"/>
+<area shape="rect" id="Node000021" href="$spi_8c.html#a7257a51d6c1ff52a408850115e9a5ae8" title="Sends a dummy byte to wake up the SPI interface." alt="" coords="1025,407,1212,432"/>
+<area shape="poly" id="edge25_Node000011_Node000021" title=" " alt="" coords="947,328,979,341,994,352,1004,363,1013,374,1027,385,1057,400,1055,404,1024,390,1009,378,1000,367,990,356,976,346,945,333"/>
+<area shape="rect" id="Node000023" href="$spi_8c.html#a2a0f36d8cb7e54304284f758cc108c36" title="Transmits and receives data on SPI with DMA." alt="" coords="1260,255,1479,280"/>
+<area shape="poly" id="edge28_Node000011_Node000023" title=" " alt="" coords="946,303,1025,291,1246,272,1247,277,1026,297,947,308"/>
+<area shape="rect" id="Node000014" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="1568,504,1668,529"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="1438,426,1480,442,1496,454,1505,467,1514,479,1528,490,1556,502,1553,507,1525,495,1510,483,1501,470,1492,458,1477,447,1436,431"/>
+<area shape="rect" id="Node000015" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="1576,553,1660,579"/>
+<area shape="poly" id="edge17_Node000013_Node000015" title=" " alt="" coords="1439,423,1460,431,1480,443,1492,455,1499,467,1505,493,1511,517,1518,529,1528,540,1545,550,1563,557,1562,562,1542,555,1525,544,1513,532,1506,519,1500,494,1494,469,1488,458,1477,447,1458,435,1437,428"/>
+<area shape="rect" id="Node000016" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="1554,356,1682,381"/>
+<area shape="poly" id="edge18_Node000013_Node000016" title=" " alt="" coords="1432,404,1541,382,1542,387,1433,409"/>
+<area shape="rect" id="Node000017" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="1579,455,1657,480"/>
+<area shape="poly" id="edge19_Node000013_Node000017" title=" " alt="" coords="1436,429,1566,455,1565,460,1435,435"/>
+<area shape="rect" id="Node000020" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="1571,405,1665,431"/>
+<area shape="poly" id="edge22_Node000013_Node000020" title=" " alt="" coords="1438,416,1557,416,1557,421,1438,422"/>
+<area shape="rect" id="Node000018" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1809,381,1965,407"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="1657,456,1708,441,1732,429,1756,417,1795,406,1796,411,1758,422,1734,433,1710,446,1658,462"/>
+<area shape="rect" id="Node000019" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1813,431,1960,456"/>
+<area shape="poly" id="edge21_Node000017_Node000019" title=" " alt="" coords="1657,461,1799,448,1800,454,1658,467"/>
+<area shape="poly" id="edge23_Node000020_Node000018" title=" " alt="" coords="1665,411,1794,400,1795,405,1666,416"/>
+<area shape="poly" id="edge24_Node000020_Node000019" title=" " alt="" coords="1666,420,1800,433,1799,438,1665,425"/>
+<area shape="poly" id="edge27_Node000021_Node000013" title=" " alt="" coords="1212,417,1288,417,1288,422,1212,422"/>
+<area shape="rect" id="Node000022" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="1309,456,1429,481"/>
+<area shape="poly" id="edge26_Node000021_Node000022" title=" " alt="" coords="1184,429,1296,452,1295,457,1183,435"/>
+<area shape="poly" id="edge33_Node000023_Node000016" title=" " alt="" coords="1399,278,1528,334,1567,349,1565,354,1526,339,1397,283"/>
+<area shape="poly" id="edge31_Node000023_Node000018" title=" " alt="" coords="1389,252,1446,222,1527,190,1572,179,1619,175,1666,178,1710,192,1740,208,1767,228,1814,277,1850,326,1875,368,1870,370,1846,329,1810,280,1764,232,1737,212,1708,196,1665,183,1619,180,1573,185,1528,196,1448,227,1392,257"/>
+<area shape="poly" id="edge32_Node000023_Node000019" title=" " alt="" coords="1439,277,1601,311,1672,328,1711,342,1728,361,1736,381,1743,400,1759,417,1779,428,1801,435,1799,440,1777,433,1756,421,1738,403,1731,383,1724,364,1708,347,1670,333,1600,316,1438,283"/>
+<area shape="rect" id="Node000024" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="1541,255,1695,280"/>
+<area shape="poly" id="edge29_Node000023_Node000024" title=" " alt="" coords="1479,265,1528,265,1528,270,1479,270"/>
+<area shape="rect" id="Node000025" href="$fsystem_8h.html#af23205627be1616c6b1dcdb684060322" title="Switch back to user mode." alt="" coords="1527,205,1709,231"/>
+<area shape="poly" id="edge30_Node000023_Node000025" title=" " alt="" coords="1433,252,1539,231,1540,236,1435,257"/>
+<area shape="rect" id="Node000027" href="$adi__ades183x__diagnostic__w_8c.html#a166453bd12322fd3ac750e72a4ff0dba" title="Evaluate diagnostic for cell voltage measurement." alt="" coords="771,111,973,151"/>
+<area shape="poly" id="edge35_Node000026_Node000027" title=" " alt="" coords="653,187,782,152,783,157,655,192"/>
+<area shape="rect" id="Node000040" href="$adi__ades183x__voltages_8c.html#a6d19185fb5c7071f6e7330658e1e27fa" title="Converts index of read voltages." alt="" coords="771,189,973,215"/>
+<area shape="poly" id="edge49_Node000026_Node000040" title=" " alt="" coords="719,199,757,199,757,205,719,205"/>
+<area shape="rect" id="Node000028" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="1062,111,1175,136"/>
+<area shape="poly" id="edge36_Node000027_Node000028" title=" " alt="" coords="974,125,1048,123,1048,128,974,131"/>
+<area shape="rect" id="Node000029" href="$diag_8c.html#a59191bef7fcae145e2d834eb8f447025" title="DIAG_ClearFatalErrorById checks whether the error has been cleared before and if not sends a clear me..." alt="" coords="1276,104,1463,129"/>
+<area shape="poly" id="edge37_Node000028_Node000029" title=" " alt="" coords="1176,119,1262,117,1262,122,1176,125"/>
+<area shape="rect" id="Node000037" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="1304,153,1435,179"/>
+<area shape="poly" id="edge45_Node000028_Node000037" title=" " alt="" coords="1176,130,1291,150,1290,155,1175,136"/>
+<area shape="rect" id="Node000038" href="$diag_8c.html#a4f4874e2e5766a401e9ab0c2721efda6" title="DIAG_SetFatalErrorById checks whether the error has been send before and if not send it per CAN...." alt="" coords="1282,55,1457,80"/>
+<area shape="poly" id="edge46_Node000028_Node000038" title=" " alt="" coords="1175,108,1298,80,1299,86,1176,113"/>
+<area shape="rect" id="Node000030" href="$can__cbs__tx__fatal-error_8c.html#af9d19804d03a440d5eb12e574a76bf30" title="Sends the Error ID per CAN." alt="" coords="1528,55,1708,80"/>
+<area shape="poly" id="edge38_Node000029_Node000030" title=" " alt="" coords="1433,101,1539,80,1540,85,1435,107"/>
+<area shape="rect" id="Node000036" href="$timer_8c.html#a8a878f1764cb181893c79d55b1c41a65" title="TIMER_stops stops a given virtual timer." alt="" coords="1569,104,1667,129"/>
+<area shape="poly" id="edge44_Node000029_Node000036" title=" " alt="" coords="1463,114,1555,114,1555,119,1463,119"/>
+<area shape="rect" id="Node000031" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="1780,19,1993,59"/>
+<area shape="poly" id="edge39_Node000030_Node000031" title=" " alt="" coords="1708,55,1766,49,1767,55,1709,61"/>
+<area shape="rect" id="Node000033" href="$can__cbs__tx__fatal-error_8c.html#a417ea445e91fa2826a6cbefbe8335661" title="Helper function to send the actual error Code." alt="" coords="1757,84,2016,109"/>
+<area shape="poly" id="edge41_Node000030_Node000033" title=" " alt="" coords="1709,74,1757,80,1756,85,1708,80"/>
+<area shape="rect" id="Node000032" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="2087,27,2310,52"/>
+<area shape="poly" id="edge40_Node000031_Node000032" title=" " alt="" coords="1994,37,2073,37,2073,42,1994,42"/>
+<area shape="rect" id="Node000034" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="2139,129,2259,155"/>
+<area shape="poly" id="edge42_Node000033_Node000034" title=" " alt="" coords="1975,107,2125,129,2124,134,1974,112"/>
+<area shape="rect" id="Node000035" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="2064,80,2333,105"/>
+<area shape="poly" id="edge43_Node000033_Node000035" title=" " alt="" coords="2016,92,2050,92,2050,97,2016,98"/>
+<area shape="poly" id="edge47_Node000038_Node000030" title=" " alt="" coords="1457,65,1514,65,1514,70,1457,70"/>
+<area shape="rect" id="Node000039" href="$timer_8c.html#a961668103b79a6b04dfd66e507bd2d7f" title="TIMER_start starts a given virtual timer." alt="" coords="1567,5,1669,31"/>
+<area shape="poly" id="edge48_Node000038_Node000039" title=" " alt="" coords="1433,52,1554,28,1555,33,1435,57"/>
+</map>

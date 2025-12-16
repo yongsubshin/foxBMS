@@ -1,0 +1,28 @@
+var bender__ir155__cfg_8h =
+[
+    [ "IR155_DIGITAL_STATUS_INPUT_PIN", "bender__ir155__cfg_8h.html#a197a3eee02a19fcc911d5f4fbba3a69d", null ],
+    [ "IR155_DIGITAL_STATUS_INPUT_PORT", "bender__ir155__cfg_8h.html#a04958c1c212acdd44135d250812ad24d", null ],
+    [ "IR155_GROUND_ERROR_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#ad8be6c745fee61b4a67d5ce231615573", null ],
+    [ "IR155_GROUND_ERROR_LOWER_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#aa75216ff92a23b34d07cbea93c989fa0", null ],
+    [ "IR155_GROUND_ERROR_UPPER_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#a11059110bba7b7f737339411f106fe36", null ],
+    [ "IR155_IMD_DEVICE_ERROR_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#afc6c65e65876104e5aa312f35bba641a", null ],
+    [ "IR155_IMD_DEVICE_ERROR_LOWER_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#a892df937fe6734c4afaf0314e8eacd2a", null ],
+    [ "IR155_IMD_DEVICE_ERROR_UPPER_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#a9a46e47214884577ec7864aa3a6a6bb4", null ],
+    [ "IR155_MEASUREMENT_INTERVAL_RANGE_Hz", "bender__ir155__cfg_8h.html#a239ddfbf0ff85211b371e95e47c8c93d", null ],
+    [ "IR155_MINIMUM_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#a193eb00ce6a526ee28ab99137e890ba6", null ],
+    [ "IR155_NORMAL_CONDITION_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#a237a2d8fb9f1dae29aff71c029f78665", null ],
+    [ "IR155_NORMAL_CONDITION_LOWER_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#aef7af7087f4c9bc6058b46545825d33a", null ],
+    [ "IR155_NORMAL_CONDITION_UPPER_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#adc6e572aab29acceeb4533ed5525de6c", null ],
+    [ "IR155_PWM_SIGNAL_PIN", "bender__ir155__cfg_8h.html#a056e202c72f2f051a8a34f79da792a65", null ],
+    [ "IR155_PWM_SIGNAL_PORT", "bender__ir155__cfg_8h.html#ada45aa703ceb81f98ec468e6f1189690", null ],
+    [ "IR155_SPEED_START_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#a32ad9caf85e1f760541eb3d927efd5fc", null ],
+    [ "IR155_SPEED_START_LOWER_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#aa60c5bbb56a4abdfb56748aa121379a8", null ],
+    [ "IR155_SPEED_START_UPPER_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#a57b41ea5cf9dee243f4bbe896c803877", null ],
+    [ "IR155_STARTUP_TIME_ms", "bender__ir155__cfg_8h.html#a4acd4328b076d8d75b7bbe6bf5e32669", null ],
+    [ "IR155_SUPPLY_ENABLE_PIN", "bender__ir155__cfg_8h.html#ae26ec89046dd5528acee9cda9a313101", null ],
+    [ "IR155_SUPPLY_ENABLE_PORT", "bender__ir155__cfg_8h.html#a041888501d9f1c06edf4fa389a8261eb", null ],
+    [ "IR155_UNDERVOLTAGE_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#a9d3cc2b7f316a9dd3b9046ac2857c37c", null ],
+    [ "IR155_UNDERVOLTAGE_LOWER_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#a178471923a328284e6a74564a7be8fc4", null ],
+    [ "IR155_UNDERVOLTAGE_UPPER_FREQUENCY_Hz", "bender__ir155__cfg_8h.html#a95e859dc46a7e19acee117c2f9a4d7f0", null ],
+    [ "IR155_WAIT_TIME_AFTER_GROUND_ERROR_ms", "bender__ir155__cfg_8h.html#aa2fd19436795f98f1fa69bba29ed06b0", null ]
+];

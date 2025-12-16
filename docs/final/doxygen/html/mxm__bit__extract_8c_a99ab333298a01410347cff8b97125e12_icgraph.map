@@ -1,0 +1,25 @@
+<map id="bitValue" name="bitValue">
+<area shape="rect" id="Node000001" title="Extract a bit value function." alt="" coords="1332,31,1407,56"/>
+<area shape="rect" id="Node000002" href="$mxm__bit__extract_8c.html#aac9f739280cfb96575a7dc1e860dae41" title="read a value from a register supplied as variable" alt="" coords="1127,5,1283,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1318,38,1283,33,1284,27,1319,33"/>
+<area shape="rect" id="Node000010" href="$mxm__bit__extract_8c.html#a935209b68c7ac65dd559d91d93a8a7e0" title="write a value to a register supplied as variable" alt="" coords="1125,55,1284,80"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="1319,53,1285,58,1284,53,1318,48"/>
+<area shape="rect" id="Node000003" href="$mxm__17841b_8c.html#abe201e911023d8c53709b38f447aa3ca" title="Read the value of a register function." alt="" coords="847,5,1077,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1113,21,1077,21,1077,15,1113,15"/>
+<area shape="rect" id="Node000004" href="$group__mxm-41b-state-handlers.html#gab36b0cda14a8403e19a2efcda97ebe8c" title="state handler for &quot;uart transaction&quot;" alt="" coords="524,5,799,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="834,21,799,21,799,15,834,15"/>
+<area shape="rect" id="Node000008" href="$mxm__battery__management_8c.html#ade338957069ff6f62cdfbfcebffc270a" title="Handle the state MXM_STATEMACH_5X_INIT." alt="" coords="569,55,754,80"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="871,36,740,57,739,52,870,30"/>
+<area shape="rect" id="Node000005" href="$mxm__17841b_8c.html#a0ea1ec4dd5b5f45e291edd394772ea46" title="Execute state&#45;machine for the MAX17841B." alt="" coords="300,5,476,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="510,21,476,21,476,15,510,15"/>
+<area shape="rect" id="Node000006" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="163,31,252,56"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="287,35,253,40,252,34,286,30"/>
+<area shape="rect" id="Node000007" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,31,115,56"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="149,46,115,46,115,41,149,41"/>
+<area shape="rect" id="Node000009" href="$mxm__battery__management_8c.html#a325538715bf432ee4826598277aa29e3" title="Execute state&#45;machine for Battery Management Protocol." alt="" coords="304,55,472,80"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="555,70,472,70,472,65,555,65"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="290,57,252,52,253,47,291,52"/>
+<area shape="rect" id="Node000011" href="$mxm__17841b_8c.html#a1ec8677952d5efa533f6dc3286d1d4fd" title="Write a register function." alt="" coords="847,55,1077,80"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1111,70,1077,70,1077,65,1111,65"/>
+<area shape="poly" id="edge12_Node000011_Node000008" title=" " alt="" coords="833,70,754,70,754,65,833,65"/>
+</map>

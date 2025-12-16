@@ -1,0 +1,31 @@
+<map id="SYSM_UpdateFramData" name="SYSM_UpdateFramData">
+<area shape="rect" id="Node000001" title="Commits the stored changes to FRAM if necessary." alt="" coords="5,346,181,371"/>
+<area shape="rect" id="Node000002" href="$fram_8c.html#ad5c5ec1fd0a6c3667185d3b75064e359" title="Writes a variable to the FRAM." alt="" coords="247,246,381,271"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,343,271,275,273,279,124,348"/>
+<area shape="rect" id="Node000010" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="716,196,872,222"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="101,344,145,283,222,194,270,147,324,103,383,64,446,33,507,12,559,3,584,4,610,9,669,33,691,47,711,65,745,105,769,147,786,183,781,185,765,149,740,108,708,68,688,52,667,38,609,14,583,9,559,8,508,17,448,38,386,68,327,107,274,151,226,198,149,286,105,347"/>
+<area shape="rect" id="Node000011" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="721,246,867,271"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="121,369,215,409,280,432,354,451,433,464,513,467,592,456,630,445,667,429,688,416,708,399,740,359,765,318,781,283,786,285,769,321,745,363,711,403,691,420,669,434,632,450,593,462,513,472,432,469,353,456,279,437,213,414,119,374"/>
+<area shape="rect" id="Node000013" href="$sys__mon_8c.html#acc9a5d05dfff9a46afd4f0a665cba32c" title="Copy from the from entry to the to entry." alt="" coords="229,495,399,520"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="108,369,159,419,193,448,231,473,260,488,257,493,228,478,190,452,155,423,105,373"/>
+<area shape="rect" id="Node000003" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="488,295,627,320"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="378,269,481,290,480,295,377,274"/>
+<area shape="rect" id="Node000004" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="507,344,607,370"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="335,269,385,299,448,329,495,343,493,348,446,334,382,304,333,273"/>
+<area shape="rect" id="Node000005" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="515,394,599,419"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="327,269,375,323,409,353,448,379,475,390,502,397,501,402,473,395,445,383,406,357,371,327,323,273"/>
+<area shape="rect" id="Node000006" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="497,48,617,74"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="319,244,336,211,363,167,400,121,445,83,483,67,485,72,448,87,404,125,367,170,340,214,324,247"/>
+<area shape="rect" id="Node000007" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="447,98,668,123"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="323,244,371,189,406,158,445,132,460,125,462,130,448,137,409,162,375,193,327,247"/>
+<area shape="rect" id="Node000008" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="493,147,621,172"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="332,243,382,212,446,181,479,171,481,176,448,186,385,217,335,248"/>
+<area shape="rect" id="Node000009" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="518,196,597,222"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="377,243,504,217,505,222,378,248"/>
+<area shape="rect" id="Node000012" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="510,246,605,271"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="381,256,496,256,496,261,381,261"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="597,206,702,206,702,212,597,212"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="597,215,719,240,718,245,596,220"/>
+<area shape="poly" id="edge12_Node000012_Node000010" title=" " alt="" coords="604,246,718,222,719,227,605,251"/>
+<area shape="poly" id="edge13_Node000012_Node000011" title=" " alt="" coords="605,256,707,256,707,261,605,261"/>
+</map>

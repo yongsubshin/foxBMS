@@ -1,0 +1,17 @@
+<map id="foxbms&#45;2/src/app/driver/config/sps_cfg.h" name="foxbms&#45;2/src/app/driver/config/sps_cfg.h">
+<area shape="rect" id="Node000001" title="Header for the configuration for the driver for the smart power switches." alt="" coords="207,5,384,45"/>
+<area shape="rect" id="Node000002" href="$contactor__cfg_8c.html" title="Configuration for the driver for the contactors." alt="" coords="5,93,183,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,53,139,96,137,91,237,48"/>
+<area shape="rect" id="Node000003" href="$sps__cfg_8c.html" title="Configuration for the driver for the smart power switches (SPS)" alt="" coords="207,93,384,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="298,59,298,93,293,93,293,59"/>
+<area shape="rect" id="Node000004" href="$sps_8h.html" title="Headers for the driver for the smart power switches." alt="" coords="408,93,585,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="353,48,454,91,452,96,351,53"/>
+<area shape="rect" id="Node000005" href="$bms_8c.html" title="Bms driver implementation." alt="" coords="71,181,282,221"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="414,140,247,184,246,179,412,134"/>
+<area shape="rect" id="Node000006" href="$contactor_8c.html" title="Driver for the contactors." alt="" coords="307,181,484,221"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="465,144,419,183,416,179,462,140"/>
+<area shape="rect" id="Node000007" href="$sps_8c.html" title="Driver for the smart power switches." alt="" coords="508,181,685,221"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="531,140,576,179,573,183,527,144"/>
+<area shape="rect" id="Node000008" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="709,181,876,221"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="575,135,729,179,727,184,574,140"/>
+</map>

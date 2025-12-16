@@ -1,0 +1,25 @@
+<map id="FAKE_DATABASE_ENTRIES_s" name="FAKE_DATABASE_ENTRIES_s">
+<area shape="rect" id="Node000001" title=" " alt="" coords="725,176,931,201"/>
+<area shape="rect" id="Node000002" href="$structDATA__BLOCK__CELL__VOLTAGE__s.html" title=" " alt="" coords="304,5,529,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="544,26,624,44,664,57,703,74,739,98,772,125,818,174,814,178,768,129,736,102,700,79,662,62,623,49,543,32"/>
+<area shape="rect" id="Node000003" href="$structDATA__BLOCK__HEADER__s.html" title=" " alt="" coords="5,176,188,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,164,146,133,185,98,232,65,284,40,324,28,326,33,286,44,235,70,189,103,149,137,120,167"/>
+<area shape="rect" id="Node000004" href="$structDATA__BLOCK__CELL__TEMPERATURE__s.html" title=" " alt="" coords="285,55,548,80"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="129,166,199,127,284,90,331,77,332,83,286,95,201,132,132,171"/>
+<area shape="rect" id="Node000005" href="$structDATA__BLOCK__BALANCING__FEEDBACK__s.html" title=" " alt="" coords="321,105,513,145"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="174,171,320,141,321,146,175,176"/>
+<area shape="rect" id="Node000006" href="$structDATA__BLOCK__BALANCING__CONTROL__s.html" title=" " alt="" coords="321,169,513,209"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="201,186,321,186,321,191,201,191"/>
+<area shape="rect" id="Node000007" href="$structDATA__BLOCK__SLAVE__CONTROL__s.html" title=" " alt="" coords="297,233,536,259"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="182,201,346,231,345,236,181,206"/>
+<area shape="rect" id="Node000008" href="$structDATA__BLOCK__ALL__GPIO__VOLTAGES__s.html" title=" " alt="" coords="329,283,505,323"/>
+<area shape="poly" id="edge12_Node000008_Node000003" title=" " alt="" coords="138,205,206,236,286,267,330,281,328,286,284,273,204,241,135,210"/>
+<area shape="rect" id="Node000009" href="$structDATA__BLOCK__OPEN__WIRE__s.html" title=" " alt="" coords="314,348,519,373"/>
+<area shape="poly" id="edge14_Node000009_Node000003" title=" " alt="" coords="121,209,190,272,236,306,286,333,324,345,322,351,284,338,234,310,187,276,117,213"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="514,80,606,99,702,127,758,151,804,174,802,178,756,155,700,133,605,105,513,85"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="527,139,702,166,748,173,747,179,701,171,526,144"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="526,186,725,186,725,191,526,191"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="533,229,701,206,749,199,750,204,702,211,534,234"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="518,286,607,269,700,243,755,222,802,199,804,204,758,227,702,249,609,274,519,291"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="532,346,617,328,660,314,700,296,735,273,767,247,814,200,818,204,771,251,738,278,703,300,662,319,618,333,533,352"/>
+</map>

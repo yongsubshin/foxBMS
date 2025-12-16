@@ -1,0 +1,11 @@
+<map id="SPS_RequestContactorState" name="SPS_RequestContactorState">
+<area shape="rect" id="Node000001" title="Request state of a contactor." alt="" coords="5,31,208,56"/>
+<area shape="rect" id="Node000002" href="$sps_8c.html#a12055277c605a27340a3938e6f84523a" title="Returns the channel affiliation." alt="" coords="257,5,449,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,30,243,27,243,32,208,36"/>
+<area shape="rect" id="Node000003" href="$sps_8c.html#acbea831bc7b455fd71f259e3a9e4c0aa" title="Request the functional state of a channel." alt="" coords="256,55,449,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,51,243,54,242,59,208,56"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="497,29,653,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="450,54,484,50,484,55,450,59"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="502,79,649,104"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="450,75,488,79,488,85,450,80"/>
+</map>

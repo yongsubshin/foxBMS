@@ -1,0 +1,133 @@
+<map id="MXM_StateMachineOperation" name="MXM_StateMachineOperation">
+<area shape="rect" id="Node000001" title="State&#45;Machine implementation for operation state." alt="" coords="5,456,220,482"/>
+<area shape="rect" id="Node000002" href="$mxm__battery__management_8c.html#af80228e32eb53f659c6301f02ab34143" title="Get number of satellites." alt="" coords="555,320,785,346"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,454,186,412,225,389,267,371,336,352,407,339,476,332,541,329,541,334,477,337,408,344,337,357,269,376,228,394,189,416,131,459"/>
+<area shape="rect" id="Node000003" href="$mxm__battery__management_8c.html#a9d5b57e8d6ecb30ba6426272f472e630" title="Set state request for the Battery Management State machine." alt="" coords="577,123,763,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,456,121,392,145,298,164,247,191,198,224,154,267,119,311,97,358,84,408,79,458,80,551,95,624,116,623,121,549,100,457,85,408,84,359,89,313,102,269,123,228,158,195,201,169,249,150,300,126,393,118,457"/>
+<area shape="rect" id="Node000004" href="$mxm__registry_8c.html#af2ecdd14cd0568f246b14aa8cdf2c6d7" title="check if one of the devices in the registry has the ALRTRST bit set" alt="" coords="270,513,493,553"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="168,479,284,507,283,513,167,485"/>
+<area shape="rect" id="Node000009" href="$mxm__1785x_8c.html#ab5680ee1fe73029d746878aff22bcab5" title="Fill the balancing data structure." alt="" coords="268,692,495,718"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="122,481,141,520,172,574,216,630,241,656,269,678,282,685,280,689,267,682,238,660,212,634,168,577,136,523,117,483"/>
+<area shape="rect" id="Node000011" href="$mxm__1785x_8c.html#a2cfdc33409d373e8721922acc6a9a3a9" title="This error handler is used as a last resort and tries a reset of the complete driver." alt="" coords="579,172,761,198"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="118,455,138,418,170,367,213,314,239,290,267,269,542,207,586,198,587,203,543,212,269,274,242,294,217,318,174,370,142,420,123,457"/>
+<area shape="rect" id="Node000012" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="917,76,1052,102"/>
+<area shape="poly" id="edge80_Node000001_Node000012" title=" " alt="" coords="112,456,118,387,126,337,140,282,159,226,186,171,221,122,266,82,308,57,351,38,397,23,444,13,540,4,636,6,727,17,810,34,937,70,935,75,809,39,726,23,635,11,540,9,445,18,398,29,353,43,310,62,270,86,225,125,190,174,164,228,145,284,131,338,123,388,117,457"/>
+<area shape="rect" id="Node000013" href="$mxm__1785x_8c.html#a5286d61127b58617a6384a8c18b38618" title="Handle the state machine&#45;transactions for a READALL." alt="" coords="286,183,477,208"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="116,455,134,411,164,349,209,283,236,252,266,226,293,211,295,216,270,230,240,256,213,286,169,352,138,414,121,457"/>
+<area shape="rect" id="Node000017" href="$mxm__1785x_8c.html#ae651c3ef761d1b34dab49d85336ea046" title="Handle the state machine&#45;transactions for a WRITEALL." alt="" coords="285,134,478,159"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="114,456,128,402,156,324,176,281,201,240,231,201,266,168,273,164,276,168,270,173,235,205,205,243,181,284,161,326,133,404,119,457"/>
+<area shape="rect" id="Node000018" href="$mxm__1785x_8c.html#ae17987a0e72b943e2cac791ee60841c8" title="Encapsulation for reading voltages from a register." alt="" coords="297,284,466,310"/>
+<area shape="poly" id="edge21_Node000001_Node000018" title=" " alt="" coords="123,454,180,393,221,358,267,327,303,311,305,316,269,331,224,362,183,397,126,458"/>
+<area shape="rect" id="Node000022" href="$mxm__registry_8c.html#a4605575afd03a08a9a5cd8ed33ae4d50" title="Parse ID (1 or 2) into the registry." alt="" coords="273,628,489,668"/>
+<area shape="poly" id="edge30_Node000001_Node000022" title=" " alt="" coords="126,480,183,543,224,580,269,612,285,620,282,625,267,617,220,584,179,547,122,484"/>
+<area shape="rect" id="Node000023" href="$mxm__registry_8c.html#ad95cf43f88a2b7ccd12c48dcd58cf1f3" title="Parse STATUS or FMEA into the registry." alt="" coords="271,385,491,425"/>
+<area shape="poly" id="edge34_Node000001_Node000023" title=" " alt="" coords="167,454,283,426,284,431,168,459"/>
+<area shape="rect" id="Node000024" href="$mxm__registry_8c.html#adcccca2175923f6875c9064d435ba049" title="Parse Version into the registry." alt="" coords="268,449,495,489"/>
+<area shape="poly" id="edge38_Node000001_Node000024" title=" " alt="" coords="220,466,254,466,254,472,220,472"/>
+<area shape="rect" id="Node000025" href="$mxm__1785x_8c.html#a920e0ec9a500bdd62f13a6c2f57a9163" title="Copies measured voltage data into the database." alt="" coords="283,742,480,767"/>
+<area shape="poly" id="edge42_Node000001_Node000025" title=" " alt="" coords="120,481,136,528,166,595,186,632,210,667,238,699,270,727,281,734,278,738,266,731,234,703,206,670,181,634,161,598,131,530,115,483"/>
+<area shape="rect" id="Node000048" href="$mxm__1785x_8c.html#a675df7a5e83425b1df797b55f963c5c9" title="Processes the retrieved information on open wire." alt="" coords="293,578,469,603"/>
+<area shape="poly" id="edge74_Node000001_Node000048" title=" " alt="" coords="132,480,191,521,229,543,269,563,295,572,293,577,267,568,226,548,188,525,129,484"/>
+<area shape="rect" id="Node000049" href="$mxm__1785x__tools_8c.html#a2b0a88c10d76ee1f9842969d35c0e676" title="convert a unipolar 14bit&#45;value and shifts it into the 16bit&#45;format" alt="" coords="276,791,487,816"/>
+<area shape="poly" id="edge77_Node000001_Node000049" title=" " alt="" coords="119,482,132,537,160,617,180,661,204,703,234,743,270,776,279,783,276,787,266,781,230,746,200,706,175,663,155,619,127,538,114,483"/>
+<area shape="rect" id="Node000050" href="$mxm__1785x__tools_8c.html#a9130d678efe5f043756975fb9c21cafa" title="convert a voltage value into a unipolar 14bit value" alt="" coords="269,840,494,866"/>
+<area shape="poly" id="edge78_Node000001_Node000050" title=" " alt="" coords="118,482,128,544,153,638,173,689,199,739,231,786,270,826,278,832,275,836,266,830,227,789,194,742,168,691,148,639,123,545,113,482"/>
+<area shape="rect" id="Node000051" href="$os_8c.html#a834064ee9e9a90768918c776f5cb1bb7" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="271,890,491,930"/>
+<area shape="poly" id="edge79_Node000001_Node000051" title=" " alt="" coords="118,482,126,551,149,657,169,715,195,773,228,828,270,875,277,881,273,885,266,879,224,831,190,776,164,717,144,658,121,552,112,482"/>
+<area shape="rect" id="Node000005" href="$foxmath_8c.html#aacaf0845143922c6a31912af37fd9741" title="Returns the minimum of the passed uint8_t values." alt="" coords="562,472,778,498"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="492,512,579,497,580,503,493,517"/>
+<area shape="rect" id="Node000006" href="$mxm__1785x__tools_8c.html#af328199dc46b6eab7f35f08f0f076145" title="Extract a value from a single register." alt="" coords="1411,422,1641,447"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="454,551,543,572,679,581,818,578,956,565,1088,545,1209,520,1317,494,1473,449,1475,454,1318,499,1211,525,1089,550,957,570,819,584,679,587,542,577,453,556"/>
+<area shape="rect" id="Node000008" href="$mxm__registry_8c.html#aca0807a445d30190eadbef7467b43ca8" title="Parse number of highest connected device from monitoring&#45; register." alt="" coords="561,522,779,562"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="493,534,547,536,547,541,493,539"/>
+<area shape="rect" id="Node000007" href="$mxm__1785x__tools_8c.html#a0dc736d94a1c30286d2549d3efa99e2d" title="Find Position of first set bit in bitmask." alt="" coords="1689,422,1819,447"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1642,432,1675,432,1675,437,1642,437"/>
+<area shape="rect" id="Node000010" href="$mxm__1785x__tools_8c.html#a2be80ff605cfe34cece5301f5a4c11a0" title="Get the string and module number from a global module number." alt="" coords="563,688,777,714"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="495,701,550,700,550,705,495,706"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="744,170,797,157,874,131,941,105,943,110,876,136,798,162,746,175"/>
+<area shape="poly" id="edge13_Node000013_Node000003" title=" " alt="" coords="438,181,542,157,586,148,587,154,543,162,439,186"/>
+<area shape="poly" id="edge14_Node000013_Node000011" title=" " alt="" coords="477,190,565,186,565,192,477,195"/>
+<area shape="rect" id="Node000014" href="$mxm__1785x_8c.html#ab0d9976f05eb48b050415afd432f9415" title="Retrieves data from lower state machine and writes it to the rx buffer." alt="" coords="543,222,797,247"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="477,206,561,217,561,223,476,211"/>
+<area shape="rect" id="Node000015" href="$mxm__battery__management_8c.html#ad89fd67b1337293d24504cdb05c19a59" title="Returns the last received DC byte." alt="" coords="895,222,1074,247"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="797,232,882,232,882,237,797,237"/>
+<area shape="rect" id="Node000016" href="$mxm__battery__management_8c.html#a88722a84590c432f0bbfcdd77536c8db" title="Copy RX buffer into variable." alt="" coords="905,172,1064,198"/>
+<area shape="poly" id="edge17_Node000014_Node000016" title=" " alt="" coords="751,219,891,197,892,202,752,224"/>
+<area shape="poly" id="edge19_Node000017_Node000003" title=" " alt="" coords="478,140,563,137,563,142,478,146"/>
+<area shape="poly" id="edge20_Node000017_Node000011" title=" " alt="" coords="477,157,566,169,565,174,476,162"/>
+<area shape="poly" id="edge22_Node000018_Node000002" title=" " alt="" coords="466,305,555,316,554,321,466,310"/>
+<area shape="poly" id="edge23_Node000018_Node000003" title=" " alt="" coords="404,282,447,254,493,218,506,202,515,186,524,172,541,158,562,148,564,152,544,162,528,175,519,189,511,205,497,222,450,259,407,287"/>
+<area shape="poly" id="edge24_Node000018_Node000011" title=" " alt="" coords="450,282,493,263,508,250,516,235,525,221,541,207,565,196,567,201,544,211,529,224,521,238,512,253,496,267,452,287"/>
+<area shape="poly" id="edge25_Node000018_Node000014" title=" " alt="" coords="432,282,542,256,585,247,586,252,543,261,433,287"/>
+<area shape="rect" id="Node000019" href="$mxm__1785x_8c.html#a6f4a82fd15f903cbfd9672feba6051ed" title="Parse a RX buffer containing voltage values." alt="" coords="572,271,768,296"/>
+<area shape="poly" id="edge26_Node000018_Node000019" title=" " alt="" coords="466,291,558,286,559,292,466,296"/>
+<area shape="rect" id="Node000020" href="$mxm__1785x_8c.html#ac8a15260cff9ed6eb1682999e13bb9d3" title="Parse voltage values from a READALL receive buffer into an array." alt="" coords="873,283,1096,308"/>
+<area shape="poly" id="edge27_Node000019_Node000020" title=" " alt="" coords="768,285,860,288,860,294,768,290"/>
+<area shape="rect" id="Node000021" href="$mxm__1785x__tools_8c.html#ab437f79b3d0299bb51e1a22bcfb484d2" title="Convert a measurement value to a voltage value." alt="" coords="1211,296,1324,322"/>
+<area shape="poly" id="edge28_Node000020_Node000021" title=" " alt="" coords="1096,298,1197,303,1197,309,1096,304"/>
+<area shape="poly" id="edge29_Node000021_Node000006" title=" " alt="" coords="1296,319,1487,413,1485,418,1293,324"/>
+<area shape="poly" id="edge31_Node000022_Node000005" title=" " alt="" coords="473,626,493,612,504,600,510,588,516,561,521,534,529,521,541,508,550,502,553,507,544,513,533,524,526,536,521,562,515,589,508,603,496,617,476,630"/>
+<area shape="poly" id="edge32_Node000022_Node000006" title=" " alt="" coords="490,651,662,651,768,647,883,638,1003,623,1125,601,1246,571,1362,532,1436,494,1496,453,1499,458,1439,498,1364,537,1248,577,1127,607,1004,628,884,643,768,652,662,656,490,656"/>
+<area shape="poly" id="edge33_Node000022_Node000008" title=" " alt="" coords="453,625,494,612,610,565,612,570,496,617,455,630"/>
+<area shape="poly" id="edge35_Node000023_Node000005" title=" " alt="" coords="455,423,611,466,609,471,454,428"/>
+<area shape="poly" id="edge36_Node000023_Node000006" title=" " alt="" coords="492,400,877,398,1119,402,1363,413,1416,418,1415,423,1362,418,1119,408,877,403,492,405"/>
+<area shape="poly" id="edge37_Node000023_Node000008" title=" " alt="" coords="476,423,496,435,513,453,521,472,529,490,544,507,555,514,553,519,541,511,524,493,516,474,509,456,493,439,473,428"/>
+<area shape="poly" id="edge39_Node000024_Node000005" title=" " alt="" coords="495,473,549,476,548,481,495,478"/>
+<area shape="poly" id="edge40_Node000024_Node000006" title=" " alt="" coords="495,459,543,457,1014,442,1397,434,1397,439,1014,447,543,462,495,465"/>
+<area shape="poly" id="edge41_Node000024_Node000008" title=" " alt="" coords="461,487,578,517,577,522,460,492"/>
+<area shape="poly" id="edge48_Node000025_Node000010" title=" " alt="" coords="450,739,586,714,587,719,451,744"/>
+<area shape="rect" id="Node000026" href="$afe__plausibility_8c.html#a406894a58689eb99279a7569ffebb801" title="Cell temperature plausibility check." alt="" coords="569,1497,771,1537"/>
+<area shape="poly" id="edge43_Node000025_Node000026" title=" " alt="" coords="482,765,497,777,522,809,536,840,543,870,543,901,539,967,539,1004,545,1046,609,1298,661,1484,656,1485,604,1300,540,1047,534,1005,533,967,538,901,537,871,531,841,518,812,493,780,479,769"/>
+<area shape="rect" id="Node000029" href="$afe__plausibility_8c.html#ae3a0cab9bf3aeded2ce65f1d28bdda8b" title="Cell voltage measurement range plausibility check." alt="" coords="563,738,777,778"/>
+<area shape="poly" id="edge46_Node000025_Node000029" title=" " alt="" coords="480,753,549,754,549,759,480,759"/>
+<area shape="rect" id="Node000030" href="$mxm__registry_8c.html#a15356e31103a0135dcadefd3a7a44096" title="Check if a device is connected." alt="" coords="547,803,793,828"/>
+<area shape="poly" id="edge47_Node000025_Node000030" title=" " alt="" coords="444,765,495,776,543,788,590,798,589,803,542,793,494,781,443,770"/>
+<area shape="rect" id="Node000031" href="$vishay__ntcle413e2103f102l__lookup-table_8c.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="593,1010,747,1035"/>
+<area shape="poly" id="edge49_Node000025_Node000031" title=" " alt="" coords="474,765,496,776,564,867,654,997,650,1000,560,870,493,781,471,770"/>
+<area shape="rect" id="Node000027" href="$tsi__limits_8c.html#a161bdb7af8c149fe72731f43f0619dd9" title="Return the maximum plausible temperature." alt="" coords="845,1504,1124,1530"/>
+<area shape="poly" id="edge44_Node000026_Node000027" title=" " alt="" coords="771,1514,831,1514,831,1520,771,1520"/>
+<area shape="rect" id="Node000028" href="$tsi__limits_8c.html#a9bf06d1c58f3a5ee9c9c8b1d611d1323" title="Return the minimum plausible temperature." alt="" coords="847,1554,1122,1579"/>
+<area shape="poly" id="edge45_Node000026_Node000028" title=" " alt="" coords="771,1530,890,1549,889,1554,770,1536"/>
+<area shape="rect" id="Node000032" href="$epcos__b57251v5103j060_8c.html#a60e7e40bc4662b44093a0a2b464bd395" title="returns temperature based on measured ADC voltage" alt="" coords="863,935,1106,960"/>
+<area shape="poly" id="edge50_Node000031_Node000032" title=" " alt="" coords="710,1007,845,969,888,960,889,966,846,974,711,1012"/>
+<area shape="rect" id="Node000034" href="$epcos__b57251v5103j060_8c.html#a22b8fc0a39278f0c1a61c1cca7482b5a" title="returns temperature based on measured ADC voltage" alt="" coords="873,1133,1096,1173"/>
+<area shape="poly" id="edge52_Node000031_Node000034" title=" " alt="" coords="692,1033,758,1074,846,1117,874,1127,872,1132,844,1122,756,1079,689,1038"/>
+<area shape="rect" id="Node000035" href="$epcos__b57861s0103f045_8c.html#a8bb26a9001e051fc2fee6ba77027b1b6" title="returns temperature based on measured ADC voltage" alt="" coords="863,984,1106,1010"/>
+<area shape="poly" id="edge53_Node000031_Node000035" title=" " alt="" coords="747,1014,849,1005,849,1011,748,1019"/>
+<area shape="rect" id="Node000036" href="$epcos__b57861s0103f045_8c.html#a3aca9a6a710bb21efc1a5d4ccf49b3e0" title="returns temperature based on measured ADC voltage" alt="" coords="873,1197,1096,1237"/>
+<area shape="poly" id="edge55_Node000031_Node000036" title=" " alt="" coords="683,1034,746,1105,793,1147,847,1183,862,1190,860,1195,844,1187,790,1152,743,1109,679,1037"/>
+<area shape="rect" id="Node000037" href="$fake__none_8c.html#a8519235f1cb368c712566dc0a6615a8a" title="returns a fake temperature" alt="" coords="864,1262,1105,1287"/>
+<area shape="poly" id="edge56_Node000031_Node000037" title=" " alt="" coords="679,1034,701,1076,737,1135,786,1196,815,1224,847,1247,861,1254,859,1259,844,1251,811,1228,782,1200,732,1138,696,1079,675,1037"/>
+<area shape="rect" id="Node000038" href="$fake__none_8c.html#a8d502a27efdeb0f048997819e3ae4fc4" title="returns a fake temperature" alt="" coords="874,1312,1095,1352"/>
+<area shape="poly" id="edge57_Node000031_Node000038" title=" " alt="" coords="678,1034,697,1084,731,1156,754,1194,781,1232,812,1267,847,1296,863,1306,860,1310,844,1301,808,1270,777,1235,750,1197,726,1158,692,1086,673,1036"/>
+<area shape="rect" id="Node000039" href="$murata__ncxxxxh103_8c.html#a0e6cfeee0f7fdf5504234ed54ddfc9b7" title="returns temperature based on measured ADC voltage." alt="" coords="863,1034,1107,1059"/>
+<area shape="poly" id="edge58_Node000031_Node000039" title=" " alt="" coords="748,1026,849,1033,848,1039,747,1031"/>
+<area shape="rect" id="Node000040" href="$murata__ncxxxxh103_8c.html#a255c099fbd405cdc3b51c39a415c18e3" title="returns temperature based on measured ADC voltage" alt="" coords="873,1376,1097,1416"/>
+<area shape="poly" id="edge60_Node000031_Node000040" title=" " alt="" coords="676,1035,691,1095,723,1184,746,1232,774,1280,807,1324,847,1362,862,1372,859,1376,844,1366,803,1328,769,1283,741,1235,718,1186,686,1096,671,1036"/>
+<area shape="rect" id="Node000041" href="$semitec__103jt_8c.html#a26f93447be1d7882e16a9624be22ab0f" title="returns temperature based on measured ADC voltage" alt="" coords="861,1083,1109,1108"/>
+<area shape="poly" id="edge61_Node000031_Node000041" title=" " alt="" coords="714,1033,846,1068,895,1078,893,1083,845,1073,713,1038"/>
+<area shape="rect" id="Node000042" href="$tdk__ntcgs103jf103ft8_8c.html#aa87a3225637583d135a53de72818b094" title="returns temperature based on measured ADC voltage" alt="" coords="863,688,1106,714"/>
+<area shape="poly" id="edge63_Node000031_Node000042" title=" " alt="" coords="679,1008,732,938,795,839,807,806,812,777,821,749,844,723,850,719,853,723,847,727,826,752,818,778,813,807,800,841,736,941,684,1011"/>
+<area shape="rect" id="Node000043" href="$tdk__ntcg163jx103dt1s_8c.html#a8f3cc23e54dd363ac0b643c4dfefef0e" title="returns temperature based on measured ADC voltage" alt="" coords="863,738,1106,763"/>
+<area shape="poly" id="edge65_Node000031_Node000043" title=" " alt="" coords="678,1008,771,873,844,772,854,766,857,771,847,776,776,876,683,1011"/>
+<area shape="rect" id="Node000044" href="$vishay__ntcalug01a103g_8c.html#a865b7c323eb0bdbd7420518e6b56cede" title="returns temperature based on measured ADC voltage." alt="" coords="865,787,1104,812"/>
+<area shape="poly" id="edge67_Node000031_Node000044" title=" " alt="" coords="676,1008,699,970,736,919,785,866,813,842,844,822,857,815,859,820,847,826,817,846,789,869,740,922,703,973,681,1011"/>
+<area shape="rect" id="Node000045" href="$vishay__ntcalug01a103g_8c.html#a47e088f4023835e56cac22e035c66be8" title="returns temperature based on measured ADC voltage" alt="" coords="875,1440,1094,1480"/>
+<area shape="poly" id="edge69_Node000031_Node000045" title=" " alt="" coords="675,1035,687,1105,715,1211,737,1269,766,1327,803,1380,847,1426,864,1437,861,1442,844,1430,799,1384,762,1330,733,1272,710,1213,682,1106,670,1036"/>
+<area shape="rect" id="Node000046" href="$vishay__ntcle317e4103sba_8c.html#ae917bb4796f0f8fa36201dbd92aae38c" title="returns temperature based on measured ADC voltage." alt="" coords="865,836,1104,862"/>
+<area shape="poly" id="edge70_Node000031_Node000046" title=" " alt="" coords="680,1008,744,941,791,903,844,871,862,863,864,868,847,876,794,907,748,945,684,1011"/>
+<area shape="rect" id="Node000047" href="$vishay__ntcle413e2103f102l_8c.html#aaad7430280f6c4d6add34f90b3ef8159" title="returns temperature based on measured ADC voltage." alt="" coords="865,886,1104,911"/>
+<area shape="poly" id="edge72_Node000031_Node000047" title=" " alt="" coords="687,1008,754,964,798,940,844,920,871,912,872,917,846,925,800,945,757,969,690,1012"/>
+<area shape="rect" id="Node000033" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="1172,886,1363,911"/>
+<area shape="poly" id="edge51_Node000032_Node000033" title=" " alt="" coords="1058,932,1180,911,1181,916,1059,938"/>
+<area shape="poly" id="edge54_Node000035_Node000033" title=" " alt="" coords="1076,982,1123,969,1182,944,1233,916,1236,921,1185,949,1125,974,1077,987"/>
+<area shape="poly" id="edge59_Node000039_Node000033" title=" " alt="" coords="1088,1031,1123,1019,1159,997,1193,971,1245,920,1248,923,1197,975,1162,1002,1125,1024,1090,1036"/>
+<area shape="poly" id="edge62_Node000041_Node000033" title=" " alt="" coords="1095,1081,1123,1068,1165,1036,1201,996,1230,956,1251,922,1255,925,1235,959,1206,1000,1169,1040,1125,1073,1097,1085"/>
+<area shape="poly" id="edge64_Node000042_Node000033" title=" " alt="" coords="1100,711,1125,723,1169,756,1206,796,1235,837,1255,872,1251,875,1230,840,1202,800,1165,760,1123,727,1098,716"/>
+<area shape="poly" id="edge66_Node000043_Node000033" title=" " alt="" coords="1095,761,1125,772,1163,794,1197,821,1249,874,1245,877,1194,825,1160,799,1123,777,1093,766"/>
+<area shape="poly" id="edge68_Node000044_Node000033" title=" " alt="" coords="1083,810,1125,821,1186,848,1237,876,1234,881,1183,852,1123,826,1081,815"/>
+<area shape="poly" id="edge71_Node000046_Node000033" title=" " alt="" coords="1060,859,1124,871,1182,881,1181,886,1124,876,1059,864"/>
+<area shape="poly" id="edge73_Node000047_Node000033" title=" " alt="" coords="1104,896,1158,896,1158,901,1104,901"/>
+<area shape="poly" id="edge75_Node000048_Node000002" title=" " alt="" coords="468,577,493,563,513,540,520,515,526,489,540,458,591,399,640,353,644,357,595,402,545,461,531,490,525,517,517,542,496,567,471,582"/>
+<area shape="poly" id="edge76_Node000048_Node000010" title=" " alt="" coords="452,601,496,613,572,646,636,679,634,684,570,651,494,618,450,606"/>
+</map>

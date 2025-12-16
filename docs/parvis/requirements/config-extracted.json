@@ -1,0 +1,1724 @@
+{
+  "extraction_metadata": {
+    "extraction_date": "2025-12-16",
+    "extractor": "PARVIS-AISpec-Code",
+    "source_directories": [
+      "foxbms-2/src/app/application/config/",
+      "foxbms-2/src/app/driver/config/"
+    ],
+    "total_requirements": 98,
+    "categories": {
+      "battery_cell": 17,
+      "battery_system": 26,
+      "bms_timing": 18,
+      "balancing": 7,
+      "plausibility": 5,
+      "driver_spi": 4,
+      "driver_can": 5,
+      "driver_sps": 6,
+      "driver_interlock": 6,
+      "driver_misc": 4
+    }
+  },
+  "requirements": [
+    {
+      "id": "CFG-APP-001",
+      "content": "The battery cell maximum temperature during discharge shall be limited to 55.0 degC (MSL), 50.0 degC (RSL), and 45.0 degC (MOL). When MSL is violated, error state is requested and contactors will open.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+        "line": "79-81",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BC_TEMPERATURE_MAX_DISCHARGE_MSL_ddegC": 550,
+        "BC_TEMPERATURE_MAX_DISCHARGE_RSL_ddegC": 500,
+        "BC_TEMPERATURE_MAX_DISCHARGE_MOL_ddegC": 450,
+        "unit": "deci degC"
+      }
+    },
+    {
+      "id": "CFG-APP-002",
+      "content": "The battery cell minimum temperature during discharge shall be limited to -20.0 degC (MSL), -15.0 degC (RSL), and -10.0 degC (MOL). When MSL is violated, error state is requested and contactors will open.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+        "line": "94-96",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BC_TEMPERATURE_MIN_DISCHARGE_MSL_ddegC": -200,
+        "BC_TEMPERATURE_MIN_DISCHARGE_RSL_ddegC": -150,
+        "BC_TEMPERATURE_MIN_DISCHARGE_MOL_ddegC": -100,
+        "unit": "deci degC"
+      }
+    },
+    {
+      "id": "CFG-APP-003",
+      "content": "The battery cell maximum temperature during charge shall be limited to 45.0 degC (MSL), 40.0 degC (RSL), and 35.0 degC (MOL). When MSL is violated, error state is requested and contactors will open.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+        "line": "109-111",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BC_TEMPERATURE_MAX_CHARGE_MSL_ddegC": 450,
+        "BC_TEMPERATURE_MAX_CHARGE_RSL_ddegC": 400,
+        "BC_TEMPERATURE_MAX_CHARGE_MOL_ddegC": 350,
+        "unit": "deci degC"
+      }
+    },
+    {
+      "id": "CFG-APP-004",
+      "content": "The battery cell minimum temperature during charge shall be limited to -20.0 degC (MSL), -15.0 degC (RSL), and -10.0 degC (MOL). When MSL is violated, error state is requested and contactors will open.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+        "line": "124-126",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BC_TEMPERATURE_MIN_CHARGE_MSL_ddegC": -200,
+        "BC_TEMPERATURE_MIN_CHARGE_RSL_ddegC": -150,
+        "BC_TEMPERATURE_MIN_CHARGE_MOL_ddegC": -100,
+        "unit": "deci degC"
+      }
+    },
+    {
+      "id": "CFG-APP-005",
+      "content": "The maximum cell voltage shall be limited to 2800 mV (MSL), 2750 mV (RSL), and 2720 mV (MOL). When MSL is violated, error state is requested and contactors will open.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+        "line": "139-141",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BC_VOLTAGE_MAX_MSL_mV": 2800,
+        "BC_VOLTAGE_MAX_RSL_mV": 2750,
+        "BC_VOLTAGE_MAX_MOL_mV": 2720,
+        "unit": "mV"
+      }
+    },
+    {
+      "id": "CFG-APP-006",
+      "content": "The nominal cell voltage according to data sheet shall be configured as 2500 mV.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+        "line": "149",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BC_VOLTAGE_NOMINAL_mV": 2500,
+        "unit": "mV"
+      }
+    },
+    {
+      "id": "CFG-APP-007",
+      "content": "The minimum cell voltage shall be limited to 1500 mV (MSL), 1550 mV (RSL), and 1580 mV (MOL). When MSL is violated, error state is requested and contactors will open.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+        "line": "161-163",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BC_VOLTAGE_MIN_MSL_mV": 1500,
+        "BC_VOLTAGE_MIN_RSL_mV": 1550,
+        "BC_VOLTAGE_MIN_MOL_mV": 1580,
+        "unit": "mV"
+      }
+    },
+    {
+      "id": "CFG-APP-008",
+      "content": "The deep-discharge cell voltage limit shall be set equal to the minimum voltage MSL. If this limit is violated, the cell is considered faulty and the BMS will not allow closing of contactors until the cell is replaced.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+        "line": "175",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BC_VOLTAGE_DEEP_DISCHARGE_mV": "BC_VOLTAGE_MIN_MSL_mV (1500)",
+        "unit": "mV"
+      }
+    },
+    {
+      "id": "CFG-APP-009",
+      "content": "The maximum discharge current shall be limited to 180000 mA (MSL), 175000 mA (RSL), and 170000 mA (MOL). When MSL is violated, error state is requested and contactors will open.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+        "line": "187-189",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BC_CURRENT_MAX_DISCHARGE_MSL_mA": 180000,
+        "BC_CURRENT_MAX_DISCHARGE_RSL_mA": 175000,
+        "BC_CURRENT_MAX_DISCHARGE_MOL_mA": 170000,
+        "unit": "mA"
+      }
+    },
+    {
+      "id": "CFG-APP-010",
+      "content": "The maximum charge current shall be limited to 180000 mA (MSL), 175000 mA (RSL), and 170000 mA (MOL). When MSL is violated, error state is requested and contactors will open.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+        "line": "202-204",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BC_CURRENT_MAX_CHARGE_MSL_mA": 180000,
+        "BC_CURRENT_MAX_CHARGE_RSL_mA": 175000,
+        "BC_CURRENT_MAX_CHARGE_MOL_mA": 170000,
+        "unit": "mA"
+      }
+    },
+    {
+      "id": "CFG-APP-011",
+      "content": "The cell capacity used for SOC calculation shall be configured as 3500 mAh.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+        "line": "212",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BC_CAPACITY_mAh": 3500,
+        "unit": "mAh"
+      }
+    },
+    {
+      "id": "CFG-APP-012",
+      "content": "The cell energy shall be configured as 10.0 Wh.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+        "line": "219",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BC_ENERGY_Wh": 10.0,
+        "unit": "Wh"
+      }
+    },
+    {
+      "id": "CFG-APP-013",
+      "content": "A static assertion shall verify that the minimum voltage MSL is not lower than the deep-discharge limit.",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_cell_cfg.h",
+        "line": "221-222",
+        "extraction_type": "static_assert"
+      },
+      "module": "config/application"
+    },
+    {
+      "id": "CFG-APP-014",
+      "content": "The number of parallel strings in the battery pack shall be configurable, with a default value of 1.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "103",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_NR_OF_STRINGS": 1,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-APP-015",
+      "content": "The number of modules per string shall be configurable, with a default value of 1.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "116",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_NR_OF_MODULES_PER_STRING": 1,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-APP-016",
+      "content": "The number of cell blocks per module shall be configurable, with a default value of 18. Parallel cells are counted as one cell block.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "126",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_NR_OF_CELL_BLOCKS_PER_MODULE": 18,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-APP-017",
+      "content": "The number of parallel cells per cell block shall be configurable, with a default value of 1.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "134",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_NR_OF_PARALLEL_CELLS_PER_CELL_BLOCK": 1,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-APP-018",
+      "content": "The number of temperature sensors per battery module shall be configurable, with a default value of 8.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "140",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_NR_OF_TEMP_SENSORS_PER_MODULE": 8,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-APP-019",
+      "content": "The number of temperature inputs shall not exceed the number of GPIOs per module.",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "142-143",
+        "extraction_type": "static_assert"
+      },
+      "module": "config/application"
+    },
+    {
+      "id": "CFG-APP-020",
+      "content": "The current sensor presence shall be configurable. If set to true, foxBMS checks for the presence of a current sensor and raises an error if sensor stops responding during runtime.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "162",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_CURRENT_SENSOR_PRESENT": true
+      }
+    },
+    {
+      "id": "CFG-APP-021",
+      "content": "The current measurement response timeout shall be configured as 200 ms. After this delay, it is considered that the current measurement is not responding.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "172",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_CURRENT_MEASUREMENT_RESPONSE_TIMEOUT_ms": 200,
+        "unit": "ms"
+      }
+    },
+    {
+      "id": "CFG-APP-022",
+      "content": "The coulomb counting measurement response timeout shall be configured as 2000 ms.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "175",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_COULOMB_COUNTING_MEASUREMENT_RESPONSE_TIMEOUT_ms": 2000,
+        "unit": "ms"
+      }
+    },
+    {
+      "id": "CFG-APP-023",
+      "content": "The energy counting measurement response timeout shall be configured as 2000 ms.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "178",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_ENERGY_COUNTING_MEASUREMENT_RESPONSE_TIMEOUT_ms": 2000,
+        "unit": "ms"
+      }
+    },
+    {
+      "id": "CFG-APP-024",
+      "content": "The maximum break current of main contactors shall be configured as 3500 mA. Contactors will not be opened if the floating current is above this value to prevent contact welding.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "192",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_MAIN_CONTACTORS_MAXIMUM_BREAK_CURRENT_mA": 3500,
+        "unit": "mA"
+      }
+    },
+    {
+      "id": "CFG-APP-025",
+      "content": "The maximum fuse trigger duration shall be configured as 3000 ms. If current exceeds maximum break current, the BMS will wait this time for the fuse to trigger before attempting to open contactors.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "202",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_MAIN_FUSE_MAXIMUM_TRIGGER_DURATION_ms": 3000,
+        "unit": "ms"
+      }
+    },
+    {
+      "id": "CFG-APP-026",
+      "content": "The maximum string current limit for SOA module shall be configured as 2400 mA. When MSL is violated, error state is requested and contactors will open.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "210",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_MAXIMUM_STRING_CURRENT_mA": 2400,
+        "unit": "mA"
+      }
+    },
+    {
+      "id": "CFG-APP-027",
+      "content": "The maximum pack current limit for SOA module shall be calculated as 2400 mA multiplied by the number of strings. When MSL is violated, error state is requested and contactors will open.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "218",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_MAXIMUM_PACK_CURRENT_mA": "2400 * BS_NR_OF_STRINGS",
+        "unit": "mA"
+      }
+    },
+    {
+      "id": "CFG-APP-028",
+      "content": "The interlock feedback evaluation shall be configurable. When set to false, interlock feedback will be evaluated; when set to true, it will be discarded.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "225",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_IGNORE_INTERLOCK_FEEDBACK": false
+      }
+    },
+    {
+      "id": "CFG-APP-029",
+      "content": "CAN timing check shall be configurable. When set to true, foxBMS checks CAN timing and requires a valid request every 100ms within the 95-105ms window.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "233",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_CHECK_CAN_TIMING": true
+      }
+    },
+    {
+      "id": "CFG-APP-030",
+      "content": "Balancing default state shall be configurable. When set to true, balancing is deactivated completely; when set to false, foxBMS activates balancing when needed.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "241",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_BALANCING_DEFAULT_INACTIVE": true
+      }
+    },
+    {
+      "id": "CFG-APP-031",
+      "content": "The number of high voltage inputs measured by current sensors shall be configured as 3.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "248",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_NR_OF_VOLTAGES_FROM_CURRENT_SENSOR": 3,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-APP-032",
+      "content": "The current threshold for determining rest state of battery shall be configured as 200 mA. If absolute current is below this limit, the battery is considered at rest.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "262",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_REST_CURRENT_mA": 200,
+        "unit": "mA"
+      }
+    },
+    {
+      "id": "CFG-APP-033",
+      "content": "The relaxation period before battery system is at rest shall be configured as 60000 (in units of 10ms, i.e., 600 seconds). Balancing only starts if battery system is at rest.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "268",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_RELAXATION_PERIOD_10ms": 60000,
+        "unit": "10ms"
+      }
+    },
+    {
+      "id": "CFG-APP-034",
+      "content": "The current sensor threshold for zero current detection shall be configured as 200 mA to account for sensor jitter.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "274",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_CS_THRESHOLD_NO_CURRENT_mA": 200,
+        "unit": "mA"
+      }
+    },
+    {
+      "id": "CFG-APP-035",
+      "content": "The maximum voltage drop over fuse shall be configured as 500 mV. If measured voltage difference exceeds this value, it indicates the fuse has tripped.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "287",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_MAX_VOLTAGE_DROP_OVER_FUSE_mV": 500,
+        "unit": "mV"
+      }
+    },
+    {
+      "id": "CFG-APP-036",
+      "content": "Open-wire check during standby mode shall be configurable, with default state disabled.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "326",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_STANDBY_PERIODIC_OPEN_WIRE_CHECK": false
+      }
+    },
+    {
+      "id": "CFG-APP-037",
+      "content": "Periodic open-wire check time in STANDBY state shall be configured as 600000 ms (10 minutes).",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "329",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_STANDBY_OPEN_WIRE_PERIOD_ms": 600000,
+        "unit": "ms"
+      }
+    },
+    {
+      "id": "CFG-APP-038",
+      "content": "Periodic open-wire check time in ERROR state shall be configured as 30000 ms (30 seconds).",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/battery_system_cfg.h",
+        "line": "344",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BS_ERROR_OPEN_WIRE_PERIOD_ms": 30000,
+        "unit": "ms"
+      }
+    },
+    {
+      "id": "CFG-APP-039",
+      "content": "The BMS state machine task cycle time shall be configured as 10 ms.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "93",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_STATEMACHINE_TASK_CYCLE_CONTEXT_MS": 10,
+        "unit": "ms"
+      }
+    },
+    {
+      "id": "CFG-APP-040",
+      "content": "BMS state machine short time shall be configured as 1 trigger call (10ms with default task cycle).",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "103",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_STATEMACH_SHORTTIME": 1,
+        "unit": "trigger calls"
+      }
+    },
+    {
+      "id": "CFG-APP-041",
+      "content": "BMS state machine medium time shall be configured as 5 trigger calls (50ms with default task cycle).",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "109",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_STATEMACH_MEDIUM_TIME": 5,
+        "unit": "trigger calls"
+      }
+    },
+    {
+      "id": "CFG-APP-042",
+      "content": "BMS state machine long time shall be configured as 10 trigger calls (100ms with default task cycle).",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "115",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_STATEMACH_LONGTIME": 10,
+        "unit": "trigger calls"
+      }
+    },
+    {
+      "id": "CFG-APP-043",
+      "content": "Wait time after closing any string contactor shall be configured as 20 trigger calls (200ms).",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "118",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_WAIT_TIME_AFTER_CLOSING_STRING_CONTACTOR": 20,
+        "unit": "trigger calls"
+      }
+    },
+    {
+      "id": "CFG-APP-044",
+      "content": "Wait time after opening any string contactor shall be configured as 10 trigger calls (100ms).",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "121",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_WAIT_TIME_AFTER_OPENING_STRING_CONTACTOR": 10,
+        "unit": "trigger calls"
+      }
+    },
+    {
+      "id": "CFG-APP-045",
+      "content": "Wait time between closing complete strings shall be configured as 10 trigger calls (100ms).",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "124",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_WAIT_TIME_BETWEEN_CLOSING_STRINGS": 10,
+        "unit": "trigger calls"
+      }
+    },
+    {
+      "id": "CFG-APP-046",
+      "content": "String close timeout shall be configured as 500 trigger calls (5 seconds). State machine goes to error if string has not closed within this time.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "130",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_STRING_CLOSE_TIMEOUT": 500,
+        "unit": "trigger calls"
+      }
+    },
+    {
+      "id": "CFG-APP-047",
+      "content": "String open timeout shall be configured as 1000 trigger calls (10 seconds). State machine goes to error if string has not opened within this time.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "136",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_STRING_OPEN_TIMEOUT": 1000,
+        "unit": "trigger calls"
+      }
+    },
+    {
+      "id": "CFG-APP-048",
+      "content": "Maximum voltage difference between two strings to allow closing the next string shall be configured as 3000 mV.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "142",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_NEXT_STRING_VOLTAGE_LIMIT_MV": 3000,
+        "unit": "mV"
+      }
+    },
+    {
+      "id": "CFG-APP-049",
+      "content": "Maximum average string current to allow closing next string shall be configured as 20000 mA.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "145",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_AVERAGE_STRING_CURRENT_LIMIT_MA": 20000,
+        "unit": "mA"
+      }
+    },
+    {
+      "id": "CFG-APP-050",
+      "content": "Delay after closing precharge shall be configured as 200 trigger calls (2 seconds).",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "148",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_TIME_WAIT_AFTER_CLOSING_PRECHARGE": 200,
+        "unit": "trigger calls"
+      }
+    },
+    {
+      "id": "CFG-APP-051",
+      "content": "Delay after opening precharge shall be configured as 50 trigger calls (500ms).",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "151",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_TIME_WAIT_AFTER_OPENING_PRECHARGE": 50,
+        "unit": "trigger calls"
+      }
+    },
+    {
+      "id": "CFG-APP-052",
+      "content": "Oscillation timeout shall be configured as 1000 (in 10ms units, i.e., 10 seconds) to prevent mechanical close/open timer cycle in case of incorrect state requests.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "164",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_OSCILLATION_TIMEOUT": 1000,
+        "unit": "10ms"
+      }
+    },
+    {
+      "id": "CFG-APP-053",
+      "content": "Number of allowed precharge tries shall be configured as 3.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "167",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_PRECHARGE_TRIES": 3,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-APP-054",
+      "content": "Precharge voltage threshold shall be configured as 1000 mV.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "170",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_PRECHARGE_VOLTAGE_THRESHOLD_mV": 1000,
+        "unit": "mV"
+      }
+    },
+    {
+      "id": "CFG-APP-055",
+      "content": "Precharge current threshold shall be configured as 50 mA.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "173",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_PRECHARGE_CURRENT_THRESHOLD_mA": 50,
+        "unit": "mA"
+      }
+    },
+    {
+      "id": "CFG-APP-056",
+      "content": "Precharge close timeout shall be configured as 500 trigger calls (5 seconds). State machine goes to error if precharge has not closed within this time.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "185",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_PRECHARGE_CLOSE_TIMEOUT": 500,
+        "unit": "trigger calls"
+      }
+    },
+    {
+      "id": "CFG-APP-057",
+      "content": "Precharge open timeout shall be configured as 500 trigger calls (5 seconds). State machine goes to error if precharge has not opened within this time.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms_cfg.h",
+        "line": "191",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BMS_PRECHARGE_OPEN_TIMEOUT": 500,
+        "unit": "trigger calls"
+      }
+    },
+    {
+      "id": "CFG-APP-058",
+      "content": "Balancing state machine short time shall be configured as 1 (in 100ms units, i.e., 100ms).",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bal_cfg.h",
+        "line": "65",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BAL_STATEMACH_SHORTTIME_100ms": 1,
+        "unit": "100ms"
+      }
+    },
+    {
+      "id": "CFG-APP-059",
+      "content": "Balancing state machine long time shall be configured as 50 (in 100ms units, i.e., 5 seconds).",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bal_cfg.h",
+        "line": "69",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BAL_STATEMACH_LONGTIME_100ms": 50,
+        "unit": "100ms"
+      }
+    },
+    {
+      "id": "CFG-APP-060",
+      "content": "Balancing time per cycle shall be configured as 10 (in 100ms units, i.e., 1 second).",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bal_cfg.h",
+        "line": "72",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BAL_STATEMACH_BALANCING_TIME_100ms": 10,
+        "unit": "100ms"
+      }
+    },
+    {
+      "id": "CFG-APP-061",
+      "content": "Default balancing voltage threshold shall be configured as 200 mV.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bal_cfg.h",
+        "line": "75",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BAL_DEFAULT_THRESHOLD_mV": 200,
+        "unit": "mV"
+      }
+    },
+    {
+      "id": "CFG-APP-062",
+      "content": "Maximum balancing voltage threshold shall be limited to 5000 mV.",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bal_cfg.h",
+        "line": "78",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BAL_MAXIMUM_THRESHOLD_mV": 5000,
+        "unit": "mV"
+      }
+    },
+    {
+      "id": "CFG-APP-063",
+      "content": "Minimum balancing voltage threshold shall be 0 mV.",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bal_cfg.h",
+        "line": "81",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BAL_MINIMUM_THRESHOLD_mV": 0,
+        "unit": "mV"
+      }
+    },
+    {
+      "id": "CFG-APP-064",
+      "content": "Balancing hysteresis for voltage threshold when balancing was finished shall be configured as 200 mV.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bal_cfg.h",
+        "line": "84",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BAL_HYSTERESIS_mV": 200,
+        "unit": "mV"
+      }
+    },
+    {
+      "id": "CFG-APP-065",
+      "content": "Balancing lower voltage limit shall be configured as 2000 mV. Cells below this voltage shall not be balanced.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bal_cfg.h",
+        "line": "87",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BAL_LOWER_VOLTAGE_LIMIT_mV": 2000,
+        "unit": "mV"
+      }
+    },
+    {
+      "id": "CFG-APP-066",
+      "content": "Balancing upper temperature limit shall be configured as 700 deci degC (70.0 degC). Balancing shall not occur above this temperature.",
+      "type": "CFG",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bal_cfg.h",
+        "line": "90",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "BAL_UPPER_TEMPERATURE_LIMIT_ddegC": 700,
+        "unit": "deci degC"
+      }
+    },
+    {
+      "id": "CFG-APP-067",
+      "content": "Maximum difference between pack voltage measurement from AFE and current sensor shall be configured as 3000 mV. Range: [0, 10000].",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/plausibility_cfg.h",
+        "line": "69",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "PL_STRING_VOLTAGE_TOLERANCE_mV": 3000,
+        "unit": "mV",
+        "range": "[0, 10000]"
+      }
+    },
+    {
+      "id": "CFG-APP-068",
+      "content": "Maximum difference between redundant cell voltage measurement shall be configured as 10 mV. Range: [0, 10000].",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/plausibility_cfg.h",
+        "line": "77",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "PL_CELL_VOLTAGE_TOLERANCE_mV": 10,
+        "unit": "mV",
+        "range": "[0, 10000]"
+      }
+    },
+    {
+      "id": "CFG-APP-069",
+      "content": "Maximum difference between redundant cell temperature measurements shall be configured as 50 deci kelvin (5.0 K). Range: [0, 100].",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/plausibility_cfg.h",
+        "line": "86",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "PL_CELL_TEMPERATURE_TOLERANCE_dK": 50,
+        "unit": "deci K",
+        "range": "[0, 100]"
+      }
+    },
+    {
+      "id": "CFG-APP-070",
+      "content": "Maximum deviation between a single cell voltage measurement and the average cell voltage shall be configured as 300 mV. Range: [0, 10000].",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/plausibility_cfg.h",
+        "line": "95",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "PL_CELL_VOLTAGE_SPREAD_TOLERANCE_mV": 300,
+        "unit": "mV",
+        "range": "[0, 10000]"
+      }
+    },
+    {
+      "id": "CFG-APP-071",
+      "content": "Maximum deviation between a single cell temperature measurement and the average cell temperature shall be configured as 100 deci kelvin (10.0 K). Range: [0, 100].",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/plausibility_cfg.h",
+        "line": "104",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "PL_CELL_TEMPERATURE_SPREAD_TOLERANCE_dK": 100,
+        "unit": "deci K",
+        "range": "[0, 100]"
+      }
+    },
+    {
+      "id": "CFG-APP-072",
+      "content": "Number of GPIOs per BMS-Slave module shall be configured as 10.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms-slave_cfg.h",
+        "line": "70",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "SLV_NR_OF_GPIOS_PER_MODULE": 10,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-APP-073",
+      "content": "Number of GPA inputs per BMS-Slave module shall be configured as 2.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms-slave_cfg.h",
+        "line": "76",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "SLV_NR_OF_GPAS_PER_MODULE": 2,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-APP-074",
+      "content": "Value of the balancing resistors on the BMS-Slave board shall be configured as 100.0 ohm.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms-slave_cfg.h",
+        "line": "79",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "SLV_BALANCING_RESISTANCE_ohm": 100.0,
+        "unit": "ohm"
+      }
+    },
+    {
+      "id": "CFG-APP-075",
+      "content": "Value of the input capacitors between cell inputs on BMS-Slave board shall be configurable, with default value of 0 nF (no capacitors).",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/application/config/bms-slave_cfg.h",
+        "line": "83",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/application",
+      "parameters": {
+        "SLV_CELL_INPUT_CAPACITOR_CAPACITANCE_nF": 0,
+        "unit": "nF"
+      }
+    },
+    {
+      "id": "CFG-DRV-001",
+      "content": "Number of SPI interfaces shall be configured as 5.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/spi_cfg.h",
+        "line": "78",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "SPI_NR_SPI_INTERFACES": 5,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-DRV-002",
+      "content": "SPI TX buffer empty timeout shall be configured as 6000 iterations to avoid infinite loop.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/spi_cfg.h",
+        "line": "99",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "SPI_TX_EMPTY_TIMEOUT_ITERATIONS": 6000,
+        "unit": "iterations"
+      }
+    },
+    {
+      "id": "CFG-DRV-003",
+      "content": "Maximum number of hardware chip select pins shall be configured as 6.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/spi_cfg.h",
+        "line": "102",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "SPI_MAX_NUMBER_HW_CS": 6,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-DRV-004",
+      "content": "SBC MCU chip select pin shall be configured as pin 0.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/spi_cfg.h",
+        "line": "105",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "SPI_SBC_MCU_CHIP_SELECT_PIN": 0
+      }
+    },
+    {
+      "id": "CFG-DRV-005",
+      "content": "Maximum CAN ID for 11-bit identifier shall be 2048.",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/can_cfg.h",
+        "line": "103",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "CAN_MAX_11BIT_ID": 2048
+      }
+    },
+    {
+      "id": "CFG-DRV-006",
+      "content": "Maximum CAN Data Length Code shall be 8 bytes.",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/can_cfg.h",
+        "line": "105",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "CAN_MAX_DLC": 8,
+        "unit": "bytes"
+      }
+    },
+    {
+      "id": "CFG-DRV-007",
+      "content": "Default CAN DLC for foxBMS messages shall be 8 bytes.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/can_cfg.h",
+        "line": "110",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "CAN_FOXBMS_MESSAGES_DEFAULT_DLC": 8,
+        "unit": "bytes"
+      }
+    },
+    {
+      "id": "CFG-DRV-008",
+      "content": "Number of cell voltages received per CAN message shall be 4.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/can_cfg.h",
+        "line": "114",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "CAN_NUM_OF_VOLTAGES_IN_CAN_CELL_VOLTAGES_MSG": 4,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-DRV-009",
+      "content": "Number of cell temperatures received per CAN message shall be 6.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/can_cfg.h",
+        "line": "116",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "CAN_NUM_OF_TEMPERATURES_IN_CAN_CELL_TEMPERATURES_MSG": 6,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-DRV-010",
+      "content": "Number of SPS IC outputs per IC shall be 4 (each SPS IC has four outputs).",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/sps_cfg.h",
+        "line": "82",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "SPS_NR_CONTACTOR_PER_IC": 4,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-DRV-011",
+      "content": "Number of SPS ICs in the daisy-chain shall be configured as 2.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/sps_cfg.h",
+        "line": "85",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "SPS_NR_OF_IC": 2,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-DRV-012",
+      "content": "LSB of SPS current measurement shall be 0.98 mA.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/sps_cfg.h",
+        "line": "164",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "SPS_I_MEASUREMENT_LSB_mA": 0.98,
+        "unit": "mA"
+      }
+    },
+    {
+      "id": "CFG-DRV-013",
+      "content": "Current threshold that recognizes a contactor as closed shall be configured as 20.0 mA.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/sps_cfg.h",
+        "line": "167",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "SPS_CHANNEL_ON_DEFAULT_THRESHOLD_mA": 20.0,
+        "unit": "mA"
+      }
+    },
+    {
+      "id": "CFG-DRV-014",
+      "content": "Number of required SPS contactor channels shall equal the number of contactors in the system.",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/sps_cfg.h",
+        "line": "99",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "SPS_NR_OF_REQUIRED_CONTACTOR_CHANNELS": "BS_NR_OF_CONTACTORS"
+      }
+    },
+    {
+      "id": "CFG-DRV-015",
+      "content": "A static assertion shall verify that the number of required contactor channels does not exceed available SPS channels.",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/sps_cfg.h",
+        "line": "105-107",
+        "extraction_type": "static_assert"
+      },
+      "module": "config/driver"
+    },
+    {
+      "id": "CFG-DRV-016",
+      "content": "Interlock high-side voltage sense signal shall be connected to ADC input 2.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/interlock_cfg.h",
+        "line": "79",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "ILCK_ADC_INPUT_HIGH_SIDE_VOLTAGE_SENSE": 2
+      }
+    },
+    {
+      "id": "CFG-DRV-017",
+      "content": "Interlock low-side voltage sense signal shall be connected to ADC input 3.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/interlock_cfg.h",
+        "line": "81",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "ILCK_ADC_INPUT_LOW_SIDE_VOLTAGE_SENSE": 3
+      }
+    },
+    {
+      "id": "CFG-DRV-018",
+      "content": "Interlock high-side current sense signal shall be connected to ADC input 4.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/interlock_cfg.h",
+        "line": "83",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "ILCK_ADC_INPUT_HIGH_SIDE_CURRENT_SENSE": 4
+      }
+    },
+    {
+      "id": "CFG-DRV-019",
+      "content": "Interlock low-side current sense signal shall be connected to ADC input 5.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/interlock_cfg.h",
+        "line": "85",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "ILCK_ADC_INPUT_LOW_SIDE_CURRENT_SENSE": 5
+      }
+    },
+    {
+      "id": "CFG-DRV-020",
+      "content": "Interlock voltage divider factor shall be calculated as (5.6 + 3.9) / 3.9 based on resistor values of 5k6 ohm and 3k9 ohm.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/interlock_cfg.h",
+        "line": "89",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "ILCK_VOLTAGE_DIVIDER_FACTOR": 2.436,
+        "resistors": "5k6 ohm, 3k9 ohm"
+      }
+    },
+    {
+      "id": "CFG-DRV-021",
+      "content": "Interlock state machine short time shall be configured as 1 trigger call.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/interlock_cfg.h",
+        "line": "107",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "ILCK_STATEMACH_SHORTTIME": 1,
+        "unit": "trigger calls"
+      }
+    },
+    {
+      "id": "CFG-DRV-022",
+      "content": "Number of port expanders shall be configured as 3.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/pex_cfg.h",
+        "line": "69",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "PEX_NR_OF_PORT_EXPANDERS": 3,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-DRV-023",
+      "content": "Number of SPI interfaces for DMA shall be configured as 5.",
+      "type": "CFG",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/dma_cfg.h",
+        "line": "112",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "DMA_NUMBER_SPI_INTERFACES": 5,
+        "unit": "count"
+      }
+    },
+    {
+      "id": "CFG-DRV-024",
+      "content": "Minimum operating range temperature for cell temperature measurements shall be -50.0 degC (-500 deci degC). Range: [-150, 0].",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/tsi_plausibility_cfg.h",
+        "line": "70",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "TSI_MINIMUM_TEMP_MEASUREMENT_RANGE_ddegC": -500,
+        "unit": "deci degC",
+        "range": "[-150, 0] degC"
+      }
+    },
+    {
+      "id": "CFG-DRV-025",
+      "content": "Maximum operating range temperature for cell temperature measurements shall be 125.0 degC (1250 deci degC). Range: [80, 250].",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "foxbms-2/src/app/driver/config/tsi_plausibility_cfg.h",
+        "line": "79",
+        "extraction_type": "doxygen_define"
+      },
+      "module": "config/driver",
+      "parameters": {
+        "TSI_MAXIMUM_TEMP_MEASUREMENT_RANGE_ddegC": 1250,
+        "unit": "deci degC",
+        "range": "[80, 250] degC"
+      }
+    }
+  ]
+}

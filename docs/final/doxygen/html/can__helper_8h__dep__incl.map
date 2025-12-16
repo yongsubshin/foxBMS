@@ -1,0 +1,67 @@
+<map id="foxbms&#45;2/src/app/driver/can/cbs/can_helper.h" name="foxbms&#45;2/src/app/driver/can/cbs/can_helper.h">
+<area shape="rect" id="Node000001" title="Headers for the helper functions for the CAN module." alt="" coords="3274,5,3451,45"/>
+<area shape="rect" id="Node000002" href="$debug__can_8c.html" title="Driver implementation of the fake CAN to AFE driver to receive CAN messages (cell temperatures and ce..." alt="" coords="5,108,208,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="3261,30,2615,35,1665,46,753,66,418,80,299,87,220,96,160,111,159,105,220,91,299,82,417,74,753,61,1665,41,2615,29,3260,25"/>
+<area shape="rect" id="Node000003" href="$can_8c.html" title="Driver for the CAN module." alt="" coords="233,108,410,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="3260,30,2651,34,1765,45,1316,54,916,65,605,79,495,87,422,96,369,111,367,105,421,91,494,82,605,74,916,60,1316,49,1765,40,2651,29,3260,25"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html" title="Helper functions for the CAN module." alt="" coords="434,108,611,148"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="3261,30,2689,35,1866,47,1080,67,793,80,623,96,570,111,569,105,622,91,792,75,1080,61,1866,42,2689,30,3261,25"/>
+<area shape="rect" id="Node000005" href="$can__cbs__rx__aerosol-sensor_8c.html" title="CAN driver Rx callback implementation." alt="" coords="635,101,813,155"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="3261,30,2727,36,1967,49,1245,68,980,81,824,96,794,103,793,98,824,91,980,76,1244,63,1967,43,2727,31,3261,25"/>
+<area shape="rect" id="Node000006" href="$can__cbs__rx__bms-state-request_8c.html" title="CAN driver Rx callback implementation." alt="" coords="837,101,1014,155"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="3260,30,2764,37,2067,50,1409,70,1168,82,1026,96,996,103,995,98,1025,91,1167,77,1408,65,2067,45,2763,32,3260,25"/>
+<area shape="rect" id="Node000007" href="$can__cbs__rx__cell-temperatures_8c.html" title="CAN driver Rx callback implementation." alt="" coords="1038,101,1215,155"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="3260,31,2169,52,1573,72,1356,83,1227,96,1197,103,1196,98,1226,91,1355,78,1573,66,2169,47,3260,25"/>
+<area shape="rect" id="Node000008" href="$can__cbs__rx__cell-voltages_8c.html" title="CAN driver Rx callback implementation." alt="" coords="1239,101,1417,155"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="3260,29,2878,30,2348,38,2073,46,1816,58,1595,75,1428,96,1398,103,1397,98,1428,91,1595,69,1816,53,2073,41,2348,33,2877,25,3260,24"/>
+<area shape="rect" id="Node000009" href="$can__cbs__rx__current-sensor_8c.html" title="CAN driver Rx callback implementation." alt="" coords="1441,101,1618,155"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="3261,29,2914,32,2443,42,2199,50,1972,61,1777,77,1630,96,1600,103,1599,98,1629,91,1777,71,1972,56,2199,45,2442,36,2914,27,3260,24"/>
+<area shape="rect" id="Node000010" href="$can__cbs__rx__debug_8c.html" title="CAN driver Rx callback implementation." alt="" coords="1642,101,1819,155"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="3260,30,2950,34,2537,45,2128,65,1959,79,1831,96,1802,103,1800,98,1830,91,1959,73,2128,59,2537,40,2950,29,3260,25"/>
+<area shape="rect" id="Node000011" href="$can__cbs__rx__imd-info_8c.html" title="CAN driver Rx callback implementation." alt="" coords="1843,101,2021,155"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="3260,31,2988,37,2633,49,2285,68,2141,81,2033,96,2003,103,2002,98,2031,91,2141,75,2285,63,2633,43,2987,31,3260,26"/>
+<area shape="rect" id="Node000012" href="$can__cbs__rx__imd-response_8c.html" title="CAN driver Rx callback implementation." alt="" coords="2045,101,2222,155"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="3260,32,3026,39,2730,52,2443,71,2324,83,2234,96,2204,103,2203,98,2233,91,2323,77,2442,66,2730,47,3026,34,3260,27"/>
+<area shape="rect" id="Node000013" href="$can__cbs__tx__crash-dump_8c.html" title="CAN." alt="" coords="2246,101,2423,155"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="3260,29,3100,31,2894,41,2665,61,2549,76,2437,96,2407,103,2406,98,2435,91,2549,71,2665,56,2894,35,3100,26,3260,23"/>
+<area shape="rect" id="Node000014" href="$can__cbs__tx__debug-build-configuration_8c.html" title="CAN driver Tx callback implementation." alt="" coords="2448,101,2704,155"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="3260,36,3012,57,2864,74,2716,96,2679,103,2678,98,2716,91,2863,69,3011,52,3260,30"/>
+<area shape="rect" id="Node000015" href="$can__cbs__tx__debug-response_8c.html" title="Implementation for handling the transmit of debug response messages." alt="" coords="2729,101,2922,155"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="3261,41,3106,63,2934,96,2906,103,2905,98,2933,91,3105,58,3260,36"/>
+<area shape="rect" id="Node000016" href="$can__cbs__tx__debug-unsupported-multiplexer-values_8c.html" title="CAN." alt="" coords="2946,93,3150,163"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="3292,52,3151,97,3150,92,3290,47"/>
+<area shape="rect" id="Node000017" href="$can__cbs__tx__fatal-error_8c.html" title="CAN driver Tx callback implementation." alt="" coords="3174,101,3351,155"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="3336,57,3291,102,3287,99,3332,53"/>
+<area shape="rect" id="Node000018" href="$can__cbs__tx__imd-request_8c.html" title="CAN driver Tx callback implementation." alt="" coords="3375,101,3553,155"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="3393,53,3439,98,3436,102,3390,57"/>
+<area shape="rect" id="Node000019" href="$can__cbs__tx__bms-state-details_8c.html" title="CAN driver Tx callback implementation." alt="" coords="3577,101,3781,155"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="3436,47,3597,98,3595,103,3434,52"/>
+<area shape="rect" id="Node000020" href="$can__cbs__tx__bms-state_8c.html" title="CAN driver Tx callback implementation." alt="" coords="3805,101,3982,155"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="3465,35,3621,57,3794,91,3820,98,3819,103,3793,96,3620,62,3465,40"/>
+<area shape="rect" id="Node000021" href="$can__cbs__tx__cell-temperatures_8c.html" title="CAN driver Tx callback implementation." alt="" coords="4007,101,4212,155"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="3465,29,3708,49,3852,67,3995,91,4026,98,4025,103,3994,96,3851,72,3708,55,3465,35"/>
+<area shape="rect" id="Node000022" href="$can__cbs__tx__cell-voltages_8c.html" title="CAN driver Tx callback implementation." alt="" coords="4237,101,4414,155"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="3466,24,3615,28,3805,38,4015,58,4121,72,4225,91,4254,98,4253,103,4223,96,4120,78,4014,63,3804,43,3614,33,3465,29"/>
+<area shape="rect" id="Node000023" href="$can__cbs__tx__pack-limits_8c.html" title="CAN driver Tx callback implementation." alt="" coords="4438,101,4615,155"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="3465,27,3964,48,4232,67,4343,78,4427,91,4456,98,4455,103,4426,96,4342,83,4232,72,3964,54,3465,32"/>
+<area shape="rect" id="Node000024" href="$can__cbs__tx__pack-minimum-maximum-values_8c.html" title="CAN driver Tx callback implementation." alt="" coords="4639,93,4889,163"/>
+<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="3465,23,3678,24,3967,33,4296,53,4464,70,4628,91,4640,93,4639,98,4628,96,4464,75,4296,59,3967,38,3678,30,3465,28"/>
+<area shape="rect" id="Node000025" href="$can__cbs__tx__pack-state-estimation_8c.html" title="CAN driver Tx callback implementation." alt="" coords="4913,101,5146,155"/>
+<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="3465,26,3776,32,4191,44,4602,64,4772,76,4902,91,4939,98,4938,103,4901,96,4772,81,4601,69,4190,50,3776,37,3465,31"/>
+<area shape="rect" id="Node000026" href="$can__cbs__tx__pack-values-p0_8c.html" title="CAN driver Tx callback implementation." alt="" coords="5170,101,5358,155"/>
+<area shape="poly" id="edge25_Node000001_Node000026" title=" " alt="" coords="3466,24,3823,27,4313,36,4566,45,4802,56,5005,71,5159,91,5191,98,5190,103,5158,96,5005,77,4802,62,4566,50,4313,42,3823,32,3466,30"/>
+<area shape="rect" id="Node000027" href="$can__cbs__tx__pack-values-p1_8c.html" title="CAN driver Tx callback implementation." alt="" coords="5382,101,5570,155"/>
+<area shape="poly" id="edge26_Node000001_Node000027" title=" " alt="" coords="3465,24,3861,25,4412,33,4698,41,4966,53,5197,69,5371,91,5403,98,5402,103,5370,96,5196,75,4966,59,4698,47,4412,38,3861,30,3465,29"/>
+<area shape="rect" id="Node000028" href="$can__cbs__tx__string-minimum-maximum-values_8c.html" title="CAN driver Tx callback implementation." alt="" coords="5594,93,5777,163"/>
+<area shape="poly" id="edge27_Node000001_Node000028" title=" " alt="" coords="3466,25,4599,47,5221,66,5448,78,5583,91,5594,93,5593,98,5582,96,5448,83,5221,71,4599,52,3465,31"/>
+<area shape="rect" id="Node000029" href="$can__cbs__tx__string-state-estimation_8c.html" title="CAN driver Tx callback implementation." alt="" coords="5801,101,6039,155"/>
+<area shape="poly" id="edge28_Node000001_Node000029" title=" " alt="" coords="3466,24,3934,25,4606,33,4958,41,5289,53,5574,69,5790,91,5829,98,5828,103,5789,96,5574,75,5289,58,4958,47,4606,38,3934,30,3466,29"/>
+<area shape="rect" id="Node000030" href="$can__cbs__tx__string-state_8c.html" title="CAN driver Tx callback implementation." alt="" coords="6063,101,6241,155"/>
+<area shape="poly" id="edge29_Node000001_Node000030" title=" " alt="" coords="3465,25,4027,30,4835,42,5604,62,5886,75,6052,91,6083,98,6082,103,6052,96,5886,80,5604,67,4835,47,4027,36,3465,30"/>
+<area shape="rect" id="Node000031" href="$can__cbs__tx__string-values-p0_8c.html" title="CAN driver Tx callback implementation." alt="" coords="6265,101,6460,155"/>
+<area shape="poly" id="edge30_Node000001_Node000031" title=" " alt="" coords="3465,25,4065,30,4935,42,5768,62,6073,75,6254,91,6287,98,6286,103,6253,96,6073,80,5768,67,4935,48,4065,36,3465,30"/>
+<area shape="rect" id="Node000032" href="$can__cbs__tx__string-values-p1_8c.html" title="CAN driver Tx callback implementation." alt="" coords="6484,101,6679,155"/>
+<area shape="poly" id="edge31_Node000001_Node000032" title=" " alt="" coords="3465,25,4105,29,5044,41,5946,60,6277,74,6394,82,6472,91,6506,98,6505,103,6472,96,6394,87,6277,79,5946,66,5044,46,4105,35,3465,30"/>
+<area shape="rect" id="Node000033" href="$bender__iso165c_8c.html" title="Driver for the insulation monitoring." alt="" coords="6703,101,6905,155"/>
+<area shape="poly" id="edge32_Node000001_Node000033" title=" " alt="" coords="3465,24,4145,29,5153,40,5666,48,6124,60,6480,74,6607,82,6691,91,6726,98,6725,103,6690,96,6606,87,6480,79,6123,65,5666,54,5153,45,4145,34,3465,30"/>
+</map>

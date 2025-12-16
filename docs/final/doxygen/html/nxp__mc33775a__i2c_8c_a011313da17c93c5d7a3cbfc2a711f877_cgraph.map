@@ -1,0 +1,7 @@
+<map id="N77x_I2cWriteRead" name="N77x_I2cWriteRead">
+<area shape="rect" id="Node000001" title="trigger a read on the I2C bus of the slave, first write address of register to read." alt="" coords="5,31,156,56"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#a285b22d2ef1448cae22a8965b5fec186" title="Receive an item from a queue." alt="" coords="208,5,383,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,32,194,27,195,33,156,37"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#abfcdf77954b6a87dca01c31efaf4d0b3" title="Post an item to the back the provided queue." alt="" coords="204,55,387,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,49,191,53,190,58,156,54"/>
+</map>

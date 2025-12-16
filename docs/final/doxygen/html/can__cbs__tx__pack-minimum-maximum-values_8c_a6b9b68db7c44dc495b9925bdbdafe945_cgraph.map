@@ -1,0 +1,11 @@
+<map id="CANTX_CalculatePackMinimumTemperature" name="CANTX_CalculatePackMinimumTemperature">
+<area shape="rect" id="Node000001" title="Calculates the return value of the minimum pack temperature." alt="" coords="5,23,232,63"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="318,5,513,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,31,304,25,305,30,233,36"/>
+<area shape="rect" id="Node000003" href="$can__cbs__tx__pack-minimum-maximum-values_8c.html#a480e2c2b16f31b91dbc3ea41c8534889" title="Gets the value of the minimum pack temperature." alt="" coords="280,55,551,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,50,267,53,266,58,232,55"/>
+<area shape="rect" id="Node000004" href="$bms_8c.html#a95febd341b208a988bb0462e81febca8" title="Returns number of connected strings." alt="" coords="599,18,816,58"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="542,52,585,48,585,53,542,57"/>
+<area shape="rect" id="Node000005" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="632,83,783,108"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="548,77,619,84,618,90,548,83"/>
+</map>

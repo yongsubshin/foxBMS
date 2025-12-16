@@ -1,0 +1,17 @@
+<map id="ALGO_MainFunction" name="ALGO_MainFunction">
+<area shape="rect" id="Node000001" title="handles the call of different algorithm functions when cycle time has expired" alt="" coords="5,131,157,156"/>
+<area shape="rect" id="Node000002" href="$algorithm_8c.html#a4500371b55e16ebcd577d234f4824895" title="initializes local variables and module internals needed to use the algorithm module" alt="" coords="227,5,374,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,129,138,85,170,61,204,40,220,33,222,38,207,44,173,65,142,89,96,133"/>
+<area shape="rect" id="Node000003" href="$algorithm__cfg_8c.html#ae4de9ff0cd89fabb1f2245d4d6f0f78b" title="Mark the current algorithm as done (will reset to ALGO_READY if possible)" alt="" coords="227,55,375,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,128,204,97,247,82,249,87,206,102,118,133"/>
+<area shape="rect" id="Node000004" href="$algorithm_8c.html#a25bb53555be2a84f5928f1581bf21d2b" title="Calling this function sets a signal that lets ALGO_Initialization() know that the initialization has ..." alt="" coords="205,156,396,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="158,149,192,153,191,159,158,155"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="444,132,600,157"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="157,140,396,141,430,141,430,146,396,146,157,146"/>
+<area shape="rect" id="Node000006" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="449,181,595,207"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="107,154,152,175,206,191,265,200,325,203,435,200,435,206,325,209,264,205,205,197,150,180,105,159"/>
+<area shape="rect" id="Node000007" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="233,257,368,283"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="98,154,144,194,207,236,240,250,238,255,204,240,141,198,94,158"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="396,156,430,152,431,157,396,161"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="396,177,435,181,435,187,396,182"/>
+</map>

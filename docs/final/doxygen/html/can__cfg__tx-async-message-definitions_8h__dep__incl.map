@@ -1,0 +1,27 @@
+<map id="foxbms&#45;2/src/app/driver/config/can_cfg_tx&#45;async&#45;message&#45;definitions.h" name="foxbms&#45;2/src/app/driver/config/can_cfg_tx&#45;async&#45;message&#45;definitions.h">
+<area shape="rect" id="Node000001" title="Header for the driver for the CAN module." alt="" coords="823,5,1005,60"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__crash-dump_8c.html" title="CAN." alt="" coords="5,115,183,170"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="809,40,684,48,530,61,362,81,196,111,168,118,166,113,195,105,362,76,529,56,683,42,808,35"/>
+<area shape="rect" id="Node000003" href="$can__cbs__tx__debug-build-configuration_8c.html" title="CAN driver Tx callback implementation." alt="" coords="207,115,463,170"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="810,52,652,78,476,111,442,118,441,113,475,105,651,73,809,47"/>
+<area shape="rect" id="Node000004" href="$can__cbs__tx__debug-response_8c.html" title="Implementation for handling the transmit of debug response messages." alt="" coords="488,115,681,170"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="822,67,665,118,664,113,820,62"/>
+<area shape="rect" id="Node000005" href="$can__cbs__tx__debug-unsupported-multiplexer-values_8c.html" title="CAN." alt="" coords="705,108,909,177"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="880,72,843,110,839,106,876,68"/>
+<area shape="rect" id="Node000006" href="$can__cbs__tx__fatal-error_8c.html" title="CAN driver Tx callback implementation." alt="" coords="933,115,1111,170"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="952,68,997,113,994,117,949,72"/>
+<area shape="rect" id="Node000007" href="$can__cbs__tx__imd-request_8c.html" title="CAN driver Tx callback implementation." alt="" coords="1187,225,1364,280"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1020,46,1096,69,1134,85,1169,106,1200,133,1227,164,1265,224,1260,226,1223,167,1196,136,1166,110,1131,90,1094,74,1018,52"/>
+<area shape="rect" id="Node000008" href="$bender__iso165c_8c.html" title="Driver for the insulation monitoring." alt="" coords="1218,328,1421,383"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1020,48,1075,70,1101,86,1124,106,1140,128,1149,150,1152,193,1155,235,1162,256,1176,278,1206,305,1242,326,1239,330,1203,310,1172,282,1157,259,1149,236,1147,193,1144,151,1136,131,1120,110,1098,91,1073,75,1018,53"/>
+<area shape="rect" id="Node000009" href="$bender__iso165c__cfg_8h.html" title="Headers for the configuration for the insulation monitoring." alt="" coords="1391,115,1589,170"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1020,51,1392,120,1391,126,1019,56"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="1427,179,1329,228,1326,223,1424,174"/>
+<area shape="rect" id="Node000010" href="$can__cbs__rx__imd-info_8c.html" title="CAN driver Rx callback implementation." alt="" coords="1616,225,1793,280"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1556,174,1654,223,1651,228,1553,179"/>
+<area shape="rect" id="Node000011" href="$can__cbs__rx__imd-response_8c.html" title="CAN driver Rx callback implementation." alt="" coords="1817,225,1995,280"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="1603,170,1807,223,1818,226,1816,231,1805,228,1601,175"/>
+<area shape="rect" id="Node000012" href="$bender__iso165c_8h.html" title="Headers for the driver for the insulation monitoring." alt="" coords="1389,225,1591,280"/>
+<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="1493,184,1493,225,1487,225,1487,184"/>
+<area shape="poly" id="edge13_Node000012_Node000008" title=" " alt="" coords="1435,289,1365,330,1363,325,1433,284"/>
+</map>

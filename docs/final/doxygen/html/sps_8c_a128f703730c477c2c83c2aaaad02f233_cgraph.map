@@ -1,0 +1,7 @@
+<map id="SPS_Initialize" name="SPS_Initialize">
+<area shape="rect" id="Node000001" title="Initialize IOs for the SPS driver." alt="" coords="5,5,115,31"/>
+<area shape="rect" id="Node000002" href="$sps_8c.html#a1d5464ca2118b329b74b051e73400a9e" title=" " alt="" coords="163,5,284,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,15,149,15,149,21,115,21"/>
+<area shape="rect" id="Node000003" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="332,5,416,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="284,15,318,15,318,21,284,21"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="MXM_EnableBridgeIc" name="MXM_EnableBridgeIc">
+<area shape="rect" id="Node000001" title="Pulls the shutdown of the bridge IC high." alt="" coords="765,5,924,31"/>
+<area shape="rect" id="Node000002" href="$group__mxm-41b-state-handlers.html#gafed0c8a844b5fa7197d9257b159eca61" title="init state handler" alt="" coords="524,5,717,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="752,21,718,21,718,15,752,15"/>
+<area shape="rect" id="Node000003" href="$mxm__17841b_8c.html#a0ea1ec4dd5b5f45e291edd394772ea46" title="Execute state&#45;machine for the MAX17841B." alt="" coords="300,5,476,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="510,21,476,21,476,15,510,15"/>
+<area shape="rect" id="Node000004" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="163,5,252,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="286,21,252,21,252,15,286,15"/>
+<area shape="rect" id="Node000005" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,5,115,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="149,21,115,21,115,15,149,15"/>
+</map>

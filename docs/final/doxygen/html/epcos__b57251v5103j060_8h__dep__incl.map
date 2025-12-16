@@ -1,0 +1,9 @@
+<map id="foxbms&#45;2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.h" name="foxbms&#45;2/src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.h">
+<area shape="rect" id="Node000001" title="Resistive divider used for measuring temperature." alt="" coords="265,5,465,60"/>
+<area shape="rect" id="Node000002" href="$epcos__b57251v5103j060_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="5,115,205,170"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,68,170,118,168,113,288,63"/>
+<area shape="rect" id="Node000003" href="$epcos__b57251v5103j060__lookup-table_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="229,108,501,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="368,74,368,108,363,108,363,74"/>
+<area shape="rect" id="Node000004" href="$epcos__b57251v5103j060__polynomial_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="525,108,789,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="450,62,567,105,566,110,448,67"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="foxbms&#45;2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_balancing.h" name="foxbms&#45;2/src/app/driver/afe/adi/common/ades183x/adi_ades183x_balancing.h">
+<area shape="rect" id="Node000001" title="Headers for the driver for the ADI analog front&#45;end." alt="" coords="100,5,299,60"/>
+<area shape="rect" id="Node000002" href="$adi__ades1830__balancing_8c.html" title="Implementation of helpers for the balancing functionality." alt="" coords="5,108,183,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,72,123,110,120,106,160,68"/>
+<area shape="rect" id="Node000003" href="$adi__ades183x_8c.html" title="Driver for the ADI analog front&#45;end." alt="" coords="207,108,405,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,68,280,106,276,110,235,72"/>
+</map>

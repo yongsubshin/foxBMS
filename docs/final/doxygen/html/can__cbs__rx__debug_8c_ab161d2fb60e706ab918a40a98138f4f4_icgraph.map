@@ -1,0 +1,7 @@
+<map id="CANRX_CheckIfUptimeInfoIsRequested" name="CANRX_CheckIfUptimeInfoIsRequested">
+<area shape="rect" id="Node000001" title="Check if the OS time information is requested." alt="" coords="445,5,653,45"/>
+<area shape="rect" id="Node000002" href="$can__cbs__rx__debug_8c.html#a27ed03b832aef3c5fe838cb6a6029539" title="Parses CAN message to handle OS time information requests." alt="" coords="171,13,397,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="432,28,398,28,398,23,432,23"/>
+<area shape="rect" id="Node000003" href="$can__cbs__rx__debug_8c.html#a84497271094adbc56d3660ee37d154a8" title="CAN Rx callback function for debug messages." alt="" coords="5,13,123,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="157,28,123,28,123,23,157,23"/>
+</map>

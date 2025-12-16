@@ -1,0 +1,17 @@
+<map id="MXM_5XHandle41BErrorState" name="MXM_5XHandle41BErrorState">
+<area shape="rect" id="Node000001" title="handles the error of the underlying state&#45;machine (by resetting it and counting the error)" alt="" coords="779,55,993,80"/>
+<area shape="rect" id="Node000002" href="$mxm__battery__management_8c.html#ade338957069ff6f62cdfbfcebffc270a" title="Handle the state MXM_STATEMACH_5X_INIT." alt="" coords="531,5,716,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="804,55,691,33,692,28,805,49"/>
+<area shape="rect" id="Node000006" href="$mxm__battery__management_8c.html#a1df234e14c5b40e2798364aebc9e19f9" title="Handle the state MXM_STATEMACH_5X_READALL." alt="" coords="516,55,731,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="765,70,731,70,731,65,765,65"/>
+<area shape="rect" id="Node000007" href="$mxm__battery__management_8c.html#a8338520796dd87a45d39dd40a035e3bd" title="Handle the states MXM_STATEMACH_5X_WRITEALL and MXM_STATEMACH_5X_WRITE_DEVICE." alt="" coords="524,104,723,129"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="805,85,692,107,691,101,804,80"/>
+<area shape="rect" id="Node000003" href="$mxm__battery__management_8c.html#a325538715bf432ee4826598277aa29e3" title="Execute state&#45;machine for Battery Management Protocol." alt="" coords="300,55,468,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="548,36,447,57,446,52,547,31"/>
+<area shape="rect" id="Node000004" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="163,55,252,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="286,70,252,70,252,65,286,65"/>
+<area shape="rect" id="Node000005" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,55,115,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="149,70,115,70,115,65,149,65"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="502,70,468,70,468,65,502,65"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="547,104,446,83,447,77,548,99"/>
+</map>

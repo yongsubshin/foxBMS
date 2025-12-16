@@ -1,0 +1,5 @@
+<map id="AFE_RequestBalancingFeedbackRead" name="AFE_RequestBalancingFeedbackRead">
+<area shape="rect" id="Node000001" title="Makes the request to the AFE state machine to read balancing feedback from the slaves." alt="" coords="5,5,272,31"/>
+<area shape="rect" id="Node000002" href="$nxp__mc33775a__afe_8c.html#ad2774c4afeaa88e81aafa83ef20588f0" title=" " alt="" coords="320,5,588,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="272,15,307,15,307,21,272,21"/>
+</map>

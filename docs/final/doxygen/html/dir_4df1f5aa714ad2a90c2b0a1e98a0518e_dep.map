@@ -1,0 +1,13 @@
+<map id="foxbms&#45;2/src/app/driver/afe/maxim/api" name="foxbms&#45;2/src/app/driver/afe/maxim/api">
+<area shape="rect" id="node1" href="dir_9da6bcc85f53075c45197cdb005a5a6c.html" title="common" alt="" coords="27,125,106,151"/>
+<area shape="rect" id="node2" href="dir_4df1f5aa714ad2a90c2b0a1e98a0518e.html" title="api" alt="" coords="64,52,107,77"/>
+<area shape="poly" id="edge3" href="dir_000014_000035.html" alt="" coords="85,78,76,113,71,112,80,77"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000014_000035.html" title="3" alt="" coords="78,103,87,117"/>
+<area shape="rect" id="node3" href="dir_89464cd7eded11447c4ce742c656a21c.html" title="api" alt="" coords="131,125,173,151"/>
+<area shape="poly" id="edge1" href="dir_000014_000010.html" alt="" coords="98,76,134,113,130,117,94,79"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000014_000010.html" title="1" alt="" coords="130,99,140,114"/>
+<area shape="rect" id="node4" href="dir_8c767f16b6c7e5a34d3bc7011370babd.html" title="task" alt="" coords="197,125,248,151"/>
+<area shape="poly" id="edge2" href="dir_000014_000149.html" alt="" coords="108,75,190,117,187,121,106,79"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000014_000149.html" title="1" alt="" coords="184,102,193,117"/>
+<area shape="rect" id="clust1" href="dir_697ef71a22d69100dff6b70362b766fd.html" title="maxim" alt="" coords="16,16,117,161"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="SYS_SetStateRequest" name="SYS_SetStateRequest">
+<area shape="rect" id="Node000001" title="sets the current state request of the state variable sys_state." alt="" coords="5,55,167,80"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="227,5,383,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,52,234,31,235,36,144,57"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="231,55,378,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,65,217,65,217,70,167,70"/>
+<area shape="rect" id="Node000004" href="$sys_8c.html#abe94ec8e767122865bf71427127378de" title="Checks the state requests that are made." alt="" coords="215,104,395,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="144,77,235,98,234,104,142,83"/>
+</map>

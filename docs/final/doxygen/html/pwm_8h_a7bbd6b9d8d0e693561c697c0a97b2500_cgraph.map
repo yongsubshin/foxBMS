@@ -1,0 +1,7 @@
+<map id="PWM_StartPwm" name="PWM_StartPwm">
+<area shape="rect" id="Node000001" title="Start the PWM (starts all configured ePWM channels)" alt="" coords="5,31,131,56"/>
+<area shape="rect" id="Node000002" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="193,5,347,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,33,179,27,180,32,131,38"/>
+<area shape="rect" id="Node000003" href="$fsystem_8h.html#af23205627be1616c6b1dcdb684060322" title="Switch back to user mode." alt="" coords="179,55,361,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,48,166,52,165,58,130,53"/>
+</map>

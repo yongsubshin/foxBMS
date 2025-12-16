@@ -1,0 +1,45 @@
+<map id="LTC_ConvertMuxVoltagesToTemperatures" name="LTC_ConvertMuxVoltagesToTemperatures">
+<area shape="rect" id="Node000001" title="converts a raw voltage from multiplexer to a temperature value in deci °C." alt="" coords="5,399,205,439"/>
+<area shape="rect" id="Node000002" href="$vishay__ntcle413e2103f102l__lookup-table_8c.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="253,407,408,432"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,417,240,417,240,422,206,422"/>
+<area shape="rect" id="Node000003" href="$epcos__b57251v5103j060_8c.html#a60e7e40bc4662b44093a0a2b464bd395" title="returns temperature based on measured ADC voltage" alt="" coords="459,5,701,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="329,406,333,341,349,242,364,188,386,134,416,84,454,41,462,36,465,40,458,45,420,87,391,137,369,190,354,244,338,342,335,407"/>
+<area shape="rect" id="Node000005" href="$epcos__b57251v5103j060_8c.html#a22b8fc0a39278f0c1a61c1cca7482b5a" title="returns temperature based on measured ADC voltage" alt="" coords="469,55,691,95"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="330,406,338,351,358,270,374,225,395,182,421,141,454,105,460,101,463,105,458,109,426,144,400,184,379,227,363,271,344,352,336,407"/>
+<area shape="rect" id="Node000006" href="$epcos__b57861s0103f045_8c.html#a8bb26a9001e051fc2fee6ba77027b1b6" title="returns temperature based on measured ADC voltage" alt="" coords="459,120,701,145"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="331,406,342,358,363,290,380,253,400,217,425,184,454,156,464,149,467,154,458,160,429,188,404,220,384,256,368,292,347,360,337,407"/>
+<area shape="rect" id="Node000007" href="$epcos__b57861s0103f045_8c.html#a3aca9a6a710bb21efc1a5d4ccf49b3e0" title="returns temperature based on measured ADC voltage" alt="" coords="469,170,691,210"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="334,405,348,369,373,318,408,265,430,241,454,220,462,215,465,219,458,224,434,245,413,268,378,321,353,371,339,407"/>
+<area shape="rect" id="Node000008" href="$fake__none_8c.html#a8519235f1cb368c712566dc0a6615a8a" title="returns a fake temperature" alt="" coords="459,235,701,260"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="337,405,380,340,414,302,455,270,470,263,472,267,457,275,418,306,384,343,341,408"/>
+<area shape="rect" id="Node000009" href="$fake__none_8c.html#a8d502a27efdeb0f048997819e3ae4fc4" title="returns a fake temperature" alt="" coords="469,285,691,325"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="346,404,393,370,455,334,474,327,476,332,457,339,396,374,349,409"/>
+<area shape="rect" id="Node000010" href="$murata__ncxxxxh103_8c.html#a0e6cfeee0f7fdf5504234ed54ddfc9b7" title="returns temperature based on measured ADC voltage." alt="" coords="458,349,702,375"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="378,404,455,385,500,375,501,380,457,390,380,409"/>
+<area shape="rect" id="Node000011" href="$murata__ncxxxxh103_8c.html#a255c099fbd405cdc3b51c39a415c18e3" title="returns temperature based on measured ADC voltage" alt="" coords="468,399,692,439"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="408,417,455,417,455,422,408,422"/>
+<area shape="rect" id="Node000012" href="$semitec__103jt_8c.html#a26f93447be1d7882e16a9624be22ab0f" title="returns temperature based on measured ADC voltage" alt="" coords="456,464,704,489"/>
+<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="380,429,457,449,501,459,500,464,455,454,378,435"/>
+<area shape="rect" id="Node000013" href="$tdk__ntcgs103jf103ft8_8c.html#aa87a3225637583d135a53de72818b094" title="returns temperature based on measured ADC voltage" alt="" coords="459,513,701,539"/>
+<area shape="poly" id="edge15_Node000002_Node000013" title=" " alt="" coords="349,430,396,464,457,498,483,507,481,512,455,503,393,469,346,434"/>
+<area shape="rect" id="Node000014" href="$tdk__ntcg163jx103dt1s_8c.html#a8f3cc23e54dd363ac0b643c4dfefef0e" title="returns temperature based on measured ADC voltage" alt="" coords="459,563,701,588"/>
+<area shape="poly" id="edge17_Node000002_Node000014" title=" " alt="" coords="342,431,386,488,419,521,457,548,475,556,472,561,455,552,416,525,382,492,338,434"/>
+<area shape="rect" id="Node000015" href="$vishay__ntcalug01a103g_8c.html#a865b7c323eb0bdbd7420518e6b56cede" title="returns temperature based on measured ADC voltage." alt="" coords="461,612,699,637"/>
+<area shape="poly" id="edge19_Node000002_Node000015" title=" " alt="" coords="339,431,354,465,379,511,414,558,435,579,457,597,470,604,468,609,455,602,431,583,410,561,375,514,350,468,334,433"/>
+<area shape="rect" id="Node000016" href="$vishay__ntcalug01a103g_8c.html#a47e088f4023835e56cac22e035c66be8" title="returns temperature based on measured ADC voltage" alt="" coords="471,662,689,702"/>
+<area shape="poly" id="edge21_Node000002_Node000016" title=" " alt="" coords="338,431,350,473,374,531,409,594,432,622,458,647,467,653,464,658,454,651,428,626,405,597,369,534,345,475,333,433"/>
+<area shape="rect" id="Node000017" href="$vishay__ntcle317e4103sba_8c.html#ae917bb4796f0f8fa36201dbd92aae38c" title="returns temperature based on measured ADC voltage." alt="" coords="461,727,699,752"/>
+<area shape="poly" id="edge22_Node000002_Node000017" title=" " alt="" coords="336,432,344,485,364,561,380,602,401,643,426,680,458,712,466,718,463,722,454,716,422,684,396,646,375,605,359,563,339,486,331,433"/>
+<area shape="rect" id="Node000018" href="$vishay__ntcle413e2103f102l_8c.html#aaad7430280f6c4d6add34f90b3ef8159" title="returns temperature based on measured ADC voltage." alt="" coords="461,776,699,801"/>
+<area shape="poly" id="edge24_Node000002_Node000018" title=" " alt="" coords="335,432,340,492,358,582,374,631,395,679,423,723,458,761,465,767,462,771,454,765,418,726,390,681,369,633,353,583,335,493,330,432"/>
+<area shape="rect" id="Node000004" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="752,513,943,539"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="687,29,706,41,752,94,786,155,812,221,830,287,841,352,847,411,850,500,844,500,842,412,836,353,825,289,807,222,782,157,747,97,702,45,684,33"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="686,143,706,156,743,194,773,239,796,287,815,337,837,430,847,499,842,500,832,431,810,338,792,289,768,242,739,198,702,160,683,148"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="673,372,705,385,744,411,779,442,831,501,827,504,776,446,741,415,703,390,672,377"/>
+<area shape="poly" id="edge14_Node000012_Node000004" title=" " alt="" coords="650,487,765,508,764,513,649,492"/>
+<area shape="poly" id="edge16_Node000013_Node000004" title=" " alt="" coords="702,523,738,523,738,529,702,529"/>
+<area shape="poly" id="edge18_Node000014_Node000004" title=" " alt="" coords="649,560,764,539,765,544,650,565"/>
+<area shape="poly" id="edge20_Node000015_Node000004" title=" " alt="" coords="659,609,703,597,762,571,813,543,815,548,765,576,705,602,660,614"/>
+<area shape="poly" id="edge23_Node000017_Node000004" title=" " alt="" coords="677,724,703,712,747,675,784,631,812,587,832,550,837,553,817,590,788,634,751,679,705,716,679,729"/>
+<area shape="poly" id="edge25_Node000018_Node000004" title=" " alt="" coords="679,774,703,761,729,739,753,713,791,654,819,597,836,551,841,553,824,599,796,657,757,716,733,743,705,766,681,778"/>
+</map>

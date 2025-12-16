@@ -1,0 +1,9 @@
+<map id="SPI_SetFunctional" name="SPI_SetFunctional">
+<area shape="rect" id="Node000001" title="Sets the functional of a SPI pin." alt="" coords="584,5,721,31"/>
+<area shape="rect" id="Node000002" href="$mxm__cfg_8c.html#a417b5a6e2fac6c926405a19edcc4c378" title="Initialize the pins connected to the MAX17841B." alt="" coords="321,5,536,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="570,21,536,21,536,15,570,15"/>
+<area shape="rect" id="Node000003" href="$mxm__afe_8c.html#ab03833bf09e30722e8ef6b9e90cc353d" title=" " alt="" coords="163,5,273,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="308,21,274,21,274,15,308,15"/>
+<area shape="rect" id="Node000004" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,5,115,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,21,115,21,115,15,149,15"/>
+</map>

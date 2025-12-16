@@ -1,0 +1,19 @@
+<map id="foxbms&#45;2/src/app/application/bal/history" name="foxbms&#45;2/src/app/application/bal/history">
+<area shape="rect" id="node1" href="dir_fb45b8ef3bb71f1c32c56733d446a8d1.html" title="history" alt="" coords="165,52,232,77"/>
+<area shape="rect" id="node2" href="dir_088e4610e51ce7f112c14923c6dcfdc4.html" title="bms" alt="" coords="5,125,56,151"/>
+<area shape="poly" id="edge1" href="dir_000078_000027.html" alt="" coords="173,80,70,123,68,118,171,75"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000078_000027.html" title="1" alt="" coords="72,119,81,134"/>
+<area shape="rect" id="node3" href="dir_121a590e55326b59558b37f44168378c.html" title="config" alt="" coords="80,125,141,151"/>
+<area shape="poly" id="edge2" href="dir_000078_000039.html" alt="" coords="186,79,137,119,134,114,183,75"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000078_000039.html" title="2" alt="" coords="140,113,149,128"/>
+<area shape="rect" id="node4" href="dir_3819707b9b31c7a9319bee80f394bcbf.html" title="engine" alt="" coords="165,125,232,151"/>
+<area shape="poly" id="edge3" href="dir_000078_000066.html" alt="" coords="201,78,201,112,196,112,196,78"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000078_000066.html" title="1" alt="" coords="202,100,212,114"/>
+<area shape="rect" id="node5" href="dir_67706edb091acfe0a053ec295e8da531.html" title="algorithm" alt="" coords="256,125,341,151"/>
+<area shape="poly" id="edge4" href="dir_000078_000008.html" alt="" coords="216,75,273,115,270,119,213,80"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000078_000008.html" title="1" alt="" coords="268,100,277,115"/>
+<area shape="rect" id="node6" href="dir_8c767f16b6c7e5a34d3bc7011370babd.html" title="task" alt="" coords="365,125,416,151"/>
+<area shape="poly" id="edge5" href="dir_000078_000149.html" alt="" coords="230,75,353,120,351,125,229,80"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000078_000149.html" title="1" alt="" coords="346,106,355,120"/>
+<area shape="rect" id="clust1" href="dir_7df791c9414b2a4ff2fe5aaa57bf8e81.html" title="bal" alt="" coords="155,16,243,88"/>
+</map>

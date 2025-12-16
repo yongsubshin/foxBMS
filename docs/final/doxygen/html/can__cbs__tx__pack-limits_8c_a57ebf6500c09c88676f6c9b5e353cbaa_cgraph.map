@@ -1,0 +1,5 @@
+<map id="CANTX_CalculateMaximumBatteryVoltage" name="CANTX_CalculateMaximumBatteryVoltage">
+<area shape="rect" id="Node000001" title="Calculates the return value of the maximum battery voltage." alt="" coords="5,5,255,45"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="303,13,497,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,23,289,23,289,28,255,28"/>
+</map>

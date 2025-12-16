@@ -1,0 +1,5 @@
+<map id="MXM_ErrorHandlerReset" name="MXM_ErrorHandlerReset">
+<area shape="rect" id="Node000001" title="This error handler is used as a last resort and tries a reset of the complete driver." alt="" coords="5,5,187,31"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="235,5,369,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,15,221,15,221,21,187,21"/>
+</map>

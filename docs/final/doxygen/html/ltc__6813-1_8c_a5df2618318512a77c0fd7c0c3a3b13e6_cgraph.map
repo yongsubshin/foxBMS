@@ -1,0 +1,5 @@
+<map id="LTC_CheckPec" name="LTC_CheckPec">
+<area shape="rect" id="Node000001" title="checks if the data received from the daisy&#45;chain is not corrupt." alt="" coords="5,5,120,31"/>
+<area shape="rect" id="Node000002" href="$ltc__pec_8c.html#afb47d1f12f35878bf9100c024fb821cc" title="calculates the PEC15" alt="" coords="168,5,319,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,15,154,15,154,21,120,21"/>
+</map>

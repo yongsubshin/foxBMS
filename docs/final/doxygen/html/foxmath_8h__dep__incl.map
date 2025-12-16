@@ -1,0 +1,79 @@
+<map id="foxbms&#45;2/src/app/driver/foxmath/foxmath.h" name="foxbms&#45;2/src/app/driver/foxmath/foxmath.h">
+<area shape="rect" id="Node000001" title="Math library for often used math functions." alt="" coords="4259,5,4437,45"/>
+<area shape="rect" id="Node000002" href="$soc__counting_8c.html" title="SOC module responsible for calculation of SOC." alt="" coords="5,101,216,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="4246,29,3424,32,2166,40,1521,49,944,60,493,76,334,85,228,96,193,103,192,98,228,91,334,80,493,71,944,55,1521,43,2166,35,3424,26,4246,24"/>
+<area shape="rect" id="Node000003" href="$soe__counting_8c.html" title="SOE module responsible for calculation of SOE." alt="" coords="240,101,451,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="4246,30,3465,32,2282,42,1676,50,1134,62,712,77,562,86,463,96,427,103,426,98,462,91,562,81,711,72,1134,57,1676,45,2282,37,3465,27,4246,24"/>
+<area shape="rect" id="Node000004" href="$sof__trapezoid_8c.html" title="SOF modules responsible for current derating calculation." alt="" coords="475,101,690,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="4246,30,3509,34,2401,44,1835,53,1330,64,935,78,796,87,703,96,667,103,665,98,702,91,795,81,935,73,1329,59,1835,47,2401,39,3509,28,4246,24"/>
+<area shape="rect" id="Node000005" href="$bms_8c.html" title="Bms driver implementation." alt="" coords="715,108,925,148"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="4246,30,3551,34,2517,45,1990,54,1520,65,1154,79,1024,87,938,96,875,111,874,105,937,91,1023,82,1153,74,1520,60,1990,48,2517,40,3551,29,4245,24"/>
+<area shape="rect" id="Node000006" href="$plausibility_8c.html" title="Plausibility checks for cell voltage and cell temperatures." alt="" coords="949,108,1160,148"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="4246,30,3594,35,2634,47,1711,67,1372,80,1252,88,1172,96,1110,111,1109,105,1172,91,1252,82,1372,75,1711,61,2633,41,3594,30,4246,25"/>
+<area shape="rect" id="Node000007" href="$redundancy_8c.html" title="Source file for handling redundancy between redundant cell voltage and cell temperature measurements." alt="" coords="1184,108,1395,148"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="4245,30,3636,36,2750,48,1902,68,1591,81,1407,96,1345,111,1344,105,1406,91,1590,76,1902,63,2750,43,3636,31,4245,25"/>
+<area shape="rect" id="Node000008" href="$soa_8c.html" title="SOA module responsible for checking battery parameters against safety limits." alt="" coords="1419,108,1629,148"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="4246,30,3681,37,2868,50,2093,70,1809,82,1642,96,1579,111,1578,105,1641,91,1809,77,2093,64,2868,45,3680,32,4246,25"/>
+<area shape="rect" id="Node000009" href="$mxm__registry_8c.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="1654,101,1850,155"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="4245,30,3721,37,2978,51,2272,70,2014,82,1862,96,1829,103,1828,98,1861,91,2014,77,2272,65,2978,45,3721,32,4245,25"/>
+<area shape="rect" id="Node000010" href="$nxp__mc33775a__measurement_8c.html" title="Measurement functions of the MC33775A analog front&#45;end driver." alt="" coords="1874,101,2081,155"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="4245,29,3806,30,3183,37,2858,45,2553,57,2291,74,2092,96,2058,103,2057,98,2092,91,2290,69,2553,52,2858,40,3183,32,3806,24,4245,24"/>
+<area shape="rect" id="Node000011" href="$can__cbs__rx__imd-info_8c.html" title="CAN driver Rx callback implementation." alt="" coords="2105,101,2282,155"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="4246,29,3842,29,3277,36,2984,44,2709,57,2472,73,2294,96,2264,103,2263,98,2293,91,2472,68,2708,51,2983,39,3277,31,3842,24,4246,23"/>
+<area shape="rect" id="Node000012" href="$can__cbs__rx__imd-response_8c.html" title="CAN driver Rx callback implementation." alt="" coords="2306,101,2483,155"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="4245,29,3877,31,3372,40,3110,48,2865,60,2655,76,2496,96,2466,103,2465,98,2496,91,2655,70,2865,55,3110,43,3372,35,3877,26,4245,24"/>
+<area shape="rect" id="Node000013" href="$can__cbs__tx__debug-build-configuration_8c.html" title="CAN driver Tx callback implementation." alt="" coords="2508,101,2764,155"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="4246,31,3929,38,3505,51,3084,70,2909,82,2776,96,2735,103,2735,98,2776,91,2909,77,3084,65,3505,45,3929,33,4246,26"/>
+<area shape="rect" id="Node000014" href="$can__cbs__tx__debug-response_8c.html" title="Implementation for handling the transmit of debug response messages." alt="" coords="2789,101,2982,155"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="4246,31,3969,37,3607,50,3252,69,3105,81,2994,96,2962,103,2961,98,2993,91,3105,76,3252,63,3607,44,3968,32,4245,26"/>
+<area shape="rect" id="Node000015" href="$can__cbs__tx__bms-state_8c.html" title="CAN driver Tx callback implementation." alt="" coords="3006,101,3183,155"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="4246,32,4007,39,3705,52,3410,71,3289,83,3197,96,3167,103,3165,98,3195,91,3288,77,3410,66,3704,47,4007,34,4246,27"/>
+<area shape="rect" id="Node000016" href="$can__cbs__tx__cell-temperatures_8c.html" title="CAN driver Tx callback implementation." alt="" coords="3208,101,3413,155"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="4245,30,4086,34,3882,44,3654,64,3538,78,3426,96,3393,103,3392,98,3425,91,3538,73,3653,58,3881,39,4086,28,4245,24"/>
+<area shape="rect" id="Node000017" href="$can__cbs__tx__cell-voltages_8c.html" title="CAN driver Tx callback implementation." alt="" coords="3438,101,3615,155"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="4246,31,4120,37,3965,48,3796,67,3627,96,3599,103,3598,98,3626,91,3795,62,3965,43,4120,32,4246,26"/>
+<area shape="rect" id="Node000018" href="$can__cbs__tx__pack-limits_8c.html" title="CAN driver Tx callback implementation." alt="" coords="3639,101,3817,155"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="4246,37,4051,57,3939,74,3829,96,3801,103,3800,98,3827,91,3938,69,4050,52,4245,31"/>
+<area shape="rect" id="Node000019" href="$can__cbs__tx__pack-minimum-maximum-values_8c.html" title="CAN driver Tx callback implementation." alt="" coords="3841,93,4090,163"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="4264,51,4091,97,4090,91,4263,46"/>
+<area shape="rect" id="Node000020" href="$can__cbs__tx__pack-state-estimation_8c.html" title="CAN driver Tx callback implementation." alt="" coords="4114,101,4347,155"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="4317,56,4263,102,4260,98,4314,52"/>
+<area shape="rect" id="Node000021" href="$can__cbs__tx__pack-values-p0_8c.html" title="CAN driver Tx callback implementation." alt="" coords="4371,101,4559,155"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="4382,52,4436,98,4433,102,4379,56"/>
+<area shape="rect" id="Node000022" href="$can__cbs__tx__pack-values-p1_8c.html" title="CAN driver Tx callback implementation." alt="" coords="4583,101,4771,155"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="4426,47,4573,91,4596,98,4594,103,4571,96,4424,52"/>
+<area shape="rect" id="Node000023" href="$can__cbs__tx__string-minimum-maximum-values_8c.html" title="CAN driver Tx callback implementation." alt="" coords="4795,93,4978,163"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="4451,35,4609,57,4785,91,4796,94,4794,99,4783,96,4608,62,4450,40"/>
+<area shape="rect" id="Node000024" href="$can__cbs__tx__string-state-estimation_8c.html" title="CAN driver Tx callback implementation." alt="" coords="5002,101,5241,155"/>
+<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="4451,30,4698,51,4845,68,4991,91,5027,98,5026,103,4990,96,4844,73,4697,56,4450,35"/>
+<area shape="rect" id="Node000025" href="$can__cbs__tx__string-values-p0_8c.html" title="CAN driver Tx callback implementation." alt="" coords="5265,101,5460,155"/>
+<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="4451,24,4607,28,4808,38,5031,58,5144,72,5254,91,5285,98,5284,103,5253,96,5143,78,5030,63,4807,43,4607,33,4451,29"/>
+<area shape="rect" id="Node000026" href="$foxmath_8c.html" title="Mathlib function implementations." alt="" coords="5485,108,5662,148"/>
+<area shape="poly" id="edge25_Node000001_Node000026" title=" " alt="" coords="4450,27,4978,47,5264,66,5382,78,5473,91,5526,105,5524,111,5471,96,5382,83,5264,71,4978,53,4450,32"/>
+<area shape="rect" id="Node000027" href="$pwm_8c.html" title="Implementation of the PWM module." alt="" coords="5686,108,5863,148"/>
+<area shape="poly" id="edge26_Node000001_Node000027" title=" " alt="" coords="4450,26,4722,31,5075,43,5422,63,5566,75,5675,91,5728,105,5726,110,5674,96,5565,81,5422,68,5075,49,4722,37,4450,31"/>
+<area shape="rect" id="Node000028" href="$rtc_8c.html" title="Implementation of the RTC driver." alt="" coords="5887,108,6065,148"/>
+<area shape="poly" id="edge27_Node000001_Node000028" title=" " alt="" coords="4451,25,4760,29,5172,40,5579,59,5748,73,5877,91,5930,105,5928,111,5875,96,5748,79,5579,65,5171,45,4760,34,4450,30"/>
+<area shape="rect" id="Node000029" href="$beta_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="6089,108,6266,148"/>
+<area shape="poly" id="edge28_Node000001_Node000029" title=" " alt="" coords="4451,24,4796,27,5267,36,5509,45,5736,56,5930,71,6078,91,6131,105,6130,110,6077,96,5930,77,5735,62,5509,50,5266,42,4796,32,4450,29"/>
+<area shape="rect" id="Node000030" href="$epcos__b57251v5103j060_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="6291,101,6491,155"/>
+<area shape="poly" id="edge29_Node000001_Node000030" title=" " alt="" coords="4450,24,4832,27,5361,36,5635,44,5891,56,6112,71,6279,91,6313,98,6312,103,6278,96,6112,76,5891,61,5635,50,5360,41,4832,32,4450,29"/>
+<area shape="rect" id="Node000031" href="$epcos__b57861s0103f045_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="6515,101,6715,155"/>
+<area shape="poly" id="edge30_Node000001_Node000031" title=" " alt="" coords="4450,24,4871,25,5465,33,5774,41,6064,53,6314,69,6503,91,6537,98,6536,103,6502,96,6314,74,6064,58,5774,46,5465,38,4871,30,4450,29"/>
+<area shape="rect" id="Node000032" href="$murata__ncxxxxh103_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="6739,101,6917,155"/>
+<area shape="poly" id="edge31_Node000001_Node000032" title=" " alt="" coords="4450,25,4954,32,5664,45,6336,64,6582,77,6727,91,6758,98,6757,103,6726,96,6581,82,6336,70,5664,50,4954,37,4450,30"/>
+<area shape="rect" id="Node000033" href="$semitec__103jt_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="6941,101,7128,155"/>
+<area shape="poly" id="edge32_Node000001_Node000033" title=" " alt="" coords="4450,25,4992,31,5766,44,6501,64,6770,76,6930,91,6962,98,6960,103,6929,96,6770,81,6501,69,5765,49,4992,37,4450,30"/>
+<area shape="rect" id="Node000034" href="$tdk__ntcg163jx103dt1s_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="7153,101,7335,155"/>
+<area shape="poly" id="edge33_Node000001_Node000034" title=" " alt="" coords="4450,25,5032,30,5871,42,6673,62,6967,75,7140,91,7173,98,7171,103,7140,96,6966,80,6673,67,5871,47,5032,35,4450,30"/>
+<area shape="rect" id="Node000035" href="$tdk__ntcgs103jf103ft8_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="7359,101,7537,155"/>
+<area shape="poly" id="edge34_Node000001_Node000035" title=" " alt="" coords="4450,24,5070,29,5975,40,6434,48,6842,59,7161,73,7273,82,7348,91,7379,98,7378,103,7348,96,7273,87,7160,79,6842,65,6434,54,5975,45,5070,34,4450,30"/>
+<area shape="rect" id="Node000036" href="$vishay__ntcalug01a103g_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="7561,101,7754,155"/>
+<area shape="poly" id="edge35_Node000001_Node000036" title=" " alt="" coords="4450,24,5107,29,6075,40,6567,48,7006,59,7348,73,7469,82,7550,91,7583,98,7582,103,7549,96,7469,87,7348,79,7006,65,6567,54,6075,45,5107,34,4450,30"/>
+<area shape="rect" id="Node000037" href="$vishay__ntcle317e4103sba_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="7779,101,7987,155"/>
+<area shape="poly" id="edge36_Node000001_Node000037" title=" " alt="" coords="4450,24,5147,29,6183,40,6711,48,7182,59,7550,73,7680,82,7767,91,7803,98,7802,103,7766,96,7680,87,7550,79,7182,65,6711,53,6183,45,5146,34,4450,30"/>
+<area shape="rect" id="Node000038" href="$vishay__ntcle413e2103f102l_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="8011,101,8229,155"/>
+<area shape="poly" id="edge37_Node000001_Node000038" title=" " alt="" coords="4450,24,5189,28,6298,39,6865,47,7371,59,7766,73,7906,81,7999,91,8036,98,8035,103,7998,96,7906,87,7766,78,7371,64,6865,53,6298,44,5189,34,4450,30"/>
+<area shape="rect" id="Node000039" href="$main_8c.html" title="Main function." alt="" coords="8254,108,8426,148"/>
+<area shape="poly" id="edge38_Node000001_Node000039" title=" " alt="" coords="4450,24,5232,25,6419,32,7026,40,7569,52,7992,69,8142,79,8242,91,8295,105,8293,110,8241,96,8142,84,7992,74,7569,58,7026,46,6419,38,5232,30,4450,29"/>
+</map>

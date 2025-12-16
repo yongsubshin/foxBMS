@@ -1,0 +1,5 @@
+<map id="DATA_BLOCK_CELL_TEMPERATURE_s" name="DATA_BLOCK_CELL_TEMPERATURE_s">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,93,268,119"/>
+<area shape="rect" id="Node000002" href="$structDATA__BLOCK__HEADER__s.html" title=" " alt="" coords="45,5,228,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,45,139,93,134,93,134,45"/>
+</map>

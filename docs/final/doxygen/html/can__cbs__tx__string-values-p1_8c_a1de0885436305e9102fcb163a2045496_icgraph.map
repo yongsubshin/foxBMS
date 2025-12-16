@@ -1,0 +1,5 @@
+<map id="CANTX_SetStringEnergyCounter" name="CANTX_SetStringEnergyCounter">
+<area shape="rect" id="Node000001" title="sets energy counter value in StringP1 message" alt="" coords="224,5,453,31"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__string-values-p1_8c.html#aed865b536556677801d5a134c23b4026" title="CAN Tx callback function for string values 2." alt="" coords="5,5,176,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,21,176,21,176,15,210,15"/>
+</map>

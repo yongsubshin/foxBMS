@@ -1,0 +1,9 @@
+<map id="CANTX_SetOtherErrorFlags" name="CANTX_SetOtherErrorFlags">
+<area shape="rect" id="Node000001" title="Reads error flags and sets the corresponding bits for the can message." alt="" coords="5,35,203,60"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a8cecd87914decc2e130d2a117ea6c92a" title="Transform a bool to a bit (set if true)" alt="" coords="251,5,472,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,33,237,30,237,35,203,39"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="255,55,468,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,55,242,60,241,65,202,61"/>
+<area shape="rect" id="Node000004" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="520,63,743,88"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="468,73,506,73,506,78,468,78"/>
+</map>

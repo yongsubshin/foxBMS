@@ -1,0 +1,7 @@
+<map id="foxbms&#45;2/src/app/driver/afe/debug/default/debug_default.h" name="foxbms&#45;2/src/app/driver/afe/debug/default/debug_default.h">
+<area shape="rect" id="Node000001" title="Header for the driver of the fake AFE driver." alt="" coords="104,5,289,60"/>
+<area shape="rect" id="Node000002" href="$debug__default__afe_8c.html" title="Implementation of the fake AFE driver." alt="" coords="5,108,183,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,72,123,110,119,106,158,68"/>
+<area shape="rect" id="Node000003" href="$debug__default_8c.html" title="Driver implementation for the fake AFE." alt="" coords="207,108,392,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,68,274,106,271,110,231,72"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="ADI_GetRequest" name="ADI_GetRequest">
+<area shape="rect" id="Node000001" title="Checks the requests made to the ades183x driver." alt="" coords="5,5,133,31"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#a285b22d2ef1448cae22a8965b5fec186" title="Receive an item from a queue." alt="" coords="181,5,356,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,15,168,15,168,21,133,21"/>
+</map>

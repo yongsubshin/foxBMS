@@ -1,0 +1,47 @@
+<map id="CANTX_BuildPackStateEstimationMessage" name="CANTX_BuildPackStateEstimationMessage">
+<area shape="rect" id="Node000001" title="Builds the CAN message form signal data." alt="" coords="5,203,247,243"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="315,23,529,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,201,213,151,293,97,355,66,357,71,296,102,216,155,153,205"/>
+<area shape="rect" id="Node000004" href="$can__cbs__tx__pack-state-estimation_8c.html#aa5edaf1dc2fd8915eb45cc9add01618a" title="Calculates the return value of the maximum SOC." alt="" coords="295,112,549,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="164,201,224,173,294,146,325,138,326,143,295,151,226,177,167,206"/>
+<area shape="rect" id="Node000009" href="$can__cbs__tx__pack-state-estimation_8c.html#a39d77a2c9b8649fdc78e3dce2efba9a8" title="Calculates the return value of the maximum SOE." alt="" coords="295,161,549,187"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="246,201,331,186,332,192,247,206"/>
+<area shape="rect" id="Node000011" href="$can__cbs__tx__pack-state-estimation_8c.html#acf67b53da1e0af5dfe22af1634dde445" title="Calculates the return value of the minimum SOC." alt="" coords="297,211,547,236"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="247,221,283,221,283,226,247,226"/>
+<area shape="rect" id="Node000013" href="$can__cbs__tx__pack-state-estimation_8c.html#a724933b5c4adf72802692b1dd519382e" title="Calculates the return value of the minimum SOE." alt="" coords="297,260,547,285"/>
+<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="247,241,332,255,331,260,246,246"/>
+<area shape="rect" id="Node000015" href="$can__cbs__tx__pack-state-estimation_8c.html#a12495eab724895df6dfd4e841dc56d1a" title="Calculates the return value of the stored Energy." alt="" coords="317,309,527,335"/>
+<area shape="poly" id="edge23_Node000001_Node000015" title=" " alt="" coords="168,241,227,268,295,294,332,304,330,309,294,299,225,273,166,246"/>
+<area shape="rect" id="Node000017" href="$can__cbs__tx__pack-state-estimation_8c.html#a80d095da91bcfb77c5ebbd3b7dde5ff8" title="Calculates the return value of the SOH." alt="" coords="327,359,517,384"/>
+<area shape="poly" id="edge27_Node000001_Node000017" title=" " alt="" coords="150,241,212,293,253,321,296,344,320,352,318,357,294,348,250,325,209,297,146,245"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="599,5,821,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="529,31,585,26,585,32,529,37"/>
+<area shape="rect" id="Node000005" href="$bms_8c.html#a95febd341b208a988bb0462e81febca8" title="Returns number of connected strings." alt="" coords="601,154,819,194"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="497,135,588,150,587,156,496,140"/>
+<area shape="rect" id="Node000006" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="613,268,807,293"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="532,135,551,147,564,160,571,173,576,201,581,228,588,241,599,253,608,259,604,264,596,257,583,244,576,230,571,202,566,175,559,163,548,151,530,140"/>
+<area shape="rect" id="Node000007" href="$can__cbs__tx__pack-state-estimation_8c.html#a7208460e9369587719dbde2d75671839" title="Gets the highest string SOC percentage from all connected Strings." alt="" coords="598,55,822,80"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="486,109,632,80,633,85,487,115"/>
+<area shape="rect" id="Node000008" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="871,161,1021,187"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="790,78,824,89,877,119,921,151,918,155,874,123,822,94,788,83"/>
+<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="550,171,588,171,588,177,550,177"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="526,184,551,196,567,210,576,225,584,240,599,253,614,261,611,265,596,258,580,243,571,228,563,213,548,200,524,189"/>
+<area shape="rect" id="Node000010" href="$can__cbs__tx__pack-state-estimation_8c.html#a9960e3a1e2ab2d8ca8636374eeb49aea" title="Gets the highest string SOE percentage from all connected Strings." alt="" coords="597,104,823,129"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="486,159,632,129,633,135,487,164"/>
+<area shape="poly" id="edge12_Node000010_Node000008" title=" " alt="" coords="770,127,823,139,885,155,884,160,822,145,769,132"/>
+<area shape="poly" id="edge14_Node000011_Node000005" title=" " alt="" coords="496,208,587,192,588,198,497,213"/>
+<area shape="poly" id="edge15_Node000011_Node000006" title=" " alt="" coords="492,233,550,245,636,263,635,268,549,250,491,239"/>
+<area shape="rect" id="Node000012" href="$can__cbs__tx__pack-state-estimation_8c.html#aafe1cddfa5d77da5e19a643c19811613" title="Gets the lowest string SOC percentage from all connected Strings." alt="" coords="600,219,820,244"/>
+<area shape="poly" id="edge16_Node000011_Node000012" title=" " alt="" coords="548,224,587,225,587,231,548,229"/>
+<area shape="poly" id="edge17_Node000012_Node000008" title=" " alt="" coords="769,216,822,203,884,188,885,193,823,209,770,221"/>
+<area shape="poly" id="edge19_Node000013_Node000005" title=" " alt="" coords="514,257,548,245,562,236,572,225,581,214,596,204,610,197,612,202,599,208,585,218,576,229,566,240,551,250,516,262"/>
+<area shape="poly" id="edge20_Node000013_Node000006" title=" " alt="" coords="548,273,599,275,599,280,548,279"/>
+<area shape="rect" id="Node000014" href="$can__cbs__tx__pack-state-estimation_8c.html#a68c548bd86ab5ab37a7e9010a0548ddb" title="Gets the lowest string SOE percentage from all connected Strings." alt="" coords="599,317,821,343"/>
+<area shape="poly" id="edge21_Node000013_Node000014" title=" " alt="" coords="492,283,550,294,636,312,635,317,549,299,491,288"/>
+<area shape="poly" id="edge22_Node000014_Node000008" title=" " alt="" coords="793,315,821,302,854,279,883,251,927,197,931,200,887,254,858,283,824,307,795,320"/>
+<area shape="poly" id="edge24_Node000015_Node000005" title=" " alt="" coords="526,307,548,295,558,284,565,274,571,251,578,227,595,204,602,199,605,203,599,208,582,230,576,253,570,276,563,288,551,299,528,312"/>
+<area shape="poly" id="edge25_Node000015_Node000006" title=" " alt="" coords="510,307,607,293,608,298,511,312"/>
+<area shape="rect" id="Node000016" href="$can__cbs__tx__pack-state-estimation_8c.html#aa3fe8ee0fef7310ad0885167267845bb" title="Gets the lowest energy value in Wh from all connected Strings." alt="" coords="620,367,800,392"/>
+<area shape="poly" id="edge26_Node000015_Node000016" title=" " alt="" coords="492,332,550,343,636,361,635,366,549,349,491,337"/>
+<area shape="poly" id="edge28_Node000017_Node000006" title=" " alt="" coords="514,356,548,344,562,334,571,324,581,313,596,302,613,295,615,300,599,307,585,317,575,327,566,338,551,348,516,361"/>
+</map>

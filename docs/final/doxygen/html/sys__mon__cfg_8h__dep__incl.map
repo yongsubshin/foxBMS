@@ -1,0 +1,21 @@
+<map id="foxbms&#45;2/src/app/engine/config/sys_mon_cfg.h" name="foxbms&#45;2/src/app/engine/config/sys_mon_cfg.h">
+<area shape="rect" id="Node000001" title="Configuration of the system monitoring module." alt="" coords="311,5,493,45"/>
+<area shape="rect" id="Node000002" href="$sys__mon__cfg_8c.html" title="Configuration of the system monitoring module." alt="" coords="88,93,271,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="341,53,229,96,227,91,340,48"/>
+<area shape="rect" id="Node000003" href="$diag__cbs__sys-mon_8c.html" title="Diagnosis driver implementation." alt="" coords="295,93,509,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="405,59,405,93,399,93,399,59"/>
+<area shape="rect" id="Node000004" href="$sys__mon_8h.html" title="System monitoring module." alt="" coords="533,93,716,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="464,48,577,91,575,96,463,53"/>
+<area shape="rect" id="Node000005" href="$can__cbs__rx__bms-state-request_8c.html" title="CAN driver Rx callback implementation." alt="" coords="5,181,183,236"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="520,136,355,158,284,168,195,184,183,186,182,181,193,179,283,163,354,153,519,131"/>
+<area shape="rect" id="Node000006" href="$can__cbs__tx__bms-state-details_8c.html" title="CAN driver Tx callback implementation." alt="" coords="207,181,411,236"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="548,140,398,184,397,179,547,135"/>
+<area shape="rect" id="Node000007" href="$can__cbs__tx__bms-state_8c.html" title="CAN driver Tx callback implementation." alt="" coords="435,181,612,236"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="596,145,554,183,550,179,592,141"/>
+<area shape="rect" id="Node000008" href="$sys__mon_8c.html" title="System monitoring module." alt="" coords="636,189,819,229"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="657,141,708,187,705,191,654,145"/>
+<area shape="rect" id="Node000009" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="843,189,1009,229"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="700,135,866,186,864,191,698,140"/>
+<area shape="rect" id="Node000010" href="$ftask_8c.html" title="Implementation of OS&#45;independent task creators." alt="" coords="1033,189,1200,229"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="730,127,870,149,1023,179,1052,186,1051,191,1021,184,869,154,730,132"/>
+</map>

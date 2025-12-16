@@ -1,0 +1,7 @@
+<map id="CANTX_DebugResponseSendMessage" name="CANTX_DebugResponseSendMessage">
+<area shape="rect" id="Node000001" title="Sets the can data and sends the message." alt="" coords="5,31,275,56"/>
+<area shape="rect" id="Node000002" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="397,5,517,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,30,384,21,384,26,275,35"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="323,55,592,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="275,51,309,53,309,59,275,56"/>
+</map>

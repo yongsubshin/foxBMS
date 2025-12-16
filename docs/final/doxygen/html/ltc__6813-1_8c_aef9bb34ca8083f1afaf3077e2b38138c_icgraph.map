@@ -1,0 +1,7 @@
+<map id="LTC_SetEepromReadCommand" name="LTC_SetEepromReadCommand">
+<area shape="rect" id="Node000001" title="configures the data that will be sent to the LTC daisy&#45;chain to read EEPROM on slaves." alt="" coords="429,5,652,31"/>
+<area shape="rect" id="Node000002" href="$ltc__6813-1_8c.html#aab5393dbbf131697c9f2a99caa455bc2" title="sends data to the LTC daisy&#45;chain to read EEPROM on slaves." alt="" coords="148,5,381,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="415,21,382,21,382,15,415,15"/>
+<area shape="rect" id="Node000003" href="$ltc__6813-1_8c.html#acf30d82064c640d2c4f36cd270c0647b" title="trigger function for the LTC driver state machine." alt="" coords="5,5,100,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,21,100,21,100,15,134,15"/>
+</map>

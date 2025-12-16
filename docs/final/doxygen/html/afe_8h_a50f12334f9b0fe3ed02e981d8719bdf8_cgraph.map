@@ -1,0 +1,17 @@
+<map id="AFE_RequestBalancingFeedbackRead" name="AFE_RequestBalancingFeedbackRead">
+<area shape="rect" id="Node000001" title="Makes the request to the AFE state machine to read balancing feedback from the slaves." alt="" coords="5,104,272,129"/>
+<area shape="rect" id="Node000002" href="$ltc__6806_8c.html#a4bb4d1d651bd80b2151b62d35e3a2699" title="sets the current state request of the state variable ltc_state." alt="" coords="375,55,533,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,101,361,79,361,84,221,107"/>
+<area shape="rect" id="Node000006" href="$nxp__mc33775a__afe_8c.html#ad2774c4afeaa88e81aafa83ef20588f0" title=" " alt="" coords="320,104,588,129"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="272,114,307,114,307,119,272,119"/>
+<area shape="rect" id="Node000007" href="$ti__dummy__afe_8c.html#a4f83679f1a8c2c4da48918532f2463e4" title="This function is used to wrap the TI AFE measurement API to the generic AFE measurement API." alt="" coords="327,153,581,179"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="221,127,359,149,358,154,220,132"/>
+<area shape="rect" id="Node000003" href="$ltc__6806_8c.html#a42d4f8653843aeee6f118782dfff2c20" title="checks the state requests that are made." alt="" coords="689,5,868,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="533,53,680,30,681,35,534,58"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="701,55,857,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="534,65,686,65,686,70,534,70"/>
+<area shape="rect" id="Node000005" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="705,104,852,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="534,77,692,101,691,106,533,82"/>
+<area shape="rect" id="Node000008" href="$ti__dummy_8c.html#a43e91a14daba8fccc75f69fadbd326d5" title=" " alt="" coords="636,153,921,179"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="581,163,622,163,622,169,581,169"/>
+</map>

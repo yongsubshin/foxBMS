@@ -1,0 +1,9 @@
+<map id="BAL_ProcessStateBalancing" name="BAL_ProcessStateBalancing">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,208,80"/>
+<area shape="rect" id="Node000002" href="$bal__strategy__history_8c.html#a41534350feec71da2d825e837d332716" title=" " alt="" coords="256,5,428,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,52,267,31,268,36,168,57"/>
+<area shape="rect" id="Node000003" href="$bal__strategy__history_8c.html#a9f236a369bc16aa1bb4428e5ef0b0417" title=" " alt="" coords="257,55,427,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,65,244,65,244,70,208,70"/>
+<area shape="rect" id="Node000004" href="$bal__strategy__history_8c.html#ab608144bd63e5fa96224e95cec7a3fb3" title="Deactivates history based balancing." alt="" coords="279,104,405,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="168,77,268,98,267,104,167,83"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="TS_Tdk00GetTemperatureFromLut" name="TS_Tdk00GetTemperatureFromLut">
+<area shape="rect" id="Node000001" title="returns temperature based on measured ADC voltage" alt="" coords="5,5,248,31"/>
+<area shape="rect" id="Node000002" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="296,5,487,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,15,282,15,282,21,248,21"/>
+</map>

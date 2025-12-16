@@ -1,0 +1,9 @@
+<map id="foxbms&#45;2/src/app/driver/ts/fake/none/fake_none.h" name="foxbms&#45;2/src/app/driver/ts/fake/none/fake_none.h">
+<area shape="rect" id="Node000001" title="Fake temperature sensor header." alt="" coords="219,5,409,45"/>
+<area shape="rect" id="Node000002" href="$fake__none_8c.html" title="Fake temperature sensor." alt="" coords="5,101,193,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,53,144,103,142,98,257,48"/>
+<area shape="rect" id="Node000003" href="$fake__none__lookup-table_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="218,93,410,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="317,59,317,93,311,93,311,59"/>
+<area shape="rect" id="Node000004" href="$fake__none__polynomial_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="434,93,618,148"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="370,48,467,91,465,96,368,53"/>
+</map>

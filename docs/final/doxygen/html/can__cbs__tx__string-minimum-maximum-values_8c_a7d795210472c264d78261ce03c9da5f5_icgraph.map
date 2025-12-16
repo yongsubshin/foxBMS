@@ -1,0 +1,5 @@
+<map id="CANTX_BuildStringMessage" name="CANTX_BuildStringMessage">
+<area shape="rect" id="Node000001" title="Adds the data to the message about the string values." alt="" coords="293,13,496,38"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__string-minimum-maximum-values_8c.html#ad0e0cd9e1c7e2886297146cb417b2534" title="CAN Tx callback function for string minimum and maximum values." alt="" coords="5,5,245,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,28,246,28,246,23,280,23"/>
+</map>

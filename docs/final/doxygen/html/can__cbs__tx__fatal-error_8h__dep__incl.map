@@ -1,0 +1,7 @@
+<map id="foxbms&#45;2/src/app/driver/can/cbs/tx&#45;async/can_cbs_tx_fatal&#45;error.h" name="foxbms&#45;2/src/app/driver/can/cbs/tx&#45;async/can_cbs_tx_fatal&#45;error.h">
+<area shape="rect" id="Node000001" title="Declarations for handling the transmit of the fatal error messages." alt="" coords="107,5,284,60"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__fatal-error_8c.html" title="CAN driver Tx callback implementation." alt="" coords="5,108,183,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,72,122,110,119,106,157,68"/>
+<area shape="rect" id="Node000003" href="$diag_8c.html" title="Diagnosis driver implementation." alt="" coords="207,115,389,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,68,280,113,276,117,230,72"/>
+</map>

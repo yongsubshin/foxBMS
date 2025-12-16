@@ -1,0 +1,9 @@
+<map id="LTC_SetStateRequest" name="LTC_SetStateRequest">
+<area shape="rect" id="Node000001" title="sets the current state request of the state variable ltc_state." alt="" coords="5,55,164,80"/>
+<area shape="rect" id="Node000002" href="$ltc__6813-1_8c.html#a42d4f8653843aeee6f118782dfff2c20" title="checks the state requests that are made." alt="" coords="212,5,391,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,52,231,31,232,36,142,57"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="223,55,379,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,65,210,65,210,70,164,70"/>
+<area shape="rect" id="Node000004" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="228,104,375,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="142,77,232,98,231,104,141,83"/>
+</map>

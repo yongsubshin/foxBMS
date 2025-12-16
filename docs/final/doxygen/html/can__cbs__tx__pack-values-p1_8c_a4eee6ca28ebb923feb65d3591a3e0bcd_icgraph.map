@@ -1,0 +1,5 @@
+<map id="CANTX_SetInsulationResistance" name="CANTX_SetInsulationResistance">
+<area shape="rect" id="Node000001" title="sets the message data with signal data of insulation resistance" alt="" coords="216,5,447,31"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__pack-values-p1_8c.html#af7685b0ac6f21ad6f485aa84915eda9b" title="CAN Tx callback function for pack values values." alt="" coords="5,5,168,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,21,168,21,168,15,202,15"/>
+</map>

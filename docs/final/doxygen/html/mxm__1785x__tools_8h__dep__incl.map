@@ -1,0 +1,21 @@
+<map id="foxbms&#45;2/src/app/driver/afe/maxim/common/mxm_1785x_tools.h" name="foxbms&#45;2/src/app/driver/afe/maxim/common/mxm_1785x_tools.h">
+<area shape="rect" id="Node000001" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="409,5,605,60"/>
+<area shape="rect" id="Node000002" href="$mxm__1785x_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="228,211,424,265"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="448,69,422,88,399,110,379,135,363,161,338,211,334,209,358,159,375,131,395,106,419,84,445,65"/>
+<area shape="rect" id="Node000003" href="$mxm__1785x_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="137,108,333,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="425,67,307,110,305,105,423,62"/>
+<area shape="rect" id="Node000005" href="$mxm__17852_8c.html" title="Operation state machine implementation for the MAX17852." alt="" coords="449,211,657,265"/>
+<area shape="poly" id="edge11_Node000001_Node000005" title=" " alt="" coords="581,65,603,84,620,107,628,135,620,164,606,190,586,212,582,209,601,187,616,162,623,135,616,109,599,87,578,70"/>
+<area shape="rect" id="Node000006" href="$mxm__1785x__tools_8c.html" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="681,108,877,163"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="592,62,709,105,708,110,590,67"/>
+<area shape="rect" id="Node000007" href="$mxm__registry_8h.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="409,108,605,163"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="510,74,510,108,505,108,505,74"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="270,171,304,209,300,212,266,175"/>
+<area shape="rect" id="Node000004" href="$mxm__afe_8c.html" title="AFE driver implementation." alt="" coords="5,218,204,258"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="192,173,131,220,128,216,189,169"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="332,164,471,208,469,213,330,169"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="449,172,375,213,372,208,447,167"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="527,174,543,209,538,212,522,176"/>
+<area shape="rect" id="Node000008" href="$mxm__registry_8c.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="681,211,877,265"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="592,165,709,208,708,213,590,170"/>
+</map>

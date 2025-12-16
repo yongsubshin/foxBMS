@@ -1,0 +1,13 @@
+<map id="CANTX_SetBatteryCellMuxMaxChargeTemperatureMessageData" name="CANTX_SetBatteryCellMuxMaxChargeTemperatureMessageData">
+<area shape="rect" id="Node000001" title="Adds the data to the message." alt="" coords="1381,5,1620,45"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__debug-build-configuration_8c.html#adc6961f29b491d179a992a9a4a65552e" title="Sends the battery cell configuration message." alt="" coords="1067,13,1333,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1367,28,1334,28,1334,23,1367,23"/>
+<area shape="rect" id="Node000003" href="$can__cbs__tx__debug-build-configuration_8c.html#a1042700f43eb3145e31bdac91c393271" title="Sends the configuration of the software build." alt="" coords="783,13,1019,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1053,28,1019,28,1019,23,1053,23"/>
+<area shape="rect" id="Node000004" href="$can__cbs__rx__debug_8c.html#a88c4c5e2666a9441b4fd8f346cdd1a86" title="Triggers sending of the build configuration message." alt="" coords="496,5,735,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="769,28,735,28,735,23,769,23"/>
+<area shape="rect" id="Node000005" href="$can__cbs__rx__debug_8c.html#a717a6bb12396c023260e8016558c0571" title="Parses CAN message to handle version related messages." alt="" coords="171,13,448,38"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="482,28,448,28,448,23,482,23"/>
+<area shape="rect" id="Node000006" href="$can__cbs__rx__debug_8c.html#a84497271094adbc56d3660ee37d154a8" title="CAN Rx callback function for debug messages." alt="" coords="5,13,123,38"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="157,28,123,28,123,23,157,23"/>
+</map>

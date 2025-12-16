@@ -1,0 +1,7 @@
+<map id="foxbms&#45;2/src/app/driver/can/cbs/tx&#45;async/can_cbs_tx_imd&#45;request.h" name="foxbms&#45;2/src/app/driver/can/cbs/tx&#45;async/can_cbs_tx_imd&#45;request.h">
+<area shape="rect" id="Node000001" title="Declarations for handling the transmit of imd request messages." alt="" coords="23,5,200,60"/>
+<area shape="rect" id="Node000002" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="5,108,108,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,62,74,98,69,95,92,59"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="132,108,203,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,59,154,95,150,98,126,62"/>
+</map>

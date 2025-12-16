@@ -1,0 +1,9 @@
+<map id="ILCK_InitializePins" name="ILCK_InitializePins">
+<area shape="rect" id="Node000001" title="Initializes required pins for interlock evaluation." alt="" coords="5,55,147,80"/>
+<area shape="rect" id="Node000002" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="245,5,345,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,52,231,30,232,35,134,57"/>
+<area shape="rect" id="Node000003" href="$io_8c.html#a4452aca029d9f953533657f6d3ed58c7" title="Set pin to input by writing in pin direction register." alt="" coords="200,55,391,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,65,187,65,187,70,147,70"/>
+<area shape="rect" id="Node000004" href="$io_8c.html#a41154d1d77ad0873d462c803ce831f68" title="Set pin to output by writing in pin direction register." alt="" coords="195,104,396,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,77,225,98,224,104,133,83"/>
+</map>

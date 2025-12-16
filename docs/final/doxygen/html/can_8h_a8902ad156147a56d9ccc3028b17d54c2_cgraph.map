@@ -1,0 +1,5 @@
+<map id="CAN_ReadRxBuffer" name="CAN_ReadRxBuffer">
+<area shape="rect" id="Node000001" title="Checks the data received per CAN. A receive buffer is used because CAN frames are received in an inte..." alt="" coords="5,5,152,31"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#a285b22d2ef1448cae22a8965b5fec186" title="Receive an item from a queue." alt="" coords="200,5,375,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,15,186,15,186,21,152,21"/>
+</map>

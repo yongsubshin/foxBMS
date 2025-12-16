@@ -1,0 +1,14 @@
+<map id="MXM_41BConfigRegisterWrite" name="MXM_41BConfigRegisterWrite">
+<area shape="rect" id="Node000001" title="Write the config register of MAX17841B." alt="" coords="779,35,996,60"/>
+<area shape="rect" id="Node000002" href="$group__mxm-41b-state-handlers.html#gafed0c8a844b5fa7197d9257b159eca61" title="init state handler" alt="" coords="531,5,724,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="764,36,724,32,724,26,765,31"/>
+<area shape="rect" id="Node000006" href="$group__mxm-41b-state-handlers.html#gabb3eaec950481073e72929edfaf87144" title="state handler for &quot;write conf and int register&quot;" alt="" coords="524,55,731,95"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="765,63,731,67,731,62,765,58"/>
+<area shape="rect" id="Node000003" href="$mxm__17841b_8c.html#a0ea1ec4dd5b5f45e291edd394772ea46" title="Execute state&#45;machine for the MAX17841B." alt="" coords="300,35,476,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="517,34,476,39,476,34,517,29"/>
+<area shape="rect" id="Node000004" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="163,35,252,60"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="286,50,252,50,252,45,286,45"/>
+<area shape="rect" id="Node000005" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,35,115,60"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="149,50,115,50,115,45,149,45"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="510,64,476,60,477,55,511,59"/>
+</map>

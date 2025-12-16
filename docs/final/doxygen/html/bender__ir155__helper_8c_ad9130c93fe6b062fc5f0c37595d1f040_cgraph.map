@@ -1,0 +1,11 @@
+<map id="IR155_GetMeasurementValues" name="IR155_GetMeasurementValues">
+<area shape="rect" id="Node000001" title="Interface function which delivers the actual signal measurement (duty cycle) and evaluation...." alt="" coords="5,80,228,105"/>
+<area shape="rect" id="Node000002" href="$bender__ir155__helper_8c.html#ab701b6c5240b2203342c1de5a9c6681b" title="Calculate insulation resistance from measured duty cycle." alt="" coords="295,5,493,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,77,275,39,311,31,312,36,277,45,155,82"/>
+<area shape="rect" id="Node000003" href="$bender__ir155__helper_8c.html#aed6c211947fd52248508353dbb92a6f3" title="Determines frequency&#45;dependent measurement state." alt="" coords="287,55,501,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="228,80,273,76,273,81,228,85"/>
+<area shape="rect" id="Node000004" href="$bender__ir155__helper_8c.html#a04b9c7e05e1414e76bf855da89113cf2" title="Check if passed duty cycle is within interval limits." alt="" coords="276,104,512,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="228,100,263,103,262,108,228,105"/>
+<area shape="rect" id="Node000005" href="$pwm_8c.html#aa1270c042e32f24252ff3fc65e2c41e9" title="Get dutycycle and frequency of input PWM signal." alt="" coords="320,153,468,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="157,103,277,138,317,148,316,153,275,143,156,108"/>
+</map>

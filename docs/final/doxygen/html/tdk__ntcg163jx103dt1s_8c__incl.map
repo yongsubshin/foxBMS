@@ -1,0 +1,28 @@
+<map id="foxbms&#45;2/src/app/driver/ts/tdk/ntcg163jx103dt1s/tdk_ntcg163jx103dt1s.c" name="foxbms&#45;2/src/app/driver/ts/tdk/ntcg163jx103dt1s/tdk_ntcg163jx103dt1s.c">
+<area shape="rect" id="Node000001" title="Resistive divider used for measuring temperature." alt="" coords="285,5,467,60"/>
+<area shape="rect" id="Node000002" href="$tdk__ntcg163jx103dt1s_8h.html" title="Resistive divider used for measuring temperature." alt="" coords="5,115,184,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,63,143,114,141,109,296,58"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="239,196,310,221"/>
+<area shape="poly" id="edge16_Node000001_Node000003" title=" " alt="" coords="302,62,272,82,249,109,244,127,245,146,261,183,256,185,240,148,238,127,244,107,269,78,299,58"/>
+<area shape="rect" id="Node000004" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="259,115,338,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="356,62,319,106,315,103,352,59"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="335,196,417,221"/>
+<area shape="poly" id="edge15_Node000001_Node000005" title=" " alt="" coords="379,60,379,183,373,183,373,60"/>
+<area shape="rect" id="Node000006" href="$foxmath_8h.html" title="Math library for often used math functions." alt="" coords="643,115,733,141"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="464,58,637,109,636,114,463,63"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="561,196,629,221"/>
+<area shape="poly" id="edge14_Node000001_Node000007" title=" " alt="" coords="468,43,499,52,530,66,558,83,582,106,592,124,598,144,600,182,595,182,593,145,588,126,578,110,555,88,527,70,497,57,467,48"/>
+<area shape="rect" id="Node000010" href="$temperature__sensor__defs_8h.html" title="TODO." alt="" coords="414,108,567,148"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="410,58,459,97,455,101,407,62"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="122,138,237,188,235,193,120,143"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="298,142,285,183,280,182,293,140"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="312,139,357,184,353,188,308,143"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="643,140,324,199,323,193,642,135"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="676,143,621,189,617,185,673,139"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="747,196,810,221"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="703,139,757,185,753,189,700,143"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="653,196,723,221"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="691,141,691,182,685,182,685,141"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="440,151,320,194,318,189,438,146"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="517,146,570,185,567,190,514,150"/>
+</map>

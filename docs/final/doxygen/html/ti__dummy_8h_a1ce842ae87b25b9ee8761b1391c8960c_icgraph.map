@@ -1,0 +1,7 @@
+<map id="TIDUM_RequestTemperatureRead" name="TIDUM_RequestTemperatureRead">
+<area shape="rect" id="Node000001" title=" " alt="" coords="533,5,775,31"/>
+<area shape="rect" id="Node000002" href="$ti__dummy__afe_8c.html#a3be6120964924a44bbe89e00681e0741" title="This function is used to wrap the TI AFE measurement API to the generic AFE measurement API." alt="" coords="276,5,485,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="520,21,486,21,486,15,520,15"/>
+<area shape="rect" id="Node000003" href="$ti__afe_8c.html#a6156d307209cbe933ff3ba53446e829c" title="Makes the request to the AFE state machine to read from the external temperature sensor on slaves." alt="" coords="5,5,228,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="262,21,228,21,228,15,262,15"/>
+</map>

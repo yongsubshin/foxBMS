@@ -1,0 +1,16 @@
+<map id="I2C_Write" name="I2C_Write">
+<area shape="rect" id="Node000001" title="writes to an I2C slave, no register address written first, blocking." alt="" coords="5,46,91,71"/>
+<area shape="rect" id="Node000002" href="$i2c_8c.html#a79b77f8447ee8b71cd04895699df54bb" title="Waits for a stop condition to be detected." alt="" coords="152,21,260,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,49,138,41,139,47,91,55"/>
+<area shape="rect" id="Node000006" href="$i2c_8c.html#a74b8989b1724cc1b675d538a9815861e" title="Waits for the I2C Tx buffer to be empty." alt="" coords="139,70,273,95"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="91,62,125,68,125,73,91,68"/>
+<area shape="rect" id="Node000003" href="$mcu_8c.html#a298a563701c7fc98c1f2750a1a2b8220" title="Get the current value of the Free Running Counter 0 (FRC0)" alt="" coords="524,70,727,95"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="260,30,321,29,399,23,434,22,477,29,502,41,525,55,552,64,550,69,523,60,499,46,475,35,433,28,400,28,321,35,260,35"/>
+<area shape="rect" id="Node000004" href="$mcu_8c.html#af5a3b75b7431935f913d80e31eb99690" title="Checks if a timeout in microseconds has elapsed." alt="" coords="321,45,476,70"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="261,37,308,43,307,49,260,43"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="477,63,511,67,510,72,476,69"/>
+<area shape="rect" id="Node000005" href="$mcu_8c.html#a357da0bcb906f4ad573ed0d4244dd0a2" title="Convert the counter value FRC0 to a time in microseconds." alt="" coords="527,5,724,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="476,44,513,39,513,44,477,49"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="273,80,510,80,510,85,273,85"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="273,71,307,67,308,72,274,76"/>
+</map>

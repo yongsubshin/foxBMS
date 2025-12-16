@@ -1,0 +1,9 @@
+<map id="CANTX_GetMaximumStringSoe" name="CANTX_GetMaximumStringSoe">
+<area shape="rect" id="Node000001" title="Gets the highest string SOE percentage from all connected Strings." alt="" coords="853,13,1079,38"/>
+<area shape="rect" id="Node000002" href="$can__cbs__tx__pack-state-estimation_8c.html#a39d77a2c9b8649fdc78e3dce2efba9a8" title="Calculates the return value of the maximum SOE." alt="" coords="551,13,805,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="839,28,805,28,805,23,839,23"/>
+<area shape="rect" id="Node000003" href="$can__cbs__tx__pack-state-estimation_8c.html#a848828fc23f873a07e1a10a66c81d13d" title="Builds the CAN message form signal data." alt="" coords="261,5,503,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="537,28,503,28,503,23,537,23"/>
+<area shape="rect" id="Node000004" href="$can__cbs__tx__pack-state-estimation_8c.html#a2dfad7483a1eea790a47c16a30d35bc4" title="CAN Tx callback function for state estimation values." alt="" coords="5,13,213,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="248,28,214,28,214,23,248,23"/>
+</map>

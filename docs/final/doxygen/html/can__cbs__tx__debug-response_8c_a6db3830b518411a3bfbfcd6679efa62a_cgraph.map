@@ -1,0 +1,9 @@
+<map id="CANTX_TransmitMcuWaferInformation" name="CANTX_TransmitMcuWaferInformation">
+<area shape="rect" id="Node000001" title="Transmit the MCU&#39;s wafer information." alt="" coords="5,42,276,67"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="324,5,537,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,39,310,35,310,40,267,45"/>
+<area shape="rect" id="Node000004" href="$mcu_8c.html#a969249ea4d57714941adddd11bc3e02c" title="Read out device register with die ID low." alt="" coords="359,70,502,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="272,65,346,72,346,77,272,70"/>
+<area shape="rect" id="Node000003" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="585,13,808,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="538,23,571,23,571,28,538,28"/>
+</map>

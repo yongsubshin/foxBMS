@@ -1,0 +1,9 @@
+<map id="foxbms&#45;2/src/app/driver/ts/vishay/ntcalug01a103g/vishay_ntcalug01a103g.h" name="foxbms&#45;2/src/app/driver/ts/vishay/ntcalug01a103g/vishay_ntcalug01a103g.h">
+<area shape="rect" id="Node000001" title="Resistive divider used for measuring temperature." alt="" coords="327,5,520,60"/>
+<area shape="rect" id="Node000002" href="$vishay__ntcalug01a103g__lookup-table_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="5,108,271,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="342,67,228,110,226,105,340,62"/>
+<area shape="rect" id="Node000003" href="$vishay__ntcalug01a103g__polynomial_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="295,108,552,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="426,74,426,108,421,108,421,74"/>
+<area shape="rect" id="Node000004" href="$vishay__ntcalug01a103g_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="576,115,769,170"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="498,63,613,113,611,118,496,68"/>
+</map>

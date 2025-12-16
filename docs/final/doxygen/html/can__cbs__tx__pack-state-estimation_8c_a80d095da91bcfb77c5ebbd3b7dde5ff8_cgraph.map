@@ -1,0 +1,5 @@
+<map id="CANTX_CalculatePackSoh" name="CANTX_CalculatePackSoh">
+<area shape="rect" id="Node000001" title="Calculates the return value of the SOH." alt="" coords="5,5,195,31"/>
+<area shape="rect" id="Node000002" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="243,5,437,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,15,229,15,229,21,195,21"/>
+</map>

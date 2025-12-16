@@ -1,0 +1,14 @@
+<map id="MXM_ParseVoltageReadAllTest" name="MXM_ParseVoltageReadAllTest">
+<area shape="rect" id="Node000001" title="Test the MXM_ParseVoltageReadAll()&#45;function." alt="" coords="737,29,960,55"/>
+<area shape="rect" id="Node000002" href="$mxm__1785x_8c.html#a22499bf1d575d8d09dc565b966339349" title="Execute all pre&#45;init self&#45;checks." alt="" coords="520,29,689,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="724,45,690,45,690,39,724,39"/>
+<area shape="rect" id="Node000003" href="$mxm__afe_8c.html#ab03833bf09e30722e8ef6b9e90cc353d" title=" " alt="" coords="163,5,273,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="506,39,273,24,274,19,506,33"/>
+<area shape="rect" id="Node000005" href="$mxm__1785x_8c.html#aca60f84fd030e06f1ab2c57ba6bb8e7d" title="Main state&#45;machine implementation." alt="" coords="321,55,472,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="507,57,473,61,472,56,506,51"/>
+<area shape="rect" id="Node000004" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,31,115,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="150,32,115,37,114,32,149,26"/>
+<area shape="rect" id="Node000006" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="173,55,263,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="308,70,263,70,263,65,308,65"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="159,61,115,54,116,49,160,56"/>
+</map>

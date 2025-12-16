@@ -1,0 +1,5 @@
+<map id="ADI_CopyCommandBytesRedundantCellVoltageRegisters" name="ADI_CopyCommandBytesRedundantCellVoltageRegisters">
+<area shape="rect" id="Node000001" title="Copies the related command bytes to read the redundant voltage registers." alt="" coords="5,5,264,45"/>
+<area shape="rect" id="Node000002" href="$adi__ades183x__helpers_8c.html#a0e36ae541215b657993954e49fc835bd" title="copy command bytes in variables." alt="" coords="312,13,501,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,23,298,23,298,28,264,28"/>
+</map>

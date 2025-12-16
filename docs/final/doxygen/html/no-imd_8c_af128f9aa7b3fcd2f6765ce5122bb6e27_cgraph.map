@@ -1,0 +1,5 @@
+<map id="IMD_ProcessRunningState" name="IMD_ProcessRunningState">
+<area shape="rect" id="Node000001" title="Processes the running state." alt="" coords="5,5,197,31"/>
+<area shape="rect" id="Node000002" href="$no-imd_8c.html#a9d7bbb6571c7a2dd3f22779f7235c493" title="Function to write dummy values into the database." alt="" coords="245,5,440,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,15,232,15,232,21,197,21"/>
+</map>

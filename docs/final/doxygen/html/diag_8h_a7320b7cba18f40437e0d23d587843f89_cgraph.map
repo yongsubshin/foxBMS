@@ -1,0 +1,5 @@
+<map id="DIAG_IsAnyFatalErrorSet" name="DIAG_IsAnyFatalErrorSet">
+<area shape="rect" id="Node000001" title="Check if any fatal error is set." alt="" coords="5,5,187,31"/>
+<area shape="rect" id="Node000002" href="$diag_8c.html#a65aa765236a760639d5401524b876378" title="Checks if passed diagnosis entry has been triggered or not." alt="" coords="235,5,452,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,15,221,15,221,21,187,21"/>
+</map>

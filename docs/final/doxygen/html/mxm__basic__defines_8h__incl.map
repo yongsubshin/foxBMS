@@ -1,0 +1,24 @@
+<map id="foxbms&#45;2/src/app/driver/afe/maxim/common/mxm_basic_defines.h" name="foxbms&#45;2/src/app/driver/afe/maxim/common/mxm_basic_defines.h">
+<area shape="rect" id="Node000001" title="Basic defines for the complete Maxim driver." alt="" coords="217,5,413,60"/>
+<area shape="rect" id="Node000002" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="175,108,337,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="299,62,274,98,269,95,295,59"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="306,401,377,427"/>
+<area shape="poly" id="edge14_Node000001_Node000006" title=" " alt="" coords="347,59,372,84,395,116,413,153,420,192,420,269,414,305,400,339,382,369,364,393,359,389,377,366,395,337,409,304,415,268,415,193,408,154,390,119,367,88,344,62"/>
+<area shape="rect" id="Node000003" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="153,255,236,280"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="264,133,272,167,273,188,268,208,251,231,230,249,227,245,247,228,263,206,268,187,267,168,258,134"/>
+<area shape="rect" id="Node000004" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="21,328,99,353"/>
+<area shape="poly" id="edge11_Node000002_Node000004" title=" " alt="" coords="200,136,154,154,133,167,114,183,92,214,78,250,65,315,59,314,73,248,88,212,110,180,130,162,152,149,198,131"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="19,401,101,427"/>
+<area shape="poly" id="edge12_Node000002_Node000005" title=" " alt="" coords="194,136,141,154,116,167,92,183,58,216,37,247,23,282,11,329,8,341,11,352,22,373,37,390,33,394,18,376,6,354,3,341,5,327,18,280,33,244,54,213,89,179,113,162,139,149,192,131"/>
+<area shape="poly" id="edge13_Node000002_Node000006" title=" " alt="" coords="265,132,288,180,321,295,340,387,335,388,316,296,283,182,260,135"/>
+<area shape="rect" id="Node000008" href="$bms-slave__cfg_8h.html" title="Configuration of the foxBMS BMS&#45;Slave (e.g., value of balancing resistor, input capacitance...." alt="" coords="123,181,253,207"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="247,136,211,173,207,169,243,132"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="174,282,95,324,93,319,172,278"/>
+<area shape="poly" id="edge7_Node000003_Node000005" title=" " alt="" coords="186,282,82,393,78,390,182,279"/>
+<area shape="poly" id="edge8_Node000003_Node000006" title=" " alt="" coords="222,278,257,298,293,326,316,357,333,387,329,390,312,360,289,330,254,302,219,283"/>
+<area shape="rect" id="Node000007" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="175,328,278,353"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="202,279,218,315,214,317,198,281"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="63,354,63,388,57,388,57,354"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="100,349,293,398,292,403,99,355"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="192,207,195,241,190,241,186,207"/>
+</map>

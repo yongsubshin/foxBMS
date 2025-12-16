@@ -1,0 +1,7 @@
+<map id="DATA_Write2DataBlocks" name="DATA_Write2DataBlocks">
+<area shape="rect" id="Node000001" title="Stores two data blocks in database." alt="" coords="5,5,185,31"/>
+<area shape="rect" id="Node000002" href="$database_8c.html#a223139493fd5d48663da58dcf3789b73" title=" " alt="" coords="233,5,448,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,15,220,15,220,21,186,21"/>
+<area shape="rect" id="Node000003" href="$os__freertos_8c.html#abfcdf77954b6a87dca01c31efaf4d0b3" title="Post an item to the back the provided queue." alt="" coords="496,5,679,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="448,15,482,15,482,21,448,21"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="CANRX_SetEnergyCounting" name="CANRX_SetEnergyCounting">
+<area shape="rect" id="Node000001" title="Sets energy counting value in the CAN data shim." alt="" coords="464,5,663,31"/>
+<area shape="rect" id="Node000002" href="$can__cbs__rx__current-sensor_8c.html#a8a12e408a319c062e14dc8d0d19062a1" title="Sets current value in the CAN data shim." alt="" coords="220,5,416,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="451,21,416,21,416,15,451,15"/>
+<area shape="rect" id="Node000003" href="$can__cbs__rx__current-sensor_8c.html#a8eaf16ec181e2a6aca61b37e7c531484" title="CAN Rx callback function for current sensor measurements." alt="" coords="5,5,172,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="206,21,172,21,172,15,206,15"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="TSI_GetTemperature" name="TSI_GetTemperature">
+<area shape="rect" id="Node000001" title="translate a voltage to a temperature" alt="" coords="5,5,160,31"/>
+<area shape="rect" id="Node000002" href="$vishay__ntcalug01a103g_8c.html#a865b7c323eb0bdbd7420518e6b56cede" title="returns temperature based on measured ADC voltage." alt="" coords="208,5,447,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,15,194,15,194,21,161,21"/>
+<area shape="rect" id="Node000003" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="495,5,685,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="447,15,481,15,481,21,447,21"/>
+</map>

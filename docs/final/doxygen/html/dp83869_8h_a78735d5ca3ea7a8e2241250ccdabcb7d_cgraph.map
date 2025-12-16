@@ -1,0 +1,5 @@
+<map id="PHY_AutoNegotiate" name="PHY_AutoNegotiate">
+<area shape="rect" id="Node000001" title="Autonegotiate with the EMAC device connected to the PHY." alt="" coords="5,5,155,31"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#ac05b1cb9c4afb4bd5e14f7e8fbd2bdcd" title="Delay a task for specified time." alt="" coords="203,5,317,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,15,189,15,189,21,155,21"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="MXM_41BStateHandlerClearTransmitBuffer" name="MXM_41BStateHandlerClearTransmitBuffer">
+<area shape="rect" id="Node000001" title="state handler for &quot;clear transmit buffer&quot;" alt="" coords="524,5,731,45"/>
+<area shape="rect" id="Node000002" href="$mxm__17841b_8c.html#a0ea1ec4dd5b5f45e291edd394772ea46" title="Execute state&#45;machine for the MAX17841B." alt="" coords="300,13,476,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="510,28,476,28,476,23,510,23"/>
+<area shape="rect" id="Node000003" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="163,13,252,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="286,28,252,28,252,23,286,23"/>
+<area shape="rect" id="Node000004" href="$mxm__afe_8c.html#a2063387da9ccfeaaac53a07619ca723b" title=" " alt="" coords="5,13,115,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,28,115,28,115,23,149,23"/>
+</map>

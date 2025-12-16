@@ -1,0 +1,5 @@
+<map id="CANRX_SetCoulombCounting" name="CANRX_SetCoulombCounting">
+<area shape="rect" id="Node000001" title="Sets Coulomb counting value in the CAN data shim." alt="" coords="5,5,217,31"/>
+<area shape="rect" id="Node000002" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="265,5,400,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,15,252,15,252,21,218,21"/>
+</map>

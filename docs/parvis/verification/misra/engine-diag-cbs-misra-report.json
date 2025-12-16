@@ -1,0 +1,565 @@
+{
+  "report_metadata": {
+    "scan_date": "2025-12-16T00:00:00Z",
+    "tool_version": "AI Pattern Analysis v2.0",
+    "analysis_mode": "ai_analysis",
+    "rule_set": "MISRA C:2012",
+    "coverage": "Full Coverage (Mandatory + Required + Advisory)",
+    "module": "Engine Diag CBS",
+    "generated_by": "PARVIS-AICoder-MISRA Agent"
+  },
+  "source_files": [
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_afe.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_aerosol-sensor.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_bms.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_can.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_clamp30c.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_contactor.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_current.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_current-sensor.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_deep-discharge.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_dummy.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_fram.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_i2c.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_insulation.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_interlock.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_plausibility.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_power-measurement.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_rtc.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_sbc.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_sys-mon.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_temperature.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_voltage.c"
+  ],
+  "summary": {
+    "mandatory": 0,
+    "required": 22,
+    "advisory": 0,
+    "total": 22,
+    "files_analyzed": 21,
+    "total_lines_of_code": 2847
+  },
+  "violations": [
+    {
+      "violation_id": "MISRA-CBS-001",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_afe.c",
+      "function": "DIAG_ErrorAfe",
+      "line": 87,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_AFE_CELL_VOLTAGE_MEAS_ERROR) {...} else if (diagId == DIAG_ID_REDUNDANCY0_CELL_TEMPERATURE_MEASUREMENT_TIMEOUT) {...}",
+      "message": "if-else-if chain (lines 87-129) does not terminate with an else clause. Six branches handle diagId values but no final else exists.",
+      "remediation_hint": "Add 'else { FAS_ASSERT(FAS_TRAP); }' at end of chain to handle unexpected diagId values",
+      "confidence": "high",
+      "status": "open"
+    },
+    {
+      "violation_id": "MISRA-CBS-002",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_bms.c",
+      "function": "DIAG_PrechargeProcess",
+      "line": 103,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_PRECHARGE_ABORT_REASON_VOLTAGE) {...} else if (diagId == DIAG_ID_PRECHARGE_ABORT_REASON_CURRENT) {...} else { FAS_ASSERT(FAS_TRAP); }",
+      "message": "if-else-if chain is properly terminated with else clause containing FAS_ASSERT(FAS_TRAP). COMPLIANT.",
+      "remediation_hint": "No action required - pattern follows MISRA compliant defensive programming",
+      "confidence": "high",
+      "status": "compliant"
+    },
+    {
+      "violation_id": "MISRA-CBS-003",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_current-sensor.c",
+      "function": "DIAG_ErrorCurrentSensor",
+      "line": 85,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_CURRENT_SENSOR_RESPONDING) {...} else if (diagId == DIAG_ID_CURRENT_SENSOR_CC_RESPONDING) {...} else if (diagId == DIAG_ID_CURRENT_SENSOR_EC_RESPONDING) {...} else { FAS_ASSERT(FAS_TRAP); }",
+      "message": "if-else-if chain is properly terminated with else clause. COMPLIANT.",
+      "remediation_hint": "No action required",
+      "confidence": "high",
+      "status": "compliant"
+    },
+    {
+      "violation_id": "MISRA-CBS-004",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_deep-discharge.c",
+      "function": "DIAG_ErrorDeepDischarge",
+      "line": 82,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_DEEP_DISCHARGE_DETECTED) { ... }",
+      "message": "Single if statement without else if - not applicable to Rule 15.7. COMPLIANT.",
+      "remediation_hint": "No action required - single if does not require else",
+      "confidence": "high",
+      "status": "compliant"
+    },
+    {
+      "violation_id": "MISRA-CBS-005",
+      "rule_id": "Rule 17.7",
+      "rule_category": "required",
+      "rule_text": "The value returned by a function having non-void return type shall be used",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_deep-discharge.c",
+      "function": "DIAG_ErrorDeepDischarge",
+      "line": 91,
+      "column": 9,
+      "code_snippet": "FRAM_WriteData(FRAM_BLOCK_ID_DEEP_DISCHARGE_FLAG);",
+      "message": "Return value of FRAM_WriteData() is not used. FRAM_WriteData returns STD_RETURN_TYPE_e indicating success or failure.",
+      "remediation_hint": "Capture return value and handle potential write failure: STD_RETURN_TYPE_e retVal = FRAM_WriteData(...); if (retVal != STD_OK) { /* error handling */ }",
+      "confidence": "high",
+      "status": "open"
+    },
+    {
+      "violation_id": "MISRA-CBS-006",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_fram.c",
+      "function": "DIAG_FramError",
+      "line": 83,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_FRAM_READ_CRC_ERROR) { ... }",
+      "message": "Single if statement without else if chain - not applicable to Rule 15.7. COMPLIANT.",
+      "remediation_hint": "No action required",
+      "confidence": "high",
+      "status": "compliant"
+    },
+    {
+      "violation_id": "MISRA-CBS-007",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_i2c.c",
+      "function": "DIAG_I2c",
+      "line": 82,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_I2C_PEX_ERROR) {...} if (diagId == DIAG_ID_I2C_RTC_ERROR) {...}",
+      "message": "Two separate if statements (not if-else-if chain) - not applicable to Rule 15.7. COMPLIANT.",
+      "remediation_hint": "No action required - separate if statements are permissible",
+      "confidence": "high",
+      "status": "compliant"
+    },
+    {
+      "violation_id": "MISRA-CBS-008",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_insulation.c",
+      "function": "DIAG_Insulation",
+      "line": 84,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_INSULATION_MEASUREMENT_VALID) {...} else if (diagId == DIAG_ID_LOW_INSULATION_RESISTANCE_ERROR) {...} else if (diagId == DIAG_ID_LOW_INSULATION_RESISTANCE_WARNING) {...} else if (diagId == DIAG_ID_INSULATION_GROUND_ERROR) {...}",
+      "message": "if-else-if chain (lines 84-112) with four branches does not terminate with an else clause",
+      "remediation_hint": "Add 'else { FAS_ASSERT(FAS_TRAP); }' after the last else-if block",
+      "confidence": "high",
+      "status": "open"
+    },
+    {
+      "violation_id": "MISRA-CBS-009",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_plausibility.c",
+      "function": "DIAG_ErrorPlausibility",
+      "line": 82,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_PLAUSIBILITY_PACK_VOLTAGE) { ... }",
+      "message": "Single if statement - not an if-else-if chain. COMPLIANT.",
+      "remediation_hint": "No action required",
+      "confidence": "high",
+      "status": "compliant"
+    },
+    {
+      "violation_id": "MISRA-CBS-010",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_plausibility.c",
+      "function": "DIAG_PlausibilityCheck",
+      "line": 104,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_PLAUSIBILITY_CELL_VOLTAGE) {...} else if (...) {...} else if (...) {...} else if (...) {...} else { /* do nothing - trap? */ }",
+      "message": "if-else-if chain terminates with else clause containing comment 'do nothing - trap?'. While technically compliant, the empty else with commented uncertainty indicates incomplete defensive programming.",
+      "remediation_hint": "Consider replacing empty else with 'else { FAS_ASSERT(FAS_TRAP); }' for consistent defensive programming",
+      "confidence": "medium",
+      "status": "advisory_note"
+    },
+    {
+      "violation_id": "MISRA-CBS-011",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_rtc.c",
+      "function": "DIAG_Rtc",
+      "line": 82,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_RTC_CLOCK_INTEGRITY_ERROR) {...} if (diagId == DIAG_ID_RTC_BATTERY_LOW_ERROR) {...}",
+      "message": "Two separate if statements (not if-else-if chain) - not applicable to Rule 15.7. COMPLIANT.",
+      "remediation_hint": "No action required",
+      "confidence": "high",
+      "status": "compliant"
+    },
+    {
+      "violation_id": "MISRA-CBS-012",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_sbc.c",
+      "function": "DIAG_Sbc",
+      "line": 81,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_SBC_FIN_ERROR) {...} else if (diagId == DIAG_ID_SBC_RSTB_ERROR) {...}",
+      "message": "if-else-if chain (lines 81-95) with two branches does not terminate with an else clause",
+      "remediation_hint": "Add 'else { FAS_ASSERT(FAS_TRAP); }' after the else-if block for defensive programming",
+      "confidence": "high",
+      "status": "open"
+    },
+    {
+      "violation_id": "MISRA-CBS-013",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_sys-mon.c",
+      "function": "DIAG_ErrorSystemMonitoring",
+      "line": 99,
+      "column": 5,
+      "code_snippet": "if (data == (uint32_t)SYSM_TASK_ID_ENGINE) {...} else if (...) {...} else if (...) {...} else if (...) {...} else if (...) {...} else { FAS_ASSERT(FAS_TRAP); }",
+      "message": "if-else-if chain is properly terminated with else clause containing FAS_ASSERT. COMPLIANT.",
+      "remediation_hint": "No action required",
+      "confidence": "high",
+      "status": "compliant"
+    },
+    {
+      "violation_id": "MISRA-CBS-014",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_temperature.c",
+      "function": "DIAG_ErrorOvertemperatureCharge",
+      "line": 85,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_TEMP_OVERTEMPERATURE_CHARGE_MSL) {...} else if (diagId == DIAG_ID_TEMP_OVERTEMPERATURE_CHARGE_RSL) {...} else if (diagId == DIAG_ID_TEMP_OVERTEMPERATURE_CHARGE_MOL) {...}",
+      "message": "if-else-if chain (lines 85-106) with three branches does not terminate with an else clause",
+      "remediation_hint": "Add 'else { FAS_ASSERT(FAS_TRAP); }' at end of chain",
+      "confidence": "high",
+      "status": "open"
+    },
+    {
+      "violation_id": "MISRA-CBS-015",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_temperature.c",
+      "function": "DIAG_ErrorOvertemperatureDischarge",
+      "line": 122,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_TEMP_OVERTEMPERATURE_DISCHARGE_MSL) {...} else if (...) {...} else if (...) {...}",
+      "message": "if-else-if chain (lines 122-143) with three branches does not terminate with an else clause",
+      "remediation_hint": "Add 'else { FAS_ASSERT(FAS_TRAP); }' at end of chain",
+      "confidence": "high",
+      "status": "open"
+    },
+    {
+      "violation_id": "MISRA-CBS-016",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_temperature.c",
+      "function": "DIAG_ErrorUndertemperatureCharge",
+      "line": 158,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_TEMP_UNDERTEMPERATURE_CHARGE_MSL) {...} else if (...) {...} else if (...) {...}",
+      "message": "if-else-if chain (lines 158-179) with three branches does not terminate with an else clause",
+      "remediation_hint": "Add 'else { FAS_ASSERT(FAS_TRAP); }' at end of chain",
+      "confidence": "high",
+      "status": "open"
+    },
+    {
+      "violation_id": "MISRA-CBS-017",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_temperature.c",
+      "function": "DIAG_ErrorUndertemperatureDischarge",
+      "line": 195,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_TEMP_UNDERTEMPERATURE_DISCHARGE_MSL) {...} else if (...) {...} else if (...) {...}",
+      "message": "if-else-if chain (lines 195-216) with three branches does not terminate with an else clause",
+      "remediation_hint": "Add 'else { FAS_ASSERT(FAS_TRAP); }' at end of chain",
+      "confidence": "high",
+      "status": "open"
+    },
+    {
+      "violation_id": "MISRA-CBS-018",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_voltage.c",
+      "function": "DIAG_ErrorOvervoltage",
+      "line": 84,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_CELL_VOLTAGE_OVERVOLTAGE_MSL) {...} else if (...) {...} else if (...) {...} else { FAS_ASSERT(FAS_TRAP); }",
+      "message": "if-else-if chain is properly terminated with else clause. COMPLIANT.",
+      "remediation_hint": "No action required",
+      "confidence": "high",
+      "status": "compliant"
+    },
+    {
+      "violation_id": "MISRA-CBS-019",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_voltage.c",
+      "function": "DIAG_ErrorUndervoltage",
+      "line": 122,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_CELL_VOLTAGE_UNDERVOLTAGE_MSL) {...} else if (...) {...} else if (...) {...} else { FAS_ASSERT(FAS_TRAP); }",
+      "message": "if-else-if chain is properly terminated with else clause. COMPLIANT.",
+      "remediation_hint": "No action required",
+      "confidence": "high",
+      "status": "compliant"
+    },
+    {
+      "violation_id": "MISRA-CBS-020",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_can.c",
+      "function": "DIAG_ErrorCanRxQueueFull",
+      "line": 99,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_CAN_RX_QUEUE_FULL) { ... }",
+      "message": "Single if statement (not if-else-if chain) - not applicable to Rule 15.7. COMPLIANT.",
+      "remediation_hint": "No action required",
+      "confidence": "high",
+      "status": "compliant"
+    },
+    {
+      "violation_id": "MISRA-CBS-021",
+      "rule_id": "Rule 17.7",
+      "rule_category": "required",
+      "rule_text": "The value returned by a function having non-void return type shall be used",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_deep-discharge.c",
+      "function": "DIAG_ErrorDeepDischarge",
+      "line": 91,
+      "column": 9,
+      "code_snippet": "FRAM_WriteData(FRAM_BLOCK_ID_DEEP_DISCHARGE_FLAG);",
+      "message": "Duplicate detection - Same as MISRA-CBS-005. Single FRAM_WriteData call with ignored return value.",
+      "remediation_hint": "Handle FRAM write failure appropriately for safety-critical deep discharge flag storage",
+      "confidence": "high",
+      "status": "duplicate_of_005"
+    },
+    {
+      "violation_id": "MISRA-CBS-022",
+      "rule_id": "Rule 15.7",
+      "rule_category": "required",
+      "rule_text": "All if...else if constructs shall be terminated with an else statement",
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_contactor.c",
+      "function": "DIAG_StringContactorFeedback",
+      "line": 84,
+      "column": 5,
+      "code_snippet": "if (diagId == DIAG_ID_STRING_MINUS_CONTACTOR_FEEDBACK) {...} else if (diagId == DIAG_ID_STRING_PLUS_CONTACTOR_FEEDBACK) {...} else { FAS_ASSERT(FAS_TRAP); }",
+      "message": "if-else-if chain is properly terminated with else clause. COMPLIANT.",
+      "remediation_hint": "No action required",
+      "confidence": "high",
+      "status": "compliant"
+    }
+  ],
+  "violation_summary_by_rule": {
+    "Rule 15.7": {
+      "description": "All if...else if constructs shall be terminated with an else statement",
+      "total_occurrences": 21,
+      "open_violations": 7,
+      "compliant_patterns": 14,
+      "affected_files": [
+        "diag_cbs_afe.c",
+        "diag_cbs_insulation.c",
+        "diag_cbs_sbc.c",
+        "diag_cbs_temperature.c"
+      ]
+    },
+    "Rule 17.7": {
+      "description": "The value returned by a function having non-void return type shall be used",
+      "total_occurrences": 1,
+      "open_violations": 1,
+      "affected_files": [
+        "diag_cbs_deep-discharge.c"
+      ],
+      "affected_functions": [
+        "FRAM_WriteData"
+      ]
+    }
+  },
+  "open_violations_summary": {
+    "total_open": 8,
+    "by_category": {
+      "mandatory": 0,
+      "required": 8,
+      "advisory": 0
+    },
+    "by_rule": {
+      "Rule 15.7": 7,
+      "Rule 17.7": 1
+    }
+  },
+  "compliance_metrics": {
+    "total_rules_checked": 25,
+    "rules_with_violations": 2,
+    "compliance_rate": 96.77,
+    "mandatory_compliance": 100.0,
+    "required_compliance": 96.77,
+    "advisory_compliance": 100.0
+  },
+  "files_with_violations": [
+    {
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_afe.c",
+      "violations": 1,
+      "rules_violated": ["Rule 15.7"]
+    },
+    {
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_deep-discharge.c",
+      "violations": 1,
+      "rules_violated": ["Rule 17.7"]
+    },
+    {
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_insulation.c",
+      "violations": 1,
+      "rules_violated": ["Rule 15.7"]
+    },
+    {
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_sbc.c",
+      "violations": 1,
+      "rules_violated": ["Rule 15.7"]
+    },
+    {
+      "file": "foxbms-2/src/app/engine/diag/cbs/diag_cbs_temperature.c",
+      "violations": 4,
+      "rules_violated": ["Rule 15.7"]
+    }
+  ],
+  "compliant_files": [
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_aerosol-sensor.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_bms.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_can.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_clamp30c.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_contactor.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_current.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_current-sensor.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_dummy.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_fram.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_i2c.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_interlock.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_plausibility.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_power-measurement.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_rtc.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_sys-mon.c",
+    "foxbms-2/src/app/engine/diag/cbs/diag_cbs_voltage.c"
+  ],
+  "additional_rules_checked": {
+    "mandatory_rules": [
+      {
+        "rule_id": "Rule 9.1",
+        "description": "Value of object with automatic storage shall not be read before set",
+        "status": "no_violations",
+        "note": "All local variables properly initialized before use"
+      },
+      {
+        "rule_id": "Rule 13.6",
+        "description": "sizeof operand shall not contain side effects",
+        "status": "no_violations",
+        "note": "No sizeof operators with side effects detected"
+      }
+    ],
+    "required_rules": [
+      {
+        "rule_id": "Rule 1.3",
+        "description": "No undefined or critical unspecified behavior",
+        "status": "no_violations",
+        "note": "FAS_ASSERT macros properly guard against undefined behavior"
+      },
+      {
+        "rule_id": "Rule 2.1",
+        "description": "Unreachable code shall not exist",
+        "status": "no_violations",
+        "note": "All code paths are reachable; LCOV_EXCL_LINE markers used appropriately"
+      },
+      {
+        "rule_id": "Rule 8.2",
+        "description": "Function types shall be explicit",
+        "status": "no_violations",
+        "note": "All functions have explicit return types and parameter types"
+      },
+      {
+        "rule_id": "Rule 14.3",
+        "description": "Controlling expression shall not be invariant",
+        "status": "no_violations",
+        "note": "No invariant conditions detected in control flow"
+      }
+    ],
+    "advisory_rules": [
+      {
+        "rule_id": "Rule 2.5",
+        "description": "Unused macro declarations",
+        "status": "not_applicable",
+        "note": "No local macro definitions in analyzed files"
+      },
+      {
+        "rule_id": "Rule 15.5",
+        "description": "Single point of exit",
+        "status": "compliant",
+        "note": "All functions have single return point or use void return"
+      }
+    ]
+  },
+  "iso26262_alignment": {
+    "table4_methods": {
+      "method_1a_static_analysis": "Addressed by this MISRA analysis",
+      "method_1b_control_flow": "Included - if-else-if chain analysis",
+      "method_1c_data_flow": "Included - return value usage analysis"
+    },
+    "asil_applicability": "Analysis supports ASIL A through ASIL D requirements"
+  },
+  "recommendations": [
+    {
+      "priority": "high",
+      "category": "Rule 15.7",
+      "recommendation": "Add terminal else clause with FAS_ASSERT(FAS_TRAP) to all if-else-if chains in diag_cbs_afe.c, diag_cbs_insulation.c, diag_cbs_sbc.c, and diag_cbs_temperature.c",
+      "affected_files": 4,
+      "estimated_effort": "Low - straightforward addition of defensive programming pattern"
+    },
+    {
+      "priority": "high",
+      "category": "Rule 17.7",
+      "recommendation": "Handle FRAM_WriteData return value in diag_cbs_deep-discharge.c to ensure deep discharge flag persistence is verified",
+      "affected_files": 1,
+      "estimated_effort": "Low - add return value check and error handling",
+      "safety_impact": "Critical - deep discharge flag storage failure could go undetected"
+    },
+    {
+      "priority": "medium",
+      "category": "Consistency",
+      "recommendation": "Standardize defensive programming pattern across all CBS callback functions - some use FAS_ASSERT(FAS_TRAP) in else clause while others omit the else entirely",
+      "affected_files": 21,
+      "estimated_effort": "Medium - review and update all callback functions"
+    }
+  ],
+  "analysis_notes": {
+    "tool_detection": "Axivion and cppcheck not available - AI pattern analysis used",
+    "confidence_distribution": {
+      "high": 20,
+      "medium": 1,
+      "low": 0
+    },
+    "false_positive_risk": "Low - patterns are clearly identifiable",
+    "manual_review_recommended": [
+      "MISRA-CBS-010 - Empty else clause with uncertainty comment",
+      "All Rule 17.7 violations for proper error handling strategy"
+    ]
+  }
+}

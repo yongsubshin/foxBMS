@@ -1,0 +1,308 @@
+{
+  "scan_date": "2025-12-16T12:00:00Z",
+  "tool_version": "PARVIS-AICoder-MISRA AI Analysis v2.0",
+  "analysis_mode": "ai_analysis",
+  "module": "CAN Driver",
+  "source_path": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/can/",
+  "rule_set": "MISRA C:2012",
+  "coverage": "Rules 17.7, 15.7, 14.3, 10.x, 11.x",
+  "files_analyzed": [
+    "can.c",
+    "can.h",
+    "cbs/can_helper.c",
+    "cbs/can_helper.h",
+    "cbs/rx/can_cbs_rx.h",
+    "cbs/rx/can_cbs_rx_bms-state-request.c",
+    "cbs/rx/can_cbs_rx_current-sensor.c",
+    "cbs/rx/can_cbs_rx_debug.c",
+    "cbs/rx/can_cbs_rx_aerosol-sensor.c",
+    "cbs/rx/can_cbs_rx_cell-temperatures.c",
+    "cbs/rx/can_cbs_rx_cell-voltages.c",
+    "cbs/rx/can_cbs_rx_imd-response.c",
+    "cbs/rx/can_cbs_rx_imd-info.c",
+    "cbs/tx-cyclic/can_cbs_tx_cyclic.h",
+    "cbs/tx-cyclic/can_cbs_tx_bms-state.c",
+    "cbs/tx-cyclic/can_cbs_tx_bms-state-details.c",
+    "cbs/tx-cyclic/can_cbs_tx_cell-voltages.c",
+    "cbs/tx-cyclic/can_cbs_tx_cell-temperatures.c",
+    "cbs/tx-cyclic/can_cbs_tx_pack-state-estimation.c",
+    "cbs/tx-cyclic/can_cbs_tx_pack-values-p0.c",
+    "cbs/tx-cyclic/can_cbs_tx_pack-values-p1.c",
+    "cbs/tx-cyclic/can_cbs_tx_pack-limits.c",
+    "cbs/tx-cyclic/can_cbs_tx_pack-minimum-maximum-values.c",
+    "cbs/tx-cyclic/can_cbs_tx_string-state.c",
+    "cbs/tx-cyclic/can_cbs_tx_string-state-estimation.c",
+    "cbs/tx-cyclic/can_cbs_tx_string-values-p0.c",
+    "cbs/tx-cyclic/can_cbs_tx_string-values-p1.c",
+    "cbs/tx-cyclic/can_cbs_tx_string-minimum-maximum-values.c",
+    "cbs/tx-async/can_cbs_tx_crash-dump.c",
+    "cbs/tx-async/can_cbs_tx_debug-response.c",
+    "cbs/tx-async/can_cbs_tx_imd-request.c",
+    "cbs/tx-async/can_cbs_tx_debug-build-configuration.c",
+    "cbs/tx-async/can_cbs_tx_fatal-error.c",
+    "cbs/tx-async/can_cbs_tx_debug-unsupported-multiplexer-values.c"
+  ],
+  "summary": {
+    "total_violations": 0,
+    "mandatory_violations": 0,
+    "required_violations": 0,
+    "advisory_violations": 0,
+    "rule_17_7_violations": 0,
+    "rule_15_7_violations": 0,
+    "rule_14_3_violations": 0,
+    "rule_10_x_violations": 0,
+    "rule_11_x_violations": 0
+  },
+  "violations": [],
+  "compliant_patterns_observed": {
+    "rule_17_7": {
+      "description": "Return value of non-void function shall be used",
+      "status": "COMPLIANT",
+      "observations": [
+        {
+          "file": "can.c",
+          "line": 676,
+          "pattern": "(void)DIAG_Handler() - Explicit cast to void for intentionally ignored return",
+          "confidence": "high"
+        },
+        {
+          "file": "can.c",
+          "line": 679,
+          "pattern": "(void)DIAG_Handler() - Explicit cast to void for intentionally ignored return",
+          "confidence": "high"
+        },
+        {
+          "file": "can.c",
+          "line": 716,
+          "pattern": "(void)DIAG_Handler() - Explicit cast to void for intentionally ignored return",
+          "confidence": "high"
+        },
+        {
+          "file": "can.c",
+          "line": 719,
+          "pattern": "(void)DIAG_Handler() - Explicit cast to void for intentionally ignored return",
+          "confidence": "high"
+        },
+        {
+          "file": "can.c",
+          "line": 801,
+          "pattern": "DIAG_Handler() return value used for diagnostics reporting",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/rx/can_cbs_rx_bms-state-request.c",
+          "line": 149,
+          "pattern": "(void)DIAG_Handler() - Explicit cast to void for intentionally ignored return",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/tx-async/can_cbs_tx_debug-response.c",
+          "line": 758,
+          "pattern": "CAN_DataSend() return value captured in successfullyQueued variable",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/tx-cyclic/can_cbs_tx_bms-state.c",
+          "line": 468,
+          "pattern": "CAN_DataSend() return value properly returned from function",
+          "confidence": "high"
+        }
+      ],
+      "notes": "The codebase consistently uses (void) cast for intentionally ignored return values, which is the proper MISRA-compliant pattern. Critical functions like CAN_DataSend have their return values properly checked."
+    },
+    "rule_15_7": {
+      "description": "All if-else-if chains shall be terminated with else",
+      "status": "COMPLIANT",
+      "observations": [
+        {
+          "file": "can.c",
+          "line": "618-631",
+          "pattern": "CAN_GetNodeConfigurationStructFromRegisterAddress: if-else if-else chain properly terminated with else containing FAS_ASSERT",
+          "confidence": "high"
+        },
+        {
+          "file": "can.c",
+          "line": "796-807",
+          "pattern": "CAN_CheckCanTiming: if-else if-else chain properly terminated",
+          "confidence": "high"
+        },
+        {
+          "file": "can.c",
+          "line": "821-862",
+          "pattern": "CAN_CheckCanTimingOfCurrentSensor: Multiple if-else chains properly terminated",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/can_helper.c",
+          "line": "149-155",
+          "pattern": "CAN_TxPrepareSignalData: if-else if-else chain with empty else for no action case",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/can_helper.c",
+          "line": "220-257",
+          "pattern": "CAN_TxSetCanDataWithMessageData: if-else if-else chain terminated with FAS_ASSERT",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/rx/can_cbs_rx_bms-state-request.c",
+          "line": "173-186",
+          "pattern": "CANRX_HandleModeRequest: switch statement with default case",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/rx/can_cbs_rx_current-sensor.c",
+          "line": "209-237",
+          "pattern": "CANRX_HandleChannelError: switch statement with default case",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/rx/can_cbs_rx_debug.c",
+          "line": "968-990",
+          "pattern": "CANRX_Debug: switch statement with default case calling CANTX_DebugUnsupportedMultiplexerVal",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/tx-async/can_cbs_tx_debug-response.c",
+          "line": "768-802",
+          "pattern": "CANTX_DebugResponse: switch statement with default FAS_ASSERT",
+          "confidence": "high"
+        }
+      ],
+      "notes": "All if-else-if chains and switch statements are properly terminated. The codebase uses FAS_ASSERT(FAS_TRAP) for unreachable default cases, which is an acceptable safety pattern."
+    },
+    "rule_14_3": {
+      "description": "Controlling expression shall not be invariant",
+      "status": "COMPLIANT_WITH_DEVIATIONS",
+      "observations": [
+        {
+          "file": "can.c",
+          "line": "198-223",
+          "pattern": "BS_CURRENT_SENSOR_PRESENT preprocessor conditional - compile-time configuration, not invariant expression",
+          "confidence": "high"
+        },
+        {
+          "file": "can.c",
+          "line": "692",
+          "pattern": "CAN_IsMessagePeriodElapsed(counterTicks, i) == true - runtime value comparison, not invariant",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/rx/can_cbs_rx_debug.c",
+          "line": "212-214",
+          "pattern": "BAL_GetInitializationState() == STD_OK - Axivion deviation documented for MisraC2012-14.3",
+          "confidence": "high"
+        }
+      ],
+      "axivion_deviations": [
+        {
+          "file": "cbs/rx/can_cbs_rx_bms-state-request.c",
+          "line": "212-213",
+          "comment": "AXIVION Next Codeline Style MisraC2012-2.2 MisraC2012-14.3: Depending on implementation STD_NOT_OK might be returned"
+        }
+      ],
+      "notes": "No invariant controlling expressions found. The codebase properly uses runtime values for conditions. Preprocessor conditionals are configuration options, not MISRA 14.3 violations."
+    },
+    "rule_10_x": {
+      "description": "Essential type categories and conversions",
+      "status": "COMPLIANT",
+      "observations": [
+        {
+          "file": "can.c",
+          "line": "107-115",
+          "pattern": "Explicit (uint32) casts for register bit manipulation",
+          "confidence": "high"
+        },
+        {
+          "file": "can.c",
+          "line": "328",
+          "pattern": "(uint8)0xF8U - Explicit cast for register assignment",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/can_helper.c",
+          "line": "222-253",
+          "pattern": "(uint8_t) explicit casts when extracting bytes from uint64_t message",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/rx/can_cbs_rx_bms-state-request.c",
+          "line": "234",
+          "pattern": "(int32_t)signalData - Explicit cast for signed conversion",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/rx/can_cbs_rx_current-sensor.c",
+          "line": "486",
+          "pattern": "signalData = (int32_t)canSignal - Explicit cast from uint64_t to int32_t",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/tx-cyclic/can_cbs_tx_bms-state.c",
+          "line": "192",
+          "pattern": "(uint64_t)BMS_GetState() - Explicit cast for signal data",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/tx-cyclic/can_cbs_tx_pack-state-estimation.c",
+          "line": "251",
+          "pattern": "(uint64_t)signalData - Explicit cast from float_t to uint64_t",
+          "confidence": "high"
+        }
+      ],
+      "notes": "The codebase consistently uses explicit casts for type conversions. Mixed-type operations are properly handled with casts to prevent implicit conversions."
+    },
+    "rule_11_x": {
+      "description": "Pointer type conversions",
+      "status": "COMPLIANT",
+      "observations": [
+        {
+          "file": "can.c",
+          "line": "623-625",
+          "pattern": "(CAN_NODE_s *)&can_node1 - Cast to remove const qualifier for return value, contained in controlled scope",
+          "confidence": "high"
+        },
+        {
+          "file": "can.c",
+          "line": "644",
+          "pattern": "(uint8 *)&messageData[0] - Cast for HAL function parameter, compatible types",
+          "confidence": "high"
+        },
+        {
+          "file": "can.c",
+          "line": "674",
+          "pattern": "(void *)&can_rxBuffer - Cast to void* for OS queue function, standard pattern",
+          "confidence": "high"
+        },
+        {
+          "file": "can.c",
+          "line": "714",
+          "pattern": "(void *)&unsentMessage - Cast to void* for OS queue function",
+          "confidence": "high"
+        },
+        {
+          "file": "cbs/rx/can_cbs_rx_debug.c",
+          "line": "579",
+          "pattern": "(void *)&timeData - Cast to void* for OS queue function",
+          "confidence": "high"
+        }
+      ],
+      "notes": "Pointer casts are limited to necessary cases: HAL function interfaces, OS queue operations, and const/non-const conversions in controlled scopes. No unsafe pointer-to-integer or incompatible pointer type conversions found."
+    }
+  },
+  "code_quality_observations": {
+    "fas_assert_usage": "Consistent use of FAS_ASSERT for parameter validation at function entry points",
+    "null_pointer_checks": "Consistent NULL_PTR checks before pointer dereference",
+    "axivion_integration": "Axivion deviation comments properly documented inline for intentional deviations",
+    "static_analysis_comments": "SAFETYMCUSW comments present for HALCoGen-generated code sections",
+    "defensive_programming": "Default cases in switch statements use FAS_ASSERT(FAS_TRAP) for defensive programming"
+  },
+  "total_violations": 0,
+  "compliance_status": "PASS",
+  "analysis_confidence": "high",
+  "recommendations": [
+    "Continue using explicit (void) casts for intentionally ignored return values",
+    "Maintain Axivion deviation documentation for necessary rule deviations",
+    "Consider documenting HALCoGen-generated code sections in a centralized deviation database"
+  ]
+}

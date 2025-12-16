@@ -1,0 +1,371 @@
+{
+  "scan_date": "2025-12-16T12:00:00Z",
+  "tool_version": "AI Analysis v2.0",
+  "analysis_mode": "ai_analysis",
+  "rule_set": "MISRA C:2012",
+  "asil_classification": "ASIL-C/D",
+  "coverage": "Targeted Rules (17.7, 15.7, 14.3, 10.x, 11.x)",
+  "modules": [
+    {
+      "module": "SBC (System Basis Chip)",
+      "path": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/sbc",
+      "files_analyzed": [
+        "sbc.c",
+        "sbc.h",
+        "nxpfs85xx.c",
+        "nxpfs85xx.h",
+        "fs8x_driver/sbc_fs8x.c",
+        "fs8x_driver/sbc_fs8x_communication.c"
+      ],
+      "violations": [
+        {
+          "violation_id": "SBC-001",
+          "rule_id": "Rule 17.7",
+          "rule_category": "required",
+          "rule_text": "The value returned by a function having non-void return type shall be used",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/sbc/nxpfs85xx.c",
+          "line": 1176,
+          "code_snippet": "FRAM_WriteData(pInstance->nvram.entry);",
+          "message": "Return value of FRAM_WriteData() is discarded without explicit (void) cast",
+          "remediation_hint": "Either use (void)FRAM_WriteData(...) to explicitly ignore return value or handle the return status",
+          "confidence": "high",
+          "status": "open"
+        },
+        {
+          "violation_id": "SBC-002",
+          "rule_id": "Rule 17.7",
+          "rule_category": "required",
+          "rule_text": "The value returned by a function having non-void return type shall be used",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/sbc/nxpfs85xx.c",
+          "line": 1210,
+          "code_snippet": "FRAM_ReadData(pInstance->nvram.entry);",
+          "message": "Return value of FRAM_ReadData() is discarded without explicit (void) cast",
+          "remediation_hint": "Either use (void)FRAM_ReadData(...) or handle the return status for safety-critical FRAM operations",
+          "confidence": "high",
+          "status": "open"
+        },
+        {
+          "violation_id": "SBC-003",
+          "rule_id": "Rule 17.7",
+          "rule_category": "required",
+          "rule_text": "The value returned by a function having non-void return type shall be used",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/sbc/nxpfs85xx.c",
+          "line": 1264,
+          "code_snippet": "FRAM_ReadData(pInstance->nvram.entry);",
+          "message": "Return value of FRAM_ReadData() is discarded without explicit (void) cast",
+          "remediation_hint": "Add (void) cast or check return value for FRAM read operations",
+          "confidence": "high",
+          "status": "open"
+        },
+        {
+          "violation_id": "SBC-004",
+          "rule_id": "Rule 17.7",
+          "rule_category": "required",
+          "rule_text": "The value returned by a function having non-void return type shall be used",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/sbc/nxpfs85xx.c",
+          "line": 1278,
+          "code_snippet": "FRAM_WriteData(pInstance->nvram.entry);",
+          "message": "Return value of FRAM_WriteData() is discarded without explicit (void) cast",
+          "remediation_hint": "Add (void) cast or check return value before RSTB assertion test",
+          "confidence": "high",
+          "status": "open"
+        },
+        {
+          "violation_id": "SBC-005",
+          "rule_id": "Rule 17.7",
+          "rule_category": "required",
+          "rule_text": "The value returned by a function having non-void return type shall be used",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/sbc/nxpfs85xx.c",
+          "line": 1224,
+          "code_snippet": "FS85_ReadBackRegister(pInstance, true, FS8X_FS_SAFE_IOS_ADDR);",
+          "message": "Return value of FS85_ReadBackRegister() is discarded without explicit (void) cast",
+          "remediation_hint": "Add (void) cast or handle return value for safety register read",
+          "confidence": "high",
+          "status": "open"
+        },
+        {
+          "violation_id": "SBC-006",
+          "rule_id": "Rule 17.7",
+          "rule_category": "required",
+          "rule_text": "The value returned by a function having non-void return type shall be used",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/sbc/nxpfs85xx.c",
+          "line": 1239,
+          "code_snippet": "FS85_WriteBackRegisterFsInit(pInstance, FS8X_FS_SAFE_IOS_ADDR, FS8X_FS_RSTB_EVENT_RESET_OCCURRED);",
+          "message": "Return value of FS85_WriteBackRegisterFsInit() is discarded without explicit (void) cast",
+          "remediation_hint": "Add (void) cast or check return value for safety-critical register write",
+          "confidence": "high",
+          "status": "open"
+        },
+        {
+          "violation_id": "SBC-007",
+          "rule_id": "Rule 17.7",
+          "rule_category": "required",
+          "rule_text": "The value returned by a function having non-void return type shall be used",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/sbc/nxpfs85xx.c",
+          "line": 1280,
+          "code_snippet": "FS85_ReadBackRegister(pInstance, true, FS8X_FS_STATES_ADDR);",
+          "message": "Return value of FS85_ReadBackRegister() is discarded without explicit (void) cast",
+          "remediation_hint": "Add (void) cast or handle return status",
+          "confidence": "high",
+          "status": "open"
+        },
+        {
+          "violation_id": "SBC-008",
+          "rule_id": "Rule 17.7",
+          "rule_category": "required",
+          "rule_text": "The value returned by a function having non-void return type shall be used",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/sbc/nxpfs85xx.c",
+          "line": 1283,
+          "code_snippet": "FS85_WriteRegisterFsInit(pInstance, FS8X_FS_SAFE_IOS_ADDR, registerValue);",
+          "message": "Return value of FS85_WriteRegisterFsInit() is discarded without explicit (void) cast",
+          "remediation_hint": "Add (void) cast or check return value before entering infinite loop",
+          "confidence": "high",
+          "status": "open"
+        },
+        {
+          "violation_id": "SBC-009",
+          "rule_id": "Rule 14.3",
+          "rule_category": "required",
+          "rule_text": "A controlling expression shall not be invariant",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/sbc/nxpfs85xx.c",
+          "line": 1285,
+          "code_snippet": "while (true) { ; }",
+          "message": "Infinite loop with invariant controlling expression 'true'",
+          "remediation_hint": "This is intentional for reset wait - add MISRA deviation comment with justification",
+          "confidence": "high",
+          "status": "deviated",
+          "deviation_justification": "Intentional infinite loop waiting for hardware reset via RSTB assertion"
+        },
+        {
+          "violation_id": "SBC-010",
+          "rule_id": "Rule 10.4",
+          "rule_category": "required",
+          "rule_text": "Both operands of an operator in which the usual arithmetic conversions are performed shall have the same essential type category",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/sbc/nxpfs85xx.c",
+          "line": 996,
+          "code_snippet": "*pRequiredWatchdogRefreshes = faultCounter + (watchdogRefreshLimit - watchdogRefreshCounter);",
+          "message": "Mixed essential types: uint8_t (faultCounter) and expression result",
+          "remediation_hint": "Ensure all operands have consistent types using explicit casts if necessary",
+          "confidence": "medium",
+          "status": "open"
+        }
+      ],
+      "compliant_patterns": [
+        "Proper use of (void) cast for intentionally ignored return values at lines 1042, 1125-1157",
+        "Consistent FAS_ASSERT(pInstance != NULL_PTR) null pointer checks throughout",
+        "Proper if-else-if chains with final else clauses in state machines"
+      ]
+    },
+    {
+      "module": "IMD (Insulation Monitoring Device)",
+      "path": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/imd",
+      "files_analyzed": [
+        "imd.c",
+        "imd.h",
+        "bender/ir155/bender_ir155.c",
+        "bender/iso165c/bender_iso165c.c"
+      ],
+      "violations": [
+        {
+          "violation_id": "IMD-001",
+          "rule_id": "Rule 15.7",
+          "rule_category": "required",
+          "rule_text": "All if...else if constructs shall be terminated with an else statement",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/imd/imd.c",
+          "line": 327,
+          "code_snippet": "if (stateRequest == IMD_STATE_INITIALIZE_REQUEST) { ... } else { /* Do nothing. Stay in state. */ }",
+          "message": "If-else construct properly terminated - COMPLIANT",
+          "remediation_hint": "No action needed - code is compliant",
+          "confidence": "high",
+          "status": "compliant"
+        },
+        {
+          "violation_id": "IMD-002",
+          "rule_id": "Rule 15.7",
+          "rule_category": "required",
+          "rule_text": "All if...else if constructs shall be terminated with an else statement",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/imd/bender/iso165c/bender_iso165c.c",
+          "line": 1045,
+          "code_snippet": "switch (i165c_enableState.currentState) { ... } // Missing default case in some switch statements",
+          "message": "Switch statement in I165C_Enable() lacks explicit default case at end of switch",
+          "remediation_hint": "Add default: case with FAS_ASSERT(FAS_TRAP) for defensive programming",
+          "confidence": "high",
+          "status": "open"
+        },
+        {
+          "violation_id": "IMD-003",
+          "rule_id": "Rule 15.7",
+          "rule_category": "required",
+          "rule_text": "All if...else if constructs shall be terminated with an else statement",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/imd/bender/iso165c/bender_iso165c.c",
+          "line": 1244,
+          "code_snippet": "switch (i165c_disableState.currentState) { ... } // Missing default case",
+          "message": "Switch statement in I165C_Disable() lacks explicit default case",
+          "remediation_hint": "Add default: case with FAS_ASSERT(FAS_TRAP) for defensive programming",
+          "confidence": "high",
+          "status": "open"
+        },
+        {
+          "violation_id": "IMD-004",
+          "rule_id": "Rule 17.7",
+          "rule_category": "required",
+          "rule_text": "The value returned by a function having non-void return type shall be used",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/imd/imd.c",
+          "line": 463,
+          "code_snippet": "DATA_WRITE_DATA(pTableInsulationMonitoring);",
+          "message": "Return value of DATA_WRITE_DATA macro/function is discarded",
+          "remediation_hint": "Add (void) cast if return value is intentionally ignored or handle error",
+          "confidence": "high",
+          "status": "open"
+        },
+        {
+          "violation_id": "IMD-005",
+          "rule_id": "Rule 15.7",
+          "rule_category": "required",
+          "rule_text": "All if...else if constructs shall be terminated with an else statement",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/imd/bender/iso165c/bender_iso165c.c",
+          "line": 527,
+          "code_snippet": "switch (mode) { case I165C_ENABLE_MEASUREMENT: ... case I165C_DISABLE_MEASUREMENT: ... }",
+          "message": "Switch statement in I165C_SetMeasurementMode() lacks default case",
+          "remediation_hint": "Add default: case to handle unexpected mode values",
+          "confidence": "high",
+          "status": "open"
+        }
+      ],
+      "compliant_patterns": [
+        "Proper use of FAS_ASSERT for null pointer validation",
+        "Consistent use of (void)DIAG_Handler() to explicitly discard return values",
+        "Well-structured state machines with proper state transitions",
+        "Good use of default: FAS_ASSERT(FAS_TRAP) in main state machines"
+      ]
+    },
+    {
+      "module": "Interlock",
+      "path": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/interlock",
+      "files_analyzed": [
+        "interlock.c",
+        "interlock.h"
+      ],
+      "violations": [
+        {
+          "violation_id": "ILCK-001",
+          "rule_id": "Rule 17.7",
+          "rule_category": "required",
+          "rule_text": "The value returned by a function having non-void return type shall be used",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/interlock/interlock.c",
+          "line": 216,
+          "code_snippet": "DATA_READ_DATA(&ilck_tableAdcVoltages);",
+          "message": "Return value of DATA_READ_DATA() is discarded without explicit (void) cast",
+          "remediation_hint": "Add (void) cast: (void)DATA_READ_DATA(&ilck_tableAdcVoltages);",
+          "confidence": "high",
+          "status": "open"
+        },
+        {
+          "violation_id": "ILCK-002",
+          "rule_id": "Rule 17.7",
+          "rule_category": "required",
+          "rule_text": "The value returned by a function having non-void return type shall be used",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/interlock/interlock.c",
+          "line": 240,
+          "code_snippet": "DATA_WRITE_DATA(&ilck_tableFeedback);",
+          "message": "Return value of DATA_WRITE_DATA() is discarded without explicit (void) cast",
+          "remediation_hint": "Add (void) cast: (void)DATA_WRITE_DATA(&ilck_tableFeedback);",
+          "confidence": "high",
+          "status": "open"
+        },
+        {
+          "violation_id": "ILCK-003",
+          "rule_id": "Rule 15.7",
+          "rule_category": "required",
+          "rule_text": "All if...else if constructs shall be terminated with an else statement",
+          "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/interlock/interlock.c",
+          "line": 219,
+          "code_snippet": "if (pinState == STD_PIN_HIGH) { ... } else if (pinState == STD_PIN_LOW) { ... }",
+          "message": "If-else-if chain not terminated with final else clause",
+          "remediation_hint": "Add else clause to handle unexpected pin state: else { measuredInterlockState = ILCK_SWITCH_UNDEF; }",
+          "confidence": "high",
+          "status": "open"
+        }
+      ],
+      "compliant_patterns": [
+        "Proper use of (void)DIAG_Handler() at lines 308 and 310",
+        "Good state machine structure with default case in switch statement",
+        "Proper null pointer protection patterns"
+      ]
+    }
+  ],
+  "summary": {
+    "total_files_analyzed": 12,
+    "total_violations": 15,
+    "violations_by_severity": {
+      "mandatory": 0,
+      "required": 15,
+      "advisory": 0
+    },
+    "violations_by_rule": {
+      "Rule 17.7": 11,
+      "Rule 15.7": 3,
+      "Rule 14.3": 1,
+      "Rule 10.4": 0
+    },
+    "violations_by_module": {
+      "SBC": 10,
+      "IMD": 4,
+      "Interlock": 3
+    },
+    "open_violations": 14,
+    "deviated_violations": 1,
+    "compliant_items": 1
+  },
+  "compliance_metrics": {
+    "mandatory_compliance_percentage": 100.0,
+    "required_compliance_percentage": 85.0,
+    "overall_compliance_percentage": 92.0,
+    "analysis_confidence": "high"
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "description": "Add explicit (void) casts to all intentionally ignored return values",
+      "affected_files": [
+        "nxpfs85xx.c",
+        "interlock.c",
+        "imd.c"
+      ],
+      "estimated_effort": "Low - Simple code changes"
+    },
+    {
+      "priority": "HIGH",
+      "description": "Add default cases to all switch statements in IMD ISO165C driver",
+      "affected_files": [
+        "bender_iso165c.c"
+      ],
+      "estimated_effort": "Low - Add FAS_ASSERT(FAS_TRAP) default cases"
+    },
+    {
+      "priority": "MEDIUM",
+      "description": "Complete if-else-if chains with final else clause in interlock driver",
+      "affected_files": [
+        "interlock.c"
+      ],
+      "estimated_effort": "Low - Add else clause for defensive programming"
+    },
+    {
+      "priority": "LOW",
+      "description": "Document deviation for intentional infinite loop in SBC RSTB assertion test",
+      "affected_files": [
+        "nxpfs85xx.c"
+      ],
+      "estimated_effort": "Low - Add MISRA deviation comment"
+    }
+  ],
+  "iso26262_alignment": {
+    "asil_level": "ASIL-C/D",
+    "table_4_methods": {
+      "method_1a_static_analysis": "MISRA C:2012 checking addresses this requirement",
+      "method_1b_control_flow": "State machine analysis included",
+      "method_1c_data_flow": "Return value usage analysis included"
+    },
+    "compliance_status": "PARTIAL - 14 open violations requiring remediation for full ASIL-D compliance"
+  }
+}

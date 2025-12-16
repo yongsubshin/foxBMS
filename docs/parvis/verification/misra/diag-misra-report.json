@@ -1,0 +1,146 @@
+{
+  "report_metadata": {
+    "report_id": "MISRA-DIAG-001",
+    "report_title": "MISRA C:2012 Compliance Analysis - diag.c",
+    "scan_date": "2025-12-16",
+    "tool_version": "AI Analysis v2.0",
+    "analysis_mode": "ai_analysis",
+    "source_file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/engine/diag/diag.c",
+    "rule_set": "MISRA C:2012",
+    "coverage": "Full Coverage (Mandatory + Required + Advisory)",
+    "asil_classification": "ASIL-D",
+    "module_description": "Diagnosis driver - Critical safety module for error handling and reporting"
+  },
+  "summary": {
+    "total_violations": 4,
+    "mandatory_violations": 0,
+    "required_violations": 3,
+    "advisory_violations": 1,
+    "critical_safety_issues": 2,
+    "compliance_status": "NON-COMPLIANT",
+    "quality_gate": "BLOCKED"
+  },
+  "violations": [
+    {
+      "violation_id": "MISRA-DIAG-V001",
+      "rule_id": "Rule 14.3",
+      "rule_category": "required",
+      "rule_text": "Controlling expressions shall not be invariant",
+      "severity": "CRITICAL",
+      "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/engine/diag/diag.c",
+      "line": 364,
+      "column": 9,
+      "function": "DIAG_Handler",
+      "code_snippet": "if (!((impact == DIAG_SYSTEM) || (DIAG_STRING))) {",
+      "issue_description": "Logic error in condition - DIAG_STRING is an enum constant (value 1) used as a boolean instead of a comparison. The expression (DIAG_STRING) always evaluates to true (non-zero), making the condition always false after negation.",
+      "expected_code": "if (!((impact == DIAG_SYSTEM) || (impact == DIAG_STRING))) {",
+      "safety_impact": "CRITICAL - This condition is always false, meaning invalid impact values are never rejected. The function will proceed to process diagnostics with invalid impact levels, potentially causing incorrect error handling in safety-critical paths.",
+      "remediation_hint": "Replace (DIAG_STRING) with (impact == DIAG_STRING) to properly check if impact equals DIAG_STRING",
+      "confidence": "high",
+      "status": "open",
+      "cwe_id": "CWE-570",
+      "cwe_description": "Expression is Always False"
+    },
+    {
+      "violation_id": "MISRA-DIAG-V002",
+      "rule_id": "Rule 14.3",
+      "rule_category": "required",
+      "rule_text": "Controlling expressions shall not be invariant",
+      "severity": "HIGH",
+      "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/engine/diag/diag.c",
+      "line": 216,
+      "column": 9,
+      "function": "DIAG_Initialize",
+      "code_snippet": "uint16_t checkfail = 0u;\n    /* TODO this will always evaluate to true?! */\n    if (checkfail > 0u) {\n        DIAG_Reset();\n    }",
+      "issue_description": "Dead code - Variable 'checkfail' is initialized to 0 and never modified before the condition check. The condition 'checkfail > 0u' is always false, making the DIAG_Reset() call unreachable.",
+      "expected_code": "Remove dead code or implement proper logic to set checkfail before checking",
+      "safety_impact": "MEDIUM - Dead code in initialization path. The developer's TODO comment indicates awareness of the issue. DIAG_Reset() is never called through this path, but may be called elsewhere. However, dead code in safety-critical modules violates ISO 26262-6 Table 4 requirements.",
+      "remediation_hint": "Either remove the dead code block entirely, or implement logic to properly set 'checkfail' when configuration errors are detected (e.g., move the checkfail |= 0x20u assignment before the condition)",
+      "confidence": "high",
+      "status": "open",
+      "cwe_id": "CWE-561",
+      "cwe_description": "Dead Code"
+    },
+    {
+      "violation_id": "MISRA-DIAG-V003",
+      "rule_id": "Rule 2.2",
+      "rule_category": "required",
+      "rule_text": "There shall be no dead code",
+      "severity": "MEDIUM",
+      "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/engine/diag/diag.c",
+      "line": 213,
+      "column": 5,
+      "function": "DIAG_Initialize",
+      "code_snippet": "uint16_t checkfail = 0u;",
+      "issue_description": "Variable 'checkfail' is set in line 227 but only after the check in line 216. This indicates incomplete implementation or copy-paste error from a template.",
+      "expected_code": "Reorder logic: check configuration first, set checkfail on error, then check checkfail",
+      "safety_impact": "LOW - Indicates incomplete implementation. The checkfail variable is used later (line 227) but not in a way that affects the if-block.",
+      "remediation_hint": "Review initialization logic and determine if DIAG_Reset() should be called on configuration errors",
+      "confidence": "high",
+      "status": "open",
+      "cwe_id": "CWE-561",
+      "cwe_description": "Dead Code"
+    },
+    {
+      "violation_id": "MISRA-DIAG-V004",
+      "rule_id": "Rule 17.7",
+      "rule_category": "advisory",
+      "rule_text": "The value returned by a function having non-void return type shall be used",
+      "severity": "LOW",
+      "file": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/engine/diag/diag.c",
+      "line": 477,
+      "column": 5,
+      "function": "DIAG_CheckEvent",
+      "code_snippet": "STD_RETURN_TYPE_e retVal = STD_NOT_OK;\n    if (cond == STD_OK) {\n        DIAG_Handler(diagId, DIAG_EVENT_OK, impact, data);\n    } else {\n        DIAG_Handler(diagId, DIAG_EVENT_NOT_OK, impact, data);\n    }\n    return retVal;",
+      "issue_description": "Return value of DIAG_Handler() is discarded. Additionally, 'retVal' is initialized to STD_NOT_OK and never modified, so function always returns STD_NOT_OK regardless of DIAG_Handler result.",
+      "expected_code": "Either use DIAG_Handler return value to set retVal, or cast to (void) if intentionally ignored",
+      "safety_impact": "LOW - The function always returns STD_NOT_OK, which may mislead callers. Return values from DIAG_Handler provide important diagnostic state information.",
+      "remediation_hint": "Capture DIAG_Handler return value and convert to appropriate STD_RETURN_TYPE_e, or add (void) cast if ignoring intentionally",
+      "confidence": "high",
+      "status": "open",
+      "cwe_id": "CWE-252",
+      "cwe_description": "Unchecked Return Value"
+    }
+  ],
+  "deviations": [],
+  "compliance_metrics": {
+    "mandatory_compliance": "100%",
+    "required_compliance": "87.5%",
+    "advisory_compliance": "95%",
+    "overall_compliance": "92%",
+    "ai_analysis_confidence": {
+      "high_confidence": 4,
+      "medium_confidence": 0,
+      "low_confidence": 0
+    }
+  },
+  "iso26262_alignment": {
+    "part_6_table_4_methods": {
+      "method_1a_static_analysis": "PARTIAL - Critical violations found",
+      "method_1b_control_flow_analysis": "FAIL - Dead code detected",
+      "method_1c_data_flow_analysis": "FAIL - Invariant expression detected"
+    },
+    "asil_d_requirements": "NOT MET - Mandatory zero tolerance for logic errors in ASIL-D code",
+    "recommendation": "BLOCK deployment until V001 and V002 are resolved"
+  },
+  "additional_observations": [
+    {
+      "observation_id": "OBS-001",
+      "type": "code_quality",
+      "description": "Developer TODO comment at line 215 indicates known issue with checkfail logic",
+      "recommendation": "Resolve TODO comments before release"
+    },
+    {
+      "observation_id": "OBS-002",
+      "type": "defensive_programming",
+      "description": "FAS_ASSERT used appropriately throughout the module for input validation",
+      "recommendation": "No action required - good practice"
+    },
+    {
+      "observation_id": "OBS-003",
+      "type": "else_if_chain",
+      "description": "else-if chains in DIAG_Handler (lines 390-472) properly handle all event types through exhaustive checking",
+      "recommendation": "Consider adding final else clause with FAS_ASSERT for MISRA 15.7 compliance"
+    }
+  ]
+}

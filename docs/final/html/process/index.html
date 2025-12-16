@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Model Process Documentation | foxBMS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --primary: #1a5f7a; --dark: #002b5b; --light: #f8f9fa; --success: #28a745; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f7fa; line-height: 1.6; }
+        .header { background: linear-gradient(135deg, #002b5b, #1a5f7a); color: white; padding: 2rem; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .back-link { color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; opacity: 0.8; }
+        .back-link:hover { opacity: 1; }
+        .section { background: white; border-radius: 8px; margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; }
+        .section-header { background: var(--primary); color: white; padding: 1rem 1.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .section-header:hover { background: var(--dark); }
+        .section-header h2 { font-size: 1.1rem; display: flex; align-items: center; gap: 0.75rem; }
+        .section-body { padding: 1.5rem; }
+        .doc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+        .doc-card { border: 1px solid #e9ecef; border-radius: 8px; padding: 1rem; display: flex; align-items: center; gap: 1rem; text-decoration: none; color: inherit; transition: all 0.2s; }
+        .doc-card:hover { border-color: var(--primary); background: var(--light); transform: translateY(-2px); }
+        .doc-icon { width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+        .doc-icon.md { background: #d4edda; color: #155724; }
+        .doc-icon.json { background: #cce5ff; color: #004085; }
+        .doc-info { flex: 1; }
+        .doc-name { font-weight: 600; color: var(--dark); margin-bottom: 0.25rem; }
+        .doc-desc { font-size: 0.8rem; color: #666; }
+        .doc-type { font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 4px; background: #e9ecef; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+        .summary-card { background: white; padding: 1.5rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .summary-card .value { font-size: 2rem; font-weight: 700; color: var(--primary); }
+        .summary-card .label { color: #666; font-size: 0.9rem; }
+        .note { background: #d4edda; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; color: #155724; }
+        .note i { margin-right: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portal</a>
+        <h1><i class="fas fa-book"></i> V-Model Process Documentation</h1>
+        <p>Complete ASPICE Level 2 Work Products</p>
+    </div>
+
+    <div class="container">
+        <div class="summary">
+            <div class="summary-card">
+                <div class="value">12</div>
+                <div class="label">V-Model Phases</div>
+            </div>
+            <div class="summary-card">
+                <div class="value">40+</div>
+                <div class="label">Documents</div>
+            </div>
+            <div class="summary-card">
+                <div class="value">648</div>
+                <div class="label">Requirements</div>
+            </div>
+            <div class="summary-card">
+                <div class="value">570</div>
+                <div class="label">Test Cases</div>
+            </div>
+        </div>
+
+        <div class="note">
+            <i class="fas fa-check-circle"></i>
+            <strong>Built-in Viewer:</strong> All documents open in the integrated viewer with Markdown rendering, JSON table view, and search functionality.
+        </div>
+
+        <!-- System Level -->
+        <div class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-cube"></i> System Level (SYS.1 - SYS.5, VAL.1)</h2>
+            </div>
+            <div class="section-body">
+                <div class="doc-grid">
+                    <a href="../viewer/index.html?file=../../../parvis/system/SYS.1-system-requirements.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">SYS.1 System Requirements</div>
+                            <div class="doc-desc">10 TSR + 5 Safety Goals</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/system/SYS.2-system-architecture.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">SYS.2 System Architecture</div>
+                            <div class="doc-desc">HW/SW Elements Design</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/system/SYS.3-integration-test-spec.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">SYS.3 Integration Test Spec</div>
+                            <div class="doc-desc">69 Integration Test Cases</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/system/SYS.4-integration-plan.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">SYS.4 Integration Plan</div>
+                            <div class="doc-desc">Integration Procedures</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/system/SYS.5-qualification-spec.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">SYS.5 Qualification Spec</div>
+                            <div class="doc-desc">95 Qualification Tests</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/system/VAL.1-validation-plan.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">VAL.1 Validation Plan</div>
+                            <div class="doc-desc">66 Validation Cases</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Requirements -->
+        <div class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-list-check"></i> Software Requirements (SWE.1)</h2>
+            </div>
+            <div class="section-body">
+                <div class="doc-grid">
+                    <a href="../viewer/index.html?file=../../../parvis/requirements/unified-requirements.json" class="doc-card">
+                        <div class="doc-icon json"><i class="fas fa-file-code"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">Unified Requirements</div>
+                            <div class="doc-desc">648 Requirements (JSON)</div>
+                        </div>
+                        <span class="doc-type">JSON</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/requirements/fbms-id-registry.json" class="doc-card">
+                        <div class="doc-icon json"><i class="fas fa-file-code"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">FBMS ID Registry</div>
+                            <div class="doc-desc">ID Assignment Tracking</div>
+                        </div>
+                        <span class="doc-type">JSON</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/requirements/asil-classification-report.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">ASIL Classification</div>
+                            <div class="doc-desc">147 Safety Requirements</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/requirements/quality-dashboard.json" class="doc-card">
+                        <div class="doc-icon json"><i class="fas fa-file-code"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">Quality Dashboard</div>
+                            <div class="doc-desc">Quality Metrics Data</div>
+                        </div>
+                        <span class="doc-type">JSON</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Architecture -->
+        <div class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-sitemap"></i> Software Architecture (SWE.2)</h2>
+            </div>
+            <div class="section-body">
+                <div class="doc-grid">
+                    <a href="../viewer/index.html?file=../../../parvis/architecture/software-architecture-design.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">Architecture Design</div>
+                            <div class="doc-desc">4-Layer Architecture</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/architecture/allocation-matrix.json" class="doc-card">
+                        <div class="doc-icon json"><i class="fas fa-file-code"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">Allocation Matrix</div>
+                            <div class="doc-desc">Req-to-Module Mapping</div>
+                        </div>
+                        <span class="doc-type">JSON</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Design -->
+        <div class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-pencil-ruler"></i> Software Detailed Design (SWE.3)</h2>
+            </div>
+            <div class="section-body">
+                <div class="doc-grid">
+                    <a href="../viewer/index.html?file=../../../parvis/design/detailed-design-bms.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">BMS Design</div>
+                            <div class="doc-desc">State Machine Design</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/design/detailed-design-afe.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">AFE Design</div>
+                            <div class="doc-desc">Analog Front End</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/design/detailed-design-contactor.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">Contactor Design</div>
+                            <div class="doc-desc">Contactor Control</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/design/detailed-design-sbc.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">SBC Design</div>
+                            <div class="doc-desc">System Basis Chip</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/design/interface-control-document.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">Interface Control</div>
+                            <div class="doc-desc">ICD Specification</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/design/state-diagrams.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">State Diagrams</div>
+                            <div class="doc-desc">State Machine Diagrams</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Verification -->
+        <div class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-vial"></i> Verification (SWE.4-6)</h2>
+            </div>
+            <div class="section-body">
+                <div class="doc-grid">
+                    <a href="../viewer/index.html?file=../../../parvis/verification/r1-verification-report.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">R1 Unit Verification</div>
+                            <div class="doc-desc">97 Unit Tests</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/verification/mcdc-analysis-bms.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">MC/DC Analysis</div>
+                            <div class="doc-desc">100% MC/DC Coverage</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/verification/r2-integration-report.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">R2 Integration Report</div>
+                            <div class="doc-desc">87 Integration Tests</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/verification/r3-system-verification-report.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">R3 System Verification</div>
+                            <div class="doc-desc">156 System Tests</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/verification/r4-safety-case.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">R4 Safety Case</div>
+                            <div class="doc-desc">GSN Safety Argumentation</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/verification/bms-test-spec.json" class="doc-card">
+                        <div class="doc-icon json"><i class="fas fa-file-code"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">BMS Test Spec</div>
+                            <div class="doc-desc">Test Specifications (JSON)</div>
+                        </div>
+                        <span class="doc-type">JSON</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MISRA -->
+        <div class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-shield-alt"></i> MISRA C:2012 Compliance</h2>
+            </div>
+            <div class="section-body">
+                <div class="doc-grid">
+                    <a href="../viewer/index.html?file=../../../parvis/verification/misra/foxbms2-misra-consolidated-report.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">Consolidated Report</div>
+                            <div class="doc-desc">~99% Compliance, 228 Files</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/verification/misra/can-driver-misra-report.json" class="doc-card">
+                        <div class="doc-icon json"><i class="fas fa-file-code"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">CAN Driver Report</div>
+                            <div class="doc-desc">100% Compliant</div>
+                        </div>
+                        <span class="doc-type">JSON</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/verification/misra/engine-core-misra-report.json" class="doc-card">
+                        <div class="doc-icon json"><i class="fas fa-file-code"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">Engine Core Report</div>
+                            <div class="doc-desc">91% Compliant</div>
+                        </div>
+                        <span class="doc-type">JSON</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Traceability -->
+        <div class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-project-diagram"></i> Traceability</h2>
+            </div>
+            <div class="section-body">
+                <div class="doc-grid">
+                    <a href="../viewer/index.html?file=../../../parvis/traceability/bidirectional-traceability.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">Bidirectional Traceability</div>
+                            <div class="doc-desc">100% Coverage</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/traceability/traceability-matrix.json" class="doc-card">
+                        <div class="doc-icon json"><i class="fas fa-file-code"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">Traceability Matrix</div>
+                            <div class="doc-desc">529 Traced Links</div>
+                        </div>
+                        <span class="doc-type">JSON</span>
+                    </a>
+                    <a href="../viewer/index.html?file=../../../parvis/00-FINAL-SUMMARY.md" class="doc-card">
+                        <div class="doc-icon md"><i class="fas fa-file-lines"></i></div>
+                        <div class="doc-info">
+                            <div class="doc-name">Final Summary</div>
+                            <div class="doc-desc">Complete V-Model Report</div>
+                        </div>
+                        <span class="doc-type">MD</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,1930 @@
+{
+  "extraction_metadata": {
+    "extraction_date": "2025-12-16",
+    "source_directories": [
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/adc",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/spi",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/i2c",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/dma",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/pwm",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/rtc",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/io",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/led",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/mcu",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/interlock",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/fram",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/foxmath",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/checksum",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/crc",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/pex",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/config",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/meas",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/htsensor",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/sps",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/contactor",
+      "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app/driver/can"
+    ],
+    "extraction_patterns": ["doxygen", "assertion", "config", "interface", "state_machine"],
+    "total_requirements": 186
+  },
+  "requirements": [
+    {
+      "id": "DRV-ADC-001",
+      "content": "The ADC module shall provide a driver for analog-to-digital conversion measurements on the TMS570LC4357 MCU",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "adc.h",
+        "line": "43-53",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/adc"
+    },
+    {
+      "id": "DRV-ADC-002",
+      "content": "The ADC module shall implement a state machine with three states: ADC_START_CONVERSION, ADC_WAIT_CONVERSION_FINISHED, and ADC_CONVERSION_FINISHED",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "adc.h",
+        "line": "91-95",
+        "extraction_type": "state_machine"
+      },
+      "module": "driver/adc"
+    },
+    {
+      "id": "DRV-ADC-003",
+      "content": "The ADC_Control function shall control the ADC measurement sequence",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "adc.h",
+        "line": "101-105",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/adc"
+    },
+    {
+      "id": "DRV-ADC-004",
+      "content": "The ADC shall use voltage reference high of 5000mV (ADC_VREFHIGH_mV)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "adc.h",
+        "line": "75",
+        "extraction_type": "config"
+      },
+      "module": "driver/adc"
+    },
+    {
+      "id": "DRV-ADC-005",
+      "content": "The ADC shall use voltage reference low of 0mV (ADC_VREFLOW_mV)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "adc.h",
+        "line": "77",
+        "extraction_type": "config"
+      },
+      "module": "driver/adc"
+    },
+    {
+      "id": "DRV-ADC-006",
+      "content": "The ADC shall support 12-bit conversion with a conversion factor of 4096",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "adc.h",
+        "line": "79",
+        "extraction_type": "config"
+      },
+      "module": "driver/adc"
+    },
+    {
+      "id": "DRV-ADC-007",
+      "content": "The ADC state machine shall trap on invalid state (FAS_ASSERT safety mechanism)",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "adc.c",
+        "line": "135",
+        "extraction_type": "assertion"
+      },
+      "module": "driver/adc"
+    },
+    {
+      "id": "DRV-SPI-001",
+      "content": "The SPI module shall provide headers for the driver for the SPI communication interface",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "spi.h",
+        "line": "43-53",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/spi"
+    },
+    {
+      "id": "DRV-SPI-002",
+      "content": "The SPI_Initialize function shall initialize the SPI module using HAL functions and configure chip select setup for peripherals",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "spi.h",
+        "line": "70-76",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/spi"
+    },
+    {
+      "id": "DRV-SPI-003",
+      "content": "The SPI_TransmitDummyByte function shall send a dummy byte to wake up the SPI interface",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "spi.h",
+        "line": "79-86",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/spi"
+    },
+    {
+      "id": "DRV-SPI-004",
+      "content": "The SPI_TransmitData function shall transmit data on SPI without DMA in blocking mode with automatic chip select handling",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "spi.h",
+        "line": "88-100",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/spi"
+    },
+    {
+      "id": "DRV-SPI-005",
+      "content": "The SPI_TransmitReceiveData function shall transmit and receive data on SPI without DMA in blocking mode with automatic chip select handling",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "spi.h",
+        "line": "102-119",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/spi"
+    },
+    {
+      "id": "DRV-SPI-006",
+      "content": "The SPI_TransmitReceiveDataDma function shall transmit and receive data on SPI with DMA in blocking mode with automatic chip select handling",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "spi.h",
+        "line": "141-158",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/spi"
+    },
+    {
+      "id": "DRV-SPI-007",
+      "content": "The SPI_Lock function shall lock SPI interfaces to prevent concurrent access",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "spi.h",
+        "line": "179-186",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/spi"
+    },
+    {
+      "id": "DRV-SPI-008",
+      "content": "The SPI module shall support 5 SPI interfaces (SPI_NR_SPI_INTERFACES = 5)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "spi_cfg.h",
+        "line": "78",
+        "extraction_type": "config"
+      },
+      "module": "driver/spi"
+    },
+    {
+      "id": "DRV-SPI-009",
+      "content": "SPI chip select shall support hardware and software modes (SPI_CHIP_SELECT_HARDWARE, SPI_CHIP_SELECT_SOFTWARE)",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "spi_cfg.h",
+        "line": "114-120",
+        "extraction_type": "config"
+      },
+      "module": "driver/spi"
+    },
+    {
+      "id": "DRV-SPI-010",
+      "content": "The SPI shall validate pSpiInterface is not NULL_PTR before transmission",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "spi.c",
+        "line": "266",
+        "extraction_type": "assertion"
+      },
+      "module": "driver/spi"
+    },
+    {
+      "id": "DRV-SPI-011",
+      "content": "The SPI shall validate pTxBuff is not NULL_PTR before transmission",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "spi.c",
+        "line": "277",
+        "extraction_type": "assertion"
+      },
+      "module": "driver/spi"
+    },
+    {
+      "id": "DRV-SPI-012",
+      "content": "The SPI shall validate frameLength is greater than 0 before transmission",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "spi.c",
+        "line": "278",
+        "extraction_type": "assertion"
+      },
+      "module": "driver/spi"
+    },
+    {
+      "id": "DRV-SPI-013",
+      "content": "The SPI shall validate string parameter is less than BS_NR_OF_STRINGS",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "spi.c",
+        "line": "176",
+        "extraction_type": "assertion"
+      },
+      "module": "driver/spi"
+    },
+    {
+      "id": "DRV-I2C-001",
+      "content": "The I2C module shall provide header for the driver for the I2C communication interface",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "i2c.h",
+        "line": "43-53",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/i2c"
+    },
+    {
+      "id": "DRV-I2C-002",
+      "content": "The I2C_Initialize function shall initialize the I2C hardware with dedicated HAL functions before any other I2C API call",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "i2c.h",
+        "line": "124-129",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/i2c"
+    },
+    {
+      "id": "DRV-I2C-003",
+      "content": "The I2C_Read function shall read from an I2C slave in blocking mode without writing register address first",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "i2c.h",
+        "line": "131-139",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/i2c"
+    },
+    {
+      "id": "DRV-I2C-004",
+      "content": "The I2C_Write function shall write to an I2C slave in blocking mode without writing register address first",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "i2c.h",
+        "line": "141-153",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/i2c"
+    },
+    {
+      "id": "DRV-I2C-005",
+      "content": "The I2C_ReadDma function shall read from an I2C slave using DMA",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "i2c.h",
+        "line": "173-185",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/i2c"
+    },
+    {
+      "id": "DRV-I2C-006",
+      "content": "The I2C_WriteDma function shall write to an I2C slave using DMA",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "i2c.h",
+        "line": "187-199",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/i2c"
+    },
+    {
+      "id": "DRV-I2C-007",
+      "content": "The I2C module shall use a timeout of 1000 microseconds to avoid infinite loops (I2C_TIMEOUT_us)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "i2c.h",
+        "line": "69",
+        "extraction_type": "config"
+      },
+      "module": "driver/i2c"
+    },
+    {
+      "id": "DRV-I2C-008",
+      "content": "The I2C module shall use 2ms notification timeout for DMA transactions (I2C_NOTIFICATION_TIMEOUT_ms)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "i2c.h",
+        "line": "98",
+        "extraction_type": "config"
+      },
+      "module": "driver/i2c"
+    },
+    {
+      "id": "DRV-DMA-001",
+      "content": "The DMA module shall provide headers for the driver for the DMA (Direct Memory Access) module",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "dma.h",
+        "line": "43-54",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/dma"
+    },
+    {
+      "id": "DRV-DMA-002",
+      "content": "The DMA_Initialize function shall enable the DMA module and DMA streams",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "dma.h",
+        "line": "70-74",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/dma"
+    },
+    {
+      "id": "DRV-DMA-003",
+      "content": "The DMA_IsTransmitOngoing function shall return true if SPI transmission is still ongoing, false otherwise",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "dma.h",
+        "line": "76-80",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/dma"
+    },
+    {
+      "id": "DRV-DMA-004",
+      "content": "The DMA shall support 5 SPI interfaces for DMA (DMA_NUMBER_SPI_INTERFACES = 5)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "dma_cfg.h",
+        "line": "112",
+        "extraction_type": "config"
+      },
+      "module": "driver/dma"
+    },
+    {
+      "id": "DRV-DMA-005",
+      "content": "The DMA shall map SPI1 TX to DMA_CH0 and SPI1 RX to DMA_CH1",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "dma_cfg.h",
+        "line": "72-73",
+        "extraction_type": "config"
+      },
+      "module": "driver/dma"
+    },
+    {
+      "id": "DRV-DMA-006",
+      "content": "The DMA shall support I2C1 and I2C2 channels (DMA_CH10-DMA_CH13)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "dma_cfg.h",
+        "line": "82-85",
+        "extraction_type": "config"
+      },
+      "module": "driver/dma"
+    },
+    {
+      "id": "DRV-PWM-001",
+      "content": "The PWM module shall provide a PWM driver for the TMS570LC43xx using the ePWM hardware",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "pwm.h",
+        "line": "43-57",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/pwm"
+    },
+    {
+      "id": "DRV-PWM-002",
+      "content": "The PWM_Initialize function shall initialize the ETPWM and the ECAP module",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "pwm.h",
+        "line": "79-81",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/pwm"
+    },
+    {
+      "id": "DRV-PWM-003",
+      "content": "The PWM_StartPwm function shall start all configured ePWM channels after etpwmInit() is called",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "pwm.h",
+        "line": "83-87",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/pwm"
+    },
+    {
+      "id": "DRV-PWM-004",
+      "content": "The PWM_StopPwm function shall stop all configured ePWM channels",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "pwm.h",
+        "line": "89-90",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/pwm"
+    },
+    {
+      "id": "DRV-PWM-005",
+      "content": "The PWM_SetDutyCycle function shall set duty cycle in permill with out-of-range values limited to threshold values",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "pwm.h",
+        "line": "92-97",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/pwm"
+    },
+    {
+      "id": "DRV-PWM-006",
+      "content": "The PWM_GetPwmData function shall return duty cycle and frequency of input PWM signal",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "pwm.h",
+        "line": "99-100",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/pwm"
+    },
+    {
+      "id": "DRV-RTC-001",
+      "content": "The RTC module shall provide a driver for the NXP PCF2131 Real Time Clock over I2C",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "rtc.h",
+        "line": "43-54",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/rtc"
+    },
+    {
+      "id": "DRV-RTC-002",
+      "content": "The RTC shall use I2C interface i2cREG1 with I2C address 0x53",
+      "type": "HSI",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "rtc.h",
+        "line": "76-78",
+        "extraction_type": "config"
+      },
+      "module": "driver/rtc"
+    },
+    {
+      "id": "DRV-RTC-003",
+      "content": "The RTC_GetSystemTimeRtcFormat function shall return the RTC system timer value",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "rtc.h",
+        "line": "209-214",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/rtc"
+    },
+    {
+      "id": "DRV-RTC-004",
+      "content": "The RTC_IncrementSystemTime function shall be called every millisecond from the 1ms task",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "rtc.h",
+        "line": "216-221",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/rtc"
+    },
+    {
+      "id": "DRV-RTC-005",
+      "content": "The RTC_Initialize function shall return STD_OK when initialization is finished, STD_NOT_OK otherwise",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "rtc.h",
+        "line": "223-227",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/rtc"
+    },
+    {
+      "id": "DRV-RTC-006",
+      "content": "The RTC shall implement initialization states: RTC_SET_SYSTEM_TIMER, RTC_SET_BATTERY_LOW_FLAG, RTC_CLEAR_OTPR, RTC_WAIT_CLEAR_OTPR, RTC_OTPR_CLEARED, RTC_SET_OTPR, RTC_WAIT_SET_OTPR, RTC_INIT_SET_FINISHED",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "rtc.h",
+        "line": "194-203",
+        "extraction_type": "state_machine"
+      },
+      "module": "driver/rtc"
+    },
+    {
+      "id": "DRV-RTC-007",
+      "content": "The RTC shall allow maximum 1 second difference between RTC timer and IC time (RTC_MAX_DIFFERENCE_BETWEEN_TIMER_AND_IC_s)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "rtc.h",
+        "line": "185",
+        "extraction_type": "config"
+      },
+      "module": "driver/rtc"
+    },
+    {
+      "id": "DRV-IO-001",
+      "content": "The IO module shall provide a driver for the IO (Input/Output) control",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "io.h",
+        "line": "43-53",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/io"
+    },
+    {
+      "id": "DRV-IO-002",
+      "content": "The IO_SetPinDirectionToOutput function shall configure a pin as output by writing to the pin direction register",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "io.h",
+        "line": "69-77",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/io"
+    },
+    {
+      "id": "DRV-IO-003",
+      "content": "The IO_SetPinDirectionToInput function shall configure a pin as input by writing to the pin direction register",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "io.h",
+        "line": "79-87",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/io"
+    },
+    {
+      "id": "DRV-IO-004",
+      "content": "The IO_PinSet function shall set a pin high by writing to the pin output register",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "io.h",
+        "line": "89-97",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/io"
+    },
+    {
+      "id": "DRV-IO-005",
+      "content": "The IO_PinReset function shall set a pin low by writing to the pin output register",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "io.h",
+        "line": "99-107",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/io"
+    },
+    {
+      "id": "DRV-IO-006",
+      "content": "The IO_PinGet function shall return the state of a pin (STD_PIN_STATE_e)",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "io.h",
+        "line": "109-118",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/io"
+    },
+    {
+      "id": "DRV-IO-007",
+      "content": "The IO module shall validate pRegisterAddress is not NULL_PTR before operations",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "io.c",
+        "line": "77",
+        "extraction_type": "assertion"
+      },
+      "module": "driver/io"
+    },
+    {
+      "id": "DRV-IO-008",
+      "content": "The IO module shall validate pin number is within MCU_LARGEST_PIN_NUMBER (31)",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "io.c",
+        "line": "78",
+        "extraction_type": "assertion"
+      },
+      "module": "driver/io"
+    },
+    {
+      "id": "DRV-LED-001",
+      "content": "The LED module shall provide a debug LED driver that is directly connected to an MCU pin to indicate basic operation states",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "led.h",
+        "line": "43-63",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/led"
+    },
+    {
+      "id": "DRV-LED-002",
+      "content": "The LED shall indicate normal operation with 500ms on/off time (slow blinking pattern)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "led.h",
+        "line": "74",
+        "extraction_type": "config"
+      },
+      "module": "driver/led"
+    },
+    {
+      "id": "DRV-LED-003",
+      "content": "The LED shall indicate error state with 100ms on/off time (fast blinking pattern)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "led.h",
+        "line": "76",
+        "extraction_type": "config"
+      },
+      "module": "driver/led"
+    },
+    {
+      "id": "DRV-LED-004",
+      "content": "The LED_SetDebugLed function shall turn on the debug LED during startup before LED_SetToggleTime is called",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "led.h",
+        "line": "81-86",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/led"
+    },
+    {
+      "id": "DRV-LED-005",
+      "content": "The LED_Trigger function shall periodically toggle the debug LED at the frequency set by LED_SetToggleTime",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "led.h",
+        "line": "88-92",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/led"
+    },
+    {
+      "id": "DRV-MCU-001",
+      "content": "The MCU module shall provide headers for the driver for the MCU (microcontroller) module",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "mcu.h",
+        "line": "43-53",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/mcu"
+    },
+    {
+      "id": "DRV-MCU-002",
+      "content": "The MCU shall support a largest pin number of 31 for TMS570LC4357",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "mcu.h",
+        "line": "64-69",
+        "extraction_type": "config"
+      },
+      "module": "driver/mcu"
+    },
+    {
+      "id": "DRV-MCU-003",
+      "content": "The MCU ADC1 shall support maximum 32 channels",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "mcu.h",
+        "line": "71-75",
+        "extraction_type": "config"
+      },
+      "module": "driver/mcu"
+    },
+    {
+      "id": "DRV-MCU-004",
+      "content": "The MCU_Delay_us function shall provide blocking delay in microseconds using Free Running Counter 0 (FRC0)",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "mcu.h",
+        "line": "88-95",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/mcu"
+    },
+    {
+      "id": "DRV-MCU-005",
+      "content": "The MCU_GetFreeRunningCount function shall return the current value of the Free Running Counter 0 (FRC0)",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "mcu.h",
+        "line": "97-104",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/mcu"
+    },
+    {
+      "id": "DRV-MCU-006",
+      "content": "The MCU_IsTimeElapsed function shall check if a timeout in microseconds has elapsed since a given starting counter value",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "mcu.h",
+        "line": "117-127",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/mcu"
+    },
+    {
+      "id": "DRV-ILCK-001",
+      "content": "The interlock module shall provide a driver for the interlock circuit measuring relevant hardware signals",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "interlock.c",
+        "line": "43-68",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/interlock"
+    },
+    {
+      "id": "DRV-ILCK-002",
+      "content": "The interlock state machine shall have states: ILCK_STATEMACHINE_UNINITIALIZED, ILCK_STATEMACHINE_INITIALIZED, ILCK_STATEMACHINE_UNDEFINED",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "interlock.h",
+        "line": "65-73",
+        "extraction_type": "state_machine"
+      },
+      "module": "driver/interlock"
+    },
+    {
+      "id": "DRV-ILCK-003",
+      "content": "The ILCK_SetStateRequest function shall validate state requests and return result immediately",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "interlock.h",
+        "line": "120-134",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/interlock"
+    },
+    {
+      "id": "DRV-ILCK-004",
+      "content": "The ILCK_Trigger function shall be called time-triggered every 1ms",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "interlock.h",
+        "line": "146-151",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/interlock"
+    },
+    {
+      "id": "DRV-ILCK-005",
+      "content": "The interlock shall use diagnostic supply enable pin at position 30 (ILCK_INTERLOCK_CONTROL_PIN_IL_HS_ENABLE)",
+      "type": "HSI",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "interlock_cfg.h",
+        "line": "72",
+        "extraction_type": "config"
+      },
+      "module": "driver/interlock"
+    },
+    {
+      "id": "DRV-ILCK-006",
+      "content": "The interlock shall use feedback pin at position 29 (ILCK_INTERLOCK_FEEDBACK_PIN_IL_STATE)",
+      "type": "HSI",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "interlock_cfg.h",
+        "line": "75",
+        "extraction_type": "config"
+      },
+      "module": "driver/interlock"
+    },
+    {
+      "id": "DRV-ILCK-007",
+      "content": "The interlock shall use voltage divider factor of (5.6 + 3.9) / 3.9 for measuring interlock voltages",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "interlock_cfg.h",
+        "line": "87-89",
+        "extraction_type": "config"
+      },
+      "module": "driver/interlock"
+    },
+    {
+      "id": "DRV-ILCK-008",
+      "content": "The interlock state machine shall trap on undefined state (FAS_ASSERT safety mechanism)",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "interlock.c",
+        "line": "316",
+        "extraction_type": "assertion"
+      },
+      "module": "driver/interlock"
+    },
+    {
+      "id": "DRV-ILCK-009",
+      "content": "The interlock shall report feedback status to diagnostic handler (DIAG_ID_INTERLOCK_FEEDBACK)",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "interlock.c",
+        "line": "308-310",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/interlock"
+    },
+    {
+      "id": "DRV-FRAM-001",
+      "content": "The FRAM module shall provide a driver for FRAM (Ferroelectric RAM) non-volatile memory",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "fram.h",
+        "line": "43-53",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/fram"
+    },
+    {
+      "id": "DRV-FRAM-002",
+      "content": "The FRAM_Initialize function shall initialize addresses to be written in FRAM before any use",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "fram.h",
+        "line": "71-75",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/fram"
+    },
+    {
+      "id": "DRV-FRAM-003",
+      "content": "The FRAM_WriteData function shall write a variable to FRAM corresponding to the block ID",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "fram.h",
+        "line": "85-93",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/fram"
+    },
+    {
+      "id": "DRV-FRAM-004",
+      "content": "The FRAM_ReadData function shall read a variable from FRAM corresponding to the block ID",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "fram.h",
+        "line": "95-103",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/fram"
+    },
+    {
+      "id": "DRV-FRAM-005",
+      "content": "The FRAM shall return FRAM_ACCESS_OK, FRAM_ACCESS_SPI_BUSY, FRAM_ACCESS_CRC_BUSY, or FRAM_ACCESS_CRC_ERROR status",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "fram_cfg.h",
+        "line": "88-94",
+        "extraction_type": "config"
+      },
+      "module": "driver/fram"
+    },
+    {
+      "id": "DRV-FRAM-006",
+      "content": "The FRAM shall store VERSION, SOC, SBC_INIT_STATE, DEEP_DISCHARGE_FLAG, SOE, SYS_MON_RECORD, and INSULATION_FLAG blocks",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "fram_cfg.h",
+        "line": "103-113",
+        "extraction_type": "config"
+      },
+      "module": "driver/fram"
+    },
+    {
+      "id": "DRV-FRAM-007",
+      "content": "The FRAM shall use 8-byte CRC header for data integrity (FRAM_CRC_HEADER_SIZE)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "fram_cfg.h",
+        "line": "71",
+        "extraction_type": "config"
+      },
+      "module": "driver/fram"
+    },
+    {
+      "id": "DRV-MATH-001",
+      "content": "The foxmath module shall provide math library for often used math functions including slope and linear interpolation",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxmath.h",
+        "line": "43-56",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/foxmath"
+    },
+    {
+      "id": "DRV-MATH-002",
+      "content": "The MATH_StartupSelfTest function shall provide self-test for math functions that can be called at startup",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "foxmath.h",
+        "line": "89-97",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/foxmath"
+    },
+    {
+      "id": "DRV-MATH-003",
+      "content": "The MATH_LinearInterpolation function shall linearly inter-/extrapolate a third point according to two given points",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "foxmath.h",
+        "line": "99-115",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/foxmath"
+    },
+    {
+      "id": "DRV-MATH-004",
+      "content": "The MATH_AbsInt32_t function shall return absolute value or INT32_MAX if INT32_MIN is passed",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "foxmath.h",
+        "line": "159-164",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/foxmath"
+    },
+    {
+      "id": "DRV-CHK-001",
+      "content": "The checksum module shall provide checksum validation functionality",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "checksum.h",
+        "line": "43-53",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/checksum"
+    },
+    {
+      "id": "DRV-CHK-002",
+      "content": "The CHK_ValidateChecksum function shall validate checksum and return STD_RETURN_TYPE_e",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "checksum.h",
+        "line": "69-70",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/checksum"
+    },
+    {
+      "id": "DRV-CRC-001",
+      "content": "The CRC module shall use the system CRC hardware for data integrity calculation",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "crc.h",
+        "line": "43-53",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/crc"
+    },
+    {
+      "id": "DRV-CRC-002",
+      "content": "The CRC shall use seed value 0xBADC0DED (high) and 0xDEADBEEF (low) for CRC calculation",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "crc.h",
+        "line": "68-71",
+        "extraction_type": "config"
+      },
+      "module": "driver/crc"
+    },
+    {
+      "id": "DRV-CRC-003",
+      "content": "The CRC_CalculateCrc function shall compute CRC of data flow using MCU hardware with byte chunks",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "crc.h",
+        "line": "108-119",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/crc"
+    },
+    {
+      "id": "DRV-PEX-001",
+      "content": "The PEX module shall provide a driver for the NXP PCA9539 port expander module",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "pex.h",
+        "line": "43-54",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/pex"
+    },
+    {
+      "id": "DRV-PEX-002",
+      "content": "The PEX shall support 3 port expanders (PEX_NR_OF_PORT_EXPANDERS = 3)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "pex_cfg.h",
+        "line": "69",
+        "extraction_type": "config"
+      },
+      "module": "driver/pex"
+    },
+    {
+      "id": "DRV-PEX-003",
+      "content": "The PEX_Initialize function shall initialize local variable containing state of port expander",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "pex.h",
+        "line": "76-80",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/pex"
+    },
+    {
+      "id": "DRV-PEX-004",
+      "content": "The PEX_SetPin function shall set a port expander pin to high",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "pex.h",
+        "line": "82-87",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/pex"
+    },
+    {
+      "id": "DRV-PEX-005",
+      "content": "The PEX_ResetPin function shall set a port expander pin to low",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "pex.h",
+        "line": "89-95",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/pex"
+    },
+    {
+      "id": "DRV-PEX-006",
+      "content": "The PEX_Trigger function shall implement reading/writing to port expander registers via I2C",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "pex.h",
+        "line": "131-139",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/pex"
+    },
+    {
+      "id": "DRV-PHY-001",
+      "content": "The PHY module shall provide configuration for the PHY layer including address and timing settings",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "phy_cfg.h",
+        "line": "43-53",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/phy"
+    },
+    {
+      "id": "DRV-PHY-002",
+      "content": "The PHY shall use address 1 (PHY_ADDRESS)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "phy_cfg.h",
+        "line": "62",
+        "extraction_type": "config"
+      },
+      "module": "driver/phy"
+    },
+    {
+      "id": "DRV-PHY-003",
+      "content": "The PHY shall require at least 720ns for hardware reset (PHY_HW_RESET_TIME = 1)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "phy_cfg.h",
+        "line": "69",
+        "extraction_type": "config"
+      },
+      "module": "driver/phy"
+    },
+    {
+      "id": "DRV-PHY-004",
+      "content": "The PHY auto-negotiation delay shall be 100 time units (PHY_AUTO_NEG_DELAY_TIME)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "phy_cfg.h",
+        "line": "71",
+        "extraction_type": "config"
+      },
+      "module": "driver/phy"
+    },
+    {
+      "id": "DRV-MEAS-001",
+      "content": "The MEAS module shall provide driver for measurements needed by the BMS (current, voltage, temperature)",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "meas.h",
+        "line": "43-55",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/meas"
+    },
+    {
+      "id": "DRV-MEAS-002",
+      "content": "The MEAS_Initialize function shall call all initialization functions",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "meas.h",
+        "line": "72-75",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/meas"
+    },
+    {
+      "id": "DRV-MEAS-003",
+      "content": "The MEAS_Control function shall be called from the task every 1ms",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "meas.h",
+        "line": "77-83",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/meas"
+    },
+    {
+      "id": "DRV-MEAS-004",
+      "content": "The MEAS_IsFirstMeasurementCycleFinished function shall check if the first AFE measurement cycle was completed",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "meas.h",
+        "line": "85-89",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/meas"
+    },
+    {
+      "id": "DRV-MEAS-005",
+      "content": "The MEAS_RequestOpenWireCheck function shall make request to AFE state machine to perform open-wire check",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "meas.h",
+        "line": "124-128",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/meas"
+    },
+    {
+      "id": "DRV-HTSEN-001",
+      "content": "The HTSEN module shall provide a driver for the Sensirion SHT35-DIS I2C humidity/temperature sensor",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "htsensor.h",
+        "line": "43-53",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/htsensor"
+    },
+    {
+      "id": "DRV-HTSEN-002",
+      "content": "The HTSEN state machine shall have states: HTSEN_START_MEAS, HTSEN_READ_RESULTS",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "htsensor.h",
+        "line": "64-70",
+        "extraction_type": "state_machine"
+      },
+      "module": "driver/htsensor"
+    },
+    {
+      "id": "DRV-HTSEN-003",
+      "content": "The HTSEN_Trigger function shall step through the state machine that handles I2C sensor measurement",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "htsensor.h",
+        "line": "76-81",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/htsensor"
+    },
+    {
+      "id": "DRV-SPS-001",
+      "content": "The SPS module shall provide headers for the driver for smart power switches",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sps.h",
+        "line": "43-53",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/sps"
+    },
+    {
+      "id": "DRV-SPS-002",
+      "content": "The SPS_Initialize function shall initialize IOs for the SPS driver including register configuration",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sps.h",
+        "line": "74-79",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/sps"
+    },
+    {
+      "id": "DRV-SPS-003",
+      "content": "The SPS_Ctrl function shall be called time-triggered every 10ms and must not be re-entrant",
+      "type": "SWE",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sps.h",
+        "line": "81-87",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/sps"
+    },
+    {
+      "id": "DRV-SPS-004",
+      "content": "The SPS_RequestContactorState function shall request contactor state for channels affiliated with SPS_AFF_CONTACTOR",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "sps.h",
+        "line": "89-97",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/sps"
+    },
+    {
+      "id": "DRV-SPS-005",
+      "content": "The SPS_GetChannelCurrentFeedback function shall compare measured current with threshold to determine contactor state",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "sps.h",
+        "line": "109-117",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/sps"
+    },
+    {
+      "id": "DRV-SPS-006",
+      "content": "Each SPS IC shall have 4 outputs (SPS_NR_CONTACTOR_PER_IC = 4)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sps_cfg.h",
+        "line": "82",
+        "extraction_type": "config"
+      },
+      "module": "driver/sps"
+    },
+    {
+      "id": "DRV-SPS-007",
+      "content": "The SPS shall use 2 ICs in daisy-chain (SPS_NR_OF_IC = 2)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sps_cfg.h",
+        "line": "85",
+        "extraction_type": "config"
+      },
+      "module": "driver/sps"
+    },
+    {
+      "id": "DRV-SPS-008",
+      "content": "The SPS current measurement LSB shall be 0.98mA (SPS_I_MEASUREMENT_LSB_mA)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sps_cfg.h",
+        "line": "163",
+        "extraction_type": "config"
+      },
+      "module": "driver/sps"
+    },
+    {
+      "id": "DRV-SPS-009",
+      "content": "The SPS shall recognize contactor as closed when current exceeds 20mA threshold (SPS_CHANNEL_ON_DEFAULT_THRESHOLD_mA)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "sps_cfg.h",
+        "line": "166",
+        "extraction_type": "config"
+      },
+      "module": "driver/sps"
+    },
+    {
+      "id": "DRV-SPS-010",
+      "content": "The SPS state machine shall have states: SPS_START, SPS_RESET_LOW, SPS_RESET_HIGH, SPS_CONFIGURE_CONTROL_REGISTER, SPS_TRIGGER_CURRENT_MEASUREMENT, SPS_READ_MEASURED_CURRENT1-4, SPS_READ_EN_IRQ_PIN",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sps_cfg.h",
+        "line": "209-221",
+        "extraction_type": "state_machine"
+      },
+      "module": "driver/sps"
+    },
+    {
+      "id": "DRV-SPS-011",
+      "content": "The SPS shall validate channelIndex is less than SPS_NR_OF_AVAILABLE_SPS_CHANNELS",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "sps.c",
+        "line": "477",
+        "extraction_type": "assertion"
+      },
+      "module": "driver/sps"
+    },
+    {
+      "id": "DRV-SPS-012",
+      "content": "The SPS shall validate channelFunction is either SPS_CHANNEL_OFF or SPS_CHANNEL_ON",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "sps.c",
+        "line": "478",
+        "extraction_type": "assertion"
+      },
+      "module": "driver/sps"
+    },
+    {
+      "id": "DRV-SPS-013",
+      "content": "The SPS channel affiliation types shall be SPS_AFF_CONTACTOR or SPS_AFF_GENERAL_IO",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "sps_types.h",
+        "line": "67-76",
+        "extraction_type": "config"
+      },
+      "module": "driver/sps"
+    },
+    {
+      "id": "DRV-CONT-001",
+      "content": "The contactor module shall provide headers for the driver for contactors",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "contactor.h",
+        "line": "43-53",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/contactor"
+    },
+    {
+      "id": "DRV-CONT-002",
+      "content": "The CONT_GetContactorState function shall return the current contactor state from CONT_ELECTRICAL_STATE_TYPE_e",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "contactor.h",
+        "line": "70-77",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/contactor"
+    },
+    {
+      "id": "DRV-CONT-003",
+      "content": "The CONT_OpenContactor function shall make an open state request to the specific contactor",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "contactor.h",
+        "line": "79-85",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/contactor"
+    },
+    {
+      "id": "DRV-CONT-004",
+      "content": "The CONT_CloseContactor function shall make a close state request to the specific contactor",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "contactor.h",
+        "line": "87-93",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/contactor"
+    },
+    {
+      "id": "DRV-CONT-005",
+      "content": "The CONT_OpenAllContactors function shall open all contactors",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "contactor.h",
+        "line": "119-121",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/contactor"
+    },
+    {
+      "id": "DRV-CONT-006",
+      "content": "The CONT_CheckFeedback function shall make a DIAG entry for each contactor when feedback does not match set value",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "contactor.h",
+        "line": "123-128",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/contactor"
+    },
+    {
+      "id": "DRV-CONT-007",
+      "content": "The contactor states shall be CONT_SWITCH_OFF (open), CONT_SWITCH_ON (closed), CONT_SWITCH_UNDEFINED",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "contactor_cfg.h",
+        "line": "69-74",
+        "extraction_type": "config"
+      },
+      "module": "driver/contactor"
+    },
+    {
+      "id": "DRV-CONT-008",
+      "content": "The contactor feedback types shall be CONT_FEEDBACK_NORMALLY_OPEN, CONT_FEEDBACK_NORMALLY_CLOSED, CONT_FEEDBACK_THROUGH_CURRENT, CONT_HAS_NO_FEEDBACK",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "contactor_cfg.h",
+        "line": "76-82",
+        "extraction_type": "config"
+      },
+      "module": "driver/contactor"
+    },
+    {
+      "id": "DRV-CONT-009",
+      "content": "The contactor types shall be CONT_PLUS (HV plus path), CONT_MINUS (HV minus path), CONT_PRECHARGE, CONT_UNDEFINED",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "contactor_cfg.h",
+        "line": "84-90",
+        "extraction_type": "config"
+      },
+      "module": "driver/contactor"
+    },
+    {
+      "id": "DRV-CONT-010",
+      "content": "The contactor shall validate stringNumber is less than BS_NR_OF_STRINGS",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "contactor.c",
+        "line": "166",
+        "extraction_type": "assertion"
+      },
+      "module": "driver/contactor"
+    },
+    {
+      "id": "DRV-CONT-011",
+      "content": "The contactor shall validate contactor type is not CONT_UNDEFINED",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "contactor.c",
+        "line": "167",
+        "extraction_type": "assertion"
+      },
+      "module": "driver/contactor"
+    },
+    {
+      "id": "DRV-CONT-012",
+      "content": "The contactor shall validate SPS channel is less than SPS_NR_OF_AVAILABLE_SPS_CHANNELS",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "contactor.c",
+        "line": "115",
+        "extraction_type": "assertion"
+      },
+      "module": "driver/contactor"
+    },
+    {
+      "id": "DRV-CONT-013",
+      "content": "The contactor shall validate channel affiliation is SPS_AFF_CONTACTOR",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "contactor.c",
+        "line": "120",
+        "extraction_type": "assertion"
+      },
+      "module": "driver/contactor"
+    },
+    {
+      "id": "DRV-CONT-014",
+      "content": "The contactor state machine shall trap on undefined contactor type (FAS_TRAP)",
+      "type": "FSR",
+      "classification": "safety",
+      "confidence": "high",
+      "source": {
+        "file": "contactor.c",
+        "line": "160",
+        "extraction_type": "assertion"
+      },
+      "module": "driver/contactor"
+    },
+    {
+      "id": "DRV-CAN-001",
+      "content": "The CAN module shall provide header for the driver for the CAN communication interface",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "can.h",
+        "line": "43-54",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/can"
+    },
+    {
+      "id": "DRV-CAN-002",
+      "content": "The CAN shall support 64 message boxes (CAN_TOTAL_NUMBER_OF_MESSAGE_BOXES) for TMS570LC4357",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "can.h",
+        "line": "66-67",
+        "extraction_type": "config"
+      },
+      "module": "driver/can"
+    },
+    {
+      "id": "DRV-CAN-003",
+      "content": "The CAN shall define 32 TX message boxes (CAN_NR_OF_TX_MESSAGE_BOX) out of 64 total",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "can.h",
+        "line": "69-72",
+        "extraction_type": "config"
+      },
+      "module": "driver/can"
+    },
+    {
+      "id": "DRV-CAN-004",
+      "content": "The CAN TX function shall be called in 10ms task time slot (CAN_TICK_ms)",
+      "type": "CFG",
+      "classification": "constraint",
+      "confidence": "high",
+      "source": {
+        "file": "can.h",
+        "line": "74-77",
+        "extraction_type": "config"
+      },
+      "module": "driver/can"
+    },
+    {
+      "id": "DRV-CAN-005",
+      "content": "The CAN_DataSend function shall send data over CAN by marking message boxes for transmission",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "can.h",
+        "line": "91-101",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/can"
+    },
+    {
+      "id": "DRV-CAN-006",
+      "content": "The CAN_MainFunction shall perform CAN timing checks and send periodic messages",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "can.h",
+        "line": "108-112",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/can"
+    },
+    {
+      "id": "DRV-CAN-007",
+      "content": "The CAN_ReadRxBuffer shall check received data from buffer because CAN frames are received in interrupt routine",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "can.h",
+        "line": "114-122",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/can"
+    },
+    {
+      "id": "DRV-CAN-008",
+      "content": "The CAN_Initialize function shall enable the CAN transceiver before using CAN interface",
+      "type": "SWE",
+      "classification": "functional",
+      "confidence": "high",
+      "source": {
+        "file": "can.h",
+        "line": "124-129",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/can"
+    },
+    {
+      "id": "DRV-CAN-009",
+      "content": "The CAN_EnablePeriodic function shall enable/disable periodic sending to prevent sending uninitialized data",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "can.h",
+        "line": "131-136",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/can"
+    },
+    {
+      "id": "DRV-CAN-010",
+      "content": "The CAN_IsCurrentSensorPresent function shall return presence flag for current sensor",
+      "type": "SWE",
+      "classification": "interface",
+      "confidence": "high",
+      "source": {
+        "file": "can.h",
+        "line": "138-142",
+        "extraction_type": "doxygen"
+      },
+      "module": "driver/can"
+    }
+  ]
+}

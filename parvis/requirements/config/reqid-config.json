@@ -1,0 +1,8 @@
+{
+  "auto_assign_enabled": true,
+  "format_strict_mode": true,
+  "hierarchy_max_depth": 3,
+  "sequence_padding": 3,
+  "backup_on_modify": true,
+  "reserved_expiry_days": 30
+}

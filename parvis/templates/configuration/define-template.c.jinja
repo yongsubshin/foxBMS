@@ -1,0 +1,191 @@
+/**
+ * @file    {{ filename }}
+ * @author  foxBMS Team
+ * @date    {{ generation_date }}
+ * @updated {{ generation_date }}
+ * @version {{ version | default('v1.0.0') }}
+ * @ingroup {{ module_group | default('CONFIGURATION') }}
+ * @prefix  {{ prefix | upper }}
+ *
+ * @brief   Configuration defines for {{ module_name }}
+ * @details Auto-generated configuration macros with MISRA C:2012 compliant
+ *          range validation and documentation.
+ *
+ * @req     {{ requirement_id }}
+ * @asil    {{ asil_level | default('ASIL-B') }}
+ */
+
+#ifndef {{ guard_name | upper | default(prefix | upper + '_CFG_H_') }}
+#define {{ guard_name | upper | default(prefix | upper + '_CFG_H_') }}
+
+/*========== Includes =======================================================*/
+
+#include "fstd_types.h"
+
+/*========== Macros and Definitions =========================================*/
+
+/* ========== Version Information ========================================== */
+
+/** @brief Configuration version major number */
+#define {{ prefix | upper }}_CFG_VERSION_MAJOR ({{ version_major | default(1) }}u)
+
+/** @brief Configuration version minor number */
+#define {{ prefix | upper }}_CFG_VERSION_MINOR ({{ version_minor | default(0) }}u)
+
+/** @brief Configuration version patch number */
+#define {{ prefix | upper }}_CFG_VERSION_PATCH ({{ version_patch | default(0) }}u)
+
+/* ========== Timing Configuration ========================================= */
+
+{% for define in timing_defines | default([]) %}
+/**
+ * @brief   {{ define.description }}
+{% if define.unit is defined %}
+ * @unit    {{ define.unit }}
+{% endif %}
+{% if define.min_value is defined and define.max_value is defined %}
+ * @range   [{{ define.min_value }}, {{ define.max_value }}]
+{% endif %}
+ * @req     {{ define.requirement_id | default(requirement_id) }}
+ */
+#define {{ prefix | upper }}_{{ define.name | upper }} ({{ define.value }}{{ define.suffix | default('u') }})
+
+{% if define.min_value is defined %}
+/** @brief Minimum value for {{ define.name }} */
+#define {{ prefix | upper }}_{{ define.name | upper }}_MIN ({{ define.min_value }}{{ define.suffix | default('u') }})
+{% endif %}
+
+{% if define.max_value is defined %}
+/** @brief Maximum value for {{ define.name }} */
+#define {{ prefix | upper }}_{{ define.name | upper }}_MAX ({{ define.max_value }}{{ define.suffix | default('u') }})
+{% endif %}
+
+{% endfor %}
+
+/* ========== Size Configuration =========================================== */
+
+{% for define in size_defines | default([]) %}
+/**
+ * @brief   {{ define.description }}
+{% if define.unit is defined %}
+ * @unit    {{ define.unit }}
+{% endif %}
+{% if define.min_value is defined and define.max_value is defined %}
+ * @range   [{{ define.min_value }}, {{ define.max_value }}]
+{% endif %}
+ * @req     {{ define.requirement_id | default(requirement_id) }}
+ */
+#define {{ prefix | upper }}_{{ define.name | upper }} ({{ define.value }}{{ define.suffix | default('u') }})
+
+{% if define.min_value is defined %}
+/** @brief Minimum value for {{ define.name }} */
+#define {{ prefix | upper }}_{{ define.name | upper }}_MIN ({{ define.min_value }}{{ define.suffix | default('u') }})
+{% endif %}
+
+{% if define.max_value is defined %}
+/** @brief Maximum value for {{ define.name }} */
+#define {{ prefix | upper }}_{{ define.name | upper }}_MAX ({{ define.max_value }}{{ define.suffix | default('u') }})
+{% endif %}
+
+{% endfor %}
+
+/* ========== Threshold Configuration ====================================== */
+
+{% for define in threshold_defines | default([]) %}
+/**
+ * @brief   {{ define.description }}
+{% if define.unit is defined %}
+ * @unit    {{ define.unit }}
+{% endif %}
+{% if define.min_value is defined and define.max_value is defined %}
+ * @range   [{{ define.min_value }}, {{ define.max_value }}]
+{% endif %}
+{% if define.safety_critical | default(false) %}
+ * @warning Safety-critical threshold - modification requires safety review
+{% endif %}
+ * @req     {{ define.requirement_id | default(requirement_id) }}
+ */
+#define {{ prefix | upper }}_{{ define.name | upper }} ({{ define.value }}{{ define.suffix | default('u') }})
+
+{% if define.min_value is defined %}
+/** @brief Minimum value for {{ define.name }} */
+#define {{ prefix | upper }}_{{ define.name | upper }}_MIN ({{ define.min_value }}{{ define.suffix | default('u') }})
+{% endif %}
+
+{% if define.max_value is defined %}
+/** @brief Maximum value for {{ define.name }} */
+#define {{ prefix | upper }}_{{ define.name | upper }}_MAX ({{ define.max_value }}{{ define.suffix | default('u') }})
+{% endif %}
+
+{% endfor %}
+
+/* ========== Feature Enable/Disable ======================================= */
+
+{% for define in feature_defines | default([]) %}
+/**
+ * @brief   {{ define.description }}
+ * @details Enable (1u) or disable (0u) this feature.
+ * @req     {{ define.requirement_id | default(requirement_id) }}
+ */
+#define {{ prefix | upper }}_{{ define.name | upper }}_ENABLED ({{ '1u' if define.enabled | default(true) else '0u' }})
+
+{% endfor %}
+
+/* ========== Compile-Time Validation ====================================== */
+
+{% for define in timing_defines | default([]) %}
+{% if define.min_value is defined and define.max_value is defined %}
+/* Validate {{ define.name }} is within allowed range */
+#if ({{ prefix | upper }}_{{ define.name | upper }} < {{ prefix | upper }}_{{ define.name | upper }}_MIN)
+    #error "{{ prefix | upper }}_{{ define.name | upper }} is below minimum allowed value"
+#endif
+#if ({{ prefix | upper }}_{{ define.name | upper }} > {{ prefix | upper }}_{{ define.name | upper }}_MAX)
+    #error "{{ prefix | upper }}_{{ define.name | upper }} exceeds maximum allowed value"
+#endif
+
+{% endif %}
+{% endfor %}
+
+{% for define in size_defines | default([]) %}
+{% if define.min_value is defined and define.max_value is defined %}
+/* Validate {{ define.name }} is within allowed range */
+#if ({{ prefix | upper }}_{{ define.name | upper }} < {{ prefix | upper }}_{{ define.name | upper }}_MIN)
+    #error "{{ prefix | upper }}_{{ define.name | upper }} is below minimum allowed value"
+#endif
+#if ({{ prefix | upper }}_{{ define.name | upper }} > {{ prefix | upper }}_{{ define.name | upper }}_MAX)
+    #error "{{ prefix | upper }}_{{ define.name | upper }} exceeds maximum allowed value"
+#endif
+
+{% endif %}
+{% endfor %}
+
+{% for define in threshold_defines | default([]) %}
+{% if define.min_value is defined and define.max_value is defined %}
+/* Validate {{ define.name }} is within allowed range */
+#if ({{ prefix | upper }}_{{ define.name | upper }} < {{ prefix | upper }}_{{ define.name | upper }}_MIN)
+    #error "{{ prefix | upper }}_{{ define.name | upper }} is below minimum allowed value"
+#endif
+#if ({{ prefix | upper }}_{{ define.name | upper }} > {{ prefix | upper }}_{{ define.name | upper }}_MAX)
+    #error "{{ prefix | upper }}_{{ define.name | upper }} exceeds maximum allowed value"
+#endif
+
+{% endif %}
+{% endfor %}
+
+/*========== Extern Constant and Variable Definitions =======================*/
+
+/*========== Extern Function Prototypes =====================================*/
+
+{% if include_runtime_validation | default(true) %}
+/**
+ * @brief   Validates all configuration values at runtime
+ * @details Performs range checking on all configurable parameters.
+ * @return  STD_OK if all values are valid, STD_NOT_OK otherwise
+ * @req     {{ requirement_id }}
+ */
+extern STD_RETURN_TYPE_e {{ prefix | upper }}_CFG_ValidateConfiguration(void);
+{% endif %}
+
+#endif /* {{ guard_name | upper | default(prefix | upper + '_CFG_H_') }} */
+
+/*========== End of File ====================================================*/

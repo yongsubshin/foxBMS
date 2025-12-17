@@ -1,0 +1,1195 @@
+{
+  "version": "1.0.0",
+  "description": "MISRA C:2012 Compliant Code Patterns for foxBMS",
+  "last_updated": "2025-12-17",
+  "total_patterns": 112,
+  "categories": [
+    {
+      "id": "pointer-validation",
+      "name": "Pointer Validation Patterns",
+      "description": "MISRA C:2012 Rules 11.x - Pointer type conversions and validation",
+      "pattern_count": 20,
+      "patterns": [
+        {
+          "id": "PV-001",
+          "name": "Null Pointer Check",
+          "misra_rule": "Rule 11.9",
+          "description": "Always use explicit NULL comparison for pointer validation",
+          "severity": "required",
+          "template": "if (ptr != NULL) { /* safe to use ptr */ }",
+          "anti_pattern": "if (ptr) { /* implicit conversion */ }",
+          "rationale": "Explicit comparison prevents implicit pointer-to-boolean conversion"
+        },
+        {
+          "id": "PV-002",
+          "name": "FAS_ASSERT Pointer Validation",
+          "misra_rule": "Rule 11.9",
+          "description": "Use FAS_ASSERT for pointer parameter validation",
+          "severity": "required",
+          "template": "FAS_ASSERT(pParameter != NULL);",
+          "anti_pattern": "assert(pParameter);",
+          "rationale": "FAS_ASSERT provides consistent error handling across foxBMS"
+        },
+        {
+          "id": "PV-003",
+          "name": "Const Pointer Input Parameter",
+          "misra_rule": "Rule 8.13",
+          "description": "Use const for pointer parameters that are not modified",
+          "severity": "advisory",
+          "template": "void Function(const uint8_t* pData, uint32_t length)",
+          "anti_pattern": "void Function(uint8_t* pData, uint32_t length)",
+          "rationale": "Const correctness improves code safety and readability"
+        },
+        {
+          "id": "PV-004",
+          "name": "Pointer Arithmetic Bounds Check",
+          "misra_rule": "Rule 18.1",
+          "description": "Validate pointer arithmetic stays within array bounds",
+          "severity": "required",
+          "template": "if ((index < arraySize) && (pArray != NULL)) { value = pArray[index]; }",
+          "anti_pattern": "value = pArray[index];",
+          "rationale": "Prevents buffer overflow vulnerabilities"
+        },
+        {
+          "id": "PV-005",
+          "name": "Void Pointer Cast",
+          "misra_rule": "Rule 11.5",
+          "description": "Avoid casting from void pointer to object pointer",
+          "severity": "advisory",
+          "template": "uint8_t* pData = (uint8_t*)pvMemory; /* Document reason */",
+          "anti_pattern": "uint8_t* pData = pvMemory;",
+          "rationale": "Explicit cast documents intentional type conversion"
+        },
+        {
+          "id": "PV-006",
+          "name": "Function Pointer Validation",
+          "misra_rule": "Rule 11.1",
+          "description": "Validate function pointers before calling",
+          "severity": "required",
+          "template": "if (pCallback != NULL) { pCallback(param); }",
+          "anti_pattern": "pCallback(param);",
+          "rationale": "Prevents undefined behavior from null function pointers"
+        },
+        {
+          "id": "PV-007",
+          "name": "Pointer Return Value Check",
+          "misra_rule": "Rule 11.9",
+          "description": "Always check return value of functions returning pointers",
+          "severity": "required",
+          "template": "void* pMem = malloc(size);\nif (pMem == NULL) { /* handle error */ }",
+          "anti_pattern": "void* pMem = malloc(size);\nmemset(pMem, 0, size);",
+          "rationale": "Prevents null pointer dereference on allocation failure"
+        },
+        {
+          "id": "PV-008",
+          "name": "Pointer to Integer Cast",
+          "misra_rule": "Rule 11.4",
+          "description": "Avoid pointer to integer conversions unless necessary for hardware access",
+          "severity": "advisory",
+          "template": "uintptr_t address = (uintptr_t)pRegister; /* Hardware register access */",
+          "anti_pattern": "uint32_t address = (uint32_t)pRegister;",
+          "rationale": "uintptr_t is guaranteed to hold pointer value"
+        },
+        {
+          "id": "PV-009",
+          "name": "Pointer Array Initialization",
+          "misra_rule": "Rule 11.9",
+          "description": "Initialize pointer arrays to NULL",
+          "severity": "required",
+          "template": "static void* pointerArray[SIZE] = {NULL};",
+          "anti_pattern": "static void* pointerArray[SIZE];",
+          "rationale": "Uninitialized pointers contain garbage values"
+        },
+        {
+          "id": "PV-010",
+          "name": "Double Pointer Validation",
+          "misra_rule": "Rule 11.9",
+          "description": "Validate both levels of double pointers",
+          "severity": "required",
+          "template": "if ((ppData != NULL) && (*ppData != NULL)) { /* safe */ }",
+          "anti_pattern": "if (*ppData != NULL) { /* unsafe */ }",
+          "rationale": "Must validate outer pointer before dereferencing"
+        },
+        {
+          "id": "PV-011",
+          "name": "Pointer Comparison Same Array",
+          "misra_rule": "Rule 18.3",
+          "description": "Only compare pointers within same array",
+          "severity": "required",
+          "template": "if ((pCurrent >= pArrayStart) && (pCurrent < pArrayEnd)) { /* valid */ }",
+          "anti_pattern": "if (pCurrent < pOtherArray) { /* undefined */ }",
+          "rationale": "Pointer comparison undefined between different arrays"
+        },
+        {
+          "id": "PV-012",
+          "name": "Pointer Subtraction",
+          "misra_rule": "Rule 18.2",
+          "description": "Only subtract pointers within same array",
+          "severity": "required",
+          "template": "ptrdiff_t offset = pEnd - pStart; /* same array */",
+          "anti_pattern": "ptrdiff_t offset = pArray1 - pArray2;",
+          "rationale": "Pointer subtraction undefined between different arrays"
+        },
+        {
+          "id": "PV-013",
+          "name": "Const Qualification Preservation",
+          "misra_rule": "Rule 11.8",
+          "description": "Do not cast away const qualification",
+          "severity": "required",
+          "template": "const uint8_t* pConstData = pData; /* preserve const */",
+          "anti_pattern": "uint8_t* pMutable = (uint8_t*)pConstData;",
+          "rationale": "Casting away const can lead to undefined behavior"
+        },
+        {
+          "id": "PV-014",
+          "name": "Pointer to Struct Member",
+          "misra_rule": "Rule 18.4",
+          "description": "Use structure member access instead of pointer arithmetic",
+          "severity": "advisory",
+          "template": "value = pStruct->member;",
+          "anti_pattern": "value = *((uint32_t*)((uint8_t*)pStruct + offset));",
+          "rationale": "Structure member access is type-safe and readable"
+        },
+        {
+          "id": "PV-015",
+          "name": "Output Pointer Parameter",
+          "misra_rule": "Rule 11.9",
+          "description": "Validate output pointer parameters before use",
+          "severity": "required",
+          "template": "STD_RETURN_TYPE_e GetValue(uint32_t* pOutput) {\n    FAS_ASSERT(pOutput != NULL);\n    *pOutput = value;\n    return STD_OK;\n}",
+          "anti_pattern": "*pOutput = value;",
+          "rationale": "Must validate before writing through pointer"
+        },
+        {
+          "id": "PV-016",
+          "name": "Pointer Increment Bounds",
+          "misra_rule": "Rule 18.1",
+          "description": "Check bounds before pointer increment",
+          "severity": "required",
+          "template": "if (pCurrent < pEnd) { pCurrent++; }",
+          "anti_pattern": "pCurrent++;",
+          "rationale": "Pointer must not exceed array bounds"
+        },
+        {
+          "id": "PV-017",
+          "name": "Flexible Array Member",
+          "misra_rule": "Rule 18.7",
+          "description": "Avoid flexible array members",
+          "severity": "required",
+          "template": "typedef struct { uint32_t size; uint8_t data[MAX_SIZE]; } Buffer_s;",
+          "anti_pattern": "typedef struct { uint32_t size; uint8_t data[]; } Buffer_s;",
+          "rationale": "Flexible array members have undefined size"
+        },
+        {
+          "id": "PV-018",
+          "name": "Pointer Alignment",
+          "misra_rule": "Rule 11.3",
+          "description": "Ensure proper alignment when casting pointers",
+          "severity": "required",
+          "template": "_Static_assert(alignof(uint32_t) <= alignof(buffer), \"Alignment\");\nuint32_t* pData = (uint32_t*)buffer;",
+          "anti_pattern": "uint32_t* pData = (uint32_t*)byteBuffer;",
+          "rationale": "Misaligned access causes undefined behavior"
+        },
+        {
+          "id": "PV-019",
+          "name": "Pointer Size Independence",
+          "misra_rule": "Rule 11.4",
+          "description": "Use size_t for sizes and ptrdiff_t for differences",
+          "severity": "advisory",
+          "template": "size_t bufferSize = sizeof(buffer);\nptrdiff_t offset = pEnd - pStart;",
+          "anti_pattern": "uint32_t bufferSize = sizeof(buffer);",
+          "rationale": "Portable across 32-bit and 64-bit systems"
+        },
+        {
+          "id": "PV-020",
+          "name": "Pointer Initialization at Declaration",
+          "misra_rule": "Rule 9.1",
+          "description": "Initialize pointers at declaration",
+          "severity": "required",
+          "template": "uint8_t* pData = NULL;",
+          "anti_pattern": "uint8_t* pData;",
+          "rationale": "Uninitialized pointers cause undefined behavior"
+        }
+      ]
+    },
+    {
+      "id": "range-checking",
+      "name": "Range Checking Patterns",
+      "description": "MISRA C:2012 Rules 10.x, 14.x - Integer overflow and range validation",
+      "pattern_count": 17,
+      "patterns": [
+        {
+          "id": "RC-001",
+          "name": "Integer Overflow Prevention",
+          "misra_rule": "Rule 12.1",
+          "description": "Check for overflow before arithmetic operation",
+          "severity": "required",
+          "template": "if (a <= (UINT32_MAX - b)) { result = a + b; }",
+          "anti_pattern": "result = a + b;",
+          "rationale": "Prevents undefined behavior from integer overflow"
+        },
+        {
+          "id": "RC-002",
+          "name": "Array Index Bounds Check",
+          "misra_rule": "Rule 18.1",
+          "description": "Validate array index before access",
+          "severity": "required",
+          "template": "if (index < ARRAY_SIZE) { value = array[index]; }",
+          "anti_pattern": "value = array[index];",
+          "rationale": "Prevents buffer overflow"
+        },
+        {
+          "id": "RC-003",
+          "name": "Division by Zero Check",
+          "misra_rule": "Rule 21.18",
+          "description": "Validate divisor is non-zero before division",
+          "severity": "required",
+          "template": "if (divisor != 0u) { result = dividend / divisor; }",
+          "anti_pattern": "result = dividend / divisor;",
+          "rationale": "Division by zero is undefined behavior"
+        },
+        {
+          "id": "RC-004",
+          "name": "Enum Range Validation",
+          "misra_rule": "Rule 10.5",
+          "description": "Validate enum values before use",
+          "severity": "required",
+          "template": "if ((uint8_t)enumValue < ENUM_MAX_VALUE) { /* valid */ }",
+          "anti_pattern": "switch (enumValue) { /* no default */ }",
+          "rationale": "Enum may contain out-of-range values"
+        },
+        {
+          "id": "RC-005",
+          "name": "Signed to Unsigned Conversion",
+          "misra_rule": "Rule 10.4",
+          "description": "Validate signed value is non-negative before unsigned conversion",
+          "severity": "required",
+          "template": "if (signedValue >= 0) { unsignedValue = (uint32_t)signedValue; }",
+          "anti_pattern": "unsignedValue = (uint32_t)signedValue;",
+          "rationale": "Negative to unsigned conversion wraps around"
+        },
+        {
+          "id": "RC-006",
+          "name": "Multiplication Overflow Check",
+          "misra_rule": "Rule 12.1",
+          "description": "Check for overflow before multiplication",
+          "severity": "required",
+          "template": "if ((b == 0u) || (a <= (UINT32_MAX / b))) { result = a * b; }",
+          "anti_pattern": "result = a * b;",
+          "rationale": "Multiplication overflow is undefined behavior"
+        },
+        {
+          "id": "RC-007",
+          "name": "Shift Range Validation",
+          "misra_rule": "Rule 12.2",
+          "description": "Validate shift amount is within type width",
+          "severity": "required",
+          "template": "if (shiftAmount < 32u) { result = value << shiftAmount; }",
+          "anti_pattern": "result = value << shiftAmount;",
+          "rationale": "Shift by type width or more is undefined"
+        },
+        {
+          "id": "RC-008",
+          "name": "Type Narrowing Check",
+          "misra_rule": "Rule 10.3",
+          "description": "Validate value fits in narrower type",
+          "severity": "required",
+          "template": "if (value <= UINT8_MAX) { smallValue = (uint8_t)value; }",
+          "anti_pattern": "smallValue = (uint8_t)value;",
+          "rationale": "Truncation may lose significant bits"
+        },
+        {
+          "id": "RC-009",
+          "name": "Parameter Range Assertion",
+          "misra_rule": "Rule 21.18",
+          "description": "Assert parameter ranges at function entry",
+          "severity": "advisory",
+          "template": "FAS_ASSERT((value >= MIN_VALUE) && (value <= MAX_VALUE));",
+          "anti_pattern": "/* no validation */",
+          "rationale": "Early validation catches programming errors"
+        },
+        {
+          "id": "RC-010",
+          "name": "Loop Counter Type",
+          "misra_rule": "Rule 10.8",
+          "description": "Use appropriate type for loop counter",
+          "severity": "advisory",
+          "template": "for (uint32_t i = 0u; i < count; i++) { /* body */ }",
+          "anti_pattern": "for (int i = 0; i < count; i++) { /* body */ }",
+          "rationale": "Match counter type to compared value type"
+        },
+        {
+          "id": "RC-011",
+          "name": "Saturating Addition",
+          "misra_rule": "Rule 12.1",
+          "description": "Implement saturating arithmetic for safety",
+          "severity": "advisory",
+          "template": "result = (a <= (UINT32_MAX - b)) ? (a + b) : UINT32_MAX;",
+          "anti_pattern": "result = a + b;",
+          "rationale": "Saturation prevents overflow in non-critical paths"
+        },
+        {
+          "id": "RC-012",
+          "name": "Percentage Bounds",
+          "misra_rule": "Rule 14.3",
+          "description": "Validate percentage values are 0-100",
+          "severity": "required",
+          "template": "if (percentage <= 100u) { /* valid */ }",
+          "anti_pattern": "scaledValue = (value * percentage) / 100u;",
+          "rationale": "Percentages outside 0-100 are likely errors"
+        },
+        {
+          "id": "RC-013",
+          "name": "Temperature Range Check",
+          "misra_rule": "Rule 14.3",
+          "description": "Validate temperature within physical limits",
+          "severity": "required",
+          "template": "if ((temperature_ddegC >= TEMP_MIN_DDEGC) && (temperature_ddegC <= TEMP_MAX_DDEGC)) { /* valid */ }",
+          "anti_pattern": "/* no temperature validation */",
+          "rationale": "Temperature outside physical limits indicates sensor error"
+        },
+        {
+          "id": "RC-014",
+          "name": "Voltage Range Check",
+          "misra_rule": "Rule 14.3",
+          "description": "Validate voltage within operational limits",
+          "severity": "required",
+          "template": "if ((voltage_mV >= VOLTAGE_MIN_MV) && (voltage_mV <= VOLTAGE_MAX_MV)) { /* valid */ }",
+          "anti_pattern": "/* no voltage validation */",
+          "rationale": "Voltage outside limits indicates measurement error"
+        },
+        {
+          "id": "RC-015",
+          "name": "Current Range Check",
+          "misra_rule": "Rule 14.3",
+          "description": "Validate current within safe limits",
+          "severity": "required",
+          "template": "if ((current_mA >= CURRENT_MIN_MA) && (current_mA <= CURRENT_MAX_MA)) { /* valid */ }",
+          "anti_pattern": "/* no current validation */",
+          "rationale": "Current outside limits may indicate fault"
+        },
+        {
+          "id": "RC-016",
+          "name": "Timestamp Overflow Handling",
+          "misra_rule": "Rule 12.1",
+          "description": "Handle timer counter overflow correctly",
+          "severity": "required",
+          "template": "elapsed = (current >= start) ? (current - start) : ((UINT32_MAX - start) + current + 1u);",
+          "anti_pattern": "elapsed = current - start;",
+          "rationale": "Timer counters overflow and wrap around"
+        },
+        {
+          "id": "RC-017",
+          "name": "SOC Range Validation",
+          "misra_rule": "Rule 14.3",
+          "description": "Validate State of Charge is 0-10000 (0.00%-100.00%)",
+          "severity": "required",
+          "template": "if (soc_permille <= 10000u) { /* valid SOC */ }",
+          "anti_pattern": "/* no SOC validation */",
+          "rationale": "SOC outside 0-100% indicates estimation error"
+        }
+      ]
+    },
+    {
+      "id": "memory-safety",
+      "name": "Memory Safety Patterns",
+      "description": "MISRA C:2012 Rules 17.x, 21.x - Memory allocation and access safety",
+      "pattern_count": 15,
+      "patterns": [
+        {
+          "id": "MS-001",
+          "name": "Static Memory Allocation",
+          "misra_rule": "Rule 21.3",
+          "description": "Use static allocation instead of dynamic",
+          "severity": "required",
+          "template": "static uint8_t buffer[BUFFER_SIZE];",
+          "anti_pattern": "uint8_t* buffer = malloc(BUFFER_SIZE);",
+          "rationale": "Dynamic allocation in safety-critical systems is prohibited"
+        },
+        {
+          "id": "MS-002",
+          "name": "Stack Array Size Limit",
+          "misra_rule": "Rule 17.2",
+          "description": "Limit stack-allocated array size",
+          "severity": "advisory",
+          "template": "static uint8_t largeBuffer[LARGE_SIZE]; /* file scope */",
+          "anti_pattern": "uint8_t largeBuffer[10000]; /* on stack */",
+          "rationale": "Large stack arrays cause stack overflow"
+        },
+        {
+          "id": "MS-003",
+          "name": "Buffer Copy Bounds Check",
+          "misra_rule": "Rule 21.17",
+          "description": "Validate buffer sizes before copy",
+          "severity": "required",
+          "template": "if (sourceLen <= destSize) { memcpy(dest, source, sourceLen); }",
+          "anti_pattern": "memcpy(dest, source, sourceLen);",
+          "rationale": "Prevents buffer overflow on copy"
+        },
+        {
+          "id": "MS-004",
+          "name": "String Buffer Overflow Prevention",
+          "misra_rule": "Rule 21.17",
+          "description": "Use length-limited string functions",
+          "severity": "required",
+          "template": "strncpy(dest, source, destSize - 1u);\ndest[destSize - 1u] = '\\0';",
+          "anti_pattern": "strcpy(dest, source);",
+          "rationale": "strcpy has no bounds checking"
+        },
+        {
+          "id": "MS-005",
+          "name": "Array Initialization",
+          "misra_rule": "Rule 9.3",
+          "description": "Fully initialize arrays or use designated initializers",
+          "severity": "required",
+          "template": "uint8_t array[SIZE] = {0};",
+          "anti_pattern": "uint8_t array[SIZE];",
+          "rationale": "Uninitialized arrays contain garbage"
+        },
+        {
+          "id": "MS-006",
+          "name": "Structure Initialization",
+          "misra_rule": "Rule 9.2",
+          "description": "Initialize all structure members",
+          "severity": "required",
+          "template": "DATA_BLOCK_s data = {.header = 0, .value = 0, .timestamp = 0u};",
+          "anti_pattern": "DATA_BLOCK_s data;",
+          "rationale": "Uninitialized members contain garbage"
+        },
+        {
+          "id": "MS-007",
+          "name": "VLA Prohibition",
+          "misra_rule": "Rule 18.8",
+          "description": "Do not use variable length arrays",
+          "severity": "required",
+          "template": "#define MAX_SIZE 100u\nuint8_t buffer[MAX_SIZE];",
+          "anti_pattern": "uint8_t buffer[variableSize];",
+          "rationale": "VLAs have unpredictable stack usage"
+        },
+        {
+          "id": "MS-008",
+          "name": "Memory Alignment Check",
+          "misra_rule": "Rule 11.3",
+          "description": "Ensure proper memory alignment for type",
+          "severity": "required",
+          "template": "_Alignas(uint32_t) uint8_t alignedBuffer[SIZE];",
+          "anti_pattern": "uint8_t buffer[SIZE]; /* potentially misaligned */",
+          "rationale": "Misaligned access causes undefined behavior"
+        },
+        {
+          "id": "MS-009",
+          "name": "Memset Zero Pattern",
+          "misra_rule": "Rule 21.14",
+          "description": "Use memset for zero initialization of buffers",
+          "severity": "advisory",
+          "template": "(void)memset(buffer, 0, sizeof(buffer));",
+          "anti_pattern": "for (i = 0u; i < size; i++) { buffer[i] = 0u; }",
+          "rationale": "memset is optimized and clear in intent"
+        },
+        {
+          "id": "MS-010",
+          "name": "Structure Padding Awareness",
+          "misra_rule": "Rule 19.2",
+          "description": "Order structure members to minimize padding",
+          "severity": "advisory",
+          "template": "typedef struct { uint32_t large; uint16_t medium; uint8_t small; } Optimized_s;",
+          "anti_pattern": "typedef struct { uint8_t small; uint32_t large; uint16_t medium; } Wasteful_s;",
+          "rationale": "Proper ordering reduces memory waste"
+        },
+        {
+          "id": "MS-011",
+          "name": "Sizeof on Array Type",
+          "misra_rule": "Rule 12.5",
+          "description": "Use sizeof with array type for correct size",
+          "severity": "required",
+          "template": "size_t size = sizeof(array) / sizeof(array[0]);",
+          "anti_pattern": "size_t size = sizeof(pArray);",
+          "rationale": "sizeof pointer returns pointer size, not array size"
+        },
+        {
+          "id": "MS-012",
+          "name": "Buffer Overread Prevention",
+          "misra_rule": "Rule 21.17",
+          "description": "Validate read length against buffer size",
+          "severity": "required",
+          "template": "if (offset + length <= bufferSize) { memcpy(dest, &buffer[offset], length); }",
+          "anti_pattern": "memcpy(dest, &buffer[offset], length);",
+          "rationale": "Prevents reading beyond buffer bounds"
+        },
+        {
+          "id": "MS-013",
+          "name": "Static Buffer for Return",
+          "misra_rule": "Rule 17.6",
+          "description": "Use static buffer for function returning pointer",
+          "severity": "required",
+          "template": "static char buffer[SIZE]; /* persistent across calls */\nreturn buffer;",
+          "anti_pattern": "char buffer[SIZE];\nreturn buffer; /* dangling pointer */",
+          "rationale": "Returning pointer to auto variable is undefined"
+        },
+        {
+          "id": "MS-014",
+          "name": "Union Type Safety",
+          "misra_rule": "Rule 19.2",
+          "description": "Add type tag to union for safe access",
+          "severity": "advisory",
+          "template": "typedef struct { DataType_e type; union { int32_t i; float f; } value; } TaggedUnion_s;",
+          "anti_pattern": "union { int32_t i; float f; } value;",
+          "rationale": "Type tag ensures correct union member access"
+        },
+        {
+          "id": "MS-015",
+          "name": "Circular Buffer Bounds",
+          "misra_rule": "Rule 18.1",
+          "description": "Use modulo for circular buffer index",
+          "severity": "required",
+          "template": "index = (index + 1u) % BUFFER_SIZE;",
+          "anti_pattern": "index++; if (index >= BUFFER_SIZE) { index = 0u; }",
+          "rationale": "Modulo ensures index stays within bounds"
+        }
+      ]
+    },
+    {
+      "id": "control-flow",
+      "name": "Control Flow Patterns",
+      "description": "MISRA C:2012 Rules 14.x, 15.x, 16.x - Control flow and decision safety",
+      "pattern_count": 16,
+      "patterns": [
+        {
+          "id": "CF-001",
+          "name": "Switch Default Case",
+          "misra_rule": "Rule 16.4",
+          "description": "Always include default case in switch",
+          "severity": "required",
+          "template": "switch (value) {\n    case A: break;\n    case B: break;\n    default:\n        FAS_ASSERT(FAS_TRAP);\n        break;\n}",
+          "anti_pattern": "switch (value) { case A: break; case B: break; }",
+          "rationale": "Default case handles unexpected values"
+        },
+        {
+          "id": "CF-002",
+          "name": "Switch Break Statement",
+          "misra_rule": "Rule 16.3",
+          "description": "Every non-empty case must end with break",
+          "severity": "required",
+          "template": "case VALUE:\n    action();\n    break;",
+          "anti_pattern": "case VALUE:\n    action();\n/* fall through */",
+          "rationale": "Prevents unintentional fall-through"
+        },
+        {
+          "id": "CF-003",
+          "name": "Single Entry Single Exit",
+          "misra_rule": "Rule 15.5",
+          "description": "Function should have single exit point",
+          "severity": "advisory",
+          "template": "STD_RETURN_TYPE_e result = STD_NOT_OK;\nif (condition) { result = STD_OK; }\nreturn result;",
+          "anti_pattern": "if (condition) { return STD_OK; }\nreturn STD_NOT_OK;",
+          "rationale": "Single exit improves code clarity"
+        },
+        {
+          "id": "CF-004",
+          "name": "Loop Counter Modification",
+          "misra_rule": "Rule 14.2",
+          "description": "Only modify loop counter in for statement",
+          "severity": "required",
+          "template": "for (uint32_t i = 0u; i < count; i++) { /* no i modification */ }",
+          "anti_pattern": "for (uint32_t i = 0u; i < count; i++) { if (cond) { i++; } }",
+          "rationale": "Counter modification in loop body is confusing"
+        },
+        {
+          "id": "CF-005",
+          "name": "Boolean Type in Conditions",
+          "misra_rule": "Rule 14.4",
+          "description": "Use explicit boolean comparison",
+          "severity": "required",
+          "template": "if (flag == true) { /* action */ }",
+          "anti_pattern": "if (flag) { /* implicit conversion */ }",
+          "rationale": "Explicit comparison is clearer"
+        },
+        {
+          "id": "CF-006",
+          "name": "Compound Condition Parentheses",
+          "misra_rule": "Rule 12.1",
+          "description": "Use parentheses in compound conditions",
+          "severity": "required",
+          "template": "if ((a > b) && ((c < d) || (e == f))) { /* action */ }",
+          "anti_pattern": "if (a > b && c < d || e == f) { /* ambiguous */ }",
+          "rationale": "Parentheses clarify operator precedence"
+        },
+        {
+          "id": "CF-007",
+          "name": "Else After If Block",
+          "misra_rule": "Rule 15.7",
+          "description": "If-else-if chain must end with else",
+          "severity": "required",
+          "template": "if (a) { }\nelse if (b) { }\nelse { /* handle all other cases */ }",
+          "anti_pattern": "if (a) { }\nelse if (b) { }",
+          "rationale": "Final else handles unexpected cases"
+        },
+        {
+          "id": "CF-008",
+          "name": "Goto Prohibition",
+          "misra_rule": "Rule 15.1",
+          "description": "Do not use goto statement",
+          "severity": "required",
+          "template": "while (condition) { if (error) { break; } }",
+          "anti_pattern": "loop: if (error) { goto cleanup; }",
+          "rationale": "Goto makes control flow difficult to follow"
+        },
+        {
+          "id": "CF-009",
+          "name": "Invariant Loop Condition",
+          "misra_rule": "Rule 14.3",
+          "description": "Avoid conditions that are always true or false",
+          "severity": "required",
+          "template": "while (running == true) { /* body may set running = false */ }",
+          "anti_pattern": "while (1u == 1u) { /* always true */ }",
+          "rationale": "Invariant conditions indicate logic errors"
+        },
+        {
+          "id": "CF-010",
+          "name": "Null Statement Clarification",
+          "misra_rule": "Rule 15.6",
+          "description": "Braces around null statement or comment",
+          "severity": "required",
+          "template": "while (condition) {\n    /* intentionally empty */\n}",
+          "anti_pattern": "while (condition);",
+          "rationale": "Null statement may be accidental"
+        },
+        {
+          "id": "CF-011",
+          "name": "Return in Void Function",
+          "misra_rule": "Rule 17.4",
+          "description": "All non-void functions must return value",
+          "severity": "required",
+          "template": "STD_RETURN_TYPE_e Function(void) {\n    return STD_OK;\n}",
+          "anti_pattern": "STD_RETURN_TYPE_e Function(void) {\n    /* missing return */\n}",
+          "rationale": "Missing return is undefined behavior"
+        },
+        {
+          "id": "CF-012",
+          "name": "Comparison Order",
+          "misra_rule": "Rule 14.4",
+          "description": "Place constant on right side of comparison",
+          "severity": "advisory",
+          "template": "if (variable == CONSTANT) { /* action */ }",
+          "anti_pattern": "if (CONSTANT == variable) { /* Yoda condition */ }",
+          "rationale": "Natural reading order improves clarity"
+        },
+        {
+          "id": "CF-013",
+          "name": "Assignment in Condition",
+          "misra_rule": "Rule 13.4",
+          "description": "No assignment in conditional expression",
+          "severity": "required",
+          "template": "result = Function();\nif (result != NULL) { /* use result */ }",
+          "anti_pattern": "if ((result = Function()) != NULL) { /* confusing */ }",
+          "rationale": "Assignment in condition is error-prone"
+        },
+        {
+          "id": "CF-014",
+          "name": "Unreachable Code",
+          "misra_rule": "Rule 2.1",
+          "description": "No unreachable code after return/break",
+          "severity": "required",
+          "template": "if (error) {\n    return STD_NOT_OK;\n}\n/* reachable code follows */",
+          "anti_pattern": "return STD_OK;\ncleanup(); /* unreachable */",
+          "rationale": "Unreachable code indicates logic error"
+        },
+        {
+          "id": "CF-015",
+          "name": "Loop Termination",
+          "misra_rule": "Rule 14.2",
+          "description": "Ensure loops have well-defined termination",
+          "severity": "required",
+          "template": "for (uint32_t i = 0u; i < MAX_ITERATIONS; i++) {\n    if (condition) { break; }\n}",
+          "anti_pattern": "while (true) { if (condition) { break; } }",
+          "rationale": "Bounded loops are safer than infinite loops"
+        },
+        {
+          "id": "CF-016",
+          "name": "Function Parameter Count",
+          "misra_rule": "Rule 8.2",
+          "description": "Limit function parameters to manageable number",
+          "severity": "advisory",
+          "template": "typedef struct { Type1 a; Type2 b; Type3 c; } Params_s;\nvoid Function(const Params_s* params);",
+          "anti_pattern": "void Function(Type1 a, Type2 b, Type3 c, Type4 d, Type5 e, Type6 f);",
+          "rationale": "Too many parameters reduce readability"
+        }
+      ]
+    },
+    {
+      "id": "type-safety",
+      "name": "Type Safety Patterns",
+      "description": "MISRA C:2012 Rules 10.x - Type conversions and safety",
+      "pattern_count": 16,
+      "patterns": [
+        {
+          "id": "TS-001",
+          "name": "Explicit Type Casting",
+          "misra_rule": "Rule 10.1",
+          "description": "Use explicit casts for type conversions",
+          "severity": "required",
+          "template": "uint16_t result = (uint16_t)(value8 + offset8);",
+          "anti_pattern": "uint16_t result = value8 + offset8;",
+          "rationale": "Explicit cast documents intentional conversion"
+        },
+        {
+          "id": "TS-002",
+          "name": "Unsigned Integer Literal Suffix",
+          "misra_rule": "Rule 7.2",
+          "description": "Use u suffix for unsigned literals",
+          "severity": "required",
+          "template": "uint32_t value = 100u;",
+          "anti_pattern": "uint32_t value = 100;",
+          "rationale": "Suffix clarifies literal type"
+        },
+        {
+          "id": "TS-003",
+          "name": "Fixed Width Integer Types",
+          "misra_rule": "Rule 4.6",
+          "description": "Use fixed-width types from stdint.h",
+          "severity": "required",
+          "template": "uint32_t counter;\nint16_t temperature;",
+          "anti_pattern": "unsigned int counter;\nshort temperature;",
+          "rationale": "Fixed-width types have consistent size across platforms"
+        },
+        {
+          "id": "TS-004",
+          "name": "Boolean Type Usage",
+          "misra_rule": "Rule 10.5",
+          "description": "Use bool type for boolean values",
+          "severity": "required",
+          "template": "bool isValid = (value > threshold);",
+          "anti_pattern": "uint8_t isValid = (value > threshold);",
+          "rationale": "bool type is semantically correct"
+        },
+        {
+          "id": "TS-005",
+          "name": "Enum Type Declaration",
+          "misra_rule": "Rule 10.5",
+          "description": "Define enum with explicit values",
+          "severity": "advisory",
+          "template": "typedef enum { STATE_IDLE = 0u, STATE_RUN = 1u, STATE_ERROR = 2u } State_e;",
+          "anti_pattern": "typedef enum { STATE_IDLE, STATE_RUN, STATE_ERROR } State_e;",
+          "rationale": "Explicit values prevent ordering dependencies"
+        },
+        {
+          "id": "TS-006",
+          "name": "Bitfield Type",
+          "misra_rule": "Rule 6.1",
+          "description": "Use unsigned type for bit fields",
+          "severity": "required",
+          "template": "struct { uint32_t flag : 1; uint32_t value : 7; } bitfield;",
+          "anti_pattern": "struct { int flag : 1; int value : 7; } bitfield;",
+          "rationale": "Signed bit fields have implementation-defined behavior"
+        },
+        {
+          "id": "TS-007",
+          "name": "Char Type for Characters Only",
+          "misra_rule": "Rule 10.1",
+          "description": "Use char only for characters, uint8_t for bytes",
+          "severity": "required",
+          "template": "char character = 'A';\nuint8_t byteValue = 0x41u;",
+          "anti_pattern": "char byteValue = 0x41;",
+          "rationale": "char signedness is implementation-defined"
+        },
+        {
+          "id": "TS-008",
+          "name": "Floating Point Comparison",
+          "misra_rule": "Rule 14.1",
+          "description": "Use epsilon for floating point comparison",
+          "severity": "required",
+          "template": "if (fabsf(a - b) < EPSILON) { /* approximately equal */ }",
+          "anti_pattern": "if (a == b) { /* exact comparison */ }",
+          "rationale": "Floating point equality is rarely exact"
+        },
+        {
+          "id": "TS-009",
+          "name": "Typedef for Complex Types",
+          "misra_rule": "Rule 8.12",
+          "description": "Use typedef for function pointer types",
+          "severity": "advisory",
+          "template": "typedef void (*Callback_f)(uint32_t param);\nCallback_f pCallback;",
+          "anti_pattern": "void (*pCallback)(uint32_t param);",
+          "rationale": "Typedef improves readability"
+        },
+        {
+          "id": "TS-010",
+          "name": "Size Type for Sizes",
+          "misra_rule": "Rule 10.8",
+          "description": "Use size_t for sizes and counts",
+          "severity": "advisory",
+          "template": "size_t arraySize = sizeof(array) / sizeof(array[0]);",
+          "anti_pattern": "uint32_t arraySize = sizeof(array) / sizeof(array[0]);",
+          "rationale": "size_t is the standard type for sizes"
+        },
+        {
+          "id": "TS-011",
+          "name": "Bitwise Operation Type",
+          "misra_rule": "Rule 10.1",
+          "description": "Use unsigned types for bitwise operations",
+          "severity": "required",
+          "template": "uint32_t mask = 0x00FFu;\nuint32_t result = value & mask;",
+          "anti_pattern": "int32_t result = value & mask;",
+          "rationale": "Signed bitwise operations have implementation-defined behavior"
+        },
+        {
+          "id": "TS-012",
+          "name": "Macro Type Safety",
+          "misra_rule": "Rule 20.7",
+          "description": "Wrap macro parameters in parentheses",
+          "severity": "required",
+          "template": "#define SQUARE(x) ((x) * (x))",
+          "anti_pattern": "#define SQUARE(x) x * x",
+          "rationale": "Parentheses prevent operator precedence issues"
+        },
+        {
+          "id": "TS-013",
+          "name": "Constant Expression Type",
+          "misra_rule": "Rule 10.3",
+          "description": "Match constant type to variable type",
+          "severity": "required",
+          "template": "const uint32_t MAX_VALUE = 1000u;",
+          "anti_pattern": "const int MAX_VALUE = 1000;",
+          "rationale": "Type mismatch requires implicit conversion"
+        },
+        {
+          "id": "TS-014",
+          "name": "Struct Type Consistency",
+          "misra_rule": "Rule 8.4",
+          "description": "Use consistent struct tag and typedef naming",
+          "severity": "advisory",
+          "template": "typedef struct Data_tag { uint32_t value; } Data_s;",
+          "anti_pattern": "typedef struct { uint32_t value; } Data;",
+          "rationale": "Tag allows forward declaration"
+        },
+        {
+          "id": "TS-015",
+          "name": "Hexadecimal Literal Format",
+          "misra_rule": "Rule 7.2",
+          "description": "Use uppercase hex digits with type suffix",
+          "severity": "advisory",
+          "template": "uint32_t address = 0x40000000u;",
+          "anti_pattern": "uint32_t address = 0x40000000;",
+          "rationale": "Uppercase improves readability, suffix clarifies type"
+        },
+        {
+          "id": "TS-016",
+          "name": "Volatile Qualifier Usage",
+          "misra_rule": "Rule 8.9",
+          "description": "Use volatile for hardware registers",
+          "severity": "required",
+          "template": "volatile uint32_t* const pRegister = (volatile uint32_t*)0x40000000u;",
+          "anti_pattern": "uint32_t* const pRegister = (uint32_t*)0x40000000u;",
+          "rationale": "Volatile prevents compiler optimization of hardware access"
+        }
+      ]
+    },
+    {
+      "id": "error-handling",
+      "name": "Error Handling Patterns",
+      "description": "MISRA C:2012 Rules 17.x, 21.x - Error detection and handling",
+      "pattern_count": 12,
+      "patterns": [
+        {
+          "id": "EH-001",
+          "name": "Return Value Check",
+          "misra_rule": "Rule 17.7",
+          "description": "Check return value of all non-void functions",
+          "severity": "required",
+          "template": "STD_RETURN_TYPE_e result = Function();\nif (result != STD_OK) { /* handle error */ }",
+          "anti_pattern": "Function(); /* return value ignored */",
+          "rationale": "Ignoring errors leads to silent failures"
+        },
+        {
+          "id": "EH-002",
+          "name": "FAS_ASSERT for Assertions",
+          "misra_rule": "Rule 21.8",
+          "description": "Use FAS_ASSERT for invariant checks",
+          "severity": "required",
+          "template": "FAS_ASSERT(pointer != NULL);",
+          "anti_pattern": "assert(pointer != NULL);",
+          "rationale": "FAS_ASSERT provides consistent error handling"
+        },
+        {
+          "id": "EH-003",
+          "name": "Error Code Return",
+          "misra_rule": "Rule 17.4",
+          "description": "Return error codes from functions",
+          "severity": "required",
+          "template": "STD_RETURN_TYPE_e Function(uint32_t* pOutput) {\n    if (pOutput == NULL) { return STD_NOT_OK; }\n    *pOutput = value;\n    return STD_OK;\n}",
+          "anti_pattern": "uint32_t Function(void) {\n    return value; /* no error indication */\n}",
+          "rationale": "Error codes allow proper error handling"
+        },
+        {
+          "id": "EH-004",
+          "name": "Diagnostic Reporting",
+          "misra_rule": "Rule 21.x",
+          "description": "Report errors to diagnostic system",
+          "severity": "required",
+          "template": "DIAG_Handler(DIAG_ID_ERROR, DIAG_EVENT_NOT_OK, DIAG_SYSTEM, 0u);",
+          "anti_pattern": "/* error occurred but not reported */",
+          "rationale": "Diagnostic system enables error tracking"
+        },
+        {
+          "id": "EH-005",
+          "name": "Error Propagation",
+          "misra_rule": "Rule 17.7",
+          "description": "Propagate errors up the call stack",
+          "severity": "required",
+          "template": "result = SubFunction();\nif (result != STD_OK) { return result; }",
+          "anti_pattern": "SubFunction(); /* error not propagated */",
+          "rationale": "Callers must know about failures"
+        },
+        {
+          "id": "EH-006",
+          "name": "Safe State Transition",
+          "misra_rule": "Rule 14.x",
+          "description": "Transition to safe state on critical error",
+          "severity": "required",
+          "template": "if (criticalError == true) { STATE_TransitionToSafe(); }",
+          "anti_pattern": "/* continue operation despite critical error */",
+          "rationale": "Safety-critical systems must fail safe"
+        },
+        {
+          "id": "EH-007",
+          "name": "Error Recovery Pattern",
+          "misra_rule": "Rule 17.x",
+          "description": "Implement error recovery with retry",
+          "severity": "advisory",
+          "template": "for (uint8_t retry = 0u; retry < MAX_RETRIES; retry++) {\n    result = Operation();\n    if (result == STD_OK) { break; }\n}",
+          "anti_pattern": "result = Operation(); /* no retry */",
+          "rationale": "Retry handles transient failures"
+        },
+        {
+          "id": "EH-008",
+          "name": "Timeout Error Handling",
+          "misra_rule": "Rule 21.x",
+          "description": "Handle timeout conditions explicitly",
+          "severity": "required",
+          "template": "if (elapsed_ms >= TIMEOUT_MS) {\n    result = STD_TIMEOUT;\n    DIAG_Handler(DIAG_ID_TIMEOUT, DIAG_EVENT_NOT_OK, DIAG_SYSTEM, 0u);\n}",
+          "anti_pattern": "/* wait indefinitely */",
+          "rationale": "Timeouts prevent system hangs"
+        },
+        {
+          "id": "EH-009",
+          "name": "Hardware Error Detection",
+          "misra_rule": "Rule 21.x",
+          "description": "Check hardware status registers",
+          "severity": "required",
+          "template": "if ((statusRegister & ERROR_FLAG) != 0u) {\n    /* handle hardware error */\n}",
+          "anti_pattern": "/* assume hardware always succeeds */",
+          "rationale": "Hardware can fail and must be monitored"
+        },
+        {
+          "id": "EH-010",
+          "name": "Plausibility Check",
+          "misra_rule": "Rule 14.3",
+          "description": "Validate data plausibility",
+          "severity": "required",
+          "template": "if ((voltage_mV >= MIN_VOLTAGE_MV) && (voltage_mV <= MAX_VOLTAGE_MV)) {\n    /* plausible */\n} else {\n    DIAG_Handler(DIAG_ID_IMPLAUSIBLE, DIAG_EVENT_NOT_OK, DIAG_SYSTEM, 0u);\n}",
+          "anti_pattern": "/* use data without validation */",
+          "rationale": "Implausible data indicates sensor failure"
+        },
+        {
+          "id": "EH-011",
+          "name": "CRC Validation",
+          "misra_rule": "Rule 21.x",
+          "description": "Validate CRC on received data",
+          "severity": "required",
+          "template": "calculatedCrc = CRC_Calculate(data, length);\nif (calculatedCrc != receivedCrc) {\n    return STD_CRC_ERROR;\n}",
+          "anti_pattern": "/* use data without CRC check */",
+          "rationale": "CRC detects data corruption"
+        },
+        {
+          "id": "EH-012",
+          "name": "Error Context Logging",
+          "misra_rule": "Rule 21.x",
+          "description": "Log error context for debugging",
+          "severity": "advisory",
+          "template": "errorContext.errorCode = ERROR_CODE;\nerrorContext.timestamp = OS_GetTickCount();\nerrorContext.module = MODULE_ID;",
+          "anti_pattern": "/* error without context */",
+          "rationale": "Context helps diagnose errors"
+        }
+      ]
+    },
+    {
+      "id": "state-machines",
+      "name": "State Machine Patterns",
+      "description": "MISRA C:2012 Rules 14.x, 16.x - State machine implementation",
+      "pattern_count": 16,
+      "patterns": [
+        {
+          "id": "SM-001",
+          "name": "State Enum Definition",
+          "misra_rule": "Rule 10.5",
+          "description": "Define states as enum with explicit values",
+          "severity": "required",
+          "template": "typedef enum {\n    STATE_IDLE = 0u,\n    STATE_RUN = 1u,\n    STATE_ERROR = 2u,\n    STATE_MAX = 3u\n} State_e;",
+          "anti_pattern": "typedef enum { IDLE, RUN, ERROR } State_e;",
+          "rationale": "Explicit values ensure consistent ordering"
+        },
+        {
+          "id": "SM-002",
+          "name": "State Transition Table",
+          "misra_rule": "Rule 16.4",
+          "description": "Use transition table for valid transitions",
+          "severity": "advisory",
+          "template": "static const bool transitionTable[STATE_MAX][STATE_MAX] = {\n    /* IDLE */ {false, true, true},\n    /* RUN */  {true, false, true},\n    /* ERROR */{true, false, false}\n};",
+          "anti_pattern": "/* ad-hoc transition checks in code */",
+          "rationale": "Table makes transitions explicit and verifiable"
+        },
+        {
+          "id": "SM-003",
+          "name": "State Validation",
+          "misra_rule": "Rule 10.5",
+          "description": "Validate state values before use",
+          "severity": "required",
+          "template": "if ((uint8_t)state < STATE_MAX) { /* valid state */ }",
+          "anti_pattern": "switch (state) { /* no validation */ }",
+          "rationale": "State variable may contain invalid value"
+        },
+        {
+          "id": "SM-004",
+          "name": "State Machine Context",
+          "misra_rule": "Rule 8.9",
+          "description": "Encapsulate state in context structure",
+          "severity": "advisory",
+          "template": "typedef struct {\n    State_e currentState;\n    State_e previousState;\n    uint32_t stateEntryTime;\n} StateContext_s;",
+          "anti_pattern": "static State_e currentState;",
+          "rationale": "Context groups related state data"
+        },
+        {
+          "id": "SM-005",
+          "name": "State Entry Action",
+          "misra_rule": "Rule 16.4",
+          "description": "Execute entry actions on state transition",
+          "severity": "advisory",
+          "template": "static void ExecuteEntryAction(State_e newState) {\n    switch (newState) {\n        case STATE_RUN:\n            InitializeRun();\n            break;\n        default:\n            break;\n    }\n}",
+          "anti_pattern": "/* no entry actions */",
+          "rationale": "Entry actions initialize state properly"
+        },
+        {
+          "id": "SM-006",
+          "name": "State Exit Action",
+          "misra_rule": "Rule 16.4",
+          "description": "Execute exit actions before leaving state",
+          "severity": "advisory",
+          "template": "static void ExecuteExitAction(State_e oldState) {\n    switch (oldState) {\n        case STATE_RUN:\n            CleanupRun();\n            break;\n        default:\n            break;\n    }\n}",
+          "anti_pattern": "/* no exit actions */",
+          "rationale": "Exit actions clean up state properly"
+        },
+        {
+          "id": "SM-007",
+          "name": "State Timeout Handling",
+          "misra_rule": "Rule 14.3",
+          "description": "Implement timeout for state duration",
+          "severity": "required",
+          "template": "if ((currentTime - stateEntryTime) >= STATE_TIMEOUT_MS) {\n    TransitionTo(STATE_ERROR);\n}",
+          "anti_pattern": "/* no timeout handling */",
+          "rationale": "Timeout prevents stuck states"
+        },
+        {
+          "id": "SM-008",
+          "name": "State Machine Reset",
+          "misra_rule": "Rule 9.1",
+          "description": "Implement state machine reset function",
+          "severity": "required",
+          "template": "void StateMachine_Reset(void) {\n    context.currentState = STATE_IDLE;\n    context.previousState = STATE_IDLE;\n    context.stateEntryTime = 0u;\n}",
+          "anti_pattern": "/* no reset function */",
+          "rationale": "Reset enables recovery from error states"
+        },
+        {
+          "id": "SM-009",
+          "name": "State Transition Logging",
+          "misra_rule": "Rule 21.x",
+          "description": "Log state transitions for debugging",
+          "severity": "advisory",
+          "template": "if (newState != currentState) {\n    LogTransition(currentState, newState);\n}",
+          "anti_pattern": "/* transitions not logged */",
+          "rationale": "Logging helps debug state machine behavior"
+        },
+        {
+          "id": "SM-010",
+          "name": "State Guard Condition",
+          "misra_rule": "Rule 14.3",
+          "description": "Implement guard conditions for transitions",
+          "severity": "advisory",
+          "template": "if ((targetState == STATE_RUN) && (IsSystemReady() == true)) {\n    ExecuteTransition(STATE_RUN);\n}",
+          "anti_pattern": "/* unconditional transition */",
+          "rationale": "Guards ensure preconditions are met"
+        },
+        {
+          "id": "SM-011",
+          "name": "Hierarchical State Machine",
+          "misra_rule": "Rule 16.x",
+          "description": "Implement nested state machines",
+          "severity": "advisory",
+          "template": "typedef struct {\n    TopState_e topState;\n    SubState_e subState;\n} HierarchicalState_s;",
+          "anti_pattern": "/* flat state machine with many states */",
+          "rationale": "Hierarchy reduces complexity"
+        },
+        {
+          "id": "SM-012",
+          "name": "State Persistence",
+          "misra_rule": "Rule 8.9",
+          "description": "Save state for power-cycle recovery",
+          "severity": "advisory",
+          "template": "FRAM_Write(STATE_ADDRESS, (uint8_t*)&context, sizeof(context));",
+          "anti_pattern": "/* state lost on power cycle */",
+          "rationale": "Persistence enables state recovery"
+        },
+        {
+          "id": "SM-013",
+          "name": "BMS State Machine Pattern",
+          "misra_rule": "Rule 16.4",
+          "description": "Standard BMS state machine structure",
+          "severity": "required",
+          "template": "typedef enum {\n    BMS_STATEMACHINE_UNINITIALIZED = 0u,\n    BMS_STATEMACHINE_INITIALIZATION = 1u,\n    BMS_STATEMACHINE_STANDBY = 2u,\n    BMS_STATEMACHINE_PRECHARGE = 3u,\n    BMS_STATEMACHINE_NORMAL = 4u,\n    BMS_STATEMACHINE_CHARGE = 5u,\n    BMS_STATEMACHINE_ERROR = 6u\n} BMS_STATE_e;",
+          "anti_pattern": "/* non-standard state naming */",
+          "rationale": "Standard states improve code consistency"
+        },
+        {
+          "id": "SM-014",
+          "name": "State Machine Trigger",
+          "misra_rule": "Rule 16.x",
+          "description": "Periodic state machine trigger function",
+          "severity": "required",
+          "template": "void StateMachine_Trigger(void) {\n    OS_EnterTaskCritical();\n    ProcessCurrentState();\n    OS_ExitTaskCritical();\n}",
+          "anti_pattern": "/* event-driven only */",
+          "rationale": "Periodic trigger ensures consistent timing"
+        },
+        {
+          "id": "SM-015",
+          "name": "State Machine Request Pattern",
+          "misra_rule": "Rule 16.x",
+          "description": "Request-based state transition",
+          "severity": "advisory",
+          "template": "STD_RETURN_TYPE_e StateMachine_RequestState(State_e requestedState) {\n    if (IsTransitionAllowed(currentState, requestedState)) {\n        pendingRequest = requestedState;\n        return STD_OK;\n    }\n    return STD_NOT_OK;\n}",
+          "anti_pattern": "/* direct state manipulation */",
+          "rationale": "Request pattern validates transitions"
+        },
+        {
+          "id": "SM-016",
+          "name": "State Substate Pattern",
+          "misra_rule": "Rule 16.x",
+          "description": "Sub-state for complex state behavior",
+          "severity": "advisory",
+          "template": "typedef enum {\n    SUBSTATE_ENTRY = 0u,\n    SUBSTATE_RUNNING = 1u,\n    SUBSTATE_EXIT = 2u\n} SubState_e;",
+          "anti_pattern": "/* single state with complex logic */",
+          "rationale": "Sub-states organize complex behavior"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "how_to_use": "Reference patterns by ID when generating code. Apply patterns based on context and MISRA rule requirements.",
+    "priority": "required > advisory for safety-critical code",
+    "foxbms_specific": [
+      "FAS_ASSERT for all assertions",
+      "STD_RETURN_TYPE_e for function returns",
+      "DIAG_Handler for error reporting",
+      "OS_* functions for timing",
+      "DATA_BLOCK_* for shared data"
+    ]
+  }
+}

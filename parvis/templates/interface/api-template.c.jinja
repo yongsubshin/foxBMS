@@ -1,0 +1,246 @@
+/**
+ * @file    {{ filename }}
+ * @author  foxBMS Team
+ * @date    {{ generation_date }}
+ * @updated {{ generation_date }}
+ * @version {{ version | default('v1.0.0') }}
+ * @ingroup {{ module_group | default('API') }}
+ * @prefix  {{ prefix | upper }}
+ *
+ * @brief   API interface declarations for {{ module_name }}
+ * @details Defines the public interface for {{ module_name }} module.
+ *          All functions are designed for MISRA C:2012 compliance.
+ *
+ * @req     {{ requirement_id }}
+ * @asil    {{ asil_level | default('ASIL-B') }}
+ */
+
+#ifndef {{ guard_name | upper | default(prefix | upper + '_H_') }}
+#define {{ guard_name | upper | default(prefix | upper + '_H_') }}
+
+/*========== Includes =======================================================*/
+
+#include "fstd_types.h"
+{% for include in additional_includes | default([]) %}
+#include "{{ include }}"
+{% endfor %}
+
+/*========== Macros and Definitions =========================================*/
+
+/* ========== API Version ================================================== */
+
+/** @brief API version major number */
+#define {{ prefix | upper }}_API_VERSION_MAJOR ({{ api_version_major | default(1) }}u)
+
+/** @brief API version minor number */
+#define {{ prefix | upper }}_API_VERSION_MINOR ({{ api_version_minor | default(0) }}u)
+
+/* ========== Error Codes ================================================== */
+
+/**
+ * @brief   {{ prefix }} error codes enumeration
+ * @details Defines all possible error codes returned by {{ module_name }} API.
+ * @req     {{ requirement_id }}
+ */
+typedef enum {
+    /** @brief Operation completed successfully */
+    {{ prefix | upper }}_ERROR_NONE = 0u,
+    /** @brief Invalid parameter passed to function */
+    {{ prefix | upper }}_ERROR_INVALID_PARAM = 1u,
+    /** @brief Null pointer passed where not allowed */
+    {{ prefix | upper }}_ERROR_NULL_POINTER = 2u,
+    /** @brief Operation timed out */
+    {{ prefix | upper }}_ERROR_TIMEOUT = 3u,
+    /** @brief Resource is busy */
+    {{ prefix | upper }}_ERROR_BUSY = 4u,
+    /** @brief Module not initialized */
+    {{ prefix | upper }}_ERROR_NOT_INITIALIZED = 5u,
+    /** @brief Value out of valid range */
+    {{ prefix | upper }}_ERROR_OUT_OF_RANGE = 6u,
+    /** @brief Generic error occurred */
+    {{ prefix | upper }}_ERROR_GENERIC = 255u
+} {{ prefix | upper }}_ERROR_e;
+
+/*========== Extern Constant and Variable Definitions =======================*/
+
+{% for constant in constants | default([]) %}
+/**
+ * @brief   {{ constant.description }}
+{% if constant.unit is defined %}
+ * @unit    {{ constant.unit }}
+{% endif %}
+ * @req     {{ constant.requirement_id | default(requirement_id) }}
+ */
+extern const {{ constant.type }} {{ prefix | upper }}_{{ constant.name | upper }};
+
+{% endfor %}
+
+/*========== Type Definitions ===============================================*/
+
+{% for typedef in typedefs | default([]) %}
+/**
+ * @brief   {{ typedef.description }}
+ * @details {{ typedef.details | default('User-defined type for ' + typedef.name) }}
+ * @req     {{ typedef.requirement_id | default(requirement_id) }}
+ */
+typedef {{ typedef.base_type }} {{ prefix | upper }}_{{ typedef.name }}_t;
+
+{% endfor %}
+
+{% for struct in structures | default([]) %}
+/**
+ * @brief   {{ struct.description }}
+ * @details {{ struct.details | default('Data structure for ' + struct.name) }}
+ * @req     {{ struct.requirement_id | default(requirement_id) }}
+ */
+typedef struct {
+{% for field in struct.fields %}
+    /**
+     * @brief {{ field.description }}
+{% if field.unit is defined %}
+     * @unit  {{ field.unit }}
+{% endif %}
+{% if field.range is defined %}
+     * @range {{ field.range }}
+{% endif %}
+     */
+    {{ field.type }} {{ field.name }};
+{% endfor %}
+} {{ prefix | upper }}_{{ struct.name | upper }}_s;
+
+{% endfor %}
+
+{% for callback in callbacks | default([]) %}
+/**
+ * @brief   {{ callback.description }}
+ * @details Callback function type for {{ callback.name }}.
+{% for param in callback.parameters %}
+ * @param   {{ param.name }} {{ param.description }}
+{% endfor %}
+{% if callback.return_type != 'void' %}
+ * @return  {{ callback.return_description | default('Callback result') }}
+{% endif %}
+ * @req     {{ callback.requirement_id | default(requirement_id) }}
+ */
+typedef {{ callback.return_type }} (*{{ prefix | upper }}_{{ callback.name | upper }}_f)(
+{% for param in callback.parameters %}
+    {{ param.type }} {{ param.name }}{% if not loop.last %},{% endif %}
+
+{% endfor %}
+);
+
+{% endfor %}
+
+/*========== Extern Function Prototypes =====================================*/
+
+/* ========== Initialization Functions ===================================== */
+
+/**
+ * @brief   Initializes the {{ module_name }} module
+ * @details Must be called before any other {{ module_name }} function.
+ *          Can only be called once unless {{ prefix | upper }}_Deinitialize is called.
+ * @return  {{ prefix | upper }}_ERROR_NONE on success
+ * @return  {{ prefix | upper }}_ERROR_GENERIC on failure
+ * @req     {{ requirement_id }}
+ */
+extern {{ prefix | upper }}_ERROR_e {{ prefix | upper }}_Initialize(void);
+
+/**
+ * @brief   Deinitializes the {{ module_name }} module
+ * @details Releases all resources and allows re-initialization.
+ * @return  {{ prefix | upper }}_ERROR_NONE on success
+ * @return  {{ prefix | upper }}_ERROR_NOT_INITIALIZED if not initialized
+ * @req     {{ requirement_id }}
+ */
+extern {{ prefix | upper }}_ERROR_e {{ prefix | upper }}_Deinitialize(void);
+
+/**
+ * @brief   Checks if module is initialized
+ * @return  true if initialized, false otherwise
+ * @req     {{ requirement_id }}
+ */
+extern bool {{ prefix | upper }}_IsInitialized(void);
+
+/* ========== Core API Functions =========================================== */
+
+{% for function in functions | default([]) %}
+/**
+ * @brief   {{ function.brief }}
+{% if function.details is defined %}
+ * @details {{ function.details }}
+{% endif %}
+{% for param in function.parameters %}
+ * @param   {{ param.name }} {{ param.description }}
+{% if param.range is defined %}
+ *          Valid range: {{ param.range }}
+{% endif %}
+{% endfor %}
+{% if function.return_type != 'void' %}
+ * @return  {{ function.return_description | default('Operation result') }}
+{% endif %}
+{% if function.preconditions is defined %}
+ * @pre     {{ function.preconditions | join('\n * @pre     ') }}
+{% endif %}
+{% if function.postconditions is defined %}
+ * @post    {{ function.postconditions | join('\n * @post    ') }}
+{% endif %}
+{% if function.thread_safe | default(false) %}
+ * @note    This function is thread-safe.
+{% else %}
+ * @note    This function is NOT thread-safe.
+{% endif %}
+{% if function.reentrant | default(false) %}
+ * @note    This function is reentrant.
+{% endif %}
+ * @req     {{ function.requirement_id | default(requirement_id) }}
+ */
+extern {{ function.return_type }} {{ prefix | upper }}_{{ function.name }}(
+{% if function.parameters | length == 0 %}
+    void
+{% else %}
+{% for param in function.parameters %}
+    {{ param.type }} {{ param.name }}{% if not loop.last %},{% endif %}
+
+{% endfor %}
+{% endif %}
+);
+
+{% endfor %}
+
+/* ========== Diagnostic Functions ========================================= */
+
+{% if include_diagnostics | default(true) %}
+/**
+ * @brief   Gets the last error code
+ * @return  Last error code from {{ module_name }} operations
+ * @req     {{ requirement_id }}
+ */
+extern {{ prefix | upper }}_ERROR_e {{ prefix | upper }}_GetLastError(void);
+
+/**
+ * @brief   Clears the last error code
+ * @req     {{ requirement_id }}
+ */
+extern void {{ prefix | upper }}_ClearLastError(void);
+
+/**
+ * @brief   Gets error description string
+ * @param   error Error code to describe
+ * @return  Pointer to error description string
+ * @req     {{ requirement_id }}
+ */
+extern const char* {{ prefix | upper }}_GetErrorString({{ prefix | upper }}_ERROR_e error);
+{% endif %}
+
+/* ========== Version Functions ============================================ */
+
+/**
+ * @brief   Gets the API version string
+ * @return  Pointer to version string (e.g., "1.0.0")
+ * @req     {{ requirement_id }}
+ */
+extern const char* {{ prefix | upper }}_GetVersion(void);
+
+#endif /* {{ guard_name | upper | default(prefix | upper + '_H_') }} */
+
+/*========== End of File ====================================================*/

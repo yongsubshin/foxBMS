@@ -1,0 +1,58 @@
+{
+  "version": "1.0.0",
+  "system": "PARVIS",
+  "agents": {
+    "parvis-aispec-code": {
+      "name": "PARVIS AI-Spec Code Extractor",
+      "version": "1.0.0",
+      "role": "Code analysis and requirement extraction",
+      "capabilities": [
+        "doxygen_parsing",
+        "state_machine_extraction",
+        "assertion_analysis",
+        "configuration_extraction"
+      ],
+      "target_languages": ["C", "H"],
+      "confidence_threshold": 0.7
+    },
+    "parvis-ai-orchestrator": {
+      "name": "PARVIS AI Orchestrator",
+      "version": "1.0.0",
+      "role": "Phase tracking and quality gate management",
+      "capabilities": [
+        "phase_tracking",
+        "quality_gate_verification",
+        "status_persistence",
+        "phase_transitions"
+      ]
+    }
+  },
+  "extraction_config": {
+    "extraction_types": [
+      "doxygen",
+      "state_machine",
+      "assertion",
+      "config"
+    ],
+    "confidence_levels": ["high", "medium", "low"],
+    "min_confidence_for_extraction": "medium"
+  },
+  "quality_gates": {
+    "phase_l1": {
+      "min_extraction_confidence": 0.7,
+      "min_coverage": 0.6
+    },
+    "phase_l2": {
+      "min_extraction_confidence": 0.75,
+      "min_coverage": 0.75
+    },
+    "phase_l3": {
+      "min_extraction_confidence": 0.85,
+      "min_coverage": 0.85
+    },
+    "phase_l4": {
+      "min_extraction_confidence": 0.90,
+      "min_coverage": 0.95
+    }
+  }
+}

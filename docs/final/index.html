@@ -283,44 +283,95 @@
             margin-top: 2rem;
         }
 
+        .language-switcher {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        .language-switcher select {
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            border: none;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            font-size: 0.9rem;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .language-switcher select:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .language-switcher select:focus {
+            outline: none;
+            background: rgba(255,255,255,0.35);
+        }
+
+        .language-switcher select option {
+            color: #333;
+            background: white;
+            padding: 0.5rem;
+        }
+
+        header {
+            position: relative;
+        }
+
         @media (max-width: 768px) {
             header h1 { font-size: 1.8rem; }
             nav { gap: 1rem; }
             .dashboard { grid-template-columns: 1fr; }
+            .language-switcher {
+                position: static;
+                margin-top: 1rem;
+            }
+            .language-switcher select {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1><i class="fas fa-battery-full"></i> foxBMS Documentation Portal</h1>
-        <p class="subtitle">Battery Management System - V-Model Complete</p>
+        <div class="language-switcher" id="language-switcher">
+            <select id="language-select" aria-label="Select Language">
+                <option value="ko">한국어</option>
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+            </select>
+        </div>
+        <h1 data-i18n="common.title"><i class="fas fa-battery-full"></i> foxBMS Documentation Portal</h1>
+        <p class="subtitle" data-i18n="common.subtitle">Battery Management System - V-Model Complete</p>
         <div class="badges">
-            <span class="badge badge-aspice">ASPICE Level 2</span>
-            <span class="badge badge-iso">ISO 26262 ASIL-D</span>
-            <span class="badge badge-misra">MISRA C:2012</span>
+            <span class="badge badge-aspice" data-i18n="common.badges.aspice">ASPICE Level 2</span>
+            <span class="badge badge-iso" data-i18n="common.badges.iso">ISO 26262 ASIL-D</span>
+            <span class="badge badge-misra" data-i18n="common.badges.misra">MISRA C:2012</span>
         </div>
     </header>
 
     <nav>
-        <a href="html/process/index.html"><i class="fas fa-book"></i> Process Docs</a>
-        <a href="doxygen/html/index.html"><i class="fas fa-code"></i> API Reference</a>
-        <a href="html/traceability/index.html"><i class="fas fa-project-diagram"></i> Traceability</a>
-        <a href="html/misra/index.html"><i class="fas fa-shield-alt"></i> MISRA Compliance</a>
-        <a href="html/metrics/index.html"><i class="fas fa-chart-bar"></i> Quality Metrics</a>
+        <a href="html/process/index.html" data-i18n="common.nav.processDocs"><i class="fas fa-book"></i> Process Docs</a>
+        <a href="doxygen/html/index.html" data-i18n="common.nav.apiReference"><i class="fas fa-code"></i> API Reference</a>
+        <a href="html/traceability/index.html" data-i18n="common.nav.traceability"><i class="fas fa-project-diagram"></i> Traceability</a>
+        <a href="html/misra/index.html" data-i18n="common.nav.misra"><i class="fas fa-shield-alt"></i> MISRA Compliance</a>
+        <a href="html/metrics/index.html" data-i18n="common.nav.metrics"><i class="fas fa-chart-bar"></i> Quality Metrics</a>
     </nav>
 
     <main>
         <section class="dashboard">
             <div class="card">
-                <h3><i class="fas fa-list-check"></i> Requirements</h3>
+                <h3 data-i18n="cards.requirements.title"><i class="fas fa-list-check"></i> Requirements</h3>
                 <div class="card-metric">
                     <div class="value">648</div>
-                    <div class="label">Software Requirements</div>
+                    <div class="label" data-i18n="cards.requirements.softwareReqs">Software Requirements</div>
                 </div>
                 <div class="metrics-grid">
                     <div class="metric-item">
                         <div class="value">147</div>
-                        <div class="label">Safety Reqs</div>
+                        <div class="label" data-i18n="cards.requirements.safetyReqs">Safety Reqs</div>
                     </div>
                     <div class="metric-item">
                         <div class="value">52</div>
@@ -328,25 +379,25 @@
                     </div>
                     <div class="metric-item">
                         <div class="value">100%</div>
-                        <div class="label">Traced</div>
+                        <div class="label" data-i18n="cards.requirements.traced">Traced</div>
                     </div>
                 </div>
             </div>
 
             <div class="card">
-                <h3><i class="fas fa-vial"></i> Verification</h3>
+                <h3 data-i18n="cards.verification.title"><i class="fas fa-vial"></i> Verification</h3>
                 <div class="card-metric">
                     <div class="value">570</div>
-                    <div class="label">Total Test Cases</div>
+                    <div class="label" data-i18n="cards.verification.totalTests">Total Test Cases</div>
                 </div>
                 <div class="metrics-grid">
                     <div class="metric-item">
                         <div class="value">97</div>
-                        <div class="label">Unit Tests</div>
+                        <div class="label" data-i18n="cards.verification.unitTests">Unit Tests</div>
                     </div>
                     <div class="metric-item">
                         <div class="value">156</div>
-                        <div class="label">Integration</div>
+                        <div class="label" data-i18n="cards.verification.integration">Integration</div>
                     </div>
                     <div class="metric-item">
                         <div class="value">100%</div>
@@ -356,10 +407,10 @@
             </div>
 
             <div class="card">
-                <h3><i class="fas fa-shield-alt"></i> MISRA Compliance</h3>
+                <h3 data-i18n="cards.misra.title"><i class="fas fa-shield-alt"></i> MISRA Compliance</h3>
                 <div class="card-metric">
                     <div class="value">~99%</div>
-                    <div class="label">Overall Compliance</div>
+                    <div class="label" data-i18n="cards.misra.compliance">Overall Compliance</div>
                 </div>
                 <div class="progress-bar">
                     <div class="progress-bar-fill success" style="width: 99%"></div>
@@ -367,44 +418,44 @@
                 <div class="metrics-grid">
                     <div class="metric-item">
                         <div class="value">100%</div>
-                        <div class="label">Mandatory</div>
+                        <div class="label" data-i18n="cards.misra.mandatory">Mandatory</div>
                     </div>
                     <div class="metric-item">
                         <div class="value">228</div>
-                        <div class="label">Files Analyzed</div>
+                        <div class="label" data-i18n="cards.misra.filesAnalyzed">Files Analyzed</div>
                     </div>
                     <div class="metric-item">
                         <div class="value">41</div>
-                        <div class="label">Deviations</div>
+                        <div class="label" data-i18n="cards.misra.deviations">Deviations</div>
                     </div>
                 </div>
             </div>
 
             <div class="card">
-                <h3><i class="fas fa-sitemap"></i> Architecture</h3>
+                <h3 data-i18n="cards.architecture.title"><i class="fas fa-sitemap"></i> Architecture</h3>
                 <div class="card-metric">
                     <div class="value">4</div>
-                    <div class="label">Software Layers</div>
+                    <div class="label" data-i18n="cards.architecture.layers">Software Layers</div>
                 </div>
                 <div class="metrics-grid">
                     <div class="metric-item">
                         <div class="value">7</div>
-                        <div class="label">Modules</div>
+                        <div class="label" data-i18n="cards.architecture.modules">Modules</div>
                     </div>
                     <div class="metric-item">
                         <div class="value">308</div>
-                        <div class="label">C Files</div>
+                        <div class="label" data-i18n="cards.architecture.cFiles">C Files</div>
                     </div>
                     <div class="metric-item">
                         <div class="value">279</div>
-                        <div class="label">Headers</div>
+                        <div class="label" data-i18n="cards.architecture.headers">Headers</div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="card v-model-diagram">
-            <h3><i class="fas fa-project-diagram"></i> V-Model Process Overview</h3>
+            <h3 data-i18n="vModel.title"><i class="fas fa-project-diagram"></i> V-Model Process Overview</h3>
             <div class="v-model-wrapper">
                 <table class="v-model-table">
                     <tr>
@@ -445,15 +496,15 @@
                 </table>
             </div>
             <div class="v-legend">
-                <span><i class="legend-box sys"></i> System Level (SYS)</span>
-                <span><i class="legend-box swe"></i> Software Level (SWE)</span>
-                <span><i class="legend-box impl"></i> Implementation</span>
-                <span style="color: #e67e22;">- - -&gt; Traceability</span>
+                <span><i class="legend-box sys"></i> <span data-i18n="vModel.legend.system">System Level (SYS)</span></span>
+                <span><i class="legend-box swe"></i> <span data-i18n="vModel.legend.software">Software Level (SWE)</span></span>
+                <span><i class="legend-box impl"></i> <span data-i18n="vModel.legend.implementation">Implementation</span></span>
+                <span style="color: #e67e22;" data-i18n="vModel.legend.traceability">- - -&gt; Traceability</span>
             </div>
         </section>
 
         <section class="card">
-            <h3><i class="fas fa-folder-open"></i> Documentation Sections</h3>
+            <h3 data-i18n="sections.title"><i class="fas fa-folder-open"></i> Documentation Sections</h3>
             <div class="doc-links">
                 <a href="html/process/index.html" class="doc-link">
                     <i class="fas fa-cube"></i>
@@ -502,10 +553,78 @@
     </main>
 
     <footer>
-        <p><strong>foxBMS Documentation Portal</strong> | Version 2.1.0 | Generated: 2025-12-16</p>
-        <p>Generated by PARVIS AI Documentation Generator v1.0.0</p>
-        <p>Compliance: ISO 26262:2018 | ASPICE 3.1 | MISRA C:2012 (~99%)</p>
-        <p style="color: #28a745; margin-top: 0.5rem;"><strong>Quality Gate: PASSED</strong> - All Critical Issues Resolved</p>
+        <p><strong>foxBMS Documentation Portal</strong> | <span data-i18n="footer.version">Version</span> 2.2.0 | <span data-i18n="footer.generated">Generated</span>: 2025-12-17</p>
+        <p data-i18n="footer.generatedBy">Generated by PARVIS AI Documentation Generator v1.0.0</p>
+        <p><span data-i18n="footer.compliance">Compliance</span>: ISO 26262:2018 | ASPICE 3.1 | MISRA C:2012 (~99%)</p>
+        <p style="color: #28a745; margin-top: 0.5rem;"><strong><span data-i18n="footer.qualityGate">Quality Gate</span>: <span data-i18n="footer.passed">PASSED</span></strong> - All Critical Issues Resolved</p>
     </footer>
+
+    <!-- i18n Engine and Initialization -->
+    <script src="js/i18n.js"></script>
+    <script>
+        // Initialize i18n system
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Initialize i18n with options
+            await i18n.init({
+                defaultLanguage: 'ko',
+                supportedLanguages: ['ko', 'en', 'ja'],
+                languageFilePath: '/docs/final/locales/',
+                detectBrowserLanguage: true,
+                persistLanguage: true,
+                fallbackLanguage: 'ko'
+            });
+
+            // Translate all elements with data-i18n attribute
+            translatePage();
+
+            // Listen for language changes
+            i18n.on('languageChanged', () => {
+                translatePage();
+            });
+
+            // Set up language selector
+            const languageSelect = document.getElementById('language-select');
+            if (languageSelect) {
+                languageSelect.value = i18n.getCurrentLanguage();
+                languageSelect.addEventListener('change', (e) => {
+                    i18n.changeLanguage(e.target.value);
+                });
+            }
+        });
+
+        // Function to translate all elements on the page
+        function translatePage() {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                const translation = i18n.t(key);
+
+                // Update text content while preserving child elements (like icons)
+                const hasChildElements = element.querySelector('*');
+                if (hasChildElements) {
+                    // For elements with child elements (like icons), update text nodes only
+                    let firstTextNode = null;
+                    for (let node of element.childNodes) {
+                        if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
+                            firstTextNode = node;
+                            break;
+                        }
+                    }
+                    if (firstTextNode) {
+                        firstTextNode.textContent = translation;
+                    }
+                } else {
+                    // For simple elements, just set text content
+                    element.textContent = translation;
+                }
+            });
+
+            // Update language select value
+            const languageSelect = document.getElementById('language-select');
+            if (languageSelect) {
+                languageSelect.value = i18n.getCurrentLanguage();
+            }
+        }
+    </script>
 </body>
 </html>

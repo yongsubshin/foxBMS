@@ -1,0 +1,78 @@
+{
+  "common": {
+    "title": "foxBMS ドキュメンテーション ポータル",
+    "subtitle": "バッテリー管理システム - V-Model 完成",
+    "nav": {
+      "processDocs": "プロセスドキュメント",
+      "apiReference": "APIリファレンス",
+      "traceability": "トレーサビリティ",
+      "misra": "MISRA準拠",
+      "metrics": "品質メトリクス"
+    },
+    "badges": {
+      "aspice": "ASPICE Level 2",
+      "iso": "ISO 26262 ASIL-D",
+      "misra": "MISRA C:2012"
+    }
+  },
+  "cards": {
+    "requirements": {
+      "title": "要件",
+      "softwareReqs": "ソフトウェア要件",
+      "safetyReqs": "安全要件",
+      "traced": "トレース済み"
+    },
+    "verification": {
+      "title": "検証",
+      "totalTests": "総テストケース数",
+      "unitTests": "ユニットテスト",
+      "integration": "統合テスト"
+    },
+    "misra": {
+      "title": "MISRA準拠",
+      "compliance": "全体準拠率",
+      "mandatory": "必須",
+      "filesAnalyzed": "分析ファイル",
+      "deviations": "逸脱"
+    },
+    "architecture": {
+      "title": "アーキテクチャ",
+      "layers": "ソフトウェアレイヤー",
+      "modules": "モジュール",
+      "cFiles": "Cファイル",
+      "headers": "ヘッダー"
+    }
+  },
+  "vModel": {
+    "title": "V-モデル プロセス概要",
+    "legend": {
+      "system": "システムレベル (SYS)",
+      "software": "ソフトウェアレベル (SWE)",
+      "implementation": "実装",
+      "traceability": "トレーサビリティ"
+    }
+  },
+  "sections": {
+    "title": "ドキュメンテーション セクション",
+    "systemLevel": "システムレベル (SYS)",
+    "softwareLevel": "ソフトウェアレベル (SWE)",
+    "requirements": "要件",
+    "apiReference": "APIリファレンス",
+    "traceabilityMatrix": "トレーサビリティマトリックス",
+    "misraCompliance": "MISRA準拠"
+  },
+  "footer": {
+    "version": "バージョン",
+    "generated": "生成日",
+    "generatedBy": "PARVIS AIドキュメンテーション生成器で生成",
+    "compliance": "準拠",
+    "qualityGate": "品質ゲート",
+    "passed": "合格"
+  },
+  "language": {
+    "select": "言語を選択",
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語"
+  }
+}

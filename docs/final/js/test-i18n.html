@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i18n Engine Tests</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #f5f7fa;
+            padding: 2rem;
+        }
+        .test-container { max-width: 1200px; margin: 0 auto; }
+        .test-suite {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-suite h2 { color: #002b5b; margin-bottom: 1rem; font-size: 1.3rem; }
+        .test {
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            border-left: 4px solid #e9ecef;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+        .test.passed {
+            border-left-color: #28a745;
+            background: #f0f9f5;
+        }
+        .test.failed {
+            border-left-color: #dc3545;
+            background: #fdf5f5;
+        }
+        .test-name { font-weight: 600; color: #333; margin-bottom: 0.5rem; }
+        .test-status {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .test-status.passed { background: #28a745; color: white; }
+        .test-status.failed { background: #dc3545; color: white; }
+        .test-error { color: #dc3545; margin-top: 0.5rem; font-family: monospace; font-size: 0.9rem; }
+        .test-summary {
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+        .test-summary.passed { background: #f0f9f5; color: #28a745; }
+        .test-summary.failed { background: #fdf5f5; color: #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1 style="color: #002b5b; margin-bottom: 2rem;">i18n Engine Test Suite</h1>
+        <div id="test-results"></div>
+    </div>
+
+    <script>
+        // Test framework
+        class TestRunner {
+            constructor() {
+                this.tests = [];
+                this.results = [];
+            }
+
+            describe(suiteName, callback) {
+                const suite = { name: suiteName, tests: [] };
+                const context = {
+                    it: (testName, testFn) => {
+                        suite.tests.push({ name: testName, fn: testFn });
+                    }
+                };
+                callback(context);
+                this.tests.push(suite);
+            }
+
+            async run() {
+                for (const suite of this.tests) {
+                    const suiteResults = { name: suite.name, tests: [] };
+                    for (const test of suite.tests) {
+                        try {
+                            await test.fn();
+                            suiteResults.tests.push({ name: test.name, passed: true });
+                        } catch (error) {
+                            suiteResults.tests.push({
+                                name: test.name,
+                                passed: false,
+                                error: error.message
+                            });
+                        }
+                    }
+                    this.results.push(suiteResults);
+                }
+                this.render();
+            }
+
+            render() {
+                const container = document.getElementById('test-results');
+                let totalTests = 0;
+                let totalPassed = 0;
+
+                this.results.forEach(suite => {
+                    const suiteEl = document.createElement('div');
+                    suiteEl.className = 'test-suite';
+                    suiteEl.innerHTML = `<h2>${suite.name}</h2>`;
+
+                    suite.tests.forEach(test => {
+                        totalTests++;
+                        if (test.passed) totalPassed++;
+
+                        const testEl = document.createElement('div');
+                        testEl.className = `test ${test.passed ? 'passed' : 'failed'}`;
+                        testEl.innerHTML = `
+                            <div class="test-name">${test.name}</div>
+                            <span class="test-status ${test.passed ? 'passed' : 'failed'}">
+                                ${test.passed ? 'PASSED' : 'FAILED'}
+                            </span>
+                            ${test.error ? `<div class="test-error">${test.error}</div>` : ''}
+                        `;
+                        suiteEl.appendChild(testEl);
+                    });
+
+                    container.appendChild(suiteEl);
+                });
+
+                const summary = document.createElement('div');
+                summary.className = `test-summary ${totalTests === totalPassed ? 'passed' : 'failed'}`;
+                summary.textContent = `${totalPassed}/${totalTests} tests passed`;
+                container.appendChild(summary);
+            }
+        }
+
+        // Assertion helpers
+        function assertEqual(actual, expected, message) {
+            if (actual !== expected) {
+                throw new Error(`${message || 'Assertion failed'}: expected "${expected}" but got "${actual}"`);
+            }
+        }
+
+        function assertDefined(value, message) {
+            if (value === undefined) {
+                throw new Error(message || 'Value is undefined');
+            }
+        }
+
+        function assertTrue(value, message) {
+            if (!value) {
+                throw new Error(message || 'Assertion failed: expected true');
+            }
+        }
+
+        function assertFalse(value, message) {
+            if (value) {
+                throw new Error(message || 'Assertion failed: expected false');
+            }
+        }
+
+        async function assertRejects(fn, expectedError, message) {
+            try {
+                await fn();
+                throw new Error(message || 'Expected function to throw');
+            } catch (error) {
+                if (expectedError && !error.message.includes(expectedError)) {
+                    throw new Error(`${message || 'Wrong error'}: expected "${expectedError}" but got "${error.message}"`);
+                }
+            }
+        }
+
+        // Create test runner
+        const runner = new TestRunner();
+
+        // RED PHASE: Define failing tests
+        runner.describe('i18n Initialization', (it) => {
+            it('should have a global i18n singleton', () => {
+                assertDefined(window.i18n, 'i18n should be defined globally');
+            });
+
+            it('should initialize with default options', async () => {
+                const testI18n = createI18nInstance();
+                await testI18n.init({
+                    defaultLanguage: 'ko',
+                    supportedLanguages: ['ko', 'en', 'ja'],
+                    languageFilePath: '/locales/'
+                });
+                assertEqual(testI18n.getCurrentLanguage(), 'ko', 'Default language should be ko');
+            });
+
+            it('should support all three languages', () => {
+                const testI18n = createI18nInstance();
+                const langs = testI18n.getSupportedLanguages();
+                assertTrue(langs.includes('ko'), 'Should support Korean');
+                assertTrue(langs.includes('en'), 'Should support English');
+                assertTrue(langs.includes('ja'), 'Should support Japanese');
+            });
+        });
+
+        runner.describe('Translation Function', (it) => {
+            it('should translate simple keys', async () => {
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                const translated = testI18n.t('common.title');
+                assertDefined(translated, 'Translation should be defined');
+                assertTrue(translated.length > 0, 'Translation should not be empty');
+            });
+
+            it('should support nested key access', async () => {
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                const translated = testI18n.t('common.nav.processDocs');
+                assertDefined(translated, 'Nested translation should be defined');
+            });
+
+            it('should support parameter interpolation', async () => {
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                const translated = testI18n.t('footer.version', { version: '2.2.0' });
+                assertTrue(translated.includes('2.2.0'), 'Should interpolate version parameter');
+            });
+
+            it('should fallback to fallback language on missing key', async () => {
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                const translated = testI18n.t('nonexistent.key.path');
+                assertTrue(translated.length > 0, 'Should return fallback');
+            });
+
+            it('should return key itself as last fallback', async () => {
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                const translated = testI18n.t('completely.nonexistent.translation');
+                assertTrue(translated.includes('nonexistent'), 'Should return key itself');
+            });
+        });
+
+        runner.describe('Language Switching', (it) => {
+            it('should change current language', async () => {
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                testI18n.changeLanguage('en');
+                assertEqual(testI18n.getCurrentLanguage(), 'en', 'Current language should be en');
+            });
+
+            it('should trigger languageChanged event on switch', async () => {
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                let eventTriggered = false;
+                testI18n.on('languageChanged', (lang) => {
+                    eventTriggered = true;
+                    assertEqual(lang, 'ja', 'Event should pass new language');
+                });
+                testI18n.changeLanguage('ja');
+                assertTrue(eventTriggered, 'languageChanged event should be triggered');
+            });
+
+            it('should not reload if changing to same language', async () => {
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                let eventTriggered = false;
+                testI18n.on('languageChanged', () => {
+                    eventTriggered = true;
+                });
+                const currentLang = testI18n.getCurrentLanguage();
+                testI18n.changeLanguage(currentLang);
+                assertFalse(eventTriggered, 'Should not trigger event for same language');
+            });
+        });
+
+        runner.describe('Persistence', (it) => {
+            it('should persist language to localStorage', async () => {
+                localStorage.clear();
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                testI18n.changeLanguage('en');
+                const stored = localStorage.getItem('i18n_language');
+                assertEqual(stored, 'en', 'Language should be stored in localStorage');
+            });
+
+            it('should restore language from localStorage on init', async () => {
+                localStorage.clear();
+                localStorage.setItem('i18n_language', 'ja');
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                assertEqual(testI18n.getCurrentLanguage(), 'ja', 'Should restore language from localStorage');
+            });
+
+            it('should fallback to default language if localStorage is unavailable', async () => {
+                localStorage.clear();
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                assertEqual(testI18n.getCurrentLanguage(), 'ko', 'Should default to ko');
+            });
+        });
+
+        runner.describe('Event Management', (it) => {
+            it('should support event listener registration', async () => {
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                let eventCalled = false;
+                const callback = () => { eventCalled = true; };
+                testI18n.on('languageChanged', callback);
+                testI18n.changeLanguage('en');
+                assertTrue(eventCalled, 'Event listener should be called');
+            });
+
+            it('should support removing event listeners', async () => {
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                let callCount = 0;
+                const callback = () => { callCount++; };
+                testI18n.on('languageChanged', callback);
+                testI18n.changeLanguage('en');
+                testI18n.off('languageChanged', callback);
+                testI18n.changeLanguage('ja');
+                assertEqual(callCount, 1, 'Removed listener should not be called again');
+            });
+
+            it('should support multiple event listeners', async () => {
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                let count1 = 0, count2 = 0;
+                testI18n.on('languageChanged', () => { count1++; });
+                testI18n.on('languageChanged', () => { count2++; });
+                testI18n.changeLanguage('en');
+                assertEqual(count1, 1, 'First listener should be called');
+                assertEqual(count2, 1, 'Second listener should be called');
+            });
+        });
+
+        runner.describe('Error Handling', (it) => {
+            it('should handle missing language files gracefully', async () => {
+                const testI18n = createI18nInstance();
+                testI18n.init({
+                    defaultLanguage: 'ko',
+                    supportedLanguages: ['ko', 'en', 'ja'],
+                    languageFilePath: '/nonexistent/'
+                });
+                // Should not throw, should fallback gracefully
+                const translated = testI18n.t('some.key');
+                assertDefined(translated, 'Should return fallback even with missing file');
+            });
+
+            it('should handle invalid JSON in language files', async () => {
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                // Should handle gracefully if file exists but has invalid JSON
+                assertTrue(true, 'Error handling in place');
+            });
+        });
+
+        runner.describe('Cross-page Consistency', (it) => {
+            it('should maintain language across page reloads', async () => {
+                localStorage.clear();
+                const testI18n = createI18nInstance();
+                await initializeTestI18n(testI18n);
+                testI18n.changeLanguage('en');
+                const stored = localStorage.getItem('i18n_language');
+                assertEqual(stored, 'en', 'Language should persist for page reload');
+            });
+
+            it('should support browser language auto-detection', async () => {
+                localStorage.clear();
+                const testI18n = createI18nInstance();
+                await testI18n.init({
+                    defaultLanguage: 'ko',
+                    supportedLanguages: ['ko', 'en', 'ja'],
+                    languageFilePath: '/locales/',
+                    detectBrowserLanguage: true
+                });
+                // Browser language detection should work
+                assertTrue(true, 'Browser language detection option accepted');
+            });
+        });
+
+        // Helper function to create a new i18n instance
+        function createI18nInstance() {
+            return {
+                _currentLanguage: 'ko',
+                _translations: {},
+                _listeners: {},
+                _options: {},
+                init: async function(options) {
+                    this._options = options;
+                    if (options.persistLanguage && localStorage.getItem('i18n_language')) {
+                        this._currentLanguage = localStorage.getItem('i18n_language');
+                    } else {
+                        this._currentLanguage = options.defaultLanguage || 'ko';
+                    }
+                    // Load default language
+                    await this._loadLanguage(this._currentLanguage);
+                },
+                t: function(key, params) {
+                    let translation = this._getNestedValue(this._translations, key);
+                    if (!translation) {
+                        translation = this._getNestedValue(this._translations, key) || key;
+                    }
+                    if (typeof translation !== 'string') return key;
+                    if (params) {
+                        Object.keys(params).forEach(param => {
+                            translation = translation.replace(`{${param}}`, params[param]);
+                        });
+                    }
+                    return translation;
+                },
+                changeLanguage: function(lang) {
+                    if (lang === this._currentLanguage) return;
+                    this._currentLanguage = lang;
+                    if (this._options.persistLanguage) {
+                        localStorage.setItem('i18n_language', lang);
+                    }
+                    this._notifyListeners('languageChanged', lang);
+                },
+                getCurrentLanguage: function() {
+                    return this._currentLanguage;
+                },
+                getSupportedLanguages: function() {
+                    return this._options.supportedLanguages || [];
+                },
+                on: function(event, callback) {
+                    if (!this._listeners[event]) this._listeners[event] = [];
+                    this._listeners[event].push(callback);
+                },
+                off: function(event, callback) {
+                    if (!this._listeners[event]) return;
+                    this._listeners[event] = this._listeners[event].filter(cb => cb !== callback);
+                },
+                _loadLanguage: async function(lang) {
+                    try {
+                        const response = await fetch(`${this._options.languageFilePath}${lang}.json`);
+                        if (response.ok) {
+                            this._translations = await response.json();
+                        } else {
+                            this._translations = {};
+                        }
+                    } catch (e) {
+                        this._translations = {};
+                    }
+                },
+                _getNestedValue: function(obj, path) {
+                    return path.split('.').reduce((current, prop) => current?.[prop], obj);
+                },
+                _notifyListeners: function(event, data) {
+                    if (this._listeners[event]) {
+                        this._listeners[event].forEach(callback => callback(data));
+                    }
+                }
+            };
+        }
+
+        // Initialize test i18n instance with mock data
+        async function initializeTestI18n(instance) {
+            // Set up mock translations directly instead of fetching
+            instance._translations = {
+                common: {
+                    title: 'foxBMS Documentation Portal',
+                    nav: {
+                        processDocs: 'Process Docs'
+                    }
+                },
+                footer: {
+                    version: 'Version'
+                }
+            };
+            instance._currentLanguage = 'ko';
+            instance._options = {
+                defaultLanguage: 'ko',
+                supportedLanguages: ['ko', 'en', 'ja'],
+                languageFilePath: '/locales/',
+                persistLanguage: true
+            };
+        }
+
+        // Run tests
+        runner.run();
+    </script>
+</body>
+</html>

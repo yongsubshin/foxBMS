@@ -1,0 +1,78 @@
+{
+  "common": {
+    "title": "foxBMS 문서 포털",
+    "subtitle": "배터리 관리 시스템 - V-Model 완성",
+    "nav": {
+      "processDocs": "프로세스 문서",
+      "apiReference": "API 레퍼런스",
+      "traceability": "추적성",
+      "misra": "MISRA 준수",
+      "metrics": "품질 메트릭"
+    },
+    "badges": {
+      "aspice": "ASPICE Level 2",
+      "iso": "ISO 26262 ASIL-D",
+      "misra": "MISRA C:2012"
+    }
+  },
+  "cards": {
+    "requirements": {
+      "title": "요구사항",
+      "softwareReqs": "소프트웨어 요구사항",
+      "safetyReqs": "안전 요구사항",
+      "traced": "추적됨"
+    },
+    "verification": {
+      "title": "검증",
+      "totalTests": "총 테스트 케이스",
+      "unitTests": "단위 테스트",
+      "integration": "통합 테스트"
+    },
+    "misra": {
+      "title": "MISRA 준수",
+      "compliance": "전체 준수율",
+      "mandatory": "필수",
+      "filesAnalyzed": "분석된 파일",
+      "deviations": "일탈"
+    },
+    "architecture": {
+      "title": "아키텍처",
+      "layers": "소프트웨어 레이어",
+      "modules": "모듈",
+      "cFiles": "C 파일",
+      "headers": "헤더"
+    }
+  },
+  "vModel": {
+    "title": "V-Model 프로세스 개요",
+    "legend": {
+      "system": "시스템 레벨 (SYS)",
+      "software": "소프트웨어 레벨 (SWE)",
+      "implementation": "구현",
+      "traceability": "추적성"
+    }
+  },
+  "sections": {
+    "title": "문서 섹션",
+    "systemLevel": "시스템 레벨 (SYS)",
+    "softwareLevel": "소프트웨어 레벨 (SWE)",
+    "requirements": "요구사항",
+    "apiReference": "API 레퍼런스",
+    "traceabilityMatrix": "추적성 매트릭스",
+    "misraCompliance": "MISRA 준수"
+  },
+  "footer": {
+    "version": "버전",
+    "generated": "생성일",
+    "generatedBy": "PARVIS AI 문서 생성기로 생성",
+    "compliance": "준수",
+    "qualityGate": "품질 게이트",
+    "passed": "통과"
+  },
+  "language": {
+    "select": "언어 선택",
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語"
+  }
+}

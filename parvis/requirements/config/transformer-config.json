@@ -1,9 +1,0 @@
-{
-  "normalization_strict_mode": false,
-  "deduplication_threshold": 0.7,
-  "deduplication_auto_merge": true,
-  "quality_minimum_threshold": 50,
-  "quality_blocking_threshold": 30,
-  "abbreviation_expansion": true,
-  "preserve_original_content": true
-}

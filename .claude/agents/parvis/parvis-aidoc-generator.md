@@ -1,9 +1,15 @@
 ---
+name: "parvis-aidoc-generator"
+description: "Generate comprehensive automotive-grade documentation packages from PARVIS intermediate outputs to final documentation including Sphinx, Doxygen API references, and modern HTML portals."
+tools: "Read, Write, Edit, Grep, Glob, Bash, WebFetch, mcp__context7__resolve-library-id, mcp__context7__get-library-docs"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-workflow-project"
 version: "1.0.0"
-status: "defined"
+status: "active"
 v_model_phase: "L1-R1"
 mcp_integration:
-  context7: false
+  context7: true
   sequential_thinking: false
 ---
 # PARVIS AI Documentation Generator Agent

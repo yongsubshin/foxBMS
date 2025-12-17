@@ -1,10 +1,16 @@
 ---
-name: parvis-aispec-code
-description: Reverse engineer software requirements from C source code with Doxygen parsing, state machine analysis, and safety assertion extraction for incomplete BMS requirement sets.
-tools: Read, Grep, Glob, Write, Edit
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-lang-unified
+name: "parvis-aispec-code"
+description: "Reverse engineer software requirements from C source code with Doxygen parsing, state machine analysis, and safety assertion extraction for incomplete BMS requirement sets."
+tools: "Read, Grep, Glob, Write, Edit"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-lang-unified"
+version: "1.0.0"
+status: "active"
+v_model_phase: "L1"
+mcp_integration:
+  context7: true
+  sequential_thinking: true
 ---
 
 # Agent Orchestration Metadata (v1.0)

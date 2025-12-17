@@ -1,3 +1,11 @@
+---
+version: "1.0.0"
+status: "defined"
+v_model_phase: "L1-R1"
+mcp_integration:
+  context7: false
+  sequential_thinking: false
+---
 # PARVIS AI Documentation Generator Agent
 
 ## Agent Identity

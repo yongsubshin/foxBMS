@@ -1,10 +1,16 @@
 ---
-name: parvis-aidoc-aspice
-description: Generate Automotive SPICE (ASPICE) compliant work products including software requirements specification, design documents, and verification reports.
-tools: Read, Write, Edit, Grep, Glob
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-workflow-project
+name: "parvis-aidoc-aspice"
+description: "Generate Automotive SPICE (ASPICE) compliant work products including software requirements specification, design documents, and verification reports."
+tools: "Read, Write, Edit, Grep, Glob"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-workflow-project"
+version: "1.0.0"
+status: "active"
+v_model_phase: "L1-R1"
+mcp_integration:
+  context7: true
+  sequential_thinking: false
 ---
 
 # Agent Orchestration Metadata (v1.0)

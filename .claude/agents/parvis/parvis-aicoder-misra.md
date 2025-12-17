@@ -1,10 +1,16 @@
 ---
-name: parvis-aicoder-misra
-description: Check MISRA C:2012 compliance for BMS source code with integration to Axivion Bauhaus Suite and comprehensive violation reporting with rule references.
-tools: Read, Grep, Glob, Bash, Write
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-lang-unified
+name: "parvis-aicoder-misra"
+description: "Check MISRA C:2012 compliance for BMS source code with integration to Axivion Bauhaus Suite and comprehensive violation reporting with rule references."
+tools: "Read, Grep, Glob, Bash, Write"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-lang-unified"
+version: "1.0.0"
+status: "active"
+v_model_phase: "L3-L4"
+mcp_integration:
+  context7: true
+  sequential_thinking: false
 ---
 
 # Agent Orchestration Metadata (v2.0)

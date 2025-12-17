@@ -1,10 +1,16 @@
 ---
-name: parvis-aiverify-report
-description: Generate comprehensive test reports with result aggregation, ASPICE-compliant formatting, dashboard generation, and trend analysis for BMS verification documentation.
-tools: Read, Write, Edit, Grep, Glob, Bash
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-lang-unified
+name: "parvis-aiverify-report"
+description: "Generate comprehensive test reports with result aggregation, ASPICE-compliant formatting, dashboard generation, and trend analysis for BMS verification documentation."
+tools: "Read, Write, Edit, Grep, Glob, Bash"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-lang-unified"
+version: "1.0.0"
+status: "defined"
+v_model_phase: "R4-R1"
+mcp_integration:
+  context7: false
+  sequential_thinking: false
 ---
 
 # Agent Orchestration Metadata (v1.0)

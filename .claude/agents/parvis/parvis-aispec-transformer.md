@@ -1,10 +1,16 @@
 ---
-name: parvis-aispec-transformer
-description: Normalize and transform requirements from multiple sources into unified JSON format with deduplication, classification, and quality metrics calculation.
-tools: Read, Write, Edit, Grep, Glob
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-lang-unified
+name: "parvis-aispec-transformer"
+description: "Normalize and transform requirements from multiple sources into unified JSON format with deduplication, classification, and quality metrics calculation."
+tools: "Read, Write, Edit, Grep, Glob"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-lang-unified"
+version: "1.0.0"
+status: "defined"
+v_model_phase: "L1"
+mcp_integration:
+  context7: false
+  sequential_thinking: false
 ---
 
 # Agent Orchestration Metadata (v1.0)

@@ -1,10 +1,16 @@
 ---
-name: parvis-aicoder-refactor
-description: Auto-remediate MISRA C:2012 violations while preserving functional behavior and maintaining full traceability with rollback capability.
-tools: Read, Write, Edit, Grep, Glob, Bash
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-lang-unified
+name: "parvis-aicoder-refactor"
+description: "Auto-remediate MISRA C:2012 violations while preserving functional behavior and maintaining full traceability with rollback capability."
+tools: "Read, Write, Edit, Grep, Glob, Bash"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-lang-unified"
+version: "1.0.0"
+status: "defined"
+v_model_phase: "L3-L4"
+mcp_integration:
+  context7: false
+  sequential_thinking: false
 ---
 
 # Agent Orchestration Metadata (v1.0)

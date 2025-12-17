@@ -1,10 +1,16 @@
 ---
-name: parvis-aidoc-change
-description: Perform change impact analysis, generate change notifications, manage approval workflows, and maintain change history per ISO 26262-8 change management requirements.
-tools: Read, Write, Edit, Grep, Glob
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-lang-unified
+name: "parvis-aidoc-change"
+description: "Perform change impact analysis, generate change notifications, manage approval workflows, and maintain change history per ISO 26262-8 change management requirements."
+tools: "Read, Write, Edit, Grep, Glob"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-lang-unified"
+version: "1.0.0"
+status: "defined"
+v_model_phase: "L1-R1"
+mcp_integration:
+  context7: false
+  sequential_thinking: false
 ---
 
 # Agent Orchestration Metadata (v1.0)

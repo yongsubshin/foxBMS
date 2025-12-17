@@ -1,10 +1,16 @@
 ---
-name: parvis-ai-orchestrator
-description: Master V-Model coordinator for BMS development with ISO 26262 ASIL compliance, ASPICE work product generation, and full traceability management.
-tools: Read, Write, Edit, Grep, Glob, Bash, TodoWrite, Task
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-workflow-project
+name: "parvis-ai-orchestrator"
+description: "Master V-Model coordinator for BMS development with ISO 26262 ASIL compliance, ASPICE work product generation, and full traceability management."
+tools: "Read, Write, Edit, Grep, Glob, Bash, TodoWrite, Task"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-workflow-project"
+version: "1.0.0"
+status: "active"
+v_model_phase: "L1-L6"
+mcp_integration:
+  context7: false
+  sequential_thinking: false
 ---
 
 # Agent Orchestration Metadata (v1.0)

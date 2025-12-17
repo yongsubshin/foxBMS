@@ -1,10 +1,16 @@
 ---
-name: parvis-aidoc-safety
-description: Generate safety case documentation, safety manuals, and safety reports per ISO 26262-2 requirements with evidence collection and safety argument structuring.
-tools: Read, Write, Edit, Grep, Glob
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-lang-unified
+name: "parvis-aidoc-safety"
+description: "Generate safety case documentation, safety manuals, and safety reports per ISO 26262-2 requirements with evidence collection and safety argument structuring."
+tools: "Read, Write, Edit, Grep, Glob"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-lang-unified"
+version: "1.0.0"
+status: "defined"
+v_model_phase: "L1-R1"
+mcp_integration:
+  context7: false
+  sequential_thinking: false
 ---
 
 # Agent Orchestration Metadata (v1.0)

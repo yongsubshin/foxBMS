@@ -1,10 +1,16 @@
 ---
-name: parvis-aidoc-trace
-description: Generate traceability reports, coverage matrices, gap analysis documentation, and bidirectional traceability visualizations per ISO 26262-8 requirements.
-tools: Read, Write, Edit, Grep, Glob
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-lang-unified
+name: "parvis-aidoc-trace"
+description: "Generate traceability reports, coverage matrices, gap analysis documentation, and bidirectional traceability visualizations per ISO 26262-8 requirements."
+tools: "Read, Write, Edit, Grep, Glob"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-lang-unified"
+version: "1.0.0"
+status: "active"
+v_model_phase: "L1-R1"
+mcp_integration:
+  context7: false
+  sequential_thinking: false
 ---
 
 # Agent Orchestration Metadata (v1.0)

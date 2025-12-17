@@ -1,10 +1,16 @@
 ---
-name: parvis-aiverify-safety
-description: Verify safety test completeness including MC/DC verification, FMEA validation support, and safety evidence collection per ISO 26262 Part 4 and 6 requirements.
-tools: Read, Write, Edit, Grep, Glob, Bash
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-lang-unified
+name: "parvis-aiverify-safety"
+description: "Verify safety test completeness including MC/DC verification, FMEA validation support, and safety evidence collection per ISO 26262 Part 4 and 6 requirements."
+tools: "Read, Write, Edit, Grep, Glob, Bash"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-lang-unified"
+version: "1.0.0"
+status: "defined"
+v_model_phase: "R4-R1"
+mcp_integration:
+  context7: false
+  sequential_thinking: false
 ---
 
 # Agent Orchestration Metadata (v1.0)

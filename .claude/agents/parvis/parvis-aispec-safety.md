@@ -1,10 +1,16 @@
 ---
-name: parvis-aispec-safety
-description: Perform hazard analysis and risk assessment (HARA) support, ASIL classification, safety goal derivation, and functional safety requirement generation per ISO 26262.
-tools: Read, Write, Edit, Grep, Glob
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-lang-unified
+name: "parvis-aispec-safety"
+description: "Perform hazard analysis and risk assessment (HARA) support, ASIL classification, safety goal derivation, and functional safety requirement generation per ISO 26262."
+tools: "Read, Write, Edit, Grep, Glob"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-lang-unified"
+version: "1.0.0"
+status: "active"
+v_model_phase: "L1"
+mcp_integration:
+  context7: false
+  sequential_thinking: true
 ---
 
 # Agent Orchestration Metadata (v1.0)

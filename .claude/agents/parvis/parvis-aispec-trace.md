@@ -1,10 +1,16 @@
 ---
-name: parvis-aispec-trace
-description: Create and maintain bidirectional traceability matrix between requirements, design, code, and tests for ISO 26262 and ASPICE compliance.
-tools: Read, Write, Edit, Grep, Glob
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-workflow-project
+name: "parvis-aispec-trace"
+description: "Create and maintain bidirectional traceability matrix between requirements, design, code, and tests for ISO 26262 and ASPICE compliance."
+tools: "Read, Write, Edit, Grep, Glob"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-workflow-project"
+version: "1.0.0"
+status: "active"
+v_model_phase: "L1"
+mcp_integration:
+  context7: false
+  sequential_thinking: false
 ---
 
 # Agent Orchestration Metadata (v1.0)

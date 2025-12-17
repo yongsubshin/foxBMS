@@ -1,10 +1,16 @@
 ---
-name: parvis-aiverify-coverage
-description: Analyze test coverage metrics including statement, branch, and MC/DC coverage with gap analysis and ISO 26262 compliance reporting for BMS software verification.
-tools: Read, Write, Edit, Grep, Glob, Bash
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-lang-unified
+name: "parvis-aiverify-coverage"
+description: "Analyze test coverage metrics including statement, branch, and MC/DC coverage with gap analysis and ISO 26262 compliance reporting for BMS software verification."
+tools: "Read, Write, Edit, Grep, Glob, Bash"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-lang-unified"
+version: "1.0.0"
+status: "defined"
+v_model_phase: "R4-R1"
+mcp_integration:
+  context7: false
+  sequential_thinking: false
 ---
 
 # Agent Orchestration Metadata (v1.0)

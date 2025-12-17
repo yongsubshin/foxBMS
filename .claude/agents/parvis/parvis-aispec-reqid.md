@@ -1,10 +1,16 @@
 ---
-name: parvis-aispec-reqid
-description: Assign unique requirement IDs following FBMS-[TYPE]-[MODULE]-[SEQ] format with registry management, collision detection, and validation for BMS requirements.
-tools: Read, Write, Edit, Grep, Glob
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-lang-unified
+name: "parvis-aispec-reqid"
+description: "Assign unique requirement IDs following FBMS-[TYPE]-[MODULE]-[SEQ] format with registry management, collision detection, and validation for BMS requirements."
+tools: "Read, Write, Edit, Grep, Glob"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-lang-unified"
+version: "1.0.0"
+status: "active"
+v_model_phase: "L1"
+mcp_integration:
+  context7: false
+  sequential_thinking: false
 ---
 
 # Agent Orchestration Metadata (v1.0)

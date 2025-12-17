@@ -1,10 +1,16 @@
 ---
-name: parvis-aicoder-safety
-description: Insert ASIL markers, safety annotations, defensive programming patterns, and FAS_ASSERT assertions for safety-critical code per ISO 26262 requirements.
-tools: Read, Write, Edit, Grep, Glob, Bash
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-lang-unified
+name: "parvis-aicoder-safety"
+description: "Insert ASIL markers, safety annotations, defensive programming patterns, and FAS_ASSERT assertions for safety-critical code per ISO 26262 requirements."
+tools: "Read, Write, Edit, Grep, Glob, Bash"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-lang-unified"
+version: "1.0.0"
+status: "defined"
+v_model_phase: "L3-L4"
+mcp_integration:
+  context7: false
+  sequential_thinking: false
 ---
 
 # Agent Orchestration Metadata (v1.0)

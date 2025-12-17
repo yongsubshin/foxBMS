@@ -1,10 +1,16 @@
 ---
-name: parvis-aiverify-unittest
-description: Generate unit tests from software requirements with requirement traceability, coverage mapping, and ISO 26262 test method compliance.
-tools: Read, Write, Edit, Grep, Glob, Bash
-model: inherit
-permissionMode: default
-skills: moai-foundation-claude, moai-lang-unified
+name: "parvis-aiverify-unittest"
+description: "Generate unit tests from software requirements with requirement traceability, coverage mapping, and ISO 26262 test method compliance."
+tools: "Read, Write, Edit, Grep, Glob, Bash"
+model: "inherit"
+permissionMode: "default"
+skills: "moai-foundation-claude, moai-lang-unified"
+version: "1.0.0"
+status: "defined"
+v_model_phase: "R4-R1"
+mcp_integration:
+  context7: true
+  sequential_thinking: true
 ---
 
 # Agent Orchestration Metadata (v1.0)

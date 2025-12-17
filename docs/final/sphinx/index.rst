@@ -4,7 +4,7 @@
 foxBMS Battery Management System Documentation
 =============================================
 
-**Version**: 2.0.0 | **ASPICE Level**: 2 | **ISO 26262**: ASIL-D | **Generated**: 2025-12-16
+**Version**: 2.1.0 | **ASPICE Level**: 2 | **ISO 26262**: ASIL-D | **Generated**: 2025-12-17
 
 .. note::
    This documentation package represents the complete V-Model process documentation
@@ -17,7 +17,7 @@ Executive Summary
 The foxBMS BMS project V-Model process has been **fully completed** with:
 
 * **648 Software Requirements** extracted and normalized with FBMS-ID system
-* **147 Safety Requirements** classified per ISO 26262 HARA
+* **123 Safety Requirements** classified per ISO 26262 HARA (ASIL-A to ASIL-D)
 * **570 Test Cases** across all verification levels
 * **100% MC/DC Coverage** for safety-critical functions (ASIL-D)
 * **~99% MISRA C:2012 Compliance** with documented deviations (345 fixes, 41 deviations)

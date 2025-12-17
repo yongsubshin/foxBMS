@@ -9,7 +9,7 @@
         :root { --primary: #1a5f7a; --dark: #002b5b; --light: #f8f9fa; --success: #28a745; }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f7fa; line-height: 1.6; }
-        .header { background: linear-gradient(135deg, #002b5b, #1a5f7a); color: white; padding: 2rem; }
+        .header { background: linear-gradient(135deg, #002b5b, #1a5f7a); color: white; padding: 2rem; position: relative; }
         .header h1 { margin-bottom: 0.5rem; }
         .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
         .back-link { color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; opacity: 0.8; }
@@ -36,38 +36,66 @@
         .summary-card { background: white; padding: 1.5rem; border-radius: 8px; text-align: center; }
         .summary-card .value { font-size: 2rem; font-weight: 700; color: var(--primary); }
         .summary-card .label { color: #666; }
+        .language-switcher {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        .language-switcher select {
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            border: none;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+        .language-switcher select:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        .language-switcher select option {
+            color: #333;
+            background: white;
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <a href="../../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portal</a>
-        <h1><i class="fas fa-book"></i> V-Model Process Documentation</h1>
-        <p>Complete ASPICE Level 2 Work Products</p>
+        <a href="../../index.html" class="back-link"><i class="fas fa-arrow-left"></i> <span data-i18n="common.backToPortal">Back to Portal</span></a>
+        <div class="language-switcher">
+            <select id="language-select" aria-label="Select Language">
+                <option value="ko">한국어</option>
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+            </select>
+        </div>
+        <h1><i class="fas fa-book"></i> <span data-i18n="process.title">V-Model Process Documentation</span></h1>
+        <p><span data-i18n="process.subtitle">Complete ASPICE Level 2 Work Products</span> | Updated: 2025-12-17</p>
     </div>
 
     <div class="container">
         <div class="summary">
             <div class="summary-card">
                 <div class="value">11</div>
-                <div class="label">V-Model Phases</div>
+                <div class="label" data-i18n="process.summary.phases">V-Model Phases</div>
             </div>
             <div class="summary-card">
                 <div class="value">40+</div>
-                <div class="label">Documents</div>
+                <div class="label" data-i18n="process.summary.documents">Documents</div>
             </div>
             <div class="summary-card">
                 <div class="value">648</div>
-                <div class="label">Requirements</div>
+                <div class="label" data-i18n="process.summary.requirements">Requirements</div>
             </div>
             <div class="summary-card">
                 <div class="value">570</div>
-                <div class="label">Test Cases</div>
+                <div class="label" data-i18n="process.summary.testCases">Test Cases</div>
             </div>
         </div>
 
         <div class="section">
             <div class="section-header" onclick="toggleSection('system-level-sys')">
-                <h2><i class="fas fa-cube"></i> System Level (SYS)</h2>
+                <h2><i class="fas fa-cube"></i> <span data-i18n="process.sections.systemLevel">System Level (SYS)</span></h2>
                 <i class="fas fa-chevron-down chevron" id="chevron-system-level-sys"></i>
             </div>
             <div class="section-body" id="body-system-level-sys">
@@ -114,7 +142,7 @@
 
         <div class="section">
             <div class="section-header" onclick="toggleSection('software-requirements-swe.1')">
-                <h2><i class="fas fa-list-check"></i> Software Requirements (SWE.1)</h2>
+                <h2><i class="fas fa-list-check"></i> <span data-i18n="process.sections.swRequirements">Software Requirements (SWE.1)</span></h2>
                 <i class="fas fa-chevron-down chevron" id="chevron-software-requirements-swe.1"></i>
             </div>
             <div class="section-body" id="body-software-requirements-swe.1">
@@ -155,7 +183,7 @@
 
         <div class="section">
             <div class="section-header" onclick="toggleSection('software-architecture-swe.2')">
-                <h2><i class="fas fa-sitemap"></i> Software Architecture (SWE.2)</h2>
+                <h2><i class="fas fa-sitemap"></i> <span data-i18n="process.sections.swArchitecture">Software Architecture (SWE.2)</span></h2>
                 <i class="fas fa-chevron-down chevron" id="chevron-software-architecture-swe.2"></i>
             </div>
             <div class="section-body" id="body-software-architecture-swe.2">
@@ -178,7 +206,7 @@
 
         <div class="section">
             <div class="section-header" onclick="toggleSection('software-detailed-design-swe.3')">
-                <h2><i class="fas fa-pencil-ruler"></i> Software Detailed Design (SWE.3)</h2>
+                <h2><i class="fas fa-pencil-ruler"></i> <span data-i18n="process.sections.swDetailedDesign">Software Detailed Design (SWE.3)</span></h2>
                 <i class="fas fa-chevron-down chevron" id="chevron-software-detailed-design-swe.3"></i>
             </div>
             <div class="section-body" id="body-software-detailed-design-swe.3">
@@ -225,7 +253,7 @@
 
         <div class="section">
             <div class="section-header" onclick="toggleSection('verification-swe.4-6')">
-                <h2><i class="fas fa-vial"></i> Verification (SWE.4-6)</h2>
+                <h2><i class="fas fa-vial"></i> <span data-i18n="process.sections.verification">Verification (SWE.4-6)</span></h2>
                 <i class="fas fa-chevron-down chevron" id="chevron-verification-swe.4-6"></i>
             </div>
             <div class="section-body" id="body-verification-swe.4-6">
@@ -278,7 +306,7 @@
 
         <div class="section">
             <div class="section-header" onclick="toggleSection('misra-compliance')">
-                <h2><i class="fas fa-shield-alt"></i> MISRA Compliance</h2>
+                <h2><i class="fas fa-shield-alt"></i> <span data-i18n="process.sections.misraCompliance">MISRA Compliance</span></h2>
                 <i class="fas fa-chevron-down chevron" id="chevron-misra-compliance"></i>
             </div>
             <div class="section-body" id="body-misra-compliance">
@@ -313,7 +341,7 @@
 
         <div class="section">
             <div class="section-header" onclick="toggleSection('traceability')">
-                <h2><i class="fas fa-project-diagram"></i> Traceability</h2>
+                <h2><i class="fas fa-project-diagram"></i> <span data-i18n="process.sections.traceability">Traceability</span></h2>
                 <i class="fas fa-chevron-down chevron" id="chevron-traceability"></i>
             </div>
             <div class="section-body" id="body-traceability">
@@ -347,7 +375,7 @@
         </div>
 
         <div style="text-align: center; padding: 2rem; color: #666;">
-            <p><i class="fas fa-info-circle"></i> All documents open in new tabs. JSON files can be viewed with browser JSON viewer.</p>
+            <p><i class="fas fa-info-circle"></i> <span data-i18n="process.info">All documents open in new tabs. JSON files can be viewed with browser JSON viewer.</span></p>
             <p>Full documentation: <a href="../viewer/index.html?file=../../../../parvis/00-FINAL-SUMMARY.md" target="_blank">00-FINAL-SUMMARY.md</a></p>
         </div>
     </div>
@@ -364,6 +392,54 @@
         document.addEventListener('DOMContentLoaded', () => {
             toggleSection('system-level-sys');
         });
+    </script>
+    <script src="../../js/i18n.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            await i18n.init({
+                defaultLanguage: 'ko',
+                supportedLanguages: ['ko', 'en', 'ja'],
+                languageFilePath: '../../locales/',
+                detectBrowserLanguage: true,
+                persistLanguage: true,
+                fallbackLanguage: 'ko'
+            });
+
+            translatePage();
+
+            i18n.on('languageChanged', () => {
+                translatePage();
+            });
+
+            const languageSelect = document.getElementById('language-select');
+            if (languageSelect) {
+                languageSelect.value = i18n.getCurrentLanguage();
+                languageSelect.addEventListener('change', (e) => {
+                    i18n.changeLanguage(e.target.value);
+                });
+            }
+        });
+
+        function translatePage() {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                const translation = i18n.t(key);
+                if (translation === key) return;
+
+                const iconElement = element.querySelector('i.fas, i.fa, i.fab, svg');
+                if (iconElement) {
+                    element.innerHTML = iconElement.outerHTML + ' ' + translation;
+                } else {
+                    element.textContent = translation;
+                }
+            });
+
+            const languageSelect = document.getElementById('language-select');
+            if (languageSelect) {
+                languageSelect.value = i18n.getCurrentLanguage();
+            }
+        }
     </script>
 </body>
 </html>

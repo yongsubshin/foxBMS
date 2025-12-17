@@ -568,7 +568,7 @@
             await i18n.init({
                 defaultLanguage: 'ko',
                 supportedLanguages: ['ko', 'en', 'ja'],
-                languageFilePath: '/docs/final/locales/',
+                languageFilePath: 'locales/',
                 detectBrowserLanguage: true,
                 persistLanguage: true,
                 fallbackLanguage: 'ko'
@@ -599,20 +599,19 @@
                 const key = element.getAttribute('data-i18n');
                 const translation = i18n.t(key);
 
-                // Update text content while preserving child elements (like icons)
-                const hasChildElements = element.querySelector('*');
-                if (hasChildElements) {
-                    // For elements with child elements (like icons), update text nodes only
-                    let firstTextNode = null;
-                    for (let node of element.childNodes) {
-                        if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
-                            firstTextNode = node;
-                            break;
-                        }
-                    }
-                    if (firstTextNode) {
-                        firstTextNode.textContent = translation;
-                    }
+                // Skip if translation is the same as the key (not found)
+                if (translation === key) {
+                    console.warn('Translation not found for key:', key);
+                    return;
+                }
+
+                // Check if element has icon child elements
+                const iconElement = element.querySelector('i.fas, i.fa, i.fab, svg');
+
+                if (iconElement) {
+                    // Preserve icon and add translated text after it
+                    const iconHTML = iconElement.outerHTML;
+                    element.innerHTML = iconHTML + ' ' + translation;
                 } else {
                     // For simple elements, just set text content
                     element.textContent = translation;

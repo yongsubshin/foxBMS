@@ -13,8 +13,8 @@ model: inherit
 
 ## Essential Files
 
-@.moai/bms/config/phase-status/BMS.json
-@.moai/bms/config/orchestrator-config.json
+@.claude/parvis-data/config/phase-status/BMS.json
+@.claude/parvis-data/config/orchestrator-config.json
 
 ---
 
@@ -37,10 +37,10 @@ The `/parvis:run` command orchestrates the complete V-Model development workflow
 foxbms-2/src/ (source code)
        |
        v  parvis-aispec-code (extraction)
-.moai/bms/requirements/extracted/ (JSON)
+.claude/parvis-data/requirements/extracted/ (JSON)
        |
        v  parvis-aispec-transformer (normalization)
-.moai/bms/requirements/normalized/
+.claude/parvis-data/requirements/normalized/
        |
        v  parvis-aispec-reqid (ID assignment)
        |

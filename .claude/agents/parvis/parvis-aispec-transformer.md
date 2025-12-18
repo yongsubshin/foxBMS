@@ -161,10 +161,10 @@ Each normalized requirement contains:
 
 ### Output File Locations
 
-Normalized Requirements: .moai/bms/requirements/normalized/[module]-normalized.json
-Quality Reports: .moai/bms/requirements/quality/[module]-quality-report.md
-Deduplication Log: .moai/bms/requirements/logs/deduplication-log.json
-Transformation Audit: .moai/bms/requirements/logs/transformation-audit.json
+Normalized Requirements: .claude/parvis-data/requirements/normalized/[module]-normalized.json
+Quality Reports: .claude/parvis-data/requirements/quality/[module]-quality-report.md
+Deduplication Log: .claude/parvis-data/requirements/logs/deduplication-log.json
+Transformation Audit: .claude/parvis-data/requirements/logs/transformation-audit.json
 
 ## Normalization Rules
 
@@ -310,13 +310,13 @@ Low:
 When processing: "Normalize requirements for [module]"
 
 Steps:
-1. Load extracted requirements from .moai/bms/requirements/extracted/[module]-extracted.json
+1. Load extracted requirements from .claude/parvis-data/requirements/extracted/[module]-extracted.json
 2. Validate input format and completeness
 3. Apply normalization rules to each requirement
 4. Execute deduplication algorithm
 5. Apply classification logic
 6. Calculate quality metrics
-7. Write normalized output to .moai/bms/requirements/normalized/[module]-normalized.json
+7. Write normalized output to .claude/parvis-data/requirements/normalized/[module]-normalized.json
 8. Generate quality report
 9. Update transformation audit log
 
@@ -462,7 +462,7 @@ Output guarantees:
 
 ## Configuration
 
-Configuration File: .moai/bms/config/transformer-config.json
+Configuration File: .claude/parvis-data/config/transformer-config.json
 
 Options:
 - normalization_strict_mode: Reject non-conforming requirements (default: false)

@@ -450,12 +450,12 @@ Approval Authority Unclear:
 
 ## Output File Locations
 
-Change Requests: .moai/bms/change/requests/CR-[ID].json
-Impact Analysis: .moai/bms/change/impact/CR-[ID]-impact.md
-Approval Records: .moai/bms/change/approvals/CR-[ID]-approval.json
-Change History: .moai/bms/change/history/change-history.json
-Metrics Dashboard: .moai/bms/change/metrics/change-metrics.json
-Re-verification Scope: .moai/bms/change/reverification/CR-[ID]-reverif.md
+Change Requests: .claude/parvis-data/change/requests/CR-[ID].json
+Impact Analysis: .claude/parvis-data/change/impact/CR-[ID]-impact.md
+Approval Records: .claude/parvis-data/change/approvals/CR-[ID]-approval.json
+Change History: .claude/parvis-data/change/history/change-history.json
+Metrics Dashboard: .claude/parvis-data/change/metrics/change-metrics.json
+Re-verification Scope: .claude/parvis-data/change/reverification/CR-[ID]-reverif.md
 
 ## Integration Points
 
@@ -487,7 +487,7 @@ Output guarantees:
 
 ## Configuration
 
-Configuration File: .moai/bms/config/change-config.json
+Configuration File: .claude/parvis-data/config/change-config.json
 
 Options:
 - auto_impact_analysis: Automatically analyze on CR submission (default: true)

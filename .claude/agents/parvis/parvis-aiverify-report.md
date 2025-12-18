@@ -441,12 +441,12 @@ Historical Data Gap:
 
 ## Output File Locations
 
-Unit Test Report: .moai/bms/documentation/aspice/SWE4-unit-test-report.md
-Integration Report: .moai/bms/documentation/aspice/SWE5-integration-test-report.md
-System Report: .moai/bms/documentation/aspice/SWE6-qualification-test-report.md
-Dashboard Data: .moai/bms/tests/reports/dashboard-data.json
-Trend Data: .moai/bms/tests/reports/trend-analysis.json
-Release Report: .moai/bms/tests/reports/[version]-release-report.md
+Unit Test Report: .claude/parvis-data/documentation/aspice/SWE4-unit-test-report.md
+Integration Report: .claude/parvis-data/documentation/aspice/SWE5-integration-test-report.md
+System Report: .claude/parvis-data/documentation/aspice/SWE6-qualification-test-report.md
+Dashboard Data: .claude/parvis-data/tests/reports/dashboard-data.json
+Trend Data: .claude/parvis-data/tests/reports/trend-analysis.json
+Release Report: .claude/parvis-data/tests/reports/[version]-release-report.md
 
 ## Integration Points
 
@@ -481,7 +481,7 @@ Output guarantees:
 
 ## Configuration
 
-Configuration File: .moai/bms/config/report-config.json
+Configuration File: .claude/parvis-data/config/report-config.json
 
 Options:
 - report_format: "markdown", "html", "pdf" (default: markdown)

@@ -5,8 +5,8 @@ tools: "Read, Write, Edit, Grep, Glob, Bash"
 model: "inherit"
 permissionMode: "default"
 skills: "moai-foundation-claude, moai-lang-unified"
-version: "1.0.0"
-status: "defined"
+version: "1.1.0"
+status: "active"
 v_model_phase: "L3-L4"
 mcp_integration:
   context7: false
@@ -15,8 +15,8 @@ mcp_integration:
 
 # Agent Orchestration Metadata (v1.0)
 
-Version: 1.0.0
-Last Updated: 2025-12-15
+Version: 1.1.0
+Last Updated: 2025-12-19
 
 orchestration:
 can_resume: true
@@ -62,6 +62,13 @@ Requirement Link Insertion:
 - Validate requirement ID format and existence
 - Support multiple requirement links per element
 - Generate bidirectional traceability
+
+Traceability Chain Documentation (NEW in v1.1):
+- Insert @trace comments showing full traceability chain
+- Format: @trace SYS-REQ -> SW-REQ -> TC (single line summary)
+- Auto-generate from full-traceability-matrix.json
+- Link system requirements to test cases through code
+- Support ASPICE SWE.1-SWE.6 traceability requirements
 
 API Documentation Generation:
 - Generate module API overview documentation
@@ -163,6 +170,20 @@ Use @requirement tag for traceability:
 Requirement Tag Usage:
 Add @requirement tags after the standard documentation elements. Each @requirement links to a specific ASPICE requirement ID (SW-REQ for software requirements, FSR for functional safety requirements, HSI for HW/SW interface requirements). Multiple requirements can be linked by adding multiple @requirement lines.
 
+### Traceability Chain Comments (NEW in v1.1)
+
+Use @trace comment for full chain visibility:
+- Format: @trace SYS-REQ-XXX -> SW-REQ-YYY -> TC-ZZZ
+- Purpose: Show complete traceability from system requirement to test case
+- Placement: After @requirement tag in the same documentation block
+- Source: Auto-generated from full-traceability-matrix.json
+
+Traceability Chain Example:
+The @trace comment provides a single-line overview of the complete traceability chain. It shows the system requirement that drives the software requirement, which is implemented in this code, and verified by the referenced test case. This enables quick understanding of how code relates to higher-level requirements and verification activities without consulting the traceability matrix.
+
+Combined Usage Pattern:
+Place @requirement first for formal Doxygen traceability, then add @trace as a readable comment showing the full chain. Example documentation block would contain @brief, @param, @return, @requirement with the SW-REQ ID, and @trace showing the chain from SYS-REQ through SW-REQ to TC.
+
 ## Documentation Templates
 
 ### Template: Module Header
@@ -231,6 +252,29 @@ Steps:
 Output:
 - Updated documentation with requirement links
 - Traceability report
+
+### Command: Add Traceability Chain Comments (NEW in v1.1)
+
+When processing: "Add @trace comments to [scope]"
+
+Steps:
+1. Load full-traceability-matrix.json from docs/parvis/traceability/
+2. Load unified-requirements.json to get source file mappings
+3. For each requirement with source location:
+   a. Find the @requirement tag in the source file
+   b. Extract sys_req_id, sw_req_id, tc_id from matrix
+   c. Generate @trace comment: @trace SYS-REQ -> SW-REQ -> TC
+   d. Insert @trace after existing @requirement tag
+4. Skip if @trace already exists for that requirement
+5. Generate summary report with counts
+
+Output:
+- Modified source files with @trace comments
+- Summary: files modified, traces added, skipped (already exists)
+
+Input Data Sources:
+- docs/parvis/traceability/full-traceability-matrix.json: Contains sys_req_id, sw_req_id, tc_id mappings
+- docs/parvis/requirements/unified-requirements.json: Contains source file and line information for each requirement
 
 ### Command: Check Documentation Consistency
 
@@ -424,7 +468,7 @@ Output guarantees:
 
 ## Configuration
 
-Configuration File: .moai/bms/config/doxygen-config.json
+Configuration File: .claude/parvis-data/config/doxygen-config.json
 
 Options:
 - style_strict_mode: Reject non-compliant documentation (default: false)

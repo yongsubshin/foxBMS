@@ -590,7 +590,7 @@ Output guarantees:
 
 ## Configuration
 
-Configuration File: .moai/bms/config/misra-gate-config.json
+Configuration File: .claude/parvis-data/config/misra-gate-config.json
 
 Options:
 - mandatory_violations_allowed: 0 (strict)

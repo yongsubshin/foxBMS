@@ -413,11 +413,11 @@ Insufficient Evidence:
 
 ## Output File Locations
 
-Safety Coverage Report: .moai/bms/safety/verification/safety-test-coverage.json
-MC/DC Report: .moai/bms/safety/verification/mcdc-verification.json
-FMEA Validation: .moai/bms/safety/verification/fmea-validation.json
-Evidence Package: .moai/bms/safety/evidence/[safety-goal]-evidence.json
-Safety Verification Report: .moai/bms/documentation/aspice/safety-verification-report.md
+Safety Coverage Report: .claude/parvis-data/safety/verification/safety-test-coverage.json
+MC/DC Report: .claude/parvis-data/safety/verification/mcdc-verification.json
+FMEA Validation: .claude/parvis-data/safety/verification/fmea-validation.json
+Evidence Package: .claude/parvis-data/safety/evidence/[safety-goal]-evidence.json
+Safety Verification Report: .claude/parvis-data/documentation/aspice/safety-verification-report.md
 
 ## Integration Points
 
@@ -449,7 +449,7 @@ Output guarantees:
 
 ## Configuration
 
-Configuration File: .moai/bms/config/safety-verify-config.json
+Configuration File: .claude/parvis-data/config/safety-verify-config.json
 
 Options:
 - mcdc_required_asil: Minimum ASIL for MC/DC requirement (default: C)

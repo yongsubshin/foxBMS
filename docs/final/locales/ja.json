@@ -12,6 +12,7 @@
     "nav": {
       "processDocs": "プロセスドキュメント",
       "apiReference": "APIリファレンス",
+      "diagnostics": "診断システム",
       "traceability": "トレーサビリティマトリクス",
       "misra": "MISRA準拠",
       "metrics": "品質メトリクス"
@@ -267,5 +268,112 @@
     "toggleAll": "全切替",
     "line": "行",
     "requirements": "要件"
+  },
+  "diagnostics": {
+    "title": "診断システム",
+    "subtitle": "foxBMS 2 BMS 診断アーキテクチャとイベント分類",
+    "summary": {
+      "totalDiagIds": "総DIAG_ID数",
+      "fatalErrors": "致命的エラー",
+      "warnings": "警告",
+      "info": "情報",
+      "categories": "カテゴリ",
+      "callbacks": "コールバック関数"
+    },
+    "sections": {
+      "architecture": "システムアーキテクチャ",
+      "safetyLimits": "安全限界 (MSL/RSL/MOL)",
+      "voltage": "電圧診断",
+      "temperature": "温度診断",
+      "current": "電流診断",
+      "communication": "通信診断",
+      "insulation": "絶縁モニタリング (IMD)",
+      "circuit": "回路診断 (AFE)",
+      "callbacks": "コールバック関数",
+      "files": "ソースファイル参照"
+    },
+    "arch": {
+      "processingFlow": "診断処理フロー",
+      "moduleStructure": "モジュール構造"
+    },
+    "limits": {
+      "mslDesc": "コンタクタ即時開放。最も重要な安全閾値。",
+      "rslDesc": "警告レベル。システムは継続できますが注意が必要です。",
+      "molDesc": "情報レベル。通常運用境界。",
+      "action": "アクション",
+      "mslAction": "コンタクタ即時開放 + CANエラー送信",
+      "rslAction": "警告フラグ + ロギング",
+      "molAction": "情報ロギングのみ",
+      "databaseFlags": "データベースフラグ"
+    },
+    "table": {
+      "diagId": "診断ID",
+      "description": "説明",
+      "severity": "重大度",
+      "delay": "遅延"
+    },
+    "voltage": {
+      "overvoltMsl": "セル過電圧 (最大安全限界)",
+      "overvoltRsl": "セル過電圧 (推奨安全限界)",
+      "overvoltMol": "セル過電圧 (最大運用限界)",
+      "undervoltMsl": "セル低電圧 (最大安全限界)",
+      "undervoltRsl": "セル低電圧 (推奨安全限界)",
+      "undervoltMol": "セル低電圧 (最大運用限界)",
+      "deepDischarge": "過放電検出"
+    },
+    "temp": {
+      "overChargeMsl": "充電中過熱 (MSL)",
+      "overChargeRsl": "充電中過熱 (RSL)",
+      "overDischargeMsl": "放電中過熱 (MSL)",
+      "underChargeMsl": "充電中低温 (MSL)",
+      "underDischargeMsl": "放電中低温 (MSL)"
+    },
+    "current": {
+      "overChargeCell": "セルレベル充電過電流",
+      "overDischargeCell": "セルレベル放電過電流",
+      "overChargeString": "ストリングレベル充電過電流",
+      "overDischargeString": "ストリングレベル放電過電流",
+      "overChargePack": "パックレベル充電過電流",
+      "overDischargePack": "パックレベル放電過電流",
+      "openString": "オープンストリングで電流検出"
+    },
+    "comm": {
+      "afeSpi": "AFE SPI通信エラー",
+      "afeIntegrity": "AFE通信整合性 (PECエラー)",
+      "afeMux": "AFEマルチプレクサエラー",
+      "afeConfig": "AFE設定エラー",
+      "canTiming": "CANタイミングエラー",
+      "canRxFull": "CAN受信キュー満杯",
+      "canTxFull": "CAN送信キュー満杯"
+    },
+    "imd": {
+      "supportedDevices": "対応デバイス",
+      "thresholds": "抵抗閾値",
+      "measureValid": "絶縁測定有効性",
+      "lowResError": "危険レベル絶縁抵抗 (<500kOhm)",
+      "lowResWarn": "警告レベル絶縁抵抗 (<750kOhm)",
+      "groundError": "地絡エラー検出"
+    },
+    "circuit": {
+      "afeSupport": "AFEチップセットサポートマトリックス",
+      "manufacturer": "メーカー",
+      "chipset": "チップセット",
+      "builtIn": "内蔵診断",
+      "openWire": "オープンワイヤ検出アルゴリズム"
+    },
+    "files": {
+      "file": "ファイル",
+      "path": "パス",
+      "description": "説明",
+      "diagCore": "コア診断エンジン",
+      "diagCfg": "診断設定",
+      "callbacks": "診断コールバック関数",
+      "soa": "安全運用領域チェック",
+      "plausibility": "妥当性チェック",
+      "redundancy": "冗長性チェック",
+      "imd": "絶縁モニタリング",
+      "sysMon": "システムモニタリング"
+    },
+    "viewFullAnalysis": "完全な分析ドキュメントを表示"
   }
 }

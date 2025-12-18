@@ -1,237 +1,205 @@
-# foxBMS Battery Management System
+# foxBMS + PARVIS AI 시스템
 
-**Professional-Grade Open Source BMS with AI-Powered Documentation**
+**AI 기반 문서화 및 검증을 통한 전문가급 BMS 개발**
 
 [![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD--3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-[![OSHWA Certified](https://img.shields.io/badge/OSHWA-DE000128-green.svg)](https://certification.oshwa.org/de000128.html)
 [![ISO 26262](https://img.shields.io/badge/ISO%2026262-ASIL--D-orange.svg)]()
 [![ASPICE](https://img.shields.io/badge/ASPICE-Level%202-yellow.svg)]()
+[![MISRA C](https://img.shields.io/badge/MISRA%20C-99%25-green.svg)]()
 
 ---
 
-## Overview
+## 빠른 시작
 
-foxBMS is a free, open, and flexible development environment for designing battery management systems. As the first modular open source BMS development platform, it provides a universal hardware and software solution for controlling modern and complex electrical energy storage systems of any size.
+### 사전 요구사항
 
-This repository contains the foxBMS project enhanced with **PARVIS** (PARVIS AI-based Requirements & Verification Integration System), an AI-powered documentation and verification system for automotive-grade compliance.
+- Claude Code CLI 설치
+- Python 3.8 이상
+- foxBMS 2 툴체인 (하드웨어 빌드 시 필요, 선택사항)
 
-### Supported Energy Storage Technologies
-
-- Lithium-Ion and Solid State Batteries
-- Lithium-Sulfur Batteries
-- Sodium-Ion Batteries
-- Lithium-Ion Capacitors (LIC)
-- Electric Double-Layer Capacitors (EDLC, supercapacitors)
-- Redox-Flow Batteries (RFB)
-- Fuel Cells (FC)
-- Hybrid combinations of the above
-
----
-
-## PARVIS AI Documentation System
-
-PARVIS provides automated requirement extraction, traceability management, and verification support for automotive safety standards compliance.
-
-### Key Achievements
-
-| Metric | Result |
-|--------|--------|
-| Software Requirements | 648 (unified from 7 modules) |
-| Safety Requirements | 147 (ASIL-D/C/B classified) |
-| Test Cases | 570 (Unit, Integration, Qualification, Validation) |
-| MC/DC Coverage | 100% (all safety-critical functions) |
-| Traceability Coverage | 100% bidirectional |
-| MISRA C:2012 Compliance | ~99% |
-| ASPICE Level | Level 2 Compliant |
-
-### PARVIS Components
-
-- **Requirement Extraction Engine**: Automated extraction from C source code
-- **V-Model Phase Tracking**: 8-phase workflow (L1-L4, R1-R4)
-- **Quality Gate Enforcement**: Metric-based gate verification
-- **Traceability Matrix**: Bidirectional requirement-to-test mapping
-- **Safety Analysis**: ISO 26262 ASIL classification
-
-### Documentation Structure
-
-```
-docs/parvis/
-  00-FINAL-SUMMARY.md          # Project summary and status
-  requirements/                 # Extracted and classified requirements
-  architecture/                 # Software architecture design
-  design/                       # Detailed module designs
-  verification/                 # Test specifications and reports
-  traceability/                 # Traceability matrices
-  system/                       # System-level documents (SYS.1-SYS.5, VAL.1)
-  safety/                       # Technical safety concept
-  aspice/                       # ASPICE work products
-```
-
----
-
-## Quick Start
-
-### Prerequisites
-
-- Python 3.8 or higher
-- foxBMS 2 toolchain (see foxbms-2/INSTALL.md)
-
-### Extract Requirements from BMS Module
+### 기본 사용법
 
 ```bash
-python3 .moai/bms/extraction_engine.py foxbms-2/src/app/application/bms BMS
-```
+# 프로젝트에서 Claude Code 시작
+cd /path/to/foxBMS
+claude
 
-### Generate Extraction Report
+# PARVIS V-Model 파이프라인 전체 실행
+/parvis:run BMS
 
-```bash
-python3 .moai/bms/extraction_engine.py foxbms-2/src/app/application/bms BMS --report
-```
-
-### Check Phase Status
-
-```bash
-python3 .moai/bms/orchestrator_engine.py status BMS
-```
-
-### Generate Phase Status Report
-
-```bash
-python3 .moai/bms/orchestrator_engine.py report BMS
+# 문서 포털 생성
+/parvis:docs all
 ```
 
 ---
 
-## foxBMS 2 Core
+## 시스템 아키텍처
 
-The core foxBMS 2 implementation is located in the `foxbms-2/` directory.
-
-### Repository Structure
-
-| Directory | Description |
-|-----------|-------------|
-| `foxbms-2/cli` | CLI tool to interact with the repository |
-| `foxbms-2/conf` | High level configurations |
-| `foxbms-2/docs` | Documentation source files |
-| `foxbms-2/hardware` | Hardware schematic and layout information |
-| `foxbms-2/src` | Source files for BMS embedded software |
-| `foxbms-2/tests` | Tests for embedded sources and tools |
-| `foxbms-2/tools` | Build tools and utilities |
-
-### Official Documentation
-
-- [Latest Documentation Build](https://iisb-foxbms.iisb.fraunhofer.de/foxbms/gen2/docs/html/latest/)
-- [All Documentation Builds](https://iisb-foxbms.iisb.fraunhofer.de/foxbms/gen2/docs/html/)
-
-### Installation
-
-See [foxbms-2/INSTALL.md](./foxbms-2/INSTALL.md) for detailed installation instructions.
-
----
-
-## Compliance and Standards
-
-### ISO 26262 Compliance
-
-| Part | Clause | Title | Status |
-|------|--------|-------|--------|
-| 4 | 6-9 | System Safety Requirements to Validation | COMPLETE |
-| 6 | 6-11 | Software Safety Requirements to Qualification | DOCUMENTED |
-
-### ASPICE Compliance
-
-| Process | Description | Level |
-|---------|-------------|-------|
-| SYS.1-SYS.5 | System Processes | Level 2 |
-| SWE.1-SWE.6 | Software Engineering | Level 2 |
-| VAL.1 | Validation | Level 2 |
-
-### MISRA C:2012 Compliance
-
-- Overall Compliance: ~99%
-- Mandatory Rules: 100%
-- Documented Deviations: 41 (ISO 26262 compliant)
-
----
-
-## V-Model Process
+### PARVIS V-Model 파이프라인
 
 ```
-              SYSTEM LEVEL (SYS)
-    SYS.1 ──────────────────────────► SYS.5
-    Requirements                      Qualification
-         │                                  │
-         ▼                                  ▼
-    SYS.2 ──────────────────────────► SYS.3/4
-    Architecture                      Integration
-         │                                  │
-         │     SOFTWARE LEVEL (SWE)         │
-         ▼                                  ▼
-    SWE.1 ──────────────────────────► SWE.6
-    SW Requirements                   SW Qualification
-         │                                  │
-         ▼                                  ▼
-    SWE.2 ──────────────────────────► SWE.5
-    SW Architecture                   SW Integration
-         │                                  │
-         ▼                                  ▼
-    SWE.3 ──────────────────────────► SWE.4
-    SW Design        foxBMS Code      Unit Test
+              PARVIS V-Model 파이프라인 (BMS)
+    ┌─────────────────────────────────────────────────────┐
+    │                                                     │
+    │   L1 ──► L2 ──► L3 ──► L4 ◄──► R1 ◄── R2 ◄── R3   │
+    │   요구   아키   설계  구현    단위  통합  검증     │
+    │                                                     │
+    └─────────────────────────────────────────────────────┘
+
+    명령어 ──► 에이전트 ──► 스킬 ──► 산출물
 ```
 
 ---
 
-## License
+## 명령어
 
-### Software
-
-The software is covered by the **BSD 3-Clause License**.
-See [foxbms-2/LICENSE.md](./foxbms-2/LICENSE.md) for details.
-
-### Hardware and Documentation
-
-The hardware and documentation are covered by the **Creative Commons Attribution 4.0 International License (CC-BY-4.0)**.
+| 명령어 | 설명 | 사용법 |
+|--------|------|--------|
+| `/parvis:run` | V-Model 파이프라인 실행 | `/parvis:run BMS` 또는 `/parvis:run all` |
+| `/parvis:docs` | 문서 생성 | `/parvis:docs all` 또는 `/parvis:docs sphinx` |
 
 ---
 
-## Open Source Hardware Certification
+## 에이전트 (22개)
 
-foxBMS 2 has been certified as open source hardware by the Open Source Hardware Association under the OSHWA UID [DE000128](https://certification.oshwa.org/de000128.html).
+### PARVIS 에이전트 분류
 
----
-
-## Acknowledgment
-
-For funding acknowledgements and instructions on how to acknowledge foxBMS 2, please see [foxbms.org/acknowledgements](https://foxbms.org/acknowledgements/).
-
----
-
-## Project Status
-
-| Component | Status | Version |
-|-----------|--------|---------|
-| foxBMS 2 Core | Production | See foxbms-2 |
-| PARVIS Documentation | Complete | 2.0.0 |
-| V-Model Process | Complete | All phases documented |
-| Quality Gate | PASSED | All metrics exceeded |
+| 단계 | 에이전트 | 목적 |
+|------|----------|------|
+| **명세** | `aispec-code`, `aispec-transformer`, `aispec-reqid`, `aispec-trace`, `aispec-safety` | 요구사항 추출 및 분석 |
+| **코딩** | `aicoder-misra`, `aicoder-refactor`, `aicoder-doxygen`, `aicoder-safety` | 코드 품질 및 규정 준수 |
+| **검증** | `aiverify-unittest`, `aiverify-coverage`, `aiverify-integration`, `aiverify-safety`, `aiverify-report`, `aiverify-misra-report` | 테스트 및 검증 |
+| **문서** | `aidoc-aspice`, `aidoc-trace`, `aidoc-change`, `aidoc-safety`, `aidoc-generator` | 작업 산출물 생성 |
+| **조율** | `ai-orchestrator` | 파이프라인 조율 |
 
 ---
 
-## Contributing
+## 스킬
 
-Contributions are welcome. Please refer to the foxBMS contribution guidelines and ensure compliance with the established coding standards and quality gates.
-
----
-
-## Support
-
-For issues or questions:
-1. Review the documentation in `docs/parvis/`
-2. Check the PARVIS implementation summary
-3. Refer to the foxBMS official documentation
+| 스킬 | 목적 |
+|------|------|
+| `parvis-code-templates` | foxBMS용 Jinja2 코드 생성 |
+| `parvis-misra-patterns` | MISRA C:2012 준수 패턴 |
+| `parvis-id-conventions` | foxBMS 요구사항 ID 명명 규칙 |
+| `parvis-i18n-templates` | 다국어 템플릿 (ko/en/ja) |
 
 ---
 
-**Generated by**: PARVIS AI Documentation System
-**Project**: foxBMS Battery Management System
-**Compliance**: ISO 26262:2018, ASPICE 3.1, MISRA C:2012
+## V-Model 파이프라인 상세
+
+### 왼쪽 (명세 → 구현)
+
+```
+L1: 요구사항 분석
+    └─► aispec-code (소스에서 추출)
+    └─► aispec-transformer (정규화)
+    └─► aispec-reqid (ID 할당)
+    └─► aispec-safety (ASIL 분류)
+
+L2: 아키텍처 설계
+    └─► aispec-trace (추적성 매트릭스)
+
+L3: 상세 설계
+    └─► aicoder-doxygen (문서화)
+
+L4: 구현
+    └─► aicoder-misra (MISRA 준수)
+    └─► aicoder-refactor (자동 교정)
+    └─► aicoder-safety (안전 어노테이션)
+```
+
+### 오른쪽 (검증 → 검증)
+
+```
+R1: 단위 검증
+    └─► aiverify-unittest (테스트 생성)
+    └─► aiverify-coverage (커버리지 분석)
+
+R2: 통합 검증
+    └─► aiverify-integration (인터페이스 테스트)
+
+R3: 적격성 테스트
+    └─► aiverify-safety (안전 검증)
+    └─► aiverify-misra-report (개선 전/후 비교)
+
+R4: 검증
+    └─► aiverify-report (종합 보고서)
+```
+
+### 문서 생성
+
+```
+aidoc-aspice ─────► ASPICE 작업 산출물
+aidoc-trace ──────► 추적성 보고서
+aidoc-safety ─────► 안전 문서
+aidoc-generator ──► HTML 포털, Sphinx, Doxygen
+```
+
+---
+
+## 프로젝트 구조
+
+```
+foxBMS/
+├── .claude/
+│   ├── agents/parvis/      # PARVIS 에이전트 (22개)
+│   ├── commands/parvis/    # /parvis:* 명령어
+│   └── skills/parvis-*/    # PARVIS 스킬
+├── .moai/bms/              # BMS 설정
+│   ├── config/             # 오케스트레이터 설정
+│   ├── extracted/          # 추출된 요구사항
+│   └── normalized/         # 정규화된 데이터
+├── docs/
+│   ├── final/              # 생성된 HTML 포털
+│   └── parvis/             # PARVIS 문서
+├── foxbms-2/               # foxBMS 2 소스 (서브모듈)
+└── guide/                  # 참조 가이드
+```
+
+---
+
+## 주요 지표
+
+| 지표 | 결과 |
+|------|------|
+| 소프트웨어 요구사항 | 648개 (7개 모듈 통합) |
+| 안전 요구사항 | 147개 (ASIL 분류 완료) |
+| 테스트 케이스 | 570개 |
+| MISRA C:2012 준수율 | ~99% |
+| 추적성 커버리지 | 100% 양방향 |
+
+---
+
+## 문서 포털
+
+생성된 문서 접근:
+
+```
+docs/final/html/index.html
+```
+
+**포털 내용:**
+- 모듈별 요구사항
+- MISRA 준수 보고서 (개선 전/후)
+- 추적성 매트릭스
+- V-Model 상태 대시보드
+- ASPICE 작업 산출물
+
+---
+
+## 라이선스
+
+- **소프트웨어**: BSD 3-Clause License
+- **하드웨어 및 문서**: CC-BY-4.0
+
+---
+
+## 링크
+
+- [foxBMS 공식 사이트](https://foxbms.org)
+- [foxBMS 2 문서](https://iisb-foxbms.iisb.fraunhofer.de/foxbms/gen2/docs/html/latest/)
+- [GitHub 저장소](https://github.com/yongsubshin/foxBMS)
+
+---
+
+**PARVIS** - AI 기반 요구사항 및 검증 통합 시스템

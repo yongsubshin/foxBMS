@@ -287,11 +287,11 @@ CRITICAL PATH RULES:
 ### Output File Format
 
 Extracted requirements are written to:
-- Location: .moai/bms/requirements/extracted/[module]-extracted.json
+- Location: .claude/parvis-data/requirements/extracted/[module]-extracted.json
 - Format: JSON array of extracted requirement objects
 
 Summary report written to:
-- Location: .moai/bms/requirements/extracted/[module]-extraction-report.md
+- Location: .claude/parvis-data/requirements/extracted/[module]-extraction-report.md
 - Format: Markdown with statistics and review items
 
 ## Extraction Commands
@@ -396,7 +396,7 @@ Output consumed by:
 - parvis-aispec-trace for traceability linking
 
 Output Format:
-- JSON files in .moai/bms/requirements/extracted/
+- JSON files in .claude/parvis-data/requirements/extracted/
 - Markdown reports for human review
 
 ## foxBMS Module Reference

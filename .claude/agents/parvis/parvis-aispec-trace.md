@@ -178,7 +178,7 @@ Each link contains:
 
 ### Matrix Storage Location
 
-Base Path: .moai/bms/traceability/
+Base Path: .claude/parvis-data/traceability/
 
 File Structure:
 - matrix.json: Complete traceability matrix
@@ -462,10 +462,10 @@ Provides data to:
 
 ### Artifact Location Mapping
 
-Requirements: .moai/bms/requirements/normalized/
-Design: .moai/bms/design/
+Requirements: .claude/parvis-data/requirements/normalized/
+Design: .claude/parvis-data/design/
 Source Code: foxbms-2/src/
-Tests: foxbms-2/tests/ and .moai/bms/tests/
+Tests: foxbms-2/tests/ and .claude/parvis-data/tests/
 
 ## ISO 26262-8 Compliance
 

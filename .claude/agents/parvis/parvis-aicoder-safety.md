@@ -444,7 +444,7 @@ Output guarantees:
 
 ## Configuration
 
-Configuration File: .moai/bms/config/safety-coder-config.json
+Configuration File: .claude/parvis-data/config/safety-coder-config.json
 
 Options:
 - strict_asil_enforcement: Block operations on ASIL violations (default: true)

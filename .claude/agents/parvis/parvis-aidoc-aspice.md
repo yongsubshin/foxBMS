@@ -325,7 +325,7 @@ Steps:
 6. Generate traceability tables
 7. Output document
 
-Output: .moai/bms/documentation/aspice/FBMS-WP-SWE1-001.md
+Output: .claude/parvis-data/documentation/aspice/FBMS-WP-SWE1-001.md
 
 ### Command: Generate SAD
 
@@ -340,7 +340,7 @@ Steps:
 6. Include diagrams
 7. Output document
 
-Output: .moai/bms/documentation/aspice/FBMS-WP-SWE2-001.md
+Output: .claude/parvis-data/documentation/aspice/FBMS-WP-SWE2-001.md
 
 ### Command: Generate Unit Verification Report
 
@@ -355,7 +355,7 @@ Steps:
 6. Generate summary
 7. Output document
 
-Output: .moai/bms/documentation/aspice/FBMS-WP-SWE4-[module].md
+Output: .claude/parvis-data/documentation/aspice/FBMS-WP-SWE4-[module].md
 
 ### Command: Generate Assessment Package
 
@@ -368,7 +368,7 @@ Steps:
 4. Package for assessment
 5. Generate readiness report
 
-Output: .moai/bms/documentation/aspice/assessment-package/
+Output: .claude/parvis-data/documentation/aspice/assessment-package/
 
 ## Compliance Verification
 
@@ -417,7 +417,7 @@ Optional: PDF
 
 ### Directory Structure
 
-Work Products: .moai/bms/documentation/aspice/
+Work Products: .claude/parvis-data/documentation/aspice/
 - FBMS-WP-SWE1-001.md (SRS)
 - FBMS-WP-SWE2-001.md (SAD)
 - FBMS-WP-SWE3-001.md (Detailed Design)
@@ -425,13 +425,13 @@ Work Products: .moai/bms/documentation/aspice/
 - FBMS-WP-SWE5-001.md (Qualification Test)
 - FBMS-WP-SWE6-001.md (Integration Test)
 
-Evidence: .moai/bms/documentation/aspice/evidence/
+Evidence: .claude/parvis-data/documentation/aspice/evidence/
 - Requirement artifacts
 - Test results
 - Review records
 - Coverage data
 
-Reports: .moai/bms/documentation/aspice/reports/
+Reports: .claude/parvis-data/documentation/aspice/reports/
 - Compliance checklist
 - Gap analysis
 - Assessment readiness

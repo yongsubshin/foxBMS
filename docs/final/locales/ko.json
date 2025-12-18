@@ -12,6 +12,7 @@
     "nav": {
       "processDocs": "프로세스 문서",
       "apiReference": "API 레퍼런스",
+      "diagnostics": "진단 시스템",
       "traceability": "추적성 매트릭스",
       "misra": "MISRA 준수",
       "metrics": "품질 메트릭"
@@ -267,5 +268,112 @@
     "toggleAll": "전체 토글",
     "line": "라인",
     "requirements": "요구사항"
+  },
+  "diagnostics": {
+    "title": "진단 시스템",
+    "subtitle": "foxBMS 2 BMS 진단 아키텍처 및 이벤트 분류",
+    "summary": {
+      "totalDiagIds": "총 DIAG_ID 수",
+      "fatalErrors": "치명적 오류",
+      "warnings": "경고",
+      "info": "정보",
+      "categories": "카테고리",
+      "callbacks": "콜백 함수"
+    },
+    "sections": {
+      "architecture": "시스템 아키텍처",
+      "safetyLimits": "안전 한계 (MSL/RSL/MOL)",
+      "voltage": "전압 진단",
+      "temperature": "온도 진단",
+      "current": "전류 진단",
+      "communication": "통신 진단",
+      "insulation": "절연 모니터링 (IMD)",
+      "circuit": "회로 진단 (AFE)",
+      "callbacks": "콜백 함수",
+      "files": "소스 파일 참조"
+    },
+    "arch": {
+      "processingFlow": "진단 처리 흐름",
+      "moduleStructure": "모듈 구조"
+    },
+    "limits": {
+      "mslDesc": "컨택터 즉시 개방. 가장 중요한 안전 임계값.",
+      "rslDesc": "경고 수준. 시스템은 계속 작동하지만 주의가 필요합니다.",
+      "molDesc": "정보 수준. 정상 운영 경계.",
+      "action": "조치",
+      "mslAction": "컨택터 즉시 개방 + CAN 오류 전송",
+      "rslAction": "경고 플래그 + 로깅",
+      "molAction": "정보 로깅만",
+      "databaseFlags": "데이터베이스 플래그"
+    },
+    "table": {
+      "diagId": "진단 ID",
+      "description": "설명",
+      "severity": "심각도",
+      "delay": "지연"
+    },
+    "voltage": {
+      "overvoltMsl": "셀 과전압 (최대 안전 한계)",
+      "overvoltRsl": "셀 과전압 (권장 안전 한계)",
+      "overvoltMol": "셀 과전압 (최대 운영 한계)",
+      "undervoltMsl": "셀 저전압 (최대 안전 한계)",
+      "undervoltRsl": "셀 저전압 (권장 안전 한계)",
+      "undervoltMol": "셀 저전압 (최대 운영 한계)",
+      "deepDischarge": "과방전 감지"
+    },
+    "temp": {
+      "overChargeMsl": "충전 중 과온 (MSL)",
+      "overChargeRsl": "충전 중 과온 (RSL)",
+      "overDischargeMsl": "방전 중 과온 (MSL)",
+      "underChargeMsl": "충전 중 저온 (MSL)",
+      "underDischargeMsl": "방전 중 저온 (MSL)"
+    },
+    "current": {
+      "overChargeCell": "셀 레벨 충전 과전류",
+      "overDischargeCell": "셀 레벨 방전 과전류",
+      "overChargeString": "스트링 레벨 충전 과전류",
+      "overDischargeString": "스트링 레벨 방전 과전류",
+      "overChargePack": "팩 레벨 충전 과전류",
+      "overDischargePack": "팩 레벨 방전 과전류",
+      "openString": "개방 스트링에서 전류 감지"
+    },
+    "comm": {
+      "afeSpi": "AFE SPI 통신 오류",
+      "afeIntegrity": "AFE 통신 무결성 (PEC 오류)",
+      "afeMux": "AFE 멀티플렉서 오류",
+      "afeConfig": "AFE 설정 오류",
+      "canTiming": "CAN 타이밍 오류",
+      "canRxFull": "CAN 수신 큐 가득 참",
+      "canTxFull": "CAN 송신 큐 가득 참"
+    },
+    "imd": {
+      "supportedDevices": "지원 장치",
+      "thresholds": "저항 임계값",
+      "measureValid": "절연 측정 유효성",
+      "lowResError": "위험 수준 절연 저항 (<500kOhm)",
+      "lowResWarn": "경고 수준 절연 저항 (<750kOhm)",
+      "groundError": "지락 오류 감지"
+    },
+    "circuit": {
+      "afeSupport": "AFE 칩셋 지원 매트릭스",
+      "manufacturer": "제조사",
+      "chipset": "칩셋",
+      "builtIn": "내장 진단",
+      "openWire": "오픈 와이어 검출 알고리즘"
+    },
+    "files": {
+      "file": "파일",
+      "path": "경로",
+      "description": "설명",
+      "diagCore": "핵심 진단 엔진",
+      "diagCfg": "진단 설정",
+      "callbacks": "진단 콜백 함수",
+      "soa": "안전 운영 영역 검사",
+      "plausibility": "타당성 검사",
+      "redundancy": "중복성 검사",
+      "imd": "절연 모니터링",
+      "sysMon": "시스템 모니터링"
+    },
+    "viewFullAnalysis": "전체 분석 문서 보기"
   }
 }

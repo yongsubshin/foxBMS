@@ -68,14 +68,14 @@ Files to Create:
 #### 1.2 Data Structure Initialization
 
 Implementation Tasks:
-- Create .moai/bms/ directory structure
+- Create .claude/parvis-data/ directory structure
 - Initialize configuration files
 - Create ID registry structure
 - Set up traceability matrix schema
 
 Directory Structure:
 ```
-.moai/bms/
+.claude/parvis-data/
     config/
         agent-config.json
         id-registry.json
@@ -707,7 +707,7 @@ Immediate Actions:
    - parvis-aispec-safety
 
 2. Initialize data structure
-   - Create .moai/bms/ directory
+   - Create .claude/parvis-data/ directory
    - Initialize configuration files
    - Create module mapping
 

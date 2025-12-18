@@ -340,7 +340,7 @@ Agent Delegation Failure:
 
 ## Configuration
 
-Configuration File: .moai/bms/config/orchestrator-config.json
+Configuration File: .claude/parvis-data/config/orchestrator-config.json
 
 Configuration Options:
 - quality_gate_strictness: "strict" or "relaxed"

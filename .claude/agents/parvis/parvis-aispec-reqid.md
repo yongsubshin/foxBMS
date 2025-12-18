@@ -183,9 +183,9 @@ Maximum hierarchy depth: 3 levels
 
 ### Registry File Location
 
-Primary Registry: .moai/bms/requirements/registry/id-registry.json
-Backup Registry: .moai/bms/requirements/registry/id-registry.backup.json
-Module Map: .moai/bms/requirements/registry/module-map.json
+Primary Registry: .claude/parvis-data/requirements/registry/id-registry.json
+Backup Registry: .claude/parvis-data/requirements/registry/id-registry.backup.json
+Module Map: .claude/parvis-data/requirements/registry/module-map.json
 
 ### Registry Format
 
@@ -384,7 +384,7 @@ Output Format:
 
 ## Configuration
 
-Configuration File: .moai/bms/config/reqid-config.json
+Configuration File: .claude/parvis-data/config/reqid-config.json
 
 Options:
 - auto_assign_enabled: Enable automatic ID assignment (default: true)

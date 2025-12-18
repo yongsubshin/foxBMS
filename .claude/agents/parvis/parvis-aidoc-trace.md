@@ -459,12 +459,12 @@ Report Generation Error:
 
 ## Output File Locations
 
-Traceability Reports: .moai/bms/documentation/traceability/[scope]-trace-report.md
-Coverage Matrices: .moai/bms/documentation/traceability/matrices/[type]-coverage.json
-Gap Analysis: .moai/bms/documentation/traceability/gap-analysis.md
-Visualization Data: .moai/bms/documentation/traceability/viz/[type]-viz.json
-Metrics Dashboard: .moai/bms/documentation/traceability/metrics-dashboard.json
-Compliance Evidence: .moai/bms/documentation/traceability/compliance/
+Traceability Reports: .claude/parvis-data/documentation/traceability/[scope]-trace-report.md
+Coverage Matrices: .claude/parvis-data/documentation/traceability/matrices/[type]-coverage.json
+Gap Analysis: .claude/parvis-data/documentation/traceability/gap-analysis.md
+Visualization Data: .claude/parvis-data/documentation/traceability/viz/[type]-viz.json
+Metrics Dashboard: .claude/parvis-data/documentation/traceability/metrics-dashboard.json
+Compliance Evidence: .claude/parvis-data/documentation/traceability/compliance/
 
 ## Integration Points
 
@@ -497,7 +497,7 @@ Output guarantees:
 
 ## Configuration
 
-Configuration File: .moai/bms/config/trace-doc-config.json
+Configuration File: .claude/parvis-data/config/trace-doc-config.json
 
 Options:
 - report_format: "markdown", "html", "pdf" (default: markdown)

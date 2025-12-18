@@ -331,7 +331,7 @@ Safety Test Pattern:
 
 ### Test File Format
 
-Location: .moai/bms/tests/unit/[module]/test_[module].c
+Location: .claude/parvis-data/tests/unit/[module]/test_[module].c
 
 Format: Unity test framework compatible
 
@@ -345,7 +345,7 @@ Contents:
 
 ### Test Specification Format
 
-Location: .moai/bms/tests/unit/[module]/[module]-test-spec.json
+Location: .claude/parvis-data/tests/unit/[module]/[module]-test-spec.json
 
 Contents:
 - module_name: Module being tested

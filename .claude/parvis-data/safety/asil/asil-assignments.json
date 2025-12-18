@@ -1,0 +1,1929 @@
+{
+  "metadata": {
+    "generation_date": "2025-12-16T11:00:00.000000",
+    "version": "2.0.0",
+    "standard": "ISO 26262:2018",
+    "project": "foxBMS BMS Safety Classification",
+    "total_fsr_count": 147,
+    "update_note": "Added 24 BMS module safety requirements from bms-classified.json"
+  },
+  "asil_summary": {
+    "ASIL-D": 52,
+    "ASIL-C": 46,
+    "ASIL-B": 32,
+    "ASIL-A": 17
+  },
+  "assignments": [
+    {
+      "fbms_id": "FBMS-SAF-ALG-001",
+      "original_id": "ALGO-MGR-006",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Algorithm execution timeout can lead to system unresponsiveness, preventing safety functions from operating"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "algorithm"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-002",
+      "original_id": "ALGO-MGR-008",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Array bounds violation can cause memory corruption affecting safety calculations"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "algorithm"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-003",
+      "original_id": "ALGO-SE-003",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "String number validation prevents cross-string data corruption"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "algorithm"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-004",
+      "original_id": "ALGO-SOC-002",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "SOC null pointer check prevents crash but SOC error has moderate safety impact"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "algorithm"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-005",
+      "original_id": "ALGO-SOC-003",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "SOC string validation prevents cross-string data errors"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "algorithm"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-006",
+      "original_id": "ALGO-SOC-004",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "SOC calculation pointer validation for runtime safety"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "algorithm"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-007",
+      "original_id": "ALGO-SOE-002",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "SOE affects energy management and range prediction"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "algorithm"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-008",
+      "original_id": "ALGO-SOE-003",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "SOE string validation for data integrity"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "algorithm"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-009",
+      "original_id": "ALGO-SOE-004",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "SOE calculation pointer validation"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "algorithm"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-010",
+      "original_id": "ALGO-SOH-002",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "SOH affects long-term capacity estimation"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "algorithm"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-011",
+      "original_id": "ALGO-SOH-003",
+      "asil_level": "A",
+      "hara": {
+        "severity": "S1",
+        "exposure": "E4",
+        "controllability": "C1",
+        "justification": "SOH validation has low immediate safety impact"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "algorithm"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-012",
+      "original_id": "ALGO-SOH-004",
+      "asil_level": "A",
+      "hara": {
+        "severity": "S1",
+        "exposure": "E4",
+        "controllability": "C1",
+        "justification": "SOH calculation pointer validation"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "algorithm"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-013",
+      "original_id": "ALGO-SOF-004",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "SOF voltage limits directly affect current protection"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "algorithm"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-014",
+      "original_id": "ALGO-SOF-005",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "SOF temperature limits affect thermal protection"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "algorithm"
+    },
+    {
+      "fbms_id": "FBMS-SAF-ALG-015",
+      "original_id": "ALGO-SOF-014",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "ERROR state must set all current limits to zero for safe state"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "algorithm"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-001",
+      "original_id": "AFE-API-007",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Open wire detection essential for cell monitoring integrity"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-002",
+      "original_id": "AFE-PLAUS-001",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Voltage plausibility check prevents undetected overcharge/overdischarge"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-003",
+      "original_id": "AFE-PLAUS-003",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Configuration validation for plausibility limits"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-004",
+      "original_id": "AFE-PLAUS-004",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Temperature plausibility for thermal runaway prevention"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-005",
+      "original_id": "AFE-PLAUS-005",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Temperature range configuration validation"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-006",
+      "original_id": "AFE-ADI-006",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Digital supply voltage affects AFE IC operation reliability"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-007",
+      "original_id": "AFE-ADI-007",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Analog supply voltage critical for measurement accuracy"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-008",
+      "original_id": "AFE-ADI-008",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Reference voltage directly affects measurement accuracy"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-009",
+      "original_id": "AFE-ADI-009",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "Die temperature monitoring for IC protection"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-010",
+      "original_id": "AFE-ADI-014",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "CRC validation ensures communication data integrity"
+      },
+      "safety_goal_ref": "SG-BMS-005",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-011",
+      "original_id": "AFE-ADI-015",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Command counter detects communication sequence errors"
+      },
+      "safety_goal_ref": "SG-BMS-005",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-012",
+      "original_id": "AFE-ADI-016",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Configuration register verification ensures correct AFE operation"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-013",
+      "original_id": "AFE-ADI-017",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Stuck voltage register detection identifies measurement failures"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-014",
+      "original_id": "AFE-ADI-018",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Stuck auxiliary register detection for GPIO measurement failures"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-015",
+      "original_id": "AFE-ADI-019",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Redundant ADC measurement provides error detection capability"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-016",
+      "original_id": "AFE-ADI-023",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Open wire detection via pull-up resistors for connection integrity"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-017",
+      "original_id": "AFE-ADI-024",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C3",
+        "justification": "Null pointer validation prevents system crash"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-018",
+      "original_id": "AFE-ADI-025",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C3",
+        "justification": "Voltage store location validation prevents memory corruption"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-019",
+      "original_id": "AFE-ADI-028",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Cleared value detection ensures measurement validity"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-020",
+      "original_id": "AFE-ADI-029",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Diagnostic functions support fault detection and isolation"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-021",
+      "original_id": "AFE-LTC-005",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "LTC open wire detection for cell connection integrity"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-022",
+      "original_id": "AFE-LTC-006",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "PEC validity tracking for communication integrity"
+      },
+      "safety_goal_ref": "SG-BMS-005",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-023",
+      "original_id": "AFE-LTC-007",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Open wire data storage for diagnostics and analysis"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-024",
+      "original_id": "AFE-LTC-010",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "ADC self-test verifies measurement accuracy"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-025",
+      "original_id": "AFE-LTC-011",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Digital filter self-test ensures signal processing integrity"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-026",
+      "original_id": "AFE-MXM-004",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Pre-initialization self-checks verify IC functionality"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-027",
+      "original_id": "AFE-MXM-005",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Open wire result processing for error reporting"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-028",
+      "original_id": "AFE-MXM-006",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Error handler reset as last resort recovery"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-029",
+      "original_id": "AFE-MXM-007",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "State pointer null check for crash prevention"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-030",
+      "original_id": "AFE-MXM-008",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Model ID validation prevents wrong IC type usage"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-031",
+      "original_id": "AFE-MXM-009",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Module index validation for array bounds"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-AFE-032",
+      "original_id": "AFE-MXM-010",
+      "asil_level": "A",
+      "hara": {
+        "severity": "S1",
+        "exposure": "E3",
+        "controllability": "C1",
+        "justification": "Register verification failure count for diagnostics"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "afe"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-001",
+      "original_id": "SBC-003",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Re-entrance protection prevents concurrent state machine execution"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-002",
+      "original_id": "SBC-004",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Atomic counter operation ensures thread safety"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-003",
+      "original_id": "SBC-005",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Instance pointer validation prevents null dereference"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-004",
+      "original_id": "SBC-008",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Atomic state request update for consistency"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-005",
+      "original_id": "SBC-010",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Error state transition after initialization failure"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-006",
+      "original_id": "SBC-011",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Periodic watchdog triggering essential for system supervision"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-007",
+      "original_id": "SBC-015",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E2",
+        "controllability": "C2",
+        "justification": "Invalid state trap catches state machine errors"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-008",
+      "original_id": "SBC-016",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E2",
+        "controllability": "C2",
+        "justification": "Invalid substate trap during initialization"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-009",
+      "original_id": "SBC-017",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "LBIST/ABIST1 verification ensures SBC IC integrity"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-010",
+      "original_id": "SBC-019",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "OTP CRC error detection ensures configuration integrity"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-011",
+      "original_id": "SBC-021",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "DATA/DATA_NOT writing provides register corruption detection"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-012",
+      "original_id": "SBC-026",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Error counter reaching limit triggers safety outputs"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-013",
+      "original_id": "SBC-029",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "ABIST2 verification ensures analog circuit functionality"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-014",
+      "original_id": "SBC-032",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Error counter clearing confirms proper watchdog operation"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-015",
+      "original_id": "SBC-034",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "RSTB path check verifies external reset functionality"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-016",
+      "original_id": "SBC-035",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "FS0B path check verifies fail-safe output functionality"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-017",
+      "original_id": "SBC-036",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "FS0B release protection in non-debug mode"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-018",
+      "original_id": "SBC-037",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "FS0B release preconditions ensure safe state"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-019",
+      "original_id": "SBC-038",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "FS0B release value encryption for authentication"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-020",
+      "original_id": "SBC-040",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "FIN pin short circuit detection with RSTB"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-021",
+      "original_id": "SBC-042",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "RSTB assertion test verification"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-022",
+      "original_id": "SBC-043",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Watchdog refresh success verification"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-SBC-023",
+      "original_id": "SBC-044",
+      "asil_level": "A",
+      "hara": {
+        "severity": "S1",
+        "exposure": "E3",
+        "controllability": "C1",
+        "justification": "Watchdog timing/data error flag check for diagnostics"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "sbc"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-001",
+      "original_id": "TS-BETA-002",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Temperature conversion error handling critical for thermal protection"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "ts"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-002",
+      "original_id": "TS-BETA-010",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Beta coefficient minimum validation for conversion accuracy"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "ts"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-003",
+      "original_id": "TS-BETA-011",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Beta coefficient maximum validation for conversion accuracy"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "ts"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-004",
+      "original_id": "TS-BETA-012",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Reference resistance range validation"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "ts"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-005",
+      "original_id": "TS-EPC00-002",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "EPCOS B57251V5103J060 sensor error handling"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "ts"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-006",
+      "original_id": "TS-EPC01-002",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "EPCOS B57861S0103F045 sensor error handling"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "ts"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-007",
+      "original_id": "TS-MUR00-002",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "Murata NCXXXXH103 sensor error handling"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "ts"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-008",
+      "original_id": "TS-VIS00-002",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "Vishay NTCALUG01A103G sensor error handling"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "ts"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-009",
+      "original_id": "TS-VIS01-002",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "Vishay NTCLE317E4103SBA sensor error handling"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "ts"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-010",
+      "original_id": "TS-VIS02-002",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "Vishay NTCLE413E2103F102L sensor error handling"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "ts"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-011",
+      "original_id": "TS-TDK01-002",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "TDK NTCG163JX103DT1S sensor error handling"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "ts"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-012",
+      "original_id": "TS-SEM00-002",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "Semitec 103JT sensor error handling"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "ts"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-013",
+      "original_id": "TS-COMMON-004",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Temperature measurement range validation for safety limits"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "ts"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-014",
+      "original_id": "TS-COMMON-005",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "INT16_MAX return on error for error indication"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "ts"
+    },
+    {
+      "fbms_id": "FBMS-SAF-TMP-015",
+      "original_id": "TS-COMMON-006",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "INT16_MIN/MAX return on range exceeded"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "ts"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-001",
+      "original_id": "CFG-APP-001",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Maximum discharge temperature limit for thermal runaway prevention"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-002",
+      "original_id": "CFG-APP-002",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Minimum discharge temperature limit for low-temp protection"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-003",
+      "original_id": "CFG-APP-003",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Maximum charge temperature limit for thermal runaway prevention"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-004",
+      "original_id": "CFG-APP-004",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Minimum charge temperature limit for low-temp protection"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-005",
+      "original_id": "CFG-APP-005",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Maximum voltage limit for overcharge prevention"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-006",
+      "original_id": "CFG-APP-007",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Minimum voltage limit for overdischarge prevention"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-007",
+      "original_id": "CFG-APP-008",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Deep discharge voltage threshold for cell protection"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-008",
+      "original_id": "CFG-APP-009",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Maximum discharge current limit for overcurrent protection"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-009",
+      "original_id": "CFG-APP-010",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Maximum charge current limit for overcurrent protection"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-010",
+      "original_id": "CFG-APP-024",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "Contactor maximum break current for safe opening"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-011",
+      "original_id": "CFG-APP-025",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Fuse trigger duration limit for protection coordination"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-012",
+      "original_id": "CFG-APP-026",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Maximum string current for string-level protection"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-013",
+      "original_id": "CFG-APP-027",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Maximum pack current for system-level protection"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-014",
+      "original_id": "CFG-APP-035",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Fuse voltage drop limit for fuse health monitoring"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-015",
+      "original_id": "CFG-APP-046",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "String close timeout for contactor fault detection"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-016",
+      "original_id": "CFG-APP-047",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "String open timeout for contactor fault detection"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-017",
+      "original_id": "CFG-APP-048",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "Next string voltage limit for parallel connection safety"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-018",
+      "original_id": "CFG-APP-049",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "Average string current limit for imbalance detection"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-019",
+      "original_id": "CFG-APP-050",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "BMS rest current threshold for rest state detection"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-020",
+      "original_id": "CFG-APP-051",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "SOC minimum rest time for accurate recalibration"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-021",
+      "original_id": "CFG-APP-052",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "SOE minimum rest time for accurate recalibration"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-022",
+      "original_id": "CFG-APP-065",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Balancing lower voltage limit prevents overdischarge during balancing"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-CFG-023",
+      "original_id": "CFG-APP-066",
+      "asil_level": "A",
+      "hara": {
+        "severity": "S1",
+        "exposure": "E3",
+        "controllability": "C1",
+        "justification": "Balancing upper temperature limit prevents overheating during balancing"
+      },
+      "safety_goal_ref": "SG-BMS-004",
+      "module": "config"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-001",
+      "original_id": "DRV-ADC-007",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "ADC channel range validation prevents invalid channel access"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "drivers"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-002",
+      "original_id": "DRV-SPI-010",
+      "asil_level": "A",
+      "hara": {
+        "severity": "S1",
+        "exposure": "E4",
+        "controllability": "C1",
+        "justification": "SPI interface null check for crash prevention"
+      },
+      "safety_goal_ref": "SG-BMS-005",
+      "module": "drivers"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-003",
+      "original_id": "DRV-SPI-011",
+      "asil_level": "A",
+      "hara": {
+        "severity": "S1",
+        "exposure": "E4",
+        "controllability": "C1",
+        "justification": "SPI TX buffer null check"
+      },
+      "safety_goal_ref": "SG-BMS-005",
+      "module": "drivers"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-004",
+      "original_id": "DRV-SPI-012",
+      "asil_level": "A",
+      "hara": {
+        "severity": "S1",
+        "exposure": "E4",
+        "controllability": "C1",
+        "justification": "SPI RX buffer null check"
+      },
+      "safety_goal_ref": "SG-BMS-005",
+      "module": "drivers"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-005",
+      "original_id": "DRV-SPI-013",
+      "asil_level": "A",
+      "hara": {
+        "severity": "S1",
+        "exposure": "E4",
+        "controllability": "C1",
+        "justification": "SPI frame length validation"
+      },
+      "safety_goal_ref": "SG-BMS-005",
+      "module": "drivers"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-006",
+      "original_id": "DRV-IO-007",
+      "asil_level": "A",
+      "hara": {
+        "severity": "S1",
+        "exposure": "E4",
+        "controllability": "C1",
+        "justification": "IO port null check"
+      },
+      "safety_goal_ref": "SG-BMS-005",
+      "module": "drivers"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-007",
+      "original_id": "DRV-IO-008",
+      "asil_level": "A",
+      "hara": {
+        "severity": "S1",
+        "exposure": "E4",
+        "controllability": "C1",
+        "justification": "IO pin number range validation"
+      },
+      "safety_goal_ref": "SG-BMS-005",
+      "module": "drivers"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-008",
+      "original_id": "DRV-ILCK-008",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "Interlock ADC value range validation"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "drivers"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-009",
+      "original_id": "DRV-SPS-011",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "SPS channel index range validation"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "drivers"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-010",
+      "original_id": "DRV-SPS-012",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "SPS contactor index range validation"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "drivers"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-011",
+      "original_id": "DRV-CONT-010",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "Contactor name null validation"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "drivers"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-012",
+      "original_id": "DRV-CONT-011",
+      "asil_level": "A",
+      "hara": {
+        "severity": "S1",
+        "exposure": "E4",
+        "controllability": "C1",
+        "justification": "Contactor index range validation"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "drivers"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-013",
+      "original_id": "DRV-CONT-012",
+      "asil_level": "A",
+      "hara": {
+        "severity": "S1",
+        "exposure": "E4",
+        "controllability": "C1",
+        "justification": "Contactor configuration validation"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "drivers"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-014",
+      "original_id": "DRV-CONT-013",
+      "asil_level": "A",
+      "hara": {
+        "severity": "S1",
+        "exposure": "E4",
+        "controllability": "C1",
+        "justification": "Contactor state validation"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "drivers"
+    },
+    {
+      "fbms_id": "FBMS-SAF-DRV-015",
+      "original_id": "DRV-CONT-014",
+      "asil_level": "A",
+      "hara": {
+        "severity": "S1",
+        "exposure": "E4",
+        "controllability": "C1",
+        "justification": "Contactor feedback validation"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "drivers"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-001",
+      "original_id": "FBMS-SWE-BMS-019",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Range check assertion (stringNumber < BS_NR_OF_STRINGS) prevents array bounds violation affecting battery string data integrity"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-002",
+      "original_id": "FBMS-SWE-BMS-020",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Pointer validation (pPackValues != NULL_PTR) prevents null pointer dereference in critical pack data access"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-003",
+      "original_id": "FBMS-SWE-BMS-021",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Range check assertion for string number parameter prevents memory corruption"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-004",
+      "original_id": "FBMS-SWE-BMS-022",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Invariant check (contactorType != CONT_UNDEFINED) ensures valid contactor type before operation"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-005",
+      "original_id": "FBMS-SWE-BMS-023",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Pointer validation prevents null dereference in pack value processing"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-006",
+      "original_id": "FBMS-SWE-BMS-024",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Pointer validation assertion for pack values data structure"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-007",
+      "original_id": "FBMS-SWE-BMS-025",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Pointer validation prevents null dereference in critical BMS calculations"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-008",
+      "original_id": "FBMS-SWE-BMS-026",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Range check (string < BS_NR_OF_STRINGS) prevents out-of-bounds access to string data"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-009",
+      "original_id": "FBMS-SWE-BMS-027",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Pointer validation for pack values in voltage calculations"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-010",
+      "original_id": "FBMS-SWE-BMS-028",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Pointer validation for pack values in current calculations"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-011",
+      "original_id": "FBMS-SWE-BMS-029",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Pointer validation assertion in battery state update function"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-012",
+      "original_id": "FBMS-SWE-BMS-030",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Range check for string number in contactor control logic"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-013",
+      "original_id": "FBMS-SWE-BMS-031",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "FAS_TRAP for invalid state machine state - system halt required to prevent undefined behavior in critical BMS control"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-014",
+      "original_id": "FBMS-SWE-BMS-032",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Range check for string number in state transition logic"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-015",
+      "original_id": "FBMS-SWE-BMS-033",
+      "asil_level": "C",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E3",
+        "controllability": "C2",
+        "justification": "Invariant check (firstOpenedContactorType != CONT_UNDEFINED) ensures valid contactor sequencing"
+      },
+      "safety_goal_ref": "SG-BMS-003",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-016",
+      "original_id": "FBMS-SWE-BMS-034",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "FAS_TRAP for invalid state in state machine default case - critical system halt on unexpected state"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-017",
+      "original_id": "FBMS-SWE-BMS-035",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "FAS_TRAP for invalid precharge state - prevents dangerous precharge sequence errors"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-018",
+      "original_id": "FBMS-SWE-BMS-036",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "FAS_TRAP for invalid normal state - system halt prevents uncontrolled operation"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-019",
+      "original_id": "FBMS-SWE-BMS-037",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "FAS_TRAP for invalid error state machine state - ensures safe error handling"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-020",
+      "original_id": "FBMS-SWE-BMS-038",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "FAS_TRAP for invalid discharge state - prevents uncontrolled discharge operations"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-021",
+      "original_id": "FBMS-SWE-BMS-039",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "FAS_TRAP for invalid charge state - prevents uncontrolled charging leading to thermal runaway"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-022",
+      "original_id": "FBMS-SWE-BMS-040",
+      "asil_level": "D",
+      "hara": {
+        "severity": "S3",
+        "exposure": "E4",
+        "controllability": "C3",
+        "justification": "FAS_TRAP for invalid standby state - ensures defined system behavior in standby mode"
+      },
+      "safety_goal_ref": "SG-BMS-001",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-023",
+      "original_id": "FBMS-SWE-BMS-041",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "Range check for string number in auxiliary functions"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "bms"
+    },
+    {
+      "fbms_id": "FBMS-SAF-BMS-024",
+      "original_id": "FBMS-SWE-BMS-042",
+      "asil_level": "B",
+      "hara": {
+        "severity": "S2",
+        "exposure": "E4",
+        "controllability": "C2",
+        "justification": "Range check for string number in monitoring functions"
+      },
+      "safety_goal_ref": "SG-BMS-002",
+      "module": "bms"
+    }
+  ]
+}

@@ -445,11 +445,11 @@ Incomplete Integration Data:
 
 ## Output File Locations
 
-Test Specifications: .moai/bms/tests/integration/[module-pair]-integration.json
-Integration Plan: .moai/bms/tests/integration/integration-plan.md
-Dependency Graph: .moai/bms/tests/integration/dependency-graph.json
-Integration Report: .moai/bms/documentation/aspice/SWE5-integration-report.md
-Test Matrix: .moai/bms/tests/integration/test-matrix.json
+Test Specifications: .claude/parvis-data/tests/integration/[module-pair]-integration.json
+Integration Plan: .claude/parvis-data/tests/integration/integration-plan.md
+Dependency Graph: .claude/parvis-data/tests/integration/dependency-graph.json
+Integration Report: .claude/parvis-data/documentation/aspice/SWE5-integration-report.md
+Test Matrix: .claude/parvis-data/tests/integration/test-matrix.json
 
 ## Integration Points
 
@@ -479,7 +479,7 @@ Output guarantees:
 
 ## Configuration
 
-Configuration File: .moai/bms/config/integration-config.json
+Configuration File: .claude/parvis-data/config/integration-config.json
 
 Options:
 - integration_strategy: "bottom-up", "top-down", "sandwich" (default: bottom-up)

@@ -1,0 +1,242 @@
+{
+  "misra_quality_gate_config": {
+    "version": "1.0.0",
+    "last_updated": "2025-12-19",
+    "description": "MISRA C:2012 Compliance Quality Gate Configuration for foxBMS",
+
+    "compliance_rules": {
+      "mandatory_violations_allowed": 0,
+      "required_violations_without_deviation_allowed": 0,
+      "new_violations_allowed": 0,
+      "advisory_violations_threshold": "advisory",
+      "must_have_deviations": true
+    },
+
+    "quality_gate_criteria": {
+      "pass": {
+        "description": "Quality gate PASS - Excellent compliance achievement",
+        "conditions": [
+          "mandatory_violations_in_after = 0",
+          "new_violations = 0",
+          "data_integrity = true"
+        ],
+        "required_all": true
+      },
+      "warning": {
+        "description": "Quality gate WARNING - New violations introduced",
+        "conditions": [
+          "mandatory_violations_in_after = 0",
+          "new_violations > 0",
+          "data_integrity = true"
+        ],
+        "required_all": true
+      },
+      "fail": {
+        "description": "Quality gate FAIL - Mandatory violations persist",
+        "conditions": [
+          "mandatory_violations_in_after > 0",
+          "data_integrity = true"
+        ],
+        "required_all": true
+      },
+      "blocked": {
+        "description": "Quality gate BLOCKED - Required data missing or corrupted",
+        "conditions": [
+          "data_integrity = false"
+        ]
+      }
+    },
+
+    "compliance_metrics": {
+      "compliance_rate_formula": "(total_rules - violations) / total_rules * 100",
+      "improvement_rate_formula": "net_improvements / violations_before * 100",
+      "trend_analysis": {
+        "improving": {
+          "condition": "compliance_improvement > 0 AND new_violations = 0",
+          "description": "Compliance improving with no new violations"
+        },
+        "stable": {
+          "condition": "compliance_improvement <= 0 AND compliance_improvement >= -5",
+          "description": "Compliance stable or slightly declining"
+        },
+        "regressing": {
+          "condition": "compliance_improvement < -5 OR new_violations > violations_fixed * 0.5",
+          "description": "Compliance declining significantly"
+        }
+      }
+    },
+
+    "report_generation": {
+      "auto_detect_reports": true,
+      "auto_detect_pattern": "docs/parvis/verification/misra/{module}-misra-report.json",
+      "before_pattern": "docs/parvis/verification/misra/{module}-*-before.json",
+      "after_pattern": "docs/parvis/verification/misra/{module}-*-after.json",
+      "output_formats": ["json", "markdown", "html"],
+      "include_violation_details": true,
+      "include_recommendations": true,
+      "include_trend_analysis": true,
+      "max_violation_details_entries": 100
+    },
+
+    "violation_categories": {
+      "mandatory": {
+        "priority": 1,
+        "allowed_count": 0,
+        "deviation_required": true,
+        "blocks_gate": true,
+        "description": "MISRA C:2012 Mandatory Rules - Zero tolerance"
+      },
+      "required": {
+        "priority": 2,
+        "allowed_count": 0,
+        "deviation_required": true,
+        "blocks_gate": false,
+        "triggers_warning": true,
+        "description": "MISRA C:2012 Required Rules - Deviations required"
+      },
+      "advisory": {
+        "priority": 3,
+        "allowed_count": "unlimited",
+        "deviation_required": false,
+        "blocks_gate": false,
+        "triggers_warning": false,
+        "description": "MISRA C:2012 Advisory Rules - Recommendations"
+      }
+    },
+
+    "module_overrides": {
+      "description": "Module-specific configuration overrides (empty = use defaults)",
+      "modules": {}
+    },
+
+    "historical_data": {
+      "retention_days": 365,
+      "trend_calculation_window_days": 90,
+      "minimum_data_points_for_trend": 3,
+      "storage_location": "docs/parvis/verification/misra/"
+    },
+
+    "notifications": {
+      "enabled": false,
+      "on_fail": {
+        "notify": true,
+        "recipients": []
+      },
+      "on_warning": {
+        "notify": true,
+        "recipients": []
+      },
+      "on_pass": {
+        "notify": false,
+        "recipients": []
+      }
+    },
+
+    "ci_cd_integration": {
+      "enabled": true,
+      "block_merge_on_fail": true,
+      "block_merge_on_warning": false,
+      "generate_comment_on_pr": true,
+      "comment_format": "markdown"
+    },
+
+    "foxbms_specific": {
+      "description": "foxBMS specific MISRA compliance settings",
+      "critical_modules": [
+        "bms",
+        "soa",
+        "algorithm",
+        "bal",
+        "contactor"
+      ],
+      "safety_critical_rules": [
+        "Rule 9.1",
+        "Rule 17.7",
+        "Rule 15.7",
+        "Rule 14.3",
+        "Rule 1.3"
+      ],
+      "safety_assertion_pattern": "FAS_ASSERT",
+      "require_misra_compliance_before_merge": true,
+      "require_zero_mandatory_violations": true
+    },
+
+    "output_locations": {
+      "json_report": "docs/parvis/verification/misra/MISRA-COMP-{module}-{timestamp}.json",
+      "markdown_report": "docs/parvis/verification/misra/MISRA-COMP-{module}-{timestamp}.md",
+      "html_report": "docs/parvis/verification/misra/MISRA-COMP-{module}-{timestamp}.html",
+      "trend_data": "docs/parvis/verification/misra/MISRA-TREND-{module}.json",
+      "historical_archive": "docs/parvis/verification/misra/archive/"
+    },
+
+    "validation_rules": {
+      "report_structure": {
+        "required_fields": [
+          "report_id",
+          "module",
+          "before_summary",
+          "after_summary",
+          "comparison",
+          "quality_gate"
+        ],
+        "required_summary_fields": [
+          "scan_date",
+          "total_violations",
+          "mandatory_violations",
+          "required_violations",
+          "advisory_violations",
+          "compliance_rate",
+          "files_analyzed"
+        ],
+        "required_comparison_fields": [
+          "violations_fixed",
+          "new_violations",
+          "unchanged_violations",
+          "compliance_improvement",
+          "trend"
+        ],
+        "required_gate_fields": [
+          "status",
+          "mandatory_compliance",
+          "no_new_violations",
+          "rationale"
+        ]
+      },
+      "data_types": {
+        "violation_count": "integer >= 0",
+        "compliance_rate": "float 0.0-100.0",
+        "percentage": "float -100.0-100.0",
+        "status": "string in [PASS, WARNING, FAIL, BLOCKED]",
+        "trend": "string in [improving, stable, regressing]"
+      }
+    },
+
+    "error_handling": {
+      "missing_before_report": {
+        "status": "BLOCKED",
+        "message": "Before report not found for module: {module}",
+        "suggestion": "Run initial MISRA scan to create before report"
+      },
+      "missing_after_report": {
+        "status": "BLOCKED",
+        "message": "After report not found for module: {module}",
+        "suggestion": "Run updated MISRA scan to create after report"
+      },
+      "invalid_json": {
+        "status": "BLOCKED",
+        "message": "JSON parse error in report: {file}",
+        "suggestion": "Verify report format matches MISRA JSON schema"
+      },
+      "mismatched_rule_sets": {
+        "status": "WARNING",
+        "message": "Rule set mismatch between reports",
+        "action": "Continue with comparison but flag discrepancy"
+      },
+      "empty_violation_lists": {
+        "status": "PASS",
+        "message": "No violations detected - Perfect compliance",
+        "compliance_rate": 100.0
+      }
+    }
+  }
+}

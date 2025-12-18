@@ -148,7 +148,7 @@ void SOC_Calculate(void);
 
 ## ID Registry
 
-IDs are tracked in `.moai/bms/config/id-registry.json`:
+IDs are tracked in `.claude/parvis-data/config/id-registry.json`:
 
 ```json
 {

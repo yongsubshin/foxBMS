@@ -260,7 +260,7 @@ Before modification:
 3. Record backup location
 4. Enable rollback capability
 
-Backup Location: .moai/bms/quality/misra/backups/[timestamp]/
+Backup Location: .claude/parvis-data/quality/misra/backups/[timestamp]/
 
 ### Step 4: Apply Refactoring
 

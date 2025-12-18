@@ -12,6 +12,7 @@
     "nav": {
       "processDocs": "Process Docs",
       "apiReference": "API Reference",
+      "diagnostics": "Diagnostics",
       "traceability": "Traceability Matrix",
       "misra": "MISRA Compliance",
       "metrics": "Quality Metrics"
@@ -267,5 +268,112 @@
     "toggleAll": "Toggle All",
     "line": "Line",
     "requirements": "requirements"
+  },
+  "diagnostics": {
+    "title": "Diagnostics System",
+    "subtitle": "foxBMS 2 BMS Diagnostic Architecture and Event Classification",
+    "summary": {
+      "totalDiagIds": "Total DIAG_IDs",
+      "fatalErrors": "Fatal Errors",
+      "warnings": "Warnings",
+      "info": "Info",
+      "categories": "Categories",
+      "callbacks": "Callback Functions"
+    },
+    "sections": {
+      "architecture": "System Architecture",
+      "safetyLimits": "Safety Limits (MSL/RSL/MOL)",
+      "voltage": "Voltage Diagnostics",
+      "temperature": "Temperature Diagnostics",
+      "current": "Current Diagnostics",
+      "communication": "Communication Diagnostics",
+      "insulation": "Insulation Monitoring (IMD)",
+      "circuit": "Circuit Diagnostics (AFE)",
+      "callbacks": "Callback Functions",
+      "files": "Source File Reference"
+    },
+    "arch": {
+      "processingFlow": "Diagnostic Processing Flow",
+      "moduleStructure": "Module Structure"
+    },
+    "limits": {
+      "mslDesc": "Immediate contactor opening. Most critical safety threshold.",
+      "rslDesc": "Warning level. System can continue but requires attention.",
+      "molDesc": "Information level. Normal operating boundary.",
+      "action": "Action",
+      "mslAction": "Immediate contactor open + CAN error transmission",
+      "rslAction": "Warning flag + logging",
+      "molAction": "Information logging only",
+      "databaseFlags": "Database Flags"
+    },
+    "table": {
+      "diagId": "DIAG_ID",
+      "description": "Description",
+      "severity": "Severity",
+      "delay": "Delay"
+    },
+    "voltage": {
+      "overvoltMsl": "Cell overvoltage (Maximum Safety Limit)",
+      "overvoltRsl": "Cell overvoltage (Recommended Safety Limit)",
+      "overvoltMol": "Cell overvoltage (Maximum Operating Limit)",
+      "undervoltMsl": "Cell undervoltage (Maximum Safety Limit)",
+      "undervoltRsl": "Cell undervoltage (Recommended Safety Limit)",
+      "undervoltMol": "Cell undervoltage (Maximum Operating Limit)",
+      "deepDischarge": "Deep discharge detected"
+    },
+    "temp": {
+      "overChargeMsl": "Overtemperature during charge (MSL)",
+      "overChargeRsl": "Overtemperature during charge (RSL)",
+      "overDischargeMsl": "Overtemperature during discharge (MSL)",
+      "underChargeMsl": "Undertemperature during charge (MSL)",
+      "underDischargeMsl": "Undertemperature during discharge (MSL)"
+    },
+    "current": {
+      "overChargeCell": "Cell-level charge overcurrent",
+      "overDischargeCell": "Cell-level discharge overcurrent",
+      "overChargeString": "String-level charge overcurrent",
+      "overDischargeString": "String-level discharge overcurrent",
+      "overChargePack": "Pack-level charge overcurrent",
+      "overDischargePack": "Pack-level discharge overcurrent",
+      "openString": "Current detected on open string"
+    },
+    "comm": {
+      "afeSpi": "AFE SPI communication error",
+      "afeIntegrity": "AFE communication integrity (PEC error)",
+      "afeMux": "AFE multiplexer error",
+      "afeConfig": "AFE configuration error",
+      "canTiming": "CAN timing error",
+      "canRxFull": "CAN RX queue full",
+      "canTxFull": "CAN TX queue full"
+    },
+    "imd": {
+      "supportedDevices": "Supported Devices",
+      "thresholds": "Resistance Thresholds",
+      "measureValid": "Insulation measurement validity",
+      "lowResError": "Critical insulation resistance (<500kOhm)",
+      "lowResWarn": "Low insulation resistance (<750kOhm)",
+      "groundError": "Ground fault detected"
+    },
+    "circuit": {
+      "afeSupport": "AFE Chipset Support Matrix",
+      "manufacturer": "Manufacturer",
+      "chipset": "Chipset",
+      "builtIn": "Built-in Diag",
+      "openWire": "Open Wire Detection Algorithm"
+    },
+    "files": {
+      "file": "File",
+      "path": "Path",
+      "description": "Description",
+      "diagCore": "Core diagnostic engine",
+      "diagCfg": "Diagnostic configuration",
+      "callbacks": "Diagnostic callback functions",
+      "soa": "Safe Operating Area checks",
+      "plausibility": "Plausibility checks",
+      "redundancy": "Redundancy checks",
+      "imd": "Insulation monitoring",
+      "sysMon": "System monitoring"
+    },
+    "viewFullAnalysis": "View Full Analysis Document"
   }
 }

@@ -1,0 +1,47 @@
+{
+  "module_id": "BMS",
+  "module_name": "Battery Management System",
+  "current_phase": "L1",
+  "phase_status": {
+    "L1": "completed",
+    "L2": "not_started",
+    "L3": "not_started",
+    "L4": "not_started",
+    "R1": "not_started",
+    "R2": "not_started",
+    "R3": "not_started",
+    "R4": "not_started"
+  },
+  "quality_gates": {
+    "L1": {
+      "status": "passed",
+      "min_extraction_confidence": 0.7,
+      "min_coverage": 0.6,
+      "current_confidence": 0.811,
+      "current_coverage": 0.75,
+      "extracted_requirements": 111,
+      "high_confidence": 90,
+      "medium_confidence": 21,
+      "low_confidence": 0
+    }
+  },
+  "extraction_status": {
+    "total_extractions": 111,
+    "high_confidence": 90,
+    "medium_confidence": 21,
+    "low_confidence": 0,
+    "extraction_types": {
+      "doxygen": 30,
+      "assertion": 24,
+      "config": 1,
+      "state_machine": 56
+    }
+  },
+  "extraction_output": {
+    "extraction_id": "EXT-BMS-001",
+    "json_file": ".moai/bms/requirements/extracted/BMS-extracted.json",
+    "report_file": ".moai/bms/requirements/extracted/BMS-extraction-report.md"
+  },
+  "last_updated": "2025-12-15T23:53:28Z",
+  "created_at": "2025-12-15T00:00:00Z"
+}

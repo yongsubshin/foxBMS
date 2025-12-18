@@ -213,7 +213,7 @@ Link Types:
 
 ### Storage Location
 
-Traceability data is stored in: .moai/bms/traceability/
+Traceability data is stored in: .claude/parvis-data/traceability/
 - matrix.json: Complete traceability matrix
 - requirements/: Individual requirement files
 - tests/: Test case mappings
@@ -576,7 +576,7 @@ Step 5.3: Create parvis-aiverify-safety agent
 The agent system creates the following file structure:
 
 ```
-.moai/bms/
+.claude/parvis-data/
     +-- config/
     |       +-- agent-config.json       (Agent configuration)
     |       +-- id-registry.json        (ID allocation registry)

@@ -382,11 +382,11 @@ Output:
 
 ## Output File Locations
 
-Safety Goals: .moai/bms/safety/goals/safety-goals.json
-FSR: .moai/bms/safety/fsr/[module]-fsr.json
-ASIL Assignments: .moai/bms/safety/asil/asil-assignments.json
-Hazard Analysis: .moai/bms/safety/hara/hazard-analysis.json
-Safety Coverage: .moai/bms/safety/coverage/safety-coverage-matrix.json
+Safety Goals: .claude/parvis-data/safety/goals/safety-goals.json
+FSR: .claude/parvis-data/safety/fsr/[module]-fsr.json
+ASIL Assignments: .claude/parvis-data/safety/asil/asil-assignments.json
+Hazard Analysis: .claude/parvis-data/safety/hara/hazard-analysis.json
+Safety Coverage: .claude/parvis-data/safety/coverage/safety-coverage-matrix.json
 
 ## Error Handling
 
@@ -439,7 +439,7 @@ Output guarantees:
 
 ## Configuration
 
-Configuration File: .moai/bms/config/safety-config.json
+Configuration File: .claude/parvis-data/config/safety-config.json
 
 Options:
 - default_asil_threshold: Minimum ASIL for safety classification (default: "A")

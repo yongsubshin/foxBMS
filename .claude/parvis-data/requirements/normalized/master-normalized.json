@@ -1,0 +1,2791 @@
+[
+  {
+    "id": "FBMS-FSR-SYS-217",
+    "content": "Assertion requirement: stringNumber < BS_NR_OF_STRINGS.",
+    "original_content": "Assertion requirement: stringNumber < BS_NR_OF_STRINGS",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 414,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 513,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 715,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 778,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1648,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1657,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.511560",
+    "modified_date": "2025-12-16T00:53:24.511561",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-218",
+    "content": "Assertion requirement: pPackValues != NULL_PTR.",
+    "original_content": "Assertion requirement: pPackValues != NULL_PTR",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 415,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 544,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 569,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 615,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 640,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 659,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 668,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.511594",
+    "modified_date": "2025-12-16T00:53:24.511595",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-229",
+    "content": "Assertion requirement: FAS_TRAP.",
+    "original_content": "Assertion requirement: FAS_TRAP",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 772,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 800,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1114,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1188,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1406,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1539,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1601,
+        "extraction_type": "assertion"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1606,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.512045",
+    "modified_date": "2025-12-16T00:53:24.512046",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-787",
+    "content": "Returns ID of string with highest total voltage This is used to close the first string when drive-off is requested.",
+    "original_content": "Returns ID of string with highest total voltage This is used to close the first string when drive-off is requested.",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 222,
+        "extraction_type": "doxygen"
+      },
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 248,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.511127",
+    "modified_date": "2025-12-16T00:53:24.511128",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-797",
+    "content": "Returns the current state. This function is used in the functioning of the SYS state machine.",
+    "original_content": "Returns the current state. This function is used in the functioning of the SYS state machine.",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 241,
+        "extraction_type": "doxygen"
+      },
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 248,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.512607",
+    "modified_date": "2025-12-16T00:53:24.512608",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-834",
+    "content": "State check if there contactors reached normal */ BMS_CHECK_CONTACTOR_CHARGE_STATE exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State check if there contactors reached normal */\n    BMS_CHECK_CONTACTOR_CHARGE_STATE exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 126,
+        "extraction_type": "state_machine"
+      },
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 127,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513901",
+    "modified_date": "2025-12-16T00:53:24.513902",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-777",
+    "content": "Bms driver implementation Implements the state machine that controls the BMS /.",
+    "original_content": "Bms driver implementation Implements the state machine that controls the BMS /",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 42,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.510450",
+    "modified_date": "2025-12-16T00:53:24.510467",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-778",
+    "content": "checks the state requests that are made. This function checks the validity of the state requests. The results of the checked is returned immediately.",
+    "original_content": "checks the state requests that are made. This function checks the validity of the state requests. The results of the checked is returned immediately.",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 137,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.510556",
+    "modified_date": "2025-12-16T00:53:24.510560",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-779",
+    "content": "transfers the current state request to the state machine. This function takes the current state request from #bms_state transfers it to the state machine. It resets the value from #bms_state to #BMS_STATE_NO_REQUEST.",
+    "original_content": "transfers the current state request to the state machine. This function takes the current state request from #bms_state transfers it to the state machine. It resets the value from #bms_state to #BMS_STATE_NO_REQUEST",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 146,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.510639",
+    "modified_date": "2025-12-16T00:53:24.510643",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-780",
+    "content": "re-entrance check of SYS state machine trigger function This function is not re-entrant and shall only be called time- or event-triggered. It increments the triggerentry counter from the state variable ltc_state. It shall never be called by two different processes, so if it is the case, triggerentry shall never be higher than 0 when this function is called.",
+    "original_content": "re-entrance check of SYS state machine trigger function This function is not re-entrant and should only be called time- or event-triggered. It increments the triggerentry counter from the state variable ltc_state. It should never be called by two different processes, so if it is the case, triggerentry should never be higher than 0 when this function is called.",
+    "type": "SWE",
+    "classification": "constraint",
+    "priority": "high",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 155,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 82,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.510713",
+    "modified_date": "2025-12-16T00:53:24.510714",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-781",
+    "content": "Checks the state requests made to the BMS state machine. Checks of the state request in the database and sets this value as return value.",
+    "original_content": "Checks the state requests made to the BMS state machine. Checks of the state request in the database and sets this value as return value.",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 167,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.510778",
+    "modified_date": "2025-12-16T00:53:24.510782",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-782",
+    "content": "Checks all the error flags from diagnosis module with a severity of #DIAG_FATAL_ERROR Checks all the error flags from diagnosis module with a severity of #DIAG_FATAL_ERROR. Furthermore, sets parameter minimumActiveDelay_ms of bms_state variable.",
+    "original_content": "Checks all the error flags from diagnosis module with a severity of #DIAG_FATAL_ERROR Checks all the error flags from diagnosis module with a severity of #DIAG_FATAL_ERROR. Furthermore, sets parameter minimumActiveDelay_ms of bms_state variable.",
+    "type": "SWE",
+    "classification": "safety",
+    "priority": "critical",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 175,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 97,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.510881",
+    "modified_date": "2025-12-16T00:53:24.510887",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-783",
+    "content": "Checks if any error flag is set and handles delay until contactors need to be opened. Checks all the diagnosis entries with severity of #DIAG_FATAL_ERROR and handles the configured delay until the contactors need to be opened. The shortest delay is used, if multiple errors are active at once.",
+    "original_content": "Checks if any error flag is set and handles delay until contactors need to be opened. Checks all the diagnosis entries with severity of #DIAG_FATAL_ERROR and handles the configured delay until the contactors need to be opened. The shortest delay is used, if multiple errors are active at once.",
+    "type": "SWE",
+    "classification": "safety",
+    "priority": "critical",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 185,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 94,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.510972",
+    "modified_date": "2025-12-16T00:53:24.510976",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-784",
+    "content": "Checks if the contactor feedback for a specific contactor is valid need to be opened. Reads error flag database entry and checks if the feedback for this specific contactor is valid or not.",
+    "original_content": "Checks if the contactor feedback for a specific contactor is valid need to be opened. Reads error flag database entry and checks if the feedback for this specific contactor is valid or not.",
+    "type": "SWE",
+    "classification": "safety",
+    "priority": "critical",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 196,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 100,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.511017",
+    "modified_date": "2025-12-16T00:53:24.511017",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-785",
+    "content": "Check for any open voltage sense wire /.",
+    "original_content": "Check for any open voltage sense wire /",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 208,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 82,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.511052",
+    "modified_date": "2025-12-16T00:53:24.511053",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-786",
+    "content": "Checks if the current limitations are violated.",
+    "original_content": "Checks if the current limitations are violated",
+    "type": "SWE",
+    "classification": "constraint",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 213,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.511084",
+    "modified_date": "2025-12-16T00:53:24.511084",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-788",
+    "content": "Returns ID of string with voltage closest to first closed string voltage This is used to close further strings in drive.",
+    "original_content": "Returns ID of string with voltage closest to first closed string voltage This is used to close further strings in drive.",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 235,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.511166",
+    "modified_date": "2025-12-16T00:53:24.511167",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-789",
+    "content": "Returns ID of string with lowest total voltage This is used to close the first string when charge-off is requested.",
+    "original_content": "Returns ID of string with lowest total voltage This is used to close the first string when charge-off is requested.",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 248,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.511206",
+    "modified_date": "2025-12-16T00:53:24.511206",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-790",
+    "content": "Returns voltage difference between first closed string and string ID This function is used to check voltage when trying to close further strings.",
+    "original_content": "Returns voltage difference between first closed string and string ID This function is used to check voltage when trying to close further strings.",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 261,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.511247",
+    "modified_date": "2025-12-16T00:53:24.511248",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-791",
+    "content": "Returns the average current flowing through all strings. This function is used when closing strings.",
+    "original_content": "Returns the average current flowing through all strings. This function is used when closing strings.",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 274,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 82,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.511284",
+    "modified_date": "2025-12-16T00:53:24.511285",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-792",
+    "content": "Updates battery system state variable depending on measured/recent current values.",
+    "original_content": "Updates battery system state variable depending on measured/recent current values",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 282,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.511321",
+    "modified_date": "2025-12-16T00:53:24.511321",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-793",
+    "content": "Get first string contactor that shall be opened depending on the actual current flow direction Check the mounting direction of the contactors and open the contactor that is mounted in the preferred current flow direction. Open the plus contactor first if, there is no contactor in preferred direction to the current flow to open available. This can be either because both contactors are installed in the same direction or because the contactors are bidirectional.",
+    "original_content": "Get first string contactor that should be opened depending on the actual current flow direction Check the mounting direction of the contactors and open the contactor that is mounted in the preferred current flow direction. Open the plus contactor first if, there is no contactor in preferred direction to the current flow to open available. This may be either because both contactors are installed in the same direction or because the contactors are bidirectional.",
+    "type": "SWE",
+    "classification": "interface",
+    "priority": "high",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 289,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.511419",
+    "modified_date": "2025-12-16T00:53:24.511423",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-794",
+    "content": "Get second string contactor that shall be opened Mounting direction of the contactor does not need to be checked for the second contactor as the current has already been interrupted opening the first contactor.",
+    "original_content": "Get second string contactor that should be opened Mounting direction of the contactor does not need to be checked for the second contactor as the current has already been interrupted opening the first contactor.",
+    "type": "SWE",
+    "classification": "constraint",
+    "priority": "high",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 304,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.511516",
+    "modified_date": "2025-12-16T00:53:24.511519",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-219",
+    "content": "Assertion requirement: stringNumber < BS_NR_OF_STRINGS.",
+    "original_content": "Assertion requirement: stringNumber < BS_NR_OF_STRINGS",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 513,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.511656",
+    "modified_date": "2025-12-16T00:53:24.511659",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-220",
+    "content": "Assertion requirement: contactorType != CONT_UNDEFINED.",
+    "original_content": "Assertion requirement: contactorType != CONT_UNDEFINED",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 514,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.511698",
+    "modified_date": "2025-12-16T00:53:24.511699",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-221",
+    "content": "Assertion requirement: pPackValues != NULL_PTR.",
+    "original_content": "Assertion requirement: pPackValues != NULL_PTR",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 544,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.511732",
+    "modified_date": "2025-12-16T00:53:24.511733",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-222",
+    "content": "Assertion requirement: pPackValues != NULL_PTR.",
+    "original_content": "Assertion requirement: pPackValues != NULL_PTR",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 569,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.511764",
+    "modified_date": "2025-12-16T00:53:24.511765",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-223",
+    "content": "Assertion requirement: pPackValues != NULL_PTR.",
+    "original_content": "Assertion requirement: pPackValues != NULL_PTR",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 615,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.511795",
+    "modified_date": "2025-12-16T00:53:24.511796",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-224",
+    "content": "Assertion requirement: string < BS_NR_OF_STRINGS.",
+    "original_content": "Assertion requirement: string < BS_NR_OF_STRINGS",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 639,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.511828",
+    "modified_date": "2025-12-16T00:53:24.511829",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-225",
+    "content": "Assertion requirement: pPackValues != NULL_PTR.",
+    "original_content": "Assertion requirement: pPackValues != NULL_PTR",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 640,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.511862",
+    "modified_date": "2025-12-16T00:53:24.511867",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-226",
+    "content": "Assertion requirement: pPackValues != NULL_PTR.",
+    "original_content": "Assertion requirement: pPackValues != NULL_PTR",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 659,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.511937",
+    "modified_date": "2025-12-16T00:53:24.511940",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-227",
+    "content": "Assertion requirement: pPackValues != NULL_PTR.",
+    "original_content": "Assertion requirement: pPackValues != NULL_PTR",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 668,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.511979",
+    "modified_date": "2025-12-16T00:53:24.511979",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-228",
+    "content": "Assertion requirement: stringNumber < BS_NR_OF_STRINGS.",
+    "original_content": "Assertion requirement: stringNumber < BS_NR_OF_STRINGS",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 715,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.512013",
+    "modified_date": "2025-12-16T00:53:24.512014",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-230",
+    "content": "Assertion requirement: stringNumber < BS_NR_OF_STRINGS.",
+    "original_content": "Assertion requirement: stringNumber < BS_NR_OF_STRINGS",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 778,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.512077",
+    "modified_date": "2025-12-16T00:53:24.512078",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-231",
+    "content": "Assertion requirement: (firstOpenedContactorType != CONT_UNDEFINED.",
+    "original_content": "Assertion requirement: (firstOpenedContactorType != CONT_UNDEFINED",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 779,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.512145",
+    "modified_date": "2025-12-16T00:53:24.512149",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-232",
+    "content": "Assertion requirement: FAS_TRAP.",
+    "original_content": "Assertion requirement: FAS_TRAP",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 800,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.512187",
+    "modified_date": "2025-12-16T00:53:24.512188",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-233",
+    "content": "Assertion requirement: FAS_TRAP.",
+    "original_content": "Assertion requirement: FAS_TRAP",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1114,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.512219",
+    "modified_date": "2025-12-16T00:53:24.512219",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-234",
+    "content": "Assertion requirement: FAS_TRAP.",
+    "original_content": "Assertion requirement: FAS_TRAP",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1188,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.512249",
+    "modified_date": "2025-12-16T00:53:24.512249",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-235",
+    "content": "Assertion requirement: FAS_TRAP.",
+    "original_content": "Assertion requirement: FAS_TRAP",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1406,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.512279",
+    "modified_date": "2025-12-16T00:53:24.512279",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-236",
+    "content": "Assertion requirement: FAS_TRAP.",
+    "original_content": "Assertion requirement: FAS_TRAP",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1539,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.512309",
+    "modified_date": "2025-12-16T00:53:24.512309",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-237",
+    "content": "Assertion requirement: FAS_TRAP.",
+    "original_content": "Assertion requirement: FAS_TRAP",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1601,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.512338",
+    "modified_date": "2025-12-16T00:53:24.512339",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-238",
+    "content": "Assertion requirement: FAS_TRAP.",
+    "original_content": "Assertion requirement: FAS_TRAP",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1606,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.512368",
+    "modified_date": "2025-12-16T00:53:24.512369",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-239",
+    "content": "Assertion requirement: stringNumber < BS_NR_OF_STRINGS.",
+    "original_content": "Assertion requirement: stringNumber < BS_NR_OF_STRINGS",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1648,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.512401",
+    "modified_date": "2025-12-16T00:53:24.512401",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-FSR-SYS-240",
+    "content": "Assertion requirement: stringNumber < BS_NR_OF_STRINGS.",
+    "original_content": "Assertion requirement: stringNumber < BS_NR_OF_STRINGS",
+    "type": "FSR",
+    "classification": "safety",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 1657,
+        "extraction_type": "assertion"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "safety",
+      "assertion"
+    ],
+    "created_date": "2025-12-16T00:53:24.512433",
+    "modified_date": "2025-12-16T00:53:24.512433",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-CFG-SYS-010",
+    "content": "Configuration parameter BMS_NO_ACTIVE_DELAY_TIME_ms = UINT32_MAX.",
+    "original_content": "Configuration parameter BMS_NO_ACTIVE_DELAY_TIME_ms = UINT32_MAX",
+    "type": "CFG",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.c",
+        "line": 79,
+        "extraction_type": "config"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "configuration"
+    ],
+    "created_date": "2025-12-16T00:53:24.512468",
+    "modified_date": "2025-12-16T00:53:24.512469",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-795",
+    "content": "BMS driver header TODO /.",
+    "original_content": "BMS driver header TODO /",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 42,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.512500",
+    "modified_date": "2025-12-16T00:53:24.512501",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-796",
+    "content": "sets the current state request of the state variable bms_state. This function is used to make a state request to the state machine, e.g, start voltage measurement, read result of voltage measurement, re-initialization. It calls #BMS_CheckStateRequest() to check if the request is valid. The state request is rejected if is not valid. The result of the check is returned immediately, so that the requester can act in case it made a non-valid state request.",
+    "original_content": "sets the current state request of the state variable bms_state. This function is used to make a state request to the state machine, e.g, start voltage measurement, read result of voltage measurement, re-initialization. It calls #BMS_CheckStateRequest() to check if the request is valid. The state request is rejected if is not valid. The result of the check is returned immediately, so that the requester can act in case it made a non-valid state request.",
+    "type": "SWE",
+    "classification": "interface",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 227,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.512569",
+    "modified_date": "2025-12-16T00:53:24.512570",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-798",
+    "content": "Returns the current substate. This function is used in the functioning of the SYS state machine.",
+    "original_content": "Returns the current substate. This function is used in the functioning of the SYS state machine.",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 248,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.512644",
+    "modified_date": "2025-12-16T00:53:24.512645",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-799",
+    "content": "Gets the initialization state. This function is used for getting the BMS initialization state.",
+    "original_content": "Gets the initialization state. This function is used for getting the BMS initialization state.",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 255,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.512681",
+    "modified_date": "2025-12-16T00:53:24.512682",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-800",
+    "content": "trigger function for the BMS driver state machine. This function contains the sequence of events in the BMS state machine. It must be called time-triggered, every 10 milliseconds. This function needs to be adapted to be adapted to the behavior the batter system shall provide to the target application. /.",
+    "original_content": "trigger function for the BMS driver state machine. This function contains the sequence of events in the BMS state machine. It must be called time-triggered, every 10 milliseconds. This function needs to be adapted to be adapted to the behavior the batter system shall provide to the target application. /",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "critical",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 262,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.512737",
+    "modified_date": "2025-12-16T00:53:24.512738",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-801",
+    "content": "Returns current battery system state (charging/discharging, resting or in relaxation phase).",
+    "original_content": "Returns current battery system state (charging/discharging, resting or in relaxation phase)",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 272,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.512774",
+    "modified_date": "2025-12-16T00:53:24.512775",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-802",
+    "content": "Get current flow direction, current value as function parameter.",
+    "original_content": "Get current flow direction, current value as function parameter",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 280,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.512808",
+    "modified_date": "2025-12-16T00:53:24.512809",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-803",
+    "content": "Returns string state (closed or open).",
+    "original_content": "Returns string state (closed or open)",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 288,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.512840",
+    "modified_date": "2025-12-16T00:53:24.512841",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-804",
+    "content": "Returns if string is currently precharging or not.",
+    "original_content": "Returns if string is currently precharging or not",
+    "type": "SWE",
+    "classification": "constraint",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 295,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.512872",
+    "modified_date": "2025-12-16T00:53:24.512872",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-805",
+    "content": "Returns number of connected strings.",
+    "original_content": "Returns number of connected strings",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 303,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.512903",
+    "modified_date": "2025-12-16T00:53:24.512904",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-806",
+    "content": "Check if transition in to error state is active.",
+    "original_content": "Check if transition in to error state is active",
+    "type": "SWE",
+    "classification": "safety",
+    "priority": "critical",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 309,
+        "extraction_type": "doxygen"
+      }
+    ],
+    "quality_score": 100,
+    "quality_issues": [],
+    "tags": [],
+    "created_date": "2025-12-16T00:53:24.512926",
+    "modified_date": "2025-12-16T00:53:24.512927",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-807",
+    "content": "State machine BMS_CURRENT_FLOW_STATE_e with states: BMS_CHARGING.",
+    "original_content": "State machine BMS_CURRENT_FLOW_STATE_e with states: BMS_CHARGING",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 71,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.512961",
+    "modified_date": "2025-12-16T00:53:24.512961",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-808",
+    "content": "State BMS_CHARGING exists in BMS_CURRENT_FLOW_STATE_e.",
+    "original_content": "State BMS_CHARGING exists in BMS_CURRENT_FLOW_STATE_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 71,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.512994",
+    "modified_date": "2025-12-16T00:53:24.512994",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-809",
+    "content": "State machine BMS_STATEMACH_e with states: BMS_STATEMACH_INITIALIZATION, BMS_STATEMACH_INITIALIZED, BMS_STATEMACH_IDLE...",
+    "original_content": "State machine BMS_STATEMACH_e with states: BMS_STATEMACH_INITIALIZATION, BMS_STATEMACH_INITIALIZED, BMS_STATEMACH_IDLE...",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 92,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513032",
+    "modified_date": "2025-12-16T00:53:24.513033",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-810",
+    "content": "State BMS_STATEMACH_INITIALIZATION exists in BMS_STATEMACH_e.",
+    "original_content": "State BMS_STATEMACH_INITIALIZATION exists in BMS_STATEMACH_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 92,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513066",
+    "modified_date": "2025-12-16T00:53:24.513066",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-811",
+    "content": "State BMS_STATEMACH_INITIALIZED exists in BMS_STATEMACH_e.",
+    "original_content": "State BMS_STATEMACH_INITIALIZED exists in BMS_STATEMACH_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 93,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513099",
+    "modified_date": "2025-12-16T00:53:24.513099",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-812",
+    "content": "State BMS_STATEMACH_IDLE exists in BMS_STATEMACH_e.",
+    "original_content": "State BMS_STATEMACH_IDLE exists in BMS_STATEMACH_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 94,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513131",
+    "modified_date": "2025-12-16T00:53:24.513131",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-813",
+    "content": "State BMS_STATEMACH_OPEN_CONTACTORS exists in BMS_STATEMACH_e.",
+    "original_content": "State BMS_STATEMACH_OPEN_CONTACTORS exists in BMS_STATEMACH_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 95,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513164",
+    "modified_date": "2025-12-16T00:53:24.513165",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-814",
+    "content": "State BMS_STATEMACH_STANDBY exists in BMS_STATEMACH_e.",
+    "original_content": "State BMS_STATEMACH_STANDBY exists in BMS_STATEMACH_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 96,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513196",
+    "modified_date": "2025-12-16T00:53:24.513197",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-815",
+    "content": "State BMS_STATEMACH_PRECHARGE exists in BMS_STATEMACH_e.",
+    "original_content": "State BMS_STATEMACH_PRECHARGE exists in BMS_STATEMACH_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 97,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513229",
+    "modified_date": "2025-12-16T00:53:24.513229",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-816",
+    "content": "State BMS_STATEMACH_NORMAL exists in BMS_STATEMACH_e.",
+    "original_content": "State BMS_STATEMACH_NORMAL exists in BMS_STATEMACH_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 98,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513261",
+    "modified_date": "2025-12-16T00:53:24.513262",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-817",
+    "content": "State BMS_STATEMACH_DISCHARGE exists in BMS_STATEMACH_e.",
+    "original_content": "State BMS_STATEMACH_DISCHARGE exists in BMS_STATEMACH_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 99,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513293",
+    "modified_date": "2025-12-16T00:53:24.513294",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-818",
+    "content": "State BMS_STATEMACH_CHARGE exists in BMS_STATEMACH_e.",
+    "original_content": "State BMS_STATEMACH_CHARGE exists in BMS_STATEMACH_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 100,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513326",
+    "modified_date": "2025-12-16T00:53:24.513326",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-819",
+    "content": "State BMS_STATEMACH_ERROR exists in BMS_STATEMACH_e.",
+    "original_content": "State BMS_STATEMACH_ERROR exists in BMS_STATEMACH_e",
+    "type": "SWE",
+    "classification": "safety",
+    "priority": "critical",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 101,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 100,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513348",
+    "modified_date": "2025-12-16T00:53:24.513349",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-820",
+    "content": "State BMS_STATEMACH_UNDEFINED exists in BMS_STATEMACH_e.",
+    "original_content": "State BMS_STATEMACH_UNDEFINED exists in BMS_STATEMACH_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 102,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513381",
+    "modified_date": "2025-12-16T00:53:24.513381",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-821",
+    "content": "State BMS_STATEMACH_RESERVED1 exists in BMS_STATEMACH_e.",
+    "original_content": "State BMS_STATEMACH_RESERVED1 exists in BMS_STATEMACH_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 103,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513414",
+    "modified_date": "2025-12-16T00:53:24.513415",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-822",
+    "content": "State machine BMS_CAN_STATE_e with states: BMS_CAN_STATE_INITIALIZATION, BMS_CAN_STATE_INITIALIZED, BMS_CAN_STATE_IDLE...",
+    "original_content": "State machine BMS_CAN_STATE_e with states: BMS_CAN_STATE_INITIALIZATION, BMS_CAN_STATE_INITIALIZED, BMS_CAN_STATE_IDLE...",
+    "type": "SWE",
+    "classification": "interface",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 110,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513448",
+    "modified_date": "2025-12-16T00:53:24.513448",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-823",
+    "content": "State BMS_CAN_STATE_INITIALIZATION exists in BMS_CAN_STATE_e.",
+    "original_content": "State BMS_CAN_STATE_INITIALIZATION exists in BMS_CAN_STATE_e",
+    "type": "SWE",
+    "classification": "interface",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 110,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513508",
+    "modified_date": "2025-12-16T00:53:24.513511",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-824",
+    "content": "State BMS_CAN_STATE_INITIALIZED exists in BMS_CAN_STATE_e.",
+    "original_content": "State BMS_CAN_STATE_INITIALIZED exists in BMS_CAN_STATE_e",
+    "type": "SWE",
+    "classification": "interface",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 111,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513546",
+    "modified_date": "2025-12-16T00:53:24.513547",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-825",
+    "content": "State BMS_CAN_STATE_IDLE exists in BMS_CAN_STATE_e.",
+    "original_content": "State BMS_CAN_STATE_IDLE exists in BMS_CAN_STATE_e",
+    "type": "SWE",
+    "classification": "interface",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 112,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513600",
+    "modified_date": "2025-12-16T00:53:24.513603",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-826",
+    "content": "State BMS_CAN_STATE_OPEN_CONTACTORS exists in BMS_CAN_STATE_e.",
+    "original_content": "State BMS_CAN_STATE_OPEN_CONTACTORS exists in BMS_CAN_STATE_e",
+    "type": "SWE",
+    "classification": "interface",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 113,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513641",
+    "modified_date": "2025-12-16T00:53:24.513642",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-827",
+    "content": "State BMS_CAN_STATE_STANDBY exists in BMS_CAN_STATE_e.",
+    "original_content": "State BMS_CAN_STATE_STANDBY exists in BMS_CAN_STATE_e",
+    "type": "SWE",
+    "classification": "interface",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 114,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513671",
+    "modified_date": "2025-12-16T00:53:24.513672",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-828",
+    "content": "State BMS_CAN_STATE_PRECHARGE exists in BMS_CAN_STATE_e.",
+    "original_content": "State BMS_CAN_STATE_PRECHARGE exists in BMS_CAN_STATE_e",
+    "type": "SWE",
+    "classification": "interface",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 115,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513701",
+    "modified_date": "2025-12-16T00:53:24.513702",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-829",
+    "content": "State BMS_CAN_STATE_NORMAL exists in BMS_CAN_STATE_e.",
+    "original_content": "State BMS_CAN_STATE_NORMAL exists in BMS_CAN_STATE_e",
+    "type": "SWE",
+    "classification": "interface",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 116,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513730",
+    "modified_date": "2025-12-16T00:53:24.513731",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-830",
+    "content": "State BMS_CAN_STATE_CHARGE exists in BMS_CAN_STATE_e.",
+    "original_content": "State BMS_CAN_STATE_CHARGE exists in BMS_CAN_STATE_e",
+    "type": "SWE",
+    "classification": "interface",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 117,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513758",
+    "modified_date": "2025-12-16T00:53:24.513759",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-831",
+    "content": "State BMS_CAN_STATE_ERROR exists in BMS_CAN_STATE_e.",
+    "original_content": "State BMS_CAN_STATE_ERROR exists in BMS_CAN_STATE_e",
+    "type": "SWE",
+    "classification": "safety",
+    "priority": "critical",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 118,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 100,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513781",
+    "modified_date": "2025-12-16T00:53:24.513782",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-832",
+    "content": "State machine BMS_STATEMACH_SUB_e with states: BMS_ENTRY, check if there contactors reached normal */ BMS_CHECK_CONTACTOR_CHARGE_STATE, check if there contactors reached normal */ BMS_PRECHARGE_CLOSE_MINUS...",
+    "original_content": "State machine BMS_STATEMACH_SUB_e with states: BMS_ENTRY, check if there contactors reached normal */\n    BMS_CHECK_CONTACTOR_CHARGE_STATE, check if there contactors reached normal */\n    BMS_PRECHARGE_CLOSE_MINUS...",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 125,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513830",
+    "modified_date": "2025-12-16T00:53:24.513830",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-833",
+    "content": "State BMS_ENTRY exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_ENTRY exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 125,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513862",
+    "modified_date": "2025-12-16T00:53:24.513863",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-835",
+    "content": "State check if there contactors reached normal */ BMS_PRECHARGE_CLOSE_MINUS exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State check if there contactors reached normal */\n    BMS_PRECHARGE_CLOSE_MINUS exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 127,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.513974",
+    "modified_date": "2025-12-16T00:53:24.513977",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-836",
+    "content": "State BMS_PRECHARGE_CLOSE_PRECHARGE exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_PRECHARGE_CLOSE_PRECHARGE exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 128,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514024",
+    "modified_date": "2025-12-16T00:53:24.514025",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-837",
+    "content": "State BMS_PRECHARGE_CHECK_VOLTAGES exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_PRECHARGE_CHECK_VOLTAGES exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 129,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514061",
+    "modified_date": "2025-12-16T00:53:24.514061",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-838",
+    "content": "State BMS_PRECHARGE_OPEN_PRECHARGE exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_PRECHARGE_OPEN_PRECHARGE exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 130,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514107",
+    "modified_date": "2025-12-16T00:53:24.514107",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-839",
+    "content": "State BMS_PRECHARGE_CHECK_OPEN_PRECHARGE exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_PRECHARGE_CHECK_OPEN_PRECHARGE exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 131,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514141",
+    "modified_date": "2025-12-16T00:53:24.514142",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-840",
+    "content": "State BMS_OPEN_FIRST_CONTACTOR exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_OPEN_FIRST_CONTACTOR exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 132,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514190",
+    "modified_date": "2025-12-16T00:53:24.514195",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-841",
+    "content": "State BMS_OPEN_SECOND_CONTACTOR_MINUS exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_OPEN_SECOND_CONTACTOR_MINUS exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 133,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514262",
+    "modified_date": "2025-12-16T00:53:24.514266",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-842",
+    "content": "State BMS_OPEN_SECOND_CONTACTOR_PLUS exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_OPEN_SECOND_CONTACTOR_PLUS exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 134,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514306",
+    "modified_date": "2025-12-16T00:53:24.514307",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-843",
+    "content": "State BMS_CHECK_CLOSE_SECOND_STRING_CONTACTOR_PRECHARGE_STATE exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_CHECK_CLOSE_SECOND_STRING_CONTACTOR_PRECHARGE_STATE exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 135,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514343",
+    "modified_date": "2025-12-16T00:53:24.514344",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-844",
+    "content": "State BMS_CHECK_ERROR_FLAGS_PRECHARGE exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_CHECK_ERROR_FLAGS_PRECHARGE exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "safety",
+    "priority": "critical",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 136,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 100,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514368",
+    "modified_date": "2025-12-16T00:53:24.514368",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-845",
+    "content": "State BMS_CHECK_ERROR_FLAGS_PRECHARGE_FIRST_STRING exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_CHECK_ERROR_FLAGS_PRECHARGE_FIRST_STRING exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "safety",
+    "priority": "critical",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 137,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 100,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514392",
+    "modified_date": "2025-12-16T00:53:24.514393",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-846",
+    "content": "State BMS_PRECHARGE_CLOSE_NEXT_STRING exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_PRECHARGE_CLOSE_NEXT_STRING exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 138,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514426",
+    "modified_date": "2025-12-16T00:53:24.514427",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-847",
+    "content": "State BMS_CLOSE_SECOND_CONTACTOR_PLUS exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_CLOSE_SECOND_CONTACTOR_PLUS exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 139,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514460",
+    "modified_date": "2025-12-16T00:53:24.514460",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-848",
+    "content": "State BMS_CHECK_STRING_CLOSED exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_CHECK_STRING_CLOSED exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 140,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514493",
+    "modified_date": "2025-12-16T00:53:24.514494",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-849",
+    "content": "State BMS_CHECK_ERROR_FLAGS_PRECHARGE_CLOSING_STRINGS exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_CHECK_ERROR_FLAGS_PRECHARGE_CLOSING_STRINGS exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "safety",
+    "priority": "critical",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 141,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 100,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514517",
+    "modified_date": "2025-12-16T00:53:24.514518",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-850",
+    "content": "State BMS_CHECK_ERROR_FLAGS_CLOSING_PRECHARGE exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_CHECK_ERROR_FLAGS_CLOSING_PRECHARGE exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "safety",
+    "priority": "critical",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 142,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 100,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514541",
+    "modified_date": "2025-12-16T00:53:24.514542",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-851",
+    "content": "State BMS_NORMAL_CLOSE_NEXT_STRING exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_NORMAL_CLOSE_NEXT_STRING exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 143,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514575",
+    "modified_date": "2025-12-16T00:53:24.514576",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-852",
+    "content": "State BMS_NORMAL_CLOSE_SECOND_STRING_CONTACTOR exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_NORMAL_CLOSE_SECOND_STRING_CONTACTOR exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 144,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514775",
+    "modified_date": "2025-12-16T00:53:24.514776",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-853",
+    "content": "State BMS_OPEN_ALL_PRECHARGE_CONTACTORS exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_OPEN_ALL_PRECHARGE_CONTACTORS exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 145,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514810",
+    "modified_date": "2025-12-16T00:53:24.514811",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-854",
+    "content": "State BMS_CHECK_ALL_PRECHARGE_CONTACTORS_OPEN exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_CHECK_ALL_PRECHARGE_CONTACTORS_OPEN exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 146,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514846",
+    "modified_date": "2025-12-16T00:53:24.514846",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-855",
+    "content": "State BMS_OPEN_STRINGS_ENTRY exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_OPEN_STRINGS_ENTRY exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 147,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514879",
+    "modified_date": "2025-12-16T00:53:24.514880",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-856",
+    "content": "State BMS_OPEN_FIRST_STRING_CONTACTOR exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_OPEN_FIRST_STRING_CONTACTOR exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 148,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514913",
+    "modified_date": "2025-12-16T00:53:24.514914",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-857",
+    "content": "State BMS_OPEN_SECOND_STRING_CONTACTOR exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_OPEN_SECOND_STRING_CONTACTOR exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 149,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514947",
+    "modified_date": "2025-12-16T00:53:24.514947",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-858",
+    "content": "State BMS_CHECK_SECOND_STRING_CONTACTOR exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_CHECK_SECOND_STRING_CONTACTOR exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 150,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.514981",
+    "modified_date": "2025-12-16T00:53:24.514981",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-859",
+    "content": "State BMS_HANDLE_SUPPLY_VOLTAGE_30C_LOSS exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_HANDLE_SUPPLY_VOLTAGE_30C_LOSS exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 151,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.515015",
+    "modified_date": "2025-12-16T00:53:24.515016",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-860",
+    "content": "State BMS_OPEN_STRINGS_EXIT exists in BMS_STATEMACH_SUB_e.",
+    "original_content": "State BMS_OPEN_STRINGS_EXIT exists in BMS_STATEMACH_SUB_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 152,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.515048",
+    "modified_date": "2025-12-16T00:53:24.515049",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-861",
+    "content": "State machine BMS_STATE_REQUEST_e with states: BMS_STATE_INIT_REQUEST.",
+    "original_content": "State machine BMS_STATE_REQUEST_e with states: BMS_STATE_INIT_REQUEST",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 163,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.515083",
+    "modified_date": "2025-12-16T00:53:24.515083",
+    "transformation_version": "1.0.0"
+  },
+  {
+    "id": "FBMS-SWE-SYS-862",
+    "content": "State BMS_STATE_INIT_REQUEST exists in BMS_STATE_REQUEST_e.",
+    "original_content": "State BMS_STATE_INIT_REQUEST exists in BMS_STATE_REQUEST_e",
+    "type": "SWE",
+    "classification": "functional",
+    "priority": "low",
+    "status": "draft",
+    "sources": [
+      {
+        "file": "app/application/bms/bms.h",
+        "line": 163,
+        "extraction_type": "state_machine"
+      }
+    ],
+    "quality_score": 85,
+    "quality_issues": [],
+    "tags": [
+      "state-machine",
+      "behavior"
+    ],
+    "created_date": "2025-12-16T00:53:24.515116",
+    "modified_date": "2025-12-16T00:53:24.515117",
+    "transformation_version": "1.0.0"
+  }
+]

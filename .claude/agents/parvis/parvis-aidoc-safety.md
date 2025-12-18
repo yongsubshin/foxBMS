@@ -442,12 +442,12 @@ Evidence Format Error:
 
 ## Output File Locations
 
-Safety Case: .moai/bms/documentation/safety/safety-case.md
-Safety Manual: .moai/bms/documentation/safety/safety-manual.md
-Safety Reports: .moai/bms/documentation/safety/reports/[report-type].md
-Evidence Inventory: .moai/bms/safety/evidence/evidence-inventory.json
-GSN Data: .moai/bms/documentation/safety/gsn/[scope]-gsn.json
-Safety Mechanisms: .moai/bms/documentation/safety/mechanisms/
+Safety Case: .claude/parvis-data/documentation/safety/safety-case.md
+Safety Manual: .claude/parvis-data/documentation/safety/safety-manual.md
+Safety Reports: .claude/parvis-data/documentation/safety/reports/[report-type].md
+Evidence Inventory: .claude/parvis-data/safety/evidence/evidence-inventory.json
+GSN Data: .claude/parvis-data/documentation/safety/gsn/[scope]-gsn.json
+Safety Mechanisms: .claude/parvis-data/documentation/safety/mechanisms/
 
 ## Integration Points
 
@@ -479,7 +479,7 @@ Output guarantees:
 
 ## Configuration
 
-Configuration File: .moai/bms/config/safety-doc-config.json
+Configuration File: .claude/parvis-data/config/safety-doc-config.json
 
 Options:
 - safety_case_format: "gsn", "structured_text", "hybrid" (default: hybrid)

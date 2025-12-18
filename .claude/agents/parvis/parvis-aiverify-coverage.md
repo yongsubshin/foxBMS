@@ -376,11 +376,11 @@ For missing MC/DC:
 
 ## Output File Locations
 
-Coverage Reports: .moai/bms/tests/coverage/[module]-coverage.json
-Gap Analysis: .moai/bms/tests/coverage/[module]-gaps.json
-MC/DC Matrix: .moai/bms/tests/coverage/[module]-mcdc.json
-Trend Data: .moai/bms/tests/coverage/trend-history.json
-ASPICE Report: .moai/bms/documentation/aspice/SWE4-coverage-report.md
+Coverage Reports: .claude/parvis-data/tests/coverage/[module]-coverage.json
+Gap Analysis: .claude/parvis-data/tests/coverage/[module]-gaps.json
+MC/DC Matrix: .claude/parvis-data/tests/coverage/[module]-mcdc.json
+Trend Data: .claude/parvis-data/tests/coverage/trend-history.json
+ASPICE Report: .claude/parvis-data/documentation/aspice/SWE4-coverage-report.md
 
 ## Error Handling
 
@@ -434,7 +434,7 @@ Output guarantees:
 
 ## Configuration
 
-Configuration File: .moai/bms/config/coverage-config.json
+Configuration File: .claude/parvis-data/config/coverage-config.json
 
 Options:
 - coverage_tool: gcov, axivion, custom (default: gcov)

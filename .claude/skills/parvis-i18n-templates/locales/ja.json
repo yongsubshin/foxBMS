@@ -12,7 +12,7 @@
     "nav": {
       "processDocs": "プロセスドキュメント",
       "apiReference": "APIリファレンス",
-      "traceability": "トレーサビリティ",
+      "traceability": "トレーサビリティマトリクス",
       "misra": "MISRA準拠",
       "metrics": "品質メトリクス"
     },
@@ -125,6 +125,15 @@
     "subtitle": "foxBMS V-モデルプロセス品質指標",
     "keyAchievements": "主要な成果",
     "reqByModule": "モジュール別要件",
+    "moduleDescriptions": {
+      "Drivers": "低レベルハードウェアドライバ (CAN, SPI, GPIO)",
+      "BMS": "バッテリー管理システムコア機能",
+      "Config": "システム構成パラメータ",
+      "TS": "温度センサーモニタリング",
+      "Algorithm": "SOC/SOE/SOH計算アルゴリズム",
+      "AFE": "アナログフロントエンドインターフェース (セル監視)",
+      "SBC": "システムベースチップインターフェース"
+    },
     "safetyReqByAsil": "ASIL別安全要件",
     "testCoverage": "レベル別テストカバレッジ",
     "qualityScores": "品質スコア",
@@ -157,6 +166,72 @@
       "tracedToDesign": "設計へのトレース",
       "tracedToTest": "テストへのトレース",
       "coverage": "カバレッジ"
+    }
+  },
+  "misraComparison": {
+    "title": "MISRA準拠改善分析",
+    "subtitle": "Before/Afterスキャン比較と品質ゲート評価",
+    "executiveSummary": "エグゼクティブサマリ",
+    "comparisonMetrics": "比較メトリクス",
+    "violationStats": {
+      "fixed": "修正された違反",
+      "new": "新しい違反",
+      "unchanged": "変更されない違反",
+      "totalBefore": "修正前の合計",
+      "totalAfter": "修正後の合計"
+    },
+    "complianceRates": {
+      "before": "修正前準拠率",
+      "after": "修正後準拠率",
+      "improvement": "改善率"
+    },
+    "categoryBreakdown": "カテゴリ別違反",
+    "categories": {
+      "mandatory": "必須",
+      "required": "推奨",
+      "advisory": "助言"
+    },
+    "qualityGate": {
+      "status": "品質ゲートステータス",
+      "pass": "合格",
+      "warning": "警告",
+      "fail": "不合格",
+      "blocked": "ブロック",
+      "mandatoryCompliance": "必須違反",
+      "noNewViolations": "新しい違反なし",
+      "dataIntegrity": "データ整合性",
+      "rationale": "意思決定根拠"
+    },
+    "violationDetails": {
+      "fixedViolations": "修正された違反",
+      "newViolations": "新しい違反",
+      "unchangedViolations": "変更されない違反",
+      "ruleId": "ルールID",
+      "file": "ファイル",
+      "line": "行",
+      "message": "メッセージ",
+      "remediation": "修復ヒント"
+    },
+    "trendAnalysis": {
+      "improvement": "改善トレンド",
+      "improving": "改善中",
+      "stable": "安定",
+      "regressing": "悪化中",
+      "historical": "履歴比較"
+    },
+    "recommendations": {
+      "title": "推奨事項",
+      "continuedRemediation": "継続的な改善",
+      "criticalFocus": "重要焦点領域",
+      "bestPractices": "ベストプラクティス",
+      "nextSteps": "次のステップ"
+    },
+    "reports": {
+      "json": "JSONレポート",
+      "markdown": "Markdownレポート",
+      "html": "HTMLレポート",
+      "generated": "生成されました",
+      "download": "ダウンロード"
     }
   },
   "viewer": {

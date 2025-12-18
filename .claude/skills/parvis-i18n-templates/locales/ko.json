@@ -12,7 +12,7 @@
     "nav": {
       "processDocs": "프로세스 문서",
       "apiReference": "API 레퍼런스",
-      "traceability": "추적성",
+      "traceability": "추적성 매트릭스",
       "misra": "MISRA 준수",
       "metrics": "품질 메트릭"
     },
@@ -125,6 +125,15 @@
     "subtitle": "foxBMS V-Model 프로세스 품질 지표",
     "keyAchievements": "주요 성과",
     "reqByModule": "모듈별 요구사항",
+    "moduleDescriptions": {
+      "Drivers": "저수준 하드웨어 드라이버 (CAN, SPI, GPIO)",
+      "BMS": "배터리 관리 시스템 핵심 기능",
+      "Config": "시스템 구성 파라미터",
+      "TS": "온도 센서 모니터링",
+      "Algorithm": "SOC/SOE/SOH 계산 알고리즘",
+      "AFE": "아날로그 프론트엔드 인터페이스 (셀 모니터링)",
+      "SBC": "시스템 베이시스 칩 인터페이스"
+    },
     "safetyReqByAsil": "ASIL별 안전 요구사항",
     "testCoverage": "테스트 레벨별 커버리지",
     "qualityScores": "품질 점수",
@@ -157,6 +166,72 @@
       "tracedToDesign": "설계 추적",
       "tracedToTest": "테스트 추적",
       "coverage": "커버리지"
+    }
+  },
+  "misraComparison": {
+    "title": "MISRA 준수 개선 분석",
+    "subtitle": "Before/After 스캔 비교 및 품질 게이트 평가",
+    "executiveSummary": "경영진 요약",
+    "comparisonMetrics": "비교 메트릭",
+    "violationStats": {
+      "fixed": "해결된 위반",
+      "new": "새로운 위반",
+      "unchanged": "변경되지 않은 위반",
+      "totalBefore": "Before 총 개수",
+      "totalAfter": "After 총 개수"
+    },
+    "complianceRates": {
+      "before": "Before 준수율",
+      "after": "After 준수율",
+      "improvement": "개선율"
+    },
+    "categoryBreakdown": "카테고리별 위반",
+    "categories": {
+      "mandatory": "필수",
+      "required": "필수 권고",
+      "advisory": "권고"
+    },
+    "qualityGate": {
+      "status": "품질 게이트 상태",
+      "pass": "통과",
+      "warning": "경고",
+      "fail": "실패",
+      "blocked": "차단됨",
+      "mandatoryCompliance": "필수 위반",
+      "noNewViolations": "새로운 위반 없음",
+      "dataIntegrity": "데이터 무결성",
+      "rationale": "의사결정 근거"
+    },
+    "violationDetails": {
+      "fixedViolations": "해결된 위반",
+      "newViolations": "새로운 위반",
+      "unchangedViolations": "변경되지 않은 위반",
+      "ruleId": "규칙 ID",
+      "file": "파일",
+      "line": "줄",
+      "message": "메시지",
+      "remediation": "해결 힌트"
+    },
+    "trendAnalysis": {
+      "improvement": "개선 추세",
+      "improving": "개선 중",
+      "stable": "안정적",
+      "regressing": "악화 중",
+      "historical": "과거 비교"
+    },
+    "recommendations": {
+      "title": "권장사항",
+      "continuedRemediation": "지속적인 개선",
+      "criticalFocus": "중요 초점 영역",
+      "bestPractices": "베스트 프랙티스",
+      "nextSteps": "다음 단계"
+    },
+    "reports": {
+      "json": "JSON 보고서",
+      "markdown": "Markdown 보고서",
+      "html": "HTML 보고서",
+      "generated": "생성됨",
+      "download": "다운로드"
     }
   },
   "viewer": {

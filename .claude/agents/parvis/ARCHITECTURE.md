@@ -60,6 +60,7 @@ PARVIS-AI-Orchestrator (Master Coordinator)
     |       +-- parvis-aiverify-coverage    (Coverage analysis)
     |       +-- parvis-aiverify-safety      (Safety test validation)
     |       +-- parvis-aiverify-report      (Test report generation)
+    |       +-- parvis-aiverify-misra-report (MISRA compliance comparison)
     |
     +-- PARVIS-AIDoc (Documentation Phase)
             +-- parvis-aidoc-aspice         (ASPICE work products)
@@ -114,49 +115,40 @@ Module Codes for foxBMS:
 - SYS: System Engine
 
 Examples:
-- FBMS-SWE-DIAG-001: Software requirement for diagnostics module
-- FBMS-FSR-BMS-015: Functional safety requirement for BMS
-- FBMS-TST-SOC-003: Test requirement for State of Charge
+- SW-REQ-DIAG-001: Software requirement for diagnostics module
+- FSR-BMS-015: Functional safety requirement for BMS
+- HSI-SOC-003: HW/SW interface requirement for State of Charge
 
 ### Design ID Format
 
-Base Format: [PROJECT]-DES-[MODULE]-[SEQ]
+Base Format: SW-ARCH-[MODULE]-[SEQ]
 
 Examples:
-- FBMS-DES-SOC-001: Design specification for SOC calculation
-- FBMS-DES-AFE-012: Design specification for AFE communication
+- SW-ARCH-SOC-001: Design specification for SOC calculation
+- SW-ARCH-AFE-012: Design specification for AFE communication
 
 ### Test Case ID Format
 
-Base Format: [PROJECT]-TC-[LEVEL]-[MODULE]-[SEQ]
+Base Format: [LEVEL]-[MODULE]-[SEQ]
 
 Level Codes:
 - UT: Unit Test
 - IT: Integration Test
-- ST: System Test
-- AT: Acceptance Test
+- TC: Test Case
 
 Examples:
-- FBMS-TC-UT-SOC-001: Unit test for SOC module
-- FBMS-TC-IT-AFE-005: Integration test for AFE
+- UT-SOC-001: Unit test for SOC module
+- IT-AFE-005: Integration test for AFE
+- TC-BMS-001: Test case for BMS module
 
-### ASPICE Work Product ID Format
+### System Requirement ID Format
 
-Base Format: [PROJECT]-WP-[PROCESS]-[SEQ]
-
-Process Codes (ASPICE):
-- SWE1: Software Requirements Analysis
-- SWE2: Software Architectural Design
-- SWE3: Software Detailed Design and Unit Construction
-- SWE4: Software Unit Verification
-- SWE5: Software Qualification Test
-- SWE6: Software Integration and Integration Test
-- MAN3: Project Management
-- SUP8: Configuration Management
+Base Format: SYS-REQ-[SEQ]
 
 Examples:
-- FBMS-WP-SWE1-001: Software Requirements Specification
-- FBMS-WP-SWE4-003: Unit Test Report
+- SYS-REQ-001: Battery State Estimation
+- SYS-REQ-002: Analog Front End Interface
+- SYS-REQ-007: BMS State Machine
 
 ---
 
@@ -341,6 +333,13 @@ parvis-aiverify-report:
 - Input: All test results and coverage data
 - Output: ASPICE-compliant test reports
 - Compliance: ASPICE SWE.4, SWE.5, SWE.6
+
+parvis-aiverify-misra-report:
+- Purpose: Compare before/after MISRA C:2012 scans and evaluate compliance improvements
+- Input: Before and after MISRA violation reports (JSON)
+- Output: Comparison report with compliance metrics, quality gate status, and recommendations
+- Compliance: MISRA C:2012, ISO 26262-6
+- Features: Violation classification, trend analysis, JSON/Markdown/HTML output
 
 ### Phase 4: PARVIS-AIDoc Agents (Documentation)
 

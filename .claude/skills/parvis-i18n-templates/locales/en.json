@@ -12,7 +12,7 @@
     "nav": {
       "processDocs": "Process Docs",
       "apiReference": "API Reference",
-      "traceability": "Traceability",
+      "traceability": "Traceability Matrix",
       "misra": "MISRA Compliance",
       "metrics": "Quality Metrics"
     },
@@ -125,6 +125,15 @@
     "subtitle": "foxBMS V-Model Process Quality Indicators",
     "keyAchievements": "Key Achievements",
     "reqByModule": "Requirements by Module",
+    "moduleDescriptions": {
+      "Drivers": "Low-level hardware drivers (CAN, SPI, GPIO)",
+      "BMS": "Battery Management System core functions",
+      "Config": "System configuration parameters",
+      "TS": "Temperature Sensor monitoring",
+      "Algorithm": "SOC/SOE/SOH calculation algorithms",
+      "AFE": "Analog Front-End interface (cell monitoring)",
+      "SBC": "System Basis Chip interface"
+    },
     "safetyReqByAsil": "Safety Requirements by ASIL",
     "testCoverage": "Test Coverage by Level",
     "qualityScores": "Quality Scores",
@@ -157,6 +166,72 @@
       "tracedToDesign": "Traced to Design",
       "tracedToTest": "Traced to Test",
       "coverage": "Coverage"
+    }
+  },
+  "misraComparison": {
+    "title": "MISRA Compliance Improvement Analysis",
+    "subtitle": "Before/After Scan Comparison and Quality Gate Evaluation",
+    "executiveSummary": "Executive Summary",
+    "comparisonMetrics": "Comparison Metrics",
+    "violationStats": {
+      "fixed": "Violations Fixed",
+      "new": "New Violations",
+      "unchanged": "Unchanged Violations",
+      "totalBefore": "Total Before",
+      "totalAfter": "Total After"
+    },
+    "complianceRates": {
+      "before": "Before Compliance Rate",
+      "after": "After Compliance Rate",
+      "improvement": "Improvement"
+    },
+    "categoryBreakdown": "Violation by Category",
+    "categories": {
+      "mandatory": "Mandatory",
+      "required": "Required",
+      "advisory": "Advisory"
+    },
+    "qualityGate": {
+      "status": "Quality Gate Status",
+      "pass": "PASS",
+      "warning": "WARNING",
+      "fail": "FAIL",
+      "blocked": "BLOCKED",
+      "mandatoryCompliance": "Mandatory Violations",
+      "noNewViolations": "No New Violations",
+      "dataIntegrity": "Data Integrity",
+      "rationale": "Decision Rationale"
+    },
+    "violationDetails": {
+      "fixedViolations": "Fixed Violations",
+      "newViolations": "New Violations",
+      "unchangedViolations": "Unchanged Violations",
+      "ruleId": "Rule ID",
+      "file": "File",
+      "line": "Line",
+      "message": "Message",
+      "remediation": "Remediation Hint"
+    },
+    "trendAnalysis": {
+      "improvement": "Improvement Trend",
+      "improving": "Improving",
+      "stable": "Stable",
+      "regressing": "Regressing",
+      "historical": "Historical Comparison"
+    },
+    "recommendations": {
+      "title": "Recommendations",
+      "continuedRemediation": "Continued Remediation",
+      "criticalFocus": "Critical Focus Areas",
+      "bestPractices": "Best Practices",
+      "nextSteps": "Next Steps"
+    },
+    "reports": {
+      "json": "JSON Report",
+      "markdown": "Markdown Report",
+      "html": "HTML Report",
+      "generated": "Generated",
+      "download": "Download"
     }
   },
   "viewer": {

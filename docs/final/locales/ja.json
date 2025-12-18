@@ -105,6 +105,16 @@
   "misraPage": {
     "title": "MISRA C:2012 準拠レポート",
     "subtitle": "AIベースパターン分析 - 全コードベースカバレッジ",
+    "complianceImprovement": "PARVISによる準拠率改善",
+    "before": "改善前",
+    "after": "改善後",
+    "originalFoxbms": "オリジナル foxBMS 2",
+    "parvisRemediation": "PARVIS自動修正",
+    "complianceRate": "準拠率",
+    "improvement": "改善",
+    "totalViolations": "総違反数",
+    "violationsFixed": "367件の違反を修正",
+    "currentStatus": "現在の準拠状態",
     "overallCompliance": "全体準拠率",
     "stats": {
       "mandatoryRules": "必須ルール",

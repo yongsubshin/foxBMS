@@ -105,6 +105,16 @@
   "misraPage": {
     "title": "MISRA C:2012 준수 보고서",
     "subtitle": "AI 기반 패턴 분석 - 전체 코드베이스 커버리지",
+    "complianceImprovement": "PARVIS를 통한 준수율 개선",
+    "before": "개선 전",
+    "after": "개선 후",
+    "originalFoxbms": "원본 foxBMS 2",
+    "parvisRemediation": "PARVIS 자동 수정",
+    "complianceRate": "준수율",
+    "improvement": "개선",
+    "totalViolations": "총 위반 수",
+    "violationsFixed": "367개 위반 수정됨",
+    "currentStatus": "현재 준수 상태",
     "overallCompliance": "전체 준수율",
     "stats": {
       "mandatoryRules": "필수 규칙",

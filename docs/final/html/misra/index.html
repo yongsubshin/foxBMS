@@ -91,11 +91,90 @@
     </div>
 
     <div class="container">
+        <!-- Before/After Comparison Section -->
+        <div class="comparison-section" style="margin-bottom: 2rem;">
+            <h2 style="text-align: center; margin-bottom: 1.5rem; color: #002b5b;">
+                <i class="fas fa-chart-line"></i> <span data-i18n="misraPage.complianceImprovement">Compliance Improvement by PARVIS</span>
+            </h2>
+            <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; align-items: stretch;">
+                <!-- Before Card -->
+                <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; padding: 2rem; text-align: center; border: 2px solid #dee2e6; position: relative;">
+                    <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #6c757d; color: white; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">
+                        <span data-i18n="misraPage.before">BEFORE</span>
+                    </div>
+                    <div style="font-size: 0.9rem; color: #6c757d; margin-bottom: 0.5rem;" data-i18n="misraPage.originalFoxbms">Original foxBMS 2</div>
+                    <div style="font-size: 4rem; font-weight: 700; color: #dc3545; line-height: 1;">72%</div>
+                    <div style="font-size: 0.9rem; color: #6c757d; margin-top: 0.5rem;" data-i18n="misraPage.complianceRate">Compliance Rate</div>
+                    <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #dee2e6;">
+                        <div style="display: flex; justify-content: space-around; font-size: 0.85rem;">
+                            <div>
+                                <div style="font-weight: 700; color: #dc3545; font-size: 1.5rem;">408</div>
+                                <div style="color: #6c757d;" data-i18n="misraPage.totalViolations">Total Violations</div>
+                            </div>
+                            <div>
+                                <div style="font-weight: 700; color: #fd7e14; font-size: 1.5rem;">347</div>
+                                <div style="color: #6c757d;">Rule 17.7</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arrow Indicator -->
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 1rem;">
+                    <div style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white; padding: 1rem 1.5rem; border-radius: 50px; font-weight: 700; font-size: 1.2rem; box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div style="margin-top: 1rem; text-align: center;">
+                        <div style="font-size: 2rem; font-weight: 700; color: #28a745;">+27%p</div>
+                        <div style="font-size: 0.8rem; color: #6c757d;" data-i18n="misraPage.improvement">Improvement</div>
+                    </div>
+                </div>
+
+                <!-- After Card -->
+                <div style="background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%); border-radius: 12px; padding: 2rem; text-align: center; border: 2px solid #28a745; position: relative; box-shadow: 0 4px 15px rgba(40, 167, 69, 0.15);">
+                    <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #28a745; color: white; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">
+                        <span data-i18n="misraPage.after">AFTER</span>
+                    </div>
+                    <div style="font-size: 0.9rem; color: #155724; margin-bottom: 0.5rem;" data-i18n="misraPage.parvisRemediation">PARVIS Remediation</div>
+                    <div style="font-size: 4rem; font-weight: 700; color: #155724; line-height: 1;">~99%</div>
+                    <div style="font-size: 0.9rem; color: #155724; margin-top: 0.5rem;" data-i18n="misraPage.complianceRate">Compliance Rate</div>
+                    <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #28a745;">
+                        <div style="display: flex; justify-content: space-around; font-size: 0.85rem;">
+                            <div>
+                                <div style="font-weight: 700; color: #155724; font-size: 1.5rem;">41</div>
+                                <div style="color: #155724;" data-i18n="misraPage.documentedDeviations">Documented Deviations</div>
+                            </div>
+                            <div>
+                                <div style="font-weight: 700; color: #155724; font-size: 1.5rem;">0</div>
+                                <div style="color: #155724;">Rule 17.7</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievement Badges -->
+            <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
+                <div style="background: white; border: 1px solid #dee2e6; border-radius: 8px; padding: 0.75rem 1.25rem; display: flex; align-items: center; gap: 0.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <i class="fas fa-shield-alt" style="color: #28a745;"></i>
+                    <span style="font-size: 0.9rem; font-weight: 600; color: #002b5b;">100% Mandatory Compliance</span>
+                </div>
+                <div style="background: white; border: 1px solid #dee2e6; border-radius: 8px; padding: 0.75rem 1.25rem; display: flex; align-items: center; gap: 0.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <i class="fas fa-bug" style="color: #dc3545;"></i>
+                    <span style="font-size: 0.9rem; font-weight: 600; color: #002b5b;"><span data-i18n="misraPage.violationsFixed">367 Violations Fixed</span></span>
+                </div>
+                <div style="background: white; border: 1px solid #dee2e6; border-radius: 8px; padding: 0.75rem 1.25rem; display: flex; align-items: center; gap: 0.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <i class="fas fa-certificate" style="color: #fd7e14;"></i>
+                    <span style="font-size: 0.9rem; font-weight: 600; color: #002b5b;">ISO 26262 Ready</span>
+                </div>
+            </div>
+        </div>
+
         <div class="compliance-score">
             <div class="score-circle">
                 <span class="score-value">~99%</span>
             </div>
-            <h2 data-i18n="misraPage.overallCompliance">Overall Compliance Rate</h2>
+            <h2 data-i18n="misraPage.currentStatus">Current Compliance Status</h2>
             <p style="color: #6c757d;">228 files analyzed | 367 violations fixed | 41 documented deviations</p>
             <div class="legend">
                 <div class="legend-item"><div class="legend-color" style="background: #dc3545;"></div> Mandatory (0)</div>

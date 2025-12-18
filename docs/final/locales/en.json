@@ -105,6 +105,16 @@
   "misraPage": {
     "title": "MISRA C:2012 Compliance Report",
     "subtitle": "AI-Based Pattern Analysis - Full Codebase Coverage",
+    "complianceImprovement": "Compliance Improvement by PARVIS",
+    "before": "BEFORE",
+    "after": "AFTER",
+    "originalFoxbms": "Original foxBMS 2",
+    "parvisRemediation": "PARVIS Remediation",
+    "complianceRate": "Compliance Rate",
+    "improvement": "Improvement",
+    "totalViolations": "Total Violations",
+    "violationsFixed": "367 Violations Fixed",
+    "currentStatus": "Current Compliance Status",
     "overallCompliance": "Overall Compliance Rate",
     "stats": {
       "mandatoryRules": "Mandatory Rules",

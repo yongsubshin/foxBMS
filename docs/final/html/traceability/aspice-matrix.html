@@ -49,7 +49,6 @@
         .back-link:hover { opacity: 1; }
         .desc { max-width: 250px; font-size: 0.75rem; line-height: 1.3; cursor: pointer; }
         .desc:hover { background: rgba(0,0,0,0.05); }
-        .empty-content { color: #999; font-style: italic; }
         #rowCount { font-weight: 600; color: var(--primary); }
         .export-btn { background: var(--primary); color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
         .export-btn:hover { background: var(--dark); }
@@ -68,8 +67,8 @@
     <div class="header">
         <div style="display: flex; gap: 1.5rem; margin-bottom: 0.5rem;">
             <a href="../../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portal</a>
+            <a href="index.html" class="back-link"><i class="fas fa-list"></i> Requirements List</a>
             <a href="reverse.html" class="back-link"><i class="fas fa-code"></i> Reverse Traceability</a>
-            <a href="aspice-matrix.html" class="back-link"><i class="fas fa-table"></i> ASPICE Matrix</a>
         </div>
         <h1><i class="fas fa-project-diagram"></i> ASPICE Traceability Matrix</h1>
         <p>Full Bidirectional Traceability: System Req -> SW Req -> Test Case | Updated: 2025-12-18</p>
@@ -112,9 +111,9 @@
                 <option value="CFG">CFG (Config)</option>
             </select>
             <select id="confFilter" onchange="filterTable()">
-                <option value="">All Status</option>
-                <option value="complete">Complete</option>
-                <option value="partial">Partial</option>
+                <option value="">All Confidence</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
             </select>
             <input type="text" id="searchInput" placeholder="Search..." onkeyup="filterTable()">
             <span>Showing: <span id="rowCount">-</span></span>
@@ -125,14 +124,14 @@
             <table id="matrixTable">
                 <thead>
                     <tr>
-                        <th class="col-sysreq" onclick="sortTable(0)">SYS-REQ <i class="fas fa-sort"></i></th>
-                        <th class="col-swreq" onclick="sortTable(1)">SW-REQ <i class="fas fa-sort"></i></th>
-                        <th onclick="sortTable(2)">SW-ARCH <i class="fas fa-sort"></i></th>
-                        <th onclick="sortTable(3)">Code Module <i class="fas fa-sort"></i></th>
-                        <th onclick="sortTable(4)">UT <i class="fas fa-sort"></i></th>
-                        <th class="col-test" onclick="sortTable(5)">TC/IT <i class="fas fa-sort"></i></th>
-                        <th class="col-type" onclick="sortTable(6)">Type</th>
-                        <th onclick="sortTable(7)">Status <i class="fas fa-sort"></i></th>
+                        <th class="col-sysreq" onclick="sortTable(0)">System Req ID <i class="fas fa-sort"></i></th>
+                        <th class="col-sysreq-desc" onclick="sortTable(1)">System Requirement <i class="fas fa-sort"></i></th>
+                        <th class="col-swreq" onclick="sortTable(2)">SW Req ID <i class="fas fa-sort"></i></th>
+                        <th class="col-swreq-desc" onclick="sortTable(3)">Software Requirement <i class="fas fa-sort"></i></th>
+                        <th class="col-test" onclick="sortTable(4)">Test ID <i class="fas fa-sort"></i></th>
+                        <th class="col-type" onclick="sortTable(5)">Type</th>
+                        <th class="col-source" onclick="sortTable(6)">Source</th>
+                        <th class="col-conf" onclick="sortTable(7)">Conf</th>
                     </tr>
                 </thead>
                 <tbody id="tableBody">
@@ -167,20 +166,20 @@
                 const matrixResponse = await fetch('../../../parvis/traceability/full-traceability-matrix.json');
                 const matrixJson = await matrixResponse.json();
 
-                // Process and merge data - Full ASPICE 6-column traceability
+                // Process and merge data
                 matrixData = matrixJson.matrix.map(row => {
                     const sysReq = sysReqs[row.sys_req_id] || {};
                     const swReq = swReqs[row.sw_req_id] || {};
 
                     return {
                         sysReqId: row.sys_req_id,
+                        sysReqDesc: sysReq.description || sysReq.name || '-',
                         swReqId: row.sw_req_id,
-                        swArchId: row.sw_arch_id || '(pending)',
-                        codeModule: row.code_module || '(pending)',
-                        utId: row.ut_id || '(pending)',
-                        tcId: row.tc_id || '(pending)',
+                        swReqDesc: swReq.content || '-',
+                        testId: row.tc_id || '(pending)',
                         type: swReq.type || 'SWE',
-                        status: row.status || 'partial'
+                        source: swReq.source ? `${swReq.source.file}:${swReq.source.line}` : '-',
+                        confidence: swReq.confidence || 'medium'
                     };
                 });
 
@@ -214,13 +213,13 @@
         function updateStats() {
             const uniqueSysReqs = new Set(matrixData.map(r => r.sysReqId));
             const uniqueSwReqs = new Set(matrixData.map(r => r.swReqId));
-            const uniqueTests = new Set(matrixData.filter(r => r.tcId !== '(pending)').map(r => r.tcId));
-            const completeCount = matrixData.filter(r => r.status === 'complete').length;
+            const uniqueTests = new Set(matrixData.filter(r => r.testId !== '(pending)').map(r => r.testId));
+            const withTests = matrixData.filter(r => r.testId !== '(pending)').length;
 
             document.getElementById('totalSysReqs').textContent = uniqueSysReqs.size;
             document.getElementById('totalSwReqs').textContent = uniqueSwReqs.size;
             document.getElementById('totalTests').textContent = uniqueTests.size;
-            document.getElementById('coverage').textContent = Math.round(completeCount / matrixData.length * 100) + '%';
+            document.getElementById('coverage').textContent = Math.round(withTests / matrixData.length * 100) + '%';
             document.getElementById('totalRows').textContent = matrixData.length;
         }
 
@@ -235,15 +234,15 @@
             }
 
             tbody.innerHTML = filteredData.map(row => `
-                <tr data-sysreq="${row.sysReqId}" data-type="${row.type}" data-status="${row.status}">
+                <tr data-sysreq="${row.sysReqId}" data-type="${row.type}" data-conf="${row.confidence}">
                     <td class="req-id sys-req">${row.sysReqId}</td>
+                    <td class="desc sys-req" onclick="showModal('${row.sysReqId}', '${escapeHtml(row.sysReqDesc)}')" title="Click to view full text">${truncate(row.sysReqDesc, 80)}</td>
                     <td class="req-id sw-req">${row.swReqId}</td>
-                    <td class="req-id" style="background:#e8f5e9;">${row.swArchId}</td>
-                    <td class="source-link">${row.codeModule}</td>
-                    <td class="req-id" style="background:#fff3e0;">${row.utId}</td>
-                    <td class="req-id test">${row.tcId}</td>
+                    <td class="desc sw-req" onclick="showModal('${row.swReqId}', '${escapeHtml(row.swReqDesc)}')" title="Click to view full text">${truncate(row.swReqDesc, 100)}</td>
+                    <td class="req-id test">${row.testId}</td>
                     <td><span class="type-badge type-${row.type}">${row.type}</span></td>
-                    <td><span class="type-badge ${row.status === 'complete' ? 'type-CFG' : 'type-FSR'}">${row.status}</span></td>
+                    <td class="source-link">${row.source}</td>
+                    <td class="conf-${row.confidence}">${row.confidence}</td>
                 </tr>
             `).join('');
 
@@ -251,8 +250,13 @@
         }
 
         function truncate(str, len) {
-            if (!str || str === '-') return '<span class="empty-content">[No content]</span>';
+            if (!str) return '-';
             return str.length > len ? str.substring(0, len) + '...' : str;
+        }
+
+        function escapeHtml(str) {
+            if (!str) return '';
+            return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
         function getFilteredData() {
@@ -264,9 +268,9 @@
             return matrixData.filter(row => {
                 if (sysReqFilter && row.sysReqId !== sysReqFilter) return false;
                 if (typeFilter && row.type !== typeFilter) return false;
-                if (confFilter && row.status !== confFilter) return false;
+                if (confFilter && row.confidence !== confFilter) return false;
                 if (search) {
-                    const searchStr = [row.sysReqId, row.swReqId, row.swArchId, row.codeModule, row.utId, row.tcId].join(' ').toLowerCase();
+                    const searchStr = [row.sysReqId, row.sysReqDesc, row.swReqId, row.swReqDesc, row.testId, row.source].join(' ').toLowerCase();
                     if (!searchStr.includes(search)) return false;
                 }
                 return true;
@@ -278,35 +282,29 @@
         }
 
         function sortTable(colIndex) {
-            const keys = ['sysReqId', 'swReqId', 'swArchId', 'codeModule', 'utId', 'tcId', 'type', 'status'];
+            const keys = ['sysReqId', 'sysReqDesc', 'swReqId', 'swReqDesc', 'testId', 'type', 'source', 'confidence'];
             const key = keys[colIndex];
             matrixData.sort((a, b) => (a[key] || '').localeCompare(b[key] || ''));
             renderTable();
         }
 
         function exportCSV() {
-            const headers = ['SYS-REQ', 'SW-REQ', 'SW-ARCH', 'Code Module', 'UT', 'TC/IT', 'Type', 'Status'];
+            const headers = ['System Req ID', 'System Requirement', 'SW Req ID', 'Software Requirement', 'Test ID', 'Type', 'Source', 'Confidence'];
             const rows = getFilteredData().map(row => [
-                row.sysReqId, row.swReqId, row.swArchId, row.codeModule, row.utId, row.tcId, row.type, row.status
+                row.sysReqId, row.sysReqDesc, row.swReqId, row.swReqDesc, row.testId, row.type, row.source, row.confidence
             ]);
 
             const csv = [headers, ...rows].map(r => r.map(c => '"' + (c || '').replace(/"/g, '""') + '"').join(',')).join('\n');
             const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'aspice-full-traceability-matrix.csv';
+            link.download = 'aspice-traceability-matrix.csv';
             link.click();
-        }
-
-        // Escape HTML for safe display
-        function escapeHtml(str) {
-            if (!str) return '';
-            return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
         }
 
         // Show modal with full text
         function showModal(id, text) {
-            if (!text || text === '-' || text === '[No content]') return;
+            if (!text || text === '-') return;
             document.getElementById('modalTitle').textContent = id;
             document.getElementById('modalContent').textContent = text;
             document.getElementById('detailModal').style.display = 'flex';

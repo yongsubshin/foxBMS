@@ -109,21 +109,21 @@ Phase L1: Requirements Analysis
 - Activities: Requirement extraction, normalization, ID assignment
 - Responsible Agents: parvis-aispec-code, parvis-aispec-excel, parvis-aispec-pdf, parvis-aispec-transformer, parvis-aispec-reqid
 - Exit Criteria: All requirements have IDs, safety classification complete, parent traceability verified
-- Work Products: Software Requirements Specification (FBMS-WP-SWE1-*)
+- Work Products: Software Requirements Specification (WP-SWE1-*)
 
 Phase L2: Architecture Design
 - Entry Criteria: Requirements phase complete
 - Activities: Architecture definition, requirement allocation, interface design
 - Responsible Agents: parvis-aispec-trace
 - Exit Criteria: Requirements allocated to components, interface specs complete
-- Work Products: Software Architecture Design (FBMS-WP-SWE2-*)
+- Work Products: Software Architecture Design (WP-SWE2-*)
 
 Phase L3: Detailed Design
 - Entry Criteria: Architecture phase complete
 - Activities: Detailed design, algorithm specification
 - Responsible Agents: parvis-aispec-trace, parvis-aicoder-generator
 - Exit Criteria: Design traceability to requirements verified
-- Work Products: Software Detailed Design (FBMS-WP-SWE3-*)
+- Work Products: Software Detailed Design (WP-SWE3-*)
 
 Phase L4: Implementation
 - Entry Criteria: Detailed design complete
@@ -139,21 +139,21 @@ Phase R1: Unit Verification
 - Activities: Unit test generation, execution, coverage analysis
 - Responsible Agents: parvis-aiverify-unittest, parvis-aiverify-coverage
 - Exit Criteria: Coverage targets met, all tests passed
-- Work Products: Unit Test Report (FBMS-WP-SWE4-*)
+- Work Products: Unit Test Report (WP-SWE4-*)
 
 Phase R2: Integration Verification
 - Entry Criteria: All units verified
 - Activities: Integration test design, interface testing
 - Responsible Agents: parvis-aiverify-integration
 - Exit Criteria: Interface tests passed, integration coverage met
-- Work Products: Integration Test Report (FBMS-WP-SWE5-*)
+- Work Products: Integration Test Report (WP-SWE5-*)
 
 Phase R3: System Verification
 - Entry Criteria: Integration complete
 - Activities: System test execution, safety validation
 - Responsible Agents: parvis-aiverify-safety, parvis-aiverify-report
 - Exit Criteria: All acceptance criteria verified
-- Work Products: System Test Report (FBMS-WP-SWE6-*)
+- Work Products: System Test Report (WP-SWE6-*)
 
 Phase R4: Acceptance
 - Entry Criteria: System verification complete

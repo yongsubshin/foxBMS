@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Model Process - foxBMS ASPICE</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .vmodel-svg-container {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 2rem;
+            overflow-x: auto;
+        }
+        .vmodel-svg {
+            min-width: 800px;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: block;
+        }
+        .phase-box {
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .phase-box:hover {
+            filter: brightness(1.1);
+        }
+        .phase-box:hover rect {
+            stroke-width: 3;
+        }
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+        .legend-color.left { background: #bbdefb; border: 2px solid #2196F3; }
+        .legend-color.right { background: #c8e6c9; border: 2px solid var(--primary-color); }
+        .legend-color.center { background: #ffe0b2; border: 2px solid var(--accent-color); }
+        .legend-color.trace { background: transparent; border: 2px dashed #9c27b0; }
+
+        .phase-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .phase-detail-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            border-left: 4px solid var(--primary-color);
+        }
+        .phase-detail-card.left { border-left-color: #2196F3; }
+        .phase-detail-card.right { border-left-color: var(--primary-color); }
+        .phase-detail-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .phase-detail-card h4 .phase-code {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            background: var(--bg-color);
+            border-radius: 4px;
+            color: var(--text-secondary);
+        }
+        .phase-detail-card p {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+        }
+        .phase-detail-card .artifacts {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        .phase-detail-card .artifacts strong {
+            color: var(--text-secondary);
+        }
+        .aspice-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-title">
+                <div>
+                    <h1 data-i18n="vModelPage.title">V-Model Process View</h1>
+                    <span class="header-subtitle" data-i18n="vModelPage.subtitle">ASPICE Level 2 Development Process</span>
+                </div>
+                <div class="header-badges">
+                    <span class="badge badge-aspice">ASPICE Level 2</span>
+                    <span class="badge badge-iso">ISO 26262</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="../../index.html" class="nav-link" data-i18n="common.backToPortal">Back to Portal</a>
+                <a href="../traceability/matrix.html" class="nav-link" data-i18n="common.nav.traceability">Traceability</a>
+                <a href="../metrics/dashboard.html" class="nav-link" data-i18n="common.nav.metrics">Metrics</a>
+                <div class="language-switcher">
+                    <select id="language-select" aria-label="Select Language">
+                        <option value="ko">한국어</option>
+                        <option value="en">English</option>
+                        <option value="ja">日本語</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- V-Model SVG Diagram -->
+        <section class="vmodel-svg-container">
+            <svg class="vmodel-svg" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+                <!-- Traceability Lines (dashed) -->
+                <line x1="180" y1="80" x2="720" y2="80" stroke="#9c27b0" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+                <line x1="180" y1="160" x2="720" y2="160" stroke="#9c27b0" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+                <line x1="180" y1="240" x2="720" y2="240" stroke="#9c27b0" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+                <line x1="180" y1="320" x2="720" y2="320" stroke="#9c27b0" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+
+                <!-- V-Shape Lines -->
+                <line x1="120" y1="60" x2="450" y2="400" stroke="#e0e0e0" stroke-width="3"/>
+                <line x1="450" y1="400" x2="780" y2="60" stroke="#e0e0e0" stroke-width="3"/>
+
+                <!-- Left Side (Requirements & Design) -->
+                <g class="phase-box" onclick="showPhaseDetail('sys-req')">
+                    <rect x="40" y="40" width="160" height="60" rx="8" fill="#e3f2fd" stroke="#2196F3" stroke-width="2"/>
+                    <text x="120" y="65" text-anchor="middle" font-size="12" font-weight="600" fill="#1976d2">SYS.2</text>
+                    <text x="120" y="82" text-anchor="middle" font-size="10" fill="#424242">System Requirements</text>
+                </g>
+
+                <g class="phase-box" onclick="showPhaseDetail('sw-req')">
+                    <rect x="100" y="120" width="160" height="60" rx="8" fill="#e3f2fd" stroke="#2196F3" stroke-width="2"/>
+                    <text x="180" y="145" text-anchor="middle" font-size="12" font-weight="600" fill="#1976d2">SWE.1</text>
+                    <text x="180" y="162" text-anchor="middle" font-size="10" fill="#424242">SW Requirements</text>
+                </g>
+
+                <g class="phase-box" onclick="showPhaseDetail('sw-arch')">
+                    <rect x="160" y="200" width="160" height="60" rx="8" fill="#e3f2fd" stroke="#2196F3" stroke-width="2"/>
+                    <text x="240" y="225" text-anchor="middle" font-size="12" font-weight="600" fill="#1976d2">SWE.2</text>
+                    <text x="240" y="242" text-anchor="middle" font-size="10" fill="#424242">SW Architecture</text>
+                </g>
+
+                <g class="phase-box" onclick="showPhaseDetail('sw-design')">
+                    <rect x="220" y="280" width="160" height="60" rx="8" fill="#e3f2fd" stroke="#2196F3" stroke-width="2"/>
+                    <text x="300" y="305" text-anchor="middle" font-size="12" font-weight="600" fill="#1976d2">SWE.3</text>
+                    <text x="300" y="322" text-anchor="middle" font-size="10" fill="#424242">Detailed Design</text>
+                </g>
+
+                <!-- Bottom (Implementation) -->
+                <g class="phase-box" onclick="showPhaseDetail('coding')">
+                    <rect x="370" y="370" width="160" height="60" rx="8" fill="#fff3e0" stroke="#FF9800" stroke-width="2"/>
+                    <text x="450" y="395" text-anchor="middle" font-size="12" font-weight="600" fill="#ef6c00">Implementation</text>
+                    <text x="450" y="412" text-anchor="middle" font-size="10" fill="#424242">Coding & Unit</text>
+                </g>
+
+                <!-- Right Side (Testing & Integration) -->
+                <g class="phase-box" onclick="showPhaseDetail('unit-test')">
+                    <rect x="520" y="280" width="160" height="60" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="2"/>
+                    <text x="600" y="305" text-anchor="middle" font-size="12" font-weight="600" fill="#2e7d32">SWE.4</text>
+                    <text x="600" y="322" text-anchor="middle" font-size="10" fill="#424242">Unit Verification</text>
+                </g>
+
+                <g class="phase-box" onclick="showPhaseDetail('integ-test')">
+                    <rect x="580" y="200" width="160" height="60" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="2"/>
+                    <text x="660" y="225" text-anchor="middle" font-size="12" font-weight="600" fill="#2e7d32">SWE.5</text>
+                    <text x="660" y="242" text-anchor="middle" font-size="10" fill="#424242">Integration Test</text>
+                </g>
+
+                <g class="phase-box" onclick="showPhaseDetail('sw-qual')">
+                    <rect x="640" y="120" width="160" height="60" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="2"/>
+                    <text x="720" y="145" text-anchor="middle" font-size="12" font-weight="600" fill="#2e7d32">SWE.6</text>
+                    <text x="720" y="162" text-anchor="middle" font-size="10" fill="#424242">Qualification Test</text>
+                </g>
+
+                <g class="phase-box" onclick="showPhaseDetail('sys-test')">
+                    <rect x="700" y="40" width="160" height="60" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="2"/>
+                    <text x="780" y="65" text-anchor="middle" font-size="12" font-weight="600" fill="#2e7d32">SYS.4/5</text>
+                    <text x="780" y="82" text-anchor="middle" font-size="10" fill="#424242">System Integration</text>
+                </g>
+
+                <!-- Arrows showing flow -->
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                        <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+                    </marker>
+                </defs>
+
+                <!-- Traceability Labels -->
+                <text x="450" y="72" text-anchor="middle" font-size="9" fill="#9c27b0" font-style="italic">SYS-REQ Traceability</text>
+                <text x="450" y="152" text-anchor="middle" font-size="9" fill="#9c27b0" font-style="italic">SW-REQ Traceability</text>
+                <text x="450" y="232" text-anchor="middle" font-size="9" fill="#9c27b0" font-style="italic">SW-ARCH Traceability</text>
+                <text x="450" y="312" text-anchor="middle" font-size="9" fill="#9c27b0" font-style="italic">Design Traceability</text>
+
+                <!-- foxBMS Label -->
+                <text x="450" y="470" text-anchor="middle" font-size="14" font-weight="600" fill="#1a5f2a">foxBMS 2.0 - ASPICE Level 2 Process</text>
+            </svg>
+
+            <!-- Legend -->
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color left"></div>
+                    <span data-i18n="vModel.legend.system">Requirements & Design</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color center"></div>
+                    <span data-i18n="vModel.legend.implementation">Implementation</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color right"></div>
+                    <span>Verification & Validation</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color trace"></div>
+                    <span data-i18n="vModel.legend.traceability">Traceability</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase Details -->
+        <section class="phase-details">
+            <div class="phase-detail-card left">
+                <h4>
+                    <span class="phase-code">SYS.2</span>
+                    System Requirements
+                    <span class="aspice-badge">7 Items</span>
+                </h4>
+                <p>System-level requirements defining BMS functionality</p>
+                <div class="artifacts">
+                    <strong>Artifacts:</strong> SYS-REQ-001 ~ SYS-REQ-007
+                </div>
+            </div>
+            <div class="phase-detail-card left">
+                <h4>
+                    <span class="phase-code">SWE.1</span>
+                    SW Requirements
+                    <span class="aspice-badge">648 Items</span>
+                </h4>
+                <p>Software requirements with safety requirements (FSR) and HW/SW interface (HSI)</p>
+                <div class="artifacts">
+                    <strong>Artifacts:</strong> SW-REQ-xxx, FSR-xxx, HSI-xxx
+                </div>
+            </div>
+            <div class="phase-detail-card left">
+                <h4>
+                    <span class="phase-code">SWE.2</span>
+                    SW Architecture
+                    <span class="aspice-badge">34 Components</span>
+                </h4>
+                <p>Software architecture design with module decomposition</p>
+                <div class="artifacts">
+                    <strong>Artifacts:</strong> SW-ARCH-xxx components
+                </div>
+            </div>
+            <div class="phase-detail-card left">
+                <h4>
+                    <span class="phase-code">SWE.3</span>
+                    Detailed Design
+                    <span class="aspice-badge">~200 Files</span>
+                </h4>
+                <p>Unit-level design with Doxygen documentation</p>
+                <div class="artifacts">
+                    <strong>Artifacts:</strong> Source files with Doxygen comments
+                </div>
+            </div>
+            <div class="phase-detail-card right">
+                <h4>
+                    <span class="phase-code">SWE.4</span>
+                    Unit Verification
+                    <span class="aspice-badge">In Progress</span>
+                </h4>
+                <p>Unit test cases for software units</p>
+                <div class="artifacts">
+                    <strong>Artifacts:</strong> UT-xxx test cases (pending)
+                </div>
+            </div>
+            <div class="phase-detail-card right">
+                <h4>
+                    <span class="phase-code">SWE.5</span>
+                    Integration Test
+                    <span class="aspice-badge">648 TC</span>
+                </h4>
+                <p>Integration test cases for component interactions</p>
+                <div class="artifacts">
+                    <strong>Artifacts:</strong> TC-xxx test cases
+                </div>
+            </div>
+        </section>
+
+        <!-- ASPICE ID Reference -->
+        <section class="id-format-section">
+            <h3 class="id-format-title">ASPICE Artifact ID Reference</h3>
+            <div class="id-format-grid">
+                <div class="id-format-item">
+                    <strong>SYS-REQ-xxx</strong>
+                    System Requirements
+                </div>
+                <div class="id-format-item">
+                    <strong>SW-REQ-xxx</strong>
+                    Software Requirements
+                </div>
+                <div class="id-format-item">
+                    <strong>FSR-xxx</strong>
+                    Functional Safety
+                </div>
+                <div class="id-format-item">
+                    <strong>HSI-xxx</strong>
+                    HW/SW Interface
+                </div>
+                <div class="id-format-item">
+                    <strong>SW-ARCH-xxx</strong>
+                    Architecture
+                </div>
+                <div class="id-format-item">
+                    <strong>TC-xxx</strong>
+                    Test Cases
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <span data-i18n="footer.version">Version</span>: 2.0.0 |
+                <span data-i18n="footer.generated">Generated</span>: 2025-12-18
+            </div>
+            <div class="footer-badges">
+                <span class="footer-badge">V-Model</span>
+                <span class="footer-badge">ASPICE Level 2</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/i18n.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            await i18n.init({
+                defaultLanguage: 'ko',
+                supportedLanguages: ['ko', 'en', 'ja'],
+                languageFilePath: '../../locales/',
+                detectBrowserLanguage: true,
+                persistLanguage: true,
+                fallbackLanguage: 'ko'
+            });
+
+            updateTranslations();
+
+            const langSelect = document.getElementById('language-select');
+            langSelect.value = i18n.getCurrentLanguage();
+
+            langSelect.addEventListener('change', async (e) => {
+                await i18n.changeLanguage(e.target.value);
+                updateTranslations();
+            });
+        });
+
+        function updateTranslations() {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                const translation = i18n.t(key);
+                if (translation && translation !== key) {
+                    element.textContent = translation;
+                }
+            });
+        }
+
+        function showPhaseDetail(phase) {
+            // Could implement modal or scroll to detail section
+            console.log('Selected phase:', phase);
+        }
+    </script>
+</body>
+</html>

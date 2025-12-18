@@ -12,7 +12,7 @@
     "nav": {
       "processDocs": "プロセスドキュメント",
       "apiReference": "APIリファレンス",
-      "traceability": "トレーサビリティ",
+      "traceability": "トレーサビリティマトリクス",
       "misra": "MISRA準拠",
       "metrics": "品質メトリクス"
     },
@@ -125,6 +125,15 @@
     "subtitle": "foxBMS V-モデルプロセス品質指標",
     "keyAchievements": "主要な成果",
     "reqByModule": "モジュール別要件",
+    "moduleDescriptions": {
+      "Drivers": "低レベルハードウェアドライバ (CAN, SPI, GPIO)",
+      "BMS": "バッテリー管理システムコア機能",
+      "Config": "システム構成パラメータ",
+      "TS": "温度センサーモニタリング",
+      "Algorithm": "SOC/SOE/SOH計算アルゴリズム",
+      "AFE": "アナログフロントエンドインターフェース (セル監視)",
+      "SBC": "システムベースチップインターフェース"
+    },
     "safetyReqByAsil": "ASIL別安全要件",
     "testCoverage": "レベル別テストカバレッジ",
     "qualityScores": "品質スコア",
@@ -151,13 +160,31 @@
   },
   "traceabilityPage": {
     "title": "トレーサビリティマトリックス",
-    "subtitle": "双方向要件トレース",
+    "subtitle": "双方向要件トレース - ASPICE形式",
     "summary": {
       "totalRequirements": "総要件数",
       "tracedToDesign": "設計へのトレース",
       "tracedToTest": "テストへのトレース",
-      "coverage": "カバレッジ"
-    }
+      "coverage": "カバレッジ",
+      "totalEntries": "総エントリ",
+      "completeEntries": "完全トレース",
+      "partialEntries": "部分トレース"
+    },
+    "columns": {
+      "sysReq": "SYS-REQ",
+      "swReq": "SW-REQ",
+      "swArch": "SW-ARCH",
+      "codeModule": "コードモジュール",
+      "ut": "UT",
+      "tc": "TC",
+      "status": "ステータス"
+    },
+    "filter": {
+      "all": "すべて",
+      "complete": "完全",
+      "partial": "部分"
+    },
+    "search": "検索..."
   },
   "viewer": {
     "title": "ドキュメントビューア",
@@ -169,5 +196,66 @@
     "searchPlaceholder": "内容を検索...",
     "totalItems": "総項目数",
     "fields": "フィールド"
+  },
+  "dashboard": {
+    "title": "ASPICE ドキュメント ダッシュボード",
+    "subtitle": "foxBMS 2.0 - ASPICE Level 2 完成",
+    "summary": {
+      "sysReqs": "システム要件",
+      "swReqs": "SW要件",
+      "archComponents": "アーキテクチャ コンポーネント",
+      "testCases": "テストケース",
+      "traceability": "トレーサビリティ完了率"
+    },
+    "idFormat": {
+      "title": "ASPICE ID形式",
+      "sysReq": "SYS-REQ-xxx",
+      "swReq": "SW-REQ-xxx",
+      "fsr": "FSR-xxx",
+      "hsi": "HSI-xxx",
+      "arch": "SW-ARCH-xxx",
+      "ut": "UT-xxx",
+      "tc": "TC-xxx"
+    }
+  },
+  "vModelPage": {
+    "title": "V-モデル プロセスビュー",
+    "subtitle": "ASPICE Level 2 開発プロセス",
+    "phases": {
+      "sysReq": "システム要件",
+      "swReq": "SW要件",
+      "swArch": "SWアーキテクチャ",
+      "swDesign": "SW詳細設計",
+      "coding": "コーディング",
+      "unitTest": "ユニットテスト",
+      "integTest": "統合テスト",
+      "sysTest": "システムテスト"
+    },
+    "legend": {
+      "complete": "完了",
+      "inProgress": "進行中",
+      "planned": "計画済み"
+    }
+  },
+  "reversePage": {
+    "title": "逆方向トレーサビリティビュー",
+    "subtitle": "ソースコード -> 関連要件",
+    "stats": {
+      "sourceFiles": "ソースファイル",
+      "reqTags": "要件タグ",
+      "fsrTags": "FSRタグ",
+      "swReqTags": "SW-REQタグ",
+      "avgPerFile": "ファイル平均"
+    },
+    "filters": {
+      "allModules": "全モジュール",
+      "allTypes": "全要件タイプ",
+      "searchPlaceholder": "ファイルまたは要件を検索..."
+    },
+    "showing": "表示中",
+    "files": "ファイル",
+    "toggleAll": "全切替",
+    "line": "行",
+    "requirements": "要件"
   }
 }

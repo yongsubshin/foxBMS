@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traceability Matrix - foxBMS ASPICE</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .matrix-table-wrapper {
+            overflow-x: auto;
+        }
+        .matrix-table {
+            min-width: 900px;
+        }
+        .filter-active {
+            background: var(--primary-color) !important;
+            color: white !important;
+        }
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-color);
+            background: white;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            font-size: 0.875rem;
+            transition: var(--transition-fast);
+        }
+        .filter-btn:hover {
+            background: var(--bg-color);
+        }
+        .highlight-row {
+            background: #fffde7 !important;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-title">
+                <div>
+                    <h1 data-i18n="traceabilityPage.title">Traceability Matrix</h1>
+                    <span class="header-subtitle" data-i18n="traceabilityPage.subtitle">Bidirectional Requirements Tracing - ASPICE Format</span>
+                </div>
+                <div class="header-badges">
+                    <span class="badge badge-aspice">ASPICE Level 2</span>
+                    <span class="badge badge-iso">ISO 26262</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="../../index.html" class="nav-link" data-i18n="common.backToPortal">Back to Portal</a>
+                <a href="../metrics/dashboard.html" class="nav-link" data-i18n="common.nav.metrics">Metrics</a>
+                <a href="../v-model/index.html" class="nav-link">V-Model</a>
+                <div class="language-switcher">
+                    <select id="language-select" aria-label="Select Language">
+                        <option value="ko">한국어</option>
+                        <option value="en">English</option>
+                        <option value="ja">日本語</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Summary Cards -->
+        <section class="summary-grid">
+            <div class="summary-card trace">
+                <div class="summary-value">648</div>
+                <div class="summary-label" data-i18n="traceabilityPage.summary.totalEntries">Total Entries</div>
+            </div>
+            <div class="summary-card sw">
+                <div class="summary-value">518</div>
+                <div class="summary-label" data-i18n="traceabilityPage.summary.completeEntries">Complete Traced</div>
+            </div>
+            <div class="summary-card test">
+                <div class="summary-value">130</div>
+                <div class="summary-label" data-i18n="traceabilityPage.summary.partialEntries">Partial Traced</div>
+            </div>
+            <div class="summary-card sys">
+                <div class="summary-value">80%</div>
+                <div class="summary-label" data-i18n="traceabilityPage.summary.coverage">Coverage</div>
+            </div>
+        </section>
+
+        <!-- Traceability Matrix Table -->
+        <section class="table-container">
+            <div class="table-header">
+                <h3 class="table-title">ASPICE Traceability Matrix</h3>
+                <div class="table-controls">
+                    <input type="text" class="search-input" id="search-input" placeholder="Search..." data-i18n-placeholder="traceabilityPage.search">
+                    <button class="filter-btn filter-active" data-filter="all" data-i18n="traceabilityPage.filter.all">All</button>
+                    <button class="filter-btn" data-filter="complete" data-i18n="traceabilityPage.filter.complete">Complete</button>
+                    <button class="filter-btn" data-filter="partial" data-i18n="traceabilityPage.filter.partial">Partial</button>
+                </div>
+            </div>
+            <div class="matrix-table-wrapper">
+                <table class="matrix-table" id="matrix-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="traceabilityPage.columns.sysReq">SYS-REQ</th>
+                            <th data-i18n="traceabilityPage.columns.swReq">SW-REQ</th>
+                            <th data-i18n="traceabilityPage.columns.swArch">SW-ARCH</th>
+                            <th data-i18n="traceabilityPage.columns.codeModule">Code Module</th>
+                            <th data-i18n="traceabilityPage.columns.ut">UT</th>
+                            <th data-i18n="traceabilityPage.columns.tc">TC</th>
+                            <th data-i18n="traceabilityPage.columns.status">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="matrix-tbody">
+                        <!-- Data will be loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination" id="pagination">
+                <!-- Pagination buttons will be added dynamically -->
+            </div>
+        </section>
+
+        <!-- Legend -->
+        <section class="id-format-section">
+            <h3 class="id-format-title">ASPICE ID Prefix Reference</h3>
+            <div class="id-format-grid">
+                <div class="id-format-item">
+                    <strong style="color: #9c27b0;">SYS-REQ-xxx</strong>
+                    System Level Requirement
+                </div>
+                <div class="id-format-item">
+                    <strong style="color: #2196F3;">SW-REQ-xxx</strong>
+                    Software Requirement
+                </div>
+                <div class="id-format-item">
+                    <strong style="color: #f44336;">FSR-xxx</strong>
+                    Functional Safety Requirement
+                </div>
+                <div class="id-format-item">
+                    <strong style="color: #ff9800;">HSI-xxx</strong>
+                    HW/SW Interface Requirement
+                </div>
+                <div class="id-format-item">
+                    <strong style="color: #4CAF50;">SW-ARCH-xxx</strong>
+                    Architecture Component
+                </div>
+                <div class="id-format-item">
+                    <strong style="color: #00bcd4;">TC-xxx</strong>
+                    Test Case
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <span data-i18n="footer.version">Version</span>: 2.0.0 |
+                <span data-i18n="footer.generated">Generated</span>: 2025-12-18
+            </div>
+            <div class="footer-badges">
+                <span class="footer-badge">ASPICE Traceability</span>
+                <span class="footer-badge">Bidirectional</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/i18n.js"></script>
+    <script>
+        // Sample traceability data (in production, load from JSON)
+        const traceabilityData = [
+            { sys_req: "SYS-REQ-001", sw_req: "SW-REQ-ALG-001", sw_arch: "SW-ARCH-ALG-01", code: "algorithm.c", ut: "(pending)", tc: "TC-ALGO-001", status: "complete" },
+            { sys_req: "SYS-REQ-001", sw_req: "SW-REQ-ALG-002", sw_arch: "SW-ARCH-ALG-01", code: "algorithm.h", ut: "(pending)", tc: "TC-ALGO-002", status: "complete" },
+            { sys_req: "SYS-REQ-001", sw_req: "SW-REQ-ALG-003", sw_arch: "SW-ARCH-ALG-01", code: "algorithm.h", ut: "(pending)", tc: "TC-ALGO-003", status: "complete" },
+            { sys_req: "SYS-REQ-001", sw_req: "SW-REQ-ALG-004", sw_arch: "SW-ARCH-ALG-01", code: "algorithm.c", ut: "(pending)", tc: "TC-ALGO-004", status: "complete" },
+            { sys_req: "SYS-REQ-001", sw_req: "SW-REQ-ALG-005", sw_arch: "SW-ARCH-ALG-01", code: "algorithm.c", ut: "(pending)", tc: "TC-ALGO-005", status: "complete" },
+            { sys_req: "SYS-REQ-001", sw_req: "FSR-ALG-001", sw_arch: "SW-ARCH-ALG-01", code: "algorithm.c", ut: "(pending)", tc: "TC-ALGO-006", status: "complete" },
+            { sys_req: "SYS-REQ-001", sw_req: "SW-REQ-ALG-006", sw_arch: "SW-ARCH-ALG-01", code: "algorithm_cfg.h", ut: "(pending)", tc: "TC-ALGO-007", status: "complete" },
+            { sys_req: "SYS-REQ-001", sw_req: "FSR-ALG-002", sw_arch: "SW-ARCH-ALG-01", code: "algorithm_cfg.c", ut: "(pending)", tc: "TC-ALGO-008", status: "complete" },
+            { sys_req: "SYS-REQ-001", sw_req: "SW-REQ-ALG-007", sw_arch: "SW-ARCH-ALG-01", code: "algorithm_cfg.h", ut: "(pending)", tc: "TC-ALGO-009", status: "complete" },
+            { sys_req: "SYS-REQ-001", sw_req: "SW-REQ-ALG-008", sw_arch: "SW-ARCH-ALG-01", code: "algorithm_cfg.h", ut: "(pending)", tc: "TC-ALGO-010", status: "complete" },
+            { sys_req: "SYS-REQ-001", sw_req: "SW-REQ-ALG-009", sw_arch: "SW-ARCH-ALG-01", code: "moving_average.c", ut: "(pending)", tc: "TC-ALGO-011", status: "complete" },
+            { sys_req: "SYS-REQ-001", sw_req: "SW-REQ-ALG-010", sw_arch: "SW-ARCH-ALG-01", code: "moving_average.h", ut: "(pending)", tc: "TC-ALGO-012", status: "complete" },
+            { sys_req: "SYS-REQ-002", sw_req: "SW-REQ-AFE-001", sw_arch: "SW-ARCH-AFE-01", code: "afe.c", ut: "(pending)", tc: "TC-AFE-001", status: "complete" },
+            { sys_req: "SYS-REQ-002", sw_req: "SW-REQ-AFE-002", sw_arch: "SW-ARCH-AFE-01", code: "afe.c", ut: "(pending)", tc: "TC-AFE-002", status: "complete" },
+            { sys_req: "SYS-REQ-002", sw_req: "SW-REQ-AFE-003", sw_arch: "SW-ARCH-AFE-01", code: "afe.c", ut: "(pending)", tc: "TC-AFE-003", status: "complete" },
+            { sys_req: "SYS-REQ-002", sw_req: "FSR-AFE-001", sw_arch: "SW-ARCH-AFE-01", code: "afe.c", ut: "(pending)", tc: "TC-AFE-004", status: "complete" },
+            { sys_req: "SYS-REQ-002", sw_req: "SW-REQ-AFE-004", sw_arch: "SW-ARCH-AFE-01", code: "afe.h", ut: "(pending)", tc: "TC-AFE-005", status: "complete" },
+            { sys_req: "SYS-REQ-002", sw_req: "SW-REQ-AFE-005", sw_arch: "SW-ARCH-AFE-01", code: "afe.h", ut: "(pending)", tc: "TC-AFE-006", status: "complete" },
+            { sys_req: "SYS-REQ-003", sw_req: "SW-REQ-TMP-001", sw_arch: "SW-ARCH-TS-01", code: "beta.c", ut: "(pending)", tc: "TC-TS-001", status: "complete" },
+            { sys_req: "SYS-REQ-003", sw_req: "SW-REQ-TMP-002", sw_arch: "SW-ARCH-TS-01", code: "beta.c", ut: "(pending)", tc: "TC-TS-002", status: "complete" },
+            { sys_req: "SYS-REQ-003", sw_req: "SW-REQ-TMP-003", sw_arch: "SW-ARCH-TS-01", code: "beta.c", ut: "(pending)", tc: "TC-TS-003", status: "complete" },
+            { sys_req: "SYS-REQ-003", sw_req: "FSR-TMP-001", sw_arch: "SW-ARCH-TS-01", code: "beta.h", ut: "(pending)", tc: "TC-TS-004", status: "complete" },
+            { sys_req: "SYS-REQ-004", sw_req: "SW-REQ-CFG-001", sw_arch: "SW-ARCH-CON-01", code: "battery_cell_cfg.c", ut: "(pending)", tc: "TC-CFG-001", status: "complete" },
+            { sys_req: "SYS-REQ-004", sw_req: "FSR-CFG-001", sw_arch: "SW-ARCH-CON-01", code: "battery_cell_cfg.c", ut: "(pending)", tc: "TC-CFG-002", status: "complete" },
+            { sys_req: "SYS-REQ-005", sw_req: "SW-REQ-SBC-001", sw_arch: "SW-ARCH-SBC-01", code: "sbc.c", ut: "(pending)", tc: "TC-SBC-001", status: "complete" },
+            { sys_req: "SYS-REQ-005", sw_req: "SW-REQ-SBC-002", sw_arch: "SW-ARCH-SBC-01", code: "sbc.c", ut: "(pending)", tc: "TC-SBC-002", status: "complete" },
+            { sys_req: "SYS-REQ-005", sw_req: "FSR-SBC-001", sw_arch: "SW-ARCH-SBC-01", code: "nxpfs85xx.c", ut: "(pending)", tc: "TC-SBC-003", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-001", sw_arch: "SW-ARCH-ADC-01", code: "adc.c", ut: "(pending)", tc: "TC-DRV-001", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-007", sw_arch: "SW-ARCH-SPI-01", code: "spi.c", ut: "(pending)", tc: "TC-DRV-007", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-016", sw_arch: "SW-ARCH-I2C-01", code: "i2c.c", ut: "(pending)", tc: "TC-DRV-016", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-024", sw_arch: "SW-ARCH-DMA-01", code: "dma.c", ut: "(pending)", tc: "TC-DRV-024", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-030", sw_arch: "SW-ARCH-PWM-01", code: "pwm.c", ut: "(pending)", tc: "TC-DRV-030", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "HSI-DRV-001", sw_arch: "SW-ARCH-RTC-01", code: "rtc.c", ut: "(pending)", tc: "TC-DRV-036", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-048", sw_arch: "SW-ARCH-LED-01", code: "led.c", ut: "(pending)", tc: "TC-DRV-048", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-053", sw_arch: "SW-ARCH-MCU-01", code: "mcu.c", ut: "(pending)", tc: "TC-DRV-053", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "HSI-DRV-002", sw_arch: "SW-ARCH-INT-01", code: "interlock.c", ut: "(pending)", tc: "TC-DRV-059", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-065", sw_arch: "SW-ARCH-FRA-01", code: "fram.c", ut: "(pending)", tc: "TC-DRV-065", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-072", sw_arch: "SW-ARCH-FOX-01", code: "foxmath.c", ut: "(pending)", tc: "TC-DRV-072", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-076", sw_arch: "SW-ARCH-CHE-01", code: "checksum.c", ut: "(pending)", tc: "TC-DRV-076", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-078", sw_arch: "SW-ARCH-CRC-01", code: "crc.c", ut: "(pending)", tc: "TC-DRV-078", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-081", sw_arch: "SW-ARCH-PEX-01", code: "pex.c", ut: "(pending)", tc: "TC-DRV-081", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-087", sw_arch: "SW-ARCH-PHY-01", code: "dp83869.c", ut: "(pending)", tc: "TC-DRV-087", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-091", sw_arch: "SW-ARCH-MEA-01", code: "meas.c", ut: "(pending)", tc: "TC-DRV-091", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-096", sw_arch: "SW-ARCH-HTS-01", code: "htsensor.c", ut: "(pending)", tc: "TC-DRV-096", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-099", sw_arch: "SW-ARCH-SPS-01", code: "sps.c", ut: "(pending)", tc: "TC-DRV-099", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-110", sw_arch: "SW-ARCH-CON-03", code: "contactor.c", ut: "(pending)", tc: "TC-DRV-110", status: "complete" },
+            { sys_req: "SYS-REQ-006", sw_req: "SW-REQ-DRV-119", sw_arch: "SW-ARCH-CAN-01", code: "can.c", ut: "(pending)", tc: "TC-DRV-119", status: "complete" },
+            { sys_req: "SYS-REQ-007", sw_req: "SW-REQ-BMS-001", sw_arch: "SW-ARCH-BMS-01", code: "bms.c", ut: "(pending)", tc: "TC-BMS-001", status: "complete" },
+            { sys_req: "SYS-REQ-007", sw_req: "SW-REQ-BMS-002", sw_arch: "SW-ARCH-BMS-01", code: "bms.c", ut: "(pending)", tc: "TC-BMS-002", status: "complete" },
+            { sys_req: "SYS-REQ-007", sw_req: "SW-REQ-BMS-003", sw_arch: "SW-ARCH-BMS-01", code: "bms.c", ut: "(pending)", tc: "TC-BMS-003", status: "complete" },
+        ];
+
+        // Pagination settings
+        const ITEMS_PER_PAGE = 20;
+        let currentPage = 1;
+        let filteredData = [...traceabilityData];
+        let currentFilter = 'all';
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Initialize i18n
+            await i18n.init({
+                defaultLanguage: 'ko',
+                supportedLanguages: ['ko', 'en', 'ja'],
+                languageFilePath: '../../locales/',
+                detectBrowserLanguage: true,
+                persistLanguage: true,
+                fallbackLanguage: 'ko'
+            });
+
+            updateTranslations();
+
+            // Set language selector
+            const langSelect = document.getElementById('language-select');
+            langSelect.value = i18n.getCurrentLanguage();
+
+            langSelect.addEventListener('change', async (e) => {
+                await i18n.changeLanguage(e.target.value);
+                updateTranslations();
+            });
+
+            // Initialize table
+            renderTable();
+            renderPagination();
+
+            // Search functionality
+            document.getElementById('search-input').addEventListener('input', (e) => {
+                filterData(e.target.value, currentFilter);
+            });
+
+            // Filter buttons
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('filter-active'));
+                    e.target.classList.add('filter-active');
+                    currentFilter = e.target.dataset.filter;
+                    filterData(document.getElementById('search-input').value, currentFilter);
+                });
+            });
+        });
+
+        function filterData(searchTerm, statusFilter) {
+            filteredData = traceabilityData.filter(item => {
+                const matchesSearch = !searchTerm ||
+                    Object.values(item).some(val =>
+                        String(val).toLowerCase().includes(searchTerm.toLowerCase())
+                    );
+                const matchesStatus = statusFilter === 'all' || item.status === statusFilter;
+                return matchesSearch && matchesStatus;
+            });
+            currentPage = 1;
+            renderTable();
+            renderPagination();
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('matrix-tbody');
+            const start = (currentPage - 1) * ITEMS_PER_PAGE;
+            const end = start + ITEMS_PER_PAGE;
+            const pageData = filteredData.slice(start, end);
+
+            tbody.innerHTML = pageData.map(item => `
+                <tr>
+                    <td class="id-cell" style="color: #9c27b0;">${item.sys_req}</td>
+                    <td class="id-cell" style="color: ${item.sw_req.startsWith('FSR') ? '#f44336' : item.sw_req.startsWith('HSI') ? '#ff9800' : '#2196F3'};">${item.sw_req}</td>
+                    <td class="id-cell" style="color: #4CAF50;">${item.sw_arch}</td>
+                    <td>${item.code}</td>
+                    <td class="id-cell">${item.ut}</td>
+                    <td class="id-cell" style="color: #00bcd4;">${item.tc}</td>
+                    <td><span class="status-badge ${item.status}">${item.status === 'complete' ? 'Complete' : 'Partial'}</span></td>
+                </tr>
+            `).join('');
+        }
+
+        function renderPagination() {
+            const pagination = document.getElementById('pagination');
+            const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
+
+            let html = '';
+
+            // Previous button
+            html += `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="changePage(${currentPage - 1})">Prev</button>`;
+
+            // Page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+                    html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
+                } else if (i === currentPage - 3 || i === currentPage + 3) {
+                    html += `<span style="padding: 0 0.5rem;">...</span>`;
+                }
+            }
+
+            // Next button
+            html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="changePage(${currentPage + 1})">Next</button>`;
+
+            // Info
+            html += `<span style="margin-left: 1rem; color: var(--text-secondary); font-size: 0.875rem;">
+                Showing ${(currentPage - 1) * ITEMS_PER_PAGE + 1}-${Math.min(currentPage * ITEMS_PER_PAGE, filteredData.length)} of ${filteredData.length}
+            </span>`;
+
+            pagination.innerHTML = html;
+        }
+
+        function changePage(page) {
+            const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
+            if (page < 1 || page > totalPages) return;
+            currentPage = page;
+            renderTable();
+            renderPagination();
+        }
+
+        function updateTranslations() {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                const translation = i18n.t(key);
+                if (translation && translation !== key) {
+                    element.textContent = translation;
+                }
+            });
+            // Update placeholder attributes
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+                const key = element.getAttribute('data-i18n-placeholder');
+                const translation = i18n.t(key);
+                if (translation && translation !== key) {
+                    element.placeholder = translation;
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -58,7 +58,7 @@ Doxygen Template Generation:
 - Support foxBMS-specific documentation patterns
 
 Requirement Link Insertion:
-- Insert @requirement tags linking to FBMS IDs
+- Insert @requirement tags linking to ASPICE IDs (SW-REQ, FSR, HSI)
 - Validate requirement ID format and existence
 - Support multiple requirement links per element
 - Generate bidirectional traceability
@@ -156,12 +156,12 @@ Document the overall enum with @brief and @details. Document each enum value inl
 ### Requirement Linking
 
 Use @requirement tag for traceability:
-- Format: @requirement{FBMS-TYPE-MODULE-SEQ}
+- Format: @requirement{SW-REQ-MODULE-SEQ} or @requirement{FSR-MODULE-SEQ} or @requirement{HSI-MODULE-SEQ}
 - Multiple requirements: Multiple @requirement tags
 - Place after @return or as last item in function block
 
 Requirement Tag Usage:
-Add @requirement tags after the standard documentation elements. Each @requirement links to a specific FBMS requirement ID. Multiple requirements can be linked by adding multiple @requirement lines.
+Add @requirement tags after the standard documentation elements. Each @requirement links to a specific ASPICE requirement ID (SW-REQ for software requirements, FSR for functional safety requirements, HSI for HW/SW interface requirements). Multiple requirements can be linked by adding multiple @requirement lines.
 
 ## Documentation Templates
 

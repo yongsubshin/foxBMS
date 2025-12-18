@@ -174,8 +174,8 @@ Error Guessing:
 Unit Test Structure:
 
 Test Header:
-- Requirement ID (FBMS-SWE-XXX-NNN)
-- Test ID (FBMS-TC-UT-XXX-NNN)
+- Requirement ID (SW-REQ-XXX-NNN or FSR-XXX-NNN)
+- Test ID (TC-UT-XXX-NNN)
 - Test description
 - Preconditions
 - Expected result
@@ -245,8 +245,8 @@ For each requirement:
 4. Document test-to-requirement link
 
 Test Case Specification:
-- test_id: FBMS-TC-UT-[MODULE]-[SEQ]
-- requirement_id: Linked requirement
+- test_id: TC-UT-[MODULE]-[SEQ]
+- requirement_id: Linked requirement (SW-REQ, FSR, or HSI format)
 - description: What is being tested
 - preconditions: Required state before test
 - inputs: Input values

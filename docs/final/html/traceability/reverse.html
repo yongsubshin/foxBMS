@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Traceability | foxBMS Documentation</title>
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <script src="../assets/js/i18n.js"></script>
+    <style>
+        :root {
+            --primary: #1a5f7a;
+            --secondary: #57c5b6;
+            --dark: #002b5b;
+            --light: #f8f9fa;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --fsr: #f8d7da;
+            --swe: #cce5ff;
+            --hsi: #fff3cd;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f7fa; }
+        .header { background: linear-gradient(135deg, #002b5b, #1a5f7a); color: white; padding: 2rem; }
+        .header h1 { margin-bottom: 0.5rem; }
+        .container { max-width: 1600px; margin: 0 auto; padding: 1.5rem; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+        .stat { background: white; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .stat-value { font-size: 1.8rem; font-weight: 700; color: var(--primary); }
+        .stat-label { color: #666; font-size: 0.85rem; }
+        .filters { background: white; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+        .filters select, .filters input { padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; }
+        .filters input { flex: 1; min-width: 200px; }
+        .back-link { color: white; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; opacity: 0.8; }
+        .back-link:hover { opacity: 1; }
+
+        .file-grid { display: grid; gap: 1rem; }
+        .file-card { background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; }
+        .file-header { background: var(--primary); color: white; padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+        .file-header:hover { background: var(--dark); }
+        .file-path { font-family: monospace; font-size: 0.9rem; word-break: break-all; }
+        .file-badge { display: flex; gap: 0.5rem; align-items: center; }
+        .file-badge span { background: rgba(255,255,255,0.2); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.75rem; }
+        .file-content { padding: 1rem; display: none; }
+        .file-content.expanded { display: block; }
+
+        .req-list { list-style: none; }
+        .req-item { padding: 0.5rem; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; }
+        .req-item:last-child { border-bottom: none; }
+        .req-item:hover { background: #f8f9fa; }
+        .req-id { font-family: monospace; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; white-space: nowrap; }
+        .req-id.FSR { background: var(--fsr); color: #721c24; }
+        .req-id.SW-REQ { background: var(--swe); color: #004085; }
+        .req-id.HSI { background: var(--hsi); color: #856404; }
+        .req-id.OTHER { background: #e2e3e5; color: #383d41; }
+        .req-line { color: #666; font-family: monospace; font-size: 0.8rem; }
+        .req-context { color: #666; font-size: 0.8rem; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+        .module-section { margin-bottom: 2rem; }
+        .module-title { font-size: 1.2rem; color: var(--dark); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--secondary); display: flex; align-items: center; gap: 0.5rem; }
+        .module-count { background: var(--primary); color: white; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.75rem; }
+
+        .expand-all { background: var(--secondary); color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+        .expand-all:hover { background: var(--primary); }
+
+        #rowCount { font-weight: 600; color: var(--primary); }
+        .loading { text-align: center; padding: 3rem; color: #666; }
+
+        .type-summary { display: flex; gap: 1rem; margin-top: 0.5rem; }
+        .type-chip { font-size: 0.7rem; padding: 0.15rem 0.4rem; border-radius: 4px; }
+        .type-chip.FSR { background: var(--fsr); color: #721c24; }
+        .type-chip.SW-REQ { background: var(--swe); color: #004085; }
+        .type-chip.HSI { background: var(--hsi); color: #856404; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <div style="display: flex; gap: 1.5rem;">
+                <a href="../../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portal</a>
+                <a href="index.html" class="back-link"><i class="fas fa-list"></i> Requirements List</a>
+                <a href="aspice-matrix.html" class="back-link"><i class="fas fa-table"></i> ASPICE Matrix</a>
+            </div>
+            <select id="language-select" style="padding: 0.3rem 0.5rem; border-radius: 4px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: white;">
+                <option value="ko">한국어</option>
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+            </select>
+        </div>
+        <h1><i class="fas fa-code"></i> <span data-i18n="reversePage.title">Reverse Traceability View</span></h1>
+        <p data-i18n="reversePage.subtitle">Source Code -> Linked Requirements | Code-Centric Traceability Analysis</p>
+    </div>
+
+    <div class="container">
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value" id="totalFiles">-</div>
+                <div class="stat-label" data-i18n="reversePage.stats.sourceFiles">Source Files</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="totalReqs">-</div>
+                <div class="stat-label" data-i18n="reversePage.stats.reqTags">Requirement Tags</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="fsrCount">-</div>
+                <div class="stat-label" data-i18n="reversePage.stats.fsrTags">FSR Tags</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="sweCount">-</div>
+                <div class="stat-label" data-i18n="reversePage.stats.swReqTags">SW-REQ Tags</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="avgPerFile">-</div>
+                <div class="stat-label" data-i18n="reversePage.stats.avgPerFile">Avg/File</div>
+            </div>
+        </div>
+
+        <div class="filters">
+            <label><i class="fas fa-filter"></i> Filters:</label>
+            <select id="moduleFilter" onchange="filterFiles()">
+                <option value="">All Modules</option>
+            </select>
+            <select id="typeFilter" onchange="filterFiles()">
+                <option value="">All Requirement Types</option>
+                <option value="FSR">FSR (Safety)</option>
+                <option value="SW-REQ">SW-REQ (Software)</option>
+                <option value="HSI">HSI (Interface)</option>
+            </select>
+            <input type="text" id="searchInput" placeholder="Search files or requirements..." onkeyup="filterFiles()">
+            <span>Showing: <span id="rowCount">-</span> files</span>
+            <button class="expand-all" onclick="toggleAll()"><i class="fas fa-expand-arrows-alt"></i> Toggle All</button>
+        </div>
+
+        <div id="fileGrid" class="file-grid">
+            <div class="loading"><i class="fas fa-spinner fa-spin"></i> Loading data...</div>
+        </div>
+    </div>
+
+    <script>
+        let fileData = [];
+        let allExpanded = false;
+
+        async function loadData() {
+            try {
+                const response = await fetch('../../../parvis/traceability/reverse-traceability.json');
+                const data = await response.json();
+                fileData = data.files;
+
+                updateStats(data);
+                populateFilters();
+                renderFiles();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('fileGrid').innerHTML =
+                    '<div class="loading" style="color: #dc3545;"><i class="fas fa-exclamation-triangle"></i> Error loading data. Please check console.</div>';
+            }
+        }
+
+        function updateStats(data) {
+            const fsrCount = fileData.reduce((sum, f) => sum + (f.by_type['FSR'] || 0), 0);
+            const sweCount = fileData.reduce((sum, f) => sum + (f.by_type['SW-REQ'] || 0), 0);
+
+            document.getElementById('totalFiles').textContent = data.metadata.total_files;
+            document.getElementById('totalReqs').textContent = data.metadata.total_requirements;
+            document.getElementById('fsrCount').textContent = fsrCount;
+            document.getElementById('sweCount').textContent = sweCount;
+            document.getElementById('avgPerFile').textContent = (data.metadata.total_requirements / data.metadata.total_files).toFixed(1);
+        }
+
+        function populateFilters() {
+            const moduleFilter = document.getElementById('moduleFilter');
+            const modules = [...new Set(fileData.map(f => f.module))].sort();
+            modules.forEach(mod => {
+                const opt = document.createElement('option');
+                opt.value = mod;
+                opt.textContent = mod.charAt(0).toUpperCase() + mod.slice(1);
+                moduleFilter.appendChild(opt);
+            });
+        }
+
+        function getFilteredFiles() {
+            const moduleFilter = document.getElementById('moduleFilter').value;
+            const typeFilter = document.getElementById('typeFilter').value;
+            const search = document.getElementById('searchInput').value.toLowerCase();
+
+            return fileData.filter(file => {
+                if (moduleFilter && file.module !== moduleFilter) return false;
+                if (typeFilter && !file.by_type[typeFilter]) return false;
+                if (search) {
+                    const searchStr = file.file + ' ' + file.requirements.map(r => r.requirement_id).join(' ');
+                    if (!searchStr.toLowerCase().includes(search)) return false;
+                }
+                return true;
+            });
+        }
+
+        function getReqType(reqId) {
+            if (reqId.startsWith('FSR-')) return 'FSR';
+            if (reqId.startsWith('SW-REQ')) return 'SW-REQ';
+            if (reqId.startsWith('HSI-')) return 'HSI';
+            return 'OTHER';
+        }
+
+        function renderFiles() {
+            const filtered = getFilteredFiles();
+            const grid = document.getElementById('fileGrid');
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '<div class="loading">No matching files found</div>';
+                document.getElementById('rowCount').textContent = '0';
+                return;
+            }
+
+            // Group by module
+            const byModule = {};
+            filtered.forEach(file => {
+                if (!byModule[file.module]) byModule[file.module] = [];
+                byModule[file.module].push(file);
+            });
+
+            let html = '';
+            Object.entries(byModule).sort().forEach(([module, files]) => {
+                html += `<div class="module-section">
+                    <h2 class="module-title">
+                        <i class="fas fa-folder"></i> ${module.charAt(0).toUpperCase() + module.slice(1)}
+                        <span class="module-count">${files.length} files</span>
+                    </h2>`;
+
+                files.sort((a, b) => b.requirement_count - a.requirement_count).forEach(file => {
+                    const typeChips = Object.entries(file.by_type)
+                        .map(([type, count]) => `<span class="type-chip ${type}">${type}: ${count}</span>`)
+                        .join('');
+
+                    html += `<div class="file-card">
+                        <div class="file-header" onclick="toggleFile(this)">
+                            <span class="file-path"><i class="fas fa-file-code"></i> ${file.file}</span>
+                            <div class="file-badge">
+                                <span><i class="fas fa-link"></i> ${file.requirement_count}</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="file-content">
+                            <div class="type-summary">${typeChips}</div>
+                            <ul class="req-list">
+                                ${file.requirements.map(req => {
+                                    const type = getReqType(req.requirement_id);
+                                    return `<li class="req-item">
+                                        <span class="req-id ${type}">${req.requirement_id}</span>
+                                        <span class="req-line">Line ${req.line}</span>
+                                        <span class="req-context" title="${escapeHtml(req.context)}">${escapeHtml(req.context)}</span>
+                                    </li>`;
+                                }).join('')}
+                            </ul>
+                        </div>
+                    </div>`;
+                });
+
+                html += '</div>';
+            });
+
+            grid.innerHTML = html;
+            document.getElementById('rowCount').textContent = filtered.length;
+        }
+
+        function toggleFile(header) {
+            const content = header.nextElementSibling;
+            content.classList.toggle('expanded');
+            const icon = header.querySelector('.fa-chevron-down, .fa-chevron-up');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        }
+
+        function toggleAll() {
+            allExpanded = !allExpanded;
+            document.querySelectorAll('.file-content').forEach(el => {
+                el.classList.toggle('expanded', allExpanded);
+            });
+            document.querySelectorAll('.file-header i.fa-chevron-down, .file-header i.fa-chevron-up').forEach(el => {
+                el.classList.toggle('fa-chevron-down', !allExpanded);
+                el.classList.toggle('fa-chevron-up', allExpanded);
+            });
+        }
+
+        function filterFiles() {
+            renderFiles();
+        }
+
+        function escapeHtml(str) {
+            if (!str) return '';
+            return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        function updateTranslations() {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                const translation = i18n.t(key);
+                if (translation && translation !== key) {
+                    element.textContent = translation;
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Initialize i18n
+            await i18n.init({
+                defaultLanguage: 'ko',
+                supportedLanguages: ['ko', 'en', 'ja'],
+                languageFilePath: '../../locales/',
+                detectBrowserLanguage: true,
+                persistLanguage: true,
+                fallbackLanguage: 'ko'
+            });
+
+            updateTranslations();
+
+            // Set language selector
+            const langSelect = document.getElementById('language-select');
+            langSelect.value = i18n.getCurrentLanguage();
+
+            langSelect.addEventListener('change', async (e) => {
+                await i18n.changeLanguage(e.target.value);
+                updateTranslations();
+            });
+
+            i18n.on('languageChanged', updateTranslations);
+
+            // Load data
+            loadData();
+        });
+    </script>
+</body>
+</html>

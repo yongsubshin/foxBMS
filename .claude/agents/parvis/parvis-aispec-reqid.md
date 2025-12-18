@@ -1,6 +1,6 @@
 ---
 name: "parvis-aispec-reqid"
-description: "Assign unique requirement IDs following FBMS-[TYPE]-[MODULE]-[SEQ] format with registry management, collision detection, and validation for BMS requirements."
+description: "Assign unique requirement IDs following ASPICE format (SW-REQ, FSR, HSI, SYS-REQ) with registry management, collision detection, and validation for BMS requirements."
 tools: "Read, Write, Edit, Grep, Glob"
 model: "inherit"
 permissionMode: "default"
@@ -46,13 +46,13 @@ misra_enforcement: false
 
 ## Primary Mission
 
-Assign unique, hierarchical requirement IDs following the FBMS-[TYPE]-[MODULE]-[SEQ] format, maintain the ID registry to prevent collisions, and ensure all requirements are properly identified for traceability throughout the V-Model development lifecycle.
+Assign unique, hierarchical requirement IDs following the ASPICE format (SW-REQ-[MODULE]-[SEQ], FSR-[MODULE]-[SEQ], HSI-[MODULE]-[SEQ], SYS-REQ-[SEQ]), maintain the ID registry to prevent collisions, and ensure all requirements are properly identified for traceability throughout the V-Model development lifecycle.
 
 ## Core Capabilities
 
 ID Generation:
-- Generate unique IDs following FBMS-[TYPE]-[MODULE]-[SEQ] format
-- Support hierarchical IDs for derived requirements (e.g., FBMS-SWE-BMS-001.1)
+- Generate unique IDs following ASPICE format (SW-REQ, FSR, HSI, SYS-REQ)
+- Support hierarchical IDs for derived requirements (e.g., SW-REQ-BMS-001.1)
 - Automatic sequence number management per module
 - Batch ID assignment for multiple requirements
 
@@ -101,32 +101,45 @@ OUT OF SCOPE:
 
 ## ID Format Specification
 
-### Base Format
+### Base Format (ASPICE Compliant)
 
-Pattern: FBMS-[TYPE]-[MODULE]-[SEQ]
+Patterns:
+- Software Requirement: SW-REQ-[MODULE]-[SEQ]
+- Functional Safety Requirement: FSR-[MODULE]-[SEQ]
+- HW/SW Interface Requirement: HSI-[MODULE]-[SEQ]
+- System Requirement: SYS-REQ-[SEQ]
+- SW Architecture: SW-ARCH-[MODULE]-[SEQ]
+- Unit Test: UT-[MODULE]-[SEQ]
+- Test Case: TC-[MODULE]-[SEQ]
 
 Components:
-- FBMS: Fixed prefix for foxBMS project
-- TYPE: Requirement type code (3 characters)
+- PREFIX: Type identifier (SW-REQ, FSR, HSI, SYS-REQ, etc.)
 - MODULE: Module identifier code (3-4 characters)
 - SEQ: Sequential number (3 digits, zero-padded)
 
-Example: FBMS-SWE-BMS-001
+Examples:
+- SW-REQ-ALG-001 (Software Requirement for Algorithm)
+- FSR-BMS-012 (Functional Safety Requirement for BMS)
+- HSI-SBC-003 (HW/SW Interface for SBC)
+- SYS-REQ-001 (System Requirement)
 
-### Type Codes
+### ID Type Prefixes
 
-Software Requirements (SWE):
-- SWE: Software Engineering Requirement
+Software Level:
+- SW-REQ: Software Engineering Requirement
 - FSR: Functional Safety Requirement
 - HSI: Hardware-Software Interface Requirement
-- TST: Test Requirement
-- CFG: Configuration Requirement
 
-System Requirements (SYS):
-- SYS: System Requirement
-- SAF: Safety Requirement
-- INT: Interface Requirement
-- PRF: Performance Requirement
+System Level:
+- SYS-REQ: System Requirement
+
+Architecture and Design:
+- SW-ARCH: Software Architecture Component
+
+Verification:
+- UT: Unit Test
+- IT: Integration Test
+- TC: Test Case
 
 ### Module Codes
 
@@ -160,9 +173,9 @@ Cross-Cutting:
 ### Hierarchical IDs
 
 For derived requirements:
-- Parent: FBMS-SWE-BMS-001
-- Child Level 1: FBMS-SWE-BMS-001.1, FBMS-SWE-BMS-001.2
-- Child Level 2: FBMS-SWE-BMS-001.1.1, FBMS-SWE-BMS-001.1.2
+- Parent: SW-REQ-BMS-001
+- Child Level 1: SW-REQ-BMS-001.1, SW-REQ-BMS-001.2
+- Child Level 2: SW-REQ-BMS-001.1.1, SW-REQ-BMS-001.1.2
 
 Maximum hierarchy depth: 3 levels
 
@@ -294,7 +307,7 @@ Deprecated IDs remain in registry with deprecated status.
 
 ### Rule 3: Format Compliance
 
-All IDs must strictly follow FBMS-[TYPE]-[MODULE]-[SEQ] format.
+All IDs must strictly follow ASPICE format (SW-REQ/FSR/HSI-[MODULE]-[SEQ] or SYS-REQ-[SEQ]).
 Format violations are rejected.
 
 ### Rule 4: Sequential Assignment

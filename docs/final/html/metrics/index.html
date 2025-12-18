@@ -314,8 +314,19 @@
     </div>
 
     <script>
+        // Module descriptions - will be updated with i18n
+        let moduleDescriptions = {
+            'Drivers': 'Low-level hardware drivers (CAN, SPI, GPIO)',
+            'BMS': 'Battery Management System core functions',
+            'Config': 'System configuration parameters',
+            'TS': 'Temperature Sensor monitoring',
+            'Algorithm': 'SOC/SOE/SOH calculation algorithms',
+            'AFE': 'Analog Front-End interface (cell monitoring)',
+            'SBC': 'System Basis Chip interface'
+        };
+
         // Requirements by Module Chart
-        new Chart(document.getElementById('reqModuleChart'), {
+        const reqModuleChart = new Chart(document.getElementById('reqModuleChart'), {
             type: 'doughnut',
             data: {
                 labels: ['Drivers', 'BMS', 'Config', 'TS', 'Algorithm', 'AFE', 'SBC'],
@@ -327,9 +338,33 @@
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
-                plugins: { legend: { position: 'right' } }
+                plugins: {
+                    legend: { position: 'right' },
+                    tooltip: {
+                        callbacks: {
+                            afterLabel: function(context) {
+                                const label = context.label;
+                                return moduleDescriptions[label] || '';
+                            }
+                        }
+                    }
+                }
             }
         });
+
+        // Function to update module descriptions from i18n
+        function updateModuleDescriptions() {
+            if (typeof i18n !== 'undefined' && i18n.t) {
+                const modules = ['Drivers', 'BMS', 'Config', 'TS', 'Algorithm', 'AFE', 'SBC'];
+                modules.forEach(module => {
+                    const key = 'metricsPage.moduleDescriptions.' + module;
+                    const translation = i18n.t(key);
+                    if (translation !== key) {
+                        moduleDescriptions[module] = translation;
+                    }
+                });
+            }
+        }
 
         // ASIL Distribution Chart
         new Chart(document.getElementById('asilChart'), {
@@ -413,6 +448,9 @@
                     element.textContent = translation;
                 }
             });
+
+            // Update module descriptions for chart tooltips
+            updateModuleDescriptions();
 
             const languageSelect = document.getElementById('language-select');
             if (languageSelect) {

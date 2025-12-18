@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Metrics Dashboard - foxBMS ASPICE</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .achievement-card {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+        }
+        .achievement-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+        .achievement-label {
+            font-size: 0.875rem;
+            opacity: 0.9;
+        }
+        .chart-wrapper {
+            margin-bottom: 2rem;
+        }
+        .bar-chart {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            height: 200px;
+            padding: 1rem 0;
+            border-bottom: 2px solid var(--border-color);
+        }
+        .bar-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            max-width: 80px;
+        }
+        .bar {
+            width: 40px;
+            background: linear-gradient(to top, var(--primary-color), var(--primary-light));
+            border-radius: 4px 4px 0 0;
+            transition: height 0.5s ease;
+            position: relative;
+        }
+        .bar.alt {
+            background: linear-gradient(to top, var(--secondary-color), #64b5f6);
+        }
+        .bar.warning {
+            background: linear-gradient(to top, var(--accent-color), #ffcc80);
+        }
+        .bar-value {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+        .bar-label {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-top: 0.5rem;
+            white-space: nowrap;
+        }
+        .donut-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            padding: 2rem 0;
+        }
+        .donut-item {
+            text-align: center;
+        }
+        .donut {
+            width: 120px;
+            height: 120px;
+            position: relative;
+        }
+        .donut-ring {
+            fill: none;
+            stroke: var(--border-color);
+            stroke-width: 12;
+        }
+        .donut-segment {
+            fill: none;
+            stroke: var(--primary-color);
+            stroke-width: 12;
+            stroke-linecap: round;
+            transform: rotate(-90deg);
+            transform-origin: center;
+            transition: stroke-dasharray 0.5s ease;
+        }
+        .donut-segment.alt { stroke: var(--secondary-color); }
+        .donut-segment.warning { stroke: var(--accent-color); }
+        .donut-segment.success { stroke: var(--success-color); }
+        .donut-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .donut-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .donut-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+        .phase-table {
+            width: 100%;
+        }
+        .phase-table th, .phase-table td {
+            padding: 1rem;
+        }
+        .phase-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .status-dot.complete { background: var(--success-color); }
+        .status-dot.progress { background: var(--accent-color); }
+        .status-dot.planned { background: var(--border-color); }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-title">
+                <div>
+                    <h1 data-i18n="metricsPage.title">Quality Metrics Dashboard</h1>
+                    <span class="header-subtitle" data-i18n="metricsPage.subtitle">foxBMS V-Model Process Quality Indicators</span>
+                </div>
+                <div class="header-badges">
+                    <span class="badge badge-aspice">ASPICE Level 2</span>
+                    <span class="badge badge-iso">ISO 26262</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="../../index.html" class="nav-link" data-i18n="common.backToPortal">Back to Portal</a>
+                <a href="../traceability/matrix.html" class="nav-link" data-i18n="common.nav.traceability">Traceability</a>
+                <a href="../v-model/index.html" class="nav-link">V-Model</a>
+                <div class="language-switcher">
+                    <select id="language-select" aria-label="Select Language">
+                        <option value="ko">한국어</option>
+                        <option value="en">English</option>
+                        <option value="ja">日本語</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Key Achievements -->
+        <section>
+            <h2 class="mb-2" data-i18n="metricsPage.keyAchievements">Key Achievements</h2>
+            <div class="achievement-grid">
+                <div class="achievement-card">
+                    <div class="achievement-value">648</div>
+                    <div class="achievement-label" data-i18n="metricsPage.charts.requirements">Requirements</div>
+                </div>
+                <div class="achievement-card" style="background: linear-gradient(135deg, var(--secondary-color), #1976d2);">
+                    <div class="achievement-value">648</div>
+                    <div class="achievement-label" data-i18n="metricsPage.charts.testCases">Test Cases</div>
+                </div>
+                <div class="achievement-card" style="background: linear-gradient(135deg, var(--accent-color), #e65100);">
+                    <div class="achievement-value">80%</div>
+                    <div class="achievement-label" data-i18n="metricsPage.charts.traceability">Traceability</div>
+                </div>
+                <div class="achievement-card" style="background: linear-gradient(135deg, #9c27b0, #6a1b9a);">
+                    <div class="achievement-value">L2</div>
+                    <div class="achievement-label" data-i18n="metricsPage.charts.aspice">ASPICE Level</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requirements by Module Chart -->
+        <section class="metric-card chart-wrapper">
+            <h3 data-i18n="metricsPage.reqByModule">Requirements by Module</h3>
+            <div class="bar-chart">
+                <div class="bar-item">
+                    <div class="bar-value">79</div>
+                    <div class="bar" style="height: 54%;"></div>
+                    <div class="bar-label">Algorithm</div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-value">78</div>
+                    <div class="bar alt" style="height: 53%;"></div>
+                    <div class="bar-label">AFE</div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-value">82</div>
+                    <div class="bar" style="height: 56%;"></div>
+                    <div class="bar-label">TS</div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-value">100</div>
+                    <div class="bar alt" style="height: 68%;"></div>
+                    <div class="bar-label">Config</div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-value">52</div>
+                    <div class="bar" style="height: 35%;"></div>
+                    <div class="bar-label">SBC</div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-value">146</div>
+                    <div class="bar warning" style="height: 100%;"></div>
+                    <div class="bar-label">Drivers</div>
+                </div>
+                <div class="bar-item">
+                    <div class="bar-value">111</div>
+                    <div class="bar alt" style="height: 76%;"></div>
+                    <div class="bar-label">BMS</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quality Scores -->
+        <section class="metric-card chart-wrapper">
+            <h3 data-i18n="metricsPage.qualityScores">Quality Scores</h3>
+            <div class="donut-container">
+                <div class="donut-item">
+                    <div class="donut">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="donut-ring" cx="50" cy="50" r="40"/>
+                            <circle class="donut-segment success" cx="50" cy="50" r="40"
+                                stroke-dasharray="226 251" stroke-dashoffset="0"/>
+                        </svg>
+                        <div class="donut-center">
+                            <div class="donut-value">90%</div>
+                        </div>
+                    </div>
+                    <div class="donut-label" data-i18n="metricsPage.charts.completeness">Completeness</div>
+                </div>
+                <div class="donut-item">
+                    <div class="donut">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="donut-ring" cx="50" cy="50" r="40"/>
+                            <circle class="donut-segment" cx="50" cy="50" r="40"
+                                stroke-dasharray="213 251" stroke-dashoffset="0"/>
+                        </svg>
+                        <div class="donut-center">
+                            <div class="donut-value">85%</div>
+                        </div>
+                    </div>
+                    <div class="donut-label" data-i18n="metricsPage.charts.clarity">Clarity</div>
+                </div>
+                <div class="donut-item">
+                    <div class="donut">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="donut-ring" cx="50" cy="50" r="40"/>
+                            <circle class="donut-segment alt" cx="50" cy="50" r="40"
+                                stroke-dasharray="201 251" stroke-dashoffset="0"/>
+                        </svg>
+                        <div class="donut-center">
+                            <div class="donut-value">80%</div>
+                        </div>
+                    </div>
+                    <div class="donut-label" data-i18n="metricsPage.charts.testability">Testability</div>
+                </div>
+                <div class="donut-item">
+                    <div class="donut">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="donut-ring" cx="50" cy="50" r="40"/>
+                            <circle class="donut-segment warning" cx="50" cy="50" r="40"
+                                stroke-dasharray="188 251" stroke-dashoffset="0"/>
+                        </svg>
+                        <div class="donut-center">
+                            <div class="donut-value">75%</div>
+                        </div>
+                    </div>
+                    <div class="donut-label" data-i18n="metricsPage.charts.atomicity">Atomicity</div>
+                </div>
+                <div class="donut-item">
+                    <div class="donut">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="donut-ring" cx="50" cy="50" r="40"/>
+                            <circle class="donut-segment" cx="50" cy="50" r="40"
+                                stroke-dasharray="201 251" stroke-dashoffset="0"/>
+                        </svg>
+                        <div class="donut-center">
+                            <div class="donut-value">80%</div>
+                        </div>
+                    </div>
+                    <div class="donut-label" data-i18n="metricsPage.charts.traceability">Traceability</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- V-Model Phase Completion -->
+        <section class="table-container">
+            <div class="table-header">
+                <h3 class="table-title" data-i18n="metricsPage.vModelPhaseCompletion">V-Model Phase Completion</h3>
+            </div>
+            <table class="phase-table">
+                <thead>
+                    <tr>
+                        <th data-i18n="metricsPage.phase">Phase</th>
+                        <th data-i18n="metricsPage.description">Description</th>
+                        <th data-i18n="metricsPage.documents">Documents</th>
+                        <th data-i18n="metricsPage.status">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>SYS.2</strong></td>
+                        <td>System Requirements Analysis</td>
+                        <td>7 SYS-REQ items</td>
+                        <td>
+                            <span class="phase-status">
+                                <span class="status-dot complete"></span>
+                                <span data-i18n="metricsPage.complete">Complete</span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>SWE.1</strong></td>
+                        <td>Software Requirements Analysis</td>
+                        <td>648 SW-REQ, FSR, HSI items</td>
+                        <td>
+                            <span class="phase-status">
+                                <span class="status-dot complete"></span>
+                                <span data-i18n="metricsPage.complete">Complete</span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>SWE.2</strong></td>
+                        <td>Software Architecture Design</td>
+                        <td>34 SW-ARCH components</td>
+                        <td>
+                            <span class="phase-status">
+                                <span class="status-dot complete"></span>
+                                <span data-i18n="metricsPage.complete">Complete</span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>SWE.3</strong></td>
+                        <td>Software Detailed Design & Unit Construction</td>
+                        <td>Source code with Doxygen</td>
+                        <td>
+                            <span class="phase-status">
+                                <span class="status-dot complete"></span>
+                                <span data-i18n="metricsPage.complete">Complete</span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>SWE.4</strong></td>
+                        <td>Software Unit Verification</td>
+                        <td>Unit test cases (pending)</td>
+                        <td>
+                            <span class="phase-status">
+                                <span class="status-dot progress"></span>
+                                In Progress
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>SWE.5</strong></td>
+                        <td>Software Integration & Integration Test</td>
+                        <td>648 TC items</td>
+                        <td>
+                            <span class="phase-status">
+                                <span class="status-dot complete"></span>
+                                <span data-i18n="metricsPage.documented">Documented</span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>SWE.6</strong></td>
+                        <td>Software Qualification Test</td>
+                        <td>System test cases</td>
+                        <td>
+                            <span class="phase-status">
+                                <span class="status-dot planned"></span>
+                                Planned
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Traceability Metrics -->
+        <section class="metrics-grid">
+            <div class="metric-card">
+                <h3 data-i18n="metricsPage.traceabilityMetrics">Traceability Metrics</h3>
+                <div class="card-body">
+                    <div class="card-stat">
+                        <div class="stat-label">SYS-REQ to SW-REQ</div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" style="width: 100%"></div>
+                        </div>
+                        <div style="text-align: right; font-size: 0.875rem; margin-top: 0.25rem;">100%</div>
+                    </div>
+                    <div class="card-stat">
+                        <div class="stat-label">SW-REQ to SW-ARCH</div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" style="width: 95%"></div>
+                        </div>
+                        <div style="text-align: right; font-size: 0.875rem; margin-top: 0.25rem;">95%</div>
+                    </div>
+                    <div class="card-stat">
+                        <div class="stat-label">SW-REQ to Test Case</div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" style="width: 80%"></div>
+                        </div>
+                        <div style="text-align: right; font-size: 0.875rem; margin-top: 0.25rem;">80%</div>
+                    </div>
+                    <div class="card-stat">
+                        <div class="stat-label">SW-ARCH to Code</div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" style="width: 100%"></div>
+                        </div>
+                        <div style="text-align: right; font-size: 0.875rem; margin-top: 0.25rem;">100%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="metric-card">
+                <h3 data-i18n="metricsPage.codebaseMetrics">Codebase Metrics</h3>
+                <div class="card-body">
+                    <div class="card-stat">
+                        <div class="stat-label">Total Source Files</div>
+                        <div class="stat-value">~200</div>
+                    </div>
+                    <div class="card-stat">
+                        <div class="stat-label">Header Files</div>
+                        <div class="stat-value">~100</div>
+                    </div>
+                    <div class="card-stat">
+                        <div class="stat-label">Architecture Components</div>
+                        <div class="stat-value highlight">34</div>
+                    </div>
+                    <div class="card-stat">
+                        <div class="stat-label">Software Layers</div>
+                        <div class="stat-value">3</div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted);">Application / Driver / Engine</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <span data-i18n="footer.version">Version</span>: 2.0.0 |
+                <span data-i18n="footer.generated">Generated</span>: 2025-12-18
+            </div>
+            <div class="footer-badges">
+                <span class="footer-badge">ASPICE Level 2</span>
+                <span class="footer-badge">Quality Metrics</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/i18n.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            await i18n.init({
+                defaultLanguage: 'ko',
+                supportedLanguages: ['ko', 'en', 'ja'],
+                languageFilePath: '../../locales/',
+                detectBrowserLanguage: true,
+                persistLanguage: true,
+                fallbackLanguage: 'ko'
+            });
+
+            updateTranslations();
+
+            const langSelect = document.getElementById('language-select');
+            langSelect.value = i18n.getCurrentLanguage();
+
+            langSelect.addEventListener('change', async (e) => {
+                await i18n.changeLanguage(e.target.value);
+                updateTranslations();
+            });
+        });
+
+        function updateTranslations() {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                const translation = i18n.t(key);
+                if (translation && translation !== key) {
+                    element.textContent = translation;
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -12,7 +12,7 @@
     "nav": {
       "processDocs": "프로세스 문서",
       "apiReference": "API 레퍼런스",
-      "traceability": "추적성",
+      "traceability": "추적성 매트릭스",
       "misra": "MISRA 준수",
       "metrics": "품질 메트릭"
     },
@@ -125,6 +125,15 @@
     "subtitle": "foxBMS V-Model 프로세스 품질 지표",
     "keyAchievements": "주요 성과",
     "reqByModule": "모듈별 요구사항",
+    "moduleDescriptions": {
+      "Drivers": "저수준 하드웨어 드라이버 (CAN, SPI, GPIO)",
+      "BMS": "배터리 관리 시스템 핵심 기능",
+      "Config": "시스템 구성 파라미터",
+      "TS": "온도 센서 모니터링",
+      "Algorithm": "SOC/SOE/SOH 계산 알고리즘",
+      "AFE": "아날로그 프론트엔드 인터페이스 (셀 모니터링)",
+      "SBC": "시스템 베이시스 칩 인터페이스"
+    },
     "safetyReqByAsil": "ASIL별 안전 요구사항",
     "testCoverage": "테스트 레벨별 커버리지",
     "qualityScores": "품질 점수",
@@ -151,13 +160,31 @@
   },
   "traceabilityPage": {
     "title": "추적성 매트릭스",
-    "subtitle": "양방향 요구사항 추적",
+    "subtitle": "양방향 요구사항 추적 - ASPICE 형식",
     "summary": {
       "totalRequirements": "총 요구사항",
       "tracedToDesign": "설계 추적",
       "tracedToTest": "테스트 추적",
-      "coverage": "커버리지"
-    }
+      "coverage": "커버리지",
+      "totalEntries": "총 항목",
+      "completeEntries": "완전 추적",
+      "partialEntries": "부분 추적"
+    },
+    "columns": {
+      "sysReq": "SYS-REQ",
+      "swReq": "SW-REQ",
+      "swArch": "SW-ARCH",
+      "codeModule": "코드 모듈",
+      "ut": "UT",
+      "tc": "TC",
+      "status": "상태"
+    },
+    "filter": {
+      "all": "전체",
+      "complete": "완전",
+      "partial": "부분"
+    },
+    "search": "검색..."
   },
   "viewer": {
     "title": "문서 뷰어",
@@ -169,5 +196,66 @@
     "searchPlaceholder": "내용 검색...",
     "totalItems": "총 항목",
     "fields": "필드"
+  },
+  "dashboard": {
+    "title": "ASPICE 문서 대시보드",
+    "subtitle": "foxBMS 2.0 - ASPICE Level 2 완성",
+    "summary": {
+      "sysReqs": "시스템 요구사항",
+      "swReqs": "SW 요구사항",
+      "archComponents": "아키텍처 컴포넌트",
+      "testCases": "테스트 케이스",
+      "traceability": "추적성 완료율"
+    },
+    "idFormat": {
+      "title": "ASPICE ID 형식",
+      "sysReq": "SYS-REQ-xxx",
+      "swReq": "SW-REQ-xxx",
+      "fsr": "FSR-xxx",
+      "hsi": "HSI-xxx",
+      "arch": "SW-ARCH-xxx",
+      "ut": "UT-xxx",
+      "tc": "TC-xxx"
+    }
+  },
+  "vModelPage": {
+    "title": "V-Model 프로세스 뷰",
+    "subtitle": "ASPICE Level 2 개발 프로세스",
+    "phases": {
+      "sysReq": "시스템 요구사항",
+      "swReq": "SW 요구사항",
+      "swArch": "SW 아키텍처",
+      "swDesign": "SW 상세 설계",
+      "coding": "코딩",
+      "unitTest": "단위 테스트",
+      "integTest": "통합 테스트",
+      "sysTest": "시스템 테스트"
+    },
+    "legend": {
+      "complete": "완료",
+      "inProgress": "진행 중",
+      "planned": "계획됨"
+    }
+  },
+  "reversePage": {
+    "title": "역방향 추적성 뷰",
+    "subtitle": "소스 코드 -> 연결된 요구사항",
+    "stats": {
+      "sourceFiles": "소스 파일",
+      "reqTags": "요구사항 태그",
+      "fsrTags": "FSR 태그",
+      "swReqTags": "SW-REQ 태그",
+      "avgPerFile": "파일당 평균"
+    },
+    "filters": {
+      "allModules": "전체 모듈",
+      "allTypes": "전체 요구사항 유형",
+      "searchPlaceholder": "파일 또는 요구사항 검색..."
+    },
+    "showing": "표시 중",
+    "files": "파일",
+    "toggleAll": "전체 토글",
+    "line": "라인",
+    "requirements": "요구사항"
   }
 }

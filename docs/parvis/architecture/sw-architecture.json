@@ -1,0 +1,689 @@
+{
+  "metadata": {
+    "total_arch_components": 34,
+    "format": "ASPICE SW-ARCH",
+    "generated_from": "Module directory structure"
+  },
+  "components": [
+    {
+      "id": "SW-ARCH-CON-01",
+      "name": "Config Module Architecture",
+      "type": "application",
+      "module": "config",
+      "path": "foxbms-2/src/app/application/config",
+      "submodules": [],
+      "source_files": [
+        "ethernet_cfg.h",
+        "battery_cell_cfg.c",
+        "bms-slave_cfg.h",
+        "soa_cfg.h",
+        "bms_cfg.h",
+        "ethernet_cfg.c",
+        "bal_cfg.c",
+        "bal_cfg.h",
+        "battery_system_cfg.h",
+        "soa_cfg.c",
+        "battery_cell_cfg.h",
+        "plausibility_cfg.h",
+        "battery_system_cfg.c"
+      ],
+      "linked_sw_reqs": 104,
+      "linked_sw_req_sample": [
+        "SW-REQ-ALG-007",
+        "SW-REQ-ALG-008",
+        "SW-REQ-TMP-062",
+        "SW-REQ-TMP-063",
+        "FSR-CFG-001"
+      ]
+    },
+    {
+      "id": "SW-ARCH-BMS-01",
+      "name": "Bms Module Architecture",
+      "type": "application",
+      "module": "bms",
+      "path": "foxbms-2/src/app/application/bms",
+      "submodules": [],
+      "source_files": [
+        "bms.c",
+        "bms.h"
+      ],
+      "linked_sw_reqs": 111,
+      "linked_sw_req_sample": [
+        "SW-REQ-BMS-001",
+        "SW-REQ-BMS-002",
+        "SW-REQ-BMS-003",
+        "SW-REQ-BMS-004",
+        "SW-REQ-BMS-005"
+      ]
+    },
+    {
+      "id": "SW-ARCH-ETH-01",
+      "name": "Ethernet Module Architecture",
+      "type": "application",
+      "module": "ethernet",
+      "path": "foxbms-2/src/app/application/ethernet",
+      "submodules": [],
+      "source_files": [
+        "ethernet.h",
+        "ethernet.c"
+      ],
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "SW-ARCH-RED-01",
+      "name": "Redundancy Module Architecture",
+      "type": "application",
+      "module": "redundancy",
+      "path": "foxbms-2/src/app/application/redundancy",
+      "submodules": [],
+      "source_files": [
+        "redundancy.h",
+        "redundancy.c"
+      ],
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "SW-ARCH-BAL-01",
+      "name": "Bal Module Architecture",
+      "type": "application",
+      "module": "bal",
+      "path": "foxbms-2/src/app/application/bal",
+      "submodules": [
+        "voltage",
+        "history",
+        "none"
+      ],
+      "source_files": [
+        "bal.c",
+        "bal.h"
+      ],
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "SW-ARCH-SOA-01",
+      "name": "Soa Module Architecture",
+      "type": "application",
+      "module": "soa",
+      "path": "foxbms-2/src/app/application/soa",
+      "submodules": [],
+      "source_files": [
+        "soa.h",
+        "soa.c"
+      ],
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "SW-ARCH-PLA-01",
+      "name": "Plausibility Module Architecture",
+      "type": "application",
+      "module": "plausibility",
+      "path": "foxbms-2/src/app/application/plausibility",
+      "submodules": [],
+      "source_files": [
+        "plausibility.c",
+        "plausibility.h"
+      ],
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "SW-ARCH-ALG-01",
+      "name": "Algorithm Module Architecture",
+      "type": "application",
+      "module": "algorithm",
+      "path": "foxbms-2/src/app/application/algorithm",
+      "submodules": [
+        "config",
+        "state_estimation",
+        "moving_average"
+      ],
+      "source_files": [
+        "algorithm.h",
+        "algorithm.c"
+      ],
+      "linked_sw_reqs": 79,
+      "linked_sw_req_sample": [
+        "SW-REQ-ALG-001",
+        "SW-REQ-ALG-002",
+        "SW-REQ-ALG-003",
+        "SW-REQ-ALG-004",
+        "SW-REQ-ALG-005"
+      ]
+    },
+    {
+      "id": "SW-ARCH-MCU-01",
+      "name": "Mcu Driver Architecture",
+      "type": "driver",
+      "module": "mcu",
+      "path": "foxbms-2/src/app/driver/mcu",
+      "submodules": [],
+      "source_files": [
+        "mcu.c",
+        "mcu.h"
+      ],
+      "linked_sw_reqs": 6,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-053",
+        "SW-REQ-DRV-054",
+        "SW-REQ-DRV-055",
+        "SW-REQ-DRV-056",
+        "SW-REQ-DRV-057"
+      ]
+    },
+    {
+      "id": "SW-ARCH-SPS-01",
+      "name": "Sps Driver Architecture",
+      "type": "driver",
+      "module": "sps",
+      "path": "foxbms-2/src/app/driver/sps",
+      "submodules": [],
+      "source_files": [
+        "sps.h",
+        "sps_types.h",
+        "sps.c"
+      ],
+      "linked_sw_reqs": 13,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-099",
+        "SW-REQ-DRV-100",
+        "SW-REQ-DRV-101",
+        "SW-REQ-DRV-102",
+        "SW-REQ-DRV-103"
+      ]
+    },
+    {
+      "id": "SW-ARCH-CON-02",
+      "name": "Config Driver Architecture",
+      "type": "driver",
+      "module": "config",
+      "path": "foxbms-2/src/app/driver/config",
+      "submodules": [],
+      "source_files": [
+        "can_cfg_rx-message-definitions.h",
+        "phy_cfg.h",
+        "sps_cfg.c",
+        "tsi_plausibility_cfg.h",
+        "can_cfg_tx-async-message-definitions.h"
+      ],
+      "linked_sw_reqs": 104,
+      "linked_sw_req_sample": [
+        "SW-REQ-ALG-007",
+        "SW-REQ-ALG-008",
+        "SW-REQ-TMP-062",
+        "SW-REQ-TMP-063",
+        "FSR-CFG-001"
+      ]
+    },
+    {
+      "id": "SW-ARCH-RTC-01",
+      "name": "Rtc Driver Architecture",
+      "type": "driver",
+      "module": "rtc",
+      "path": "foxbms-2/src/app/driver/rtc",
+      "submodules": [],
+      "source_files": [
+        "rtc.c",
+        "rtc.h"
+      ],
+      "linked_sw_reqs": 7,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-036",
+        "HSI-DRV-001",
+        "SW-REQ-DRV-037",
+        "SW-REQ-DRV-038",
+        "SW-REQ-DRV-039"
+      ]
+    },
+    {
+      "id": "SW-ARCH-IO-01",
+      "name": "Io Driver Architecture",
+      "type": "driver",
+      "module": "io",
+      "path": "foxbms-2/src/app/driver/io",
+      "submodules": [],
+      "source_files": [
+        "io.h",
+        "io.c"
+      ],
+      "linked_sw_reqs": 87,
+      "linked_sw_req_sample": [
+        "SW-REQ-ALG-014",
+        "SW-REQ-ALG-015",
+        "FSR-ALG-003",
+        "SW-REQ-ALG-016",
+        "FSR-CFG-001"
+      ]
+    },
+    {
+      "id": "SW-ARCH-TS-01",
+      "name": "Ts Driver Architecture",
+      "type": "driver",
+      "module": "ts",
+      "path": "foxbms-2/src/app/driver/ts",
+      "submodules": [
+        "murata",
+        "tdk",
+        "epcos",
+        "vishay",
+        "semitec"
+      ],
+      "source_files": [
+        "beta.c",
+        "temperature_sensor_defs.h",
+        "beta.h"
+      ],
+      "linked_sw_reqs": 85,
+      "linked_sw_req_sample": [
+        "SW-REQ-TMP-001",
+        "SW-REQ-TMP-002",
+        "SW-REQ-TMP-003",
+        "SW-REQ-TMP-004",
+        "SW-REQ-TMP-005"
+      ]
+    },
+    {
+      "id": "SW-ARCH-SPI-01",
+      "name": "Spi Driver Architecture",
+      "type": "driver",
+      "module": "spi",
+      "path": "foxbms-2/src/app/driver/spi",
+      "submodules": [],
+      "source_files": [
+        "spi.c",
+        "spi.h",
+        "spi_cfg-helper.h"
+      ],
+      "linked_sw_reqs": 13,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-007",
+        "SW-REQ-DRV-008",
+        "SW-REQ-DRV-009",
+        "SW-REQ-DRV-010",
+        "SW-REQ-DRV-011"
+      ]
+    },
+    {
+      "id": "SW-ARCH-CAN-01",
+      "name": "Can Driver Architecture",
+      "type": "driver",
+      "module": "can",
+      "path": "foxbms-2/src/app/driver/can",
+      "submodules": [
+        "cbs"
+      ],
+      "source_files": [
+        "can.h",
+        "can.c"
+      ],
+      "linked_sw_reqs": 10,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-119",
+        "SW-REQ-DRV-120",
+        "SW-REQ-DRV-121",
+        "SW-REQ-DRV-122",
+        "SW-REQ-DRV-123"
+      ]
+    },
+    {
+      "id": "SW-ARCH-PWM-01",
+      "name": "Pwm Driver Architecture",
+      "type": "driver",
+      "module": "pwm",
+      "path": "foxbms-2/src/app/driver/pwm",
+      "submodules": [],
+      "source_files": [
+        "pwm.h",
+        "pwm.c"
+      ],
+      "linked_sw_reqs": 6,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-030",
+        "SW-REQ-DRV-031",
+        "SW-REQ-DRV-032",
+        "SW-REQ-DRV-033",
+        "SW-REQ-DRV-034"
+      ]
+    },
+    {
+      "id": "SW-ARCH-FRA-01",
+      "name": "Fram Driver Architecture",
+      "type": "driver",
+      "module": "fram",
+      "path": "foxbms-2/src/app/driver/fram",
+      "submodules": [],
+      "source_files": [
+        "fram.c",
+        "fram.h"
+      ],
+      "linked_sw_reqs": 7,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-065",
+        "SW-REQ-DRV-066",
+        "SW-REQ-DRV-067",
+        "SW-REQ-DRV-068",
+        "SW-REQ-DRV-069"
+      ]
+    },
+    {
+      "id": "SW-ARCH-DMA-01",
+      "name": "Dma Driver Architecture",
+      "type": "driver",
+      "module": "dma",
+      "path": "foxbms-2/src/app/driver/dma",
+      "submodules": [],
+      "source_files": [
+        "dma.c",
+        "dma.h"
+      ],
+      "linked_sw_reqs": 6,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-024",
+        "SW-REQ-DRV-025",
+        "SW-REQ-DRV-026",
+        "SW-REQ-DRV-027",
+        "SW-REQ-DRV-028"
+      ]
+    },
+    {
+      "id": "SW-ARCH-MEA-01",
+      "name": "Meas Driver Architecture",
+      "type": "driver",
+      "module": "meas",
+      "path": "foxbms-2/src/app/driver/meas",
+      "submodules": [],
+      "source_files": [
+        "meas.h",
+        "meas.c"
+      ],
+      "linked_sw_reqs": 5,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-091",
+        "SW-REQ-DRV-092",
+        "SW-REQ-DRV-093",
+        "SW-REQ-DRV-094",
+        "SW-REQ-DRV-095"
+      ]
+    },
+    {
+      "id": "SW-ARCH-CHE-01",
+      "name": "Checksum Driver Architecture",
+      "type": "driver",
+      "module": "checksum",
+      "path": "foxbms-2/src/app/driver/checksum",
+      "submodules": [],
+      "source_files": [
+        "checksum.h",
+        "checksum.c"
+      ],
+      "linked_sw_reqs": 2,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-076",
+        "SW-REQ-DRV-077"
+      ]
+    },
+    {
+      "id": "SW-ARCH-INT-01",
+      "name": "Interlock Driver Architecture",
+      "type": "driver",
+      "module": "interlock",
+      "path": "foxbms-2/src/app/driver/interlock",
+      "submodules": [],
+      "source_files": [
+        "interlock.h",
+        "interlock.c"
+      ],
+      "linked_sw_reqs": 9,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-059",
+        "SW-REQ-DRV-060",
+        "SW-REQ-DRV-061",
+        "SW-REQ-DRV-062",
+        "HSI-DRV-002"
+      ]
+    },
+    {
+      "id": "SW-ARCH-CRC-01",
+      "name": "Crc Driver Architecture",
+      "type": "driver",
+      "module": "crc",
+      "path": "foxbms-2/src/app/driver/crc",
+      "submodules": [],
+      "source_files": [
+        "crc.c",
+        "crc.h"
+      ],
+      "linked_sw_reqs": 3,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-078",
+        "SW-REQ-DRV-079",
+        "SW-REQ-DRV-080"
+      ]
+    },
+    {
+      "id": "SW-ARCH-CON-03",
+      "name": "Contactor Driver Architecture",
+      "type": "driver",
+      "module": "contactor",
+      "path": "foxbms-2/src/app/driver/contactor",
+      "submodules": [],
+      "source_files": [
+        "contactor.c",
+        "contactor.h"
+      ],
+      "linked_sw_reqs": 14,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-110",
+        "SW-REQ-DRV-111",
+        "SW-REQ-DRV-112",
+        "SW-REQ-DRV-113",
+        "SW-REQ-DRV-114"
+      ]
+    },
+    {
+      "id": "SW-ARCH-SBC-01",
+      "name": "Sbc Driver Architecture",
+      "type": "driver",
+      "module": "sbc",
+      "path": "foxbms-2/src/app/driver/sbc",
+      "submodules": [
+        "fs8x_driver"
+      ],
+      "source_files": [
+        "sbc.h",
+        "nxpfs85xx.c",
+        "sbc.c",
+        "nxpfs85xx.h"
+      ],
+      "linked_sw_reqs": 52,
+      "linked_sw_req_sample": [
+        "SW-REQ-SBC-001",
+        "SW-REQ-SBC-002",
+        "FSR-SBC-001",
+        "FSR-SBC-002",
+        "FSR-SBC-003"
+      ]
+    },
+    {
+      "id": "SW-ARCH-LED-01",
+      "name": "Led Driver Architecture",
+      "type": "driver",
+      "module": "led",
+      "path": "foxbms-2/src/app/driver/led",
+      "submodules": [],
+      "source_files": [
+        "led.h",
+        "led.c"
+      ],
+      "linked_sw_reqs": 5,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-048",
+        "SW-REQ-DRV-049",
+        "SW-REQ-DRV-050",
+        "SW-REQ-DRV-051",
+        "SW-REQ-DRV-052"
+      ]
+    },
+    {
+      "id": "SW-ARCH-IMD-01",
+      "name": "Imd Driver Architecture",
+      "type": "driver",
+      "module": "imd",
+      "path": "foxbms-2/src/app/driver/imd",
+      "submodules": [
+        "bender",
+        "none"
+      ],
+      "source_files": [
+        "imd.h",
+        "imd.c"
+      ],
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "SW-ARCH-HTS-01",
+      "name": "Htsensor Driver Architecture",
+      "type": "driver",
+      "module": "htsensor",
+      "path": "foxbms-2/src/app/driver/htsensor",
+      "submodules": [],
+      "source_files": [
+        "htsensor.h",
+        "htsensor.c"
+      ],
+      "linked_sw_reqs": 3,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-096",
+        "SW-REQ-DRV-097",
+        "SW-REQ-DRV-098"
+      ]
+    },
+    {
+      "id": "SW-ARCH-PEX-01",
+      "name": "Pex Driver Architecture",
+      "type": "driver",
+      "module": "pex",
+      "path": "foxbms-2/src/app/driver/pex",
+      "submodules": [],
+      "source_files": [
+        "pex.c",
+        "pex.h"
+      ],
+      "linked_sw_reqs": 6,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-081",
+        "SW-REQ-DRV-082",
+        "SW-REQ-DRV-083",
+        "SW-REQ-DRV-084",
+        "SW-REQ-DRV-085"
+      ]
+    },
+    {
+      "id": "SW-ARCH-I2C-01",
+      "name": "I2c Driver Architecture",
+      "type": "driver",
+      "module": "i2c",
+      "path": "foxbms-2/src/app/driver/i2c",
+      "submodules": [],
+      "source_files": [
+        "i2c.c",
+        "i2c.h"
+      ],
+      "linked_sw_reqs": 8,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-016",
+        "SW-REQ-DRV-017",
+        "SW-REQ-DRV-018",
+        "SW-REQ-DRV-019",
+        "SW-REQ-DRV-020"
+      ]
+    },
+    {
+      "id": "SW-ARCH-FOX-01",
+      "name": "Foxmath Driver Architecture",
+      "type": "driver",
+      "module": "foxmath",
+      "path": "foxbms-2/src/app/driver/foxmath",
+      "submodules": [],
+      "source_files": [
+        "utils.c",
+        "foxmath.h",
+        "foxmath.c",
+        "utils.h"
+      ],
+      "linked_sw_reqs": 4,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-072",
+        "SW-REQ-DRV-073",
+        "SW-REQ-DRV-074",
+        "SW-REQ-DRV-075"
+      ]
+    },
+    {
+      "id": "SW-ARCH-PHY-01",
+      "name": "Phy Driver Architecture",
+      "type": "driver",
+      "module": "phy",
+      "path": "foxbms-2/src/app/driver/phy",
+      "submodules": [],
+      "source_files": [
+        "dp83869.h",
+        "dp83869.c"
+      ],
+      "linked_sw_reqs": 4,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-087",
+        "SW-REQ-DRV-088",
+        "SW-REQ-DRV-089",
+        "SW-REQ-DRV-090"
+      ]
+    },
+    {
+      "id": "SW-ARCH-AFE-01",
+      "name": "Afe Driver Architecture",
+      "type": "driver",
+      "module": "afe",
+      "path": "foxbms-2/src/app/driver/afe",
+      "submodules": [
+        "maxim",
+        "adi",
+        "ltc",
+        "ti",
+        "api"
+      ],
+      "source_files": [],
+      "linked_sw_reqs": 78,
+      "linked_sw_req_sample": [
+        "SW-REQ-AFE-001",
+        "SW-REQ-AFE-002",
+        "SW-REQ-AFE-003",
+        "SW-REQ-AFE-004",
+        "SW-REQ-AFE-005"
+      ]
+    },
+    {
+      "id": "SW-ARCH-ADC-01",
+      "name": "Adc Driver Architecture",
+      "type": "driver",
+      "module": "adc",
+      "path": "foxbms-2/src/app/driver/adc",
+      "submodules": [],
+      "source_files": [
+        "adc.c",
+        "adc.h"
+      ],
+      "linked_sw_reqs": 7,
+      "linked_sw_req_sample": [
+        "SW-REQ-DRV-001",
+        "SW-REQ-DRV-002",
+        "SW-REQ-DRV-003",
+        "SW-REQ-DRV-004",
+        "SW-REQ-DRV-005"
+      ]
+    }
+  ]
+}

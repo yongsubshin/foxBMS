@@ -1,0 +1,3078 @@
+{
+  "metadata": {
+    "total_ut_files": 283,
+    "format": "ASPICE UT Mapping",
+    "generated_by": "ut_traceability_mapper.py"
+  },
+  "ut_registry": [
+    {
+      "id": "UT-SUPP-001",
+      "filename": "test_can_cbs_tx_debug-unsupported-multiplexer-values.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-async/test_can_cbs_tx_debug-unsupported-multiplexer-values.c",
+      "module_type": "SUPP",
+      "source_modules": [
+        "can_cbs_tx_debug-unsupported-multiplexer-values",
+        "can_cbs_tx_debug-unsupported-multiplexer-values.c",
+        "can_cbs_tx_debug-unsupported-multiplexer-values.h"
+      ]
+    },
+    {
+      "id": "UT-SUPP-002",
+      "filename": "test_fake_functions.c",
+      "filepath": "tests/unit/support/test_fake_functions.c",
+      "module_type": "SUPP",
+      "source_modules": [
+        "fake_functions",
+        "fake_functions.c",
+        "fake_functions.h"
+      ]
+    },
+    {
+      "id": "UT-OPT-001",
+      "filename": "test_lg_inr18650mj1.c",
+      "filepath": "tests/unit/opt/cells/config/test_lg_inr18650mj1.c",
+      "module_type": "OPT",
+      "source_modules": [
+        "lg_inr18650mj1",
+        "lg_inr18650mj1.c",
+        "lg_inr18650mj1.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-001",
+      "filename": "test_can.c",
+      "filepath": "tests/unit/bootloader/driver/can/test_can.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "can",
+        "can.c",
+        "can.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-002",
+      "filename": "test_can_bootloader-version-info.c",
+      "filepath": "tests/unit/bootloader/driver/can/test_can_bootloader-version-info.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "can_bootloader-version-info",
+        "can_bootloader-version-info.c",
+        "can_bootloader-version-info.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-003",
+      "filename": "test_can_can_message_notification.c",
+      "filepath": "tests/unit/bootloader/driver/can/test_can_can_message_notification.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "can_can_message_notification",
+        "can_can_message_notification.c",
+        "can_can_message_notification.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-004",
+      "filename": "test_can_helper.c",
+      "filepath": "tests/unit/bootloader/driver/can/test_can_helper.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "can_helper",
+        "can_helper.c",
+        "can_helper.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-005",
+      "filename": "test_can_cfg.c",
+      "filepath": "tests/unit/bootloader/driver/config/test_can_cfg.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "can_cfg",
+        "can_cfg.c",
+        "can_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-006",
+      "filename": "test_flash_cfg.c",
+      "filepath": "tests/unit/bootloader/driver/config/test_flash_cfg.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "flash_cfg",
+        "flash_cfg.c",
+        "flash_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-007",
+      "filename": "test_crc.c",
+      "filepath": "tests/unit/bootloader/driver/crc/test_crc.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "crc",
+        "crc.c",
+        "crc.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-008",
+      "filename": "test_crc_semi_auto_crc_calculation.c",
+      "filepath": "tests/unit/bootloader/driver/crc/test_crc_semi_auto_crc_calculation.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "crc_semi_auto_crc_calculation",
+        "crc_semi_auto_crc_calculation.c",
+        "crc_semi_auto_crc_calculation.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-009",
+      "filename": "test_crc64_calc.c",
+      "filepath": "tests/unit/bootloader/driver/crc/vendor/test_crc64_calc.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "crc64_calc",
+        "crc64_calc.c",
+        "crc64_calc.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-010",
+      "filename": "test_flash.c",
+      "filepath": "tests/unit/bootloader/driver/flash/test_flash.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "flash",
+        "flash.c",
+        "flash.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-011",
+      "filename": "test_foxmath.c",
+      "filepath": "tests/unit/bootloader/driver/foxmath/test_foxmath.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "foxmath",
+        "foxmath.c",
+        "foxmath.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-012",
+      "filename": "test_utils.c",
+      "filepath": "tests/unit/bootloader/driver/foxmath/test_utils.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "utils",
+        "utils.c",
+        "utils.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-013",
+      "filename": "test_io.c",
+      "filepath": "tests/unit/bootloader/driver/io/test_io.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "io",
+        "io.c",
+        "io.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-014",
+      "filename": "test_rti.c",
+      "filepath": "tests/unit/bootloader/driver/rti/test_rti.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "rti",
+        "rti.c",
+        "rti.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-015",
+      "filename": "test_boot.c",
+      "filepath": "tests/unit/bootloader/engine/boot/test_boot.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "boot",
+        "boot.c",
+        "boot.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-016",
+      "filename": "test_boot_cfg.c",
+      "filepath": "tests/unit/bootloader/engine/boot/test_boot_cfg.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "boot_cfg",
+        "boot_cfg.c",
+        "boot_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-017",
+      "filename": "test_boot_helper.c",
+      "filepath": "tests/unit/bootloader/engine/boot/test_boot_helper.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "boot_helper",
+        "boot_helper.c",
+        "boot_helper.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-018",
+      "filename": "test_can_cbs.c",
+      "filepath": "tests/unit/bootloader/engine/can/test_can_cbs.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "can_cbs",
+        "can_cbs.c",
+        "can_cbs.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-019",
+      "filename": "test_bootloader-hl_notification.c",
+      "filepath": "tests/unit/bootloader/hal/test_bootloader-hl_notification.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "bootloader-hl_notification",
+        "bootloader-hl_notification.c",
+        "bootloader-hl_notification.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-020",
+      "filename": "test_fassert.c",
+      "filepath": "tests/unit/bootloader/main/test_fassert.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "fassert",
+        "fassert.c",
+        "fassert.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-021",
+      "filename": "test_fstartup.c",
+      "filepath": "tests/unit/bootloader/main/test_fstartup.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "fstartup",
+        "fstartup.c",
+        "fstartup.h"
+      ]
+    },
+    {
+      "id": "UT-BOOT-022",
+      "filename": "test_main.c",
+      "filepath": "tests/unit/bootloader/main/test_main.c",
+      "module_type": "BOOT",
+      "source_modules": [
+        "main",
+        "main.c",
+        "main.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-001",
+      "filename": "test_adc.c",
+      "filepath": "tests/unit/app/driver/adc/test_adc.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adc",
+        "adc.c",
+        "adc.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-002",
+      "filename": "test_adi_ades1830_afe.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/api/test_adi_ades1830_afe.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830_afe",
+        "adi_ades1830_afe.c",
+        "adi_ades1830_afe.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-003",
+      "filename": "test_adi_ades1830_afe_dma.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/api/test_adi_ades1830_afe_dma.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830_afe_dma",
+        "adi_ades1830_afe_dma.c",
+        "adi_ades1830_afe_dma.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-004",
+      "filename": "test_adi_ades1830_cfg.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/config/test_adi_ades1830_cfg.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830_cfg",
+        "adi_ades1830_cfg.c",
+        "adi_ades1830_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-005",
+      "filename": "test_adi_ades1830_pec.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/pec/test_adi_ades1830_pec.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830_pec",
+        "adi_ades1830_pec.c",
+        "adi_ades1830_pec.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-006",
+      "filename": "test_adi_ades1830.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830",
+        "adi_ades1830.c",
+        "adi_ades1830.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-007",
+      "filename": "test_adi_ades1830_balancing.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_balancing.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830_balancing",
+        "adi_ades1830_balancing.c",
+        "adi_ades1830_balancing.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-008",
+      "filename": "test_adi_ades1830_buffers.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_buffers.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830_buffers",
+        "adi_ades1830_buffers.c",
+        "adi_ades1830_buffers.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-009",
+      "filename": "test_adi_ades1830_commands.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_commands.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830_commands",
+        "adi_ades1830_commands.c",
+        "adi_ades1830_commands.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-010",
+      "filename": "test_adi_ades1830_commands_voltages.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_commands_voltages.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830_commands_voltages",
+        "adi_ades1830_commands_voltages.c",
+        "adi_ades1830_commands_voltages.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-011",
+      "filename": "test_adi_ades1830_diagnostic_w.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_diagnostic_w.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830_diagnostic_w",
+        "adi_ades1830_diagnostic_w.c",
+        "adi_ades1830_diagnostic_w.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-012",
+      "filename": "test_adi_ades1830_gpio_voltages.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_gpio_voltages.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830_gpio_voltages",
+        "adi_ades1830_gpio_voltages.c",
+        "adi_ades1830_gpio_voltages.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-013",
+      "filename": "test_adi_ades1830_helpers.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_helpers.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830_helpers",
+        "adi_ades1830_helpers.c",
+        "adi_ades1830_helpers.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-014",
+      "filename": "test_adi_ades1830_initialization.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_initialization.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830_initialization",
+        "adi_ades1830_initialization.c",
+        "adi_ades1830_initialization.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-015",
+      "filename": "test_adi_ades1830_temperatures.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_temperatures.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830_temperatures",
+        "adi_ades1830_temperatures.c",
+        "adi_ades1830_temperatures.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-016",
+      "filename": "test_adi_ades1830_temperatures_2.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_temperatures_2.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830_temperatures_2",
+        "adi_ades1830_temperatures_2.c",
+        "adi_ades1830_temperatures_2.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-017",
+      "filename": "test_adi_ades1830_voltages.c",
+      "filepath": "tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_voltages.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades1830_voltages",
+        "adi_ades1830_voltages.c",
+        "adi_ades1830_voltages.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-018",
+      "filename": "test_adi_ades183x_afe.c",
+      "filepath": "tests/unit/app/driver/afe/adi/common/ades183x/api/test_adi_ades183x_afe.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades183x_afe",
+        "adi_ades183x_afe.c",
+        "adi_ades183x_afe.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-019",
+      "filename": "test_adi_ades183x_afe_dma.c",
+      "filepath": "tests/unit/app/driver/afe/adi/common/ades183x/api/test_adi_ades183x_afe_dma.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades183x_afe_dma",
+        "adi_ades183x_afe_dma.c",
+        "adi_ades183x_afe_dma.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-020",
+      "filename": "test_adi_ades183x_cfg.c",
+      "filepath": "tests/unit/app/driver/afe/adi/common/ades183x/config/test_adi_ades183x_cfg.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades183x_cfg",
+        "adi_ades183x_cfg.c",
+        "adi_ades183x_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-021",
+      "filename": "test_adi_ades183x_pec.c",
+      "filepath": "tests/unit/app/driver/afe/adi/common/ades183x/pec/test_adi_ades183x_pec.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades183x_pec",
+        "adi_ades183x_pec.c",
+        "adi_ades183x_pec.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-022",
+      "filename": "test_adi_ades183x.c",
+      "filepath": "tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades183x",
+        "adi_ades183x.c",
+        "adi_ades183x.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-023",
+      "filename": "test_adi_ades183x_buffers.c",
+      "filepath": "tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_buffers.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades183x_buffers",
+        "adi_ades183x_buffers.c",
+        "adi_ades183x_buffers.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-024",
+      "filename": "test_adi_ades183x_commands.c",
+      "filepath": "tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_commands.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades183x_commands",
+        "adi_ades183x_commands.c",
+        "adi_ades183x_commands.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-025",
+      "filename": "test_adi_ades183x_commands_voltages.c",
+      "filepath": "tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_commands_voltages.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades183x_commands_voltages",
+        "adi_ades183x_commands_voltages.c",
+        "adi_ades183x_commands_voltages.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-026",
+      "filename": "test_adi_ades183x_diagnostic_w.c",
+      "filepath": "tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_diagnostic_w.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades183x_diagnostic_w",
+        "adi_ades183x_diagnostic_w.c",
+        "adi_ades183x_diagnostic_w.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-027",
+      "filename": "test_adi_ades183x_helpers.c",
+      "filepath": "tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_helpers.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades183x_helpers",
+        "adi_ades183x_helpers.c",
+        "adi_ades183x_helpers.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-028",
+      "filename": "test_adi_ades183x_initialization.c",
+      "filepath": "tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_initialization.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades183x_initialization",
+        "adi_ades183x_initialization.c",
+        "adi_ades183x_initialization.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-029",
+      "filename": "test_adi_ades183x_temperatures.c",
+      "filepath": "tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_temperatures.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades183x_temperatures",
+        "adi_ades183x_temperatures.c",
+        "adi_ades183x_temperatures.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-030",
+      "filename": "test_adi_ades183x_voltages.c",
+      "filepath": "tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_voltages.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "adi_ades183x_voltages",
+        "adi_ades183x_voltages.c",
+        "adi_ades183x_voltages.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-031",
+      "filename": "test_afe_plausibility.c",
+      "filepath": "tests/unit/app/driver/afe/api/test_afe_plausibility.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "afe_plausibility",
+        "afe_plausibility.c",
+        "afe_plausibility.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-032",
+      "filename": "test_debug_can_afe.c",
+      "filepath": "tests/unit/app/driver/afe/debug/can/api/test_debug_can_afe.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "debug_can_afe",
+        "debug_can_afe.c",
+        "debug_can_afe.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-033",
+      "filename": "test_debug_can_afe_dma.c",
+      "filepath": "tests/unit/app/driver/afe/debug/can/api/test_debug_can_afe_dma.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "debug_can_afe_dma",
+        "debug_can_afe_dma.c",
+        "debug_can_afe_dma.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-034",
+      "filename": "test_debug_can.c",
+      "filepath": "tests/unit/app/driver/afe/debug/can/test_debug_can.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "debug_can",
+        "debug_can.c",
+        "debug_can.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-035",
+      "filename": "test_debug_default_afe.c",
+      "filepath": "tests/unit/app/driver/afe/debug/default/api/test_debug_default_afe.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "debug_default_afe",
+        "debug_default_afe.c",
+        "debug_default_afe.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-036",
+      "filename": "test_debug_default_afe_dma.c",
+      "filepath": "tests/unit/app/driver/afe/debug/default/api/test_debug_default_afe_dma.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "debug_default_afe_dma",
+        "debug_default_afe_dma.c",
+        "debug_default_afe_dma.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-037",
+      "filename": "test_debug_default.c",
+      "filepath": "tests/unit/app/driver/afe/debug/default/test_debug_default.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "debug_default",
+        "debug_default.c",
+        "debug_default.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-038",
+      "filename": "test_ltc_6806_cfg.c",
+      "filepath": "tests/unit/app/driver/afe/ltc/6806/config/test_ltc_6806_cfg.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "ltc_6806_cfg",
+        "ltc_6806_cfg.c",
+        "ltc_6806_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-039",
+      "filename": "test_ltc_6806.c",
+      "filepath": "tests/unit/app/driver/afe/ltc/6806/test_ltc_6806.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "ltc_6806",
+        "ltc_6806.c",
+        "ltc_6806.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-040",
+      "filename": "test_ltc_6806_pec_in_arrays.c",
+      "filepath": "tests/unit/app/driver/afe/ltc/6806/test_ltc_6806_pec_in_arrays.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "ltc_6806_pec_in_arrays",
+        "ltc_6806_pec_in_arrays.c",
+        "ltc_6806_pec_in_arrays.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-041",
+      "filename": "test_ltc_6813-1_cfg.c",
+      "filepath": "tests/unit/app/driver/afe/ltc/6813-1/config/test_ltc_6813-1_cfg.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "ltc_6813-1_cfg",
+        "ltc_6813-1_cfg.c",
+        "ltc_6813-1_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-042",
+      "filename": "test_ltc_6813-1.c",
+      "filepath": "tests/unit/app/driver/afe/ltc/6813-1/test_ltc_6813-1.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "ltc_6813-1",
+        "ltc_6813-1.c",
+        "ltc_6813-1.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-043",
+      "filename": "test_ltc_6813-1_pec_in_arrays.c",
+      "filepath": "tests/unit/app/driver/afe/ltc/6813-1/test_ltc_6813-1_pec_in_arrays.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "ltc_6813-1_pec_in_arrays",
+        "ltc_6813-1_pec_in_arrays.c",
+        "ltc_6813-1_pec_in_arrays.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-044",
+      "filename": "test_ltc_afe.c",
+      "filepath": "tests/unit/app/driver/afe/ltc/api/test_ltc_afe.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "ltc_afe",
+        "ltc_afe.c",
+        "ltc_afe.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-045",
+      "filename": "test_ltc_afe_dma.c",
+      "filepath": "tests/unit/app/driver/afe/ltc/common/test_ltc_afe_dma.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "ltc_afe_dma",
+        "ltc_afe_dma.c",
+        "ltc_afe_dma.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-046",
+      "filename": "test_ltc_pec.c",
+      "filepath": "tests/unit/app/driver/afe/ltc/common/test_ltc_pec.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "ltc_pec",
+        "ltc_pec.c",
+        "ltc_pec.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-047",
+      "filename": "test_mxm_afe.c",
+      "filepath": "tests/unit/app/driver/afe/maxim/api/test_mxm_afe.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "mxm_afe",
+        "mxm_afe.c",
+        "mxm_afe.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-048",
+      "filename": "test_mxm_cfg.c",
+      "filepath": "tests/unit/app/driver/afe/maxim/common/config/test_mxm_cfg.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "mxm_cfg",
+        "mxm_cfg.c",
+        "mxm_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-049",
+      "filename": "test_mxm_17841b.c",
+      "filepath": "tests/unit/app/driver/afe/maxim/common/test_mxm_17841b.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "mxm_17841b",
+        "mxm_17841b.c",
+        "mxm_17841b.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-050",
+      "filename": "test_mxm_1785x.c",
+      "filepath": "tests/unit/app/driver/afe/maxim/common/test_mxm_1785x.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "mxm_1785x",
+        "mxm_1785x.c",
+        "mxm_1785x.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-051",
+      "filename": "test_mxm_1785x_tools.c",
+      "filepath": "tests/unit/app/driver/afe/maxim/common/test_mxm_1785x_tools.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "mxm_1785x_tools",
+        "mxm_1785x_tools.c",
+        "mxm_1785x_tools.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-052",
+      "filename": "test_mxm_afe_dma.c",
+      "filepath": "tests/unit/app/driver/afe/maxim/common/test_mxm_afe_dma.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "mxm_afe_dma",
+        "mxm_afe_dma.c",
+        "mxm_afe_dma.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-053",
+      "filename": "test_mxm_battery_management.c",
+      "filepath": "tests/unit/app/driver/afe/maxim/common/test_mxm_battery_management.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "mxm_battery_management",
+        "mxm_battery_management.c",
+        "mxm_battery_management.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-054",
+      "filename": "test_mxm_bit_extract.c",
+      "filepath": "tests/unit/app/driver/afe/maxim/common/test_mxm_bit_extract.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "mxm_bit_extract",
+        "mxm_bit_extract.c",
+        "mxm_bit_extract.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-055",
+      "filename": "test_mxm_crc8.c",
+      "filepath": "tests/unit/app/driver/afe/maxim/common/test_mxm_crc8.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "mxm_crc8",
+        "mxm_crc8.c",
+        "mxm_crc8.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-056",
+      "filename": "test_mxm_register_map.c",
+      "filepath": "tests/unit/app/driver/afe/maxim/common/test_mxm_register_map.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "mxm_register_map",
+        "mxm_register_map.c",
+        "mxm_register_map.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-057",
+      "filename": "test_mxm_registry.c",
+      "filepath": "tests/unit/app/driver/afe/maxim/common/test_mxm_registry.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "mxm_registry",
+        "mxm_registry.c",
+        "mxm_registry.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-058",
+      "filename": "test_mxm_17852.c",
+      "filepath": "tests/unit/app/driver/afe/maxim/max17852/test_mxm_17852.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "mxm_17852",
+        "mxm_17852.c",
+        "mxm_17852.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-059",
+      "filename": "test_nxp_afe.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/api/test_nxp_afe.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_afe",
+        "nxp_afe.c",
+        "nxp_afe.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-060",
+      "filename": "test_nxp_mc3377x-ll.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/common/mc3377x/test_nxp_mc3377x-ll.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc3377x-ll",
+        "nxp_mc3377x-ll.c",
+        "nxp_mc3377x-ll.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-061",
+      "filename": "test_nxp_mc3377x.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/common/mc3377x/test_nxp_mc3377x.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc3377x",
+        "nxp_mc3377x.c",
+        "nxp_mc3377x.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-062",
+      "filename": "test_nxp_mc3377x_afe_dma.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/common/mc3377x/test_nxp_mc3377x_afe_dma.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc3377x_afe_dma",
+        "nxp_mc3377x_afe_dma.c",
+        "nxp_mc3377x_afe_dma.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-063",
+      "filename": "test_nxp_mc3377x_database.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/common/mc3377x/test_nxp_mc3377x_database.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc3377x_database",
+        "nxp_mc3377x_database.c",
+        "nxp_mc3377x_database.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-064",
+      "filename": "test_nxp_mc3377x_helpers.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/common/mc3377x/test_nxp_mc3377x_helpers.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc3377x_helpers",
+        "nxp_mc3377x_helpers.c",
+        "nxp_mc3377x_helpers.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-065",
+      "filename": "test_nxp_mc3377x_mux.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/common/mc3377x/test_nxp_mc3377x_mux.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc3377x_mux",
+        "nxp_mc3377x_mux.c",
+        "nxp_mc3377x_mux.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-066",
+      "filename": "test_nxp_mc33775a_afe.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/mc33775a/api/test_nxp_mc33775a_afe.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc33775a_afe",
+        "nxp_mc33775a_afe.c",
+        "nxp_mc33775a_afe.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-067",
+      "filename": "test_nxp_mc33775a_afe_dma.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/mc33775a/api/test_nxp_mc33775a_afe_dma.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc33775a_afe_dma",
+        "nxp_mc33775a_afe_dma.c",
+        "nxp_mc33775a_afe_dma.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-068",
+      "filename": "test_nxp_mc33775a_cfg.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/mc33775a/config/test_nxp_mc33775a_cfg.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc33775a_cfg",
+        "nxp_mc33775a_cfg.c",
+        "nxp_mc33775a_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-069",
+      "filename": "test_nxp_mc33775a_dma_cfg.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/mc33775a/config/test_nxp_mc33775a_dma_cfg.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc33775a_dma_cfg",
+        "nxp_mc33775a_dma_cfg.c",
+        "nxp_mc33775a_dma_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-070",
+      "filename": "test_nxp_mc33775a-ll.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a-ll.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc33775a-ll",
+        "nxp_mc33775a-ll.c",
+        "nxp_mc33775a-ll.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-071",
+      "filename": "test_nxp_mc33775a.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc33775a",
+        "nxp_mc33775a.c",
+        "nxp_mc33775a.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-072",
+      "filename": "test_nxp_mc33775a_balancing.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a_balancing.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc33775a_balancing",
+        "nxp_mc33775a_balancing.c",
+        "nxp_mc33775a_balancing.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-073",
+      "filename": "test_nxp_mc33775a_database.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a_database.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc33775a_database",
+        "nxp_mc33775a_database.c",
+        "nxp_mc33775a_database.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-074",
+      "filename": "test_nxp_mc33775a_helpers.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a_helpers.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc33775a_helpers",
+        "nxp_mc33775a_helpers.c",
+        "nxp_mc33775a_helpers.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-075",
+      "filename": "test_nxp_mc33775a_i2c.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a_i2c.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc33775a_i2c",
+        "nxp_mc33775a_i2c.c",
+        "nxp_mc33775a_i2c.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-076",
+      "filename": "test_nxp_mc33775a_measurement.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a_measurement.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc33775a_measurement",
+        "nxp_mc33775a_measurement.c",
+        "nxp_mc33775a_measurement.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-077",
+      "filename": "test_nxp_mc33775a_mux.c",
+      "filepath": "tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a_mux.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxp_mc33775a_mux",
+        "nxp_mc33775a_mux.c",
+        "nxp_mc33775a_mux.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-078",
+      "filename": "test_ti_afe.c",
+      "filepath": "tests/unit/app/driver/afe/ti/api/test_ti_afe.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "ti_afe",
+        "ti_afe.c",
+        "ti_afe.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-079",
+      "filename": "test_ti_bq79xxx_afe_dma.c",
+      "filepath": "tests/unit/app/driver/afe/ti/common/api/test_ti_bq79xxx_afe_dma.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "ti_bq79xxx_afe_dma",
+        "ti_bq79xxx_afe_dma.c",
+        "ti_bq79xxx_afe_dma.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-080",
+      "filename": "test_ti_dummy_afe.c",
+      "filepath": "tests/unit/app/driver/afe/ti/dummy/api/test_ti_dummy_afe.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "ti_dummy_afe",
+        "ti_dummy_afe.c",
+        "ti_dummy_afe.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-081",
+      "filename": "test_ti_dummy.c",
+      "filepath": "tests/unit/app/driver/afe/ti/dummy/test_ti_dummy.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "ti_dummy",
+        "ti_dummy.c",
+        "ti_dummy.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-082",
+      "filename": "test_can_cbs_rx_aerosol-sensor.c",
+      "filepath": "tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_aerosol-sensor.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_rx_aerosol-sensor",
+        "can_cbs_rx_aerosol-sensor.c",
+        "can_cbs_rx_aerosol-sensor.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-083",
+      "filename": "test_can_cbs_rx_bms-state-request.c",
+      "filepath": "tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_bms-state-request.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_rx_bms-state-request",
+        "can_cbs_rx_bms-state-request.c",
+        "can_cbs_rx_bms-state-request.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-084",
+      "filename": "test_can_cbs_rx_cell-temperatures.c",
+      "filepath": "tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_cell-temperatures.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_rx_cell-temperatures",
+        "can_cbs_rx_cell-temperatures.c",
+        "can_cbs_rx_cell-temperatures.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-085",
+      "filename": "test_can_cbs_rx_cell-voltages.c",
+      "filepath": "tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_cell-voltages.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_rx_cell-voltages",
+        "can_cbs_rx_cell-voltages.c",
+        "can_cbs_rx_cell-voltages.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-086",
+      "filename": "test_can_cbs_rx_current-sensor.c",
+      "filepath": "tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_current-sensor.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_rx_current-sensor",
+        "can_cbs_rx_current-sensor.c",
+        "can_cbs_rx_current-sensor.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-087",
+      "filename": "test_can_cbs_rx_debug.c",
+      "filepath": "tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_debug.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_rx_debug",
+        "can_cbs_rx_debug.c",
+        "can_cbs_rx_debug.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-088",
+      "filename": "test_can_cbs_rx_imd-info.c",
+      "filepath": "tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_imd-info.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_rx_imd-info",
+        "can_cbs_rx_imd-info.c",
+        "can_cbs_rx_imd-info.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-089",
+      "filename": "test_can_cbs_rx_imd-response.c",
+      "filepath": "tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_imd-response.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_rx_imd-response",
+        "can_cbs_rx_imd-response.c",
+        "can_cbs_rx_imd-response.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-090",
+      "filename": "test_can_helper.c",
+      "filepath": "tests/unit/app/driver/can/cbs/test_can_helper.c",
+      "module_type": "DRIV",
+      "source_modules": []
+    },
+    {
+      "id": "UT-DRIV-091",
+      "filename": "test_can_cbs_tx_crash-dump.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-async/test_can_cbs_tx_crash-dump.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_crash-dump",
+        "can_cbs_tx_crash-dump.c",
+        "can_cbs_tx_crash-dump.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-092",
+      "filename": "test_can_cbs_tx_debug-build-configuration.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-async/test_can_cbs_tx_debug-build-configuration.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_debug-build-configuration",
+        "can_cbs_tx_debug-build-configuration.c",
+        "can_cbs_tx_debug-build-configuration.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-093",
+      "filename": "test_can_cbs_tx_debug-response.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-async/test_can_cbs_tx_debug-response.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_debug-response",
+        "can_cbs_tx_debug-response.c",
+        "can_cbs_tx_debug-response.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-094",
+      "filename": "test_can_cbs_tx_fatal-error.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-async/test_can_cbs_tx_fatal-error.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_fatal-error",
+        "can_cbs_tx_fatal-error.c",
+        "can_cbs_tx_fatal-error.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-095",
+      "filename": "test_can_cbs_tx_imd-request.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-async/test_can_cbs_tx_imd-request.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_imd-request",
+        "can_cbs_tx_imd-request.c",
+        "can_cbs_tx_imd-request.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-096",
+      "filename": "test_can_cbs_tx_bms-state-details.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_bms-state-details.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_bms-state-details",
+        "can_cbs_tx_bms-state-details.c",
+        "can_cbs_tx_bms-state-details.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-097",
+      "filename": "test_can_cbs_tx_bms-state.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_bms-state.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_bms-state",
+        "can_cbs_tx_bms-state.c",
+        "can_cbs_tx_bms-state.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-098",
+      "filename": "test_can_cbs_tx_cell-temperatures.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_cell-temperatures.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_cell-temperatures",
+        "can_cbs_tx_cell-temperatures.c",
+        "can_cbs_tx_cell-temperatures.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-099",
+      "filename": "test_can_cbs_tx_cell-voltages.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_cell-voltages.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_cell-voltages",
+        "can_cbs_tx_cell-voltages.c",
+        "can_cbs_tx_cell-voltages.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-100",
+      "filename": "test_can_cbs_tx_pack-limits.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_pack-limits.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_pack-limits",
+        "can_cbs_tx_pack-limits.c",
+        "can_cbs_tx_pack-limits.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-101",
+      "filename": "test_can_cbs_tx_pack-minimum-maximum-values.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_pack-minimum-maximum-values.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_pack-minimum-maximum-values",
+        "can_cbs_tx_pack-minimum-maximum-values.c",
+        "can_cbs_tx_pack-minimum-maximum-values.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-102",
+      "filename": "test_can_cbs_tx_pack-state-estimation.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_pack-state-estimation.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_pack-state-estimation",
+        "can_cbs_tx_pack-state-estimation.c",
+        "can_cbs_tx_pack-state-estimation.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-103",
+      "filename": "test_can_cbs_tx_pack-values-p0.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_pack-values-p0.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_pack-values-p0",
+        "can_cbs_tx_pack-values-p0.c",
+        "can_cbs_tx_pack-values-p0.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-104",
+      "filename": "test_can_cbs_tx_pack-values-p1.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_pack-values-p1.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_pack-values-p1",
+        "can_cbs_tx_pack-values-p1.c",
+        "can_cbs_tx_pack-values-p1.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-105",
+      "filename": "test_can_cbs_tx_string-minimum-maximum-values.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_string-minimum-maximum-values.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_string-minimum-maximum-values",
+        "can_cbs_tx_string-minimum-maximum-values.c",
+        "can_cbs_tx_string-minimum-maximum-values.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-106",
+      "filename": "test_can_cbs_tx_string-state-estimation.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_string-state-estimation.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_string-state-estimation",
+        "can_cbs_tx_string-state-estimation.c",
+        "can_cbs_tx_string-state-estimation.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-107",
+      "filename": "test_can_cbs_tx_string-state.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_string-state.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_string-state",
+        "can_cbs_tx_string-state.c",
+        "can_cbs_tx_string-state.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-108",
+      "filename": "test_can_cbs_tx_string-values-p0.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_string-values-p0.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_string-values-p0",
+        "can_cbs_tx_string-values-p0.c",
+        "can_cbs_tx_string-values-p0.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-109",
+      "filename": "test_can_cbs_tx_string-values-p1.c",
+      "filepath": "tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_string-values-p1.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cbs_tx_string-values-p1",
+        "can_cbs_tx_string-values-p1.c",
+        "can_cbs_tx_string-values-p1.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-110",
+      "filename": "test_can.c",
+      "filepath": "tests/unit/app/driver/can/test_can.c",
+      "module_type": "DRIV",
+      "source_modules": []
+    },
+    {
+      "id": "UT-DRIV-111",
+      "filename": "test_can_1.c",
+      "filepath": "tests/unit/app/driver/can/test_can_1.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_1",
+        "can_1.c",
+        "can_1.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-112",
+      "filename": "test_can_2.c",
+      "filepath": "tests/unit/app/driver/can/test_can_2.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_2",
+        "can_2.c",
+        "can_2.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-113",
+      "filename": "test_can_can_message_notification.c",
+      "filepath": "tests/unit/app/driver/can/test_can_can_message_notification.c",
+      "module_type": "DRIV",
+      "source_modules": []
+    },
+    {
+      "id": "UT-DRIV-114",
+      "filename": "test_checksum.c",
+      "filepath": "tests/unit/app/driver/checksum/test_checksum.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "checksum",
+        "checksum.c",
+        "checksum.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-115",
+      "filename": "test_can_cfg.c",
+      "filepath": "tests/unit/app/driver/config/test_can_cfg.c",
+      "module_type": "DRIV",
+      "source_modules": []
+    },
+    {
+      "id": "UT-DRIV-116",
+      "filename": "test_can_cfg_rx.c",
+      "filepath": "tests/unit/app/driver/config/test_can_cfg_rx.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cfg_rx",
+        "can_cfg_rx.c",
+        "can_cfg_rx.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-117",
+      "filename": "test_can_cfg_tx_cyclic.c",
+      "filepath": "tests/unit/app/driver/config/test_can_cfg_tx_cyclic.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "can_cfg_tx_cyclic",
+        "can_cfg_tx_cyclic.c",
+        "can_cfg_tx_cyclic.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-118",
+      "filename": "test_contactor_cfg.c",
+      "filepath": "tests/unit/app/driver/config/test_contactor_cfg.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "contactor_cfg",
+        "contactor_cfg.c",
+        "contactor_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-119",
+      "filename": "test_dma_cfg.c",
+      "filepath": "tests/unit/app/driver/config/test_dma_cfg.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "dma_cfg",
+        "dma_cfg.c",
+        "dma_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-120",
+      "filename": "test_fram_cfg.c",
+      "filepath": "tests/unit/app/driver/config/test_fram_cfg.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "fram_cfg",
+        "fram_cfg.c",
+        "fram_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-121",
+      "filename": "test_pex_cfg.c",
+      "filepath": "tests/unit/app/driver/config/test_pex_cfg.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "pex_cfg",
+        "pex_cfg.c",
+        "pex_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-122",
+      "filename": "test_spi_cfg.c",
+      "filepath": "tests/unit/app/driver/config/test_spi_cfg.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "spi_cfg",
+        "spi_cfg.c",
+        "spi_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-123",
+      "filename": "test_sps_cfg.c",
+      "filepath": "tests/unit/app/driver/config/test_sps_cfg.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "sps_cfg",
+        "sps_cfg.c",
+        "sps_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-124",
+      "filename": "test_contactor.c",
+      "filepath": "tests/unit/app/driver/contactor/test_contactor.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "contactor",
+        "contactor.c",
+        "contactor.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-125",
+      "filename": "test_crc.c",
+      "filepath": "tests/unit/app/driver/crc/test_crc.c",
+      "module_type": "DRIV",
+      "source_modules": []
+    },
+    {
+      "id": "UT-DRIV-126",
+      "filename": "test_dma.c",
+      "filepath": "tests/unit/app/driver/dma/test_dma.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "dma",
+        "dma.c",
+        "dma.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-127",
+      "filename": "test_dma_dma_group_a_notification.c",
+      "filepath": "tests/unit/app/driver/dma/test_dma_dma_group_a_notification.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "dma_dma_group_a_notification",
+        "dma_dma_group_a_notification.c",
+        "dma_dma_group_a_notification.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-128",
+      "filename": "test_foxmath.c",
+      "filepath": "tests/unit/app/driver/foxmath/test_foxmath.c",
+      "module_type": "DRIV",
+      "source_modules": []
+    },
+    {
+      "id": "UT-DRIV-129",
+      "filename": "test_utils.c",
+      "filepath": "tests/unit/app/driver/foxmath/test_utils.c",
+      "module_type": "DRIV",
+      "source_modules": []
+    },
+    {
+      "id": "UT-DRIV-130",
+      "filename": "test_fram.c",
+      "filepath": "tests/unit/app/driver/fram/test_fram.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "fram",
+        "fram.c",
+        "fram.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-131",
+      "filename": "test_htsensor.c",
+      "filepath": "tests/unit/app/driver/htsensor/test_htsensor.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "htsensor",
+        "htsensor.c",
+        "htsensor.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-132",
+      "filename": "test_i2c.c",
+      "filepath": "tests/unit/app/driver/i2c/test_i2c.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "i2c",
+        "i2c.c",
+        "i2c.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-133",
+      "filename": "test_bender_ir155.c",
+      "filepath": "tests/unit/app/driver/imd/bender/ir155/test_bender_ir155.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "bender_ir155",
+        "bender_ir155.c",
+        "bender_ir155.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-134",
+      "filename": "test_bender_ir155_helper.c",
+      "filepath": "tests/unit/app/driver/imd/bender/ir155/test_bender_ir155_helper.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "bender_ir155_helper",
+        "bender_ir155_helper.c",
+        "bender_ir155_helper.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-135",
+      "filename": "test_bender_iso165c.c",
+      "filepath": "tests/unit/app/driver/imd/bender/iso165c/test_bender_iso165c.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "bender_iso165c",
+        "bender_iso165c.c",
+        "bender_iso165c.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-136",
+      "filename": "test_no-imd.c",
+      "filepath": "tests/unit/app/driver/imd/none/test_no-imd.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "no-imd",
+        "no-imd.c",
+        "no-imd.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-137",
+      "filename": "test_imd.c",
+      "filepath": "tests/unit/app/driver/imd/test_imd.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "imd",
+        "imd.c",
+        "imd.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-138",
+      "filename": "test_interlock.c",
+      "filepath": "tests/unit/app/driver/interlock/test_interlock.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "interlock",
+        "interlock.c",
+        "interlock.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-139",
+      "filename": "test_io.c",
+      "filepath": "tests/unit/app/driver/io/test_io.c",
+      "module_type": "DRIV",
+      "source_modules": []
+    },
+    {
+      "id": "UT-DRIV-140",
+      "filename": "test_led.c",
+      "filepath": "tests/unit/app/driver/led/test_led.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "led",
+        "led.c",
+        "led.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-141",
+      "filename": "test_mcu.c",
+      "filepath": "tests/unit/app/driver/mcu/test_mcu.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "mcu",
+        "mcu.c",
+        "mcu.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-142",
+      "filename": "test_meas.c",
+      "filepath": "tests/unit/app/driver/meas/test_meas.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "meas",
+        "meas.c",
+        "meas.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-143",
+      "filename": "test_pex.c",
+      "filepath": "tests/unit/app/driver/pex/test_pex.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "pex",
+        "pex.c",
+        "pex.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-144",
+      "filename": "test_dp83869.c",
+      "filepath": "tests/unit/app/driver/phy/test_dp83869.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "dp83869",
+        "dp83869.c",
+        "dp83869.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-145",
+      "filename": "test_pwm.c",
+      "filepath": "tests/unit/app/driver/pwm/test_pwm.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "pwm",
+        "pwm.c",
+        "pwm.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-146",
+      "filename": "test_rtc.c",
+      "filepath": "tests/unit/app/driver/rtc/test_rtc.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "rtc",
+        "rtc.c",
+        "rtc.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-147",
+      "filename": "test_nxpfs85xx.c",
+      "filepath": "tests/unit/app/driver/sbc/test_nxpfs85xx.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxpfs85xx",
+        "nxpfs85xx.c",
+        "nxpfs85xx.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-148",
+      "filename": "test_nxpfs85xx_mcu_spi_transfer_data.c",
+      "filepath": "tests/unit/app/driver/sbc/test_nxpfs85xx_mcu_spi_transfer_data.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "nxpfs85xx_mcu_spi_transfer_data",
+        "nxpfs85xx_mcu_spi_transfer_data.c",
+        "nxpfs85xx_mcu_spi_transfer_data.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-149",
+      "filename": "test_sbc.c",
+      "filepath": "tests/unit/app/driver/sbc/test_sbc.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "sbc",
+        "sbc.c",
+        "sbc.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-150",
+      "filename": "test_spi.c",
+      "filepath": "tests/unit/app/driver/spi/test_spi.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "spi",
+        "spi.c",
+        "spi.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-151",
+      "filename": "test_spi_adi.c",
+      "filepath": "tests/unit/app/driver/spi/test_spi_adi.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "spi_adi",
+        "spi_adi.c",
+        "spi_adi.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-152",
+      "filename": "test_spi_debug.c",
+      "filepath": "tests/unit/app/driver/spi/test_spi_debug.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "spi_debug",
+        "spi_debug.c",
+        "spi_debug.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-153",
+      "filename": "test_spi_ltc.c",
+      "filepath": "tests/unit/app/driver/spi/test_spi_ltc.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "spi_ltc",
+        "spi_ltc.c",
+        "spi_ltc.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-154",
+      "filename": "test_spi_mxm.c",
+      "filepath": "tests/unit/app/driver/spi/test_spi_mxm.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "spi_mxm",
+        "spi_mxm.c",
+        "spi_mxm.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-155",
+      "filename": "test_spi_nxp.c",
+      "filepath": "tests/unit/app/driver/spi/test_spi_nxp.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "spi_nxp",
+        "spi_nxp.c",
+        "spi_nxp.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-156",
+      "filename": "test_spi_spi_notification.c",
+      "filepath": "tests/unit/app/driver/spi/test_spi_spi_notification.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "spi_spi_notification",
+        "spi_spi_notification.c",
+        "spi_spi_notification.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-157",
+      "filename": "test_spi_st.c",
+      "filepath": "tests/unit/app/driver/spi/test_spi_st.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "spi_st",
+        "spi_st.c",
+        "spi_st.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-158",
+      "filename": "test_spi_ti.c",
+      "filepath": "tests/unit/app/driver/spi/test_spi_ti.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "spi_ti",
+        "spi_ti.c",
+        "spi_ti.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-159",
+      "filename": "test_sps.c",
+      "filepath": "tests/unit/app/driver/sps/test_sps.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "sps",
+        "sps.c",
+        "sps.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-160",
+      "filename": "test_tsi_limits.c",
+      "filepath": "tests/unit/app/driver/ts/api/test_tsi_limits.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "tsi_limits",
+        "tsi_limits.c",
+        "tsi_limits.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-161",
+      "filename": "test_epcos_b57251v5103j060_lookup-table.c",
+      "filepath": "tests/unit/app/driver/ts/epcos/b57251v5103j060/lookup-table/test_epcos_b57251v5103j060_lookup-table.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "epcos_b57251v5103j060_lookup-table",
+        "epcos_b57251v5103j060_lookup-table.c",
+        "epcos_b57251v5103j060_lookup-table.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-162",
+      "filename": "test_epcos_b57251v5103j060_polynomial.c",
+      "filepath": "tests/unit/app/driver/ts/epcos/b57251v5103j060/polynomial/test_epcos_b57251v5103j060_polynomial.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "epcos_b57251v5103j060_polynomial",
+        "epcos_b57251v5103j060_polynomial.c",
+        "epcos_b57251v5103j060_polynomial.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-163",
+      "filename": "test_epcos_b57251v5103j060.c",
+      "filepath": "tests/unit/app/driver/ts/epcos/b57251v5103j060/test_epcos_b57251v5103j060.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "epcos_b57251v5103j060",
+        "epcos_b57251v5103j060.c",
+        "epcos_b57251v5103j060.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-164",
+      "filename": "test_epcos_b57861s0103f045_lookup-table.c",
+      "filepath": "tests/unit/app/driver/ts/epcos/b57861s0103f045/lookup-table/test_epcos_b57861s0103f045_lookup-table.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "epcos_b57861s0103f045_lookup-table",
+        "epcos_b57861s0103f045_lookup-table.c",
+        "epcos_b57861s0103f045_lookup-table.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-165",
+      "filename": "test_epcos_b57861s0103f045_polynomial.c",
+      "filepath": "tests/unit/app/driver/ts/epcos/b57861s0103f045/polynomial/test_epcos_b57861s0103f045_polynomial.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "epcos_b57861s0103f045_polynomial",
+        "epcos_b57861s0103f045_polynomial.c",
+        "epcos_b57861s0103f045_polynomial.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-166",
+      "filename": "test_epcos_b57861s0103f045.c",
+      "filepath": "tests/unit/app/driver/ts/epcos/b57861s0103f045/test_epcos_b57861s0103f045.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "epcos_b57861s0103f045",
+        "epcos_b57861s0103f045.c",
+        "epcos_b57861s0103f045.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-167",
+      "filename": "test_fake_none_lookup-table.c",
+      "filepath": "tests/unit/app/driver/ts/fake/none/lookup-table/test_fake_none_lookup-table.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "fake_none_lookup-table",
+        "fake_none_lookup-table.c",
+        "fake_none_lookup-table.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-168",
+      "filename": "test_fake_none_polynomial.c",
+      "filepath": "tests/unit/app/driver/ts/fake/none/polynomial/test_fake_none_polynomial.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "fake_none_polynomial",
+        "fake_none_polynomial.c",
+        "fake_none_polynomial.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-169",
+      "filename": "test_fake_none.c",
+      "filepath": "tests/unit/app/driver/ts/fake/none/test_fake_none.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "fake_none",
+        "fake_none.c",
+        "fake_none.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-170",
+      "filename": "test_murata_ncxxxxh103_lookup-table.c",
+      "filepath": "tests/unit/app/driver/ts/murata/ncxxxxh103/lookup-table/test_murata_ncxxxxh103_lookup-table.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "murata_ncxxxxh103_lookup-table",
+        "murata_ncxxxxh103_lookup-table.c",
+        "murata_ncxxxxh103_lookup-table.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-171",
+      "filename": "test_murata_ncxxxxh103_polynomial.c",
+      "filepath": "tests/unit/app/driver/ts/murata/ncxxxxh103/polynomial/test_murata_ncxxxxh103_polynomial.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "murata_ncxxxxh103_polynomial",
+        "murata_ncxxxxh103_polynomial.c",
+        "murata_ncxxxxh103_polynomial.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-172",
+      "filename": "test_murata_ncxxxxh103.c",
+      "filepath": "tests/unit/app/driver/ts/murata/ncxxxxh103/test_murata_ncxxxxh103.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "murata_ncxxxxh103",
+        "murata_ncxxxxh103.c",
+        "murata_ncxxxxh103.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-173",
+      "filename": "test_semitec_103jt_lookup-table.c",
+      "filepath": "tests/unit/app/driver/ts/semitec/103jt/lookup-table/test_semitec_103jt_lookup-table.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "semitec_103jt_lookup-table",
+        "semitec_103jt_lookup-table.c",
+        "semitec_103jt_lookup-table.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-174",
+      "filename": "test_semitec_103jt.c",
+      "filepath": "tests/unit/app/driver/ts/semitec/103jt/test_semitec_103jt.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "semitec_103jt",
+        "semitec_103jt.c",
+        "semitec_103jt.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-175",
+      "filename": "test_tdk_ntcg163jx103dt1s_lookup-table.c",
+      "filepath": "tests/unit/app/driver/ts/tdk/ntcg163jx103dt1s/lookup-table/test_tdk_ntcg163jx103dt1s_lookup-table.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "tdk_ntcg163jx103dt1s_lookup-table",
+        "tdk_ntcg163jx103dt1s_lookup-table.c",
+        "tdk_ntcg163jx103dt1s_lookup-table.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-176",
+      "filename": "test_tdk_ntcg163jx103dt1s.c",
+      "filepath": "tests/unit/app/driver/ts/tdk/ntcg163jx103dt1s/test_tdk_ntcg163jx103dt1s.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "tdk_ntcg163jx103dt1s",
+        "tdk_ntcg163jx103dt1s.c",
+        "tdk_ntcg163jx103dt1s.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-177",
+      "filename": "test_tdk_ntcgs103jf103ft8_lookup-table.c",
+      "filepath": "tests/unit/app/driver/ts/tdk/ntcgs103jf103ft8/lookup-table/test_tdk_ntcgs103jf103ft8_lookup-table.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "tdk_ntcgs103jf103ft8_lookup-table",
+        "tdk_ntcgs103jf103ft8_lookup-table.c",
+        "tdk_ntcgs103jf103ft8_lookup-table.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-178",
+      "filename": "test_tdk_ntcgs103jf103ft8.c",
+      "filepath": "tests/unit/app/driver/ts/tdk/ntcgs103jf103ft8/test_tdk_ntcgs103jf103ft8.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "tdk_ntcgs103jf103ft8",
+        "tdk_ntcgs103jf103ft8.c",
+        "tdk_ntcgs103jf103ft8.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-179",
+      "filename": "test_beta.c",
+      "filepath": "tests/unit/app/driver/ts/test_beta.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "beta",
+        "beta.c",
+        "beta.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-180",
+      "filename": "test_vishay_ntcalug01a103g_lookup-table.c",
+      "filepath": "tests/unit/app/driver/ts/vishay/ntcalug01a103g/lookup-table/test_vishay_ntcalug01a103g_lookup-table.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "vishay_ntcalug01a103g_lookup-table",
+        "vishay_ntcalug01a103g_lookup-table.c",
+        "vishay_ntcalug01a103g_lookup-table.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-181",
+      "filename": "test_vishay_ntcalug01a103g_polynomial.c",
+      "filepath": "tests/unit/app/driver/ts/vishay/ntcalug01a103g/polynomial/test_vishay_ntcalug01a103g_polynomial.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "vishay_ntcalug01a103g_polynomial",
+        "vishay_ntcalug01a103g_polynomial.c",
+        "vishay_ntcalug01a103g_polynomial.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-182",
+      "filename": "test_vishay_ntcalug01a103g.c",
+      "filepath": "tests/unit/app/driver/ts/vishay/ntcalug01a103g/test_vishay_ntcalug01a103g.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "vishay_ntcalug01a103g",
+        "vishay_ntcalug01a103g.c",
+        "vishay_ntcalug01a103g.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-183",
+      "filename": "test_vishay_ntcle317e4103sba_lookup-table.c",
+      "filepath": "tests/unit/app/driver/ts/vishay/ntcle317e4103sba/lookup-table/test_vishay_ntcle317e4103sba_lookup-table.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "vishay_ntcle317e4103sba_lookup-table",
+        "vishay_ntcle317e4103sba_lookup-table.c",
+        "vishay_ntcle317e4103sba_lookup-table.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-184",
+      "filename": "test_vishay_ntcle317e4103sba.c",
+      "filepath": "tests/unit/app/driver/ts/vishay/ntcle317e4103sba/test_vishay_ntcle317e4103sba.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "vishay_ntcle317e4103sba",
+        "vishay_ntcle317e4103sba.c",
+        "vishay_ntcle317e4103sba.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-185",
+      "filename": "test_vishay_ntcle413e2103f102l_lookup-table.c",
+      "filepath": "tests/unit/app/driver/ts/vishay/ntcle413e2103f102l/lookup-table/test_vishay_ntcle413e2103f102l_lookup-table.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "vishay_ntcle413e2103f102l_lookup-table",
+        "vishay_ntcle413e2103f102l_lookup-table.c",
+        "vishay_ntcle413e2103f102l_lookup-table.h"
+      ]
+    },
+    {
+      "id": "UT-DRIV-186",
+      "filename": "test_vishay_ntcle413e2103f102l.c",
+      "filepath": "tests/unit/app/driver/ts/vishay/ntcle413e2103f102l/test_vishay_ntcle413e2103f102l.c",
+      "module_type": "DRIV",
+      "source_modules": [
+        "vishay_ntcle413e2103f102l",
+        "vishay_ntcle413e2103f102l.c",
+        "vishay_ntcle413e2103f102l.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-001",
+      "filename": "test_database_cfg.c",
+      "filepath": "tests/unit/app/engine/config/test_database_cfg.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "database_cfg",
+        "database_cfg.c",
+        "database_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-002",
+      "filename": "test_diag_cfg.c",
+      "filepath": "tests/unit/app/engine/config/test_diag_cfg.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cfg",
+        "diag_cfg.c",
+        "diag_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-003",
+      "filename": "test_sys_cfg.c",
+      "filepath": "tests/unit/app/engine/config/test_sys_cfg.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "sys_cfg",
+        "sys_cfg.c",
+        "sys_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-004",
+      "filename": "test_sys_mon_cfg.c",
+      "filepath": "tests/unit/app/engine/config/test_sys_mon_cfg.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "sys_mon_cfg",
+        "sys_mon_cfg.c",
+        "sys_mon_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-005",
+      "filename": "test_database.c",
+      "filepath": "tests/unit/app/engine/database/test_database.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "database",
+        "database.c",
+        "database.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-006",
+      "filename": "test_database_helper.c",
+      "filepath": "tests/unit/app/engine/database/test_database_helper.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "database_helper",
+        "database_helper.c",
+        "database_helper.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-007",
+      "filename": "test_diag_cbs_aerosol-sensor.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_aerosol-sensor.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_aerosol-sensor",
+        "diag_cbs_aerosol-sensor.c",
+        "diag_cbs_aerosol-sensor.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-008",
+      "filename": "test_diag_cbs_afe.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_afe.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_afe",
+        "diag_cbs_afe.c",
+        "diag_cbs_afe.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-009",
+      "filename": "test_diag_cbs_bms.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_bms.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_bms",
+        "diag_cbs_bms.c",
+        "diag_cbs_bms.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-010",
+      "filename": "test_diag_cbs_can.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_can.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_can",
+        "diag_cbs_can.c",
+        "diag_cbs_can.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-011",
+      "filename": "test_diag_cbs_clamp30c.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_clamp30c.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_clamp30c",
+        "diag_cbs_clamp30c.c",
+        "diag_cbs_clamp30c.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-012",
+      "filename": "test_diag_cbs_contactor.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_contactor.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_contactor",
+        "diag_cbs_contactor.c",
+        "diag_cbs_contactor.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-013",
+      "filename": "test_diag_cbs_current-sensor.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_current-sensor.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_current-sensor",
+        "diag_cbs_current-sensor.c",
+        "diag_cbs_current-sensor.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-014",
+      "filename": "test_diag_cbs_current.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_current.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_current",
+        "diag_cbs_current.c",
+        "diag_cbs_current.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-015",
+      "filename": "test_diag_cbs_deep-discharge.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_deep-discharge.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_deep-discharge",
+        "diag_cbs_deep-discharge.c",
+        "diag_cbs_deep-discharge.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-016",
+      "filename": "test_diag_cbs_dummy.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_dummy.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_dummy",
+        "diag_cbs_dummy.c",
+        "diag_cbs_dummy.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-017",
+      "filename": "test_diag_cbs_fram.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_fram.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_fram",
+        "diag_cbs_fram.c",
+        "diag_cbs_fram.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-018",
+      "filename": "test_diag_cbs_i2c.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_i2c.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_i2c",
+        "diag_cbs_i2c.c",
+        "diag_cbs_i2c.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-019",
+      "filename": "test_diag_cbs_insulation.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_insulation.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_insulation",
+        "diag_cbs_insulation.c",
+        "diag_cbs_insulation.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-020",
+      "filename": "test_diag_cbs_interlock.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_interlock.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_interlock",
+        "diag_cbs_interlock.c",
+        "diag_cbs_interlock.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-021",
+      "filename": "test_diag_cbs_plausibility.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_plausibility.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_plausibility",
+        "diag_cbs_plausibility.c",
+        "diag_cbs_plausibility.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-022",
+      "filename": "test_diag_cbs_power-measurement.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_power-measurement.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_power-measurement",
+        "diag_cbs_power-measurement.c",
+        "diag_cbs_power-measurement.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-023",
+      "filename": "test_diag_cbs_rtc.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_rtc.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_rtc",
+        "diag_cbs_rtc.c",
+        "diag_cbs_rtc.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-024",
+      "filename": "test_diag_cbs_sbc.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_sbc.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_sbc",
+        "diag_cbs_sbc.c",
+        "diag_cbs_sbc.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-025",
+      "filename": "test_diag_cbs_sys-mon.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_sys-mon.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_sys-mon",
+        "diag_cbs_sys-mon.c",
+        "diag_cbs_sys-mon.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-026",
+      "filename": "test_diag_cbs_temperature.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_temperature.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_temperature",
+        "diag_cbs_temperature.c",
+        "diag_cbs_temperature.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-027",
+      "filename": "test_diag_cbs_voltage.c",
+      "filepath": "tests/unit/app/engine/diag/cbs/test_diag_cbs_voltage.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag_cbs_voltage",
+        "diag_cbs_voltage.c",
+        "diag_cbs_voltage.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-028",
+      "filename": "test_diag.c",
+      "filepath": "tests/unit/app/engine/diag/test_diag.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "diag",
+        "diag.c",
+        "diag.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-029",
+      "filename": "test_master_info.c",
+      "filepath": "tests/unit/app/engine/hw_info/test_master_info.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "master_info",
+        "master_info.c",
+        "master_info.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-030",
+      "filename": "test_reset.c",
+      "filepath": "tests/unit/app/engine/sys/test_reset.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "reset",
+        "reset.c",
+        "reset.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-031",
+      "filename": "test_sys.c",
+      "filepath": "tests/unit/app/engine/sys/test_sys.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "sys",
+        "sys.c",
+        "sys.h"
+      ]
+    },
+    {
+      "id": "UT-ENGN-032",
+      "filename": "test_sys_mon.c",
+      "filepath": "tests/unit/app/engine/sys_mon/test_sys_mon.c",
+      "module_type": "ENGN",
+      "source_modules": [
+        "sys_mon",
+        "sys_mon.c",
+        "sys_mon.h"
+      ]
+    },
+    {
+      "id": "UT-TASK-001",
+      "filename": "test_ftask_cfg.c",
+      "filepath": "tests/unit/app/task/config/test_ftask_cfg.c",
+      "module_type": "TASK",
+      "source_modules": [
+        "ftask_cfg",
+        "ftask_cfg.c",
+        "ftask_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-TASK-002",
+      "filename": "test_ftask_freertos.c",
+      "filepath": "tests/unit/app/task/ftask/freertos/test_ftask_freertos.c",
+      "module_type": "TASK",
+      "source_modules": [
+        "ftask_freertos",
+        "ftask_freertos.c",
+        "ftask_freertos.h"
+      ]
+    },
+    {
+      "id": "UT-TASK-003",
+      "filename": "test_ftask.c",
+      "filepath": "tests/unit/app/task/ftask/test_ftask.c",
+      "module_type": "TASK",
+      "source_modules": [
+        "ftask",
+        "ftask.c",
+        "ftask.h"
+      ]
+    },
+    {
+      "id": "UT-TASK-004",
+      "filename": "test_os_freertos.c",
+      "filepath": "tests/unit/app/task/os/freertos/test_os_freertos.c",
+      "module_type": "TASK",
+      "source_modules": [
+        "os_freertos",
+        "os_freertos.c",
+        "os_freertos.h"
+      ]
+    },
+    {
+      "id": "UT-TASK-005",
+      "filename": "test_os_freertos_cache_disabled.c",
+      "filepath": "tests/unit/app/task/os/freertos/test_os_freertos_cache_disabled.c",
+      "module_type": "TASK",
+      "source_modules": [
+        "os_freertos_cache_disabled",
+        "os_freertos_cache_disabled.c",
+        "os_freertos_cache_disabled.h"
+      ]
+    },
+    {
+      "id": "UT-TASK-006",
+      "filename": "test_os_freertos_cache_enabled.c",
+      "filepath": "tests/unit/app/task/os/freertos/test_os_freertos_cache_enabled.c",
+      "module_type": "TASK",
+      "source_modules": [
+        "os_freertos_cache_enabled",
+        "os_freertos_cache_enabled.c",
+        "os_freertos_cache_enabled.h"
+      ]
+    },
+    {
+      "id": "UT-TASK-007",
+      "filename": "test_os.c",
+      "filepath": "tests/unit/app/task/os/test_os.c",
+      "module_type": "TASK",
+      "source_modules": [
+        "os",
+        "os.c",
+        "os.h"
+      ]
+    },
+    {
+      "id": "UT-TASK-008",
+      "filename": "test_timer.c",
+      "filepath": "tests/unit/app/task/timer/test_timer.c",
+      "module_type": "TASK",
+      "source_modules": [
+        "timer",
+        "timer.c",
+        "timer.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-001",
+      "filename": "test_algorithm_cfg.c",
+      "filepath": "tests/unit/app/application/algorithm/config/test_algorithm_cfg.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "algorithm_cfg",
+        "algorithm_cfg.c",
+        "algorithm_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-002",
+      "filename": "test_moving_average.c",
+      "filepath": "tests/unit/app/application/algorithm/moving_average/test_moving_average.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "moving_average",
+        "moving_average.c",
+        "moving_average.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-003",
+      "filename": "test_soc_counting.c",
+      "filepath": "tests/unit/app/application/algorithm/state_estimation/soc/counting/test_soc_counting.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "soc_counting",
+        "soc_counting.c",
+        "soc_counting.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-004",
+      "filename": "test_soc_debug.c",
+      "filepath": "tests/unit/app/application/algorithm/state_estimation/soc/debug/test_soc_debug.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "soc_debug",
+        "soc_debug.c",
+        "soc_debug.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-005",
+      "filename": "test_soc_none.c",
+      "filepath": "tests/unit/app/application/algorithm/state_estimation/soc/none/test_soc_none.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "soc_none",
+        "soc_none.c",
+        "soc_none.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-006",
+      "filename": "test_soe_counting.c",
+      "filepath": "tests/unit/app/application/algorithm/state_estimation/soe/counting/test_soe_counting.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "soe_counting",
+        "soe_counting.c",
+        "soe_counting.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-007",
+      "filename": "test_soe_debug.c",
+      "filepath": "tests/unit/app/application/algorithm/state_estimation/soe/debug/test_soe_debug.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "soe_debug",
+        "soe_debug.c",
+        "soe_debug.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-008",
+      "filename": "test_soe_none.c",
+      "filepath": "tests/unit/app/application/algorithm/state_estimation/soe/none/test_soe_none.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "soe_none",
+        "soe_none.c",
+        "soe_none.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-009",
+      "filename": "test_sof_trapezoid.c",
+      "filepath": "tests/unit/app/application/algorithm/state_estimation/sof/trapezoid/test_sof_trapezoid.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "sof_trapezoid",
+        "sof_trapezoid.c",
+        "sof_trapezoid.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-010",
+      "filename": "test_sof_trapezoid_cfg.c",
+      "filepath": "tests/unit/app/application/algorithm/state_estimation/sof/trapezoid/test_sof_trapezoid_cfg.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "sof_trapezoid_cfg",
+        "sof_trapezoid_cfg.c",
+        "sof_trapezoid_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-011",
+      "filename": "test_soh_debug.c",
+      "filepath": "tests/unit/app/application/algorithm/state_estimation/soh/debug/test_soh_debug.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "soh_debug",
+        "soh_debug.c",
+        "soh_debug.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-012",
+      "filename": "test_soh_none.c",
+      "filepath": "tests/unit/app/application/algorithm/state_estimation/soh/none/test_soh_none.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "soh_none",
+        "soh_none.c",
+        "soh_none.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-013",
+      "filename": "test_state_estimation.c",
+      "filepath": "tests/unit/app/application/algorithm/state_estimation/test_state_estimation.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "state_estimation",
+        "state_estimation.c",
+        "state_estimation.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-014",
+      "filename": "test_algorithm.c",
+      "filepath": "tests/unit/app/application/algorithm/test_algorithm.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "algorithm",
+        "algorithm.c",
+        "algorithm.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-015",
+      "filename": "test_bal_strategy_history.c",
+      "filepath": "tests/unit/app/application/bal/history/test_bal_strategy_history.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "bal_strategy_history",
+        "bal_strategy_history.c",
+        "bal_strategy_history.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-016",
+      "filename": "test_bal_strategy_none.c",
+      "filepath": "tests/unit/app/application/bal/none/test_bal_strategy_none.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "bal_strategy_none",
+        "bal_strategy_none.c",
+        "bal_strategy_none.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-017",
+      "filename": "test_bal.c",
+      "filepath": "tests/unit/app/application/bal/test_bal.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "bal",
+        "bal.c",
+        "bal.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-018",
+      "filename": "test_bal_strategy_voltage.c",
+      "filepath": "tests/unit/app/application/bal/voltage/test_bal_strategy_voltage.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "bal_strategy_voltage",
+        "bal_strategy_voltage.c",
+        "bal_strategy_voltage.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-019",
+      "filename": "test_bms.c",
+      "filepath": "tests/unit/app/application/bms/test_bms.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "bms",
+        "bms.c",
+        "bms.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-020",
+      "filename": "test_bal_cfg.c",
+      "filepath": "tests/unit/app/application/config/test_bal_cfg.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "bal_cfg",
+        "bal_cfg.c",
+        "bal_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-021",
+      "filename": "test_battery_cell_cfg.c",
+      "filepath": "tests/unit/app/application/config/test_battery_cell_cfg.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "battery_cell_cfg",
+        "battery_cell_cfg.c",
+        "battery_cell_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-022",
+      "filename": "test_battery_system_cfg.c",
+      "filepath": "tests/unit/app/application/config/test_battery_system_cfg.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "battery_system_cfg",
+        "battery_system_cfg.c",
+        "battery_system_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-023",
+      "filename": "test_ethernet_cfg.c",
+      "filepath": "tests/unit/app/application/config/test_ethernet_cfg.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "ethernet_cfg",
+        "ethernet_cfg.c",
+        "ethernet_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-024",
+      "filename": "test_soa_cfg.c",
+      "filepath": "tests/unit/app/application/config/test_soa_cfg.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "soa_cfg",
+        "soa_cfg.c",
+        "soa_cfg.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-025",
+      "filename": "test_ethernet.c",
+      "filepath": "tests/unit/app/application/ethernet/test_ethernet.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "ethernet",
+        "ethernet.c",
+        "ethernet.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-026",
+      "filename": "test_plausibility.c",
+      "filepath": "tests/unit/app/application/plausibility/test_plausibility.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "plausibility",
+        "plausibility.c",
+        "plausibility.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-027",
+      "filename": "test_redundancy.c",
+      "filepath": "tests/unit/app/application/redundancy/test_redundancy.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "redundancy",
+        "redundancy.c",
+        "redundancy.h"
+      ]
+    },
+    {
+      "id": "UT-APPL-028",
+      "filename": "test_soa.c",
+      "filepath": "tests/unit/app/application/soa/test_soa.c",
+      "module_type": "APPL",
+      "source_modules": [
+        "soa",
+        "soa.c",
+        "soa.h"
+      ]
+    },
+    {
+      "id": "UT-MISC-001",
+      "filename": "test_app-hl_notification.c",
+      "filepath": "tests/unit/app/hal/test_app-hl_notification.c",
+      "module_type": "MISC",
+      "source_modules": [
+        "app-hl_notification",
+        "app-hl_notification.c",
+        "app-hl_notification.h"
+      ]
+    },
+    {
+      "id": "UT-MISC-002",
+      "filename": "test_fassert.c",
+      "filepath": "tests/unit/app/main/test_fassert.c",
+      "module_type": "MISC",
+      "source_modules": []
+    },
+    {
+      "id": "UT-MISC-003",
+      "filename": "test_fstartup.c",
+      "filepath": "tests/unit/app/main/test_fstartup.c",
+      "module_type": "MISC",
+      "source_modules": []
+    },
+    {
+      "id": "UT-MISC-004",
+      "filename": "test_main.c",
+      "filepath": "tests/unit/app/main/test_main.c",
+      "module_type": "MISC",
+      "source_modules": []
+    }
+  ]
+}

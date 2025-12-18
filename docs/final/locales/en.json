@@ -12,7 +12,7 @@
     "nav": {
       "processDocs": "Process Docs",
       "apiReference": "API Reference",
-      "traceability": "Traceability",
+      "traceability": "Traceability Matrix",
       "misra": "MISRA Compliance",
       "metrics": "Quality Metrics"
     },
@@ -125,6 +125,15 @@
     "subtitle": "foxBMS V-Model Process Quality Indicators",
     "keyAchievements": "Key Achievements",
     "reqByModule": "Requirements by Module",
+    "moduleDescriptions": {
+      "Drivers": "Low-level hardware drivers (CAN, SPI, GPIO)",
+      "BMS": "Battery Management System core functions",
+      "Config": "System configuration parameters",
+      "TS": "Temperature Sensor monitoring",
+      "Algorithm": "SOC/SOE/SOH calculation algorithms",
+      "AFE": "Analog Front-End interface (cell monitoring)",
+      "SBC": "System Basis Chip interface"
+    },
     "safetyReqByAsil": "Safety Requirements by ASIL",
     "testCoverage": "Test Coverage by Level",
     "qualityScores": "Quality Scores",
@@ -151,13 +160,31 @@
   },
   "traceabilityPage": {
     "title": "Traceability Matrix",
-    "subtitle": "Bidirectional Requirements Tracing",
+    "subtitle": "Bidirectional Requirements Tracing - ASPICE Format",
     "summary": {
       "totalRequirements": "Total Requirements",
       "tracedToDesign": "Traced to Design",
       "tracedToTest": "Traced to Test",
-      "coverage": "Coverage"
-    }
+      "coverage": "Coverage",
+      "totalEntries": "Total Entries",
+      "completeEntries": "Complete Traced",
+      "partialEntries": "Partial Traced"
+    },
+    "columns": {
+      "sysReq": "SYS-REQ",
+      "swReq": "SW-REQ",
+      "swArch": "SW-ARCH",
+      "codeModule": "Code Module",
+      "ut": "UT",
+      "tc": "TC",
+      "status": "Status"
+    },
+    "filter": {
+      "all": "All",
+      "complete": "Complete",
+      "partial": "Partial"
+    },
+    "search": "Search..."
   },
   "viewer": {
     "title": "Document Viewer",
@@ -169,5 +196,66 @@
     "searchPlaceholder": "Search content...",
     "totalItems": "Total Items",
     "fields": "Fields"
+  },
+  "dashboard": {
+    "title": "ASPICE Documentation Dashboard",
+    "subtitle": "foxBMS 2.0 - ASPICE Level 2 Complete",
+    "summary": {
+      "sysReqs": "System Requirements",
+      "swReqs": "SW Requirements",
+      "archComponents": "Architecture Components",
+      "testCases": "Test Cases",
+      "traceability": "Traceability Completion"
+    },
+    "idFormat": {
+      "title": "ASPICE ID Format",
+      "sysReq": "SYS-REQ-xxx",
+      "swReq": "SW-REQ-xxx",
+      "fsr": "FSR-xxx",
+      "hsi": "HSI-xxx",
+      "arch": "SW-ARCH-xxx",
+      "ut": "UT-xxx",
+      "tc": "TC-xxx"
+    }
+  },
+  "vModelPage": {
+    "title": "V-Model Process View",
+    "subtitle": "ASPICE Level 2 Development Process",
+    "phases": {
+      "sysReq": "System Requirements",
+      "swReq": "SW Requirements",
+      "swArch": "SW Architecture",
+      "swDesign": "SW Detailed Design",
+      "coding": "Coding",
+      "unitTest": "Unit Testing",
+      "integTest": "Integration Testing",
+      "sysTest": "System Testing"
+    },
+    "legend": {
+      "complete": "Complete",
+      "inProgress": "In Progress",
+      "planned": "Planned"
+    }
+  },
+  "reversePage": {
+    "title": "Reverse Traceability View",
+    "subtitle": "Source Code -> Linked Requirements",
+    "stats": {
+      "sourceFiles": "Source Files",
+      "reqTags": "Requirement Tags",
+      "fsrTags": "FSR Tags",
+      "swReqTags": "SW-REQ Tags",
+      "avgPerFile": "Avg/File"
+    },
+    "filters": {
+      "allModules": "All Modules",
+      "allTypes": "All Requirement Types",
+      "searchPlaceholder": "Search files or requirements..."
+    },
+    "showing": "Showing",
+    "files": "files",
+    "toggleAll": "Toggle All",
+    "line": "Line",
+    "requirements": "requirements"
   }
 }

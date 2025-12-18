@@ -1,0 +1,3809 @@
+{
+  "metadata": {
+    "total_ut_files": 283,
+    "total_test_functions": 42,
+    "format": "ASPICE UT",
+    "generated_from": "foxbms-2/tests/unit/"
+  },
+  "unit_tests": [
+    {
+      "id": "UT-SUPP-001",
+      "filename": "test_fake_functions.c",
+      "filepath": "foxbms-2/tests/unit/support/test_fake_functions.c",
+      "module": "support",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-OPT-001",
+      "filename": "test_lg_inr18650mj1.c",
+      "filepath": "foxbms-2/tests/unit/opt/cells/config/test_lg_inr18650mj1.c",
+      "module": "opt",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-DRIV-001",
+      "filename": "test_flash_cfg.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/driver/config/test_flash_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-002",
+      "filename": "test_can_cfg.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/driver/config/test_can_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-003",
+      "filename": "test_rti.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/driver/rti/test_rti.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-004",
+      "filename": "test_flash.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/driver/flash/test_flash.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-005",
+      "filename": "test_io.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/driver/io/test_io.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-006",
+      "filename": "test_can_helper.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/driver/can/test_can_helper.c",
+      "module": "driver",
+      "test_functions": [
+        "test_CAN_ConvertbitStartBigEndian"
+      ],
+      "total_tests": 1,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-007",
+      "filename": "test_can.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/driver/can/test_can.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-008",
+      "filename": "test_can_bootloader-version-info.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/driver/can/test_can_bootloader-version-info.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-009",
+      "filename": "test_can_can_message_notification.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/driver/can/test_can_can_message_notification.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-010",
+      "filename": "test_crc_semi_auto_crc_calculation.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/driver/crc/test_crc_semi_auto_crc_calculation.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-011",
+      "filename": "test_crc.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/driver/crc/test_crc.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-012",
+      "filename": "test_crc64_calc.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/driver/crc/vendor/test_crc64_calc.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-013",
+      "filename": "test_utils.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/driver/foxmath/test_utils.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-014",
+      "filename": "test_foxmath.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/driver/foxmath/test_foxmath.c",
+      "module": "driver",
+      "test_functions": [
+        "test_MATH_MinimumOfTwoUint16_t"
+      ],
+      "total_tests": 1,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-ENGI-001",
+      "filename": "test_can_cbs.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/engine/can/test_can_cbs.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-002",
+      "filename": "test_boot_helper.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/engine/boot/test_boot_helper.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-003",
+      "filename": "test_boot.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/engine/boot/test_boot.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-004",
+      "filename": "test_boot_cfg.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/engine/boot/test_boot_cfg.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-HAL-001",
+      "filename": "test_bootloader-hl_notification.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/hal/test_bootloader-hl_notification.c",
+      "module": "hal",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-MAIN-001",
+      "filename": "test_main.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/main/test_main.c",
+      "module": "main",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-MAIN-002",
+      "filename": "test_fassert.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/main/test_fassert.c",
+      "module": "main",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-MAIN-003",
+      "filename": "test_fstartup.c",
+      "filepath": "foxbms-2/tests/unit/bootloader/main/test_fstartup.c",
+      "module": "main",
+      "test_functions": [
+        "test_c_int00"
+      ],
+      "total_tests": 1,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-APPL-001",
+      "filename": "test_ethernet_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/application/config/test_ethernet_cfg.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-002",
+      "filename": "test_battery_cell_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/application/config/test_battery_cell_cfg.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-003",
+      "filename": "test_bal_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/application/config/test_bal_cfg.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-004",
+      "filename": "test_soa_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/application/config/test_soa_cfg.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-005",
+      "filename": "test_battery_system_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/application/config/test_battery_system_cfg.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-006",
+      "filename": "test_bms.c",
+      "filepath": "foxbms-2/tests/unit/app/application/bms/test_bms.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-007",
+      "filename": "test_ethernet.c",
+      "filepath": "foxbms-2/tests/unit/app/application/ethernet/test_ethernet.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-008",
+      "filename": "test_redundancy.c",
+      "filepath": "foxbms-2/tests/unit/app/application/redundancy/test_redundancy.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-009",
+      "filename": "test_bal.c",
+      "filepath": "foxbms-2/tests/unit/app/application/bal/test_bal.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-010",
+      "filename": "test_bal_strategy_voltage.c",
+      "filepath": "foxbms-2/tests/unit/app/application/bal/voltage/test_bal_strategy_voltage.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-011",
+      "filename": "test_bal_strategy_history.c",
+      "filepath": "foxbms-2/tests/unit/app/application/bal/history/test_bal_strategy_history.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-012",
+      "filename": "test_bal_strategy_none.c",
+      "filepath": "foxbms-2/tests/unit/app/application/bal/none/test_bal_strategy_none.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-013",
+      "filename": "test_soa.c",
+      "filepath": "foxbms-2/tests/unit/app/application/soa/test_soa.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-014",
+      "filename": "test_plausibility.c",
+      "filepath": "foxbms-2/tests/unit/app/application/plausibility/test_plausibility.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-015",
+      "filename": "test_algorithm.c",
+      "filepath": "foxbms-2/tests/unit/app/application/algorithm/test_algorithm.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-016",
+      "filename": "test_algorithm_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/application/algorithm/config/test_algorithm_cfg.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-017",
+      "filename": "test_state_estimation.c",
+      "filepath": "foxbms-2/tests/unit/app/application/algorithm/state_estimation/test_state_estimation.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-018",
+      "filename": "test_soe_debug.c",
+      "filepath": "foxbms-2/tests/unit/app/application/algorithm/state_estimation/soe/debug/test_soe_debug.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-019",
+      "filename": "test_soe_none.c",
+      "filepath": "foxbms-2/tests/unit/app/application/algorithm/state_estimation/soe/none/test_soe_none.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-020",
+      "filename": "test_soe_counting.c",
+      "filepath": "foxbms-2/tests/unit/app/application/algorithm/state_estimation/soe/counting/test_soe_counting.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-021",
+      "filename": "test_soh_debug.c",
+      "filepath": "foxbms-2/tests/unit/app/application/algorithm/state_estimation/soh/debug/test_soh_debug.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-022",
+      "filename": "test_soh_none.c",
+      "filepath": "foxbms-2/tests/unit/app/application/algorithm/state_estimation/soh/none/test_soh_none.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-023",
+      "filename": "test_sof_trapezoid.c",
+      "filepath": "foxbms-2/tests/unit/app/application/algorithm/state_estimation/sof/trapezoid/test_sof_trapezoid.c",
+      "module": "application",
+      "test_functions": [
+        "test_Dummy"
+      ],
+      "total_tests": 1,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-024",
+      "filename": "test_sof_trapezoid_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/application/algorithm/state_estimation/sof/trapezoid/test_sof_trapezoid_cfg.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-025",
+      "filename": "test_soc_debug.c",
+      "filepath": "foxbms-2/tests/unit/app/application/algorithm/state_estimation/soc/debug/test_soc_debug.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-026",
+      "filename": "test_soc_none.c",
+      "filepath": "foxbms-2/tests/unit/app/application/algorithm/state_estimation/soc/none/test_soc_none.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-027",
+      "filename": "test_soc_counting.c",
+      "filepath": "foxbms-2/tests/unit/app/application/algorithm/state_estimation/soc/counting/test_soc_counting.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-APPL-028",
+      "filename": "test_moving_average.c",
+      "filepath": "foxbms-2/tests/unit/app/application/algorithm/moving_average/test_moving_average.c",
+      "module": "application",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 75,
+      "linked_sw_req_sample": [
+        "FSR-CFG-001",
+        "FSR-CFG-002",
+        "FSR-CFG-003"
+      ]
+    },
+    {
+      "id": "UT-DRIV-015",
+      "filename": "test_mcu.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/mcu/test_mcu.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-016",
+      "filename": "test_sps.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/sps/test_sps.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-017",
+      "filename": "test_sps_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/config/test_sps_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-018",
+      "filename": "test_contactor_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/config/test_contactor_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-019",
+      "filename": "test_can_cfg_rx.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/config/test_can_cfg_rx.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-020",
+      "filename": "test_dma_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/config/test_dma_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-021",
+      "filename": "test_fram_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/config/test_fram_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-022",
+      "filename": "test_pex_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/config/test_pex_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-023",
+      "filename": "test_can_cfg_tx_cyclic.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/config/test_can_cfg_tx_cyclic.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-024",
+      "filename": "test_can_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/config/test_can_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-025",
+      "filename": "test_spi_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/config/test_spi_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-026",
+      "filename": "test_rtc.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/rtc/test_rtc.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-027",
+      "filename": "test_io.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/io/test_io.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-028",
+      "filename": "test_beta.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/test_beta.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-029",
+      "filename": "test_murata_ncxxxxh103.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/murata/ncxxxxh103/test_murata_ncxxxxh103.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-030",
+      "filename": "test_murata_ncxxxxh103_polynomial.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/murata/ncxxxxh103/polynomial/test_murata_ncxxxxh103_polynomial.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-031",
+      "filename": "test_murata_ncxxxxh103_lookup-table.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/murata/ncxxxxh103/lookup-table/test_murata_ncxxxxh103_lookup-table.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-032",
+      "filename": "test_tdk_ntcg163jx103dt1s.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/tdk/ntcg163jx103dt1s/test_tdk_ntcg163jx103dt1s.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-033",
+      "filename": "test_tdk_ntcg163jx103dt1s_lookup-table.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/tdk/ntcg163jx103dt1s/lookup-table/test_tdk_ntcg163jx103dt1s_lookup-table.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-034",
+      "filename": "test_tdk_ntcgs103jf103ft8.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/tdk/ntcgs103jf103ft8/test_tdk_ntcgs103jf103ft8.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-035",
+      "filename": "test_tdk_ntcgs103jf103ft8_lookup-table.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/tdk/ntcgs103jf103ft8/lookup-table/test_tdk_ntcgs103jf103ft8_lookup-table.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-036",
+      "filename": "test_epcos_b57861s0103f045.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/epcos/b57861s0103f045/test_epcos_b57861s0103f045.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-037",
+      "filename": "test_epcos_b57861s0103f045_polynomial.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/epcos/b57861s0103f045/polynomial/test_epcos_b57861s0103f045_polynomial.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-038",
+      "filename": "test_epcos_b57861s0103f045_lookup-table.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/epcos/b57861s0103f045/lookup-table/test_epcos_b57861s0103f045_lookup-table.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-039",
+      "filename": "test_epcos_b57251v5103j060.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/epcos/b57251v5103j060/test_epcos_b57251v5103j060.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-040",
+      "filename": "test_epcos_b57251v5103j060_polynomial.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/epcos/b57251v5103j060/polynomial/test_epcos_b57251v5103j060_polynomial.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-041",
+      "filename": "test_epcos_b57251v5103j060_lookup-table.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/epcos/b57251v5103j060/lookup-table/test_epcos_b57251v5103j060_lookup-table.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-042",
+      "filename": "test_vishay_ntcle317e4103sba.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/vishay/ntcle317e4103sba/test_vishay_ntcle317e4103sba.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-043",
+      "filename": "test_vishay_ntcle317e4103sba_lookup-table.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/vishay/ntcle317e4103sba/lookup-table/test_vishay_ntcle317e4103sba_lookup-table.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-044",
+      "filename": "test_vishay_ntcalug01a103g.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/vishay/ntcalug01a103g/test_vishay_ntcalug01a103g.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-045",
+      "filename": "test_vishay_ntcalug01a103g_polynomial.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/vishay/ntcalug01a103g/polynomial/test_vishay_ntcalug01a103g_polynomial.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-046",
+      "filename": "test_vishay_ntcalug01a103g_lookup-table.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/vishay/ntcalug01a103g/lookup-table/test_vishay_ntcalug01a103g_lookup-table.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-047",
+      "filename": "test_vishay_ntcle413e2103f102l.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/vishay/ntcle413e2103f102l/test_vishay_ntcle413e2103f102l.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-048",
+      "filename": "test_vishay_ntcle413e2103f102l_lookup-table.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/vishay/ntcle413e2103f102l/lookup-table/test_vishay_ntcle413e2103f102l_lookup-table.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-049",
+      "filename": "test_semitec_103jt.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/semitec/103jt/test_semitec_103jt.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-050",
+      "filename": "test_semitec_103jt_lookup-table.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/semitec/103jt/lookup-table/test_semitec_103jt_lookup-table.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-051",
+      "filename": "test_fake_none.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/fake/none/test_fake_none.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-052",
+      "filename": "test_fake_none_polynomial.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/fake/none/polynomial/test_fake_none_polynomial.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-053",
+      "filename": "test_fake_none_lookup-table.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/fake/none/lookup-table/test_fake_none_lookup-table.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-054",
+      "filename": "test_tsi_limits.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/ts/api/test_tsi_limits.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-055",
+      "filename": "test_spi_ti.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/spi/test_spi_ti.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-056",
+      "filename": "test_spi_spi_notification.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/spi/test_spi_spi_notification.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-057",
+      "filename": "test_spi_nxp.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/spi/test_spi_nxp.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-058",
+      "filename": "test_spi_ltc.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/spi/test_spi_ltc.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-059",
+      "filename": "test_spi.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/spi/test_spi.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-060",
+      "filename": "test_spi_adi.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/spi/test_spi_adi.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-061",
+      "filename": "test_spi_mxm.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/spi/test_spi_mxm.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-062",
+      "filename": "test_spi_debug.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/spi/test_spi_debug.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-063",
+      "filename": "test_spi_st.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/spi/test_spi_st.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-064",
+      "filename": "test_can_1.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/test_can_1.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-065",
+      "filename": "test_can.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/test_can.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-066",
+      "filename": "test_can_2.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/test_can_2.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-067",
+      "filename": "test_can_can_message_notification.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/test_can_can_message_notification.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-068",
+      "filename": "test_can_helper.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/test_can_helper.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-069",
+      "filename": "test_can_cbs_tx_string-values-p1.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_string-values-p1.c",
+      "module": "driver",
+      "test_functions": [
+        "test_CANTX_StringValuesP1"
+      ],
+      "total_tests": 1,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-070",
+      "filename": "test_can_cbs_tx_string-minimum-maximum-values.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_string-minimum-maximum-values.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-071",
+      "filename": "test_can_cbs_tx_string-state.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_string-state.c",
+      "module": "driver",
+      "test_functions": [
+        "test_CANTX_StringState"
+      ],
+      "total_tests": 1,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-072",
+      "filename": "test_can_cbs_tx_bms-state-details.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_bms-state-details.c",
+      "module": "driver",
+      "test_functions": [
+        "test_BmsStateDetails"
+      ],
+      "total_tests": 1,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-073",
+      "filename": "test_can_cbs_tx_pack-values-p0.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_pack-values-p0.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-074",
+      "filename": "test_can_cbs_tx_pack-minimum-maximum-values.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_pack-minimum-maximum-values.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-075",
+      "filename": "test_can_cbs_tx_string-values-p0.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_string-values-p0.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-076",
+      "filename": "test_can_cbs_tx_pack-limits.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_pack-limits.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-077",
+      "filename": "test_can_cbs_tx_string-state-estimation.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_string-state-estimation.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-078",
+      "filename": "test_can_cbs_tx_pack-state-estimation.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_pack-state-estimation.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-079",
+      "filename": "test_can_cbs_tx_cell-voltages.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_cell-voltages.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-080",
+      "filename": "test_can_cbs_tx_pack-values-p1.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_pack-values-p1.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-081",
+      "filename": "test_can_cbs_tx_bms-state.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_bms-state.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-082",
+      "filename": "test_can_cbs_tx_cell-temperatures.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-cyclic/test_can_cbs_tx_cell-temperatures.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-083",
+      "filename": "test_can_cbs_rx_cell-voltages.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_cell-voltages.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-084",
+      "filename": "test_can_cbs_rx_current-sensor.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_current-sensor.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-085",
+      "filename": "test_can_cbs_rx_imd-info.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_imd-info.c",
+      "module": "driver",
+      "test_functions": [
+        "test_CANRX_ImdInfo",
+        "test_CANRX_TransferImdInfoMessageToCanBuffer",
+        "test_CANRX_ImdInfoGetDataFromMessage",
+        "test_CANRX_ImdInfoCheckMeasurementMode",
+        "test_CANRX_ImdInfoHasSelfTestBeenExecuted",
+        "test_CANRX_ImdInfoIsSelfTestFinished"
+      ],
+      "total_tests": 6,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-086",
+      "filename": "test_can_cbs_rx_imd-response.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_imd-response.c",
+      "module": "driver",
+      "test_functions": [
+        "test_CANRX_ImdResponse",
+        "test_CANRX_TransferImdResponseMessageToCanBuffer",
+        "test_CANRX_ImdResponseReadInsulationResistance",
+        "test_CANRX_ImdResponseCheckInsulationFaultTendency",
+        "test_CANRX_ImdResponseCheckRelayState"
+      ],
+      "total_tests": 5,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-087",
+      "filename": "test_can_cbs_rx_cell-temperatures.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_cell-temperatures.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-088",
+      "filename": "test_can_cbs_rx_aerosol-sensor.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_aerosol-sensor.c",
+      "module": "driver",
+      "test_functions": [
+        "test_CANRX_SetAerosolSensorCrcCheckCode"
+      ],
+      "total_tests": 1,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-089",
+      "filename": "test_can_cbs_rx_bms-state-request.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_bms-state-request.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-090",
+      "filename": "test_can_cbs_rx_debug.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/rx/test_can_cbs_rx_debug.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-091",
+      "filename": "test_can_cbs_tx_crash-dump.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-async/test_can_cbs_tx_crash-dump.c",
+      "module": "driver",
+      "test_functions": [
+        "test_CANTX_CrashDump"
+      ],
+      "total_tests": 1,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-092",
+      "filename": "test_can_cbs_tx_debug-unsupported-multiplexer-values.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-async/test_can_cbs_tx_debug-unsupported-multiplexer-values.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-093",
+      "filename": "test_can_cbs_tx_imd-request.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-async/test_can_cbs_tx_imd-request.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-094",
+      "filename": "test_can_cbs_tx_fatal-error.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-async/test_can_cbs_tx_fatal-error.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-095",
+      "filename": "test_can_cbs_tx_debug-response.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-async/test_can_cbs_tx_debug-response.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-096",
+      "filename": "test_can_cbs_tx_debug-build-configuration.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/can/cbs/tx-async/test_can_cbs_tx_debug-build-configuration.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-097",
+      "filename": "test_pwm.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/pwm/test_pwm.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-098",
+      "filename": "test_fram.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/fram/test_fram.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-099",
+      "filename": "test_dma.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/dma/test_dma.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-100",
+      "filename": "test_dma_dma_group_a_notification.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/dma/test_dma_dma_group_a_notification.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-101",
+      "filename": "test_meas.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/meas/test_meas.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-102",
+      "filename": "test_checksum.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/checksum/test_checksum.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-103",
+      "filename": "test_interlock.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/interlock/test_interlock.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-104",
+      "filename": "test_crc.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/crc/test_crc.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-105",
+      "filename": "test_contactor.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/contactor/test_contactor.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-106",
+      "filename": "test_sbc.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/sbc/test_sbc.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-107",
+      "filename": "test_nxpfs85xx.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/sbc/test_nxpfs85xx.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-108",
+      "filename": "test_nxpfs85xx_mcu_spi_transfer_data.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/sbc/test_nxpfs85xx_mcu_spi_transfer_data.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-109",
+      "filename": "test_led.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/led/test_led.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-110",
+      "filename": "test_imd.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/imd/test_imd.c",
+      "module": "driver",
+      "test_functions": [
+        "test_IMD_CheckMultipleCalls",
+        "test_IMD_SetState"
+      ],
+      "total_tests": 2,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-111",
+      "filename": "test_bender_iso165c.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/imd/bender/iso165c/test_bender_iso165c.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-112",
+      "filename": "test_bender_ir155_helper.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/imd/bender/ir155/test_bender_ir155_helper.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-113",
+      "filename": "test_bender_ir155.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/imd/bender/ir155/test_bender_ir155.c",
+      "module": "driver",
+      "test_functions": [
+        "test_IMD_ProcessEnableState",
+        "test_IMD_ProcessShutdownState"
+      ],
+      "total_tests": 2,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-114",
+      "filename": "test_no-imd.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/imd/none/test_no-imd.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-115",
+      "filename": "test_htsensor.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/htsensor/test_htsensor.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-116",
+      "filename": "test_pex.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/pex/test_pex.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-117",
+      "filename": "test_i2c.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/i2c/test_i2c.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-118",
+      "filename": "test_utils.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/foxmath/test_utils.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-119",
+      "filename": "test_foxmath.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/foxmath/test_foxmath.c",
+      "module": "driver",
+      "test_functions": [
+        "test_linearInterpolation_X1EqualsX2",
+        "test_linearInterpolation_interpolateBetweenX1AndX2",
+        "test_linearInterpolation_extrapolateFromX1AndX2",
+        "test_allZeros_swap16",
+        "test_allZeros_swap32",
+        "test_allZeros_swap64",
+        "test_swap16",
+        "test_swap32",
+        "test_swap64",
+        "test_swap16_MAX"
+      ],
+      "total_tests": 15,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-120",
+      "filename": "test_dp83869.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/phy/test_dp83869.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-121",
+      "filename": "test_mxm_17841b.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/maxim/common/test_mxm_17841b.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-122",
+      "filename": "test_mxm_battery_management.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/maxim/common/test_mxm_battery_management.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-123",
+      "filename": "test_mxm_register_map.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/maxim/common/test_mxm_register_map.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-124",
+      "filename": "test_mxm_bit_extract.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/maxim/common/test_mxm_bit_extract.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-125",
+      "filename": "test_mxm_1785x.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/maxim/common/test_mxm_1785x.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-126",
+      "filename": "test_mxm_crc8.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/maxim/common/test_mxm_crc8.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-127",
+      "filename": "test_mxm_afe_dma.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/maxim/common/test_mxm_afe_dma.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-128",
+      "filename": "test_mxm_1785x_tools.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/maxim/common/test_mxm_1785x_tools.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-129",
+      "filename": "test_mxm_registry.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/maxim/common/test_mxm_registry.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-130",
+      "filename": "test_mxm_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/maxim/common/config/test_mxm_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-131",
+      "filename": "test_mxm_afe.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/maxim/api/test_mxm_afe.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-132",
+      "filename": "test_mxm_17852.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/maxim/max17852/test_mxm_17852.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-133",
+      "filename": "test_adi_ades183x_diagnostic_w.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_diagnostic_w.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-134",
+      "filename": "test_adi_ades183x_voltages.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_voltages.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-135",
+      "filename": "test_adi_ades183x_commands_voltages.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_commands_voltages.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-136",
+      "filename": "test_adi_ades183x_initialization.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_initialization.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-137",
+      "filename": "test_adi_ades183x_helpers.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_helpers.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-138",
+      "filename": "test_adi_ades183x.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-139",
+      "filename": "test_adi_ades183x_buffers.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_buffers.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-140",
+      "filename": "test_adi_ades183x_temperatures.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_temperatures.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-141",
+      "filename": "test_adi_ades183x_commands.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/common/ades183x/test_adi_ades183x_commands.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-142",
+      "filename": "test_adi_ades183x_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/common/ades183x/config/test_adi_ades183x_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-143",
+      "filename": "test_adi_ades183x_pec.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/common/ades183x/pec/test_adi_ades183x_pec.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-144",
+      "filename": "test_adi_ades183x_afe.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/common/ades183x/api/test_adi_ades183x_afe.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-145",
+      "filename": "test_adi_ades183x_afe_dma.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/common/ades183x/api/test_adi_ades183x_afe_dma.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-146",
+      "filename": "test_adi_ades1830_diagnostic_w.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_diagnostic_w.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-147",
+      "filename": "test_adi_ades1830_voltages.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_voltages.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-148",
+      "filename": "test_adi_ades1830_temperatures.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_temperatures.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-149",
+      "filename": "test_adi_ades1830.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-150",
+      "filename": "test_adi_ades1830_commands_voltages.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_commands_voltages.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-151",
+      "filename": "test_adi_ades1830_initialization.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_initialization.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-152",
+      "filename": "test_adi_ades1830_temperatures_2.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_temperatures_2.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-153",
+      "filename": "test_adi_ades1830_gpio_voltages.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_gpio_voltages.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-154",
+      "filename": "test_adi_ades1830_balancing.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_balancing.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-155",
+      "filename": "test_adi_ades1830_helpers.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_helpers.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-156",
+      "filename": "test_adi_ades1830_commands.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_commands.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-157",
+      "filename": "test_adi_ades1830_buffers.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/test_adi_ades1830_buffers.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-158",
+      "filename": "test_adi_ades1830_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/config/test_adi_ades1830_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-159",
+      "filename": "test_adi_ades1830_pec.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/pec/test_adi_ades1830_pec.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-160",
+      "filename": "test_adi_ades1830_afe.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/api/test_adi_ades1830_afe.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-161",
+      "filename": "test_adi_ades1830_afe_dma.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/adi/ades1830/api/test_adi_ades1830_afe_dma.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-162",
+      "filename": "test_ltc_6806.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/ltc/6806/test_ltc_6806.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-163",
+      "filename": "test_ltc_6806_pec_in_arrays.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/ltc/6806/test_ltc_6806_pec_in_arrays.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-164",
+      "filename": "test_ltc_6806_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/ltc/6806/config/test_ltc_6806_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-165",
+      "filename": "test_ltc_afe_dma.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/ltc/common/test_ltc_afe_dma.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-166",
+      "filename": "test_ltc_pec.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/ltc/common/test_ltc_pec.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-167",
+      "filename": "test_ltc_6813-1.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/ltc/6813-1/test_ltc_6813-1.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-168",
+      "filename": "test_ltc_6813-1_pec_in_arrays.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/ltc/6813-1/test_ltc_6813-1_pec_in_arrays.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-169",
+      "filename": "test_ltc_6813-1_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/ltc/6813-1/config/test_ltc_6813-1_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-170",
+      "filename": "test_ltc_afe.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/ltc/api/test_ltc_afe.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-171",
+      "filename": "test_ti_bq79xxx_afe_dma.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/ti/common/api/test_ti_bq79xxx_afe_dma.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-172",
+      "filename": "test_ti_dummy.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/ti/dummy/test_ti_dummy.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-173",
+      "filename": "test_ti_dummy_afe.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/ti/dummy/api/test_ti_dummy_afe.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-174",
+      "filename": "test_ti_afe.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/ti/api/test_ti_afe.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-175",
+      "filename": "test_afe_plausibility.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/api/test_afe_plausibility.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-176",
+      "filename": "test_debug_default.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/debug/default/test_debug_default.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-177",
+      "filename": "test_debug_default_afe.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/debug/default/api/test_debug_default_afe.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-178",
+      "filename": "test_debug_default_afe_dma.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/debug/default/api/test_debug_default_afe_dma.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-179",
+      "filename": "test_debug_can.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/debug/can/test_debug_can.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-180",
+      "filename": "test_debug_can_afe_dma.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/debug/can/api/test_debug_can_afe_dma.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-181",
+      "filename": "test_debug_can_afe.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/debug/can/api/test_debug_can_afe.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-182",
+      "filename": "test_nxp_mc3377x.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/common/mc3377x/test_nxp_mc3377x.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-183",
+      "filename": "test_nxp_mc3377x_helpers.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/common/mc3377x/test_nxp_mc3377x_helpers.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-184",
+      "filename": "test_nxp_mc3377x_database.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/common/mc3377x/test_nxp_mc3377x_database.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-185",
+      "filename": "test_nxp_mc3377x_afe_dma.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/common/mc3377x/test_nxp_mc3377x_afe_dma.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-186",
+      "filename": "test_nxp_mc3377x-ll.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/common/mc3377x/test_nxp_mc3377x-ll.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-187",
+      "filename": "test_nxp_mc3377x_mux.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/common/mc3377x/test_nxp_mc3377x_mux.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-188",
+      "filename": "test_nxp_afe.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/api/test_nxp_afe.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-189",
+      "filename": "test_nxp_mc33775a_measurement.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a_measurement.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-190",
+      "filename": "test_nxp_mc33775a-ll.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a-ll.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-191",
+      "filename": "test_nxp_mc33775a_helpers.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a_helpers.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-192",
+      "filename": "test_nxp_mc33775a.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-193",
+      "filename": "test_nxp_mc33775a_mux.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a_mux.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-194",
+      "filename": "test_nxp_mc33775a_balancing.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a_balancing.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-195",
+      "filename": "test_nxp_mc33775a_database.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a_database.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-196",
+      "filename": "test_nxp_mc33775a_i2c.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/mc33775a/test_nxp_mc33775a_i2c.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-197",
+      "filename": "test_nxp_mc33775a_dma_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/mc33775a/config/test_nxp_mc33775a_dma_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-198",
+      "filename": "test_nxp_mc33775a_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/mc33775a/config/test_nxp_mc33775a_cfg.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-199",
+      "filename": "test_nxp_mc33775a_afe_dma.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/mc33775a/api/test_nxp_mc33775a_afe_dma.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-200",
+      "filename": "test_nxp_mc33775a_afe.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/afe/nxp/mc33775a/api/test_nxp_mc33775a_afe.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-DRIV-201",
+      "filename": "test_adc.c",
+      "filepath": "foxbms-2/tests/unit/app/driver/adc/test_adc.c",
+      "module": "driver",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 171,
+      "linked_sw_req_sample": [
+        "SW-REQ-CFG-053",
+        "SW-REQ-CFG-054",
+        "SW-REQ-CFG-055"
+      ]
+    },
+    {
+      "id": "UT-ENGI-005",
+      "filename": "test_reset.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/sys/test_reset.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-006",
+      "filename": "test_sys.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/sys/test_sys.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-007",
+      "filename": "test_master_info.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/hw_info/test_master_info.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-008",
+      "filename": "test_diag_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/config/test_diag_cfg.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-009",
+      "filename": "test_sys_mon_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/config/test_sys_mon_cfg.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-010",
+      "filename": "test_database_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/config/test_database_cfg.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-011",
+      "filename": "test_sys_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/config/test_sys_cfg.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-012",
+      "filename": "test_diag.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/test_diag.c",
+      "module": "engine",
+      "test_functions": [
+        "test_DIAG_ResendFatalErrorsThree",
+        "test_DIAG_ResendFatalErrorsNone"
+      ],
+      "total_tests": 2,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-013",
+      "filename": "test_diag_cbs_voltage.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_voltage.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-014",
+      "filename": "test_diag_cbs_current-sensor.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_current-sensor.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-015",
+      "filename": "test_diag_cbs_sys-mon.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_sys-mon.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-016",
+      "filename": "test_diag_cbs_interlock.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_interlock.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-017",
+      "filename": "test_diag_cbs_plausibility.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_plausibility.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-018",
+      "filename": "test_diag_cbs_bms.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_bms.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-019",
+      "filename": "test_diag_cbs_dummy.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_dummy.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-020",
+      "filename": "test_diag_cbs_insulation.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_insulation.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-021",
+      "filename": "test_diag_cbs_power-measurement.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_power-measurement.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-022",
+      "filename": "test_diag_cbs_current.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_current.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-023",
+      "filename": "test_diag_cbs_contactor.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_contactor.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-024",
+      "filename": "test_diag_cbs_rtc.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_rtc.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-025",
+      "filename": "test_diag_cbs_afe.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_afe.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-026",
+      "filename": "test_diag_cbs_aerosol-sensor.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_aerosol-sensor.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-027",
+      "filename": "test_diag_cbs_sbc.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_sbc.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-028",
+      "filename": "test_diag_cbs_i2c.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_i2c.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-029",
+      "filename": "test_diag_cbs_deep-discharge.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_deep-discharge.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-030",
+      "filename": "test_diag_cbs_temperature.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_temperature.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-031",
+      "filename": "test_diag_cbs_clamp30c.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_clamp30c.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-032",
+      "filename": "test_diag_cbs_can.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_can.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-033",
+      "filename": "test_diag_cbs_fram.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/diag/cbs/test_diag_cbs_fram.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-034",
+      "filename": "test_database.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/database/test_database.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-035",
+      "filename": "test_database_helper.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/database/test_database_helper.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-ENGI-036",
+      "filename": "test_sys_mon.c",
+      "filepath": "foxbms-2/tests/unit/app/engine/sys_mon/test_sys_mon.c",
+      "module": "engine",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-HAL-002",
+      "filename": "test_app-hl_notification.c",
+      "filepath": "foxbms-2/tests/unit/app/hal/test_app-hl_notification.c",
+      "module": "hal",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-TASK-001",
+      "filename": "test_ftask_cfg.c",
+      "filepath": "foxbms-2/tests/unit/app/task/config/test_ftask_cfg.c",
+      "module": "task",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-TASK-002",
+      "filename": "test_ftask.c",
+      "filepath": "foxbms-2/tests/unit/app/task/ftask/test_ftask.c",
+      "module": "task",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-TASK-003",
+      "filename": "test_ftask_freertos.c",
+      "filepath": "foxbms-2/tests/unit/app/task/ftask/freertos/test_ftask_freertos.c",
+      "module": "task",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-TASK-004",
+      "filename": "test_os.c",
+      "filepath": "foxbms-2/tests/unit/app/task/os/test_os.c",
+      "module": "task",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-TASK-005",
+      "filename": "test_os_freertos_cache_disabled.c",
+      "filepath": "foxbms-2/tests/unit/app/task/os/freertos/test_os_freertos_cache_disabled.c",
+      "module": "task",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-TASK-006",
+      "filename": "test_os_freertos.c",
+      "filepath": "foxbms-2/tests/unit/app/task/os/freertos/test_os_freertos.c",
+      "module": "task",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-TASK-007",
+      "filename": "test_os_freertos_cache_enabled.c",
+      "filepath": "foxbms-2/tests/unit/app/task/os/freertos/test_os_freertos_cache_enabled.c",
+      "module": "task",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-TASK-008",
+      "filename": "test_timer.c",
+      "filepath": "foxbms-2/tests/unit/app/task/timer/test_timer.c",
+      "module": "task",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-MAIN-004",
+      "filename": "test_main.c",
+      "filepath": "foxbms-2/tests/unit/app/main/test_main.c",
+      "module": "main",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-MAIN-005",
+      "filename": "test_fassert.c",
+      "filepath": "foxbms-2/tests/unit/app/main/test_fassert.c",
+      "module": "main",
+      "test_functions": [],
+      "total_tests": 0,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    },
+    {
+      "id": "UT-MAIN-006",
+      "filename": "test_fstartup.c",
+      "filepath": "foxbms-2/tests/unit/app/main/test_fstartup.c",
+      "module": "main",
+      "test_functions": [
+        "test_c_int00"
+      ],
+      "total_tests": 1,
+      "linked_sw_reqs": 0,
+      "linked_sw_req_sample": []
+    }
+  ]
+}

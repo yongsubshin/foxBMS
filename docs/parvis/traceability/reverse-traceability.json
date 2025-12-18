@@ -1,0 +1,4984 @@
+{
+  "metadata": {
+    "scan_date": "2025-12-18T22:49:50.790630",
+    "source_path": "/home/kevin/work/forBMS/foxBMS/foxbms-2/src/app",
+    "total_files_scanned": 409,
+    "total_files": 123,
+    "total_requirements": 740
+  },
+  "files": [
+    {
+      "file": "src/app/application/algorithm/algorithm.c",
+      "module": "application",
+      "requirement_count": 4,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-ALG-005",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-ALG-005}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-004",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-ALG-004}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-001",
+          "line": 112,
+          "context": "* @requirement{SW-REQ-ALG-001}"
+        },
+        {
+          "requirement_id": "FSR-ALG-001",
+          "line": 160,
+          "context": "* @requirement{FSR-ALG-001}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 3,
+        "FSR": 1
+      }
+    },
+    {
+      "file": "src/app/application/algorithm/algorithm.h",
+      "module": "application",
+      "requirement_count": 2,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-ALG-003",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-ALG-003}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-002",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-ALG-002}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2
+      }
+    },
+    {
+      "file": "src/app/application/algorithm/config/algorithm_cfg.c",
+      "module": "application",
+      "requirement_count": 1,
+      "requirements": [
+        {
+          "requirement_id": "FSR-ALG-002",
+          "line": 53,
+          "context": "* @requirement{FSR-ALG-002}"
+        }
+      ],
+      "by_type": {
+        "FSR": 1
+      }
+    },
+    {
+      "file": "src/app/application/algorithm/config/algorithm_cfg.h",
+      "module": "application",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-ALG-008",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-ALG-008}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-006",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-ALG-006}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-007",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-ALG-007}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 3
+      }
+    },
+    {
+      "file": "src/app/application/algorithm/moving_average/moving_average.c",
+      "module": "application",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-ALG-009",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-ALG-009}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-012",
+          "line": 182,
+          "context": "* @requirement{SW-REQ-ALG-012}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-013",
+          "line": 325,
+          "context": "* @requirement{SW-REQ-ALG-013}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 3
+      }
+    },
+    {
+      "file": "src/app/application/algorithm/moving_average/moving_average.h",
+      "module": "application",
+      "requirement_count": 2,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-ALG-011",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-ALG-011}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-010",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-ALG-010}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2
+      }
+    },
+    {
+      "file": "src/app/application/algorithm/state_estimation/soc/counting/soc_counting.c",
+      "module": "application",
+      "requirement_count": 11,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-ALG-018",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-ALG-018}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-017",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-ALG-017}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-023",
+          "line": 168,
+          "context": "* @requirement{SW-REQ-ALG-023}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-019",
+          "line": 187,
+          "context": "* @requirement{SW-REQ-ALG-019}"
+        },
+        {
+          "requirement_id": "FSR-ALG-005",
+          "line": 250,
+          "context": "* @requirement{FSR-ALG-005}"
+        },
+        {
+          "requirement_id": "FSR-ALG-004",
+          "line": 251,
+          "context": "* @requirement{FSR-ALG-004}"
+        },
+        {
+          "requirement_id": "FSR-ALG-006",
+          "line": 266,
+          "context": "* @requirement{FSR-ALG-006}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-022",
+          "line": 267,
+          "context": "* @requirement{SW-REQ-ALG-022}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-020",
+          "line": 316,
+          "context": "* @requirement{SW-REQ-ALG-020}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-024",
+          "line": 317,
+          "context": "* @requirement{SW-REQ-ALG-024}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-026",
+          "line": 421,
+          "context": "* @requirement{SW-REQ-ALG-026}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 8,
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/application/algorithm/state_estimation/soc/counting/soc_counting_cfg.h",
+      "module": "application",
+      "requirement_count": 1,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-ALG-025",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-ALG-025}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 1
+      }
+    },
+    {
+      "file": "src/app/application/algorithm/state_estimation/soe/counting/soe_counting.c",
+      "module": "application",
+      "requirement_count": 11,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-ALG-028",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-ALG-028}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-027",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-ALG-027}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-032",
+          "line": 204,
+          "context": "* @requirement{SW-REQ-ALG-032}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-035",
+          "line": 224,
+          "context": "* @requirement{SW-REQ-ALG-035}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-029",
+          "line": 260,
+          "context": "* @requirement{SW-REQ-ALG-029}"
+        },
+        {
+          "requirement_id": "FSR-ALG-008",
+          "line": 307,
+          "context": "* @requirement{FSR-ALG-008}"
+        },
+        {
+          "requirement_id": "FSR-ALG-007",
+          "line": 308,
+          "context": "* @requirement{FSR-ALG-007}"
+        },
+        {
+          "requirement_id": "FSR-ALG-009",
+          "line": 337,
+          "context": "* @requirement{FSR-ALG-009}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-031",
+          "line": 338,
+          "context": "* @requirement{SW-REQ-ALG-031}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-030",
+          "line": 387,
+          "context": "* @requirement{SW-REQ-ALG-030}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-033",
+          "line": 388,
+          "context": "* @requirement{SW-REQ-ALG-033}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 8,
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/application/algorithm/state_estimation/soe/counting/soe_counting_cfg.h",
+      "module": "application",
+      "requirement_count": 1,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-ALG-034",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-ALG-034}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 1
+      }
+    },
+    {
+      "file": "src/app/application/algorithm/state_estimation/sof/trapezoid/sof_trapezoid.c",
+      "module": "application",
+      "requirement_count": 13,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-ALG-041",
+          "line": 192,
+          "context": "* @requirement{SW-REQ-ALG-041}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-040",
+          "line": 193,
+          "context": "* @requirement{SW-REQ-ALG-040}"
+        },
+        {
+          "requirement_id": "FSR-ALG-013",
+          "line": 194,
+          "context": "* @requirement{FSR-ALG-013}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-044",
+          "line": 242,
+          "context": "* @requirement{SW-REQ-ALG-044}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-043",
+          "line": 243,
+          "context": "* @requirement{SW-REQ-ALG-043}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-042",
+          "line": 244,
+          "context": "* @requirement{SW-REQ-ALG-042}"
+        },
+        {
+          "requirement_id": "FSR-ALG-014",
+          "line": 245,
+          "context": "* @requirement{FSR-ALG-014}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-045",
+          "line": 318,
+          "context": "* @requirement{SW-REQ-ALG-045}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-046",
+          "line": 347,
+          "context": "* @requirement{SW-REQ-ALG-046}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-047",
+          "line": 373,
+          "context": "* @requirement{SW-REQ-ALG-047}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-049",
+          "line": 432,
+          "context": "* @requirement{SW-REQ-ALG-049}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-048",
+          "line": 444,
+          "context": "* @requirement{SW-REQ-ALG-048}"
+        },
+        {
+          "requirement_id": "FSR-ALG-015",
+          "line": 455,
+          "context": "* @requirement{FSR-ALG-015}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 10,
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/application/algorithm/state_estimation/sof/trapezoid/sof_trapezoid.h",
+      "module": "application",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-ALG-038",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-ALG-038}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-037",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-ALG-037}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-039",
+          "line": 81,
+          "context": "* @requirement{SW-REQ-ALG-039}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 3
+      }
+    },
+    {
+      "file": "src/app/application/algorithm/state_estimation/sof/trapezoid/sof_trapezoid_cfg.h",
+      "module": "application",
+      "requirement_count": 15,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-ALG-064",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-ALG-064}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-063",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-ALG-063}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-062",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-ALG-062}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-061",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-ALG-061}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-060",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-ALG-060}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-059",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-ALG-059}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-058",
+          "line": 59,
+          "context": "* @requirement{SW-REQ-ALG-058}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-057",
+          "line": 60,
+          "context": "* @requirement{SW-REQ-ALG-057}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-056",
+          "line": 61,
+          "context": "* @requirement{SW-REQ-ALG-056}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-055",
+          "line": 62,
+          "context": "* @requirement{SW-REQ-ALG-055}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-054",
+          "line": 63,
+          "context": "* @requirement{SW-REQ-ALG-054}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-053",
+          "line": 64,
+          "context": "* @requirement{SW-REQ-ALG-053}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-052",
+          "line": 65,
+          "context": "* @requirement{SW-REQ-ALG-052}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-051",
+          "line": 66,
+          "context": "* @requirement{SW-REQ-ALG-051}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-050",
+          "line": 67,
+          "context": "* @requirement{SW-REQ-ALG-050}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 15
+      }
+    },
+    {
+      "file": "src/app/application/algorithm/state_estimation/soh/none/soh_none.c",
+      "module": "application",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-ALG-012",
+          "line": 53,
+          "context": "* @requirement{FSR-ALG-012}"
+        },
+        {
+          "requirement_id": "FSR-ALG-011",
+          "line": 54,
+          "context": "* @requirement{FSR-ALG-011}"
+        },
+        {
+          "requirement_id": "FSR-ALG-010",
+          "line": 55,
+          "context": "* @requirement{FSR-ALG-010}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/application/algorithm/state_estimation/state_estimation.c",
+      "module": "application",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-ALG-015",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-ALG-015}"
+        },
+        {
+          "requirement_id": "FSR-ALG-003",
+          "line": 57,
+          "context": "* @requirement{FSR-ALG-003}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-016",
+          "line": 98,
+          "context": "* @requirement{SW-REQ-ALG-016}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 1
+      }
+    },
+    {
+      "file": "src/app/application/algorithm/state_estimation/state_estimation.h",
+      "module": "application",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-ALG-014",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-ALG-014}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-021",
+          "line": 117,
+          "context": "* @requirement{SW-REQ-ALG-021}"
+        },
+        {
+          "requirement_id": "SW-REQ-ALG-036",
+          "line": 139,
+          "context": "* @requirement{SW-REQ-ALG-036}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 3
+      }
+    },
+    {
+      "file": "src/app/application/bms/bms.c",
+      "module": "application",
+      "requirement_count": 43,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-BMS-001",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-BMS-001}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-043",
+          "line": 81,
+          "context": "* @requirement{SW-REQ-BMS-043}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-002",
+          "line": 147,
+          "context": "* @requirement{SW-REQ-BMS-002}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-003",
+          "line": 157,
+          "context": "* @requirement{SW-REQ-BMS-003}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-004",
+          "line": 168,
+          "context": "* @requirement{SW-REQ-BMS-004}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-005",
+          "line": 179,
+          "context": "* @requirement{SW-REQ-BMS-005}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-006",
+          "line": 190,
+          "context": "* @requirement{SW-REQ-BMS-006}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-007",
+          "line": 202,
+          "context": "* @requirement{SW-REQ-BMS-007}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-008",
+          "line": 212,
+          "context": "* @requirement{SW-REQ-BMS-008}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-009",
+          "line": 221,
+          "context": "* @requirement{SW-REQ-BMS-009}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-010",
+          "line": 231,
+          "context": "* @requirement{SW-REQ-BMS-010}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-011",
+          "line": 245,
+          "context": "* @requirement{SW-REQ-BMS-011}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-012",
+          "line": 258,
+          "context": "* @requirement{SW-REQ-BMS-012}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-013",
+          "line": 273,
+          "context": "* @requirement{SW-REQ-BMS-013}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-014",
+          "line": 287,
+          "context": "* @requirement{SW-REQ-BMS-014}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-015",
+          "line": 296,
+          "context": "* @requirement{SW-REQ-BMS-015}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-016",
+          "line": 304,
+          "context": "* @requirement{SW-REQ-BMS-016}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-017",
+          "line": 320,
+          "context": "* @requirement{SW-REQ-BMS-017}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-018",
+          "line": 332,
+          "context": "* @requirement{SW-REQ-BMS-018}"
+        },
+        {
+          "requirement_id": "FSR-BMS-019",
+          "line": 435,
+          "context": "/** @requirement{FSR-BMS-019} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-020",
+          "line": 437,
+          "context": "/** @requirement{FSR-BMS-020} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-021",
+          "line": 536,
+          "context": "/** @requirement{FSR-BMS-021} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-022",
+          "line": 538,
+          "context": "/** @requirement{FSR-BMS-022} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-023",
+          "line": 569,
+          "context": "/** @requirement{FSR-BMS-023} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-024",
+          "line": 595,
+          "context": "/** @requirement{FSR-BMS-024} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-025",
+          "line": 642,
+          "context": "/** @requirement{FSR-BMS-025} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-026",
+          "line": 667,
+          "context": "/** @requirement{FSR-BMS-026} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-027",
+          "line": 669,
+          "context": "/** @requirement{FSR-BMS-027} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-028",
+          "line": 689,
+          "context": "/** @requirement{FSR-BMS-028} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-029",
+          "line": 699,
+          "context": "/** @requirement{FSR-BMS-029} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-030",
+          "line": 747,
+          "context": "/** @requirement{FSR-BMS-030} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-031",
+          "line": 805,
+          "context": "/** @requirement{FSR-BMS-031} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-032",
+          "line": 812,
+          "context": "/** @requirement{FSR-BMS-032} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-033",
+          "line": 814,
+          "context": "/** @requirement{FSR-BMS-033} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-034",
+          "line": 836,
+          "context": "/** @requirement{FSR-BMS-034} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-035",
+          "line": 1151,
+          "context": "/** @requirement{FSR-BMS-035} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-036",
+          "line": 1226,
+          "context": "/** @requirement{FSR-BMS-036} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-037",
+          "line": 1445,
+          "context": "/** @requirement{FSR-BMS-037} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-038",
+          "line": 1579,
+          "context": "/** @requirement{FSR-BMS-038} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-039",
+          "line": 1642,
+          "context": "/** @requirement{FSR-BMS-039} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-040",
+          "line": 1648,
+          "context": "/** @requirement{FSR-BMS-040} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-041",
+          "line": 1691,
+          "context": "/** @requirement{FSR-BMS-041} */"
+        },
+        {
+          "requirement_id": "FSR-BMS-042",
+          "line": 1701,
+          "context": "/** @requirement{FSR-BMS-042} */"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 19,
+        "FSR": 24
+      }
+    },
+    {
+      "file": "src/app/application/bms/bms.h",
+      "module": "application",
+      "requirement_count": 68,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-BMS-044",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-BMS-044}"
+        },
+        {
+          "requirement_id": "FSR-BMS-056",
+          "line": 72,
+          "context": "* @requirement{FSR-BMS-056}"
+        },
+        {
+          "requirement_id": "FSR-BMS-057",
+          "line": 73,
+          "context": "* @requirement{FSR-BMS-057}"
+        },
+        {
+          "requirement_id": "FSR-BMS-058",
+          "line": 95,
+          "context": "* @requirement{FSR-BMS-058}"
+        },
+        {
+          "requirement_id": "FSR-BMS-059",
+          "line": 96,
+          "context": "* @requirement{FSR-BMS-059}"
+        },
+        {
+          "requirement_id": "FSR-BMS-060",
+          "line": 97,
+          "context": "* @requirement{FSR-BMS-060}"
+        },
+        {
+          "requirement_id": "FSR-BMS-061",
+          "line": 98,
+          "context": "* @requirement{FSR-BMS-061}"
+        },
+        {
+          "requirement_id": "FSR-BMS-062",
+          "line": 99,
+          "context": "* @requirement{FSR-BMS-062}"
+        },
+        {
+          "requirement_id": "FSR-BMS-063",
+          "line": 100,
+          "context": "* @requirement{FSR-BMS-063}"
+        },
+        {
+          "requirement_id": "FSR-BMS-064",
+          "line": 101,
+          "context": "* @requirement{FSR-BMS-064}"
+        },
+        {
+          "requirement_id": "FSR-BMS-065",
+          "line": 102,
+          "context": "* @requirement{FSR-BMS-065}"
+        },
+        {
+          "requirement_id": "FSR-BMS-066",
+          "line": 103,
+          "context": "* @requirement{FSR-BMS-066}"
+        },
+        {
+          "requirement_id": "FSR-BMS-067",
+          "line": 104,
+          "context": "* @requirement{FSR-BMS-067}"
+        },
+        {
+          "requirement_id": "FSR-BMS-068",
+          "line": 105,
+          "context": "* @requirement{FSR-BMS-068}"
+        },
+        {
+          "requirement_id": "FSR-BMS-069",
+          "line": 106,
+          "context": "* @requirement{FSR-BMS-069}"
+        },
+        {
+          "requirement_id": "FSR-BMS-070",
+          "line": 107,
+          "context": "* @requirement{FSR-BMS-070}"
+        },
+        {
+          "requirement_id": "FSR-BMS-071",
+          "line": 126,
+          "context": "* @requirement{FSR-BMS-071}"
+        },
+        {
+          "requirement_id": "FSR-BMS-072",
+          "line": 127,
+          "context": "* @requirement{FSR-BMS-072}"
+        },
+        {
+          "requirement_id": "FSR-BMS-073",
+          "line": 128,
+          "context": "* @requirement{FSR-BMS-073}"
+        },
+        {
+          "requirement_id": "FSR-BMS-074",
+          "line": 129,
+          "context": "* @requirement{FSR-BMS-074}"
+        },
+        {
+          "requirement_id": "FSR-BMS-075",
+          "line": 130,
+          "context": "* @requirement{FSR-BMS-075}"
+        },
+        {
+          "requirement_id": "FSR-BMS-076",
+          "line": 131,
+          "context": "* @requirement{FSR-BMS-076}"
+        },
+        {
+          "requirement_id": "FSR-BMS-077",
+          "line": 132,
+          "context": "* @requirement{FSR-BMS-077}"
+        },
+        {
+          "requirement_id": "FSR-BMS-078",
+          "line": 133,
+          "context": "* @requirement{FSR-BMS-078}"
+        },
+        {
+          "requirement_id": "FSR-BMS-079",
+          "line": 134,
+          "context": "* @requirement{FSR-BMS-079}"
+        },
+        {
+          "requirement_id": "FSR-BMS-080",
+          "line": 135,
+          "context": "* @requirement{FSR-BMS-080}"
+        },
+        {
+          "requirement_id": "FSR-BMS-081",
+          "line": 151,
+          "context": "* @requirement{FSR-BMS-081}"
+        },
+        {
+          "requirement_id": "FSR-BMS-082",
+          "line": 152,
+          "context": "* @requirement{FSR-BMS-082}"
+        },
+        {
+          "requirement_id": "FSR-BMS-083",
+          "line": 153,
+          "context": "* @requirement{FSR-BMS-083}"
+        },
+        {
+          "requirement_id": "FSR-BMS-084",
+          "line": 154,
+          "context": "* @requirement{FSR-BMS-084}"
+        },
+        {
+          "requirement_id": "FSR-BMS-085",
+          "line": 155,
+          "context": "* @requirement{FSR-BMS-085}"
+        },
+        {
+          "requirement_id": "FSR-BMS-086",
+          "line": 156,
+          "context": "* @requirement{FSR-BMS-086}"
+        },
+        {
+          "requirement_id": "FSR-BMS-087",
+          "line": 157,
+          "context": "* @requirement{FSR-BMS-087}"
+        },
+        {
+          "requirement_id": "FSR-BMS-088",
+          "line": 158,
+          "context": "* @requirement{FSR-BMS-088}"
+        },
+        {
+          "requirement_id": "FSR-BMS-089",
+          "line": 159,
+          "context": "* @requirement{FSR-BMS-089}"
+        },
+        {
+          "requirement_id": "FSR-BMS-090",
+          "line": 160,
+          "context": "* @requirement{FSR-BMS-090}"
+        },
+        {
+          "requirement_id": "FSR-BMS-091",
+          "line": 161,
+          "context": "* @requirement{FSR-BMS-091}"
+        },
+        {
+          "requirement_id": "FSR-BMS-092",
+          "line": 162,
+          "context": "* @requirement{FSR-BMS-092}"
+        },
+        {
+          "requirement_id": "FSR-BMS-093",
+          "line": 163,
+          "context": "* @requirement{FSR-BMS-093}"
+        },
+        {
+          "requirement_id": "FSR-BMS-094",
+          "line": 164,
+          "context": "* @requirement{FSR-BMS-094}"
+        },
+        {
+          "requirement_id": "FSR-BMS-095",
+          "line": 165,
+          "context": "* @requirement{FSR-BMS-095}"
+        },
+        {
+          "requirement_id": "FSR-BMS-096",
+          "line": 166,
+          "context": "* @requirement{FSR-BMS-096}"
+        },
+        {
+          "requirement_id": "FSR-BMS-097",
+          "line": 167,
+          "context": "* @requirement{FSR-BMS-097}"
+        },
+        {
+          "requirement_id": "FSR-BMS-098",
+          "line": 168,
+          "context": "* @requirement{FSR-BMS-098}"
+        },
+        {
+          "requirement_id": "FSR-BMS-099",
+          "line": 169,
+          "context": "* @requirement{FSR-BMS-099}"
+        },
+        {
+          "requirement_id": "FSR-BMS-100",
+          "line": 170,
+          "context": "* @requirement{FSR-BMS-100}"
+        },
+        {
+          "requirement_id": "FSR-BMS-101",
+          "line": 171,
+          "context": "* @requirement{FSR-BMS-101}"
+        },
+        {
+          "requirement_id": "FSR-BMS-102",
+          "line": 172,
+          "context": "* @requirement{FSR-BMS-102}"
+        },
+        {
+          "requirement_id": "FSR-BMS-103",
+          "line": 173,
+          "context": "* @requirement{FSR-BMS-103}"
+        },
+        {
+          "requirement_id": "FSR-BMS-104",
+          "line": 174,
+          "context": "* @requirement{FSR-BMS-104}"
+        },
+        {
+          "requirement_id": "FSR-BMS-105",
+          "line": 175,
+          "context": "* @requirement{FSR-BMS-105}"
+        },
+        {
+          "requirement_id": "FSR-BMS-106",
+          "line": 176,
+          "context": "* @requirement{FSR-BMS-106}"
+        },
+        {
+          "requirement_id": "FSR-BMS-107",
+          "line": 177,
+          "context": "* @requirement{FSR-BMS-107}"
+        },
+        {
+          "requirement_id": "FSR-BMS-108",
+          "line": 178,
+          "context": "* @requirement{FSR-BMS-108}"
+        },
+        {
+          "requirement_id": "FSR-BMS-109",
+          "line": 179,
+          "context": "* @requirement{FSR-BMS-109}"
+        },
+        {
+          "requirement_id": "FSR-BMS-110",
+          "line": 218,
+          "context": "* @requirement{FSR-BMS-110}"
+        },
+        {
+          "requirement_id": "FSR-BMS-111",
+          "line": 219,
+          "context": "* @requirement{FSR-BMS-111}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-045",
+          "line": 296,
+          "context": "* @requirement{SW-REQ-BMS-045}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-046",
+          "line": 304,
+          "context": "* @requirement{SW-REQ-BMS-046}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-047",
+          "line": 312,
+          "context": "* @requirement{SW-REQ-BMS-047}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-048",
+          "line": 320,
+          "context": "* @requirement{SW-REQ-BMS-048}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-049",
+          "line": 326,
+          "context": "* @requirement{SW-REQ-BMS-049}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-050",
+          "line": 340,
+          "context": "* @requirement{SW-REQ-BMS-050}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-051",
+          "line": 349,
+          "context": "* @requirement{SW-REQ-BMS-051}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-052",
+          "line": 357,
+          "context": "* @requirement{SW-REQ-BMS-052}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-053",
+          "line": 366,
+          "context": "* @requirement{SW-REQ-BMS-053}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-054",
+          "line": 373,
+          "context": "* @requirement{SW-REQ-BMS-054}"
+        },
+        {
+          "requirement_id": "SW-REQ-BMS-055",
+          "line": 380,
+          "context": "* @requirement{SW-REQ-BMS-055}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 12,
+        "FSR": 56
+      }
+    },
+    {
+      "file": "src/app/application/config/bal_cfg.h",
+      "module": "application",
+      "requirement_count": 9,
+      "requirements": [
+        {
+          "requirement_id": "FSR-CFG-023",
+          "line": 53,
+          "context": "* @requirement{FSR-CFG-023}"
+        },
+        {
+          "requirement_id": "FSR-CFG-022",
+          "line": 54,
+          "context": "* @requirement{FSR-CFG-022}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-043",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-CFG-043}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-042",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-CFG-042}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-041",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-CFG-041}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-040",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-CFG-040}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-039",
+          "line": 59,
+          "context": "* @requirement{SW-REQ-CFG-039}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-038",
+          "line": 60,
+          "context": "* @requirement{SW-REQ-CFG-038}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-037",
+          "line": 61,
+          "context": "* @requirement{SW-REQ-CFG-037}"
+        }
+      ],
+      "by_type": {
+        "FSR": 2,
+        "SW-REQ": 7
+      }
+    },
+    {
+      "file": "src/app/application/config/battery_cell_cfg.h",
+      "module": "application",
+      "requirement_count": 13,
+      "requirements": [
+        {
+          "requirement_id": "FSR-CFG-002",
+          "line": 57,
+          "context": "* @requirement{FSR-CFG-002}"
+        },
+        {
+          "requirement_id": "FSR-CFG-001",
+          "line": 58,
+          "context": "* @requirement{FSR-CFG-001}"
+        },
+        {
+          "requirement_id": "FSR-CFG-003",
+          "line": 99,
+          "context": "* @requirement{FSR-CFG-003}"
+        },
+        {
+          "requirement_id": "FSR-CFG-004",
+          "line": 117,
+          "context": "* @requirement{FSR-CFG-004}"
+        },
+        {
+          "requirement_id": "FSR-CFG-005",
+          "line": 135,
+          "context": "* @requirement{FSR-CFG-005}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-001",
+          "line": 153,
+          "context": "* @requirement{SW-REQ-CFG-001}"
+        },
+        {
+          "requirement_id": "FSR-CFG-006",
+          "line": 162,
+          "context": "* @requirement{FSR-CFG-006}"
+        },
+        {
+          "requirement_id": "FSR-CFG-007",
+          "line": 179,
+          "context": "* @requirement{FSR-CFG-007}"
+        },
+        {
+          "requirement_id": "FSR-CFG-008",
+          "line": 192,
+          "context": "* @requirement{FSR-CFG-008}"
+        },
+        {
+          "requirement_id": "FSR-CFG-009",
+          "line": 209,
+          "context": "* @requirement{FSR-CFG-009}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-002",
+          "line": 227,
+          "context": "* @requirement{SW-REQ-CFG-002}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-003",
+          "line": 236,
+          "context": "* @requirement{SW-REQ-CFG-003}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-004",
+          "line": 244,
+          "context": "* @requirement{SW-REQ-CFG-004}"
+        }
+      ],
+      "by_type": {
+        "FSR": 9,
+        "SW-REQ": 4
+      }
+    },
+    {
+      "file": "src/app/application/config/battery_system_cfg.h",
+      "module": "application",
+      "requirement_count": 25,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-CFG-005",
+          "line": 93,
+          "context": "* @requirement{SW-REQ-CFG-005}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-006",
+          "line": 105,
+          "context": "* @requirement{SW-REQ-CFG-006}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-007",
+          "line": 119,
+          "context": "* @requirement{SW-REQ-CFG-007}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-008",
+          "line": 130,
+          "context": "* @requirement{SW-REQ-CFG-008}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-009",
+          "line": 139,
+          "context": "* @requirement{SW-REQ-CFG-009}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-010",
+          "line": 146,
+          "context": "* @requirement{SW-REQ-CFG-010}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-011",
+          "line": 162,
+          "context": "* @requirement{SW-REQ-CFG-011}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-012",
+          "line": 178,
+          "context": "* @requirement{SW-REQ-CFG-012}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-013",
+          "line": 185,
+          "context": "* @requirement{SW-REQ-CFG-013}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-014",
+          "line": 191,
+          "context": "* @requirement{SW-REQ-CFG-014}"
+        },
+        {
+          "requirement_id": "FSR-CFG-010",
+          "line": 197,
+          "context": "* @requirement{FSR-CFG-010}"
+        },
+        {
+          "requirement_id": "FSR-CFG-011",
+          "line": 212,
+          "context": "* @requirement{FSR-CFG-011}"
+        },
+        {
+          "requirement_id": "FSR-CFG-012",
+          "line": 223,
+          "context": "* @requirement{FSR-CFG-012}"
+        },
+        {
+          "requirement_id": "FSR-CFG-013",
+          "line": 232,
+          "context": "* @requirement{FSR-CFG-013}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-015",
+          "line": 241,
+          "context": "* @requirement{SW-REQ-CFG-015}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-016",
+          "line": 249,
+          "context": "* @requirement{SW-REQ-CFG-016}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-017",
+          "line": 258,
+          "context": "* @requirement{SW-REQ-CFG-017}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-018",
+          "line": 267,
+          "context": "* @requirement{SW-REQ-CFG-018}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-019",
+          "line": 283,
+          "context": "* @requirement{SW-REQ-CFG-019}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-020",
+          "line": 290,
+          "context": "* @requirement{SW-REQ-CFG-020}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-021",
+          "line": 297,
+          "context": "* @requirement{SW-REQ-CFG-021}"
+        },
+        {
+          "requirement_id": "FSR-CFG-014",
+          "line": 304,
+          "context": "* @requirement{FSR-CFG-014}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-022",
+          "line": 344,
+          "context": "* @requirement{SW-REQ-CFG-022}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-023",
+          "line": 358,
+          "context": "* @requirement{SW-REQ-CFG-023}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-024",
+          "line": 376,
+          "context": "* @requirement{SW-REQ-CFG-024}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 20,
+        "FSR": 5
+      }
+    },
+    {
+      "file": "src/app/application/config/bms-slave_cfg.h",
+      "module": "application",
+      "requirement_count": 4,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-CFG-052",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-CFG-052}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-051",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-CFG-051}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-050",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-CFG-050}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-049",
+          "line": 59,
+          "context": "* @requirement{SW-REQ-CFG-049}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 4
+      }
+    },
+    {
+      "file": "src/app/application/config/bms_cfg.h",
+      "module": "application",
+      "requirement_count": 19,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-CFG-025",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-CFG-025}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-026",
+          "line": 93,
+          "context": "* @requirement{SW-REQ-CFG-026}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-027",
+          "line": 104,
+          "context": "* @requirement{SW-REQ-CFG-027}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-028",
+          "line": 111,
+          "context": "* @requirement{SW-REQ-CFG-028}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-029",
+          "line": 118,
+          "context": "* @requirement{SW-REQ-CFG-029}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-030",
+          "line": 124,
+          "context": "* @requirement{SW-REQ-CFG-030}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-031",
+          "line": 130,
+          "context": "* @requirement{SW-REQ-CFG-031}"
+        },
+        {
+          "requirement_id": "FSR-CFG-015",
+          "line": 136,
+          "context": "* @requirement{FSR-CFG-015}"
+        },
+        {
+          "requirement_id": "FSR-CFG-016",
+          "line": 143,
+          "context": "* @requirement{FSR-CFG-016}"
+        },
+        {
+          "requirement_id": "FSR-CFG-017",
+          "line": 150,
+          "context": "* @requirement{FSR-CFG-017}"
+        },
+        {
+          "requirement_id": "FSR-CFG-018",
+          "line": 157,
+          "context": "* @requirement{FSR-CFG-018}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-032",
+          "line": 163,
+          "context": "* @requirement{SW-REQ-CFG-032}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-033",
+          "line": 169,
+          "context": "* @requirement{SW-REQ-CFG-033}"
+        },
+        {
+          "requirement_id": "FSR-CFG-019",
+          "line": 179,
+          "context": "* @requirement{FSR-CFG-019}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-034",
+          "line": 187,
+          "context": "* @requirement{SW-REQ-CFG-034}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-035",
+          "line": 193,
+          "context": "* @requirement{SW-REQ-CFG-035}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-036",
+          "line": 199,
+          "context": "* @requirement{SW-REQ-CFG-036}"
+        },
+        {
+          "requirement_id": "FSR-CFG-020",
+          "line": 209,
+          "context": "* @requirement{FSR-CFG-020}"
+        },
+        {
+          "requirement_id": "FSR-CFG-021",
+          "line": 216,
+          "context": "* @requirement{FSR-CFG-021}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 12,
+        "FSR": 7
+      }
+    },
+    {
+      "file": "src/app/application/config/plausibility_cfg.h",
+      "module": "application",
+      "requirement_count": 5,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-CFG-047",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-CFG-047}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-046",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-CFG-046}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-045",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-CFG-045}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-044",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-CFG-044}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-048",
+          "line": 98,
+          "context": "* @requirement{SW-REQ-CFG-048}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 5
+      }
+    },
+    {
+      "file": "src/app/driver/adc/adc.c",
+      "module": "driver",
+      "requirement_count": 1,
+      "requirements": [
+        {
+          "requirement_id": "FSR-DRV-001",
+          "line": 106,
+          "context": "* @requirement{FSR-DRV-001}"
+        }
+      ],
+      "by_type": {
+        "FSR": 1
+      }
+    },
+    {
+      "file": "src/app/driver/adc/adc.h",
+      "module": "driver",
+      "requirement_count": 6,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-002",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-002}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-006",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-006}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-005",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-005}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-004",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-DRV-004}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-001",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-DRV-001}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-003",
+          "line": 95,
+          "context": "* @requirement{SW-REQ-DRV-003}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 6
+      }
+    },
+    {
+      "file": "src/app/driver/afe/adi/common/ades183x/adi_ades183x.h",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-AFE-013",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-AFE-013}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-012",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-AFE-012}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-011",
+          "line": 59,
+          "context": "* @requirement{SW-REQ-AFE-011}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 3
+      }
+    },
+    {
+      "file": "src/app/driver/afe/adi/common/ades183x/adi_ades183x_defs.h",
+      "module": "driver",
+      "requirement_count": 23,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-AFE-028",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-AFE-028}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-027",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-AFE-027}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-022",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-AFE-022}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-021",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-AFE-021}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-020",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-AFE-020}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-024",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-AFE-024}"
+        },
+        {
+          "requirement_id": "FSR-AFE-009",
+          "line": 59,
+          "context": "* @requirement{FSR-AFE-009}"
+        },
+        {
+          "requirement_id": "FSR-AFE-008",
+          "line": 60,
+          "context": "* @requirement{FSR-AFE-008}"
+        },
+        {
+          "requirement_id": "FSR-AFE-007",
+          "line": 61,
+          "context": "* @requirement{FSR-AFE-007}"
+        },
+        {
+          "requirement_id": "FSR-AFE-006",
+          "line": 62,
+          "context": "* @requirement{FSR-AFE-006}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-015",
+          "line": 63,
+          "context": "* @requirement{SW-REQ-AFE-015}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-014",
+          "line": 64,
+          "context": "* @requirement{SW-REQ-AFE-014}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-017",
+          "line": 65,
+          "context": "* @requirement{SW-REQ-AFE-017}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-016",
+          "line": 66,
+          "context": "* @requirement{SW-REQ-AFE-016}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-019",
+          "line": 67,
+          "context": "* @requirement{SW-REQ-AFE-019}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-018",
+          "line": 68,
+          "context": "* @requirement{SW-REQ-AFE-018}"
+        },
+        {
+          "requirement_id": "FSR-AFE-015",
+          "line": 69,
+          "context": "* @requirement{FSR-AFE-015}"
+        },
+        {
+          "requirement_id": "FSR-AFE-016",
+          "line": 162,
+          "context": "* @requirement{FSR-AFE-016}"
+        },
+        {
+          "requirement_id": "FSR-AFE-010",
+          "line": 407,
+          "context": "* @requirement{FSR-AFE-010}"
+        },
+        {
+          "requirement_id": "FSR-AFE-011",
+          "line": 411,
+          "context": "* @requirement{FSR-AFE-011}"
+        },
+        {
+          "requirement_id": "FSR-AFE-012",
+          "line": 415,
+          "context": "* @requirement{FSR-AFE-012}"
+        },
+        {
+          "requirement_id": "FSR-AFE-014",
+          "line": 421,
+          "context": "* @requirement{FSR-AFE-014}"
+        },
+        {
+          "requirement_id": "FSR-AFE-013",
+          "line": 422,
+          "context": "* @requirement{FSR-AFE-013}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 12,
+        "FSR": 11
+      }
+    },
+    {
+      "file": "src/app/driver/afe/adi/common/ades183x/adi_ades183x_diagnostic.h",
+      "module": "driver",
+      "requirement_count": 1,
+      "requirements": [
+        {
+          "requirement_id": "FSR-AFE-020",
+          "line": 53,
+          "context": "* @requirement{FSR-AFE-020}"
+        }
+      ],
+      "by_type": {
+        "FSR": 1
+      }
+    },
+    {
+      "file": "src/app/driver/afe/adi/common/ades183x/adi_ades183x_voltages.c",
+      "module": "driver",
+      "requirement_count": 7,
+      "requirements": [
+        {
+          "requirement_id": "FSR-AFE-017",
+          "line": 143,
+          "context": "/** @requirement{FSR-AFE-017} */"
+        },
+        {
+          "requirement_id": "FSR-AFE-017",
+          "line": 155,
+          "context": "/** @requirement{FSR-AFE-017} */"
+        },
+        {
+          "requirement_id": "FSR-AFE-017",
+          "line": 167,
+          "context": "/** @requirement{FSR-AFE-017} */"
+        },
+        {
+          "requirement_id": "FSR-AFE-017",
+          "line": 179,
+          "context": "/** @requirement{FSR-AFE-017} */"
+        },
+        {
+          "requirement_id": "FSR-AFE-018",
+          "line": 190,
+          "context": "* @requirement{FSR-AFE-018}"
+        },
+        {
+          "requirement_id": "FSR-AFE-019",
+          "line": 327,
+          "context": "* @requirement{FSR-AFE-019}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-023",
+          "line": 361,
+          "context": "* @requirement{SW-REQ-AFE-023}"
+        }
+      ],
+      "by_type": {
+        "FSR": 6,
+        "SW-REQ": 1
+      }
+    },
+    {
+      "file": "src/app/driver/afe/adi/common/ades183x/config/adi_ades183x_cfg.h",
+      "module": "driver",
+      "requirement_count": 2,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-AFE-025",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-AFE-025}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-026",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-AFE-026}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2
+      }
+    },
+    {
+      "file": "src/app/driver/afe/api/afe.h",
+      "module": "driver",
+      "requirement_count": 9,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-AFE-008",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-AFE-008}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-007",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-AFE-007}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-001",
+          "line": 105,
+          "context": "* @requirement{SW-REQ-AFE-001}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-002",
+          "line": 114,
+          "context": "* @requirement{SW-REQ-AFE-002}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-003",
+          "line": 120,
+          "context": "* @requirement{SW-REQ-AFE-003}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-004",
+          "line": 128,
+          "context": "* @requirement{SW-REQ-AFE-004}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-005",
+          "line": 135,
+          "context": "* @requirement{SW-REQ-AFE-005}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-006",
+          "line": 143,
+          "context": "* @requirement{SW-REQ-AFE-006}"
+        },
+        {
+          "requirement_id": "FSR-AFE-001",
+          "line": 165,
+          "context": "* @requirement{FSR-AFE-001}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 8,
+        "FSR": 1
+      }
+    },
+    {
+      "file": "src/app/driver/afe/api/afe_dma.h",
+      "module": "driver",
+      "requirement_count": 1,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-AFE-010",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-AFE-010}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 1
+      }
+    },
+    {
+      "file": "src/app/driver/afe/api/afe_plausibility.c",
+      "module": "driver",
+      "requirement_count": 2,
+      "requirements": [
+        {
+          "requirement_id": "FSR-AFE-005",
+          "line": 53,
+          "context": "* @requirement{FSR-AFE-005}"
+        },
+        {
+          "requirement_id": "FSR-AFE-003",
+          "line": 54,
+          "context": "* @requirement{FSR-AFE-003}"
+        }
+      ],
+      "by_type": {
+        "FSR": 2
+      }
+    },
+    {
+      "file": "src/app/driver/afe/api/afe_plausibility.h",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-AFE-009",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-AFE-009}"
+        },
+        {
+          "requirement_id": "FSR-AFE-002",
+          "line": 54,
+          "context": "* @requirement{FSR-AFE-002}"
+        },
+        {
+          "requirement_id": "FSR-AFE-004",
+          "line": 98,
+          "context": "* @requirement{FSR-AFE-004}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 1,
+        "FSR": 2
+      }
+    },
+    {
+      "file": "src/app/driver/afe/ltc/common/ltc.h",
+      "module": "driver",
+      "requirement_count": 2,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-AFE-034",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-AFE-034}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-033",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-AFE-033}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2
+      }
+    },
+    {
+      "file": "src/app/driver/afe/ltc/common/ltc_defs.h",
+      "module": "driver",
+      "requirement_count": 11,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-AFE-036",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-AFE-036}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-035",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-AFE-035}"
+        },
+        {
+          "requirement_id": "FSR-AFE-025",
+          "line": 55,
+          "context": "* @requirement{FSR-AFE-025}"
+        },
+        {
+          "requirement_id": "FSR-AFE-024",
+          "line": 56,
+          "context": "* @requirement{FSR-AFE-024}"
+        },
+        {
+          "requirement_id": "FSR-AFE-021",
+          "line": 57,
+          "context": "* @requirement{FSR-AFE-021}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-029",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-AFE-029}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-030",
+          "line": 59,
+          "context": "* @requirement{SW-REQ-AFE-030}"
+        },
+        {
+          "requirement_id": "FSR-AFE-023",
+          "line": 60,
+          "context": "* @requirement{FSR-AFE-023}"
+        },
+        {
+          "requirement_id": "FSR-AFE-022",
+          "line": 61,
+          "context": "* @requirement{FSR-AFE-022}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-032",
+          "line": 105,
+          "context": "* @requirement{SW-REQ-AFE-032}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-031",
+          "line": 106,
+          "context": "* @requirement{SW-REQ-AFE-031}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 6,
+        "FSR": 5
+      }
+    },
+    {
+      "file": "src/app/driver/afe/maxim/common/mxm_1785x.h",
+      "module": "driver",
+      "requirement_count": 6,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-AFE-039",
+          "line": 75,
+          "context": "* @requirement{SW-REQ-AFE-039}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-038",
+          "line": 76,
+          "context": "* @requirement{SW-REQ-AFE-038}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-037",
+          "line": 77,
+          "context": "* @requirement{SW-REQ-AFE-037}"
+        },
+        {
+          "requirement_id": "FSR-AFE-027",
+          "line": 168,
+          "context": "* @requirement{FSR-AFE-027}"
+        },
+        {
+          "requirement_id": "FSR-AFE-028",
+          "line": 204,
+          "context": "* @requirement{FSR-AFE-028}"
+        },
+        {
+          "requirement_id": "FSR-AFE-026",
+          "line": 276,
+          "context": "* @requirement{FSR-AFE-026}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 3,
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/afe/maxim/common/mxm_battery_management.c",
+      "module": "driver",
+      "requirement_count": 4,
+      "requirements": [
+        {
+          "requirement_id": "FSR-AFE-029",
+          "line": 252,
+          "context": "* @requirement{FSR-AFE-029}"
+        },
+        {
+          "requirement_id": "FSR-AFE-030",
+          "line": 263,
+          "context": "* @requirement{FSR-AFE-030}"
+        },
+        {
+          "requirement_id": "FSR-AFE-031",
+          "line": 961,
+          "context": "* @requirement{FSR-AFE-031}"
+        },
+        {
+          "requirement_id": "FSR-AFE-032",
+          "line": 992,
+          "context": "* @requirement{FSR-AFE-032}"
+        }
+      ],
+      "by_type": {
+        "FSR": 4
+      }
+    },
+    {
+      "file": "src/app/driver/afe/nxp/common/mc3377x/nxp_mc3377x.h",
+      "module": "driver",
+      "requirement_count": 2,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-AFE-040",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-AFE-040}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-041",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-AFE-041}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2
+      }
+    },
+    {
+      "file": "src/app/driver/afe/nxp/mc33775a/config/nxp_mc33775a_cfg.h",
+      "module": "driver",
+      "requirement_count": 1,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-AFE-042",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-AFE-042}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 1
+      }
+    },
+    {
+      "file": "src/app/driver/afe/ti/dummy/ti_dummy.h",
+      "module": "driver",
+      "requirement_count": 4,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-AFE-046",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-AFE-046}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-045",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-AFE-045}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-044",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-AFE-044}"
+        },
+        {
+          "requirement_id": "SW-REQ-AFE-043",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-AFE-043}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 4
+      }
+    },
+    {
+      "file": "src/app/driver/can/can.h",
+      "module": "driver",
+      "requirement_count": 15,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-119",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-119}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-120",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-120}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-121",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-DRV-121}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-122",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-DRV-122}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-123",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-DRV-123}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-124",
+          "line": 59,
+          "context": "* @requirement{SW-REQ-DRV-124}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-125",
+          "line": 60,
+          "context": "* @requirement{SW-REQ-DRV-125}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-126",
+          "line": 61,
+          "context": "* @requirement{SW-REQ-DRV-126}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-127",
+          "line": 62,
+          "context": "* @requirement{SW-REQ-DRV-127}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-128",
+          "line": 63,
+          "context": "* @requirement{SW-REQ-DRV-128}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-124",
+          "line": 115,
+          "context": "* @requirement{SW-REQ-DRV-124}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-125",
+          "line": 122,
+          "context": "* @requirement{SW-REQ-DRV-125}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-126",
+          "line": 133,
+          "context": "* @requirement{SW-REQ-DRV-126}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-127",
+          "line": 141,
+          "context": "* @requirement{SW-REQ-DRV-127}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-128",
+          "line": 149,
+          "context": "* @requirement{SW-REQ-DRV-128}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 15
+      }
+    },
+    {
+      "file": "src/app/driver/checksum/checksum.h",
+      "module": "driver",
+      "requirement_count": 2,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-077",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-077}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-076",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-076}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2
+      }
+    },
+    {
+      "file": "src/app/driver/config/can_cfg.h",
+      "module": "driver",
+      "requirement_count": 10,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-CFG-057",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-CFG-057}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-058",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-CFG-058}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-059",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-CFG-059}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-060",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-CFG-060}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-061",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-CFG-061}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-057",
+          "line": 105,
+          "context": "* @requirement{SW-REQ-CFG-057}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-058",
+          "line": 110,
+          "context": "* @requirement{SW-REQ-CFG-058}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-059",
+          "line": 117,
+          "context": "* @requirement{SW-REQ-CFG-059}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-060",
+          "line": 125,
+          "context": "* @requirement{SW-REQ-CFG-060}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-061",
+          "line": 130,
+          "context": "* @requirement{SW-REQ-CFG-061}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 10
+      }
+    },
+    {
+      "file": "src/app/driver/config/contactor_cfg.h",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-118",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-118}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-117",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-117}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-116",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-116}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 3
+      }
+    },
+    {
+      "file": "src/app/driver/config/dma_cfg.h",
+      "module": "driver",
+      "requirement_count": 4,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-027",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-027}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-029",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-029}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-028",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-028}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-075",
+          "line": 113,
+          "context": "* @requirement{SW-REQ-CFG-075}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 4
+      }
+    },
+    {
+      "file": "src/app/driver/config/fram_cfg.h",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-070",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-070}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-069",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-069}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-071",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-071}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 3
+      }
+    },
+    {
+      "file": "src/app/driver/config/interlock_cfg.h",
+      "module": "driver",
+      "requirement_count": 9,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-CFG-072",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-CFG-072}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-063",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-063}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-071",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-CFG-071}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-070",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-CFG-070}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-069",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-CFG-069}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-068",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-CFG-068}"
+        },
+        {
+          "requirement_id": "HSI-DRV-003",
+          "line": 59,
+          "context": "* @requirement{HSI-DRV-003}"
+        },
+        {
+          "requirement_id": "HSI-DRV-002",
+          "line": 60,
+          "context": "* @requirement{HSI-DRV-002}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-073",
+          "line": 108,
+          "context": "* @requirement{SW-REQ-CFG-073}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 7,
+        "HSI": 2
+      }
+    },
+    {
+      "file": "src/app/driver/config/pex_cfg.h",
+      "module": "driver",
+      "requirement_count": 2,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-CFG-074",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-CFG-074}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-082",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-082}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2
+      }
+    },
+    {
+      "file": "src/app/driver/config/phy_cfg.h",
+      "module": "driver",
+      "requirement_count": 4,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-090",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-090}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-089",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-089}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-088",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-088}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-087",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-DRV-087}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 4
+      }
+    },
+    {
+      "file": "src/app/driver/config/spi_cfg.h",
+      "module": "driver",
+      "requirement_count": 6,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-015",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-015}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-054",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-CFG-054}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-053",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-CFG-053}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-014",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-DRV-014}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-055",
+          "line": 104,
+          "context": "* @requirement{SW-REQ-CFG-055}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-056",
+          "line": 110,
+          "context": "* @requirement{SW-REQ-CFG-056}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 6
+      }
+    },
+    {
+      "file": "src/app/driver/config/sps_cfg.h",
+      "module": "driver",
+      "requirement_count": 11,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-108",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-108}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-107",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-107}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-106",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-106}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-066",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-CFG-066}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-063",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-CFG-063}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-105",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-DRV-105}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-062",
+          "line": 59,
+          "context": "* @requirement{SW-REQ-CFG-062}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-104",
+          "line": 60,
+          "context": "* @requirement{SW-REQ-DRV-104}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-067",
+          "line": 106,
+          "context": "* @requirement{SW-REQ-CFG-067}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-064",
+          "line": 171,
+          "context": "* @requirement{SW-REQ-CFG-064}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-065",
+          "line": 177,
+          "context": "* @requirement{SW-REQ-CFG-065}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 11
+      }
+    },
+    {
+      "file": "src/app/driver/config/tsi_plausibility_cfg.h",
+      "module": "driver",
+      "requirement_count": 2,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-CFG-077",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-CFG-077}"
+        },
+        {
+          "requirement_id": "SW-REQ-CFG-076",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-CFG-076}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2
+      }
+    },
+    {
+      "file": "src/app/driver/contactor/contactor.c",
+      "module": "driver",
+      "requirement_count": 5,
+      "requirements": [
+        {
+          "requirement_id": "FSR-DRV-014",
+          "line": 109,
+          "context": "* @requirement{FSR-DRV-014}"
+        },
+        {
+          "requirement_id": "FSR-DRV-013",
+          "line": 110,
+          "context": "* @requirement{FSR-DRV-013}"
+        },
+        {
+          "requirement_id": "FSR-DRV-011",
+          "line": 130,
+          "context": "* @requirement{FSR-DRV-011}"
+        },
+        {
+          "requirement_id": "FSR-DRV-015",
+          "line": 131,
+          "context": "* @requirement{FSR-DRV-015}"
+        },
+        {
+          "requirement_id": "FSR-DRV-012",
+          "line": 174,
+          "context": "* @requirement{FSR-DRV-012}"
+        }
+      ],
+      "by_type": {
+        "FSR": 5
+      }
+    },
+    {
+      "file": "src/app/driver/contactor/contactor.h",
+      "module": "driver",
+      "requirement_count": 6,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-113",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-113}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-112",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-112}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-111",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-111}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-110",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-DRV-110}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-114",
+          "line": 119,
+          "context": "* @requirement{SW-REQ-DRV-114}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-115",
+          "line": 125,
+          "context": "* @requirement{SW-REQ-DRV-115}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 6
+      }
+    },
+    {
+      "file": "src/app/driver/crc/crc.h",
+      "module": "driver",
+      "requirement_count": 4,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-078",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-078}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-079",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-079}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-080",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-080}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-080",
+          "line": 104,
+          "context": "* @requirement{SW-REQ-DRV-080}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 4
+      }
+    },
+    {
+      "file": "src/app/driver/dma/dma.h",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-026",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-026}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-025",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-025}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-024",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-DRV-024}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 3
+      }
+    },
+    {
+      "file": "src/app/driver/foxmath/foxmath.h",
+      "module": "driver",
+      "requirement_count": 5,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-072",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-DRV-072}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-073",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-DRV-073}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-074",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-DRV-074}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-075",
+          "line": 59,
+          "context": "* @requirement{SW-REQ-DRV-075}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-075",
+          "line": 160,
+          "context": "* @requirement{SW-REQ-DRV-075}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 5
+      }
+    },
+    {
+      "file": "src/app/driver/fram/fram.h",
+      "module": "driver",
+      "requirement_count": 4,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-068",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-068}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-067",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-067}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-066",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-066}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-065",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-DRV-065}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 4
+      }
+    },
+    {
+      "file": "src/app/driver/htsensor/htsensor.h",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-098",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-098}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-097",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-097}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-096",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-096}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 3
+      }
+    },
+    {
+      "file": "src/app/driver/i2c/i2c.h",
+      "module": "driver",
+      "requirement_count": 8,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-023",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-023}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-022",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-022}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-016",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-016}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-017",
+          "line": 119,
+          "context": "* @requirement{SW-REQ-DRV-017}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-018",
+          "line": 132,
+          "context": "* @requirement{SW-REQ-DRV-018}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-019",
+          "line": 143,
+          "context": "* @requirement{SW-REQ-DRV-019}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-020",
+          "line": 170,
+          "context": "* @requirement{SW-REQ-DRV-020}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-021",
+          "line": 187,
+          "context": "* @requirement{SW-REQ-DRV-021}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 8
+      }
+    },
+    {
+      "file": "src/app/driver/interlock/interlock.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-059",
+          "line": 68,
+          "context": "* @requirement{SW-REQ-DRV-059}"
+        },
+        {
+          "requirement_id": "FSR-DRV-008",
+          "line": 273,
+          "context": "* @requirement{FSR-DRV-008}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-064",
+          "line": 274,
+          "context": "* @requirement{SW-REQ-DRV-064}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 1
+      }
+    },
+    {
+      "file": "src/app/driver/interlock/interlock.h",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-060",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-060}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-061",
+          "line": 104,
+          "context": "* @requirement{SW-REQ-DRV-061}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-062",
+          "line": 144,
+          "context": "* @requirement{SW-REQ-DRV-062}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 3
+      }
+    },
+    {
+      "file": "src/app/driver/io/io.c",
+      "module": "driver",
+      "requirement_count": 2,
+      "requirements": [
+        {
+          "requirement_id": "FSR-DRV-006",
+          "line": 53,
+          "context": "* @requirement{FSR-DRV-006}"
+        },
+        {
+          "requirement_id": "FSR-DRV-007",
+          "line": 54,
+          "context": "* @requirement{FSR-DRV-007}"
+        }
+      ],
+      "by_type": {
+        "FSR": 2
+      }
+    },
+    {
+      "file": "src/app/driver/io/io.h",
+      "module": "driver",
+      "requirement_count": 7,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-042",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-042}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-043",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-043}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-044",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-044}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-045",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-DRV-045}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-046",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-DRV-046}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-047",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-DRV-047}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-047",
+          "line": 112,
+          "context": "* @requirement{SW-REQ-DRV-047}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 7
+      }
+    },
+    {
+      "file": "src/app/driver/led/led.h",
+      "module": "driver",
+      "requirement_count": 5,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-052",
+          "line": 63,
+          "context": "* @requirement{SW-REQ-DRV-052}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-051",
+          "line": 64,
+          "context": "* @requirement{SW-REQ-DRV-051}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-050",
+          "line": 65,
+          "context": "* @requirement{SW-REQ-DRV-050}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-049",
+          "line": 66,
+          "context": "* @requirement{SW-REQ-DRV-049}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-048",
+          "line": 67,
+          "context": "* @requirement{SW-REQ-DRV-048}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 5
+      }
+    },
+    {
+      "file": "src/app/driver/mcu/mcu.h",
+      "module": "driver",
+      "requirement_count": 7,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-053",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-053}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-054",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-054}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-055",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-055}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-056",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-DRV-056}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-057",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-DRV-057}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-058",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-DRV-058}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-058",
+          "line": 120,
+          "context": "* @requirement{SW-REQ-DRV-058}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 7
+      }
+    },
+    {
+      "file": "src/app/driver/meas/meas.h",
+      "module": "driver",
+      "requirement_count": 5,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-094",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-094}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-093",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-093}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-092",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-DRV-092}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-091",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-DRV-091}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-095",
+          "line": 125,
+          "context": "* @requirement{SW-REQ-DRV-095}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 5
+      }
+    },
+    {
+      "file": "src/app/driver/pex/pex.h",
+      "module": "driver",
+      "requirement_count": 5,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-085",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-085}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-084",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-084}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-083",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-DRV-083}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-081",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-DRV-081}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-086",
+          "line": 132,
+          "context": "* @requirement{SW-REQ-DRV-086}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 5
+      }
+    },
+    {
+      "file": "src/app/driver/pwm/pwm.h",
+      "module": "driver",
+      "requirement_count": 6,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-035",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-DRV-035}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-034",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-DRV-034}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-033",
+          "line": 59,
+          "context": "* @requirement{SW-REQ-DRV-033}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-032",
+          "line": 60,
+          "context": "* @requirement{SW-REQ-DRV-032}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-031",
+          "line": 61,
+          "context": "* @requirement{SW-REQ-DRV-031}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-030",
+          "line": 62,
+          "context": "* @requirement{SW-REQ-DRV-030}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 6
+      }
+    },
+    {
+      "file": "src/app/driver/rtc/rtc.h",
+      "module": "driver",
+      "requirement_count": 7,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-040",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-040}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-041",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-041}"
+        },
+        {
+          "requirement_id": "HSI-DRV-001",
+          "line": 56,
+          "context": "* @requirement{HSI-DRV-001}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-036",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-DRV-036}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-037",
+          "line": 199,
+          "context": "* @requirement{SW-REQ-DRV-037}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-038",
+          "line": 220,
+          "context": "* @requirement{SW-REQ-DRV-038}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-039",
+          "line": 228,
+          "context": "* @requirement{SW-REQ-DRV-039}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 6,
+        "HSI": 1
+      }
+    },
+    {
+      "file": "src/app/driver/sbc/fs8x_driver/sbc_fs8x.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-SBC-024",
+          "line": 136,
+          "context": "* @requirement{SW-REQ-SBC-024}"
+        },
+        {
+          "requirement_id": "FSR-SBC-018",
+          "line": 162,
+          "context": "* @requirement{FSR-SBC-018}"
+        },
+        {
+          "requirement_id": "FSR-SBC-019",
+          "line": 189,
+          "context": "* @requirement{FSR-SBC-019}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 1,
+        "FSR": 2
+      }
+    },
+    {
+      "file": "src/app/driver/sbc/fs8x_driver/sbc_fs8x.h",
+      "module": "driver",
+      "requirement_count": 1,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-SBC-025",
+          "line": 42,
+          "context": "* @requirement{SW-REQ-SBC-025}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 1
+      }
+    },
+    {
+      "file": "src/app/driver/sbc/fs8x_driver/sbc_fs8x_communication.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "HSI-SBC-001",
+          "line": 42,
+          "context": "* @requirement{HSI-SBC-001}"
+        },
+        {
+          "requirement_id": "HSI-SBC-003",
+          "line": 182,
+          "context": "* @requirement{HSI-SBC-003}"
+        },
+        {
+          "requirement_id": "HSI-SBC-004",
+          "line": 436,
+          "context": "* @requirement{HSI-SBC-004}"
+        }
+      ],
+      "by_type": {
+        "HSI": 3
+      }
+    },
+    {
+      "file": "src/app/driver/sbc/fs8x_driver/sbc_fs8x_communication.h",
+      "module": "driver",
+      "requirement_count": 1,
+      "requirements": [
+        {
+          "requirement_id": "HSI-SBC-002",
+          "line": 42,
+          "context": "* @requirement{HSI-SBC-002}"
+        }
+      ],
+      "by_type": {
+        "HSI": 1
+      }
+    },
+    {
+      "file": "src/app/driver/sbc/nxpfs85xx.c",
+      "module": "driver",
+      "requirement_count": 27,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-SBC-015",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-SBC-015}"
+        },
+        {
+          "requirement_id": "FSR-SBC-012",
+          "line": 54,
+          "context": "* @requirement{FSR-SBC-012}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-014",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-SBC-014}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-013",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-SBC-013}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-012",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-SBC-012}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-011",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-SBC-011}"
+        },
+        {
+          "requirement_id": "FSR-SBC-015",
+          "line": 211,
+          "context": "* @requirement{FSR-SBC-015}"
+        },
+        {
+          "requirement_id": "FSR-SBC-016",
+          "line": 225,
+          "context": "* @requirement{FSR-SBC-016}"
+        },
+        {
+          "requirement_id": "FSR-SBC-011",
+          "line": 538,
+          "context": "* @requirement{FSR-SBC-011}"
+        },
+        {
+          "requirement_id": "FSR-SBC-009",
+          "line": 598,
+          "context": "* @requirement{FSR-SBC-009}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-009",
+          "line": 617,
+          "context": "* @requirement{SW-REQ-SBC-009}"
+        },
+        {
+          "requirement_id": "FSR-SBC-010",
+          "line": 633,
+          "context": "* @requirement{FSR-SBC-010}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-010",
+          "line": 643,
+          "context": "* @requirement{SW-REQ-SBC-010}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-016",
+          "line": 871,
+          "context": "* @requirement{SW-REQ-SBC-016}"
+        },
+        {
+          "requirement_id": "FSR-SBC-013",
+          "line": 879,
+          "context": "* @requirement{FSR-SBC-013}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-017",
+          "line": 897,
+          "context": "* @requirement{SW-REQ-SBC-017}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-018",
+          "line": 917,
+          "context": "* @requirement{SW-REQ-SBC-018}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-022",
+          "line": 963,
+          "context": "* @requirement{SW-REQ-SBC-022}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-019",
+          "line": 998,
+          "context": "* @requirement{SW-REQ-SBC-019}"
+        },
+        {
+          "requirement_id": "FSR-SBC-014",
+          "line": 999,
+          "context": "* @requirement{FSR-SBC-014}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-020",
+          "line": 1074,
+          "context": "* @requirement{SW-REQ-SBC-020}"
+        },
+        {
+          "requirement_id": "FSR-SBC-017",
+          "line": 1075,
+          "context": "* @requirement{FSR-SBC-017}"
+        },
+        {
+          "requirement_id": "FSR-SBC-022",
+          "line": 1111,
+          "context": "* @requirement{FSR-SBC-022}"
+        },
+        {
+          "requirement_id": "FSR-SBC-023",
+          "line": 1149,
+          "context": "* @requirement{FSR-SBC-023}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-021",
+          "line": 1229,
+          "context": "* @requirement{SW-REQ-SBC-021}"
+        },
+        {
+          "requirement_id": "FSR-SBC-020",
+          "line": 1230,
+          "context": "* @requirement{FSR-SBC-020}"
+        },
+        {
+          "requirement_id": "FSR-SBC-021",
+          "line": 1287,
+          "context": "* @requirement{FSR-SBC-021}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 14,
+        "FSR": 13
+      }
+    },
+    {
+      "file": "src/app/driver/sbc/sbc.c",
+      "module": "driver",
+      "requirement_count": 13,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-SBC-008",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-SBC-008}"
+        },
+        {
+          "requirement_id": "FSR-SBC-001",
+          "line": 104,
+          "context": "* @requirement{FSR-SBC-001}"
+        },
+        {
+          "requirement_id": "FSR-SBC-003",
+          "line": 147,
+          "context": "* @requirement{FSR-SBC-003}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-003",
+          "line": 153,
+          "context": "* @requirement{SW-REQ-SBC-003}"
+        },
+        {
+          "requirement_id": "FSR-SBC-002",
+          "line": 170,
+          "context": "* @requirement{FSR-SBC-002}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-007",
+          "line": 214,
+          "context": "* @requirement{SW-REQ-SBC-007}"
+        },
+        {
+          "requirement_id": "FSR-SBC-004",
+          "line": 254,
+          "context": "* @requirement{FSR-SBC-004}"
+        },
+        {
+          "requirement_id": "FSR-SBC-005",
+          "line": 283,
+          "context": "* @requirement{FSR-SBC-005}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-005",
+          "line": 284,
+          "context": "* @requirement{SW-REQ-SBC-005}"
+        },
+        {
+          "requirement_id": "FSR-SBC-006",
+          "line": 285,
+          "context": "* @requirement{FSR-SBC-006}"
+        },
+        {
+          "requirement_id": "FSR-SBC-008",
+          "line": 402,
+          "context": "* @requirement{FSR-SBC-008}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-023",
+          "line": 414,
+          "context": "* @requirement{SW-REQ-SBC-023}"
+        },
+        {
+          "requirement_id": "FSR-SBC-007",
+          "line": 429,
+          "context": "* @requirement{FSR-SBC-007}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 5,
+        "FSR": 8
+      }
+    },
+    {
+      "file": "src/app/driver/sbc/sbc.h",
+      "module": "driver",
+      "requirement_count": 4,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-SBC-001",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-SBC-001}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-006",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-SBC-006}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-002",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-SBC-002}"
+        },
+        {
+          "requirement_id": "SW-REQ-SBC-004",
+          "line": 125,
+          "context": "* @requirement{SW-REQ-SBC-004}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 4
+      }
+    },
+    {
+      "file": "src/app/driver/spi/spi.c",
+      "module": "driver",
+      "requirement_count": 4,
+      "requirements": [
+        {
+          "requirement_id": "FSR-DRV-005",
+          "line": 176,
+          "context": "* @requirement{FSR-DRV-005}"
+        },
+        {
+          "requirement_id": "FSR-DRV-002",
+          "line": 264,
+          "context": "* @requirement{FSR-DRV-002}"
+        },
+        {
+          "requirement_id": "FSR-DRV-003",
+          "line": 272,
+          "context": "* @requirement{FSR-DRV-003}"
+        },
+        {
+          "requirement_id": "FSR-DRV-004",
+          "line": 285,
+          "context": "* @requirement{FSR-DRV-004}"
+        }
+      ],
+      "by_type": {
+        "FSR": 4
+      }
+    },
+    {
+      "file": "src/app/driver/spi/spi.h",
+      "module": "driver",
+      "requirement_count": 7,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-010",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-010}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-009",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-009}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-008",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-008}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-007",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-DRV-007}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-011",
+          "line": 102,
+          "context": "* @requirement{SW-REQ-DRV-011}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-012",
+          "line": 138,
+          "context": "* @requirement{SW-REQ-DRV-012}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-013",
+          "line": 177,
+          "context": "* @requirement{SW-REQ-DRV-013}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 7
+      }
+    },
+    {
+      "file": "src/app/driver/sps/sps.c",
+      "module": "driver",
+      "requirement_count": 2,
+      "requirements": [
+        {
+          "requirement_id": "FSR-DRV-009",
+          "line": 464,
+          "context": "* @requirement{FSR-DRV-009}"
+        },
+        {
+          "requirement_id": "FSR-DRV-010",
+          "line": 480,
+          "context": "* @requirement{FSR-DRV-010}"
+        }
+      ],
+      "by_type": {
+        "FSR": 2
+      }
+    },
+    {
+      "file": "src/app/driver/sps/sps.h",
+      "module": "driver",
+      "requirement_count": 5,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-102",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-102}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-101",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-DRV-101}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-100",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-DRV-100}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-099",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-DRV-099}"
+        },
+        {
+          "requirement_id": "SW-REQ-DRV-103",
+          "line": 110,
+          "context": "* @requirement{SW-REQ-DRV-103}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 5
+      }
+    },
+    {
+      "file": "src/app/driver/sps/sps_types.h",
+      "module": "driver",
+      "requirement_count": 1,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-DRV-109",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-DRV-109}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 1
+      }
+    },
+    {
+      "file": "src/app/driver/ts/api/tsi.h",
+      "module": "driver",
+      "requirement_count": 4,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-003",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-TMP-003}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-002",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-TMP-002}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-001",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-TMP-001}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-004",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-TMP-004}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 4
+      }
+    },
+    {
+      "file": "src/app/driver/ts/api/tsi_limits.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 64,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 65,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 66,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/beta.c",
+      "module": "driver",
+      "requirement_count": 4,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-014",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-003",
+          "line": 106,
+          "context": "* @requirement{FSR-TMP-003}"
+        },
+        {
+          "requirement_id": "FSR-TMP-002",
+          "line": 107,
+          "context": "* @requirement{FSR-TMP-002}"
+        },
+        {
+          "requirement_id": "FSR-TMP-004",
+          "line": 142,
+          "context": "* @requirement{FSR-TMP-004}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 1,
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/beta.h",
+      "module": "driver",
+      "requirement_count": 9,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-013",
+          "line": 73,
+          "context": "* @requirement{SW-REQ-TMP-013}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-012",
+          "line": 74,
+          "context": "* @requirement{SW-REQ-TMP-012}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-011",
+          "line": 75,
+          "context": "* @requirement{SW-REQ-TMP-011}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-010",
+          "line": 76,
+          "context": "* @requirement{SW-REQ-TMP-010}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-009",
+          "line": 77,
+          "context": "* @requirement{SW-REQ-TMP-009}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-008",
+          "line": 78,
+          "context": "* @requirement{SW-REQ-TMP-008}"
+        },
+        {
+          "requirement_id": "FSR-TMP-001",
+          "line": 117,
+          "context": "* @requirement{FSR-TMP-001}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-007",
+          "line": 118,
+          "context": "* @requirement{SW-REQ-TMP-007}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-015",
+          "line": 139,
+          "context": "* @requirement{SW-REQ-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 8,
+        "FSR": 1
+      }
+    },
+    {
+      "file": "src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.c",
+      "module": "driver",
+      "requirement_count": 7,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-021",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-TMP-021}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-022",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-TMP-022}"
+        },
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 57,
+          "context": "* @requirement{FSR-TMP-015}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-023",
+          "line": 166,
+          "context": "* @requirement{SW-REQ-TMP-023}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-024",
+          "line": 224,
+          "context": "* @requirement{SW-REQ-TMP-024}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 4,
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/epcos/b57251v5103j060/epcos_b57251v5103j060.h",
+      "module": "driver",
+      "requirement_count": 6,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-020",
+          "line": 73,
+          "context": "* @requirement{SW-REQ-TMP-020}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-019",
+          "line": 74,
+          "context": "* @requirement{SW-REQ-TMP-019}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-018",
+          "line": 75,
+          "context": "* @requirement{SW-REQ-TMP-018}"
+        },
+        {
+          "requirement_id": "FSR-TMP-005",
+          "line": 102,
+          "context": "* @requirement{FSR-TMP-005}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-016",
+          "line": 103,
+          "context": "* @requirement{SW-REQ-TMP-016}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-017",
+          "line": 114,
+          "context": "* @requirement{SW-REQ-TMP-017}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 5,
+        "FSR": 1
+      }
+    },
+    {
+      "file": "src/app/driver/ts/epcos/b57251v5103j060/lookup-table/epcos_b57251v5103j060_lookup-table.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 53,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/epcos/b57251v5103j060/polynomial/epcos_b57251v5103j060_polynomial.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 53,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/epcos/b57861s0103f045/epcos_b57861s0103f045.c",
+      "module": "driver",
+      "requirement_count": 5,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-027",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-TMP-027}"
+        },
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-015}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-028",
+          "line": 220,
+          "context": "* @requirement{SW-REQ-TMP-028}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/epcos/b57861s0103f045/epcos_b57861s0103f045.h",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-026",
+          "line": 73,
+          "context": "* @requirement{SW-REQ-TMP-026}"
+        },
+        {
+          "requirement_id": "FSR-TMP-006",
+          "line": 101,
+          "context": "* @requirement{FSR-TMP-006}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-025",
+          "line": 102,
+          "context": "* @requirement{SW-REQ-TMP-025}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 1
+      }
+    },
+    {
+      "file": "src/app/driver/ts/epcos/b57861s0103f045/lookup-table/epcos_b57861s0103f045_lookup-table.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 53,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/epcos/b57861s0103f045/polynomial/epcos_b57861s0103f045_polynomial.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 53,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/fake/none/fake_none.c",
+      "module": "driver",
+      "requirement_count": 5,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-055",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-TMP-055}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-054",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-TMP-054}"
+        },
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 57,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/fake/none/fake_none.h",
+      "module": "driver",
+      "requirement_count": 1,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-053",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-TMP-053}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 1
+      }
+    },
+    {
+      "file": "src/app/driver/ts/fake/none/lookup-table/fake_none_lookup-table.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 53,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/fake/none/polynomial/fake_none_polynomial.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 53,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/murata/ncxxxxh103/lookup-table/murata_ncxxxxh103_lookup-table.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 53,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/murata/ncxxxxh103/murata_ncxxxxh103.c",
+      "module": "driver",
+      "requirement_count": 5,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-031",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-TMP-031}"
+        },
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-015}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-032",
+          "line": 180,
+          "context": "* @requirement{SW-REQ-TMP-032}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/murata/ncxxxxh103/murata_ncxxxxh103.h",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-030",
+          "line": 72,
+          "context": "* @requirement{SW-REQ-TMP-030}"
+        },
+        {
+          "requirement_id": "FSR-TMP-007",
+          "line": 99,
+          "context": "* @requirement{FSR-TMP-007}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-029",
+          "line": 100,
+          "context": "* @requirement{SW-REQ-TMP-029}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 1
+      }
+    },
+    {
+      "file": "src/app/driver/ts/murata/ncxxxxh103/polynomial/murata_ncxxxxh103_polynomial.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 53,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/semitec/103jt/lookup-table/semitec_103jt_lookup-table.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/semitec/103jt/semitec_103jt.c",
+      "module": "driver",
+      "requirement_count": 5,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-051",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-TMP-051}"
+        },
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 57,
+          "context": "* @requirement{FSR-TMP-015}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-052",
+          "line": 194,
+          "context": "* @requirement{SW-REQ-TMP-052}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/semitec/103jt/semitec_103jt.h",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-050",
+          "line": 74,
+          "context": "* @requirement{SW-REQ-TMP-050}"
+        },
+        {
+          "requirement_id": "FSR-TMP-012",
+          "line": 101,
+          "context": "* @requirement{FSR-TMP-012}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-049",
+          "line": 102,
+          "context": "* @requirement{SW-REQ-TMP-049}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 1
+      }
+    },
+    {
+      "file": "src/app/driver/ts/tdk/ntcg163jx103dt1s/lookup-table/tdk_ntcg163jx103dt1s_lookup-table.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/tdk/ntcg163jx103dt1s/tdk_ntcg163jx103dt1s.c",
+      "module": "driver",
+      "requirement_count": 5,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-047",
+          "line": 53,
+          "context": "* @requirement{SW-REQ-TMP-047}"
+        },
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-015}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-048",
+          "line": 220,
+          "context": "* @requirement{SW-REQ-TMP-048}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/tdk/ntcg163jx103dt1s/tdk_ntcg163jx103dt1s.h",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-011",
+          "line": 53,
+          "context": "* @requirement{FSR-TMP-011}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-045",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-TMP-045}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-046",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-TMP-046}"
+        }
+      ],
+      "by_type": {
+        "FSR": 1,
+        "SW-REQ": 2
+      }
+    },
+    {
+      "file": "src/app/driver/ts/tdk/ntcgs103jf103ft8/lookup-table/tdk_ntcgs103jf103ft8_lookup-table.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/tdk/ntcgs103jf103ft8/tdk_ntcgs103jf103ft8.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/temperature_sensor_defs.h",
+      "module": "driver",
+      "requirement_count": 14,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-005",
+          "line": 55,
+          "context": "* @requirement{SW-REQ-TMP-005}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-006",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-TMP-006}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-056",
+          "line": 57,
+          "context": "* @requirement{SW-REQ-TMP-056}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-057",
+          "line": 58,
+          "context": "* @requirement{SW-REQ-TMP-057}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-058",
+          "line": 59,
+          "context": "* @requirement{SW-REQ-TMP-058}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-059",
+          "line": 60,
+          "context": "* @requirement{SW-REQ-TMP-059}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-060",
+          "line": 61,
+          "context": "* @requirement{SW-REQ-TMP-060}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-061",
+          "line": 62,
+          "context": "* @requirement{SW-REQ-TMP-061}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-062",
+          "line": 63,
+          "context": "* @requirement{SW-REQ-TMP-062}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-063",
+          "line": 64,
+          "context": "* @requirement{SW-REQ-TMP-063}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-064",
+          "line": 65,
+          "context": "* @requirement{SW-REQ-TMP-064}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-065",
+          "line": 66,
+          "context": "* @requirement{SW-REQ-TMP-065}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-066",
+          "line": 67,
+          "context": "* @requirement{SW-REQ-TMP-066}"
+        },
+        {
+          "requirement_id": "HSI-TMP-001",
+          "line": 68,
+          "context": "* @requirement{HSI-TMP-001}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 13,
+        "HSI": 1
+      }
+    },
+    {
+      "file": "src/app/driver/ts/vishay/ntcalug01a103g/lookup-table/vishay_ntcalug01a103g_lookup-table.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/vishay/ntcalug01a103g/polynomial/vishay_ntcalug01a103g_polynomial.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/vishay/ntcalug01a103g/vishay_ntcalug01a103g.c",
+      "module": "driver",
+      "requirement_count": 5,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-035",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-TMP-035}"
+        },
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 57,
+          "context": "* @requirement{FSR-TMP-015}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-036",
+          "line": 325,
+          "context": "* @requirement{SW-REQ-TMP-036}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/vishay/ntcalug01a103g/vishay_ntcalug01a103g.h",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-034",
+          "line": 72,
+          "context": "* @requirement{SW-REQ-TMP-034}"
+        },
+        {
+          "requirement_id": "FSR-TMP-008",
+          "line": 99,
+          "context": "* @requirement{FSR-TMP-008}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-033",
+          "line": 100,
+          "context": "* @requirement{SW-REQ-TMP-033}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 1
+      }
+    },
+    {
+      "file": "src/app/driver/ts/vishay/ntcle317e4103sba/lookup-table/vishay_ntcle317e4103sba_lookup-table.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/vishay/ntcle317e4103sba/vishay_ntcle317e4103sba.c",
+      "module": "driver",
+      "requirement_count": 5,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-039",
+          "line": 54,
+          "context": "* @requirement{SW-REQ-TMP-039}"
+        },
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 57,
+          "context": "* @requirement{FSR-TMP-015}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-040",
+          "line": 214,
+          "context": "* @requirement{SW-REQ-TMP-040}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/vishay/ntcle317e4103sba/vishay_ntcle317e4103sba.h",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-038",
+          "line": 72,
+          "context": "* @requirement{SW-REQ-TMP-038}"
+        },
+        {
+          "requirement_id": "FSR-TMP-009",
+          "line": 99,
+          "context": "* @requirement{FSR-TMP-009}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-037",
+          "line": 100,
+          "context": "* @requirement{SW-REQ-TMP-037}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 1
+      }
+    },
+    {
+      "file": "src/app/driver/ts/vishay/ntcle413e2103f102l/lookup-table/vishay_ntcle413e2103f102l_lookup-table.c",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 54,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 55,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 56,
+          "context": "* @requirement{FSR-TMP-015}"
+        }
+      ],
+      "by_type": {
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/vishay/ntcle413e2103f102l/vishay_ntcle413e2103f102l.c",
+      "module": "driver",
+      "requirement_count": 5,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-043",
+          "line": 56,
+          "context": "* @requirement{SW-REQ-TMP-043}"
+        },
+        {
+          "requirement_id": "FSR-TMP-013",
+          "line": 57,
+          "context": "* @requirement{FSR-TMP-013}"
+        },
+        {
+          "requirement_id": "FSR-TMP-014",
+          "line": 58,
+          "context": "* @requirement{FSR-TMP-014}"
+        },
+        {
+          "requirement_id": "FSR-TMP-015",
+          "line": 59,
+          "context": "* @requirement{FSR-TMP-015}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-044",
+          "line": 186,
+          "context": "* @requirement{SW-REQ-TMP-044}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 3
+      }
+    },
+    {
+      "file": "src/app/driver/ts/vishay/ntcle413e2103f102l/vishay_ntcle413e2103f102l.h",
+      "module": "driver",
+      "requirement_count": 3,
+      "requirements": [
+        {
+          "requirement_id": "SW-REQ-TMP-042",
+          "line": 72,
+          "context": "* @requirement{SW-REQ-TMP-042}"
+        },
+        {
+          "requirement_id": "FSR-TMP-010",
+          "line": 99,
+          "context": "* @requirement{FSR-TMP-010}"
+        },
+        {
+          "requirement_id": "SW-REQ-TMP-041",
+          "line": 100,
+          "context": "* @requirement{SW-REQ-TMP-041}"
+        }
+      ],
+      "by_type": {
+        "SW-REQ": 2,
+        "FSR": 1
+      }
+    }
+  ]
+}

@@ -97,8 +97,8 @@
             margin-right: 1rem;
             white-space: nowrap;
         }
-        .section-body { padding: 0; max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
-        .section-body.open { max-height: 3000px; padding: 1.5rem; }
+        .section-body { padding: 0; max-height: 0; overflow: hidden; transition: max-height 0.35s ease-in-out, padding 0.2s ease; }
+        .section-body.open { padding: 1.5rem; }
         .chevron { transition: transform 0.3s; }
         .chevron.open { transform: rotate(180deg); }
 
@@ -257,127 +257,178 @@
         .module-tree .file { color: #68d391; }
         .module-tree .comment { color: #a0aec0; }
 
-        /* OEM DTC Selector */
-        .oem-selector {
-            background: #f8f9fa;
-            border-radius: 8px;
-            padding: 1.5rem;
+        /* Diagnostic Comparison Styles */
+        .comparison-summary {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
             margin-bottom: 1.5rem;
         }
-        .selector-row {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 1rem;
-        }
-        .selector-group {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-        .selector-group label {
-            font-weight: 600;
-            font-size: 0.85rem;
-            color: #555;
-        }
-        .selector-group select {
-            padding: 0.6rem 1rem;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            background: white;
-            cursor: pointer;
-            transition: border-color 0.2s;
-        }
-        .selector-group select:hover:not(:disabled) {
-            border-color: var(--primary);
-        }
-        .selector-group select:disabled {
-            background: #e9ecef;
-            cursor: not-allowed;
-            opacity: 0.7;
-        }
-        .oem-dtc-content {
-            background: white;
-            border: 1px solid #eee;
+        .comparison-stat {
+            background: #f8f9fa;
             border-radius: 8px;
-            min-height: 300px;
-            max-height: 600px;
-            overflow-y: auto;
-            padding: 1.5rem;
+            padding: 1rem;
+            text-align: center;
+            border-left: 4px solid;
         }
-        .oem-placeholder {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 250px;
-            color: #999;
-            gap: 1rem;
-        }
-        .oem-dtc-content h1, .oem-dtc-content h2, .oem-dtc-content h3 {
-            color: var(--dark);
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
-        }
-        .oem-dtc-content h1:first-child, .oem-dtc-content h2:first-child {
-            margin-top: 0;
-        }
-        .oem-dtc-content h1 { font-size: 1.4rem; border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; }
-        .oem-dtc-content h2 { font-size: 1.2rem; color: var(--primary); }
-        .oem-dtc-content h3 { font-size: 1rem; color: var(--accent); }
-        .oem-dtc-content ul, .oem-dtc-content ol {
-            margin-left: 1.5rem;
+        .comparison-stat.both { border-color: var(--success); }
+        .comparison-stat.foxbms-only { border-color: var(--warning); }
+        .comparison-stat.oem-only { border-color: var(--info); }
+        .comparison-stat .stat-value { font-size: 1.8rem; font-weight: 700; }
+        .comparison-stat.both .stat-value { color: var(--success); }
+        .comparison-stat.foxbms-only .stat-value { color: var(--warning); }
+        .comparison-stat.oem-only .stat-value { color: var(--info); }
+        .comparison-stat .stat-label { font-size: 0.8rem; color: #666; margin-top: 0.25rem; }
+
+        .comparison-category {
+            background: #f8f9fa;
+            border-radius: 8px;
             margin-bottom: 1rem;
+            overflow: hidden;
         }
-        .oem-dtc-content li {
-            margin-bottom: 0.4rem;
-            line-height: 1.5;
-        }
-        .oem-dtc-content code {
-            background: #e9ecef;
-            padding: 0.15rem 0.4rem;
-            border-radius: 3px;
-            font-family: 'Consolas', monospace;
-            font-size: 0.85rem;
-            color: var(--danger);
-        }
-        .oem-dtc-content table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem 0;
-            font-size: 0.85rem;
-        }
-        .oem-dtc-content th {
+        .category-header {
             background: var(--dark);
             color: white;
-            padding: 0.6rem;
-            text-align: left;
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
         }
-        .oem-dtc-content td {
-            padding: 0.5rem 0.6rem;
+        .category-header:hover { background: #001d3d; }
+        .category-header .cat-icon { margin-right: 0.75rem; }
+        .category-header .cat-stats {
+            display: flex;
+            gap: 0.75rem;
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+        .category-header .cat-stats span {
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            background: rgba(255,255,255,0.15);
+        }
+        .category-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease-in-out;
+        }
+        .category-body.open { /* max-height set by JS */ }
+
+        .comparison-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .comparison-column {
+            background: white;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .column-header {
+            padding: 0.6rem 1rem;
+            font-weight: 600;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .column-header.foxbms {
+            background: linear-gradient(135deg, #1a5f7a, #159895);
+            color: white;
+        }
+        .column-header.oem {
+            background: linear-gradient(135deg, #6c757d, #495057);
+            color: white;
+        }
+
+        .feature-item {
+            padding: 0.6rem 1rem;
             border-bottom: 1px solid #eee;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
         }
-        .oem-dtc-content tr:hover { background: #f8f9fa; }
-        .oem-loading {
+        .feature-item:last-child { border-bottom: none; }
+        .feature-item:hover { background: #f8f9fa; }
+
+        .feature-status {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 200px;
-            color: var(--primary);
+            font-size: 0.7rem;
+            margin-top: 2px;
         }
-        .oem-error {
+        .status-both { background: #d4edda; color: var(--success); }
+        .status-foxbms-only { background: #fff3cd; color: #856404; }
+        .status-oem-only { background: #d1ecf1; color: var(--info); }
+
+        .feature-content { flex: 1; }
+        .feature-name { font-weight: 500; color: #333; }
+        .feature-id { font-size: 0.75rem; color: #999; font-family: 'Consolas', monospace; }
+        .feature-codes {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 200px;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+            margin-top: 0.25rem;
+        }
+        .feature-codes code {
+            background: #e9ecef;
+            padding: 0.1rem 0.35rem;
+            border-radius: 3px;
+            font-size: 0.7rem;
             color: var(--danger);
+        }
+        .feature-desc {
+            font-size: 0.75rem;
+            color: #666;
+            margin-top: 0.25rem;
+        }
+
+        .vehicle-coverage {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+            margin-top: 0.35rem;
+        }
+        .vehicle-tag {
+            background: #e7f1ff;
+            color: var(--primary);
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.65rem;
+            font-weight: 500;
+        }
+        .vehicle-tag.kia { background: #fff0e6; color: #d35400; }
+
+        .legend-bar {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
             gap: 0.5rem;
         }
 
         @media (max-width: 768px) {
             .container { padding: 1rem; }
             .summary-grid { grid-template-columns: repeat(2, 1fr); }
+            .comparison-summary { grid-template-columns: 1fr; }
+            .comparison-list { grid-template-columns: 1fr; }
             .filter-bar { flex-direction: column; }
             .selector-row { grid-template-columns: 1fr; }
         }
@@ -1042,50 +1093,48 @@
             </div>
         </div>
 
-        <!-- OEM DTC Reference -->
+        <!-- Diagnostic Comparison -->
         <div class="section">
-            <div class="section-header" onclick="toggleSection('oem-dtc')">
-                <h2><i class="fas fa-car"></i> <span data-i18n="diagnostics.sections.oemDtc">OEM Vehicle DTC Reference</span></h2>
-                <span class="section-desc">Hyundai / KIA BMS Diagnostic Codes</span>
-                <i class="fas fa-chevron-down chevron" id="chevron-oem-dtc"></i>
+            <div class="section-header" onclick="toggleSection('diagnostic-comparison')">
+                <h2><i class="fas fa-balance-scale"></i> <span data-i18n="diagnostics.sections.comparison">Diagnostic Comparison</span></h2>
+                <span class="section-desc">foxBMS vs HD/KIA OEM diagnostics</span>
+                <i class="fas fa-chevron-down chevron" id="chevron-diagnostic-comparison"></i>
             </div>
-            <div class="section-body" id="body-oem-dtc">
-                <div class="oem-selector">
-                    <div class="selector-row">
-                        <div class="selector-group">
-                            <label for="oem-brand">Brand</label>
-                            <select id="oem-brand" onchange="updateModelDropdown()">
-                                <option value="">-- Select Brand --</option>
-                                <option value="Hyundai">Hyundai / Genesis</option>
-                                <option value="KIA">KIA</option>
-                            </select>
-                        </div>
-                        <div class="selector-group">
-                            <label for="oem-model">Model</label>
-                            <select id="oem-model" onchange="updateVariantDropdown()" disabled>
-                                <option value="">-- Select Model --</option>
-                            </select>
-                        </div>
-                        <div class="selector-group">
-                            <label for="oem-variant">Variant</label>
-                            <select id="oem-variant" onchange="updateYearDropdown()" disabled>
-                                <option value="">-- Select Variant --</option>
-                            </select>
-                        </div>
-                        <div class="selector-group">
-                            <label for="oem-year">Year</label>
-                            <select id="oem-year" onchange="loadDtcContent()" disabled>
-                                <option value="">-- Select Year --</option>
-                            </select>
-                        </div>
+            <div class="section-body" id="body-diagnostic-comparison">
+                <!-- Summary Statistics -->
+                <div class="comparison-summary">
+                    <div class="comparison-stat both">
+                        <div class="stat-value" id="stat-both">10</div>
+                        <div class="stat-label" data-i18n="diagnostics.comparison.both">Both foxBMS &amp; OEM</div>
+                    </div>
+                    <div class="comparison-stat foxbms-only">
+                        <div class="stat-value" id="stat-foxbms">20</div>
+                        <div class="stat-label" data-i18n="diagnostics.comparison.foxbmsOnly">foxBMS Only</div>
+                    </div>
+                    <div class="comparison-stat oem-only">
+                        <div class="stat-value" id="stat-oem">28</div>
+                        <div class="stat-label" data-i18n="diagnostics.comparison.oemOnly">HD/KIA OEM Only</div>
                     </div>
                 </div>
-                <div id="oem-dtc-content" class="oem-dtc-content">
-                    <div class="oem-placeholder">
-                        <i class="fas fa-search" style="font-size: 3rem; color: #ccc;"></i>
-                        <p data-i18n="diagnostics.oem.placeholder">Select a vehicle to view BMS diagnostic codes</p>
+
+                <!-- Legend -->
+                <div class="legend-bar">
+                    <div class="legend-item">
+                        <span class="feature-status status-both"><i class="fas fa-check"></i></span>
+                        <span data-i18n="diagnostics.legend.both">Both have</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="feature-status status-foxbms-only"><i class="fas fa-exclamation"></i></span>
+                        <span data-i18n="diagnostics.legend.foxbmsOnly">foxBMS only</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="feature-status status-oem-only"><i class="fas fa-car"></i></span>
+                        <span data-i18n="diagnostics.legend.oemOnly">OEM only</span>
                     </div>
                 </div>
+
+                <!-- Comparison Categories Container -->
+                <div id="comparison-categories"></div>
             </div>
         </div>
 
@@ -1101,7 +1150,29 @@
         function toggleSection(id) {
             const body = document.getElementById('body-' + id);
             const chevron = document.getElementById('chevron-' + id);
-            body.classList.toggle('open');
+            const isOpen = body.classList.contains('open');
+
+            if (isOpen) {
+                // Closing: set current height, force reflow, then animate to 0
+                body.style.transition = 'none';
+                body.style.maxHeight = body.scrollHeight + 'px';
+                body.offsetHeight; // Force reflow
+                body.style.transition = '';
+                requestAnimationFrame(() => {
+                    body.style.maxHeight = '0';
+                });
+                body.classList.remove('open');
+            } else {
+                // Opening: animate to actual height
+                body.classList.add('open');
+                body.style.maxHeight = body.scrollHeight + 'px';
+                // After animation, allow dynamic resize
+                setTimeout(() => {
+                    if (body.classList.contains('open')) {
+                        body.style.maxHeight = 'none';
+                    }
+                }, 350);
+            }
             chevron.classList.toggle('open');
         }
 
@@ -1111,153 +1182,208 @@
             toggleSection('safety-limits');
         });
     </script>
-    <script src="../assets/js/marked.min.js"></script>
-    <script src="oem-dtc-index.js"></script>
+    <script src="diagnostic-comparison.js"></script>
     <script>
-        // OEM DTC Cascading Dropdown Functions
-        function updateModelDropdown() {
-            const brand = document.getElementById('oem-brand').value;
-            const modelSelect = document.getElementById('oem-model');
-            const variantSelect = document.getElementById('oem-variant');
-            const yearSelect = document.getElementById('oem-year');
+        // Diagnostic Comparison Rendering
+        function renderComparisonCategories() {
+            const container = document.getElementById('comparison-categories');
+            if (!container || typeof DIAGNOSTIC_COMPARISON === 'undefined') return;
 
-            // Reset downstream dropdowns
-            modelSelect.innerHTML = '<option value="">-- Select Model --</option>';
-            variantSelect.innerHTML = '<option value="">-- Select Variant --</option>';
-            yearSelect.innerHTML = '<option value="">-- Select Year --</option>';
-            variantSelect.disabled = true;
-            yearSelect.disabled = true;
+            const lang = (typeof i18n !== 'undefined' && i18n.getCurrentLanguage) ? i18n.getCurrentLanguage() : 'en';
 
-            if (!brand) {
-                modelSelect.disabled = true;
-                resetDtcContent();
-                return;
-            }
+            // Helper functions for localization
+            const getCategoryName = (cat) => cat.name[lang] || cat.name.en;
+            const getFeatureName = (f) => {
+                if (lang === 'ko') return f.nameKo || f.name;
+                if (lang === 'ja') return f.nameJa || f.name;
+                return f.name;
+            };
+            const getDescription = (f) => {
+                if (lang === 'ko') return f.descriptionKo || f.description;
+                if (lang === 'ja') return f.descriptionJa || f.description;
+                return f.description;
+            };
 
-            modelSelect.disabled = false;
-            const models = Object.keys(OEM_DTC_INDEX[brand]).sort();
-            models.forEach(model => {
-                const option = document.createElement('option');
-                option.value = model;
-                option.textContent = model;
-                modelSelect.appendChild(option);
-            });
-        }
+            // Localized labels
+            const labels = {
+                ko: { foxbmsCol: 'foxBMS 기능', oemCol: 'HD/KIA OEM 기능', noFoxbms: 'foxBMS 기능 없음', allCovered: '모든 OEM 기능이 foxBMS에서 지원됨' },
+                ja: { foxbmsCol: 'foxBMS 機能', oemCol: 'HD/KIA OEM 機能', noFoxbms: 'foxBMS機能なし', allCovered: 'すべてのOEM機能はfoxBMSでカバー' },
+                en: { foxbmsCol: 'foxBMS Features', oemCol: 'HD/KIA OEM Features', noFoxbms: 'No foxBMS features', allCovered: 'All OEM features covered by foxBMS' }
+            };
+            const l = labels[lang] || labels.en;
 
-        function updateVariantDropdown() {
-            const brand = document.getElementById('oem-brand').value;
-            const model = document.getElementById('oem-model').value;
-            const variantSelect = document.getElementById('oem-variant');
-            const yearSelect = document.getElementById('oem-year');
+            let html = '';
 
-            variantSelect.innerHTML = '<option value="">-- Select Variant --</option>';
-            yearSelect.innerHTML = '<option value="">-- Select Year --</option>';
-            yearSelect.disabled = true;
+            DIAGNOSTIC_COMPARISON.categories.forEach(category => {
+                const foxbmsCount = category.foxbms.length;
+                const oemOnlyCount = category.oemOnly.length;
+                const bothCount = category.foxbms.filter(f => f.hasOemEquivalent).length;
+                const foxbmsOnlyCount = foxbmsCount - bothCount;
 
-            if (!model) {
-                variantSelect.disabled = true;
-                resetDtcContent();
-                return;
-            }
-
-            variantSelect.disabled = false;
-            const variants = Object.keys(OEM_DTC_INDEX[brand][model]).sort();
-            variants.forEach(variant => {
-                const option = document.createElement('option');
-                option.value = variant;
-                option.textContent = variant;
-                variantSelect.appendChild(option);
-            });
-        }
-
-        function updateYearDropdown() {
-            const brand = document.getElementById('oem-brand').value;
-            const model = document.getElementById('oem-model').value;
-            const variant = document.getElementById('oem-variant').value;
-            const yearSelect = document.getElementById('oem-year');
-
-            yearSelect.innerHTML = '<option value="">-- Select Year --</option>';
-
-            if (!variant) {
-                yearSelect.disabled = true;
-                resetDtcContent();
-                return;
-            }
-
-            yearSelect.disabled = false;
-            const years = OEM_DTC_INDEX[brand][model][variant].sort((a, b) => b - a); // Descending
-            years.forEach(year => {
-                const option = document.createElement('option');
-                option.value = year;
-                option.textContent = year;
-                yearSelect.appendChild(option);
-            });
-        }
-
-        function resetDtcContent() {
-            document.getElementById('oem-dtc-content').innerHTML = `
-                <div class="oem-placeholder">
-                    <i class="fas fa-search" style="font-size: 3rem; color: #ccc;"></i>
-                    <p>Select a vehicle to view BMS diagnostic codes</p>
-                </div>
-            `;
-        }
-
-        async function loadDtcContent() {
-            const brand = document.getElementById('oem-brand').value;
-            const model = document.getElementById('oem-model').value;
-            const variant = document.getElementById('oem-variant').value;
-            const year = document.getElementById('oem-year').value;
-            const contentDiv = document.getElementById('oem-dtc-content');
-
-            if (!year) {
-                resetDtcContent();
-                return;
-            }
-
-            // Show loading
-            contentDiv.innerHTML = `
-                <div class="oem-loading">
-                    <i class="fas fa-spinner fa-spin" style="font-size: 2rem;"></i>
-                    <span style="margin-left: 0.5rem;">Loading DTC data...</span>
-                </div>
-            `;
-
-            const filePath = getFilePath(brand, model, variant, year);
-
-            if (!filePath) {
-                contentDiv.innerHTML = `
-                    <div class="oem-error">
-                        <i class="fas fa-exclamation-triangle" style="font-size: 2rem;"></i>
-                        <p>File path not found for this vehicle configuration</p>
+                html += `
+                <div class="comparison-category">
+                    <div class="category-header" onclick="toggleCategory('${category.id}')">
+                        <div>
+                            <i class="fas ${category.icon} cat-icon"></i>
+                            ${getCategoryName(category)}
+                        </div>
+                        <div class="cat-stats">
+                            ${bothCount > 0 ? `<span title="Both">${bothCount} shared</span>` : ''}
+                            ${foxbmsOnlyCount > 0 ? `<span title="foxBMS only">${foxbmsOnlyCount} foxBMS</span>` : ''}
+                            ${oemOnlyCount > 0 ? `<span title="OEM only">${oemOnlyCount} OEM</span>` : ''}
+                        </div>
                     </div>
-                `;
-                return;
-            }
+                    <div class="category-body" id="cat-body-${category.id}">
+                        <div class="comparison-list">
+                            <!-- foxBMS Column -->
+                            <div class="comparison-column">
+                                <div class="column-header foxbms">
+                                    <i class="fas fa-microchip"></i> ${l.foxbmsCol}
+                                </div>
+                                ${foxbmsCount > 0 ? category.foxbms.map(feature => `
+                                    <div class="feature-item">
+                                        <span class="feature-status ${feature.hasOemEquivalent ? 'status-both' : 'status-foxbms-only'}">
+                                            <i class="fas ${feature.hasOemEquivalent ? 'fa-check' : 'fa-exclamation'}"></i>
+                                        </span>
+                                        <div class="feature-content">
+                                            <div class="feature-name">${getFeatureName(feature)}</div>
+                                            <div class="feature-id">${feature.id}</div>
+                                            ${feature.oemCodes && feature.oemCodes.length > 0 ? `
+                                                <div class="feature-codes">
+                                                    ${feature.oemCodes.map(code => `<code>${code}</code>`).join('')}
+                                                </div>
+                                            ` : ''}
+                                        </div>
+                                    </div>
+                                `).join('') : `<div class="feature-item"><span style="color:#999;">${l.noFoxbms}</span></div>`}
+                            </div>
 
-            try {
-                const response = await fetch(filePath);
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}`);
-                }
-                const markdown = await response.text();
-                const html = marked.parse(markdown);
-                contentDiv.innerHTML = html;
-            } catch (error) {
-                console.error('Failed to load DTC file:', error);
-                contentDiv.innerHTML = `
-                    <div class="oem-error">
-                        <i class="fas fa-exclamation-triangle" style="font-size: 2rem;"></i>
-                        <p>Failed to load DTC data</p>
-                        <small style="color: #999;">${filePath}</small>
+                            <!-- OEM Column -->
+                            <div class="comparison-column">
+                                <div class="column-header oem">
+                                    <i class="fas fa-car"></i> ${l.oemCol}
+                                </div>
+                                ${oemOnlyCount > 0 ? category.oemOnly.map(feature => `
+                                    <div class="feature-item">
+                                        <span class="feature-status status-oem-only">
+                                            <i class="fas fa-car"></i>
+                                        </span>
+                                        <div class="feature-content">
+                                            <div class="feature-name">${getFeatureName(feature)}</div>
+                                            <div class="feature-desc">${getDescription(feature)}</div>
+                                            <div class="feature-codes">
+                                                ${feature.oemCodes.slice(0, 5).map(code => `<code>${code}</code>`).join('')}
+                                                ${feature.oemCodes.length > 5 ? `
+                                                    <code class="expand-codes" onclick="this.style.display='none'; this.nextElementSibling.style.display='inline';" style="cursor:pointer; background:#e3f2fd;">+${feature.oemCodes.length - 5} more ▼</code>
+                                                    <span class="expanded-codes" style="display:none;">
+                                                        ${feature.oemCodes.slice(5).map(code => `<code>${code}</code>`).join('')}
+                                                        <code class="collapse-codes" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='inline';" style="cursor:pointer; background:#ffecb3;">▲ collapse</code>
+                                                    </span>
+                                                ` : ''}
+                                            </div>
+                                            <div class="vehicle-coverage">
+                                                <span class="vehicle-tag">IONIQ 5/6</span>
+                                                <span class="vehicle-tag kia">EV6/EV9</span>
+                                                <span class="vehicle-tag">2022-2026</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `).join('') : `<div class="feature-item"><span style="color:#999;">${l.allCovered}</span></div>`}
+                            </div>
+                        </div>
                     </div>
+                </div>
                 `;
+            });
+
+            container.innerHTML = html;
+
+            // Update summary statistics dynamically
+            let totalBoth = 0;
+            let totalFoxbmsOnly = 0;
+            let totalOemOnly = 0;
+
+            DIAGNOSTIC_COMPARISON.categories.forEach(category => {
+                const bothCount = category.foxbms.filter(f => f.hasOemEquivalent).length;
+                const foxbmsOnlyCount = category.foxbms.length - bothCount;
+                const oemOnlyCount = category.oemOnly.length;
+
+                totalBoth += bothCount;
+                totalFoxbmsOnly += foxbmsOnlyCount;
+                totalOemOnly += oemOnlyCount;
+            });
+
+            // Update DOM elements
+            const statBoth = document.getElementById('stat-both');
+            const statFoxbms = document.getElementById('stat-foxbms');
+            const statOem = document.getElementById('stat-oem');
+
+            if (statBoth) statBoth.textContent = totalBoth;
+            if (statFoxbms) statFoxbms.textContent = totalFoxbmsOnly;
+            if (statOem) statOem.textContent = totalOemOnly;
+        }
+
+        function toggleCategory(categoryId) {
+            const body = document.getElementById('cat-body-' + categoryId);
+            if (!body) return;
+
+            const isOpen = body.classList.contains('open');
+
+            if (isOpen) {
+                // Closing: set current height, force reflow, then animate to 0
+                body.style.transition = 'none';
+                body.style.maxHeight = body.scrollHeight + 'px';
+                body.offsetHeight; // Force reflow
+                body.style.transition = '';
+                requestAnimationFrame(() => {
+                    body.style.maxHeight = '0';
+                });
+                body.classList.remove('open');
+            } else {
+                // Opening: animate to actual height
+                body.classList.add('open');
+                body.style.maxHeight = body.scrollHeight + 'px';
+                // After animation, allow dynamic resize
+                setTimeout(() => {
+                    if (body.classList.contains('open')) {
+                        body.style.maxHeight = 'none';
+                    }
+                }, 350);
             }
         }
+
     </script>
     <script src="../../js/i18n.js"></script>
     <script>
+        // Track which categories are currently open
+        function getOpenCategories() {
+            const openCategories = [];
+            document.querySelectorAll('.category-body.open').forEach(el => {
+                const id = el.id.replace('cat-body-', '');
+                if (id) openCategories.push(id);
+            });
+            return openCategories;
+        }
+
+        // Restore open state after re-render
+        function restoreOpenCategories(openCategories) {
+            openCategories.forEach(id => {
+                const body = document.getElementById('cat-body-' + id);
+                if (body && !body.classList.contains('open')) {
+                    body.classList.add('open');
+                }
+            });
+        }
+
+        // Re-render comparison categories with language change support
+        function updateComparisonCategories() {
+            const openCategories = getOpenCategories();
+            renderComparisonCategories();
+            restoreOpenCategories(openCategories);
+        }
+
         document.addEventListener('DOMContentLoaded', async () => {
+            // Initialize i18n first
             await i18n.init({
                 defaultLanguage: 'ko',
                 supportedLanguages: ['ko', 'en', 'ja'],
@@ -1267,10 +1393,19 @@
                 fallbackLanguage: 'ko'
             });
 
+            // Now render with correct language
             translatePage();
+            renderComparisonCategories();
 
+            // Open first category by default
+            setTimeout(() => {
+                toggleCategory('voltage');
+            }, 100);
+
+            // Register language change handler
             i18n.on('languageChanged', () => {
                 translatePage();
+                updateComparisonCategories();
             });
 
             const languageSelect = document.getElementById('language-select');

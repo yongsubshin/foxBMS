@@ -69,6 +69,17 @@
         .summary-card.fatal .value { color: var(--danger); }
         .summary-card.warning .value { color: var(--warning); }
         .summary-card.info .value { color: var(--info); }
+        .summary-card.filterable { cursor: pointer; transition: all 0.2s; border: 2px solid transparent; }
+        .summary-card.filterable:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .summary-card.filterable.active { border-color: var(--primary); background: #f0f7ff; }
+        .summary-card.filterable.active.fatal { border-color: var(--danger); background: #fff5f5; }
+        .summary-card.filterable.active.warning { border-color: var(--warning); background: #fffbeb; }
+        .summary-card.filterable.active.info { border-color: var(--info); background: #f0f9ff; }
+        .summary-card .filter-checkbox { margin-bottom: 0.5rem; }
+        .summary-card .filter-checkbox input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; accent-color: var(--primary); }
+        .summary-card.fatal .filter-checkbox input[type="checkbox"] { accent-color: var(--danger); }
+        .summary-card.warning .filter-checkbox input[type="checkbox"] { accent-color: var(--warning); }
+        .summary-card.info .filter-checkbox input[type="checkbox"] { accent-color: var(--info); }
 
         /* Section Cards */
         .section {
@@ -88,6 +99,35 @@
             align-items: center;
         }
         .section-header:hover { background: var(--dark); }
+
+        /* Section Type Colors */
+        .section.type-overview .section-header { background: linear-gradient(135deg, #1a5f7a, #2980b9); }
+        .section.type-overview .section-header:hover { background: linear-gradient(135deg, #0d3d4d, #1a5276); }
+
+        .section.type-diag .section-header { background: linear-gradient(135deg, #0d9488, #14b8a6); }
+        .section.type-diag .section-header:hover { background: linear-gradient(135deg, #0a6b62, #0d9488); }
+
+        .section.type-reference .section-header { background: linear-gradient(135deg, #4b5563, #6b7280); }
+        .section.type-reference .section-header:hover { background: linear-gradient(135deg, #374151, #4b5563); }
+
+        .section.type-comparison .section-header { background: linear-gradient(135deg, #7c3aed, #8b5cf6); }
+        .section.type-comparison .section-header:hover { background: linear-gradient(135deg, #5b21b6, #7c3aed); }
+
+        /* Section Group Labels */
+        .section-group-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #666;
+            margin: 2rem 0 0.75rem 0;
+            padding-left: 0.5rem;
+            border-left: 3px solid;
+        }
+        .section-group-label.overview { border-color: #2980b9; color: #2980b9; }
+        .section-group-label.diag { border-color: #14b8a6; color: #0d9488; }
+        .section-group-label.reference { border-color: #6b7280; color: #4b5563; }
+        .section-group-label.comparison { border-color: #8b5cf6; color: #7c3aed; }
         .section-header h2 { font-size: 1.1rem; display: flex; align-items: center; gap: 0.75rem; }
         .section-header .section-desc {
             font-size: 0.8rem;
@@ -449,36 +489,11 @@
     </div>
 
     <div class="container">
-        <!-- Summary Cards -->
-        <div class="summary-grid">
-            <div class="summary-card">
-                <div class="value">53</div>
-                <div class="label" data-i18n="diagnostics.summary.totalDiagIds">Total DIAG_IDs</div>
-            </div>
-            <div class="summary-card fatal">
-                <div class="value">32</div>
-                <div class="label" data-i18n="diagnostics.summary.fatalErrors">Fatal Errors</div>
-            </div>
-            <div class="summary-card warning">
-                <div class="value">15</div>
-                <div class="label" data-i18n="diagnostics.summary.warnings">Warnings</div>
-            </div>
-            <div class="summary-card info">
-                <div class="value">6</div>
-                <div class="label" data-i18n="diagnostics.summary.info">Info</div>
-            </div>
-            <div class="summary-card">
-                <div class="value">9</div>
-                <div class="label" data-i18n="diagnostics.summary.categories">Categories</div>
-            </div>
-            <div class="summary-card">
-                <div class="value">33</div>
-                <div class="label" data-i18n="diagnostics.summary.callbacks">Callback Functions</div>
-            </div>
-        </div>
+        <!-- Overview Group - At the very top -->
+        <div class="section-group-label overview" data-i18n="diagnostics.groups.overview">SYSTEM OVERVIEW</div>
 
         <!-- Architecture Overview -->
-        <div class="section">
+        <div class="section type-overview">
             <div class="section-header" onclick="toggleSection('architecture')">
                 <h2><i class="fas fa-sitemap"></i> <span data-i18n="diagnostics.sections.architecture">System Architecture</span></h2>
                 <span class="section-desc">Processing flow & module structure</span>
@@ -532,7 +547,7 @@
         </div>
 
         <!-- Safety Limits -->
-        <div class="section">
+        <div class="section type-overview">
             <div class="section-header" onclick="toggleSection('safety-limits')">
                 <h2><i class="fas fa-shield-alt"></i> <span data-i18n="diagnostics.sections.safetyLimits">Safety Limits (MSL/RSL/MOL)</span></h2>
                 <span class="section-desc">3-tier threshold system</span>
@@ -567,8 +582,35 @@
             </div>
         </div>
 
+        <!-- Diagnostics Group -->
+        <div class="section-group-label diag" data-i18n="diagnostics.groups.diagnostics">DIAGNOSTIC TABLES</div>
+
+        <!-- Summary Cards with Severity Filters -->
+        <div class="summary-grid" style="margin-bottom: 1.5rem;">
+            <div class="summary-card filterable active" onclick="toggleSeverityFilter('all', this)">
+                <div class="filter-checkbox"><input type="checkbox" id="filter-all" checked onchange="event.stopPropagation(); toggleSeverityFilter('all', this.closest('.summary-card'))"></div>
+                <div class="value" id="count-total">30</div>
+                <div class="label" data-i18n="diagnostics.summary.totalDiagIds">Total DIAG_IDs</div>
+            </div>
+            <div class="summary-card fatal filterable active" onclick="toggleSeverityFilter('fatal', this)">
+                <div class="filter-checkbox"><input type="checkbox" id="filter-fatal" checked onchange="event.stopPropagation(); toggleSeverityFilter('fatal', this.closest('.summary-card'))"></div>
+                <div class="value" id="count-fatal">19</div>
+                <div class="label" data-i18n="diagnostics.summary.fatalErrors">Fatal Errors</div>
+            </div>
+            <div class="summary-card warning filterable active" onclick="toggleSeverityFilter('warning', this)">
+                <div class="filter-checkbox"><input type="checkbox" id="filter-warning" checked onchange="event.stopPropagation(); toggleSeverityFilter('warning', this.closest('.summary-card'))"></div>
+                <div class="value" id="count-warning">9</div>
+                <div class="label" data-i18n="diagnostics.summary.warnings">Warnings</div>
+            </div>
+            <div class="summary-card info filterable active" onclick="toggleSeverityFilter('info', this)">
+                <div class="filter-checkbox"><input type="checkbox" id="filter-info" checked onchange="event.stopPropagation(); toggleSeverityFilter('info', this.closest('.summary-card'))"></div>
+                <div class="value" id="count-info">2</div>
+                <div class="label" data-i18n="diagnostics.summary.info">Info</div>
+            </div>
+        </div>
+
         <!-- DIAG_ID Tables by Category -->
-        <div class="section">
+        <div class="section type-diag">
             <div class="section-header" onclick="toggleSection('voltage')">
                 <h2><i class="fas fa-bolt"></i> <span data-i18n="diagnostics.sections.voltage">Voltage Diagnostics</span></h2>
                 <span class="section-desc">7 DIAG_IDs - Over/Under/Deep discharge</span>
@@ -632,10 +674,10 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section type-diag">
             <div class="section-header" onclick="toggleSection('temperature')">
                 <h2><i class="fas fa-thermometer-half"></i> <span data-i18n="diagnostics.sections.temperature">Temperature Diagnostics</span></h2>
-                <span class="section-desc">5 DIAG_IDs - Charge/Discharge limits</span>
+                <span class="section-desc">12 DIAG_IDs - Charge/Discharge limits</span>
                 <i class="fas fa-chevron-down chevron" id="chevron-temperature"></i>
             </div>
             <div class="section-body" id="body-temperature">
@@ -662,10 +704,28 @@
                             <td>-</td>
                         </tr>
                         <tr>
+                            <td><code>DIAG_ID_TEMP_OVERTEMPERATURE_CHARGE_MOL</code></td>
+                            <td data-i18n="diagnostics.temp.overChargeMol">Overtemperature during charge (MOL)</td>
+                            <td><span class="severity-badge severity-info">Info</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
                             <td><code>DIAG_ID_TEMP_OVERTEMPERATURE_DISCHARGE_MSL</code></td>
                             <td data-i18n="diagnostics.temp.overDischargeMsl">Overtemperature during discharge (MSL)</td>
                             <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
                             <td>1000ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_TEMP_OVERTEMPERATURE_DISCHARGE_RSL</code></td>
+                            <td data-i18n="diagnostics.temp.overDischargeRsl">Overtemperature during discharge (RSL)</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_TEMP_OVERTEMPERATURE_DISCHARGE_MOL</code></td>
+                            <td data-i18n="diagnostics.temp.overDischargeMol">Overtemperature during discharge (MOL)</td>
+                            <td><span class="severity-badge severity-info">Info</span></td>
+                            <td>-</td>
                         </tr>
                         <tr>
                             <td><code>DIAG_ID_TEMP_UNDERTEMPERATURE_CHARGE_MSL</code></td>
@@ -674,20 +734,44 @@
                             <td>1000ms</td>
                         </tr>
                         <tr>
+                            <td><code>DIAG_ID_TEMP_UNDERTEMPERATURE_CHARGE_RSL</code></td>
+                            <td data-i18n="diagnostics.temp.underChargeRsl">Undertemperature during charge (RSL)</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_TEMP_UNDERTEMPERATURE_CHARGE_MOL</code></td>
+                            <td data-i18n="diagnostics.temp.underChargeMol">Undertemperature during charge (MOL)</td>
+                            <td><span class="severity-badge severity-info">Info</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
                             <td><code>DIAG_ID_TEMP_UNDERTEMPERATURE_DISCHARGE_MSL</code></td>
                             <td data-i18n="diagnostics.temp.underDischargeMsl">Undertemperature during discharge (MSL)</td>
                             <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
                             <td>1000ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_TEMP_UNDERTEMPERATURE_DISCHARGE_RSL</code></td>
+                            <td data-i18n="diagnostics.temp.underDischargeRsl">Undertemperature during discharge (RSL)</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_TEMP_UNDERTEMPERATURE_DISCHARGE_MOL</code></td>
+                            <td data-i18n="diagnostics.temp.underDischargeMol">Undertemperature during discharge (MOL)</td>
+                            <td><span class="severity-badge severity-info">Info</span></td>
+                            <td>-</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
 
-        <div class="section">
+        <div class="section type-diag">
             <div class="section-header" onclick="toggleSection('current')">
                 <h2><i class="fas fa-exchange-alt"></i> <span data-i18n="diagnostics.sections.current">Current Diagnostics</span></h2>
-                <span class="section-desc">7 DIAG_IDs - Cell/String/Pack levels</span>
+                <span class="section-desc">15 DIAG_IDs - Cell/String/Pack levels</span>
                 <i class="fas fa-chevron-down chevron" id="chevron-current"></i>
             </div>
             <div class="section-body" id="body-current">
@@ -703,27 +787,75 @@
                     <tbody>
                         <tr>
                             <td><code>DIAG_ID_OVERCURRENT_CHARGE_CELL_MSL</code></td>
-                            <td data-i18n="diagnostics.current.overChargeCell">Cell-level charge overcurrent</td>
+                            <td data-i18n="diagnostics.current.overChargeCellMsl">Cell-level charge overcurrent (MSL)</td>
                             <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
                             <td>100ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_OVERCURRENT_CHARGE_CELL_RSL</code></td>
+                            <td data-i18n="diagnostics.current.overChargeCellRsl">Cell-level charge overcurrent (RSL)</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_OVERCURRENT_CHARGE_CELL_MOL</code></td>
+                            <td data-i18n="diagnostics.current.overChargeCellMol">Cell-level charge overcurrent (MOL)</td>
+                            <td><span class="severity-badge severity-info">Info</span></td>
+                            <td>-</td>
                         </tr>
                         <tr>
                             <td><code>DIAG_ID_OVERCURRENT_DISCHARGE_CELL_MSL</code></td>
-                            <td data-i18n="diagnostics.current.overDischargeCell">Cell-level discharge overcurrent</td>
+                            <td data-i18n="diagnostics.current.overDischargeCellMsl">Cell-level discharge overcurrent (MSL)</td>
                             <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
                             <td>100ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_OVERCURRENT_DISCHARGE_CELL_RSL</code></td>
+                            <td data-i18n="diagnostics.current.overDischargeCellRsl">Cell-level discharge overcurrent (RSL)</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_OVERCURRENT_DISCHARGE_CELL_MOL</code></td>
+                            <td data-i18n="diagnostics.current.overDischargeCellMol">Cell-level discharge overcurrent (MOL)</td>
+                            <td><span class="severity-badge severity-info">Info</span></td>
+                            <td>-</td>
                         </tr>
                         <tr>
                             <td><code>DIAG_ID_STRING_OVERCURRENT_CHARGE_MSL</code></td>
-                            <td data-i18n="diagnostics.current.overChargeString">String-level charge overcurrent</td>
+                            <td data-i18n="diagnostics.current.overChargeStringMsl">String-level charge overcurrent (MSL)</td>
                             <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
                             <td>100ms</td>
                         </tr>
                         <tr>
+                            <td><code>DIAG_ID_STRING_OVERCURRENT_CHARGE_RSL</code></td>
+                            <td data-i18n="diagnostics.current.overChargeStringRsl">String-level charge overcurrent (RSL)</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_STRING_OVERCURRENT_CHARGE_MOL</code></td>
+                            <td data-i18n="diagnostics.current.overChargeStringMol">String-level charge overcurrent (MOL)</td>
+                            <td><span class="severity-badge severity-info">Info</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
                             <td><code>DIAG_ID_STRING_OVERCURRENT_DISCHARGE_MSL</code></td>
-                            <td data-i18n="diagnostics.current.overDischargeString">String-level discharge overcurrent</td>
+                            <td data-i18n="diagnostics.current.overDischargeStringMsl">String-level discharge overcurrent (MSL)</td>
                             <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
                             <td>100ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_STRING_OVERCURRENT_DISCHARGE_RSL</code></td>
+                            <td data-i18n="diagnostics.current.overDischargeStringRsl">String-level discharge overcurrent (RSL)</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_STRING_OVERCURRENT_DISCHARGE_MOL</code></td>
+                            <td data-i18n="diagnostics.current.overDischargeStringMol">String-level discharge overcurrent (MOL)</td>
+                            <td><span class="severity-badge severity-info">Info</span></td>
+                            <td>-</td>
                         </tr>
                         <tr>
                             <td><code>DIAG_ID_PACK_OVERCURRENT_CHARGE_MSL</code></td>
@@ -748,10 +880,10 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section type-diag">
             <div class="section-header" onclick="toggleSection('communication')">
                 <h2><i class="fas fa-network-wired"></i> <span data-i18n="diagnostics.sections.communication">Communication Diagnostics</span></h2>
-                <span class="section-desc">7 DIAG_IDs - AFE SPI, CAN errors</span>
+                <span class="section-desc">8 DIAG_IDs - AFE SPI, CAN errors</span>
                 <i class="fas fa-chevron-down chevron" id="chevron-communication"></i>
             </div>
             <div class="section-body" id="body-communication">
@@ -785,6 +917,11 @@
                             <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
                         </tr>
                         <tr>
+                            <td><code>DIAG_ID_AFE_OPEN_WIRE</code></td>
+                            <td data-i18n="diagnostics.comm.afeOpenWire">AFE open wire detection</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                        </tr>
+                        <tr>
                             <td><code>DIAG_ID_CAN_TIMING</code></td>
                             <td data-i18n="diagnostics.comm.canTiming">CAN timing error</td>
                             <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
@@ -804,7 +941,7 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section type-diag">
             <div class="section-header" onclick="toggleSection('insulation')">
                 <h2><i class="fas fa-shield-virus"></i> <span data-i18n="diagnostics.sections.insulation">Insulation Monitoring (IMD)</span></h2>
                 <span class="section-desc">4 DIAG_IDs - Bender IR155/ISO165C</span>
@@ -863,8 +1000,360 @@
             </div>
         </div>
 
+        <!-- System Diagnostics -->
+        <div class="section type-diag">
+            <div class="section-header" onclick="toggleSection('system')">
+                <h2><i class="fas fa-cog"></i> <span data-i18n="diagnostics.sections.system">System Diagnostics</span></h2>
+                <span class="section-desc">4 DIAG_IDs - Core system checks</span>
+                <i class="fas fa-chevron-down chevron" id="chevron-system"></i>
+            </div>
+            <div class="section-body" id="body-system">
+                <table class="diag-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="diagnostics.table.diagId">DIAG_ID</th>
+                            <th data-i18n="diagnostics.table.description">Description</th>
+                            <th data-i18n="diagnostics.table.severity">Severity</th>
+                            <th data-i18n="diagnostics.table.delay">Delay</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>DIAG_ID_FLASHCHECKSUM</code></td>
+                            <td data-i18n="diagnostics.system.flashChecksum">Flash memory checksum verification</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_SYSTEM_MONITORING</code></td>
+                            <td data-i18n="diagnostics.system.sysMonitoring">System task monitoring failure</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_INTERLOCK_FEEDBACK</code></td>
+                            <td data-i18n="diagnostics.system.interlockFeedback">Interlock feedback error</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>100ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_SUPPLY_VOLTAGE_CLAMP_30C_LOST</code></td>
+                            <td data-i18n="diagnostics.system.supplyVoltage">Supply voltage clamp 30C lost</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Current Sensor Diagnostics -->
+        <div class="section type-diag">
+            <div class="section-header" onclick="toggleSection('current-sensor')">
+                <h2><i class="fas fa-tachometer-alt"></i> <span data-i18n="diagnostics.sections.currentSensor">Current Sensor Diagnostics</span></h2>
+                <span class="section-desc">10 DIAG_IDs - Sensor response/measurement</span>
+                <i class="fas fa-chevron-down chevron" id="chevron-current-sensor"></i>
+            </div>
+            <div class="section-body" id="body-current-sensor">
+                <table class="diag-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="diagnostics.table.diagId">DIAG_ID</th>
+                            <th data-i18n="diagnostics.table.description">Description</th>
+                            <th data-i18n="diagnostics.table.severity">Severity</th>
+                            <th data-i18n="diagnostics.table.delay">Delay</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>DIAG_ID_CURRENT_SENSOR_CC_RESPONDING</code></td>
+                            <td data-i18n="diagnostics.currentSensor.ccResponding">Current sensor CC not responding</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>2000ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_CURRENT_SENSOR_EC_RESPONDING</code></td>
+                            <td data-i18n="diagnostics.currentSensor.ecResponding">Current sensor EC not responding</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>2000ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_CURRENT_SENSOR_RESPONDING</code></td>
+                            <td data-i18n="diagnostics.currentSensor.responding">Current sensor not responding</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>200ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_CURRENT_MEASUREMENT_TIMEOUT</code></td>
+                            <td data-i18n="diagnostics.currentSensor.measureTimeout">Current measurement timeout</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>100ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_CURRENT_MEASUREMENT_ERROR</code></td>
+                            <td data-i18n="diagnostics.currentSensor.measureError">Current measurement error</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>100ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_CURRENT_SENSOR_V1_MEASUREMENT_TIMEOUT</code></td>
+                            <td data-i18n="diagnostics.currentSensor.v1Timeout">Voltage sensor V1 measurement timeout</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>100ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_CURRENT_SENSOR_V2_MEASUREMENT_TIMEOUT</code></td>
+                            <td data-i18n="diagnostics.currentSensor.v2Timeout">Voltage sensor V2 measurement timeout</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>100ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_CURRENT_SENSOR_V3_MEASUREMENT_TIMEOUT</code></td>
+                            <td data-i18n="diagnostics.currentSensor.v3Timeout">Voltage sensor V3 measurement timeout</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>100ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_CURRENT_SENSOR_POWER_MEASUREMENT_TIMEOUT</code></td>
+                            <td data-i18n="diagnostics.currentSensor.powerTimeout">Power measurement timeout</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>100ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_POWER_MEASUREMENT_ERROR</code></td>
+                            <td data-i18n="diagnostics.currentSensor.powerError">Power measurement error</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>100ms</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Contactor Diagnostics -->
+        <div class="section type-diag">
+            <div class="section-header" onclick="toggleSection('contactor')">
+                <h2><i class="fas fa-plug"></i> <span data-i18n="diagnostics.sections.contactor">Contactor Diagnostics</span></h2>
+                <span class="section-desc">5 DIAG_IDs - Feedback/precharge</span>
+                <i class="fas fa-chevron-down chevron" id="chevron-contactor"></i>
+            </div>
+            <div class="section-body" id="body-contactor">
+                <table class="diag-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="diagnostics.table.diagId">DIAG_ID</th>
+                            <th data-i18n="diagnostics.table.description">Description</th>
+                            <th data-i18n="diagnostics.table.severity">Severity</th>
+                            <th data-i18n="diagnostics.table.delay">Delay</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>DIAG_ID_STRING_MINUS_CONTACTOR_FEEDBACK</code></td>
+                            <td data-i18n="diagnostics.contactor.stringMinus">String minus contactor feedback error</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>100ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_STRING_PLUS_CONTACTOR_FEEDBACK</code></td>
+                            <td data-i18n="diagnostics.contactor.stringPlus">String plus contactor feedback error</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>100ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_PRECHARGE_CONTACTOR_FEEDBACK</code></td>
+                            <td data-i18n="diagnostics.contactor.prechargeFeedback">Precharge contactor feedback error</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                            <td>100ms</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_PRECHARGE_ABORT_REASON_VOLTAGE</code></td>
+                            <td data-i18n="diagnostics.contactor.prechargeAbortVoltage">Precharge aborted due to voltage</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_PRECHARGE_ABORT_REASON_CURRENT</code></td>
+                            <td data-i18n="diagnostics.contactor.prechargeAbortCurrent">Precharge aborted due to current</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Plausibility Diagnostics -->
+        <div class="section type-diag">
+            <div class="section-header" onclick="toggleSection('plausibility')">
+                <h2><i class="fas fa-check-double"></i> <span data-i18n="diagnostics.sections.plausibility">Plausibility Diagnostics</span></h2>
+                <span class="section-desc">5 DIAG_IDs - Data validation checks</span>
+                <i class="fas fa-chevron-down chevron" id="chevron-plausibility"></i>
+            </div>
+            <div class="section-body" id="body-plausibility">
+                <table class="diag-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="diagnostics.table.diagId">DIAG_ID</th>
+                            <th data-i18n="diagnostics.table.description">Description</th>
+                            <th data-i18n="diagnostics.table.severity">Severity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>DIAG_ID_PLAUSIBILITY_PACK_VOLTAGE</code></td>
+                            <td data-i18n="diagnostics.plausibility.packVoltage">Pack voltage plausibility error</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_PLAUSIBILITY_CELL_VOLTAGE</code></td>
+                            <td data-i18n="diagnostics.plausibility.cellVoltage">Cell voltage plausibility error</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_PLAUSIBILITY_CELL_VOLTAGE_SPREAD</code></td>
+                            <td data-i18n="diagnostics.plausibility.cellVoltageSpread">Cell voltage spread too high</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_PLAUSIBILITY_CELL_TEMP</code></td>
+                            <td data-i18n="diagnostics.plausibility.cellTemp">Cell temperature plausibility error</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_PLAUSIBILITY_CELL_TEMPERATURE_SPREAD</code></td>
+                            <td data-i18n="diagnostics.plausibility.cellTempSpread">Cell temperature spread too high</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- AFE Measurement Diagnostics -->
+        <div class="section type-diag">
+            <div class="section-header" onclick="toggleSection('afe-measurement')">
+                <h2><i class="fas fa-chart-line"></i> <span data-i18n="diagnostics.sections.afeMeasurement">AFE Measurement Diagnostics</span></h2>
+                <span class="section-desc">6 DIAG_IDs - Measurement errors/timeouts</span>
+                <i class="fas fa-chevron-down chevron" id="chevron-afe-measurement"></i>
+            </div>
+            <div class="section-body" id="body-afe-measurement">
+                <table class="diag-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="diagnostics.table.diagId">DIAG_ID</th>
+                            <th data-i18n="diagnostics.table.description">Description</th>
+                            <th data-i18n="diagnostics.table.severity">Severity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>DIAG_ID_AFE_CELL_VOLTAGE_MEAS_ERROR</code></td>
+                            <td data-i18n="diagnostics.afeMeas.cellVoltageError">AFE cell voltage measurement error</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_AFE_CELL_TEMPERATURE_MEAS_ERROR</code></td>
+                            <td data-i18n="diagnostics.afeMeas.cellTempError">AFE cell temperature measurement error</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_BASE_CELL_VOLTAGE_MEASUREMENT_TIMEOUT</code></td>
+                            <td data-i18n="diagnostics.afeMeas.baseVoltageTimeout">Base cell voltage measurement timeout</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_REDUNDANCY0_CELL_VOLTAGE_MEASUREMENT_TIMEOUT</code></td>
+                            <td data-i18n="diagnostics.afeMeas.redundancy0VoltageTimeout">Redundancy0 cell voltage measurement timeout</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_BASE_CELL_TEMPERATURE_MEASUREMENT_TIMEOUT</code></td>
+                            <td data-i18n="diagnostics.afeMeas.baseTempTimeout">Base cell temperature measurement timeout</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_REDUNDANCY0_CELL_TEMPERATURE_MEASUREMENT_TIMEOUT</code></td>
+                            <td data-i18n="diagnostics.afeMeas.redundancy0TempTimeout">Redundancy0 cell temperature measurement timeout</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Peripheral Diagnostics -->
+        <div class="section type-diag">
+            <div class="section-header" onclick="toggleSection('peripheral')">
+                <h2><i class="fas fa-microchip"></i> <span data-i18n="diagnostics.sections.peripheral">Peripheral Diagnostics</span></h2>
+                <span class="section-desc">9 DIAG_IDs - SBC/I2C/RTC/FRAM/Alert</span>
+                <i class="fas fa-chevron-down chevron" id="chevron-peripheral"></i>
+            </div>
+            <div class="section-body" id="body-peripheral">
+                <table class="diag-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="diagnostics.table.diagId">DIAG_ID</th>
+                            <th data-i18n="diagnostics.table.description">Description</th>
+                            <th data-i18n="diagnostics.table.severity">Severity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>DIAG_ID_SBC_FIN_ERROR</code></td>
+                            <td data-i18n="diagnostics.peripheral.sbcFin">SBC FIN state error</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_SBC_RSTB_ERROR</code></td>
+                            <td data-i18n="diagnostics.peripheral.sbcRstb">SBC RSTB error</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_I2C_PEX_ERROR</code></td>
+                            <td data-i18n="diagnostics.peripheral.i2cPex">I2C port expander error</td>
+                            <td><span class="severity-badge severity-info">Info</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_I2C_RTC_ERROR</code></td>
+                            <td data-i18n="diagnostics.peripheral.i2cRtc">I2C RTC communication error</td>
+                            <td><span class="severity-badge severity-info">Info</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_RTC_CLOCK_INTEGRITY_ERROR</code></td>
+                            <td data-i18n="diagnostics.peripheral.rtcIntegrity">RTC clock integrity error</td>
+                            <td><span class="severity-badge severity-info">Info</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_RTC_BATTERY_LOW_ERROR</code></td>
+                            <td data-i18n="diagnostics.peripheral.rtcBattery">RTC battery low</td>
+                            <td><span class="severity-badge severity-info">Info</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_FRAM_READ_CRC_ERROR</code></td>
+                            <td data-i18n="diagnostics.peripheral.framCrc">FRAM read CRC error</td>
+                            <td><span class="severity-badge severity-info">Info</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_ALERT_MODE</code></td>
+                            <td data-i18n="diagnostics.peripheral.alertMode">Alert mode activated</td>
+                            <td><span class="severity-badge severity-fatal">Fatal Error</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>DIAG_ID_AEROSOL_ALERT</code></td>
+                            <td data-i18n="diagnostics.peripheral.aerosolAlert">Aerosol/thermal runaway alert</td>
+                            <td><span class="severity-badge severity-warning">Warning</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Reference Group -->
+        <div class="section-group-label reference" data-i18n="diagnostics.groups.reference">TECHNICAL REFERENCE</div>
+
         <!-- Circuit Diagnostics -->
-        <div class="section">
+        <div class="section type-reference">
             <div class="section-header" onclick="toggleSection('circuit')">
                 <h2><i class="fas fa-microchip"></i> <span data-i18n="diagnostics.sections.circuit">Circuit Diagnostics (AFE)</span></h2>
                 <span class="section-desc">8 AFE chipsets - Open wire, PEC/CRC</span>
@@ -967,7 +1456,7 @@
         </div>
 
         <!-- Callback Functions -->
-        <div class="section">
+        <div class="section type-reference">
             <div class="section-header" onclick="toggleSection('callbacks')">
                 <h2><i class="fas fa-code"></i> <span data-i18n="diagnostics.sections.callbacks">Callback Functions</span></h2>
                 <span class="section-desc">33 handlers by category</span>
@@ -1032,7 +1521,7 @@
         </div>
 
         <!-- Source File Reference -->
-        <div class="section">
+        <div class="section type-reference">
             <div class="section-header" onclick="toggleSection('files')">
                 <h2><i class="fas fa-folder-open"></i> <span data-i18n="diagnostics.sections.files">Source File Reference</span></h2>
                 <span class="section-desc">8 key files with paths</span>
@@ -1093,8 +1582,11 @@
             </div>
         </div>
 
+        <!-- Comparison Group -->
+        <div class="section-group-label comparison" data-i18n="diagnostics.groups.comparison">COMPARATIVE ANALYSIS</div>
+
         <!-- Diagnostic Comparison -->
-        <div class="section">
+        <div class="section type-comparison">
             <div class="section-header" onclick="toggleSection('diagnostic-comparison')">
                 <h2><i class="fas fa-balance-scale"></i> <span data-i18n="diagnostics.sections.comparison">Diagnostic Comparison</span></h2>
                 <span class="section-desc">foxBMS vs HD/KIA OEM diagnostics</span>
@@ -1104,15 +1596,15 @@
                 <!-- Summary Statistics -->
                 <div class="comparison-summary">
                     <div class="comparison-stat both">
-                        <div class="stat-value" id="stat-both">10</div>
+                        <div class="stat-value"><span id="stat-both">10</span>/<span id="stat-total-both">138</span></div>
                         <div class="stat-label" data-i18n="diagnostics.comparison.both">Both foxBMS &amp; OEM</div>
                     </div>
                     <div class="comparison-stat foxbms-only">
-                        <div class="stat-value" id="stat-foxbms">20</div>
+                        <div class="stat-value"><span id="stat-foxbms">20</span>/<span id="stat-total-foxbms">138</span></div>
                         <div class="stat-label" data-i18n="diagnostics.comparison.foxbmsOnly">foxBMS Only</div>
                     </div>
                     <div class="comparison-stat oem-only">
-                        <div class="stat-value" id="stat-oem">28</div>
+                        <div class="stat-value"><span id="stat-oem">28</span>/<span id="stat-total-oem">138</span></div>
                         <div class="stat-label" data-i18n="diagnostics.comparison.oemOnly">HD/KIA OEM Only</div>
                     </div>
                 </div>
@@ -1176,11 +1668,159 @@
             chevron.classList.toggle('open');
         }
 
-        // Open architecture section by default
+        // All sections closed by default
         document.addEventListener('DOMContentLoaded', () => {
-            toggleSection('architecture');
-            toggleSection('safety-limits');
+            // Sections start collapsed - no auto-open
+            // Calculate and display actual counts
+            updateSeverityCounts();
         });
+
+        function updateSeverityCounts() {
+            const fatalCount = document.querySelectorAll('.severity-badge.severity-fatal').length;
+            const warningCount = document.querySelectorAll('.severity-badge.severity-warning').length;
+            const infoCount = document.querySelectorAll('.severity-badge.severity-info').length;
+            const totalCount = fatalCount + warningCount + infoCount;
+
+            // Total always shows X/Y format
+            document.getElementById('count-total').innerHTML = `${totalCount}<small style="font-size:0.5em;opacity:0.7">/${totalCount}</small>`;
+            document.getElementById('count-fatal').textContent = fatalCount;
+            document.getElementById('count-warning').textContent = warningCount;
+            document.getElementById('count-info').textContent = infoCount;
+
+            // Initialize section header counts
+            updateSectionCounts();
+        }
+
+        // Severity Filter Functions
+        function toggleSeverityFilter(severity, cardElement) {
+            const checkbox = cardElement.querySelector('input[type="checkbox"]');
+
+            // Toggle checkbox state
+            checkbox.checked = !checkbox.checked;
+
+            // Update card active state
+            cardElement.classList.toggle('active', checkbox.checked);
+
+            // Handle "all" checkbox logic
+            if (severity === 'all') {
+                const allCheckboxes = ['fatal', 'warning', 'info'];
+                allCheckboxes.forEach(sev => {
+                    const cb = document.getElementById('filter-' + sev);
+                    const card = cb.closest('.summary-card');
+                    cb.checked = checkbox.checked;
+                    card.classList.toggle('active', checkbox.checked);
+                });
+            } else {
+                // Update "all" checkbox based on individual states
+                updateAllCheckbox();
+            }
+
+            // Apply filter to tables
+            applySeverityFilter();
+        }
+
+        function updateAllCheckbox() {
+            const fatalChecked = document.getElementById('filter-fatal').checked;
+            const warningChecked = document.getElementById('filter-warning').checked;
+            const infoChecked = document.getElementById('filter-info').checked;
+
+            const allCheckbox = document.getElementById('filter-all');
+            const allCard = allCheckbox.closest('.summary-card');
+
+            const allSelected = fatalChecked && warningChecked && infoChecked;
+            allCheckbox.checked = allSelected;
+            allCard.classList.toggle('active', allSelected);
+        }
+
+        function applySeverityFilter() {
+            const showFatal = document.getElementById('filter-fatal').checked;
+            const showWarning = document.getElementById('filter-warning').checked;
+            const showInfo = document.getElementById('filter-info').checked;
+
+            // Get all table rows with severity badges
+            const allRows = document.querySelectorAll('.diag-table tbody tr');
+
+            allRows.forEach(row => {
+                const badge = row.querySelector('.severity-badge');
+                if (!badge) {
+                    row.style.display = '';
+                    return;
+                }
+
+                let show = false;
+                if (badge.classList.contains('severity-fatal') && showFatal) show = true;
+                if (badge.classList.contains('severity-warning') && showWarning) show = true;
+                if (badge.classList.contains('severity-info') && showInfo) show = true;
+
+                row.style.display = show ? '' : 'none';
+            });
+
+            // Update section header counts and summary cards
+            updateSectionCounts();
+            updateFilteredSummaryCounts();
+        }
+
+        function updateSectionCounts() {
+            // Find all diagnostic sections with tables
+            const sections = document.querySelectorAll('.section.type-diag');
+
+            sections.forEach(section => {
+                const table = section.querySelector('.diag-table');
+                if (!table) return;
+
+                const allRows = table.querySelectorAll('tbody tr');
+                const visibleRows = Array.from(allRows).filter(row => row.style.display !== 'none');
+                const totalRows = allRows.length;
+                const visibleCount = visibleRows.length;
+
+                // Find or create the count display in section header
+                const header = section.querySelector('.section-header');
+                const desc = header.querySelector('.section-desc');
+
+                if (desc) {
+                    // Extract the description part (after the count)
+                    const originalText = desc.getAttribute('data-original-desc') || desc.textContent;
+                    if (!desc.getAttribute('data-original-desc')) {
+                        desc.setAttribute('data-original-desc', originalText);
+                    }
+
+                    // Parse original text to get description part
+                    const match = originalText.match(/^\d+\s*DIAG_IDs?\s*[-–]\s*(.+)$/);
+                    const descPart = match ? match[1] : originalText;
+
+                    // Update with filtered count - always show X/Y format
+                    desc.textContent = `${visibleCount}/${totalRows} DIAG_IDs - ${descPart}`;
+                }
+            });
+        }
+
+        function updateFilteredSummaryCounts() {
+            // Count visible badges only
+            const visibleFatal = document.querySelectorAll('.diag-table tbody tr:not([style*="display: none"]) .severity-badge.severity-fatal').length;
+            const visibleWarning = document.querySelectorAll('.diag-table tbody tr:not([style*="display: none"]) .severity-badge.severity-warning').length;
+            const visibleInfo = document.querySelectorAll('.diag-table tbody tr:not([style*="display: none"]) .severity-badge.severity-info').length;
+            const visibleTotal = visibleFatal + visibleWarning + visibleInfo;
+
+            // Get total counts
+            const totalFatal = document.querySelectorAll('.severity-badge.severity-fatal').length;
+            const totalWarning = document.querySelectorAll('.severity-badge.severity-warning').length;
+            const totalInfo = document.querySelectorAll('.severity-badge.severity-info').length;
+            const grandTotal = totalFatal + totalWarning + totalInfo;
+
+            // Update summary cards
+            const countTotal = document.getElementById('count-total');
+            const countFatal = document.getElementById('count-fatal');
+            const countWarning = document.getElementById('count-warning');
+            const countInfo = document.getElementById('count-info');
+
+            // Total always shows X/Y format
+            countTotal.innerHTML = `${visibleTotal}<small style="font-size:0.5em;opacity:0.7">/${grandTotal}</small>`;
+
+            // Fatal/Warning/Info show simple numbers (they're either 0 or full)
+            countFatal.textContent = visibleFatal;
+            countWarning.textContent = visibleWarning;
+            countInfo.textContent = visibleInfo;
+        }
     </script>
     <script src="diagnostic-comparison.js"></script>
     <script>
@@ -1228,9 +1868,9 @@
                             ${getCategoryName(category)}
                         </div>
                         <div class="cat-stats">
-                            ${bothCount > 0 ? `<span title="Both">${bothCount} shared</span>` : ''}
-                            ${foxbmsOnlyCount > 0 ? `<span title="foxBMS only">${foxbmsOnlyCount} foxBMS</span>` : ''}
-                            ${oemOnlyCount > 0 ? `<span title="OEM only">${oemOnlyCount} OEM</span>` : ''}
+                            ${bothCount > 0 ? `<span title="Both">Both have ${bothCount}</span>` : ''}
+                            ${foxbmsOnlyCount > 0 ? `<span title="foxBMS only">foxBMS only ${foxbmsOnlyCount}</span>` : ''}
+                            ${oemOnlyCount > 0 ? `<span title="OEM only">OEM only ${oemOnlyCount}</span>` : ''}
                         </div>
                     </div>
                     <div class="category-body" id="cat-body-${category.id}">
@@ -1313,14 +1953,23 @@
                 totalOemOnly += oemOnlyCount;
             });
 
+            // Calculate grand total
+            const grandTotal = totalBoth + totalFoxbmsOnly + totalOemOnly;
+
             // Update DOM elements
             const statBoth = document.getElementById('stat-both');
             const statFoxbms = document.getElementById('stat-foxbms');
             const statOem = document.getElementById('stat-oem');
+            const statTotalBoth = document.getElementById('stat-total-both');
+            const statTotalFoxbms = document.getElementById('stat-total-foxbms');
+            const statTotalOem = document.getElementById('stat-total-oem');
 
             if (statBoth) statBoth.textContent = totalBoth;
             if (statFoxbms) statFoxbms.textContent = totalFoxbmsOnly;
             if (statOem) statOem.textContent = totalOemOnly;
+            if (statTotalBoth) statTotalBoth.textContent = grandTotal;
+            if (statTotalFoxbms) statTotalFoxbms.textContent = grandTotal;
+            if (statTotalOem) statTotalOem.textContent = grandTotal;
         }
 
         function toggleCategory(categoryId) {

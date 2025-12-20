@@ -179,6 +179,7 @@ secret-*.*
 .claude/commands/moai/
 .claude/skills/moai-*/
 .claude/output-styles/moai/
+.claude/hooks/moai/
 
 # ---------------------------------------------
 # CI/CD

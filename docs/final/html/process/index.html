@@ -18,8 +18,8 @@
         .section-header { background: var(--primary); color: white; padding: 1rem 1.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
         .section-header:hover { background: var(--dark); }
         .section-header h2 { font-size: 1.1rem; display: flex; align-items: center; gap: 0.75rem; }
-        .section-body { padding: 0; max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
-        .section-body.open { max-height: 1000px; padding: 1rem 1.5rem; }
+        .section-body { padding: 0; max-height: 0; overflow: hidden; transition: max-height 0.35s ease-in-out, padding 0.2s ease; }
+        .section-body.open { padding: 1rem 1.5rem; }
         .doc-list { list-style: none; }
         .doc-list li { padding: 0.75rem; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 1rem; }
         .doc-list li:last-child { border-bottom: none; }
@@ -384,7 +384,29 @@
         function toggleSection(id) {
             const body = document.getElementById('body-' + id);
             const chevron = document.getElementById('chevron-' + id);
-            body.classList.toggle('open');
+            if (!body) return;
+
+            const isOpen = body.classList.contains('open');
+
+            if (isOpen) {
+                // Closing: set current height, force reflow, then animate to 0
+                body.style.transition = 'none';
+                body.style.maxHeight = body.scrollHeight + 'px';
+                body.offsetHeight; // Force reflow
+                body.style.transition = '';
+                requestAnimationFrame(() => {
+                    body.style.maxHeight = '0';
+                });
+                body.classList.remove('open');
+            } else {
+                body.classList.add('open');
+                body.style.maxHeight = body.scrollHeight + 'px';
+                setTimeout(() => {
+                    if (body.classList.contains('open')) {
+                        body.style.maxHeight = 'none';
+                    }
+                }, 350);
+            }
             chevron.classList.toggle('open');
         }
 

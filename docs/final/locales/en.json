@@ -290,7 +290,8 @@
       "insulation": "Insulation Monitoring (IMD)",
       "circuit": "Circuit Diagnostics (AFE)",
       "callbacks": "Callback Functions",
-      "files": "Source File Reference"
+      "files": "Source File Reference",
+      "comparison": "Diagnostic Comparison"
     },
     "arch": {
       "processingFlow": "Diagnostic Processing Flow",
@@ -374,6 +375,16 @@
       "imd": "Insulation monitoring",
       "sysMon": "System monitoring"
     },
-    "viewFullAnalysis": "View Full Analysis Document"
+    "viewFullAnalysis": "View Full Analysis Document",
+    "comparison": {
+      "both": "Both foxBMS & OEM",
+      "foxbmsOnly": "foxBMS Only",
+      "oemOnly": "HD/KIA OEM Only"
+    },
+    "legend": {
+      "both": "Both have",
+      "foxbmsOnly": "foxBMS only",
+      "oemOnly": "OEM only"
+    }
   }
 }

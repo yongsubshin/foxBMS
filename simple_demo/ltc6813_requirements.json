@@ -1,0 +1,596 @@
+{
+  "metadata": {
+    "source_file": "foxbms-2/src/app/driver/afe/ltc/6813-1/ltc_6813-1.c",
+    "extraction_date": "2025-12-19",
+    "extractor": "parvis-aispec-code",
+    "version": "1.1.0",
+    "language": "ja",
+    "module": "LTC 6813-1 Analog Front-End Driver",
+    "description": "LTC 6813-1 AFEドライバソースコードから抽出したソフトウェア要求仕様"
+  },
+  "requirements": {
+    "safety_assertions": [
+      {
+        "id": "SW-REQ-LTC-001",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "596",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR)",
+        "function": "LTC_SaveVoltages",
+        "requirement_text": "LTC_SaveVoltages関数は、ステートマシンデータにアクセスする前に、ltc_stateポインタがNULLでないことを検証しなければならない(SHALL)。",
+        "rationale": "電圧測定値をデータベースに保存する際のNULLポインタ参照を防止",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-002",
+        "type": "safety",
+        "category": "範囲検証",
+        "source_lines": "597",
+        "assertion": "FAS_ASSERT(stringNumber < BS_NR_OF_STRINGS)",
+        "function": "LTC_SaveVoltages",
+        "requirement_text": "LTC_SaveVoltages関数は、stringNumberパラメータが有効範囲内（0からBS_NR_OF_STRINGS-1）であることを検証しなければならない(SHALL)。",
+        "rationale": "ストリング固有データのインデックス時の配列境界外アクセスを防止",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-003",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "655",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR)",
+        "function": "LTC_SaveTemperatures",
+        "requirement_text": "LTC_SaveTemperatures関数は、温度データにアクセスする前に、ltc_stateポインタがNULLでないことを検証しなければならない(SHALL)。",
+        "rationale": "温度測定値保存時のNULLポインタ参照を防止",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-004",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "692",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR)",
+        "function": "LTC_SaveAllGpioMeasurement",
+        "requirement_text": "LTC_SaveAllGpioMeasurement関数は、GPIO電圧データにアクセスする前に、ltc_stateポインタがNULLでないことを検証しなければならない(SHALL)。",
+        "rationale": "GPIO測定値保存時のNULLポインタ参照を防止",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-005",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "746",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR)",
+        "function": "LTC_CheckReEntrance",
+        "requirement_text": "LTC_CheckReEntrance関数は、再入保護状態を確認する前に、ltc_stateポインタがNULLでないことを検証しなければならない(SHALL)。",
+        "rationale": "再入保護のための有効なステートマシン参照を保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-006",
+        "type": "safety",
+        "category": "複数ポインタ検証",
+        "source_lines": "796-799",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR); FAS_ASSERT(pBusIDptr != NULL_PTR); FAS_ASSERT(pAdcModeptr != NULL_PTR); FAS_ASSERT(pAdcMeasChptr != NULL_PTR)",
+        "function": "LTC_TransferStateRequest",
+        "requirement_text": "LTC_TransferStateRequest関数は、状態要求を処理する前に、4つのポインタパラメータ（ltc_state、pBusIDptr、pAdcModeptr、pAdcMeasChptr）すべてがNULLでないことを検証しなければならない(SHALL)。",
+        "rationale": "状態要求データの書き込み前にすべての出力パラメータが有効であることを保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-007",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "831",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR)",
+        "function": "LTC_Trigger",
+        "requirement_text": "LTC_Trigger関数は、ステートマシン処理を実行する前に、ltc_stateポインタがNULLでないことを検証しなければならない(SHALL)。",
+        "rationale": "メインステートマシントリガー関数でのNULLポインタ参照を防止",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-008",
+        "type": "safety",
+        "category": "複数ポインタ検証",
+        "source_lines": "2979-2981",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR); FAS_ASSERT(pRxBuff != NULL_PTR); FAS_ASSERT(muxseqptr != NULL_PTR)",
+        "function": "LTC_SaveMuxMeasurement",
+        "requirement_text": "LTC_SaveMuxMeasurement関数は、マルチプレクサ測定結果を保存する前に、3つのポインタパラメータすべてを検証しなければならない(SHALL)。",
+        "rationale": "状態、受信バッファ、マルチプレクサシーケンス設定の有効なポインタを保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-009",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "3061-3062",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR); FAS_ASSERT(pRxBuff != NULL_PTR)",
+        "function": "LTC_SaveRxToVoltageBuffer",
+        "requirement_text": "LTC_SaveRxToVoltageBuffer関数は、電圧レジスタデータを処理する前に、ltc_stateと受信バッファポインタを検証しなければならない(SHALL)。",
+        "rationale": "SPI受信からのセル電圧値格納前に有効なポインタを保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-010",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "3164-3165",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR); FAS_ASSERT(pRxBuff != NULL_PTR)",
+        "function": "LTC_SaveRxToGpioBuffer",
+        "requirement_text": "LTC_SaveRxToGpioBuffer関数は、GPIOレジスタデータを処理する前に、ltc_stateと受信バッファポインタを検証しなければならない(SHALL)。",
+        "rationale": "SPI受信からのGPIO電圧値格納前に有効なポインタを保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-011",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "3325-3326",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR); FAS_ASSERT(pRxBuff != NULL_PTR)",
+        "function": "LTC_I2cCheckAcknowledge",
+        "requirement_text": "LTC_I2cCheckAcknowledge関数は、I2C確認応答状態を確認する前に、ltc_stateと受信バッファポインタを検証しなければならない(SHALL)。",
+        "rationale": "I2C通信のエラーテーブル更新のための有効なポインタを保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-012",
+        "type": "safety",
+        "category": "複数ポインタ検証",
+        "source_lines": "3386-3388",
+        "assertion": "FAS_ASSERT(pSpiInterface != NULL_PTR); FAS_ASSERT(pTxBuff != NULL_PTR); FAS_ASSERT(pRxBuff != NULL_PTR)",
+        "function": "LTC_Init",
+        "requirement_text": "LTC_Init関数は、LTCデイジーチェーンを初期化する前に、SPIインターフェースとバッファポインタを検証しなければならない(SHALL)。",
+        "rationale": "初期設定書き込みのための有効なSPI設定とバッファを保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-013",
+        "type": "safety",
+        "category": "複数ポインタ検証",
+        "source_lines": "3453-3456",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR); FAS_ASSERT(pSpiInterface != NULL_PTR); FAS_ASSERT(pTxBuff != NULL_PTR); FAS_ASSERT(pRxBuff != NULL_PTR)",
+        "function": "LTC_BalanceControl",
+        "requirement_text": "LTC_BalanceControl関数は、LTCデイジーチェーンにバランシング設定を書き込む前に、4つのポインタパラメータすべてを検証しなければならない(SHALL)。",
+        "rationale": "セルバランシング制御のための有効な状態、SPIインターフェース、バッファを保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-014",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "3586",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR)",
+        "function": "LTC_ResetErrorTable",
+        "requirement_text": "LTC_ResetErrorTable関数は、エラー追跡テーブルをリセットする前に、ltc_stateポインタを検証しなければならない(SHALL)。",
+        "rationale": "エラーテーブル初期化のための有効なステートマシン参照を保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-015",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "3674",
+        "assertion": "FAS_ASSERT(pSpiInterface != NULL_PTR)",
+        "function": "LTC_StartVoltageMeasurement",
+        "requirement_text": "LTC_StartVoltageMeasurement関数は、セル電圧ADC変換を開始する前に、SPIインターフェースポインタを検証しなければならない(SHALL)。",
+        "rationale": "電圧測定コマンド送信のための有効なSPI設定を保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-016",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "3723",
+        "assertion": "FAS_ASSERT(pSpiInterface != NULL_PTR)",
+        "function": "LTC_StartGpioMeasurement",
+        "requirement_text": "LTC_StartGpioMeasurement関数は、GPIO電圧ADC変換を開始する前に、SPIインターフェースポインタを検証しなければならない(SHALL)。",
+        "rationale": "GPIO測定コマンド送信のための有効なSPI設定を保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-017",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "3791",
+        "assertion": "FAS_ASSERT(pSpiInterface != NULL_PTR)",
+        "function": "LTC_StartOpenWireMeasurement",
+        "requirement_text": "LTC_StartOpenWireMeasurement関数は、オープンワイヤー検出を開始する前に、SPIインターフェースポインタを検証しなければならない(SHALL)。",
+        "rationale": "オープンワイヤー検出コマンド送信のための有効なSPI設定を保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-018",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "3834-3835",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR); FAS_ASSERT(DataBufferSPI_RX_with_PEC != NULL_PTR)",
+        "function": "LTC_CheckPec",
+        "requirement_text": "LTC_CheckPec関数は、PEC（パケットエラーコード）検証を実行する前に、ltc_stateとデータバッファポインタを検証しなければならない(SHALL)。",
+        "rationale": "通信完全性チェックのための有効なポインタを保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-019",
+        "type": "safety",
+        "category": "複数ポインタ検証",
+        "source_lines": "3907-3910",
+        "assertion": "FAS_ASSERT(Command != NULL_PTR); FAS_ASSERT(pSpiInterface != NULL_PTR); FAS_ASSERT(pTxBuff != NULL_PTR); FAS_ASSERT(pRxBuff != NULL_PTR)",
+        "function": "LTC_ReadRegister",
+        "requirement_text": "LTC_ReadRegister関数は、LTCデイジーチェーンからレジスタデータを読み取る前に、4つのポインタパラメータ（コマンド、SPIインターフェース、TXバッファ、RXバッファ）すべてを検証しなければならない(SHALL)。",
+        "rationale": "レジスタ読み取り操作のための有効なコマンドとSPIリソースを保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-020",
+        "type": "safety",
+        "category": "複数ポインタ検証",
+        "source_lines": "3975-3978",
+        "assertion": "FAS_ASSERT(Command != NULL_PTR); FAS_ASSERT(pSpiInterface != NULL_PTR); FAS_ASSERT(pTxBuff != NULL_PTR); FAS_ASSERT(pRxBuff != NULL_PTR)",
+        "function": "LTC_WriteRegister",
+        "requirement_text": "LTC_WriteRegister関数は、LTCデイジーチェーンにレジスタデータを書き込む前に、4つのポインタパラメータすべてを検証しなければならない(SHALL)。",
+        "rationale": "レジスタ書き込み操作のための有効なコマンドとSPIリソースを保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-021",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "4020",
+        "assertion": "FAS_ASSERT(pTxBuff != NULL_PTR)",
+        "function": "LTC_SetMuxChCommand",
+        "requirement_text": "LTC_SetMuxChCommand関数は、マルチプレクサチャネルコマンドを設定する前に、送信バッファポインタを検証しなければならない(SHALL)。",
+        "rationale": "マルチプレクサ設定データのための有効なバッファを保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-022",
+        "type": "safety",
+        "category": "無効状態検出",
+        "source_lines": "2950",
+        "assertion": "FAS_ASSERT(FAS_TRAP)",
+        "function": "LTC_Trigger (default case)",
+        "requirement_text": "LTCステートマシンは、未定義動作を防止するため、無効な状態を検出した場合にトラップしなければならない(SHALL)。",
+        "rationale": "実行時の無効なステートマシン遷移を検出するための防御的プログラミング",
+        "verification_method": "レビュー/テスト"
+      },
+      {
+        "id": "SW-REQ-LTC-023",
+        "type": "safety",
+        "category": "無効状態検出",
+        "source_lines": "3021",
+        "assertion": "FAS_ASSERT(FAS_TRAP)",
+        "function": "LTC_SaveMuxMeasurement",
+        "requirement_text": "LTCマルチプレクサ測定関数は、無効なマルチプレクサIDを検出した場合にトラップしなければならない(SHALL)。",
+        "rationale": "無効なマルチプレクサ設定を検出するための防御的プログラミング",
+        "verification_method": "レビュー/テスト"
+      },
+      {
+        "id": "SW-REQ-LTC-024",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "4316-4317",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR); FAS_ASSERT(pRxBuff != NULL_PTR)",
+        "function": "LTC_TempSensSaveTemp",
+        "requirement_text": "LTC_TempSensSaveTemp関数は、外部温度センサ値を保存する前に、ltc_stateと受信バッファポインタを検証しなければならない(SHALL)。",
+        "rationale": "温度センサデータ処理のための有効なポインタを保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-025",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "4678",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR)",
+        "function": "LTC_SetTransferTimes",
+        "requirement_text": "LTC_SetTransferTimes関数は、転送時間を設定する前に、ltc_stateポインタを検証しなければならない(SHALL)。",
+        "rationale": "SPI転送時間計算のための有効なステートマシン参照を保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-026",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "4716",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR)",
+        "function": "LTC_CheckStateRequest",
+        "requirement_text": "LTC_CheckStateRequest関数は、状態要求の妥当性を確認する前に、ltc_stateポインタを検証しなければならない(SHALL)。",
+        "rationale": "状態要求検証のための有効なステートマシン参照を保証",
+        "verification_method": "レビュー/静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-027",
+        "type": "safety",
+        "category": "ポインタ検証",
+        "source_lines": "4739",
+        "assertion": "FAS_ASSERT(ltc_state != NULL_PTR)",
+        "function": "LTC_IsFirstMeasurementCycleFinished",
+        "requirement_text": "LTC_IsFirstMeasurementCycleFinished関数は、初回測定サイクル完了状態を確認する前に、ltc_stateポインタを検証しなければならない(SHALL)。",
+        "rationale": "測定サイクル状態アクセスのための有効なステートマシン参照を保証",
+        "verification_method": "レビュー/静的解析"
+      }
+    ],
+    "cell_voltage_monitoring": [
+      {
+        "id": "SW-REQ-LTC-030",
+        "type": "functional",
+        "category": "電圧測定",
+        "source_lines": "3042-3142",
+        "function": "LTC_SaveRxToVoltageBuffer",
+        "requirement_text": "AFEドライバは、6つの電圧レジスタグループ（A、B、C、D、E、F）からSPI経由でセル電圧測定値を読み取り、セル電圧データ構造体に格納しなければならない(SHALL)。",
+        "rationale": "LTC6813-1は6つのレジスタグループにセル電圧を格納し、各グループに3つのセル測定値を含む",
+        "verification_method": "シミュレートSPI応答を用いたユニットテスト"
+      },
+      {
+        "id": "SW-REQ-LTC-031",
+        "type": "functional",
+        "category": "電圧変換",
+        "source_lines": "3103",
+        "function": "LTC_SaveRxToVoltageBuffer",
+        "requirement_text": "AFEドライバは、生のADC電圧値を次の式を使用してミリボルトに変換しなければならない(SHALL)：voltage_mV = raw_value * 100e-6 * 1000。",
+        "rationale": "LTC6813-1のADC分解能はLSBあたり100uVであり、格納用にmVに変換",
+        "verification_method": "既知のADC値を用いたユニットテスト"
+      },
+      {
+        "id": "SW-REQ-LTC-032",
+        "type": "functional",
+        "category": "PEC検証",
+        "source_lines": "3106-3123",
+        "function": "LTC_SaveRxToVoltageBuffer",
+        "requirement_text": "AFEドライバは、対応するPECチェックが有効な場合にのみセル電圧値を格納し、そうでない場合は測定を無効としてマークしなければならない(SHALL)。",
+        "rationale": "破損したSPI送信を拒否することでデータ完全性を保証",
+        "verification_method": "有効/無効PECシナリオを用いたユニットテスト"
+      },
+      {
+        "id": "SW-REQ-LTC-033",
+        "type": "functional",
+        "category": "妥当性チェック",
+        "source_lines": "137-141",
+        "function": "静的設定",
+        "requirement_text": "AFEドライバは、LTC6813-1測定の妥当なセル電圧範囲を最小0mV、最大5000mVとして定義しなければならない(SHALL)。",
+        "rationale": "リチウムイオンセル電圧測定の物理的限界",
+        "verification_method": "設定値の静的解析"
+      },
+      {
+        "id": "SW-REQ-LTC-034",
+        "type": "functional",
+        "category": "妥当性検証",
+        "source_lines": "624-635",
+        "function": "LTC_SaveVoltages",
+        "requirement_text": "AFEドライバは、各セル電圧測定に対して最小/最大妥当性チェックを実行し、妥当範囲外の測定を無効化しなければならない(SHALL)。",
+        "rationale": "センサ障害、配線問題、または通信エラーを検出",
+        "verification_method": "境界値を用いたユニットテスト"
+      },
+      {
+        "id": "SW-REQ-LTC-035",
+        "type": "functional",
+        "category": "オープンワイヤー検出",
+        "source_lines": "610-620",
+        "function": "LTC_SaveVoltages",
+        "requirement_text": "AFEドライバは、セル電圧測定を有効化する前に、セル入力NとセルN+1のオープンワイヤー状態を確認しなければならない(SHALL)。",
+        "rationale": "オープンワイヤー状態は影響を受ける入力間の電圧測定を無効化",
+        "verification_method": "オープンワイヤーシナリオを用いたユニットテスト"
+      },
+      {
+        "id": "SW-REQ-LTC-036",
+        "type": "functional",
+        "category": "ストリング電圧計算",
+        "source_lines": "628-630, 644",
+        "function": "LTC_SaveVoltages",
+        "requirement_text": "AFEドライバは、すべての有効なセル電圧測定値を合計して総ストリング電圧を計算し、結果をstringVoltage_mVに格納しなければならない(SHALL)。",
+        "rationale": "SOC推定と安全監視のためのパックレベル電圧を提供",
+        "verification_method": "既知のセル電圧を用いたユニットテスト"
+      },
+      {
+        "id": "SW-REQ-LTC-037",
+        "type": "functional",
+        "category": "有効測定カウント",
+        "source_lines": "630, 645",
+        "function": "LTC_SaveVoltages",
+        "requirement_text": "AFEドライバは、診断目的で有効なセル電圧測定数を追跡し、nrValidCellVoltagesに格納しなければならない(SHALL)。",
+        "rationale": "部分的な測定障害の検出を可能にする",
+        "verification_method": "有効/無効測定を混合したユニットテスト"
+      },
+      {
+        "id": "SW-REQ-LTC-038",
+        "type": "functional",
+        "category": "診断イベント",
+        "source_lines": "643",
+        "function": "LTC_SaveVoltages",
+        "requirement_text": "AFEドライバは、DIAG_CheckEventを介して診断モジュールにセル電圧測定の有効性状態を報告しなければならない(SHALL)。",
+        "rationale": "電圧測定の健全性をシステム診断に統合",
+        "verification_method": "診断モジュールとの統合テスト"
+      },
+      {
+        "id": "SW-REQ-LTC-039",
+        "type": "functional",
+        "category": "データベース更新",
+        "source_lines": "648-650",
+        "function": "LTC_SaveVoltages",
+        "requirement_text": "AFEドライバは、各測定サイクル後に状態カウンタをインクリメントし、更新されたセル電圧データをデータベースに書き込まなければならない(SHALL)。",
+        "rationale": "最新データ表示と永続ストレージを提供",
+        "verification_method": "データベースモジュールとの統合テスト"
+      },
+      {
+        "id": "SW-REQ-LTC-040",
+        "type": "functional",
+        "category": "ADCモード選択",
+        "source_lines": "235-248",
+        "function": "静的コマンド定義",
+        "requirement_text": "AFEドライバは、セル電圧測定の3つのADC変換モード（高速モード、通常モード、フィルタモード）をサポートし、それぞれ放電許可（DCP1）と放電禁止（DCP0）のバリアントを持たなければならない(SHALL)。",
+        "rationale": "アプリケーションのニーズに基づいて測定速度と精度のトレードオフを可能にする",
+        "verification_method": "モードパラメータ変更を用いたユニットテスト"
+      },
+      {
+        "id": "SW-REQ-LTC-041",
+        "type": "functional",
+        "category": "PEC計算",
+        "source_lines": "3850",
+        "function": "LTC_CheckPec",
+        "requirement_text": "AFEドライバは、LTC_CalculatePec15関数を使用して15ビットPEC（パケットエラーコード）を計算し、データ完全性検証のために受信したPECバイトと比較しなければならない(SHALL)。",
+        "rationale": "LTC6813-1データシートに準拠したCRC-15多項式エラー検出",
+        "verification_method": "既知のPEC値を用いたユニットテスト"
+      },
+      {
+        "id": "SW-REQ-LTC-042",
+        "type": "functional",
+        "category": "エラーテーブル更新",
+        "source_lines": "3857-3867",
+        "function": "LTC_CheckPec",
+        "requirement_text": "AFEドライバは、PEC検証結果に基づいて、デイジーチェーン内の各LTCデバイスのエラーテーブルのPEC_validフラグを更新しなければならない(SHALL)。",
+        "rationale": "診断分離のためのデバイスごとのエラー追跡を可能にする",
+        "verification_method": "複数LTCデバイスを用いたユニットテスト"
+      },
+      {
+        "id": "SW-REQ-LTC-043",
+        "type": "functional",
+        "category": "オープンワイヤー検出",
+        "source_lines": "2903-2938",
+        "function": "LTC_Trigger (OPENWIRE_CHECK)",
+        "requirement_text": "AFEドライバは、プルアップとプルダウン測定間の差分（-400mV閾値）を分析することでオープンワイヤー検出を実行しなければならない(SHALL)。",
+        "rationale": "セルワイヤーの断線検出のための電気的診断",
+        "verification_method": "オープンワイヤー条件を用いたユニットテスト"
+      },
+      {
+        "id": "SW-REQ-LTC-044",
+        "type": "functional",
+        "category": "温度測定",
+        "source_lines": "654-688",
+        "function": "LTC_SaveTemperatures",
+        "requirement_text": "AFEドライバは、セル温度測定値を処理し、妥当性チェックを実行して診断イベントを報告しなければならない(SHALL)。",
+        "rationale": "セル温度監視による熱安全性管理",
+        "verification_method": "温度境界値を用いたユニットテスト"
+      }
+    ],
+    "misra_compliance": [
+      {
+        "id": "SW-REQ-LTC-050",
+        "type": "compliance",
+        "category": "MISRA C:2012 規則1.2",
+        "source_lines": "112-117",
+        "pattern": "AXIVION Disable/Enable Style MisraC2012-1.2",
+        "requirement_text": "AFEドライバは、パフォーマンス最適化のために特定のメモリセクションにデータを配置する際、AXIVIONアノテーションを使用してMISRA C:2012 規則1.2からの正当な逸脱を文書化しなければならない(SHALL)。",
+        "rationale": "PECバッファはDMA/SPIパフォーマンスのために共有RAM配置が必要；逸脱は文書化され範囲が限定されている",
+        "deviation_justification": "パフォーマンスクリティカルなSPIバッファはDMAアクセスのために共有RAMに配置する必要がある"
+      },
+      {
+        "id": "SW-REQ-LTC-051",
+        "type": "compliance",
+        "category": "符号なし整数サフィックス",
+        "source_lines": "複数",
+        "pattern": "0u, 0xFFu, etc.",
+        "requirement_text": "AFEドライバコードは、符号なし型を明示的に示し、暗黙の型変換を防止するために符号なし整数リテラルサフィックス（u、U）を使用しなければならない(SHALL)。",
+        "rationale": "MISRA C:2012 規則7.2 - uサフィックスは符号付き/符号なし比較警告を防止",
+        "examples": ["0u", "0xFFu", "8u", "100e-6f"]
+      },
+      {
+        "id": "SW-REQ-LTC-052",
+        "type": "compliance",
+        "category": "明示的型キャスト",
+        "source_lines": "3851-3852",
+        "pattern": "(uint8_t)((PEC_result >> 8u) & 0xFFu)",
+        "requirement_text": "AFEドライバコードは、データ損失を防止するために異なるサイズの整数型間で変換する際に明示的な型キャストを使用しなければならない(SHALL)。",
+        "rationale": "MISRA C:2012 規則10.3 - 明示的キャストは意図的な縮小変換を文書化",
+        "examples": ["(uint8_t)", "(uint16_t)", "(int16_t)"]
+      },
+      {
+        "id": "SW-REQ-LTC-053",
+        "type": "compliance",
+        "category": "ブール比較",
+        "source_lines": "3106, 3858",
+        "pattern": "== true, == false",
+        "requirement_text": "AFEドライバコードは、暗黙のブール評価ではなく明示的なブール比較（== true、== false）を使用しなければならない(SHALL)。",
+        "rationale": "MISRA C:2012 規則14.4 - 明示的比較はコードの明確性を向上させ、偶発的な整数からブールへの変換を防止",
+        "examples": ["if (PEC_valid == true)", "if (continueFunction == false)"]
+      },
+      {
+        "id": "SW-REQ-LTC-054",
+        "type": "compliance",
+        "category": "void戻り値キャスト",
+        "source_lines": "650, 688",
+        "pattern": "(void)DATA_WRITE_DATA(...)",
+        "requirement_text": "AFEドライバコードは、関数の戻り値を意図的に無視する場合にvoidにキャストしなければならない(SHALL)。",
+        "rationale": "MISRA C:2012 規則17.7 - 戻り値が意図的に未使用であることを明示的に文書化",
+        "examples": ["(void)DATA_WRITE_DATA()", "(void)DATA_READ_DATA()"]
+      },
+      {
+        "id": "SW-REQ-LTC-055",
+        "type": "compliance",
+        "category": "NULLポインタ定数",
+        "source_lines": "596, 655, 692",
+        "pattern": "NULL_PTR",
+        "requirement_text": "AFEドライバコードは、NULLポインタ比較に生のNULLまたは0の代わりに、プロジェクト定義のNULL_PTRマクロを使用しなければならない(SHALL)。",
+        "rationale": "MISRA C:2012 規則11.9 - 型安全なNULLポインタ表現",
+        "examples": ["!= NULL_PTR", "== NULL_PTR"]
+      },
+      {
+        "id": "SW-REQ-LTC-056",
+        "type": "compliance",
+        "category": "ブレース初期化",
+        "source_lines": "124-131",
+        "pattern": "= {.header.uniqueId = ...}",
+        "requirement_text": "AFEドライバコードは、構造体初期化に明示的なフィールド名を持つ指示付き初期化子を使用しなければならない(SHALL)。",
+        "rationale": "MISRA C:2012 規則9.2 - 指示付き初期化子は初期化順序エラーを防止",
+        "examples": [".header.uniqueId = DATA_BLOCK_ID_CELL_VOLTAGE_BASE"]
+      },
+      {
+        "id": "SW-REQ-LTC-057",
+        "type": "compliance",
+        "category": "インクルードガード形式",
+        "source_lines": "56-59",
+        "pattern": "clang-format off/on",
+        "requirement_text": "AFEドライバコードは、特定のインクルード順序要件を保持するためにclang-formatディレクティブを使用しなければならない(SHALL)。",
+        "rationale": "適切なマクロ定義のためにメインヘッダーの前に設定ヘッダーが含まれることを保証",
+        "examples": ["/* clang-format off */", "/* clang-format on */"]
+      },
+      {
+        "id": "SW-REQ-LTC-058",
+        "type": "compliance",
+        "category": "静的関数宣言",
+        "source_lines": "297-449",
+        "pattern": "static function prototypes",
+        "requirement_text": "AFEドライバコードは、すべてのファイルスコープ関数をstaticとして宣言し、使用前に前方宣言を提供しなければならない(SHALL)。",
+        "rationale": "MISRA C:2012 規則8.8 - static関数は可視性を制限しコンパイラ最適化を可能にする",
+        "examples": ["static void LTC_SaveLastStates(...)", "static STD_RETURN_TYPE_e LTC_Init(...)"]
+      },
+      {
+        "id": "SW-REQ-LTC-059",
+        "type": "compliance",
+        "category": "戻り値型の一貫性",
+        "source_lines": "複数",
+        "pattern": "STD_RETURN_TYPE_e return type",
+        "requirement_text": "AFEドライバコードは、成功または失敗を示す関数戻り値にSTD_RETURN_TYPE_e列挙型（STD_OK、STD_NOT_OK）を使用しなければならない(SHALL)。",
+        "rationale": "コードベース全体での一貫したエラー処理インターフェース",
+        "examples": ["return STD_OK", "return STD_NOT_OK"]
+      },
+      {
+        "id": "SW-REQ-LTC-060",
+        "type": "compliance",
+        "category": "マジックナンバー回避",
+        "source_lines": "81-106",
+        "pattern": "#define macros for constants",
+        "requirement_text": "AFEドライバコードは、マジックナンバーの代わりにプリプロセッサマクロを使用して名前付き定数を定義しなければならない(SHALL)。",
+        "rationale": "MISRA C:2012 規則2.5 - 名前付き定数は保守性と文書化を向上",
+        "examples": ["LTC_ICOM_START (0x60u)", "LTC_FCOM_MASTER_ACK (0x00u)"]
+      }
+    ]
+  },
+  "statistics": {
+    "total_requirements": 46,
+    "by_category": {
+      "safety_assertions": 27,
+      "cell_voltage_monitoring": 15,
+      "misra_compliance": 11
+    },
+    "by_type": {
+      "safety": 27,
+      "functional": 15,
+      "compliance": 11
+    },
+    "coverage": {
+      "functions_analyzed": 35,
+      "assertions_extracted": 27,
+      "plausibility_checks_found": 2,
+      "pec_validation_points": 3,
+      "open_wire_detection_points": 2
+    }
+  }
+}

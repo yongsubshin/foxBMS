@@ -16,6 +16,7 @@ model: inherit
 
 @docs/parvis/README.md
 @docs/final/README.md
+@.parvis/config.yaml
 
 ---
 
@@ -24,6 +25,8 @@ model: inherit
 **Command Purpose**: Generate final documentation packages from PARVIS intermediate outputs.
 
 **User Interaction Architecture**: AskUserQuestion must be used at COMMAND level only.
+
+**Language Configuration**: Output language is determined by `.parvis/config.yaml` field `language.parvis_docs`. If not initialized, run `/parvis:init` first.
 
 **Execution Model**: Commands orchestrate through `Task()` tool only.
 
@@ -104,7 +107,8 @@ Use the parvis-aidoc-generator subagent to:
 - Build documentation inventory
 - Identify gaps or missing sections
 - Report analysis results
-Language: User's conversation language
+Output Language: Use language.parvis_docs from .parvis/config.yaml for generated documentation
+Response Language: Use language.claude_output from .parvis/config.yaml for user responses
 ```
 
 ### Phase 2: Format Selection
@@ -149,7 +153,8 @@ Use the parvis-aidoc-generator subagent to:
 - Output: docs/final/
 - Include traceability matrices
 - Include compliance badges
-Language: User's conversation language
+Output Language: Use language.parvis_docs from .parvis/config.yaml for generated documentation
+Response Language: Use language.claude_output from .parvis/config.yaml for user responses
 ```
 
 ### Phase 4: Build and Validate

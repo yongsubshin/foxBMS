@@ -290,7 +290,8 @@
       "insulation": "절연 모니터링 (IMD)",
       "circuit": "회로 진단 (AFE)",
       "callbacks": "콜백 함수",
-      "files": "소스 파일 참조"
+      "files": "소스 파일 참조",
+      "comparison": "진단 기능 비교"
     },
     "arch": {
       "processingFlow": "진단 처리 흐름",
@@ -374,6 +375,16 @@
       "imd": "절연 모니터링",
       "sysMon": "시스템 모니터링"
     },
-    "viewFullAnalysis": "전체 분석 문서 보기"
+    "viewFullAnalysis": "전체 분석 문서 보기",
+    "comparison": {
+      "both": "foxBMS & OEM 공통",
+      "foxbmsOnly": "foxBMS 전용",
+      "oemOnly": "HD/KIA OEM 전용"
+    },
+    "legend": {
+      "both": "양쪽 모두",
+      "foxbmsOnly": "foxBMS만",
+      "oemOnly": "OEM만"
+    }
   }
 }

@@ -15,6 +15,7 @@ model: inherit
 
 @.claude/parvis-data/config/phase-status/BMS.json
 @.claude/parvis-data/config/orchestrator-config.json
+@.parvis/config.yaml
 
 ---
 
@@ -23,6 +24,8 @@ model: inherit
 **Command Purpose**: Execute the full PARVIS V-Model development workflow from requirements extraction through phase progression.
 
 **User Interaction Architecture**: AskUserQuestion must be used at COMMAND level only. Subagents via Task() are stateless and cannot interact with users.
+
+**Language Configuration**: Output language is determined by `.parvis/config.yaml` field `language.parvis_run`. If not initialized, run `/parvis:init` first.
 
 **Execution Model**: Commands orchestrate through `Task()` tool only.
 
@@ -73,7 +76,8 @@ Use the parvis-ai-orchestrator subagent to:
 - Verify quality gates
 - Identify next required actions
 - Generate execution plan
-Language: User's conversation language
+Output Language: Use language.parvis_run from .parvis/config.yaml for generated files
+Response Language: Use language.claude_output from .parvis/config.yaml for user responses
 ```
 
 ### Phase 2: Phase Execution
@@ -119,6 +123,8 @@ Use the parvis-ai-orchestrator subagent to:
 - Verify quality gates for current phase
 - Generate quality report
 - Recommend next steps
+Output Language: Use language.parvis_run from .parvis/config.yaml for generated files
+Response Language: Use language.claude_output from .parvis/config.yaml for user responses
 ```
 
 ### Phase 4: Output Generation

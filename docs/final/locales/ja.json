@@ -290,7 +290,8 @@
       "insulation": "絶縁モニタリング (IMD)",
       "circuit": "回路診断 (AFE)",
       "callbacks": "コールバック関数",
-      "files": "ソースファイル参照"
+      "files": "ソースファイル参照",
+      "comparison": "診断機能比較"
     },
     "arch": {
       "processingFlow": "診断処理フロー",
@@ -374,6 +375,16 @@
       "imd": "絶縁モニタリング",
       "sysMon": "システムモニタリング"
     },
-    "viewFullAnalysis": "完全な分析ドキュメントを表示"
+    "viewFullAnalysis": "完全な分析ドキュメントを表示",
+    "comparison": {
+      "both": "foxBMS & OEM 共通",
+      "foxbmsOnly": "foxBMS のみ",
+      "oemOnly": "HD/KIA OEM のみ"
+    },
+    "legend": {
+      "both": "両方あり",
+      "foxbmsOnly": "foxBMSのみ",
+      "oemOnly": "OEMのみ"
+    }
   }
 }

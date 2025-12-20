@@ -408,6 +408,7 @@ User and language configuration is automatically loaded from section files below
 
 @.moai/config/sections/user.yaml
 @.moai/config/sections/language.yaml
+@.parvis/config.yaml
 
 ### Configuration Structure
 
@@ -419,11 +420,21 @@ Configuration is split into modular section files for token efficiency:
 - sections/quality.yaml: TDD and quality settings
 - sections/system.yaml: MoAI system settings
 
+### PARVIS Language Configuration
+
+PARVIS-specific language settings are stored in `.parvis/config.yaml`:
+- language.claude_output: Claude response language for user-facing outputs
+- language.parvis_run: Language for /parvis:run generated files
+- language.parvis_docs: Language for /parvis:docs documentation
+
+Initialize PARVIS language settings by running `/parvis:init`.
+
 ### Configuration Priority
 
 1. Environment Variables (highest priority): MOAI_USER_NAME, MOAI_CONVERSATION_LANG
-2. Section Files: .moai/config/sections/*.yaml
-3. Default Values: English, default greeting
+2. PARVIS Config: .parvis/config.yaml (for PARVIS-specific settings)
+3. Section Files: .moai/config/sections/*.yaml
+4. Default Values: English, default greeting
 
 ### Agent Delegation Rules
 

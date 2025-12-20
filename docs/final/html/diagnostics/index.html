@@ -365,7 +365,18 @@
         .comparison-column {
             background: white;
             border-radius: 6px;
-            overflow: hidden;
+        }
+        .expanded-codes {
+            display: flex !important;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+            align-items: center;
+        }
+        .expanded-codes.hidden {
+            display: none !important;
+        }
+        .collapse-codes {
+            margin-left: 0.25rem;
         }
         .column-header {
             padding: 0.6rem 1rem;
@@ -1914,10 +1925,10 @@
                                             <div class="feature-codes">
                                                 ${feature.oemCodes.slice(0, 5).map(code => `<code>${code}</code>`).join('')}
                                                 ${feature.oemCodes.length > 5 ? `
-                                                    <code class="expand-codes" onclick="this.style.display='none'; this.nextElementSibling.style.display='inline';" style="cursor:pointer; background:#e3f2fd;">+${feature.oemCodes.length - 5} more ▼</code>
-                                                    <span class="expanded-codes" style="display:none;">
+                                                    <code class="expand-codes" onclick="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" style="cursor:pointer; background:#e3f2fd;">+${feature.oemCodes.length - 5} more ▼</code>
+                                                    <span class="expanded-codes hidden">
                                                         ${feature.oemCodes.slice(5).map(code => `<code>${code}</code>`).join('')}
-                                                        <code class="collapse-codes" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='inline';" style="cursor:pointer; background:#ffecb3;">▲ collapse</code>
+                                                        <code class="collapse-codes" onclick="this.parentElement.classList.add('hidden'); this.parentElement.previousElementSibling.style.display='inline';" style="cursor:pointer; background:#ffecb3;">▲ collapse</code>
                                                     </span>
                                                 ` : ''}
                                             </div>
